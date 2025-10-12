@@ -12,6 +12,7 @@ import string
 import subprocess
 from collections import namedtuple
 from datetime import timedelta
+from datetime import date
 from pathlib import Path
 from multiprocessing.pool import ThreadPool as Pool
 from imdb import Cinemagoer
@@ -76,6 +77,495 @@ EpisodeTsvRow = namedtuple(
 MatchingSubtitle = namedtuple("MatchingSubtitle", ["origin", "data", "filepath"])
 
 
+
+# Audiobooks
+AudiobookTsvRow = namedtuple(
+    "AudiobookRow",
+    [
+        "ID",
+        "CHAPTER_NUM",
+        "START_TIME",
+        "END_TIME",
+        "NAME_AUDIO",
+        "NAME_SCREENSHOT",
+        "CONTENT",
+        "CONTENT_TRANSLATION_SPANISH",
+        "CONTENT_TRANSLATION_ENGLISH",
+        "CONTENT_SPANISH_MT",
+        "CONTENT_ENGLISH_MT",
+    ],
+)
+
+
+def merge_audiobook_subtitles(
+    processed_subtitles, 
+    max_gap_ms=700, 
+    max_duration_ms=8000,  # 8s por segmento
+    pad_ms=1, 
+    dedup_adjacent=True
+):
+    """
+    Une líneas si están cerca o solapadas, pero corta:
+      - si hay un gap grande
+      - si la duración supera max_duration_ms
+      - si hay un punto aparte (fin de oración)
+    """
+    if not processed_subtitles:
+        return []
+
+    lines = sorted(processed_subtitles, key=lambda x: (x["start"], x["end"]))
+
+    merged = []
+    cur = {
+        "ids": [lines[0]["id"]],
+        "start": lines[0]["start"],
+        "end": lines[0]["end"],
+        "texts": [lines[0]["text"]],
+        "original_texts": [lines[0].get("original_text", lines[0]["text"])],
+    }
+    last_text = lines[0]["text"]
+    last_end = lines[0]["end"]
+
+    sentence_end_re = re.compile(r"[。．\.!?！？]\s*$")  # signos de final de oración
+
+    for line in lines[1:]:
+        start, end, text = line["start"], line["end"], line["text"]
+        original_text = line.get("original_text", text)
+
+        overlap = (cur["start"] - pad_ms) < end and start < (cur["end"] + pad_ms)
+        close_enough = (start - cur["end"]) <= max_gap_ms
+        duration = end - cur["start"]
+
+        # Condiciones de corte
+        too_long = duration > max_duration_ms
+        prev_ends_sentence = bool(sentence_end_re.search(cur["texts"][-1]))
+
+        if (overlap or close_enough) and not too_long and not prev_ends_sentence:
+            # unir
+            if not (dedup_adjacent and last_text == text and last_end == start):
+                cur["texts"].append(text)
+                cur["original_texts"].append(original_text)
+            cur["ids"].append(line["id"])
+            cur["end"] = max(cur["end"], end)
+            last_text = text
+            last_end = end
+        else:
+            # cortar y guardar
+            merged.append({
+                "id": cur["ids"][0],
+                "start": cur["start"],
+                "end": cur["end"],
+                "text": " ".join(cur["texts"]).strip(),
+                "original_text": " ".join(cur["original_texts"]).strip(),
+            })
+            cur = {
+                "ids": [line["id"]],
+                "start": start,
+                "end": end,
+                "texts": [text],
+                "original_texts": [original_text],
+            }
+            last_text = text
+            last_end = end
+
+    # último segmento
+    merged.append({
+        "id": cur["ids"][0],
+        "start": cur["start"],
+        "end": cur["end"],
+        "text": " ".join(cur["texts"]).strip(),
+        "original_text": " ".join(cur["original_texts"]).strip(),
+    })
+
+    # reindexar
+    for i, seg in enumerate(merged):
+        seg["id"] = i
+
+    return merged
+
+def extract_segments_from_audiobook(
+    audiobook_folder,
+    output_folder,
+    translator,
+    args
+):
+    """
+    Procesa una carpeta de audiolibro que contiene:
+    - archivo.mp3
+    - archivo.srt
+    - cover.jpg
+    - chapters.txt
+    """
+    try:
+        logger.info(f"Processing audiobook folder: {audiobook_folder}")
+        
+        # Buscar archivos necesarios
+        mp3_files = [f for f in os.listdir(audiobook_folder) if f.endswith('.mp3')]
+        srt_files = [f for f in os.listdir(audiobook_folder) if f.endswith('.srt')]
+        cover_files = [f for f in os.listdir(audiobook_folder) if f.lower().endswith(('.jpg', '.jpeg', '.png'))]
+        chapters_files = [f for f in os.listdir(audiobook_folder) if f.lower() == 'chapters.txt']
+        
+        if not mp3_files:
+            logger.error("No se encontró archivo MP3 en la carpeta")
+            return
+        
+        if not srt_files:
+            logger.error("No se encontró archivo SRT en la carpeta")
+            return
+            
+        # Usar el primer archivo encontrado de cada tipo
+        mp3_file = os.path.join(audiobook_folder, mp3_files[0])
+        srt_file = os.path.join(audiobook_folder, srt_files[0])
+        cover_file = os.path.join(audiobook_folder, cover_files[0]) if cover_files else None
+        chapters_file = os.path.join(audiobook_folder, chapters_files[0]) if chapters_files else None
+        
+        # Extraer título del nombre de la carpeta
+        audiobook_title = os.path.basename(audiobook_folder)
+        
+        # Crear carpeta de salida para el audiolibro
+        audiobook_folder_name = map_audiobook_title_to_folder(audiobook_title)
+        audiobook_output_path = os.path.join(output_folder, audiobook_folder_name)
+        os.makedirs(audiobook_output_path, exist_ok=True)
+        
+        # Crear info.json para el audiolibro
+        info_json_path = os.path.join(audiobook_output_path, "info.json")
+        if not os.path.exists(info_json_path):
+            logger.info("Creando info.json para audiolibro...")
+            
+            # Cargar información de capítulos si existe
+            chapters_info = load_chapters_info(chapters_file) if chapters_file else []
+            
+            info_json = {
+                "version": "5",
+                "type": "audiobook",
+                "title": audiobook_title,
+                "folder_name": audiobook_folder_name
+            }
+            
+            # Copiar cover si existe
+            if cover_file and os.path.exists(cover_file):
+                cover_dest = os.path.join(audiobook_output_path, "cover.jpg")
+                shutil.copy2(cover_file, cover_dest)
+                info_json["cover"] = "cover.jpg"
+            
+            # Guardar info.json
+            with open(info_json_path, "w", encoding="utf-8") as f:
+                json.dump(info_json, f, indent=2, ensure_ascii=False)
+        
+        # Procesar subtítulos
+        logger.info("Cargando subtítulos...")
+        subtitles = pysubs2.load(srt_file)
+        
+        # Detectar idioma de los subtítulos
+        subtitle_text = " ".join([event.text for event in subtitles[:10]])  # Usar primeras 10 líneas
+        detected_language = detect(subtitle_text)
+        logger.info(f"Idioma detectado en subtítulos: {detected_language}")
+        
+        # Crear carpeta para segmentos
+        segments_folder = os.path.join(audiobook_output_path, "segments")
+        os.makedirs(segments_folder, exist_ok=True)
+        
+        # Procesar segmentos
+        split_audiobook_by_subtitles(
+            translator,
+            mp3_file,
+            subtitles,
+            segments_folder,
+            detected_language,
+            chapters_file,
+            args
+        )
+        
+        logger.info(f"Audiolibro procesado exitosamente: {audiobook_title}")
+        
+    except Exception as e:
+        logger.error(f"Error procesando audiolibro: {e}", exc_info=True)
+
+def load_chapters_info(chapters_file):
+    """Cargar información de capítulos desde chapters.txt"""
+    chapters = []
+    if not chapters_file or not os.path.exists(chapters_file):
+        return chapters
+    
+    try:
+        with open(chapters_file, 'r', encoding='utf-8') as f:
+            for line_num, line in enumerate(f, 1):
+                line = line.strip()
+                if line:
+                    # Formato esperado: "00:00:00 Capítulo 1"
+                    # o simplemente "Capítulo 1" si no hay timestamps
+                    parts = line.split(' ', 1)
+                    if len(parts) == 2:
+                        time_str, chapter_name = parts
+                        if re.match(r'\d{1,2}:\d{2}:\d{2}', time_str):
+                            chapters.append({
+                                "number": line_num,
+                                "name": chapter_name,
+                                "timestamp": time_str
+                            })
+                        else:
+                            chapters.append({
+                                "number": line_num,
+                                "name": line,
+                                "timestamp": None
+                            })
+                    else:
+                        chapters.append({
+                            "number": line_num,
+                            "name": line,
+                            "timestamp": None
+                        })
+    except Exception as e:
+        logger.warning(f"Error cargando capítulos: {e}")
+    
+    return chapters
+
+def split_audiobook_by_subtitles(
+    translator,
+    audio_file,
+    subtitles,
+    output_folder,
+    subtitle_language,
+    chapters_file,
+    args,
+    output_tsv_name="data.tsv"
+):
+    """Dividir audiolibro en segmentos basándose en subtítulos (con fusión de líneas cercanas)."""
+
+    audio_clip = mp.AudioFileClip(audio_file)
+    chapters_info = load_chapters_info(chapters_file) if chapters_file else []
+    tsv_filepath = os.path.join(output_folder, output_tsv_name)
+    temp_tsv_filepath = os.path.join(output_folder, "data_temp.tsv")
+    # Nuevo: Cargar el TSV existente si lo hay
+    
+    
+    source_tsv_path = tsv_filepath
+    if os.path.exists(temp_tsv_filepath):
+        logger.info(f"Temporary file '{temp_tsv_filepath}' found. Resuming from last interruption.")
+        source_tsv_path = temp_tsv_filepath
+
+    existing_translations = {}
+    if os.path.exists(source_tsv_path):
+        logger.info(f"Existing TSV file found at {source_tsv_path}. Loading for resumption...")
+        with open(source_tsv_path, "r", newline="", encoding="utf-8") as tsvfile:
+            reader = csv.DictReader(tsvfile, delimiter="\t")
+            for row in reader:
+                # Almacenar las traducciones existentes por ID
+                if row.get("ID"): # Asegurarse de que el ID exista
+                    existing_translations[int(row["ID"])] = {
+                        "CONTENT_TRANSLATION_SPANISH": row["CONTENT_TRANSLATION_SPANISH"],
+                        "CONTENT_TRANSLATION_ENGLISH": row["CONTENT_TRANSLATION_ENGLISH"],
+                        "CONTENT_SPANISH_MT": row["CONTENT_SPANISH_MT"],
+                        "CONTENT_ENGLISH_MT": row["CONTENT_ENGLISH_MT"],
+                    }
+
+    # 1) Normalizar/filtrar subtítulos
+    processed_subtitles = []
+    for i, subtitle in enumerate(subtitles):
+        if subtitle.text and subtitle.text.strip():
+            processed_text = process_audiobook_subtitle(subtitle.text, args)
+            if processed_text:
+                processed_subtitles.append({
+                    "id": i,
+                    "start": subtitle.start,  # ms
+                    "end": subtitle.end,      # ms
+                    "text": processed_text,
+                    "original_text": subtitle.text
+                })
+
+    # 2) Fusionar segmentos por proximidad (usa 1100ms por defecto o args.merge_gap_ms si existe)
+    max_gap_ms = getattr(args, "merge_gap_ms", 700)
+    merged_subtitles = merge_audiobook_subtitles(processed_subtitles, max_gap_ms=max_gap_ms, pad_ms=1, dedup_adjacent=True)
+
+    # 3) Emitir TSV y audios
+    # 3) Escribir en un nuevo TSV, utilizando las traducciones existentes
+    temp_tsv_filepath = os.path.join(output_folder, "data_temp.tsv")
+    with open(temp_tsv_filepath, "w", newline="", encoding="utf-8") as tsvfile:
+        writer = csv.DictWriter(
+            tsvfile,
+            fieldnames=AudiobookTsvRow._fields,
+            delimiter="\t",
+            quoting=csv.QUOTE_NONE,
+            escapechar="\\"
+        )
+        writer.writeheader()
+
+        for subtitle_data in merged_subtitles:
+            segment_id = subtitle_data["id"]
+            
+            # Nuevo: Reusar traducciones existentes si ya están hechas
+            if segment_id in existing_translations:
+                # Usar los datos existentes
+                existing_data = existing_translations[segment_id]
+                subtitle_data["translation_spanish"] = existing_data["CONTENT_TRANSLATION_SPANISH"]
+                subtitle_data["translation_english"] = existing_data["CONTENT_TRANSLATION_ENGLISH"]
+                subtitle_data["spanish_is_mt"] = existing_data["CONTENT_SPANISH_MT"]
+                subtitle_data["english_is_mt"] = existing_data["CONTENT_ENGLISH_MT"]
+            else:
+                # Traducir si no hay datos
+                subtitle_data["translation_spanish"] = None
+                subtitle_data["translation_english"] = None
+                subtitle_data["spanish_is_mt"] = None
+                subtitle_data["english_is_mt"] = None
+
+            generate_audiobook_segment(
+                subtitle_data,
+                audio_clip,
+                output_folder,
+                translator,
+                subtitle_language,
+                chapters_info,
+                writer,
+                args
+            )
+
+    audio_clip.close()
+    
+    # Nuevo: Reemplazar el archivo TSV original con el nuevo
+    os.replace(temp_tsv_filepath, tsv_filepath)
+    
+    logger.info(f"Audiolibro procesado exitosamente: {output_folder}")
+
+
+
+def generate_audiobook_segment(
+    subtitle_data,
+    audio_clip,
+    output_folder,
+    translator,
+    subtitle_language,
+    chapters_info,
+    writer,
+    args
+):
+    """Generar un segmento individual del audiolibro"""
+    
+    segment_id = subtitle_data["id"]
+    start_ms = subtitle_data["start"]
+    end_ms = subtitle_data["end"]
+    text = subtitle_data["text"]
+    
+    # Convertir a segundos
+    start_seconds = start_ms / 1000.0
+    end_seconds = end_ms / 1000.0
+    
+    # Determinar capítulo
+    chapter_num = determine_chapter(start_ms, chapters_info)
+    
+    # Nombres de archivos
+    audio_filename = f"{segment_id:06d}.mp3"
+    
+    # Generar audio del segmento (opcional si ya existe)
+    audio_path = os.path.join(output_folder, audio_filename)
+    if not os.path.exists(audio_path) and not args.dryrun:
+        try:
+            audio_segment = audio_clip.subclip(start_seconds, end_seconds)
+            audio_segment.write_audiofile(audio_path, codec="mp3", logger=None)
+            # logger.info(f"Segmento de audio guardado: {text} - {audio_path} ({start_seconds}-{end_seconds})")
+        except Exception as e:
+            logger.error(f"Error generando audio para segmento {segment_id}: {e}")
+            return
+    
+    # Traducciones
+    text_spanish = subtitle_data.get("translation_spanish")
+    text_english = subtitle_data.get("translation_english")
+    spanish_is_mt = subtitle_data.get("spanish_is_mt")
+    english_is_mt = subtitle_data.get("english_is_mt")
+    
+    # Nuevo: Solo traducir si las traducciones no existen
+    if not text_spanish and translator:
+        try:
+            if subtitle_language != "es":
+                text_spanish = translator.translate_text(
+                    text, 
+                    source_lang=subtitle_language.upper(), 
+                    target_lang="ES"
+                ).text
+                spanish_is_mt = "True"
+        except Exception as e:
+            logger.warning(f"Error traduciendo segmento {segment_id} al español: {e}")
+            text_spanish = "" # Evitar rehacer la traducción en el futuro
+    
+    if not text_english and translator:
+        try:
+            if subtitle_language != "en":
+                text_english = translator.translate_text(
+                    text, 
+                    source_lang=subtitle_language.upper(), 
+                    target_lang="EN-US"
+                ).text
+                english_is_mt = "True"
+        except Exception as e:
+            logger.warning(f"Error traduciendo segmento {segment_id} al inglés: {e}")
+            text_english = "" # Evitar rehacer la traducción en el futuro
+            
+    # Asignar texto original si el idioma es el mismo
+    if subtitle_language == "es":
+        text_spanish = text
+        spanish_is_mt = "False"
+    elif subtitle_language == "en":
+        text_english = text
+        english_is_mt = "False"
+
+    logger.info(f"ID: {segment_id} | File: {audio_filename} | Text: '{text}' | MTS: '{text_spanish}' | MTE: '{text_english}'")
+    
+    # Escribir fila en TSV
+    writer.writerow(
+        AudiobookTsvRow(
+            ID=segment_id,
+            CHAPTER_NUM=chapter_num,
+            START_TIME=timedelta(milliseconds=start_ms),
+            END_TIME=timedelta(milliseconds=end_ms),
+            NAME_AUDIO=audio_filename,
+            NAME_SCREENSHOT="", 
+            CONTENT=text,
+            CONTENT_TRANSLATION_SPANISH=text_spanish,
+            CONTENT_TRANSLATION_ENGLISH=text_english,
+            CONTENT_SPANISH_MT=spanish_is_mt,
+            CONTENT_ENGLISH_MT=english_is_mt,
+        )._asdict()
+    )
+
+def determine_chapter(timestamp_ms, chapters_info):
+    """Determinar a qué capítulo pertenece un timestamp"""
+    if not chapters_info:
+        return 1
+    
+    for i, chapter in enumerate(chapters_info):
+        if chapter.get("timestamp"):
+            # Convertir timestamp del capítulo a millisegundos
+            time_parts = chapter["timestamp"].split(":")
+            chapter_ms = (int(time_parts[0]) * 3600 + int(time_parts[1]) * 60 + int(time_parts[2])) * 1000
+            
+            # Si encontramos un capítulo que empieza después de nuestro timestamp
+            if chapter_ms > timestamp_ms:
+                return max(1, i)  # Capítulo anterior
+    
+    return len(chapters_info)  # Último capítulo
+
+def process_audiobook_subtitle(text, args):
+    """Procesar texto de subtítulos para audiolibros"""
+    # Limpiar texto básico
+    processed_text = text.strip()
+    
+    # Remover tags HTML comunes
+    processed_text = re.sub(r'<[^>]+>', '', processed_text)
+    
+    # Remover caracteres especiales de control
+    processed_text = re.sub(r'[\r\n\t]+', ' ', processed_text)
+    
+    # Remover espacios múltiples
+    processed_text = re.sub(r'\s+', ' ', processed_text)
+    
+    return processed_text.strip()
+
+def map_audiobook_title_to_folder(title):
+    """Mapear título de audiolibro a nombre de carpeta"""
+    return "-".join(
+        title.lower().translate(str.maketrans("", "", string.punctuation)).split()
+    )
+
+#####
 def main():
     load_dotenv()
     args = command_args()
@@ -93,52 +583,70 @@ def main():
     input_folder = args.input
     output_folder = args.output
 
-    episode_filepaths = sorted(
-        [
-            os.path.join(root, name)
-            for root, dirs, files in os.walk(input_folder)
-            for name in files
-            if name.endswith(".mkv")
-        ]
-    )
-
-    if not episode_filepaths:
-        logger.error(f"No .mkv files found in {input_folder}! Nothing else to do.")
-        return
-
-    logger.info(f"Found {len(episode_filepaths)} files to process in {input_folder}...")
-
-    media_info = CachedMediaInfo()
-
-    subtitles_dict_remembered = {}
-
-    pool = Pool(6)
-
+    # Selección de tipo de media
     type_media_selection = [
         inquirer.List(
             "media_selection",
             message="What kind of media are you using?",
-            choices=['Anime', 'JDrama']
+            choices=['Anime', 'JDrama', 'Audiobook']
         )
     ]
-    selected_type_media_selection = inquirer.prompt(
-        type_media_selection
-    )
+    selected_type_media_selection = inquirer.prompt(type_media_selection)
     
-    for episode_filepath in episode_filepaths:
-        pool, subtitles_dict_remembered = extract_segments_from_episode(
-            pool,
-            episode_filepath,
-            output_folder,
-            translator,
-            media_info,
-            subtitles_dict_remembered,
-            args,
-            selected_type_media_selection
-        )
+    if selected_type_media_selection["media_selection"] == "Audiobook":
+        # Buscar carpetas de audiolibros
+        audiobook_folders = [
+            os.path.join(input_folder, folder_name)
+            for folder_name in os.listdir(input_folder)
+            if os.path.isdir(os.path.join(input_folder, folder_name))
+        ]
+        
+        if not audiobook_folders:
+            logger.error(f"No se encontraron carpetas de audiolibros en {input_folder}")
+            return
+        
+        logger.info(f"Encontradas {len(audiobook_folders)} carpetas de audiolibros")
+        
+        for audiobook_folder in audiobook_folders:
+            extract_segments_from_audiobook(
+                audiobook_folder,
+                output_folder,
+                translator,
+                args
+            )
+    else:
+        # Código existente para anime/jdrama...
+        episode_filepaths = sorted([
+            os.path.join(root, name)
+            for root, dirs, files in os.walk(input_folder)
+            for name in files
+            if name.endswith(".mkv")
+        ])
 
-    pool.close()
-    pool.join()
+        if not episode_filepaths:
+            logger.error(f"No .mkv files found in {input_folder}! Nothing else to do.")
+            return
+
+        logger.info(f"Found {len(episode_filepaths)} files to process in {input_folder}...")
+
+        media_info = CachedMediaInfo()
+        subtitles_dict_remembered = {}
+        pool = Pool(2)
+        
+        for episode_filepath in episode_filepaths:
+            pool, subtitles_dict_remembered = extract_segments_from_episode(
+                pool,
+                episode_filepath,
+                output_folder,
+                translator,
+                media_info,
+                subtitles_dict_remembered,
+                args,
+                selected_type_media_selection
+            )
+
+        pool.close()
+        pool.join()
 
 def url_clean(url_fragment):
     if url_fragment:
@@ -179,7 +687,9 @@ def extract_segments_from_episode(
             title = anime_info.title.romaji
             logger.info(f"Anime found: {title}\n")
         elif selected_type_media_selection["media_selection"] == 'JDrama':
-            title = getattr(anime_info, 'title', anime_info.name)
+            print(anime_info)
+            # title (movies) -- name (tv)
+            title = getattr(anime_info, 'title', anime_info.title)
 
         # Create folder for saving info.json and segments
         anime_folder_name = map_anime_title_to_media_folder(title)
@@ -209,11 +719,16 @@ def extract_segments_from_episode(
                     "airing_format": anime_info.format,
                     "airing_status": anime_info.status,
                     "genres": anime_info.genres,
-                    "release_date": anime_info.start_date
+                    # "release_date": formatted_date
                 })
 
                 cover_url = anime_info.cover.extra_large
-                banner_url = anime_info.banner
+                try:
+                    banner_url = anime_info.banner
+                except AttributeError:
+                    banner_url = ""
+                    print("WARNING: There is no banner attribute")
+                
 
             elif selected_type_media_selection["media_selection"] == 'JDrama':
                 info_json.update({
@@ -265,9 +780,10 @@ def extract_segments_from_episode(
         logger.debug(f"Subtitle filepaths: {subtitle_filepaths}")
 
         for subtitle_filepath in subtitle_filepaths:
-            subtitle_filename = re.sub(
-                r"\[.*?\]|\(.*?\)", "", os.path.basename(subtitle_filepath)
-            )
+            subtitle_filename = re.sub(r"\[.*?\]|\(.*?\)", "", os.path.basename(subtitle_filepath))
+            if not subtitle_filename.strip():
+                logger.error(f"Nombre de archivo de subtítulo inválido: {subtitle_filepath}")
+                continue
             guessed_subtitle_info = guessit(subtitle_filename)
             if "episode" in guessed_subtitle_info:
                 subtitle_episode = guessed_subtitle_info["episode"]
@@ -625,7 +1141,7 @@ def split_video_by_subtitles(
             #   * Overlap, but gap is smaller than 500
             if not (segment_start < line["end"] and line["start"] < segment_end) or (
                 (segment_start < line["end"] and line["start"] < segment_end)
-                and abs(segment_end - line["start"]) < 850
+                and abs(segment_end - line["start"]) < 1100
             ):
                 if "ja" in segment_sentences and (
                     "en" in segment_sentences or "es" in segment_sentences
@@ -890,7 +1406,7 @@ def process_subtitle_line(line, args):
 
     # Sometimes .ass subtitles include the signs subs on the main dialog
     # Skip all lines that have pos() or move() ass method as it is not a real dialog line
-    if re.search(r"pos\(.*?\)|move\(.*?\)", line.text):
+    if re.search(r"pos\(.*?\)|move\(.*?\)|♬", line.text):
         return ""
 
     # Normaliza half-width (Hankaku) a full-width (Zenkaku) caracteres
@@ -1020,7 +1536,7 @@ class CachedMediaInfo:
             detailed_result = self.client_anilist.get_anime(selected_result.id)
         elif content_type == "JDrama":
             if(selected_result.media_type == "movie"):
-                detailed_result = self.tmdb.multi(selected_result.id).details(append_to_response="external_ids,images,videos")
+                detailed_result = self.tmdb.movie(selected_result.id).details(append_to_response="external_ids,images,videos")
             elif(selected_result.media_type == "tv"):
                 detailed_result = self.tmdb.tv(selected_result.id).details(append_to_response="external_ids,images,videos")
 
