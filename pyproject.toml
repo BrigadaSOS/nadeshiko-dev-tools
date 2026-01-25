@@ -1,0 +1,50 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "media-sub-splitter"
+version = "0.1.0"
+description = "Split video files into audio segments with images and subtitles"
+requires-python = ">=3.10"
+dependencies = [
+    "babelfish>=0.6.1",
+    "boto3>=1.35.0",
+    "deepl>=1.27.0",
+    "ffmpeg-python>=0.2",
+    "ffsubsync>=0.4.19",
+    "guessit>=3.8.0",
+    "jaconvv2>=0.4",
+    "langdetect>=1.0.9",
+    "pysubs2>=1.8.0",
+    "python-anilist>=1.0.9",
+    "python-dateutil>=2.9.0.post0",
+    "python-dotenv>=1.2.1",
+    "questionary>=2.1.1",
+    "requests>=2.32.5",
+    "rich>=14.3.1",
+]
+
+[project.scripts]
+media-sub-splitter = "media_sub_splitter.__main__:main"
+nadeshiko-upload = "media_sub_splitter.uploader_cli:main"
+
+[dependency-groups]
+dev = [
+    "ruff>=0.9.0",
+    "pytest>=9.0.2",
+    "pytest-snapshot>=0.9.0",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "N", "UP", "B", "C4", "SIM"]
+# Remove unused imports and variables automatically
+unfixable = []
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"

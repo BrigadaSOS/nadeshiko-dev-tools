@@ -1,242 +1,242 @@
 ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREENSHOT	CONTENT	CONTENT_TRANSLATION_SPANISH	CONTENT_TRANSLATION_ENGLISH	CONTENT_SPANISH_MT	CONTENT_ENGLISH_MT	ACTOR_JA	ACTOR_ES	ACTOR_EN
-8	8,11,16	7,10,14,17	6,9,12,13,15,18	0:00:16.160000	0:00:25.112000	8.mp3	8.webp	焼き切れちまってる。ハズレだな。こっちに戻すか。カートリッジだ。補充しておいた。助かる。	Está rostizado. -No sirve. -¿Ponemos este de nuevo? El cartucho. Lo repusimos. Gracias.	It's completely burnt out. That won't do. Should we return it to this one? Here are some cartridges. I've got some refills. Thanks.	False	False		mantenimiento,médico,olcott	Doctor (Male),Mechanics,Olcott
-19	19	20	21	0:00:25.112000	0:00:28.515000	19.mp3	19.webp	鎮痛剤のストック 頼めるか?	¿Te encargas de las existencias de analgésicos?	Can I ask you to replenish our stock of painkillers?	False	False		médico	Doctor (Male)
-22	22	24	23	0:00:28.515000	0:00:30.517000	22.mp3	22.webp	ナジに伝えておく。	Le diré a Naji.	I'll let Naji know.	False	False		olcott	Olcott
-26	26	27	28	0:00:34.054000	0:00:36.957000	26.mp3	26.webp	おらっ 食えよ スペーシアン。	Come, Spacian.	Come on! I said eat, Spacian!	False	False		xixia	Seethia
-30	30	31	29,32	0:00:36.950000	0:00:39.960000	30.mp3	30.webp	セド シーシア どうだ?	Sed, Xixia, ¿cómo va?	Sedo, Seethia. How is he?	False	False		olcott	Olcott
-38	38		39	0:00:43.764000	0:00:46.166000	38.mp3	38.webp	ごめん...なんか ぶつぶつ		I'm sorry.		False			Guel
-46	46	48	47	0:00:49.670000	0:00:52.773000	46.mp3	46.webp	父さん ごめん...	Papá, lo siento.	Dad, forgive me.	False	False		guel	Guel
-49	49	50	51	0:00:52.773000	0:00:54.960000	49.mp3	49.webp	ごめん 父さん...	Lo siento, papá.	I'm sorry, Dad...	False	False		guel	Guel
-52	52	53	54,55	0:00:54.808000	0:00:58.512000	52.mp3	52.webp	最後に食べたのは? 3日前。	¿Cuándo comió por última vez?	When did he last eat? Three days ago.	False	False		olcott	Olcott,Seethia
-57	57		58	0:00:58.512000	0:01:00.981000	57.mp3	57.webp	ごめん...		I'm sorry.		False			Guel
-60	60	62	61	0:01:03.050000	0:01:05.118000	60.mp3	60.webp	セド よこせ。う... うん。	Dame eso, Sed.	Sedo, give me that.	False	False		olcott	Olcott
-67	67	68	66	0:01:13.090000	0:01:17.430000	67.mp3	67.webp	グエル・ジェターク お前は 取り引きの持ち札だ。	Guel Jeturk, eres una pieza para negociar.	Guel Jeturk. You can be our bargaining chip in negotiations.	False	False		olcott	Olcott
-69	69,72	71	70	0:01:16.997000	0:01:22.569000	69.mp3	69.webp	ううっ...死んで 楽になれると　思うなよ。ううっ!	No creas que la muerte te dará reposo.	Don't think you can get out of this by dying.	False	False		olcott	Olcott
-95	95	93,97	94,96	0:02:53.720000	0:02:57.497000	95.mp3	95.webp	「撤収する」? ノレアから連絡が来た。	¿Nos retiramos? Llamó Norea.	We're evacuating? We got a message from Norea.	False	False		jalil,naji	Jalil,Naji
-99	99	100	98	0:02:57.440000	0:03:00.133000	99.mp3	99.webp	「ベネリット」グループが 嗅ぎつけたらしい。	Benerit Group está husmeando.	It seems the Benerit Group has sniffed us out.	False	False		naji	Naji
-102	102	103	101	0:03:00.110000	0:03:02.235000	102.mp3	102.webp	避難民は どうするんだ?	¿Y los refugiados?	What about the refugees?	False	False		bessie	Bessie
-105	105	106	104	0:03:02.030000	0:03:04.938000	105.mp3	105.webp	俺は 家族を置いていけない。	No puedo abandonar a mi familia.	I can't leave my family behind.	False	False		philip	Philip
-108	108	109	107	0:03:04.920000	0:03:06.940000	108.mp3	108.webp	受け入れ先を探す。	Buscaremos dónde los acojan.	We'll find a place for them to stay.	False	False		naji	Naji
-111	111	112	110	0:03:06.870000	0:03:09.710000	111.mp3	111.webp	隠れ家にさせてもらった恩は 返すさ。	Los compensaremos por ocultarnos.	We owe them for letting us hide here.	False	False		naji	Naji
-113	113	115	114	0:03:09.643000	0:03:13.547000	113.mp3	113.webp	グリスタンは 輸送機を飛ばす 手筈をつけてくれ。	Gulistan, tú prepara el transporte.	Gristan, prepare to launch transports.	False	False		naji	Naji
-117	117,119	118,120	116,121	0:03:13.250000	0:03:19.180000	117.mp3	117.webp	ほかのみんなは 西の飛行場まで　避難民と物資を運ぶ準備だ。了解。	El resto lleven a los refugiados y los suministros al aeródromo oeste. Recibido.	Everyone else, prepare to take refugees and cargo to the western airfield. Roger!	False	False		naji,todos	All,Naji
-126	126	127	128	0:03:26.526000	0:03:29.780000	126.mp3	126.webp	あなたのせいで ソフィが死んだ。	Sophie murió por tu culpa.	It's your fault Sophie died.	False	False		norea	Norea
-129	129	130	131	0:03:29.529000	0:03:32.632000	129.mp3	129.webp	今度は ナジたちを危険にさらしてる。	Y pusiste en peligro a Naji y los demás.	Now you're putting Naji in danger too.	False	False		norea	Norea
-132	132	133	134	0:03:32.632000	0:03:35.535000	132.mp3	132.webp	大人も子どもも たくさん。	A muchos adultos y niños.	Along with plenty of adults and children.	False	False		norea	Norea
-136	136	137	135	0:03:35.150000	0:03:38.538000	136.mp3	136.webp	あなたの くだらない理想のせいで。	Todo por tus estúpidos ideales.	All because of your silly ideals.	False	False		norea	Norea
-139	139	140	138	0:03:38.360000	0:03:41.280000	139.mp3	139.webp	こーら 落ち着きなよ。	Ya, cálmate.	Now, now! Calm down!	False	False		maisie	Maisie
-141	141	143	142	0:03:41.241000	0:03:44.177000	141.mp3	141.webp	おかしいよ...ん?	Es una locura.	It's not right.	False	False		nika	Nika
-144	144	145	146	0:03:44.177000	0:03:47.080000	144.mp3	144.webp	スペーシアンが憎いからって	Aunque odiemos a los Spacians,	Just because you hate Spacians,	False	False		nika	Nika
-149	149	148	147	0:03:47.070000	0:03:51.084000	149.mp3	149.webp	一方的に暴れて 殺して...	no podemos acosarlos y matarlos como queramos.	you go on a rampage for no reason and kill people...	False	False		nika	Nika
-150	150	151	152	0:03:51.084000	0:03:53.600000	150.mp3	150.webp	不幸をばらまくだけじゃ	Si producimos sufrimiento,	If all you do is cause suffering,	False	False		nika	Nika
-153	153	155	154	0:03:53.520000	0:03:57.390000	153.mp3	153.webp	アーシアンの声なんか 誰も聞いてくれないよ。	nunca escucharán a los Earthians.	no one will ever listen to Earthians' voices.	False	False		nika	Nika
-156	156,159	157	158	0:03:57.390000	0:04:03.196000	156.mp3	156.webp	こんなやり方 間違ってる!　ドカッ! うっ! ぐっ...	¡Esto es un error!	What you're doing is wrong!	False	False		nika	Nika
-160	160	161	162	0:04:03.196000	0:04:05.198000	160.mp3	160.webp	どの口が! ううっ!	¿Cómo te atreves?	How dare you?!	False	False		norea	Norea
-165	165,166,169	164,168	163,170	0:04:05.180000	0:04:16.376000	165.mp3	165.webp	どの口が どの口が どの口が どの口が!　どの口が どの口が どの口が どの口が どの口が どの口が　どの口が どの口がー! はぁ...	¿Cómo te atreves? ¿Cómo te atreves?	How dare you?! How dare you?! How dare you, you jerk?!	False	False		norea	Norea
-172	172	173	171	0:04:16.110000	0:04:18.478000	172.mp3	172.webp	そのへんで やめておけ。	Suficiente.	That's enough.	False	False		sabina	Sabina
-174	174	176	175	0:04:18.478000	0:04:20.914000	174.mp3	174.webp	この生徒は死なせない。ううっ...	No dejaré que muera.	I can't let you kill this student.	False	False		sabina	Sabina
-178	178,180	179,182	177,181	0:04:20.850000	0:04:26.219000	178.mp3	178.webp	お前の自由も こちらが預かっていることを　忘れるな。放せ 裏切り者!	No olvides que tu libertad está en nuestras manos. Suéltame, traidora.	Don't forget that your freedom is in our hands. Don't touch me, traitor!	False	False		norea,sabina	Norea,Sabina
-183	183	185	184	0:04:26.219000	0:04:29.550000	183.mp3	183.webp	うっ...そのクソったれなエゴで	Por tu estúpido ego	Because of her damned ego,	False	False		norea	Norea
-186	186,189	188	187	0:04:29.322000	0:04:35.629000	186.mp3	186.webp	何十 何百という同胞が　「治安活動」の名目で 殺されていきます。	matarán a cientos de compañeros para mantener el orden.	dozens or hundreds of our comrades will be killed in their so-called security operations.	False	False		norea	Norea
-192	192	190	191	0:04:35.600000	0:04:39.050000	192.mp3	192.webp	不幸をばらまいているのは どっちですか?	¿Quién es la que produce sufrimiento?	So tell me, which one of us is causing suffering?	False	False		norea	Norea
-195	195	194	193	0:04:40.910000	0:04:45.138000	195.mp3	195.webp	学園のことなら 俺は いくらでも 手を回せる。	En la escuela puedo extender mis redes.	I can pull the strings to do anything at this school.	False	False		shaddiq	Shaddiq
-196	196,200	198	197,199,201	0:04:45.138000	0:04:51.244000	196.mp3	196.webp	簡単でしたよ 義父さんを捕らえるのも　警備を装うのも。	Fue muy fácil atraparte. Y fingir ser de seguridad.	It was easy. Both detaining you... and impersonating the guards.	False	False		shaddiq	Shaddiq
-203	203,205	204	202,206	0:04:51.210000	0:04:56.082000	203.mp3	203.webp	「グラスレー」の後継だけなら　機会は いつでもあっただろう。	Tuviste más oportunidades de suceder a Grassley.	If all you wanted was to inherit Grassley, you had plenty of chances.	False	False		sarius	Sarius
-207	207	209	208,210	0:04:56.082000	0:05:00.553000	207.mp3	207.webp	お前が狙っているのは 総裁の座か?	¿Aspiras a la presidencia general?	Is your real objective... the Presidency of the Group?	False	False		sarius	Sarius
-211	211	213	212	0:05:00.553000	0:05:02.889000	211.mp3	211.webp	果たしたいことがあるんです。	Quiero hacer una cosa.	I have a goal to accomplish.	False	False		shaddiq	Shaddiq
-214	214	216	215	0:05:02.889000	0:05:08.561000	214.mp3	214.webp	宇宙開発事業の莫大な費用を 裏で支える 戦争シェアリング。	La economía colaborativa de guerra sostiene el desarrollo espacial.	We covertly finance the massive costs of space development through war partitioning.	False	False		shaddiq	Shaddiq
-217	217	219	218,220	0:05:08.561000	0:05:12.666000	217.mp3	217.webp	俺はね 義父さん これを壊したいんですよ。	Y yo quiero destruirla, papá.	So you see, Father... I want to break this system.	False	False		shaddiq	Shaddiq
-221	221,226	222,225,227	223,224,228	0:05:12.666000	0:05:19.840000	221.mp3	221.webp	浅はかだな。戦争シェアリングの利権構造は　不可侵だ。たやすく崩せば...	Qué superficial. Su sistema de intereses es impenetrable. Si se desmorona sin...	Shallow nonsense... The vested-interest structure of war partitioning is untouchable. If you break it apart rashly...	False	False		sarius	Sarius
-229	229	231	230	0:05:19.673000	0:05:23.100000	229.mp3	229.webp	地球は 代理戦争で疲弊。	Las guerras indirectas empobrecieron a la Tierra.	The Earth will be exhausted by proxy wars	False	False		shaddiq	Shaddiq
-233	233	232	234	0:05:22.960000	0:05:25.630000	233.mp3	233.webp	企業は 限られたパイの奪い合い。	Se pelean por las pocas industrias que hay	and corporations will scramble for the shrunken pie.	False	False		shaddiq	Shaddiq
-235	235	237	236	0:05:25.612000	0:05:28.548000	235.mp3	235.webp	利益も先細りの一途でしょう。	y los beneficios caerán más.	Profits will likely evaporate, too.	False	False		shaddiq	Shaddiq
-240	240	239	238	0:05:28.420000	0:05:31.017000	240.mp3	240.webp	もっといい方法があります。	Hay una solución mejor.	But I have a better idea.	False	False		shaddiq	Shaddiq
-241	241,244	243	242	0:05:31.017000	0:05:36.022000	241.mp3	241.webp	「ベネリット」グループの資産を　全て 地球に 売ってしまえばいいんですよ。	Vender a la Tierra todos los bienes de Benerit Group.	We merely need to sell all the Benerit Group's assets to Earth.	False	False		shaddiq	Shaddiq
-246	246	247	245	0:05:36.010000	0:05:38.058000	246.mp3	246.webp	地球に?	¿A la Tierra?	To Earth?	False	False		sarius	Shaddiq
-248	248	250	249	0:05:38.058000	0:05:40.994000	248.mp3	248.webp	いつ 戦争が起きるか分からない。	La guerra puede estallar en cualquier momento.	Who knows when the next war will start.	False	False		shaddiq	Shaddiq
-252	252	253	251	0:05:40.980000	0:05:43.997000	252.mp3	252.webp	地球と企業の 緊張関係を利用して	Con esa tensión entre la Tierra y las empresas	We'll use the friction between Earth and the corporations	False	False		shaddiq	Shaddiq
-256	256	254	255	0:05:43.940000	0:05:47.167000	256.mp3	256.webp	抑止力という経済を 生み出すんです。	se puede crear una economía de disuasión.	to create a situation that works as deterrence.	False	False		shaddiq	Shaddiq
-259	259	258	257	0:05:46.850000	0:05:51.670000	259.mp3	259.webp	そうすれば 地球で 戦争を起こす必要もなくなります。	Así no será necesario iniciar una guerra en la Tierra.	If we do that, no one will have any need to start wars on Earth.	False	False		shaddiq	Shaddiq
-261	261,264	263	262	0:05:53.707000	0:05:59.779000	261.mp3	261.webp	お前は アーシアンとのハーフだったな　紛争エリアの。	Eres mitad Earthian, ¿no? De un área en conflicto.	Since you're half-Earthian, are you trying to give weapons...	False	False		sarius	Sarius
-265	265,269	267	266,268	0:05:59.779000	0:06:05.510000	265.mp3	265.webp	地球に武力を与えて　スペーシアンへの怨嗟を 晴らしたいだけではないのか?	¿De seguro no quieres darle poder a la Tierra por despecho?	to a conflict area like Earth as a way to work off your grudge against Spacians?	False	False		sarius	Sarius
-270	270	271	272	0:06:05.352000	0:06:09.122000	270.mp3	270.webp	ふっ 恨みで 腹は満たせませんよ。	El odio no llena la tripa.	Grudges won't fill an empty stomach.	False	False		shaddiq	Shaddiq
-273	273,277	274,278	275,276	0:06:09.122000	0:06:14.930000	273.mp3	273.webp	ですが スペーシアンだけが権益を持ち　搾取する今のままでは	Pero si los Spacians siguen monopolizando y explotando todos los privilegios,	Then again, as long as Spacians alone control all the interests and keep exploiting us,	False	False		shaddiq	Shaddiq
-279	279	281	280	0:06:14.894000	0:06:17.664000	279.mp3	279.webp	力がなければ 何も変わらない。	nada cambiará sin obtener poder antes.	one can't do anything without power.	False	False		shaddiq	Shaddiq
-283	283,286	284	282,285,287	0:06:17.570000	0:06:23.269000	283.mp3	283.webp	だったら 俺は その力を　奪い取る。	Por tanto, les arrebataré ese poder.	That's why... I'll be the one who seizes... that power.	False	False		shaddiq	Shaddiq
-299	299	301	300	0:06:34.647000	0:06:37.617000	299.mp3	299.webp	コピー。	Recibido.	Copy that!	False	False		capitán guarnición	Garrison Commander
-302	302,305	304,306	303	0:06:37.617000	0:06:43.623000	302.mp3	302.webp	なーんで 俺たちドミニコスじゃなくて　グループのセキュリティ・フォースが 動くんです?	¿Por qué van las fuerzas de seguridad del grupo en lugar de Dominicus?	Why aren't we Dominicus being sent out rather than the Group's security forces?	False	False		kenanji	Kenanji
-307	307	309	308	0:06:43.623000	0:06:47.627000	307.mp3	307.webp	学園の事件 もう 外にバレはじめてますよ。	El incidente de la escuela empieza a filtrarse afuera.	News of the incident at the school has already leaked to the outside.	False	False		kenanji	Kenanji
-310	310	311,313	312	0:06:47.627000	0:06:52.499000	310.mp3	310.webp	役員決定だ。カテドラルに 借りを作りたくないのだろう。	Órdenes de los directivos. No han de querer decirle nada a Cathedral.	It was the board's decision. They don't want to owe anything to Cathedra.	False	False		rajan	Rajan
-316	316	314	315	0:06:52.440000	0:06:56.069000	316.mp3	316.webp	企業が 独断で 動いちゃっていいんですかねぇ。	¿Y una empresa puede actuar por cuenta propia?	Is this something corporations should handle on their own?	False	False		kenanji	Kenanji
-318	318	319	317	0:06:56.050000	0:06:58.605000	318.mp3	318.webp	嫌な予感がするなぁ。んん...	Tengo un mal presentimiento.	I have a bad feeling about this.	False	False		kenanji	Kenanji
-321	321	322	320,323	0:06:58.590000	0:07:01.541000	321.mp3	321.webp	あるいは それが ねらいか...えっ?	Quizás esa sea la intención.	Or maybe what they want is... Huh?	False	False		rajan	Kenanji,Rajan
-324	324	325	326	0:07:01.541000	0:07:05.345000	324.mp3	324.webp	来客だ。また連絡する。ピッ	Tengo visita. Te llamo luego.	I have a visitor. I'll be in touch.	False	False		rajan	Rajan
-327	327	329	328	0:07:05.345000	0:07:07.981000	327.mp3	327.webp	こちらから出向きましたのに。	Podía haber ido a buscarla.	Thank you for coming to see me.	False	False		rajan	Rajan
-330	330	332	331	0:07:07.981000	0:07:09.983000	330.mp3	330.webp	いかがなさいました?	¿Qué sucede?	What can I do for you?	False	False		rajan	Rajan
-334	334	335	333	0:07:09.960000	0:07:12.420000	334.mp3	334.webp	教えてもらいたいことがあるの。	Quiero que me expliques algo.	There's something I'd like you to tell me.	False	False		miorine	Miorine
-336	336	338	337	0:07:12.152000	0:07:14.320000	336.mp3	336.webp	私に?	¿Yo?	Me?	False	False		rajan	Rajan
-339	339	341	340	0:07:14.320000	0:07:17.357000	339.mp3	339.webp	クワイエット・ゼロって何?	¿Qué es Quiet Zero?	What is Quiet Zero?	False	False		miorine	Miorine
-342	342,346	344,347,351	343,345,348,350	0:07:17.357000	0:07:23.040000	342.mp3	342.webp	備蓄は 次に回して! 病人は こっちよ。持ってきてくれ。頼むよ ベッシ。	Las reservas, al siguiente. Trae eso. Vamos, Bessie.	Save the stockpiles for the next one! The sick are this way! Bring that here! Come on, Bessie!	False	False		jalil,refugiados	Jalil,Refugees
-352	352	354	353	0:07:22.996000	0:07:25.480000	352.mp3	352.webp	ポイントマンは任せてくれって。	Déjame ser el guardagujas.	Let me be the point man for this one!	False	False		jalil	Jalil
-355	355	357	356	0:07:25.398000	0:07:27.980000	355.mp3	355.webp	ジャリル 作戦 聞いてたか?	¿Oíste cuál es el plan, Jalil?	Didn't you hear the mission brief, Jalil?	False	False		bessie	Bessie
-358	358	359	360	0:07:27.767000	0:07:30.100000	358.mp3	358.webp	ひよっこが 経験ねぇくせに。	Si no tienes experiencia.	You have no experience, rookie.	False	False		philip	Philip
-361	361	363,364	362,365	0:07:29.903000	0:07:34.320000	361.mp3	361.webp	プラントで活躍したろ。あんたこそ 何 ビビってんだよ。	Ya destaqué en la planta. ¿Por qué tienes tanto miedo?	I proved myself at the plant! Meanwhile, you're acting like a fraidy-cat.	False	False		jalil	Jalil
-366	366,369	368	367,370,371	0:07:33.873000	0:07:39.280000	366.mp3	366.webp	くっ! 俺は お前と違ってな...フィリップ! 気にし過ぎんな。	A diferencia de ti... -Philip, que no te afecte.	Unlike you, I have- Phillip! Don't lose your cool.	False	False		philip/bessie	Bessie,Philip
-372	372	374	373	0:07:39.079000	0:07:41.514000	372.mp3	372.webp	んっ... 悪い。	Perdón.	Sorry.	False	False		philip	Philip
-377	377	376	375	0:07:41.330000	0:07:44.530000	377.mp3	377.webp	家族のこと考えると つい...	Es que al pensar en mi familia...	It's just that when I think of my family...	False	False		philip	Philip
-378	378	380	379	0:07:44.451000	0:07:48.160000	378.mp3	378.webp	オルコットさんは? 荷物 まとめなくていいの?	¿Olcott no guardará sus cosas?	Where's Mr. Olcott? Shouldn't he be packing too?	False	False		jalil	Jalil
-381	381	383	382	0:07:48.021000	0:07:51.024000	381.mp3	381.webp	あいつは 私物なんざ 持っちゃいねぇよ。	No tiene nada.	That guy doesn't have any personal belongings.	False	False		bessie	Bessie
-384	384	386	385	0:07:51.024000	0:07:54.870000	384.mp3	384.webp	昔に ぜーんぶ捨てちまったからな。	Lo tiró todo hace tiempo.	He threw them all away long ago...	False	False		bessie	Bessie
-388	388	389	390	0:07:59.132000	0:08:01.768000	388.mp3	388.webp	ソフィの墓なんだとさ。	Es la tumba de Sophie.	They say it's a grave for Sophie.	False	False		naji	Naji
-392	392	393	391	0:08:01.540000	0:08:04.871000	392.mp3	392.webp	あいつは ガキどものヒーローだったからな。	Era la heroína de los niños.	She was a hero to the kids, after all.	False	False		naji	Naji
-394	394	395	396	0:08:04.871000	0:08:07.807000	394.mp3	394.webp	撤退するってのに 余計なものを...	Ya nos retiramos. No era necesario.	We don't have time for this in an evacuation.	False	False		olcott	Olcott
-397	397	398	399	0:08:07.807000	0:08:10.243000	397.mp3	397.webp	忘れたくないのさ。	No quieren olvidarla.	They don't want to forget.	False	False		naji	Naji
-400	400,405	401,403	402,404	0:08:10.243000	0:08:16.950000	400.mp3	400.webp	忘れたら いつ死んじまうのかって恐怖に　耐えられなくなる。	Si la olvidan, no soportarán el miedo a no saber cuándo van a morir.	If they do, they'll be overwhelmed by the fear that they could die next.	False	False		naji	Naji
-407	407	408	406	0:08:16.760000	0:08:21.454000	407.mp3	407.webp	死人にすがれば 恐怖が消えるのか?	¿Y aferrarse a los muertos hace que olivdes el miedo?	Will pleading to the dead erase that fear?	False	False		olcott	Olcott
-409	409	411	410	0:08:21.454000	0:08:24.320000	409.mp3	409.webp	お前さんなら 分かるんじゃないのかい?	Tú deberías saberlo, ¿no?	You, of all people, should understand.	False	False		naji	Naji
-412	412	413	414	0:08:25.792000	0:08:27.794000	412.mp3	412.webp	忘れたよ。	Lo olvidé.	I've forgotten...	False	False		olcott	Olcott
-417	417	418	416,419	0:08:29.480000	0:08:33.399000	417.mp3	417.webp	受け入れ先が見つかった。第1便は いつでも出せる。	Tenemos receptores. El primer grupo ya puede salir.	We found a place for the refugees. The first flight can leave at any time.	False	False		gulistan	Gristan
-421	421	422	420	0:08:33.280000	0:08:36.035000	421.mp3	421.webp	分かった。俺も行く。	Bien. Yo también iré.	Understood. I'll go too.	False	False		naji	Naji
-425	425	424	423,426	0:08:35.830000	0:08:40.220000	425.mp3	425.webp	お前ら さっさと 車に乗れ! 置いてくぞ!	¡Suban a un auto si no quieren que los dejemos aquí!	You there! Get in the vehicle! You'll be left behind!	False	False		naji	Naji
-427	427	428,430	429,431	0:08:41.474000	0:08:46.012000	427.mp3	427.webp	明朝5時に 輸送機を飛ばす。こっちは頼んだ。	Saldremos a las cinco de la madrugada. Cuento contigo aquí.	The transports will take off at 5 o'clock in the morning. Take care of the rest.	False	False		naji	Naji
-434	434	432	433	0:08:45.980000	0:08:48.982000	434.mp3	434.webp	俺たちモビルスーツ班は ここに残る。	El equipo de Mobile Suits se queda.	We mobile suit pilots will stay here.	False	False		olcott	Olcott
-437	437	436	435	0:08:48.900000	0:08:51.317000	437.mp3	437.webp	いつ 敵が来るか分からないからな。	Podría venir el enemigo.	There's no telling when the enemy could come.	False	False		olcott	Olcott
-439	439	440,442	438,441	0:08:51.050000	0:08:54.480000	439.mp3	439.webp	囮か。みんな 覚悟はしている。	¿Los distraerán? Estamos convencidos.	You'll act as decoys? We're all prepared.	False	False		naji,olcott	Naji,Olcott
-443	443	444	445	0:08:56.089000	0:08:58.191000	443.mp3	443.webp	あの御曹司は どうする?	¿Qué haremos con el heredero?	What about the little prince?	False	False		naji	Naji
-446	446	447	448	0:08:58.191000	0:09:00.970000	446.mp3	446.webp	もしものときは 取り引きに使う。	Lo usaré para negociar si ocurre algo.	If necessary, we'll use him as a bargaining chip.	False	False		olcott	Olcott
-449	449	451	450	0:09:00.894000	0:09:03.990000	449.mp3	449.webp	無理を言って連れてきたのも 俺だしな。	Fui yo el que insistió en traerlo.	I'm the one who insisted on bringing him, after all.	False	False		olcott	Olcott
-452	452	453	454,455	0:09:03.963000	0:09:08.200000	452.mp3	452.webp	ふっ 律儀だね お前さんは。	Eres demasiado honrado.	How honorable. That's just like you.	False	False		naji	Naji
-456	456	457	458	0:09:10.770000	0:09:12.805000	456.mp3	456.webp	チェーンガン なしでいくんですか?	¿Iremos sin cañón de cadena?	You're not bringing a chain gun?	False	False		mantenimiento A	Mechanic A
-460	460	461	459	0:09:12.730000	0:09:15.775000	460.mp3	460.webp	俺は なんでも 軽いのが好きなの。	A mí me gusta todo lo ligero.	I like to keep everything lightweight.	False	False		bessie	Bessie
-462	462	463	464	0:09:15.775000	0:09:18.311000	462.mp3	462.webp	プロドロス 出すぞ。	Vamos allá, Prodoros.	Prodoros! Let's go!	False	False		bessie	Bessie
-465	465	467	466	0:09:18.311000	0:09:21.370000	465.mp3	465.webp	駐留部隊は 早ければ 今夜中に来る。	La guarnición llegará esta noche como muy pronto.	The garrison forces could arrive as early as tonight.	False	False		gulistan	Gristan
-468	468	470	469	0:09:21.281000	0:09:24.284000	468.mp3	468.webp	移送に気付かれないことが 最優先だ。	Lo vital es que no sepan que nos movemos.	The priority is to keep them from detecting the evacuation.	False	False		gulistan	Gristan
-471	471	472	473,474	0:09:24.284000	0:09:28.260000	471.mp3	471.webp	こちらからは仕掛けるな。戦闘は 極力 回避しろ。	No ataquen primero. Eviten los combates.	Don't attack first. Avoid fighting if you can.	False	False		gulistan	Gristan
-475	475,480	476,478	477,479,481	0:09:27.987000	0:09:34.400000	475.mp3	475.webp	会敵した場合 輸送機が 無事に飛び立つまで　十分に敵を引き付けて 時間を稼げ。	Si hay enemigos, entreténganlos hasta que el convoy esté a salvo.	If you encounter them, try to draw the enemy's fire to buy time for the transports to take off.	False	False		gulistan	Gristan
-482	482	485	483	0:09:34.193000	0:09:36.196000	482.mp3	482.webp	了解。	Recibido.	Roger!	False	False		todos	All (Minus Gristan & Olcott)
-490	490	489		0:09:41.100000	0:09:43.169000	490.mp3	490.webp	残りは2割ほどよ。	Queda un 20 %.		False			mujer	
-493	493	494	492	0:09:42.720000	0:09:45.838000	493.mp3	493.webp	あと3時間で積み終わると思う。	Estará cargado en tres horas.	We should finish loading in three hours.	False	False		mujer	Member (Woman)
-495	495,500	496,499	497,498	0:09:45.838000	0:09:50.944000	495.mp3	495.webp	終わったら連絡をくれ。ベッシたちと合流する。ピィー	Avísame cuando acaben. Me reuniré con Bessie.	Send word when you're done. We'll rendezvous with Bessie's team.	False	False		olcott	Olcott
-502	502,505	504	503,506	0:09:53.880000	0:09:58.952000	502.mp3	502.webp	暑ぃー。ったく 夜だってのによぉ。	Qué calor. Y eso que es de noche.	Damn, it's hot. It's the middle of the night, too...	False	False		jalil	Jalil
-510	510,514	508,513	509,512,516	0:10:03.420000	0:10:10.263000	510.mp3	510.webp	放して! 放してよ! なぜ ここにいる?　さっさと トラックに乗れ。だ... だって...	¡Suéltame! ¿Qué hacen acá? Suban a un camión.	Let go! Why are you here? Get in the truck, now.	False	False		olcott,xixia	Olcott,Seethia
-520	520		519	0:10:10.080000	0:10:12.599000	520.mp3	520.webp	乗れ。あっ...		Get in.		False			Olcott
-521	521	522	523	0:10:12.599000	0:10:15.001000	521.mp3	521.webp	プラントから	Me prometió...	He promised...	False	False		xixia	Seethia
-524	524	525	526	0:10:15.001000	0:10:19.005000	524.mp3	524.webp	必ず帰るって約束したのに...	que regresaría de la planta.	that he'd come back from the plant.	False	False		xixia	Seethia
-527	527	529	528	0:10:19.005000	0:10:23.240000	527.mp3	527.webp	なんで 父さんじゃなくて お前なんだよ!	¿Por qué regresaste tú y no mi papá?	So instead of Dad, why'd they bring you back?!	False	False		xixia	Seethia
-530	530	531	532	0:10:24.043000	0:10:27.046000	530.mp3	530.webp	なんで...	¿Por qué?	Why...	False	False		guel	Guel
-533	533	534	535	0:10:27.046000	0:10:31.050000	533.mp3	533.webp	父さんじゃなくて 俺なんだ...	¿Por qué yo y no papá?	Why me and not Dad?	False	False		guel	Guel
-536	536,540	537	538,539,541	0:10:31.050000	0:10:37.423000	536.mp3	536.webp	俺が死んでいれば　父さんは...	Si hubiera muerto yo, papá...	If I... If I had died... Dad...	False	False		guel	Guel
-542	542,546	544	543,545	0:10:37.423000	0:10:43.296000	542.mp3	542.webp	そうだ! お前が死んでれば　私の父さんは...	¡Sí! ¡Si estuvieras muerto, mi padre...!	That's right! If you'd died, my Dad would be...	False	False		xixia	Seethia
-547	547	548	549	0:10:43.296000	0:10:46.032000	547.mp3	547.webp	返してよ うぅ...	Regrésamelo.	Give him back.	False	False		xixia	Seethia
-550	550	551	552	0:10:46.032000	0:10:49.602000	550.mp3	550.webp	父さんを返してよ...	¡Regrésame a mi papá!	Give me back my Daddy.	False	False		xixia	Seethia
-556	556		557	0:10:55.942000	0:10:58.190000	556.mp3	556.webp	こいつも連れてくの? ああ。		Yes.		False			Olcott
-565	565,568	566,569	567,570,571	0:11:05.485000	0:11:13.593000	565.mp3	565.webp	だとしてもだ。最悪 盾として使う。んっ... 潰れるって 本当か?	No importa. Siempre podría servir de escudo. ¿De verdad quebrará?	Even if that's true, we can always use him as a shield. Bankrupt... Is that true?	False	False		guel,olcott	Guel,Olcott
-572	572	573,576	574,575	0:11:13.593000	0:11:18.940000	572.mp3	572.webp	教えてくれ。か... 家族のことなんだ。	Cuéntamelo. Es mi familia.	Tell me! Th-This is about my family!	False	False		guel	Guel
-578	578	577	579,580	0:11:20.500000	0:11:23.436000	578.mp3	578.webp	駐留部隊...マジで来やがった。	La guarnición sí que vino.	The garrison forces! They really came!	False	False		jalil	Jalil
-587	587	589	588	0:11:41.688000	0:11:44.157000	587.mp3	587.webp	あのバカ! マチェイ!	Será idiota... ¡Machey!	That fool! Machei!	False	False		gulistan	Gristan
-591	591	592	590	0:11:43.970000	0:11:46.993000	591.mp3	591.webp	了解。ECMジャマー展開。	Recibido. ECM jammer desplegado.	Roger. Deploying ECM jammers.	False	False		machey	Machei
-595	595	594	593,596	0:11:46.910000	0:11:49.280000	595.mp3	595.webp	ジャリルの援護に 向かう。フィリップ!	Iré a ayudar a Jalil. ¡Philip!	I'll head out and assist Jalil. Phillip!	False	False		bessie	Bessie
-597	597	598	599,600	0:11:48.995000	0:11:52.320000	597.mp3	597.webp	やっぱ こうなんのかよ。ちくしょう!	Sabía que ocurriría esto. ¡Rayos!	I knew this would happen... Damn it!	False	False		philip	Philip
-601	601	603	602	0:11:52.165000	0:11:54.734000	601.mp3	601.webp	スペーシアンがー! ダダダダッ!	¡Malditos Spacians!	You damn Spacians!	False	False		jalil	Jalil
-604	604	605	606	0:11:54.734000	0:11:57.870000	604.mp3	604.webp	ズール2よりズール1。地上より攻撃を受けた。	Suhl 2 a Suhl 1. Nos atacan desde la superficie.	Zulu 2 to Zulu 1! We're under attack from the ground.	False	False		suhl 2	Zulu 2
-607	607	609	608	0:11:57.737000	0:12:01.360000	607.mp3	607.webp	長距離通信は不能。降下して 掃討に当たる。	Radio a distancia invalidada. Descenderé a eliminarlos.	Long-range comms are useless. Descend and wipe them out.	False	False		suhl 2	Zulu 2
-610	610,613	612	611	0:12:01.107000	0:12:06.145000	610.mp3	610.webp	了解。全機 降下して 無力化せよ。バシュン!	Recibido. Desciendan todos a incapacitarlos.	Roger! All units, descend and neutralize!	False	False		suhl leader	Zulu Leader
-614	614	616	615	0:12:06.145000	0:12:08.160000	614.mp3	614.webp	当たるかよ! あっ。	¡No me darán!	You can't hit me!	False	False		jalil	Jalil
-621	621,625	622,624	620,623	0:12:22.260000	0:12:27.100000	621.mp3	621.webp	学校が...オルコット。応答しろ オルコット。ちっ!	La escuela... Olcott. ¡Responde, Olcott!	The school! Olcott! Come in, Olcott!!	False	False		jalil,naji	Jalil,Naji
-627	627	628	629,630	0:12:27.100000	0:12:29.936000	627.mp3	627.webp	ナジ 敵は モビルスーツ4機だ。	Naji, son cuatro Mobile Suits.	Naji! There are four enemy mobile suits!	False	False		gulistan	Gristan
-631	631	633	632,634	0:12:29.936000	0:12:33.600000	631.mp3	631.webp	移送の状況は? 2台 出ている。	¿Cómo va el transporte? -Salieron dos vehículos.	What about the evacuees? Two vehicles have left!	False	False		gulistan/naji	Gristan,Naji
-635	635	636	637	0:12:34.407000	0:12:36.909000	635.mp3	635.webp	なんとか 注意をそらせてくれ。ダダダダッ!	Tienen que distraerlos.	Just keep distracting them somehow!	False	False		naji	Naji
-638	638,641	639,643	640,642	0:12:36.909000	0:12:42.310000	638.mp3	638.webp	ダダダダッ! ジャリル　合流できるか? あ... ああ。すまねぇ。	¿Puedes reunirte conmigo? Sí. Gracias.	Jalil! Can you make the rendezvous? Y-Yes... I'm sorry about this!	False	False		bessie,jalil	Bessie,Jalil
-644	644,647	645,649	646,648	0:12:42.115000	0:12:46.452000	644.mp3	644.webp	フィリップ ヤツらを 工場エリアに誘い込む。了解。	Philip, atráelos a la zona industrial. Recibido.	Phillip! Draw them toward the factory area! Roger!	False	False		bessie,philip	Bessie,Philip
-652	652	651	650,653	0:12:46.320000	0:12:49.400000	652.mp3	652.webp	こっちだ。来いよ ワンちゃん。	¡Por acá, perritos!	This way... Follow me, you dogs!	False	False		philip	Philip
-669	669		670	0:13:05.705000	0:13:07.673000	669.mp3	669.webp	パ...		Da...		False			Olcott's Son
-671	671	673	672	0:13:09.342000	0:13:12.078000	671.mp3	671.webp	パ...	pá.	...ddy...	False	False		hijo olcott	Olcott's Son
-678	678	677	679	0:13:15.440000	0:13:18.050000	678.mp3	678.webp	セド...オルコット。	¿Sed?	Sedo...	False	False		olcott	Olcott
-682	682	683	684	0:13:18.050000	0:13:21.460000	682.mp3	682.webp	体...義手だ。死にはしない。	Es ortopédico. No moriré.	The arm's artificial. I won't die.	False	False		olcott	Olcott
-693	693	692	694	0:13:34.460000	0:13:37.603000	693.mp3	693.webp	シーシアは もう助からん。えっ?	Xixia no sobrevivirá.	We can't help her now.	False	False		olcott	Olcott
-695	695	696	697	0:13:37.603000	0:13:40.140000	695.mp3	695.webp	お前一人で 移送に合流しろ。	Ve al convoy tú solo.	Join the evacuation by yourself.	False	False		olcott	Olcott
-698	698		701	0:13:40.039000	0:13:42.942000	698.mp3	698.webp	でも! 諦めろ。		Give it up.		False			Olcott
-703	703	702	704	0:13:42.940000	0:13:46.579000	703.mp3	703.webp	行け。くっ...	Vete.	Go!	False	False		olcott	Olcott
-706	706	708	707	0:13:52.351000	0:13:54.320000	706.mp3	706.webp	潰れたか。	¿Lo aplastó?	Was he crushed?	False	False		olcott	Olcott
-710	710	711	712	0:14:00.359000	0:14:02.760000	710.mp3	710.webp	父さん...	Papá...	Daddy...	False	False		xixia	Seethia
-714	714	716	715	0:14:11.370000	0:14:13.372000	714.mp3	714.webp	マチェイ! ピピピピッ...	¡Machey!	Machei!	False	False		bessie	Bessie
-718	718	720	719	0:14:16.709000	0:14:18.678000	718.mp3	718.webp	やったー!	¡Genial!	Got one!	False	False		jalil	Jalil
-721	721		722	0:14:20.313000	0:14:22.281000	721.mp3	721.webp	あっ? バシュー!		Huh?		False			Jalil
-723	723	725	724	0:14:25.084000	0:14:27.086000	723.mp3	723.webp	ジャリル!	¡Jalil!	Jalil!	False	False		philip	Philip
-727	727	726	728	0:14:26.920000	0:14:30.857000	727.mp3	727.webp	やりやがったな くそがー! ダダダダッ!	¡Son unos desgraciados!	You've done it now, you bastards!	False	False		philip	Philip
-729	729	731	730,732	0:14:30.857000	0:14:33.850000	729.mp3	729.webp	フィリップ 落ち着け! まともに やり合うな!	¡Cálmate, Philip! ¡No luches de frente!	Phillip, stay calm! Don't fight them head on!	False	False		bessie	Bessie
-734	734	736	735,737	0:14:42.401000	0:14:45.671000	734.mp3	734.webp	マチェイ! 今のうちに距離を。あっ。	¡Machey! -Hemos de alejarnos.	Machei! Get some distance while you...	False	False		bessie/machey	Bessie,Machei
-739	739	741	740	0:14:52.478000	0:14:54.647000	739.mp3	739.webp	もう一機いただと!?	¿Había otro más?	There was another one?	False	False		piloto heavy A	Heavy A Pilot
-746	746	747	745,748	0:15:07.920000	0:15:10.120000	746.mp3	746.webp	オルコット。生きてるな。	¡Olcott! -¿Estás vivo?	Olcott! Still alive, huh?	False	False		machey/olcott	Machei,Olcott
-749	749	751	750,752	0:15:09.996000	0:15:12.465000	749.mp3	749.webp	まだやれるか? ああ。	¿Puedes seguir? -Sí.	Can you go on? Yeah.	False	False		olcott/machey	Machei,Olcott
-753	753	755	754	0:15:12.465000	0:15:14.820000	753.mp3	753.webp	すまん ジャリルがやられた。	Lo siento. Mataron a Jalil.	Forgive me. We lost Jalil.	False	False		bessie	Bessie
-756	756,762	758,760	757,759,761	0:15:14.634000	0:15:19.438000	756.mp3	756.webp	そうか。オルコット。もうすぐ 最後の1台が出る。	Ya veo. Olcott, pronto saldrá el último.	I see. Olcott! The last vehicle is about to leave!	False	False		naji,olcott	Naji,Olcott
-763	763	764	765	0:15:19.438000	0:15:21.474000	763.mp3	763.webp	頼んだ。	Cuento contigo.	We're counting on you!	False	False		naji	Naji
-772	772	773	774	0:15:42.562000	0:15:45.140000	772.mp3	772.webp	はぁ はぁ... 車の音。	Oigo un auto.	I hear a vehicle!	False	False		guel	Guel
-776	776	777	778,779	0:15:47.633000	0:15:52.310000	776.mp3	776.webp	なんだよ... 何がしたいんだよ お前。	¿Qué pretendes hacer?	Why... What is it you want?	False	False		xixia	Seethia
-781	781	780	782	0:15:53.530000	0:15:56.008000	781.mp3	781.webp	分からない。	No lo sé.	I don't know.	False	False		guel	Guel
-783	783	784	785,786	0:15:56.008000	0:15:59.278000	783.mp3	783.webp	何がしたいんだ 俺は。	No sé qué quiero.	I don't know what I want. I...	False	False		guel	Guel
-788	788	789	787	0:16:01.730000	0:16:04.750000	788.mp3	788.webp	フィリップ 突っ込み過ぎるな!	¡No te adelantes tanto, Philip!	Phillip! Don't go in too deep!	False	False		gulistan	Gristan
-793	793	794	795,796,797	0:16:14.360000	0:16:18.965000	793.mp3	793.webp	フィリップ! 頼む みんな。	Philip. -Los dejo en sus manos.	Phillip! Please... help the others...	False	False		olcott/philip	Olcott,Philip
-799	799	800	798,801	0:16:18.940000	0:16:23.220000	799.mp3	799.webp	あいつらが 生きて逃げられるように...	Hagan que logren huir con vida.	Make sure... they get out... of here alive...	False	False		philip	Philip
-806	806	807,811	808,809,810	0:16:38.417000	0:16:42.388000	806.mp3	806.webp	マチェイ グリスタン...オルコット	Machey... Gulistan... Olcott.	Machei... Gristan... Olcott.	False	False		bessie,olcott	Bessie,Olcott
-812	812	813	814	0:16:42.388000	0:16:45.440000	812.mp3	812.webp	悪い 弾切れだ。	Me quedé sin balas.	Sorry. I'm out of ammo.	False	False		bessie	Bessie
-815	815	817	816,818,819	0:16:45.424000	0:16:49.328000	815.mp3	815.webp	待て ベッシ。俺が 前に出る。距離を詰める。	Espera. Iré delante. -Me acerco.	Wait, Bessie! I'll take the lead- I'm closing range!	False	False		olcott/bessie	Bessie,Olcott
-820	820	822	821	0:16:49.328000	0:16:51.480000	820.mp3	820.webp	援護してくれ!	¡Cúbreme!	Cover me!	False	False		bessie	Bessie
-827	827	826	825,828	0:17:06.290000	0:17:10.316000	827.mp3	827.webp	ベッシのプロドロス...	El Prodoros de Bessie.	Bessie's... Prodoros...	False	False		xixia	Seethia
-829	829	830	831,832	0:17:10.316000	0:17:13.490000	829.mp3	829.webp	こいつらのモビルスーツ...	¿Es uno de sus Mobile Suits?	That's one of their... mobile suits.	False	False		guel	Guel
-838	838	837	839	0:17:27.080000	0:17:30.236000	838.mp3	838.webp	コクピットは まだ生きている。	La cabina aún funciona.	The cockpit... still has power.	False	False		guel	Guel
-842	842,845,849	843,846,848,850	844,847,851	0:17:35.574000	0:17:43.883000	842.mp3	842.webp	「リドリック・クルーヘル」...生きていたのか。容疑者リストの人物に　心当たりが? 元ドミニコスだ。	Lidric Krüger. Conque sigue vivo. ¿Reconoces a alguno de los sospechosos? Era de Dominicus.	Ridrick Kruger.... he's still alive? You recognize one of the names on the suspect list? He's a former Dominicus member.	False	False		kenanji,vicecomandante dominicus	Dominicus Deputy Commander,Kenanji
-852	852	854	853,855	0:17:43.883000	0:17:46.886000	852.mp3	852.webp	えっ? 青くさいヤツでな	Era un ingenuo.	What? He was an immature kid...	False	False		kenanji	Dominicus Deputy Commander,Kenanji
-858	858	857	856	0:17:46.800000	0:17:50.489000	858.mp3	858.webp	上にも臆せず 自分の正義を貫いてたよ。	Defendía su ética aunque tuviera que oponerse a los de arriba.	Unafraid of higher-ups, he stuck to his own sense of justice.	False	False		kenanji	Kenanji
-859	859	860	861	0:17:50.489000	0:17:54.660000	859.mp3	859.webp	だが 最後は 自分が アーシアンに 襲われるはめになった。	Aunque al final los Earthians lo atacaron.	But in the end, he was attacked by Earthians himself.	False	False		kenanji	Kenanji
-862	862	864	863	0:17:56.228000	0:17:59.810000	862.mp3	862.webp	家族も 巻き添えで失ったんだったかな。	Creo que perdió a su familia entonces.	I guess his family were collateral damage.	False	False		kenanji	Kenanji
-866	866	865	867	0:18:01.740000	0:18:03.736000	866.mp3	866.webp	捨てただろ。	Ya lo deseché.	I threw all that away...	False	False		olcott	Olcott
-869	869	868	870	0:18:06.300000	0:18:09.630000	869.mp3	869.webp	いらないんだよ そんなものは!	¡No lo necesito!	I don't need... those damn things!	False	False		olcott	Olcott
-873	873	872	874	0:18:22.680000	0:18:25.858000	873.mp3	873.webp	車は どこだ?	¿Dónde está el auto?	The vehicle... Where is it?	False	False		guel	Guel
-876	876	877	875	0:18:25.700000	0:18:27.827000	876.mp3	876.webp	まだ 敵がいたのか。あっ!	¿Quedan enemigos?	There were still more of-	False	False		piloto heavy B	Heavy B Pilot
-881	881	882	883	0:18:52.218000	0:18:55.154000	881.mp3	881.webp	ピピッ ベッシか?	¿Es Bessie?	Is that Bessie?	False	False		olcott	Olcott
-884	884	886	885	0:18:55.154000	0:18:57.123000	884.mp3	884.webp	ダメだ。	No pude.	It's too late...	False	False		guel	Guel
-887	887	888	889	0:19:02.161000	0:19:04.130000	887.mp3	887.webp	死んじまった...	Murió.	She's dead.	False	False		guel	Guel
-890	890	891	892	0:19:12.271000	0:19:14.306000	890.mp3	890.webp	そうか。	Ya veo.	I see.	False	False		naji	Naji
-893	893	894	895	0:19:14.306000	0:19:16.570000	893.mp3	893.webp	お前は どうする?	¿Qué harás tú?	What will you do now?	False	False		naji	Naji
-896	896	898	897	0:19:16.342000	0:19:18.778000	896.mp3	896.webp	合流は 少し待ってくれ。	No me uniré aún.	Wait a bit before I join you.	False	False		olcott	Olcott
-899	899	901	900	0:19:18.778000	0:19:21.180000	899.mp3	899.webp	考える時間が欲しくなった。	Necesito tiempo para pensar.	I need time to think.	False	False		olcott	Olcott
-903	903	905	904	0:19:29.021000	0:19:33.092000	903.mp3	903.webp	「父さん」って聞こえたから	Oí que decía \"papá\".	I heard someone saying \"Daddy.\"	False	False		guel	Guel
-906	906	907	908,909	0:19:33.092000	0:19:37.120000	906.mp3	906.webp	助けてほしかったんじゃ ないかって...	Supongo que quería que la salvara.	I thought maybe she wanted him... to save her...	False	False		guel	Guel
-914	914	915	916	0:19:46.672000	0:19:48.770000	914.mp3	914.webp	俺は どうすれば...	¿Qué debería hacer?	What should I do?	False	False		guel	Guel
-917	917	919	918	0:19:48.707000	0:19:52.278000	917.mp3	917.webp	俺は お前の親じゃない。ん?	Yo no soy tu papá.	I'm not your father.	False	False		olcott	Olcott
-920	920	921	922,923	0:19:52.278000	0:19:56.310000	920.mp3	920.webp	どうしたらいいかなんて 自分で考えるんだな。	Decide por ti mismo lo que harás.	As for what to do next... You'll have to think for yourself.	False	False		olcott	Olcott
-924	924	925	926	0:20:00.252000	0:20:04.423000	924.mp3	924.webp	教えてくれないか? 軌道エレベーターまでの行き方。	¿Puedes decirme cómo llegar al ascensor espacial?	Can you at least tell me how to get to the orbital Permet lift?	False	False		guel	Guel
-927	927	928	929,930	0:20:04.423000	0:20:09.795000	927.mp3	927.webp	何? これ以上 なくしたくないんだ	¿Qué? -No quiero perder nada más...	What? I don't want... to lose any more...	False	False		olcott/guel	Guel,Olcott
-931	931	932	933,934	0:20:09.795000	0:20:14.340000	931.mp3	931.webp	俺と父さんをつなぐもの。	que nos conecte a mi padre y a mí.	of the things... that bind me to my father.	False	False		guel	Guel
-957	957	958	959	0:21:46.225000	0:21:49.128000	957.mp3	957.webp	創案は ささやかなものでした。	La idea empezó siendo algo pequeño.	It was a modest idea at first.	False	False		rajan	Rajan
-960	960	961	962	0:21:49.128000	0:21:52.490000	960.mp3	960.webp	植生エンジニアでもあられた ノートレット様は	Noughtret era ingeniera vegetal	As a botanical engineer, Mistress Notrette thought	False	False		rajan	Rajan
-963	963,966	965,967	964	0:21:52.464000	0:21:59.538000	963.mp3	963.webp	植物の多種多様な生存戦略を　人類にも適用できないかと 考えておられました。	y se planteaba cómo adaptar a los humanos las técnicas de supervivencia de las plantas.	that the various survival strategies used by plants could also be applied to humanity.	False	False		rajan	Rajan
-968	968	969,971	970,972	0:21:59.538000	0:22:05.411000	968.mp3	968.webp	夢想的で根拠のない しかし あの方らしいお考えだ。	Era una visión sin sentido, pero muy típica de ella.	It was a dream with no real basis, but that was just like her.	False	False		rajan	Rajan
-973	973	974	975	0:22:05.411000	0:22:09.114000	973.mp3	973.webp	その提唱に賛同した一人が	Y hubo una persona que apoyó su propuesta.	And one of the people who supported her vision...	False	False		rajan	Rajan
-978	978	976,979	977,980	0:22:09.020000	0:22:13.350000	978.mp3	978.webp	デリング・レンブラン あなたのお父上です。	Delling Rembran. Su padre.	was Delling Rembran. Your father.	False	False		rajan	Rajan
-981	981	982	983	0:22:14.053000	0:22:18.390000	981.mp3	981.webp	ずっと クソおやじの 政略結婚だと思ってた。	Siempre pensé que se casó por conveniencia.	I always thought my lousy father made a marriage of convenience.	False	False		miorine	Miorine
-984	984	986	985	0:22:18.390000	0:22:22.795000	984.mp3	984.webp	軍人であられた頃は そんな余裕もありませんでしたよ。	Cuando era militar no podía permitirse pensar en eso.	He couldn't afford things like that when he was a soldier.	False	False		rajan	Rajan
-987	987	988	989,990	0:22:22.795000	0:22:27.299000	987.mp3	987.webp	それほどまでに 戦場は無秩序でした。	Así de caótico era el campo de batalla.	The battlefield... was so chaotic.	False	False		rajan	Rajan
-991	991	992	993	0:22:27.299000	0:22:32.071000	991.mp3	991.webp	人々は意思を放棄し 兵器に決定権を委ねる。	Renunciamos a nuestra voluntad y cedimos las decisiones a las armas.	People abandoned their own will and left decisions to their weapons.	False	False		rajan	Rajan
-994	994	995	996	0:22:32.071000	0:22:34.940000	994.mp3	994.webp	パーツとして消費される兵士。	Los soldados se usan como piezas.	Soldiers were consumed as expendable parts.	False	False		rajan	Rajan
-998	998	997	999	0:22:34.900000	0:22:37.830000	998.mp3	998.webp	私も 多くの同志を失いました。	Yo también perdí a muchos compañeros.	I lost many comrades as well.	False	False		rajan	Rajan
-1001	1001	1000	1002	0:22:37.740000	0:22:40.310000	1001.mp3	1001.webp	ガンダム狩りは それが理由?	¿Por eso persiguió a los Gundams?	And that's why you began Gundam-hunting?	False	False		miorine	Miorine
-1003	1003	1004	1005	0:22:41.447000	0:22:44.016000	1003.mp3	1003.webp	人間性の回帰を	El retorno de la humanidad.	The restoration of human nature.	False	False		rajan	Rajan
-1006	1006	1008	1007	0:22:44.016000	0:22:47.686000	1006.mp3	1006.webp	総裁は 強硬手段をもってしても 強く求められました。	Lo deseaba aunque hubiera que ser muy duros.	That's what the President desired, even if it took drastic measures.	False	False		rajan	Rajan
-1009	1009	1010	1011,1012	0:22:49.855000	0:22:54.860000	1009.mp3	1009.webp	それでも 戦争シェアリングで 紛争をコントロールしても	Pero, incluso controlando la guerra mediante la economía,	And yet... even if he could control conflict through war partitioning,	False	False		rajan	Rajan
-1013	1013	1015	1014	0:22:54.860000	0:22:58.263000	1013.mp3	1013.webp	秩序を手に入れることは かなわなかった。	fue imposible traer el orden.	he never managed to achieve order.	False	False		rajan	Rajan
-1016	1016,1019	1018	1017	0:22:58.263000	0:23:03.390000	1016.mp3	1016.webp	だからこそ ノートレット様の創案は　総裁にとって希望でした。	Por ello, la idea de la señora Noughtret era la esperanza del presidente.	That's why Mistress Notrette's vision became a source of hope.	False	False		rajan	Rajan
-1020	1020	1021	1022	0:23:05.304000	0:23:08.273000	1020.mp3	1020.webp	事故で失われるまでは。	Hasta el accidente.	Until she was lost in that accident...	False	False		rajan	Rajan
-1023	1023	1025	1024	0:23:08.273000	0:23:11.610000	1023.mp3	1023.webp	悲しいなら そう言えばいいのに。	Si estaba triste, podía decirlo.	If he felt sad, he should have said so.	False	False		miorine	Miorine
-1026	1026	1027	1028	0:23:11.610000	0:23:15.214000	1026.mp3	1026.webp	敵や造反は 後を絶ちませんでしたから。	Tenía enemigos y opositores por doquier.	There was always some new enemy or rebellion.	False	False		rajan	Rajan
-1030	1030	1031	1029	0:23:14.990000	0:23:17.630000	1030.mp3	1030.webp	ようやく分かってきたわ	Por fin empiezo a entender	I finally get it.	False	False		miorine	Miorine
-1032	1032	1033	1034	0:23:17.549000	0:23:21.100000	1032.mp3	1032.webp	クソおやじが 花嫁ゲームを仕組んだ理由。	por qué mi papá ideó el juego de la prometida.	I understand why my lousy father set up that marriage game.	False	False		miorine	Miorine
-1035	1035,1038	1037	1036	0:23:21.053000	0:23:25.991000	1035.mp3	1035.webp	力のある人間に嫁がせれば　いちばん安全だとでも 考えたんでしょ。	Creía que lo más seguro era casarme con alguien fuerte, ¿no?	He thought it was safest to marry me off to someone powerful.	False	False		miorine	Miorine
-1040	1040	1041	1039	0:23:25.900000	0:23:29.350000	1040.mp3	1040.webp	クワイエット・ゼロの カモフラージュも含めてね。	Y servía para camuflar Quiet Zero.	And it was also good camouflage for Quiet Zero.	False	False		miorine	Miorine
-1042	1042,1045	1043	1044,1046	0:23:28.927000	0:23:35.350000	1042.mp3	1042.webp	ふっ...総裁は　自ら葬ったガンダムを 利用してでも	El presidente quiere cumplir la promesa que hizo a la señora Noughtret	The President... intends to fulfill his vow to Mistress Notrette	False	False		rajan	Rajan
-1047	1047	1048	1049	0:23:35.100000	0:23:38.637000	1047.mp3	1047.webp	ノートレット様との誓いを 果たすおつもりです。	aunque deba usar los Gundams que él mismo enterró.	even if he has to use the very Gundams he buried.	False	False		rajan	Rajan
-1051	1051	1052	1050	0:23:38.600000	0:23:41.206000	1051.mp3	1051.webp	ですが ミオリネ様	Pero, señorita Miorine,	But you, Mistress Miorine...	False	False		rajan	Rajan
-1054	1054	1053	1055,1056	0:23:41.200000	0:23:45.711000	1054.mp3	1054.webp	あなたは あなただ。お父上ではありません。	usted es usted, no su padre.	Your life is yours. You are not your father.	False	False		rajan	Rajan
-1057	1057	1059	1058	0:23:45.711000	0:23:48.781000	1057.mp3	1057.webp	どうか ご自身のお心で。	Decídalo por sí misma.	Please... follow your own heart.	False	False		rajan	Rajan
+7c57dd80d8	8,11,16	7,10,14,17	6,9,12,13,15,18	0:00:16.160000	0:00:25.112000	7c57dd80d8.mp3	7c57dd80d8.webp	焼き切れちまってる。ハズレだな。こっちに戻すか。カートリッジだ。補充しておいた。助かる。	Está rostizado. -No sirve. -¿Ponemos este de nuevo? El cartucho. Lo repusimos. Gracias.	It's completely burnt out. That won't do. Should we return it to this one? Here are some cartridges. I've got some refills. Thanks.	False	False		mantenimiento,médico,olcott	Doctor (Male),Mechanics,Olcott
+184feb0983	19	20	21	0:00:25.112000	0:00:28.515000	184feb0983.mp3	184feb0983.webp	鎮痛剤のストック 頼めるか?	¿Te encargas de las existencias de analgésicos?	Can I ask you to replenish our stock of painkillers?	False	False		médico	Doctor (Male)
+7650488606	22	24	23	0:00:28.515000	0:00:30.517000	7650488606.mp3	7650488606.webp	ナジに伝えておく。	Le diré a Naji.	I'll let Naji know.	False	False		olcott	Olcott
+08744301c0	26	27	28	0:00:34.054000	0:00:36.957000	08744301c0.mp3	08744301c0.webp	おらっ 食えよ スペーシアン。	Come, Spacian.	Come on! I said eat, Spacian!	False	False		xixia	Seethia
+28c7ca0341	30	31	29,32	0:00:36.950000	0:00:39.960000	28c7ca0341.mp3	28c7ca0341.webp	セド シーシア どうだ?	Sed, Xixia, ¿cómo va?	Sedo, Seethia. How is he?	False	False		olcott	Olcott
+f465968fa0	38		39	0:00:43.764000	0:00:46.166000	f465968fa0.mp3	f465968fa0.webp	ごめん...なんか ぶつぶつ		I'm sorry.	False	False			Guel
+27b40d3aca	46	48	47	0:00:49.670000	0:00:52.773000	27b40d3aca.mp3	27b40d3aca.webp	父さん ごめん...	Papá, lo siento.	Dad, forgive me.	False	False		guel	Guel
+fccce1fdb6	49	50	51	0:00:52.773000	0:00:54.960000	fccce1fdb6.mp3	fccce1fdb6.webp	ごめん 父さん...	Lo siento, papá.	I'm sorry, Dad...	False	False		guel	Guel
+fa9e897830	52	53	54,55	0:00:54.808000	0:00:58.512000	fa9e897830.mp3	fa9e897830.webp	最後に食べたのは? 3日前。	¿Cuándo comió por última vez?	When did he last eat? Three days ago.	False	False		olcott	Olcott,Seethia
+f53d9bddea	57		58	0:00:58.512000	0:01:00.981000	f53d9bddea.mp3	f53d9bddea.webp	ごめん...		I'm sorry.	False	False			Guel
+b57762fa76	60	62	61	0:01:03.050000	0:01:05.118000	b57762fa76.mp3	b57762fa76.webp	セド よこせ。う... うん。	Dame eso, Sed.	Sedo, give me that.	False	False		olcott	Olcott
+1d932bf8ee	67	68	66	0:01:13.090000	0:01:17.430000	1d932bf8ee.mp3	1d932bf8ee.webp	グエル・ジェターク お前は 取り引きの持ち札だ。	Guel Jeturk, eres una pieza para negociar.	Guel Jeturk. You can be our bargaining chip in negotiations.	False	False		olcott	Olcott
+77d1a8d8f9	69,72	71	70	0:01:16.997000	0:01:22.569000	77d1a8d8f9.mp3	77d1a8d8f9.webp	ううっ...死んで 楽になれると　思うなよ。ううっ!	No creas que la muerte te dará reposo.	Don't think you can get out of this by dying.	False	False		olcott	Olcott
+4fe66e26a6	95	93,97	94,96	0:02:53.720000	0:02:57.497000	4fe66e26a6.mp3	4fe66e26a6.webp	「撤収する」? ノレアから連絡が来た。	¿Nos retiramos? Llamó Norea.	We're evacuating? We got a message from Norea.	False	False		jalil,naji	Jalil,Naji
+36229c1910	99	100	98	0:02:57.440000	0:03:00.133000	36229c1910.mp3	36229c1910.webp	「ベネリット」グループが 嗅ぎつけたらしい。	Benerit Group está husmeando.	It seems the Benerit Group has sniffed us out.	False	False		naji	Naji
+f14e78b66b	102	103	101	0:03:00.110000	0:03:02.235000	f14e78b66b.mp3	f14e78b66b.webp	避難民は どうするんだ?	¿Y los refugiados?	What about the refugees?	False	False		bessie	Bessie
+08d179657a	105	106	104	0:03:02.030000	0:03:04.938000	08d179657a.mp3	08d179657a.webp	俺は 家族を置いていけない。	No puedo abandonar a mi familia.	I can't leave my family behind.	False	False		philip	Philip
+1115e3bce3	108	109	107	0:03:04.920000	0:03:06.940000	1115e3bce3.mp3	1115e3bce3.webp	受け入れ先を探す。	Buscaremos dónde los acojan.	We'll find a place for them to stay.	False	False		naji	Naji
+5083a1af1f	111	112	110	0:03:06.870000	0:03:09.710000	5083a1af1f.mp3	5083a1af1f.webp	隠れ家にさせてもらった恩は 返すさ。	Los compensaremos por ocultarnos.	We owe them for letting us hide here.	False	False		naji	Naji
+a8d1287c38	113	115	114	0:03:09.643000	0:03:13.547000	a8d1287c38.mp3	a8d1287c38.webp	グリスタンは 輸送機を飛ばす 手筈をつけてくれ。	Gulistan, tú prepara el transporte.	Gristan, prepare to launch transports.	False	False		naji	Naji
+11487b9237	117,119	118,120	116,121	0:03:13.250000	0:03:19.180000	11487b9237.mp3	11487b9237.webp	ほかのみんなは 西の飛行場まで　避難民と物資を運ぶ準備だ。了解。	El resto lleven a los refugiados y los suministros al aeródromo oeste. Recibido.	Everyone else, prepare to take refugees and cargo to the western airfield. Roger!	False	False		naji,todos	All,Naji
+5b5b035de6	126	127	128	0:03:26.526000	0:03:29.780000	5b5b035de6.mp3	5b5b035de6.webp	あなたのせいで ソフィが死んだ。	Sophie murió por tu culpa.	It's your fault Sophie died.	False	False		norea	Norea
+5b67004a09	129	130	131	0:03:29.529000	0:03:32.632000	5b67004a09.mp3	5b67004a09.webp	今度は ナジたちを危険にさらしてる。	Y pusiste en peligro a Naji y los demás.	Now you're putting Naji in danger too.	False	False		norea	Norea
+9a9272c768	132	133	134	0:03:32.632000	0:03:35.535000	9a9272c768.mp3	9a9272c768.webp	大人も子どもも たくさん。	A muchos adultos y niños.	Along with plenty of adults and children.	False	False		norea	Norea
+14541c6444	136	137	135	0:03:35.150000	0:03:38.538000	14541c6444.mp3	14541c6444.webp	あなたの くだらない理想のせいで。	Todo por tus estúpidos ideales.	All because of your silly ideals.	False	False		norea	Norea
+65cfe01ca3	139	140	138	0:03:38.360000	0:03:41.280000	65cfe01ca3.mp3	65cfe01ca3.webp	こーら 落ち着きなよ。	Ya, cálmate.	Now, now! Calm down!	False	False		maisie	Maisie
+139d9a41ac	141	143	142	0:03:41.241000	0:03:44.177000	139d9a41ac.mp3	139d9a41ac.webp	おかしいよ...ん?	Es una locura.	It's not right.	False	False		nika	Nika
+2862407695	144	145	146	0:03:44.177000	0:03:47.080000	2862407695.mp3	2862407695.webp	スペーシアンが憎いからって	Aunque odiemos a los Spacians,	Just because you hate Spacians,	False	False		nika	Nika
+6299d8ab69	149	148	147	0:03:47.070000	0:03:51.084000	6299d8ab69.mp3	6299d8ab69.webp	一方的に暴れて 殺して...	no podemos acosarlos y matarlos como queramos.	you go on a rampage for no reason and kill people...	False	False		nika	Nika
+6f88660b14	150	151	152	0:03:51.084000	0:03:53.600000	6f88660b14.mp3	6f88660b14.webp	不幸をばらまくだけじゃ	Si producimos sufrimiento,	If all you do is cause suffering,	False	False		nika	Nika
+4f86c0a2e5	153	155	154	0:03:53.520000	0:03:57.390000	4f86c0a2e5.mp3	4f86c0a2e5.webp	アーシアンの声なんか 誰も聞いてくれないよ。	nunca escucharán a los Earthians.	no one will ever listen to Earthians' voices.	False	False		nika	Nika
+fb856f8fc4	156,159	157	158	0:03:57.390000	0:04:03.196000	fb856f8fc4.mp3	fb856f8fc4.webp	こんなやり方 間違ってる!　ドカッ! うっ! ぐっ...	¡Esto es un error!	What you're doing is wrong!	False	False		nika	Nika
+b755ef90b2	160	161	162	0:04:03.196000	0:04:05.198000	b755ef90b2.mp3	b755ef90b2.webp	どの口が! ううっ!	¿Cómo te atreves?	How dare you?!	False	False		norea	Norea
+6ad33178ca	165,166,169	164,168	163,170	0:04:05.180000	0:04:16.376000	6ad33178ca.mp3	6ad33178ca.webp	どの口が どの口が どの口が どの口が!　どの口が どの口が どの口が どの口が どの口が どの口が　どの口が どの口がー! はぁ...	¿Cómo te atreves? ¿Cómo te atreves?	How dare you?! How dare you?! How dare you, you jerk?!	False	False		norea	Norea
+6dd9b44379	172	173	171	0:04:16.110000	0:04:18.478000	6dd9b44379.mp3	6dd9b44379.webp	そのへんで やめておけ。	Suficiente.	That's enough.	False	False		sabina	Sabina
+06218fd2d3	174	176	175	0:04:18.478000	0:04:20.914000	06218fd2d3.mp3	06218fd2d3.webp	この生徒は死なせない。ううっ...	No dejaré que muera.	I can't let you kill this student.	False	False		sabina	Sabina
+cbcd6ab27e	178,180	179,182	177,181	0:04:20.850000	0:04:26.219000	cbcd6ab27e.mp3	cbcd6ab27e.webp	お前の自由も こちらが預かっていることを　忘れるな。放せ 裏切り者!	No olvides que tu libertad está en nuestras manos. Suéltame, traidora.	Don't forget that your freedom is in our hands. Don't touch me, traitor!	False	False		norea,sabina	Norea,Sabina
+68257d98a4	183	185	184	0:04:26.219000	0:04:29.550000	68257d98a4.mp3	68257d98a4.webp	うっ...そのクソったれなエゴで	Por tu estúpido ego	Because of her damned ego,	False	False		norea	Norea
+6be0ed83fe	186,189	188	187	0:04:29.322000	0:04:35.629000	6be0ed83fe.mp3	6be0ed83fe.webp	何十 何百という同胞が　「治安活動」の名目で 殺されていきます。	matarán a cientos de compañeros para mantener el orden.	dozens or hundreds of our comrades will be killed in their so-called security operations.	False	False		norea	Norea
+5cf2105fb2	192	190	191	0:04:35.600000	0:04:39.050000	5cf2105fb2.mp3	5cf2105fb2.webp	不幸をばらまいているのは どっちですか?	¿Quién es la que produce sufrimiento?	So tell me, which one of us is causing suffering?	False	False		norea	Norea
+0a451dbd17	195	194	193	0:04:40.910000	0:04:45.138000	0a451dbd17.mp3	0a451dbd17.webp	学園のことなら 俺は いくらでも 手を回せる。	En la escuela puedo extender mis redes.	I can pull the strings to do anything at this school.	False	False		shaddiq	Shaddiq
+fa913dce18	196,200	198	197,199,201	0:04:45.138000	0:04:51.244000	fa913dce18.mp3	fa913dce18.webp	簡単でしたよ 義父さんを捕らえるのも　警備を装うのも。	Fue muy fácil atraparte. Y fingir ser de seguridad.	It was easy. Both detaining you... and impersonating the guards.	False	False		shaddiq	Shaddiq
+42f6441def	203,205	204	202,206	0:04:51.210000	0:04:56.082000	42f6441def.mp3	42f6441def.webp	「グラスレー」の後継だけなら　機会は いつでもあっただろう。	Tuviste más oportunidades de suceder a Grassley.	If all you wanted was to inherit Grassley, you had plenty of chances.	False	False		sarius	Sarius
+41b7e1e96a	207	209	208,210	0:04:56.082000	0:05:00.553000	41b7e1e96a.mp3	41b7e1e96a.webp	お前が狙っているのは 総裁の座か?	¿Aspiras a la presidencia general?	Is your real objective... the Presidency of the Group?	False	False		sarius	Sarius
+6f52fa7783	211	213	212	0:05:00.553000	0:05:02.889000	6f52fa7783.mp3	6f52fa7783.webp	果たしたいことがあるんです。	Quiero hacer una cosa.	I have a goal to accomplish.	False	False		shaddiq	Shaddiq
+2802984b50	214	216	215	0:05:02.889000	0:05:08.561000	2802984b50.mp3	2802984b50.webp	宇宙開発事業の莫大な費用を 裏で支える 戦争シェアリング。	La economía colaborativa de guerra sostiene el desarrollo espacial.	We covertly finance the massive costs of space development through war partitioning.	False	False		shaddiq	Shaddiq
+7652b923c5	217	219	218,220	0:05:08.561000	0:05:12.666000	7652b923c5.mp3	7652b923c5.webp	俺はね 義父さん これを壊したいんですよ。	Y yo quiero destruirla, papá.	So you see, Father... I want to break this system.	False	False		shaddiq	Shaddiq
+aa72f3483f	221,226	222,225,227	223,224,228	0:05:12.666000	0:05:19.840000	aa72f3483f.mp3	aa72f3483f.webp	浅はかだな。戦争シェアリングの利権構造は　不可侵だ。たやすく崩せば...	Qué superficial. Su sistema de intereses es impenetrable. Si se desmorona sin...	Shallow nonsense... The vested-interest structure of war partitioning is untouchable. If you break it apart rashly...	False	False		sarius	Sarius
+0a064a6f59	229	231	230	0:05:19.673000	0:05:23.100000	0a064a6f59.mp3	0a064a6f59.webp	地球は 代理戦争で疲弊。	Las guerras indirectas empobrecieron a la Tierra.	The Earth will be exhausted by proxy wars	False	False		shaddiq	Shaddiq
+685850a7d8	233	232	234	0:05:22.960000	0:05:25.630000	685850a7d8.mp3	685850a7d8.webp	企業は 限られたパイの奪い合い。	Se pelean por las pocas industrias que hay	and corporations will scramble for the shrunken pie.	False	False		shaddiq	Shaddiq
+4ea1bf4226	235	237	236	0:05:25.612000	0:05:28.548000	4ea1bf4226.mp3	4ea1bf4226.webp	利益も先細りの一途でしょう。	y los beneficios caerán más.	Profits will likely evaporate, too.	False	False		shaddiq	Shaddiq
+4d9555e9db	240	239	238	0:05:28.420000	0:05:31.017000	4d9555e9db.mp3	4d9555e9db.webp	もっといい方法があります。	Hay una solución mejor.	But I have a better idea.	False	False		shaddiq	Shaddiq
+7bc0ec08aa	241,244	243	242	0:05:31.017000	0:05:36.022000	7bc0ec08aa.mp3	7bc0ec08aa.webp	「ベネリット」グループの資産を　全て 地球に 売ってしまえばいいんですよ。	Vender a la Tierra todos los bienes de Benerit Group.	We merely need to sell all the Benerit Group's assets to Earth.	False	False		shaddiq	Shaddiq
+a84c9b5e56	246	247	245	0:05:36.010000	0:05:38.058000	a84c9b5e56.mp3	a84c9b5e56.webp	地球に?	¿A la Tierra?	To Earth?	False	False		sarius	Shaddiq
+ff287d6968	248	250	249	0:05:38.058000	0:05:40.994000	ff287d6968.mp3	ff287d6968.webp	いつ 戦争が起きるか分からない。	La guerra puede estallar en cualquier momento.	Who knows when the next war will start.	False	False		shaddiq	Shaddiq
+6d5b7b9fdc	252	253	251	0:05:40.980000	0:05:43.997000	6d5b7b9fdc.mp3	6d5b7b9fdc.webp	地球と企業の 緊張関係を利用して	Con esa tensión entre la Tierra y las empresas	We'll use the friction between Earth and the corporations	False	False		shaddiq	Shaddiq
+7a9993a717	256	254	255	0:05:43.940000	0:05:47.167000	7a9993a717.mp3	7a9993a717.webp	抑止力という経済を 生み出すんです。	se puede crear una economía de disuasión.	to create a situation that works as deterrence.	False	False		shaddiq	Shaddiq
+224f68ccea	259	258	257	0:05:46.850000	0:05:51.670000	224f68ccea.mp3	224f68ccea.webp	そうすれば 地球で 戦争を起こす必要もなくなります。	Así no será necesario iniciar una guerra en la Tierra.	If we do that, no one will have any need to start wars on Earth.	False	False		shaddiq	Shaddiq
+813fd6e0bc	261,264	263	262	0:05:53.707000	0:05:59.779000	813fd6e0bc.mp3	813fd6e0bc.webp	お前は アーシアンとのハーフだったな　紛争エリアの。	Eres mitad Earthian, ¿no? De un área en conflicto.	Since you're half-Earthian, are you trying to give weapons...	False	False		sarius	Sarius
+a0e114062b	265,269	267	266,268	0:05:59.779000	0:06:05.510000	a0e114062b.mp3	a0e114062b.webp	地球に武力を与えて　スペーシアンへの怨嗟を 晴らしたいだけではないのか?	¿De seguro no quieres darle poder a la Tierra por despecho?	to a conflict area like Earth as a way to work off your grudge against Spacians?	False	False		sarius	Sarius
+687e46caf2	270	271	272	0:06:05.352000	0:06:09.122000	687e46caf2.mp3	687e46caf2.webp	ふっ 恨みで 腹は満たせませんよ。	El odio no llena la tripa.	Grudges won't fill an empty stomach.	False	False		shaddiq	Shaddiq
+12c1181b90	273,277	274,278	275,276	0:06:09.122000	0:06:14.930000	12c1181b90.mp3	12c1181b90.webp	ですが スペーシアンだけが権益を持ち　搾取する今のままでは	Pero si los Spacians siguen monopolizando y explotando todos los privilegios,	Then again, as long as Spacians alone control all the interests and keep exploiting us,	False	False		shaddiq	Shaddiq
+20b7fe03ed	279	281	280	0:06:14.894000	0:06:17.664000	20b7fe03ed.mp3	20b7fe03ed.webp	力がなければ 何も変わらない。	nada cambiará sin obtener poder antes.	one can't do anything without power.	False	False		shaddiq	Shaddiq
+632ef00635	283,286	284	282,285,287	0:06:17.570000	0:06:23.269000	632ef00635.mp3	632ef00635.webp	だったら 俺は その力を　奪い取る。	Por tanto, les arrebataré ese poder.	That's why... I'll be the one who seizes... that power.	False	False		shaddiq	Shaddiq
+9dfc3d855f	299	301	300	0:06:34.647000	0:06:37.617000	9dfc3d855f.mp3	9dfc3d855f.webp	コピー。	Recibido.	Copy that!	False	False		capitán guarnición	Garrison Commander
+2d10b012b7	302,305	304,306	303	0:06:37.617000	0:06:43.623000	2d10b012b7.mp3	2d10b012b7.webp	なーんで 俺たちドミニコスじゃなくて　グループのセキュリティ・フォースが 動くんです?	¿Por qué van las fuerzas de seguridad del grupo en lugar de Dominicus?	Why aren't we Dominicus being sent out rather than the Group's security forces?	False	False		kenanji	Kenanji
+2f4986e5fc	307	309	308	0:06:43.623000	0:06:47.627000	2f4986e5fc.mp3	2f4986e5fc.webp	学園の事件 もう 外にバレはじめてますよ。	El incidente de la escuela empieza a filtrarse afuera.	News of the incident at the school has already leaked to the outside.	False	False		kenanji	Kenanji
+b51b5250c1	310	311,313	312	0:06:47.627000	0:06:52.499000	b51b5250c1.mp3	b51b5250c1.webp	役員決定だ。カテドラルに 借りを作りたくないのだろう。	Órdenes de los directivos. No han de querer decirle nada a Cathedral.	It was the board's decision. They don't want to owe anything to Cathedra.	False	False		rajan	Rajan
+c6182ab26f	316	314	315	0:06:52.440000	0:06:56.069000	c6182ab26f.mp3	c6182ab26f.webp	企業が 独断で 動いちゃっていいんですかねぇ。	¿Y una empresa puede actuar por cuenta propia?	Is this something corporations should handle on their own?	False	False		kenanji	Kenanji
+49cda49eda	318	319	317	0:06:56.050000	0:06:58.605000	49cda49eda.mp3	49cda49eda.webp	嫌な予感がするなぁ。んん...	Tengo un mal presentimiento.	I have a bad feeling about this.	False	False		kenanji	Kenanji
+ee9abc241a	321	322	320,323	0:06:58.590000	0:07:01.541000	ee9abc241a.mp3	ee9abc241a.webp	あるいは それが ねらいか...えっ?	Quizás esa sea la intención.	Or maybe what they want is... Huh?	False	False		rajan	Kenanji,Rajan
+fc6c9ac468	324	325	326	0:07:01.541000	0:07:05.345000	fc6c9ac468.mp3	fc6c9ac468.webp	来客だ。また連絡する。ピッ	Tengo visita. Te llamo luego.	I have a visitor. I'll be in touch.	False	False		rajan	Rajan
+74dacd19d2	327	329	328	0:07:05.345000	0:07:07.981000	74dacd19d2.mp3	74dacd19d2.webp	こちらから出向きましたのに。	Podía haber ido a buscarla.	Thank you for coming to see me.	False	False		rajan	Rajan
+ce5d599689	330	332	331	0:07:07.981000	0:07:09.983000	ce5d599689.mp3	ce5d599689.webp	いかがなさいました?	¿Qué sucede?	What can I do for you?	False	False		rajan	Rajan
+eab3452e49	334	335	333	0:07:09.960000	0:07:12.420000	eab3452e49.mp3	eab3452e49.webp	教えてもらいたいことがあるの。	Quiero que me expliques algo.	There's something I'd like you to tell me.	False	False		miorine	Miorine
+69736ea86e	336	338	337	0:07:12.152000	0:07:14.320000	69736ea86e.mp3	69736ea86e.webp	私に?	¿Yo?	Me?	False	False		rajan	Rajan
+c4dfa6b0f3	339	341	340	0:07:14.320000	0:07:17.357000	c4dfa6b0f3.mp3	c4dfa6b0f3.webp	クワイエット・ゼロって何?	¿Qué es Quiet Zero?	What is Quiet Zero?	False	False		miorine	Miorine
+753c152bd6	342,346	344,347,351	343,345,348,350	0:07:17.357000	0:07:23.040000	753c152bd6.mp3	753c152bd6.webp	備蓄は 次に回して! 病人は こっちよ。持ってきてくれ。頼むよ ベッシ。	Las reservas, al siguiente. Trae eso. Vamos, Bessie.	Save the stockpiles for the next one! The sick are this way! Bring that here! Come on, Bessie!	False	False		jalil,refugiados	Jalil,Refugees
+93e0f38abe	352	354	353	0:07:22.996000	0:07:25.480000	93e0f38abe.mp3	93e0f38abe.webp	ポイントマンは任せてくれって。	Déjame ser el guardagujas.	Let me be the point man for this one!	False	False		jalil	Jalil
+95b71b360c	355	357	356	0:07:25.398000	0:07:27.980000	95b71b360c.mp3	95b71b360c.webp	ジャリル 作戦 聞いてたか?	¿Oíste cuál es el plan, Jalil?	Didn't you hear the mission brief, Jalil?	False	False		bessie	Bessie
+7c3ac5c8a0	358	359	360	0:07:27.767000	0:07:30.100000	7c3ac5c8a0.mp3	7c3ac5c8a0.webp	ひよっこが 経験ねぇくせに。	Si no tienes experiencia.	You have no experience, rookie.	False	False		philip	Philip
+660f75d179	361	363,364	362,365	0:07:29.903000	0:07:34.320000	660f75d179.mp3	660f75d179.webp	プラントで活躍したろ。あんたこそ 何 ビビってんだよ。	Ya destaqué en la planta. ¿Por qué tienes tanto miedo?	I proved myself at the plant! Meanwhile, you're acting like a fraidy-cat.	False	False		jalil	Jalil
+bf8f62bb4b	366,369	368	367,370,371	0:07:33.873000	0:07:39.280000	bf8f62bb4b.mp3	bf8f62bb4b.webp	くっ! 俺は お前と違ってな...フィリップ! 気にし過ぎんな。	A diferencia de ti... -Philip, que no te afecte.	Unlike you, I have- Phillip! Don't lose your cool.	False	False		philip/bessie	Bessie,Philip
+55dd4f7d00	372	374	373	0:07:39.079000	0:07:41.514000	55dd4f7d00.mp3	55dd4f7d00.webp	んっ... 悪い。	Perdón.	Sorry.	False	False		philip	Philip
+6ebd22c0ad	377	376	375	0:07:41.330000	0:07:44.530000	6ebd22c0ad.mp3	6ebd22c0ad.webp	家族のこと考えると つい...	Es que al pensar en mi familia...	It's just that when I think of my family...	False	False		philip	Philip
+102060176b	378	380	379	0:07:44.451000	0:07:48.160000	102060176b.mp3	102060176b.webp	オルコットさんは? 荷物 まとめなくていいの?	¿Olcott no guardará sus cosas?	Where's Mr. Olcott? Shouldn't he be packing too?	False	False		jalil	Jalil
+506ad7912e	381	383	382	0:07:48.021000	0:07:51.024000	506ad7912e.mp3	506ad7912e.webp	あいつは 私物なんざ 持っちゃいねぇよ。	No tiene nada.	That guy doesn't have any personal belongings.	False	False		bessie	Bessie
+e301486267	384	386	385	0:07:51.024000	0:07:54.870000	e301486267.mp3	e301486267.webp	昔に ぜーんぶ捨てちまったからな。	Lo tiró todo hace tiempo.	He threw them all away long ago...	False	False		bessie	Bessie
+b9fb591e3f	388	389	390	0:07:59.132000	0:08:01.768000	b9fb591e3f.mp3	b9fb591e3f.webp	ソフィの墓なんだとさ。	Es la tumba de Sophie.	They say it's a grave for Sophie.	False	False		naji	Naji
+71076e99e5	392	393	391	0:08:01.540000	0:08:04.871000	71076e99e5.mp3	71076e99e5.webp	あいつは ガキどものヒーローだったからな。	Era la heroína de los niños.	She was a hero to the kids, after all.	False	False		naji	Naji
+e44eef1d47	394	395	396	0:08:04.871000	0:08:07.807000	e44eef1d47.mp3	e44eef1d47.webp	撤退するってのに 余計なものを...	Ya nos retiramos. No era necesario.	We don't have time for this in an evacuation.	False	False		olcott	Olcott
+299c362d4c	397	398	399	0:08:07.807000	0:08:10.243000	299c362d4c.mp3	299c362d4c.webp	忘れたくないのさ。	No quieren olvidarla.	They don't want to forget.	False	False		naji	Naji
+e30ae6e8b9	400,405	401,403	402,404	0:08:10.243000	0:08:16.950000	e30ae6e8b9.mp3	e30ae6e8b9.webp	忘れたら いつ死んじまうのかって恐怖に　耐えられなくなる。	Si la olvidan, no soportarán el miedo a no saber cuándo van a morir.	If they do, they'll be overwhelmed by the fear that they could die next.	False	False		naji	Naji
+de2c2981ee	407	408	406	0:08:16.760000	0:08:21.454000	de2c2981ee.mp3	de2c2981ee.webp	死人にすがれば 恐怖が消えるのか?	¿Y aferrarse a los muertos hace que olivdes el miedo?	Will pleading to the dead erase that fear?	False	False		olcott	Olcott
+2df275bb11	409	411	410	0:08:21.454000	0:08:24.320000	2df275bb11.mp3	2df275bb11.webp	お前さんなら 分かるんじゃないのかい?	Tú deberías saberlo, ¿no?	You, of all people, should understand.	False	False		naji	Naji
+9801773d6d	412	413	414	0:08:25.792000	0:08:27.794000	9801773d6d.mp3	9801773d6d.webp	忘れたよ。	Lo olvidé.	I've forgotten...	False	False		olcott	Olcott
+6dd1f580af	417	418	416,419	0:08:29.480000	0:08:33.399000	6dd1f580af.mp3	6dd1f580af.webp	受け入れ先が見つかった。第1便は いつでも出せる。	Tenemos receptores. El primer grupo ya puede salir.	We found a place for the refugees. The first flight can leave at any time.	False	False		gulistan	Gristan
+56e491d102	421	422	420	0:08:33.280000	0:08:36.035000	56e491d102.mp3	56e491d102.webp	分かった。俺も行く。	Bien. Yo también iré.	Understood. I'll go too.	False	False		naji	Naji
+4672b3bc3f	425	424	423,426	0:08:35.830000	0:08:40.220000	4672b3bc3f.mp3	4672b3bc3f.webp	お前ら さっさと 車に乗れ! 置いてくぞ!	¡Suban a un auto si no quieren que los dejemos aquí!	You there! Get in the vehicle! You'll be left behind!	False	False		naji	Naji
+1b97244324	427	428,430	429,431	0:08:41.474000	0:08:46.012000	1b97244324.mp3	1b97244324.webp	明朝5時に 輸送機を飛ばす。こっちは頼んだ。	Saldremos a las cinco de la madrugada. Cuento contigo aquí.	The transports will take off at 5 o'clock in the morning. Take care of the rest.	False	False		naji	Naji
+da66175f67	434	432	433	0:08:45.980000	0:08:48.982000	da66175f67.mp3	da66175f67.webp	俺たちモビルスーツ班は ここに残る。	El equipo de Mobile Suits se queda.	We mobile suit pilots will stay here.	False	False		olcott	Olcott
+f58d119b14	437	436	435	0:08:48.900000	0:08:51.317000	f58d119b14.mp3	f58d119b14.webp	いつ 敵が来るか分からないからな。	Podría venir el enemigo.	There's no telling when the enemy could come.	False	False		olcott	Olcott
+5596960b20	439	440,442	438,441	0:08:51.050000	0:08:54.480000	5596960b20.mp3	5596960b20.webp	囮か。みんな 覚悟はしている。	¿Los distraerán? Estamos convencidos.	You'll act as decoys? We're all prepared.	False	False		naji,olcott	Naji,Olcott
+08b57efabe	443	444	445	0:08:56.089000	0:08:58.191000	08b57efabe.mp3	08b57efabe.webp	あの御曹司は どうする?	¿Qué haremos con el heredero?	What about the little prince?	False	False		naji	Naji
+caabdfc1d9	446	447	448	0:08:58.191000	0:09:00.970000	caabdfc1d9.mp3	caabdfc1d9.webp	もしものときは 取り引きに使う。	Lo usaré para negociar si ocurre algo.	If necessary, we'll use him as a bargaining chip.	False	False		olcott	Olcott
+a52b3cddc4	449	451	450	0:09:00.894000	0:09:03.990000	a52b3cddc4.mp3	a52b3cddc4.webp	無理を言って連れてきたのも 俺だしな。	Fui yo el que insistió en traerlo.	I'm the one who insisted on bringing him, after all.	False	False		olcott	Olcott
+558a4c4505	452	453	454,455	0:09:03.963000	0:09:08.200000	558a4c4505.mp3	558a4c4505.webp	ふっ 律儀だね お前さんは。	Eres demasiado honrado.	How honorable. That's just like you.	False	False		naji	Naji
+6e9889098f	456	457	458	0:09:10.770000	0:09:12.805000	6e9889098f.mp3	6e9889098f.webp	チェーンガン なしでいくんですか?	¿Iremos sin cañón de cadena?	You're not bringing a chain gun?	False	False		mantenimiento A	Mechanic A
+a94211b530	460	461	459	0:09:12.730000	0:09:15.775000	a94211b530.mp3	a94211b530.webp	俺は なんでも 軽いのが好きなの。	A mí me gusta todo lo ligero.	I like to keep everything lightweight.	False	False		bessie	Bessie
+36fc9d6e34	462	463	464	0:09:15.775000	0:09:18.311000	36fc9d6e34.mp3	36fc9d6e34.webp	プロドロス 出すぞ。	Vamos allá, Prodoros.	Prodoros! Let's go!	False	False		bessie	Bessie
+00bc0b0036	465	467	466	0:09:18.311000	0:09:21.370000	00bc0b0036.mp3	00bc0b0036.webp	駐留部隊は 早ければ 今夜中に来る。	La guarnición llegará esta noche como muy pronto.	The garrison forces could arrive as early as tonight.	False	False		gulistan	Gristan
+1e5eaba00b	468	470	469	0:09:21.281000	0:09:24.284000	1e5eaba00b.mp3	1e5eaba00b.webp	移送に気付かれないことが 最優先だ。	Lo vital es que no sepan que nos movemos.	The priority is to keep them from detecting the evacuation.	False	False		gulistan	Gristan
+6f6a5395e8	471	472	473,474	0:09:24.284000	0:09:28.260000	6f6a5395e8.mp3	6f6a5395e8.webp	こちらからは仕掛けるな。戦闘は 極力 回避しろ。	No ataquen primero. Eviten los combates.	Don't attack first. Avoid fighting if you can.	False	False		gulistan	Gristan
+c754059f03	475,480	476,478	477,479,481	0:09:27.987000	0:09:34.400000	c754059f03.mp3	c754059f03.webp	会敵した場合 輸送機が 無事に飛び立つまで　十分に敵を引き付けて 時間を稼げ。	Si hay enemigos, entreténganlos hasta que el convoy esté a salvo.	If you encounter them, try to draw the enemy's fire to buy time for the transports to take off.	False	False		gulistan	Gristan
+641ba57dd8	482	485	483	0:09:34.193000	0:09:36.196000	641ba57dd8.mp3	641ba57dd8.webp	了解。	Recibido.	Roger!	False	False		todos	All (Minus Gristan & Olcott)
+d844223990	490	489		0:09:41.100000	0:09:43.169000	d844223990.mp3	d844223990.webp	残りは2割ほどよ。	Queda un 20 %.		False	False		mujer	
+b0369b6ff8	493	494	492	0:09:42.720000	0:09:45.838000	b0369b6ff8.mp3	b0369b6ff8.webp	あと3時間で積み終わると思う。	Estará cargado en tres horas.	We should finish loading in three hours.	False	False		mujer	Member (Woman)
+e05c6f2785	495,500	496,499	497,498	0:09:45.838000	0:09:50.944000	e05c6f2785.mp3	e05c6f2785.webp	終わったら連絡をくれ。ベッシたちと合流する。ピィー	Avísame cuando acaben. Me reuniré con Bessie.	Send word when you're done. We'll rendezvous with Bessie's team.	False	False		olcott	Olcott
+912b992b6c	502,505	504	503,506	0:09:53.880000	0:09:58.952000	912b992b6c.mp3	912b992b6c.webp	暑ぃー。ったく 夜だってのによぉ。	Qué calor. Y eso que es de noche.	Damn, it's hot. It's the middle of the night, too...	False	False		jalil	Jalil
+fa2ea61a81	510,514	508,513	509,512,516	0:10:03.420000	0:10:10.263000	fa2ea61a81.mp3	fa2ea61a81.webp	放して! 放してよ! なぜ ここにいる?　さっさと トラックに乗れ。だ... だって...	¡Suéltame! ¿Qué hacen acá? Suban a un camión.	Let go! Why are you here? Get in the truck, now.	False	False		olcott,xixia	Olcott,Seethia
+acca6bfb8e	520		519	0:10:10.080000	0:10:12.599000	acca6bfb8e.mp3	acca6bfb8e.webp	乗れ。あっ...		Get in.	False	False			Olcott
+a5e5cc3eac	521	522	523	0:10:12.599000	0:10:15.001000	a5e5cc3eac.mp3	a5e5cc3eac.webp	プラントから	Me prometió...	He promised...	False	False		xixia	Seethia
+e0b1c115b0	524	525	526	0:10:15.001000	0:10:19.005000	e0b1c115b0.mp3	e0b1c115b0.webp	必ず帰るって約束したのに...	que regresaría de la planta.	that he'd come back from the plant.	False	False		xixia	Seethia
+553cfa4047	527	529	528	0:10:19.005000	0:10:23.240000	553cfa4047.mp3	553cfa4047.webp	なんで 父さんじゃなくて お前なんだよ!	¿Por qué regresaste tú y no mi papá?	So instead of Dad, why'd they bring you back?!	False	False		xixia	Seethia
+b9821a2c9b	530	531	532	0:10:24.043000	0:10:27.046000	b9821a2c9b.mp3	b9821a2c9b.webp	なんで...	¿Por qué?	Why...	False	False		guel	Guel
+407f9e61af	533	534	535	0:10:27.046000	0:10:31.050000	407f9e61af.mp3	407f9e61af.webp	父さんじゃなくて 俺なんだ...	¿Por qué yo y no papá?	Why me and not Dad?	False	False		guel	Guel
+5e44c62ab9	536,540	537	538,539,541	0:10:31.050000	0:10:37.423000	5e44c62ab9.mp3	5e44c62ab9.webp	俺が死んでいれば　父さんは...	Si hubiera muerto yo, papá...	If I... If I had died... Dad...	False	False		guel	Guel
+905dbb8449	542,546	544	543,545	0:10:37.423000	0:10:43.296000	905dbb8449.mp3	905dbb8449.webp	そうだ! お前が死んでれば　私の父さんは...	¡Sí! ¡Si estuvieras muerto, mi padre...!	That's right! If you'd died, my Dad would be...	False	False		xixia	Seethia
+b00944efa7	547	548	549	0:10:43.296000	0:10:46.032000	b00944efa7.mp3	b00944efa7.webp	返してよ うぅ...	Regrésamelo.	Give him back.	False	False		xixia	Seethia
+4671093188	550	551	552	0:10:46.032000	0:10:49.602000	4671093188.mp3	4671093188.webp	父さんを返してよ...	¡Regrésame a mi papá!	Give me back my Daddy.	False	False		xixia	Seethia
+0c029ef7d9	556		557	0:10:55.942000	0:10:58.190000	0c029ef7d9.mp3	0c029ef7d9.webp	こいつも連れてくの? ああ。		Yes.	False	False			Olcott
+08f49c7592	565,568	566,569	567,570,571	0:11:05.485000	0:11:13.593000	08f49c7592.mp3	08f49c7592.webp	だとしてもだ。最悪 盾として使う。んっ... 潰れるって 本当か?	No importa. Siempre podría servir de escudo. ¿De verdad quebrará?	Even if that's true, we can always use him as a shield. Bankrupt... Is that true?	False	False		guel,olcott	Guel,Olcott
+ea158c99a9	572	573,576	574,575	0:11:13.593000	0:11:18.940000	ea158c99a9.mp3	ea158c99a9.webp	教えてくれ。か... 家族のことなんだ。	Cuéntamelo. Es mi familia.	Tell me! Th-This is about my family!	False	False		guel	Guel
+43937e2060	578	577	579,580	0:11:20.500000	0:11:23.436000	43937e2060.mp3	43937e2060.webp	駐留部隊...マジで来やがった。	La guarnición sí que vino.	The garrison forces! They really came!	False	False		jalil	Jalil
+89f15f1221	587	589	588	0:11:41.688000	0:11:44.157000	89f15f1221.mp3	89f15f1221.webp	あのバカ! マチェイ!	Será idiota... ¡Machey!	That fool! Machei!	False	False		gulistan	Gristan
+320d2800e2	591	592	590	0:11:43.970000	0:11:46.993000	320d2800e2.mp3	320d2800e2.webp	了解。ECMジャマー展開。	Recibido. ECM jammer desplegado.	Roger. Deploying ECM jammers.	False	False		machey	Machei
+42b7a692ad	595	594	593,596	0:11:46.910000	0:11:49.280000	42b7a692ad.mp3	42b7a692ad.webp	ジャリルの援護に 向かう。フィリップ!	Iré a ayudar a Jalil. ¡Philip!	I'll head out and assist Jalil. Phillip!	False	False		bessie	Bessie
+a75f02f2f4	597	598	599,600	0:11:48.995000	0:11:52.320000	a75f02f2f4.mp3	a75f02f2f4.webp	やっぱ こうなんのかよ。ちくしょう!	Sabía que ocurriría esto. ¡Rayos!	I knew this would happen... Damn it!	False	False		philip	Philip
+d6ccdf973b	601	603	602	0:11:52.165000	0:11:54.734000	d6ccdf973b.mp3	d6ccdf973b.webp	スペーシアンがー! ダダダダッ!	¡Malditos Spacians!	You damn Spacians!	False	False		jalil	Jalil
+9203dbe94a	604	605	606	0:11:54.734000	0:11:57.870000	9203dbe94a.mp3	9203dbe94a.webp	ズール2よりズール1。地上より攻撃を受けた。	Suhl 2 a Suhl 1. Nos atacan desde la superficie.	Zulu 2 to Zulu 1! We're under attack from the ground.	False	False		suhl 2	Zulu 2
+a78cefcb0a	607	609	608	0:11:57.737000	0:12:01.360000	a78cefcb0a.mp3	a78cefcb0a.webp	長距離通信は不能。降下して 掃討に当たる。	Radio a distancia invalidada. Descenderé a eliminarlos.	Long-range comms are useless. Descend and wipe them out.	False	False		suhl 2	Zulu 2
+b4688046d7	610,613	612	611	0:12:01.107000	0:12:06.145000	b4688046d7.mp3	b4688046d7.webp	了解。全機 降下して 無力化せよ。バシュン!	Recibido. Desciendan todos a incapacitarlos.	Roger! All units, descend and neutralize!	False	False		suhl leader	Zulu Leader
+e9fb0873e5	614	616	615	0:12:06.145000	0:12:08.160000	e9fb0873e5.mp3	e9fb0873e5.webp	当たるかよ! あっ。	¡No me darán!	You can't hit me!	False	False		jalil	Jalil
+d6954d5002	621,625	622,624	620,623	0:12:22.260000	0:12:27.100000	d6954d5002.mp3	d6954d5002.webp	学校が...オルコット。応答しろ オルコット。ちっ!	La escuela... Olcott. ¡Responde, Olcott!	The school! Olcott! Come in, Olcott!!	False	False		jalil,naji	Jalil,Naji
+94c58063b9	627	628	629,630	0:12:27.100000	0:12:29.936000	94c58063b9.mp3	94c58063b9.webp	ナジ 敵は モビルスーツ4機だ。	Naji, son cuatro Mobile Suits.	Naji! There are four enemy mobile suits!	False	False		gulistan	Gristan
+bf54ffd634	631	633	632,634	0:12:29.936000	0:12:33.600000	bf54ffd634.mp3	bf54ffd634.webp	移送の状況は? 2台 出ている。	¿Cómo va el transporte? -Salieron dos vehículos.	What about the evacuees? Two vehicles have left!	False	False		gulistan/naji	Gristan,Naji
+e3339a5330	635	636	637	0:12:34.407000	0:12:36.909000	e3339a5330.mp3	e3339a5330.webp	なんとか 注意をそらせてくれ。ダダダダッ!	Tienen que distraerlos.	Just keep distracting them somehow!	False	False		naji	Naji
+c3cfb163f6	638,641	639,643	640,642	0:12:36.909000	0:12:42.310000	c3cfb163f6.mp3	c3cfb163f6.webp	ダダダダッ! ジャリル　合流できるか? あ... ああ。すまねぇ。	¿Puedes reunirte conmigo? Sí. Gracias.	Jalil! Can you make the rendezvous? Y-Yes... I'm sorry about this!	False	False		bessie,jalil	Bessie,Jalil
+21b62a4bdd	644,647	645,649	646,648	0:12:42.115000	0:12:46.452000	21b62a4bdd.mp3	21b62a4bdd.webp	フィリップ ヤツらを 工場エリアに誘い込む。了解。	Philip, atráelos a la zona industrial. Recibido.	Phillip! Draw them toward the factory area! Roger!	False	False		bessie,philip	Bessie,Philip
+93e60dbf32	652	651	650,653	0:12:46.320000	0:12:49.400000	93e60dbf32.mp3	93e60dbf32.webp	こっちだ。来いよ ワンちゃん。	¡Por acá, perritos!	This way... Follow me, you dogs!	False	False		philip	Philip
+fe86deeb93	669		670	0:13:05.705000	0:13:07.673000	fe86deeb93.mp3	fe86deeb93.webp	パ...		Da...	False	False			Olcott's Son
+871dbd1ba8	671	673	672	0:13:09.342000	0:13:12.078000	871dbd1ba8.mp3	871dbd1ba8.webp	パ...	pá.	...ddy...	False	False		hijo olcott	Olcott's Son
+35b96dc88d	678	677	679	0:13:15.440000	0:13:18.050000	35b96dc88d.mp3	35b96dc88d.webp	セド...オルコット。	¿Sed?	Sedo...	False	False		olcott	Olcott
+7fd7080314	682	683	684	0:13:18.050000	0:13:21.460000	7fd7080314.mp3	7fd7080314.webp	体...義手だ。死にはしない。	Es ortopédico. No moriré.	The arm's artificial. I won't die.	False	False		olcott	Olcott
+899ac56dbd	693	692	694	0:13:34.460000	0:13:37.603000	899ac56dbd.mp3	899ac56dbd.webp	シーシアは もう助からん。えっ?	Xixia no sobrevivirá.	We can't help her now.	False	False		olcott	Olcott
+792baed700	695	696	697	0:13:37.603000	0:13:40.140000	792baed700.mp3	792baed700.webp	お前一人で 移送に合流しろ。	Ve al convoy tú solo.	Join the evacuation by yourself.	False	False		olcott	Olcott
+ca02d6a67b	698		701	0:13:40.039000	0:13:42.942000	ca02d6a67b.mp3	ca02d6a67b.webp	でも! 諦めろ。		Give it up.	False	False			Olcott
+094a7e0037	703	702	704	0:13:42.940000	0:13:46.579000	094a7e0037.mp3	094a7e0037.webp	行け。くっ...	Vete.	Go!	False	False		olcott	Olcott
+0697ee2263	706	708	707	0:13:52.351000	0:13:54.320000	0697ee2263.mp3	0697ee2263.webp	潰れたか。	¿Lo aplastó?	Was he crushed?	False	False		olcott	Olcott
+cab56f93cb	710	711	712	0:14:00.359000	0:14:02.760000	cab56f93cb.mp3	cab56f93cb.webp	父さん...	Papá...	Daddy...	False	False		xixia	Seethia
+9393fee106	714	716	715	0:14:11.370000	0:14:13.372000	9393fee106.mp3	9393fee106.webp	マチェイ! ピピピピッ...	¡Machey!	Machei!	False	False		bessie	Bessie
+3c133faf95	718	720	719	0:14:16.709000	0:14:18.678000	3c133faf95.mp3	3c133faf95.webp	やったー!	¡Genial!	Got one!	False	False		jalil	Jalil
+845ea16bcb	721		722	0:14:20.313000	0:14:22.281000	845ea16bcb.mp3	845ea16bcb.webp	あっ? バシュー!		Huh?	False	False			Jalil
+86bdd405b1	723	725	724	0:14:25.084000	0:14:27.086000	86bdd405b1.mp3	86bdd405b1.webp	ジャリル!	¡Jalil!	Jalil!	False	False		philip	Philip
+aae4ce5247	727	726	728	0:14:26.920000	0:14:30.857000	aae4ce5247.mp3	aae4ce5247.webp	やりやがったな くそがー! ダダダダッ!	¡Son unos desgraciados!	You've done it now, you bastards!	False	False		philip	Philip
+2988c4d9d1	729	731	730,732	0:14:30.857000	0:14:33.850000	2988c4d9d1.mp3	2988c4d9d1.webp	フィリップ 落ち着け! まともに やり合うな!	¡Cálmate, Philip! ¡No luches de frente!	Phillip, stay calm! Don't fight them head on!	False	False		bessie	Bessie
+7e81edfdf1	734	736	735,737	0:14:42.401000	0:14:45.671000	7e81edfdf1.mp3	7e81edfdf1.webp	マチェイ! 今のうちに距離を。あっ。	¡Machey! -Hemos de alejarnos.	Machei! Get some distance while you...	False	False		bessie/machey	Bessie,Machei
+3828908ac2	739	741	740	0:14:52.478000	0:14:54.647000	3828908ac2.mp3	3828908ac2.webp	もう一機いただと!?	¿Había otro más?	There was another one?	False	False		piloto heavy A	Heavy A Pilot
+1e7aa122a6	746	747	745,748	0:15:07.920000	0:15:10.120000	1e7aa122a6.mp3	1e7aa122a6.webp	オルコット。生きてるな。	¡Olcott! -¿Estás vivo?	Olcott! Still alive, huh?	False	False		machey/olcott	Machei,Olcott
+bc2b3a8fe3	749	751	750,752	0:15:09.996000	0:15:12.465000	bc2b3a8fe3.mp3	bc2b3a8fe3.webp	まだやれるか? ああ。	¿Puedes seguir? -Sí.	Can you go on? Yeah.	False	False		olcott/machey	Machei,Olcott
+48a630d610	753	755	754	0:15:12.465000	0:15:14.820000	48a630d610.mp3	48a630d610.webp	すまん ジャリルがやられた。	Lo siento. Mataron a Jalil.	Forgive me. We lost Jalil.	False	False		bessie	Bessie
+c2e0c1e8c4	756,762	758,760	757,759,761	0:15:14.634000	0:15:19.438000	c2e0c1e8c4.mp3	c2e0c1e8c4.webp	そうか。オルコット。もうすぐ 最後の1台が出る。	Ya veo. Olcott, pronto saldrá el último.	I see. Olcott! The last vehicle is about to leave!	False	False		naji,olcott	Naji,Olcott
+fa832ad222	763	764	765	0:15:19.438000	0:15:21.474000	fa832ad222.mp3	fa832ad222.webp	頼んだ。	Cuento contigo.	We're counting on you!	False	False		naji	Naji
+c89f5e0ae2	772	773	774	0:15:42.562000	0:15:45.140000	c89f5e0ae2.mp3	c89f5e0ae2.webp	はぁ はぁ... 車の音。	Oigo un auto.	I hear a vehicle!	False	False		guel	Guel
+9f39d0fe67	776	777	778,779	0:15:47.633000	0:15:52.310000	9f39d0fe67.mp3	9f39d0fe67.webp	なんだよ... 何がしたいんだよ お前。	¿Qué pretendes hacer?	Why... What is it you want?	False	False		xixia	Seethia
+2bc32e6f9e	781	780	782	0:15:53.530000	0:15:56.008000	2bc32e6f9e.mp3	2bc32e6f9e.webp	分からない。	No lo sé.	I don't know.	False	False		guel	Guel
+f41a56d0aa	783	784	785,786	0:15:56.008000	0:15:59.278000	f41a56d0aa.mp3	f41a56d0aa.webp	何がしたいんだ 俺は。	No sé qué quiero.	I don't know what I want. I...	False	False		guel	Guel
+60ce462d0a	788	789	787	0:16:01.730000	0:16:04.750000	60ce462d0a.mp3	60ce462d0a.webp	フィリップ 突っ込み過ぎるな!	¡No te adelantes tanto, Philip!	Phillip! Don't go in too deep!	False	False		gulistan	Gristan
+776e979995	793	794	795,796,797	0:16:14.360000	0:16:18.965000	776e979995.mp3	776e979995.webp	フィリップ! 頼む みんな。	Philip. -Los dejo en sus manos.	Phillip! Please... help the others...	False	False		olcott/philip	Olcott,Philip
+51ab8208e8	799	800	798,801	0:16:18.940000	0:16:23.220000	51ab8208e8.mp3	51ab8208e8.webp	あいつらが 生きて逃げられるように...	Hagan que logren huir con vida.	Make sure... they get out... of here alive...	False	False		philip	Philip
+44571fd1ba	806	807,811	808,809,810	0:16:38.417000	0:16:42.388000	44571fd1ba.mp3	44571fd1ba.webp	マチェイ グリスタン...オルコット	Machey... Gulistan... Olcott.	Machei... Gristan... Olcott.	False	False		bessie,olcott	Bessie,Olcott
+873845e263	812	813	814	0:16:42.388000	0:16:45.440000	873845e263.mp3	873845e263.webp	悪い 弾切れだ。	Me quedé sin balas.	Sorry. I'm out of ammo.	False	False		bessie	Bessie
+1bb82dfb45	815	817	816,818,819	0:16:45.424000	0:16:49.328000	1bb82dfb45.mp3	1bb82dfb45.webp	待て ベッシ。俺が 前に出る。距離を詰める。	Espera. Iré delante. -Me acerco.	Wait, Bessie! I'll take the lead- I'm closing range!	False	False		olcott/bessie	Bessie,Olcott
+0bd52fbd03	820	822	821	0:16:49.328000	0:16:51.480000	0bd52fbd03.mp3	0bd52fbd03.webp	援護してくれ!	¡Cúbreme!	Cover me!	False	False		bessie	Bessie
+ed9d6d2b29	827	826	825,828	0:17:06.290000	0:17:10.316000	ed9d6d2b29.mp3	ed9d6d2b29.webp	ベッシのプロドロス...	El Prodoros de Bessie.	Bessie's... Prodoros...	False	False		xixia	Seethia
+0df182c394	829	830	831,832	0:17:10.316000	0:17:13.490000	0df182c394.mp3	0df182c394.webp	こいつらのモビルスーツ...	¿Es uno de sus Mobile Suits?	That's one of their... mobile suits.	False	False		guel	Guel
+72d5fe5b0f	838	837	839	0:17:27.080000	0:17:30.236000	72d5fe5b0f.mp3	72d5fe5b0f.webp	コクピットは まだ生きている。	La cabina aún funciona.	The cockpit... still has power.	False	False		guel	Guel
+9ae3c65b0f	842,845,849	843,846,848,850	844,847,851	0:17:35.574000	0:17:43.883000	9ae3c65b0f.mp3	9ae3c65b0f.webp	「リドリック・クルーヘル」...生きていたのか。容疑者リストの人物に　心当たりが? 元ドミニコスだ。	Lidric Krüger. Conque sigue vivo. ¿Reconoces a alguno de los sospechosos? Era de Dominicus.	Ridrick Kruger.... he's still alive? You recognize one of the names on the suspect list? He's a former Dominicus member.	False	False		kenanji,vicecomandante dominicus	Dominicus Deputy Commander,Kenanji
+9e1e0d81d2	852	854	853,855	0:17:43.883000	0:17:46.886000	9e1e0d81d2.mp3	9e1e0d81d2.webp	えっ? 青くさいヤツでな	Era un ingenuo.	What? He was an immature kid...	False	False		kenanji	Dominicus Deputy Commander,Kenanji
+2e3dca7507	858	857	856	0:17:46.800000	0:17:50.489000	2e3dca7507.mp3	2e3dca7507.webp	上にも臆せず 自分の正義を貫いてたよ。	Defendía su ética aunque tuviera que oponerse a los de arriba.	Unafraid of higher-ups, he stuck to his own sense of justice.	False	False		kenanji	Kenanji
+29297220f0	859	860	861	0:17:50.489000	0:17:54.660000	29297220f0.mp3	29297220f0.webp	だが 最後は 自分が アーシアンに 襲われるはめになった。	Aunque al final los Earthians lo atacaron.	But in the end, he was attacked by Earthians himself.	False	False		kenanji	Kenanji
+af4252c4a8	862	864	863	0:17:56.228000	0:17:59.810000	af4252c4a8.mp3	af4252c4a8.webp	家族も 巻き添えで失ったんだったかな。	Creo que perdió a su familia entonces.	I guess his family were collateral damage.	False	False		kenanji	Kenanji
+af3b21b0fd	866	865	867	0:18:01.740000	0:18:03.736000	af3b21b0fd.mp3	af3b21b0fd.webp	捨てただろ。	Ya lo deseché.	I threw all that away...	False	False		olcott	Olcott
+63974b647b	869	868	870	0:18:06.300000	0:18:09.630000	63974b647b.mp3	63974b647b.webp	いらないんだよ そんなものは!	¡No lo necesito!	I don't need... those damn things!	False	False		olcott	Olcott
+d38de7a839	873	872	874	0:18:22.680000	0:18:25.858000	d38de7a839.mp3	d38de7a839.webp	車は どこだ?	¿Dónde está el auto?	The vehicle... Where is it?	False	False		guel	Guel
+497fec5b0f	876	877	875	0:18:25.700000	0:18:27.827000	497fec5b0f.mp3	497fec5b0f.webp	まだ 敵がいたのか。あっ!	¿Quedan enemigos?	There were still more of-	False	False		piloto heavy B	Heavy B Pilot
+7722221ab1	881	882	883	0:18:52.218000	0:18:55.154000	7722221ab1.mp3	7722221ab1.webp	ピピッ ベッシか?	¿Es Bessie?	Is that Bessie?	False	False		olcott	Olcott
+62503d71df	884	886	885	0:18:55.154000	0:18:57.123000	62503d71df.mp3	62503d71df.webp	ダメだ。	No pude.	It's too late...	False	False		guel	Guel
+34c2555ea3	887	888	889	0:19:02.161000	0:19:04.130000	34c2555ea3.mp3	34c2555ea3.webp	死んじまった...	Murió.	She's dead.	False	False		guel	Guel
+715ae17346	890	891	892	0:19:12.271000	0:19:14.306000	715ae17346.mp3	715ae17346.webp	そうか。	Ya veo.	I see.	False	False		naji	Naji
+9c61abd557	893	894	895	0:19:14.306000	0:19:16.570000	9c61abd557.mp3	9c61abd557.webp	お前は どうする?	¿Qué harás tú?	What will you do now?	False	False		naji	Naji
+c66e44d36b	896	898	897	0:19:16.342000	0:19:18.778000	c66e44d36b.mp3	c66e44d36b.webp	合流は 少し待ってくれ。	No me uniré aún.	Wait a bit before I join you.	False	False		olcott	Olcott
+8e4a842d8b	899	901	900	0:19:18.778000	0:19:21.180000	8e4a842d8b.mp3	8e4a842d8b.webp	考える時間が欲しくなった。	Necesito tiempo para pensar.	I need time to think.	False	False		olcott	Olcott
+3f0460bf2b	903	905	904	0:19:29.021000	0:19:33.092000	3f0460bf2b.mp3	3f0460bf2b.webp	「父さん」って聞こえたから	Oí que decía "papá".	I heard someone saying "Daddy."	False	False		guel	Guel
+ca095149a6	906	907	908,909	0:19:33.092000	0:19:37.120000	ca095149a6.mp3	ca095149a6.webp	助けてほしかったんじゃ ないかって...	Supongo que quería que la salvara.	I thought maybe she wanted him... to save her...	False	False		guel	Guel
+ab2d21d584	914	915	916	0:19:46.672000	0:19:48.770000	ab2d21d584.mp3	ab2d21d584.webp	俺は どうすれば...	¿Qué debería hacer?	What should I do?	False	False		guel	Guel
+32c982354a	917	919	918	0:19:48.707000	0:19:52.278000	32c982354a.mp3	32c982354a.webp	俺は お前の親じゃない。ん?	Yo no soy tu papá.	I'm not your father.	False	False		olcott	Olcott
+37f08fa5b7	920	921	922,923	0:19:52.278000	0:19:56.310000	37f08fa5b7.mp3	37f08fa5b7.webp	どうしたらいいかなんて 自分で考えるんだな。	Decide por ti mismo lo que harás.	As for what to do next... You'll have to think for yourself.	False	False		olcott	Olcott
+171c203abb	924	925	926	0:20:00.252000	0:20:04.423000	171c203abb.mp3	171c203abb.webp	教えてくれないか? 軌道エレベーターまでの行き方。	¿Puedes decirme cómo llegar al ascensor espacial?	Can you at least tell me how to get to the orbital Permet lift?	False	False		guel	Guel
+923e1d6529	927	928	929,930	0:20:04.423000	0:20:09.795000	923e1d6529.mp3	923e1d6529.webp	何? これ以上 なくしたくないんだ	¿Qué? -No quiero perder nada más...	What? I don't want... to lose any more...	False	False		olcott/guel	Guel,Olcott
+1cf5a53dc6	931	932	933,934	0:20:09.795000	0:20:14.340000	1cf5a53dc6.mp3	1cf5a53dc6.webp	俺と父さんをつなぐもの。	que nos conecte a mi padre y a mí.	of the things... that bind me to my father.	False	False		guel	Guel
+2da62278e4	957	958	959	0:21:46.225000	0:21:49.128000	2da62278e4.mp3	2da62278e4.webp	創案は ささやかなものでした。	La idea empezó siendo algo pequeño.	It was a modest idea at first.	False	False		rajan	Rajan
+7ba135c3a8	960	961	962	0:21:49.128000	0:21:52.490000	7ba135c3a8.mp3	7ba135c3a8.webp	植生エンジニアでもあられた ノートレット様は	Noughtret era ingeniera vegetal	As a botanical engineer, Mistress Notrette thought	False	False		rajan	Rajan
+2d2f2ffbc2	963,966	965,967	964	0:21:52.464000	0:21:59.538000	2d2f2ffbc2.mp3	2d2f2ffbc2.webp	植物の多種多様な生存戦略を　人類にも適用できないかと 考えておられました。	y se planteaba cómo adaptar a los humanos las técnicas de supervivencia de las plantas.	that the various survival strategies used by plants could also be applied to humanity.	False	False		rajan	Rajan
+10b41d751e	968	969,971	970,972	0:21:59.538000	0:22:05.411000	10b41d751e.mp3	10b41d751e.webp	夢想的で根拠のない しかし あの方らしいお考えだ。	Era una visión sin sentido, pero muy típica de ella.	It was a dream with no real basis, but that was just like her.	False	False		rajan	Rajan
+23a560bbde	973	974	975	0:22:05.411000	0:22:09.114000	23a560bbde.mp3	23a560bbde.webp	その提唱に賛同した一人が	Y hubo una persona que apoyó su propuesta.	And one of the people who supported her vision...	False	False		rajan	Rajan
+6953e96b8b	978	976,979	977,980	0:22:09.020000	0:22:13.350000	6953e96b8b.mp3	6953e96b8b.webp	デリング・レンブラン あなたのお父上です。	Delling Rembran. Su padre.	was Delling Rembran. Your father.	False	False		rajan	Rajan
+434e995859	981	982	983	0:22:14.053000	0:22:18.390000	434e995859.mp3	434e995859.webp	ずっと クソおやじの 政略結婚だと思ってた。	Siempre pensé que se casó por conveniencia.	I always thought my lousy father made a marriage of convenience.	False	False		miorine	Miorine
+c2d41b5aad	984	986	985	0:22:18.390000	0:22:22.795000	c2d41b5aad.mp3	c2d41b5aad.webp	軍人であられた頃は そんな余裕もありませんでしたよ。	Cuando era militar no podía permitirse pensar en eso.	He couldn't afford things like that when he was a soldier.	False	False		rajan	Rajan
+9b227a26ae	987	988	989,990	0:22:22.795000	0:22:27.299000	9b227a26ae.mp3	9b227a26ae.webp	それほどまでに 戦場は無秩序でした。	Así de caótico era el campo de batalla.	The battlefield... was so chaotic.	False	False		rajan	Rajan
+dfe9f0bbda	991	992	993	0:22:27.299000	0:22:32.071000	dfe9f0bbda.mp3	dfe9f0bbda.webp	人々は意思を放棄し 兵器に決定権を委ねる。	Renunciamos a nuestra voluntad y cedimos las decisiones a las armas.	People abandoned their own will and left decisions to their weapons.	False	False		rajan	Rajan
+c5390c6ed7	994	995	996	0:22:32.071000	0:22:34.940000	c5390c6ed7.mp3	c5390c6ed7.webp	パーツとして消費される兵士。	Los soldados se usan como piezas.	Soldiers were consumed as expendable parts.	False	False		rajan	Rajan
+23bc8a52e3	998	997	999	0:22:34.900000	0:22:37.830000	23bc8a52e3.mp3	23bc8a52e3.webp	私も 多くの同志を失いました。	Yo también perdí a muchos compañeros.	I lost many comrades as well.	False	False		rajan	Rajan
+4a68ef5b4b	1001	1000	1002	0:22:37.740000	0:22:40.310000	4a68ef5b4b.mp3	4a68ef5b4b.webp	ガンダム狩りは それが理由?	¿Por eso persiguió a los Gundams?	And that's why you began Gundam-hunting?	False	False		miorine	Miorine
+25e26dc1d0	1003	1004	1005	0:22:41.447000	0:22:44.016000	25e26dc1d0.mp3	25e26dc1d0.webp	人間性の回帰を	El retorno de la humanidad.	The restoration of human nature.	False	False		rajan	Rajan
+5e22a2409e	1006	1008	1007	0:22:44.016000	0:22:47.686000	5e22a2409e.mp3	5e22a2409e.webp	総裁は 強硬手段をもってしても 強く求められました。	Lo deseaba aunque hubiera que ser muy duros.	That's what the President desired, even if it took drastic measures.	False	False		rajan	Rajan
+6c067c515b	1009	1010	1011,1012	0:22:49.855000	0:22:54.860000	6c067c515b.mp3	6c067c515b.webp	それでも 戦争シェアリングで 紛争をコントロールしても	Pero, incluso controlando la guerra mediante la economía,	And yet... even if he could control conflict through war partitioning,	False	False		rajan	Rajan
+6a5e891924	1013	1015	1014	0:22:54.860000	0:22:58.263000	6a5e891924.mp3	6a5e891924.webp	秩序を手に入れることは かなわなかった。	fue imposible traer el orden.	he never managed to achieve order.	False	False		rajan	Rajan
+7c1140aed5	1016,1019	1018	1017	0:22:58.263000	0:23:03.390000	7c1140aed5.mp3	7c1140aed5.webp	だからこそ ノートレット様の創案は　総裁にとって希望でした。	Por ello, la idea de la señora Noughtret era la esperanza del presidente.	That's why Mistress Notrette's vision became a source of hope.	False	False		rajan	Rajan
+9edf897a59	1020	1021	1022	0:23:05.304000	0:23:08.273000	9edf897a59.mp3	9edf897a59.webp	事故で失われるまでは。	Hasta el accidente.	Until she was lost in that accident...	False	False		rajan	Rajan
+1d7bd5d744	1023	1025	1024	0:23:08.273000	0:23:11.610000	1d7bd5d744.mp3	1d7bd5d744.webp	悲しいなら そう言えばいいのに。	Si estaba triste, podía decirlo.	If he felt sad, he should have said so.	False	False		miorine	Miorine
+aea38bc512	1026	1027	1028	0:23:11.610000	0:23:15.214000	aea38bc512.mp3	aea38bc512.webp	敵や造反は 後を絶ちませんでしたから。	Tenía enemigos y opositores por doquier.	There was always some new enemy or rebellion.	False	False		rajan	Rajan
+8225c66930	1030	1031	1029	0:23:14.990000	0:23:17.630000	8225c66930.mp3	8225c66930.webp	ようやく分かってきたわ	Por fin empiezo a entender	I finally get it.	False	False		miorine	Miorine
+05c2355f10	1032	1033	1034	0:23:17.549000	0:23:21.100000	05c2355f10.mp3	05c2355f10.webp	クソおやじが 花嫁ゲームを仕組んだ理由。	por qué mi papá ideó el juego de la prometida.	I understand why my lousy father set up that marriage game.	False	False		miorine	Miorine
+ea6df1f613	1035,1038	1037	1036	0:23:21.053000	0:23:25.991000	ea6df1f613.mp3	ea6df1f613.webp	力のある人間に嫁がせれば　いちばん安全だとでも 考えたんでしょ。	Creía que lo más seguro era casarme con alguien fuerte, ¿no?	He thought it was safest to marry me off to someone powerful.	False	False		miorine	Miorine
+4fc3b0f527	1040	1041	1039	0:23:25.900000	0:23:29.350000	4fc3b0f527.mp3	4fc3b0f527.webp	クワイエット・ゼロの カモフラージュも含めてね。	Y servía para camuflar Quiet Zero.	And it was also good camouflage for Quiet Zero.	False	False		miorine	Miorine
+4276f8b6c6	1042,1045	1043	1044,1046	0:23:28.927000	0:23:35.350000	4276f8b6c6.mp3	4276f8b6c6.webp	ふっ...総裁は　自ら葬ったガンダムを 利用してでも	El presidente quiere cumplir la promesa que hizo a la señora Noughtret	The President... intends to fulfill his vow to Mistress Notrette	False	False		rajan	Rajan
+c9adc89743	1047	1048	1049	0:23:35.100000	0:23:38.637000	c9adc89743.mp3	c9adc89743.webp	ノートレット様との誓いを 果たすおつもりです。	aunque deba usar los Gundams que él mismo enterró.	even if he has to use the very Gundams he buried.	False	False		rajan	Rajan
+6f0e6e9c4f	1051	1052	1050	0:23:38.600000	0:23:41.206000	6f0e6e9c4f.mp3	6f0e6e9c4f.webp	ですが ミオリネ様	Pero, señorita Miorine,	But you, Mistress Miorine...	False	False		rajan	Rajan
+fbccec282e	1054	1053	1055,1056	0:23:41.200000	0:23:45.711000	fbccec282e.mp3	fbccec282e.webp	あなたは あなただ。お父上ではありません。	usted es usted, no su padre.	Your life is yours. You are not your father.	False	False		rajan	Rajan
+eae93c1f1d	1057	1059	1058	0:23:45.711000	0:23:48.781000	eae93c1f1d.mp3	eae93c1f1d.webp	どうか ご自身のお心で。	Decídalo por sí misma.	Please... follow your own heart.	False	False		rajan	Rajan

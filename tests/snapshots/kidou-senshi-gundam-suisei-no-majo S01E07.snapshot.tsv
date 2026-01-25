@@ -1,317 +1,317 @@
 ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREENSHOT	CONTENT	CONTENT_TRANSLATION_SPANISH	CONTENT_TRANSLATION_ENGLISH	CONTENT_SPANISH_MT	CONTENT_ENGLISH_MT	ACTOR_JA	ACTOR_ES	ACTOR_EN
-2	2	1	0	0:00:02.629000	0:00:04.482000	2.mp3	2.webp	ええ 認めます	Lo admito.	Why, yes. We acknowledge it.	False	False		nugen	
-5	5	4	3	0:00:04.750000	0:00:07.610000	5.mp3	5.webp	ファラクトは ガンダムです	El Pharact es un Gundam.	The Pharact is indeed a Gundam.	False	False		nugen	
-8	8	7	6	0:00:07.610000	0:00:11.650000	8.mp3	8.webp	いやしいな 協定の裏でのうのうと	Ignoraron lo que se pactó.	It's despicable of you to breach the Agreement so casually.	False	False		vim	
-10	10	11	9	0:00:11.620000	0:00:14.575000	10.mp3	10.webp	汚いマネは そちらもお得意でしょうに	Usted también sabe jugar sucio.	I believe you know a thing or two about that yourself.	False	False		kal	
-14	14	13	12	0:00:14.570000	0:00:18.080000	14.mp3	14.webp	それで そちらのご提案とは?	¿Cuál es su propuesta?	Now then, what are you proposing?	False	False		nugen	
-17	17	16	15	0:00:18.980000	0:00:23.540000	17.mp3	17.webp	ペイル社にも 我々の計画に協力してもらいたい	Quiero que Pale colabore en nuestro proyecto.	We'd like Peil Technologies to cooperate with our plan.	False	False		sarius	
-20	20	19	18	0:00:23.890000	0:00:27.500000	20.mp3	20.webp	これは またとない好機なのだ	Esta es una oportunidad única	This is an opportunity we'll never see again.	False	False		sarius	
-23	23,25	22	21,24	0:00:27.780000	0:00:32.220000	23.mp3	23.webp	ヤツの...　デリングの手を読むための	para predecir la próxima jugada de Delling.	To learn what he... what Delling has up his sleeve.	False	False		sarius	
-28	28,32	30	29,31	0:02:09.190000	0:02:12.820000	28.mp3	28.webp	あたっ ボーっとしない　トマトに傷がつくでしょ	No te distraigas. Arruinarás los tomates.	Don't let your mind wander! You'll hurt the tomatoes.	False	False		miorine	
-34	34	33	35	0:02:13.080000	0:02:15.196000	34.mp3	34.webp	ご... ごめんなさい	Lo siento.	I-I'm sorry.	False	False		suletta	
-38	38	37	36	0:02:15.190000	0:02:17.080000	38.mp3	38.webp	まったく	Cielos...	Honestly...	False	False		miorine	
-40	40	41	39	0:02:16.940000	0:02:19.880000	40.mp3	40.webp	そんなに気になるの? エランのこと	¿Tanto te preocupa Elan?	Are you really that worried about Elan?	False	False		miorine	
-44	44	43	42	0:02:20.560000	0:02:23.970000	44.mp3	44.webp	あれから 学校にも来てないっていうし	No regresó a la escuela desde entonces.	He hasn't been to school since then, either.	False	False		suletta	
-47	47	46	45	0:02:23.970000	0:02:25.664000	47.mp3	47.webp	大丈夫でしょうか	Espero que esté bien.	Is he really okay?	False	False		suletta	
-50	50	49	48	0:02:25.940000	0:02:29.420000	50.mp3	50.webp	勝手に干渉して 勝手に心配して	Interfieres como quieres y luego te preocupas.	Butting into other people's problems and worrying without being asked...	False	False		miorine	
-52	52	53	51	0:02:29.420000	0:02:31.800000	52.mp3	52.webp	一体 何が楽しいんだか	¿Qué es tan divertido?	Are you enjoying this or something?	False	False		miorine	
-56	56,58	55	54,57	0:02:31.800000	0:02:36.270000	56.mp3	56.webp	ミオリネさんは ないんですか?　人のことで頭がいっぱいに...	¿A ti nunca te ocurrió que solo puedes pensar en al...?	Haven't you ever been troubled, Ms. Miorine... about somebody else's-	False	False		suletta	
-60	60,63	59	61,62	0:02:36.010000	0:02:39.470000	60.mp3	60.webp	ない　私が考えることは ただ一つ	No. Yo solo pienso en una cosa.	Never. I only ever think about one thing.	False	False		miorine	
-66	66	65	64	0:02:39.470000	0:02:42.723000	66.mp3	66.webp	ここから脱出して 地球に行くことだけ	Salir de aquí e ir a la Tierra.	Getting out of this place and going to Earth.	False	False		miorine	
-69	69,70	67	68	0:02:43.370000	0:02:47.311000	69.mp3	69.webp	あんたも余計なことばっか 考えてると⸺　また実習落ちるよ	Tú sigue distrayéndote y reprobarás la práctica de nuevo.	If your mind is always elsewhere, you'll fail the exam again.	False	False		miorine	
-72	72	73	71	0:02:47.230000	0:02:49.860000	72.mp3	72.webp	そうですけど...	Lo sé, pero...	I guess that's true, but...	False	False		suletta	
-77	77	76	75	0:02:54.300000	0:02:55.980000	77.mp3	77.webp	招待状?	¿Una invitación?	An invitation?	False	False		suletta	
-80	80	79	78	0:02:55.980000	0:02:57.830000	80.mp3	80.webp	インキュベーションね	La Incubation.	An incubation party, huh?	False	False		miorine	
-83	83	82	81	0:02:57.830000	0:02:59.360000	83.mp3	83.webp	行く必要なし	No es necesario ir.	There's no need to go.	False	False		miorine	
-86	86	85	84	0:02:59.360000	0:03:01.040000	86.mp3	86.webp	いいんですか?	¿Seguro?	Are you sure?	False	False		suletta	
-89	89,91	88,90	87,92	0:03:01.040000	0:03:09.580000	89.mp3	89.webp	まあ グループ内の 社交パーティーみたいなものよ　大体 学生で参加するの 御三家くらいのものだしね	Es básicamente una reunión social. Los únicos estudiantes que van son de las tres casas.	It's like a social party for people among the group companies. As far as students, only those from the three branches will be going.	False	False		miorine	
-95	95,96	94	93	0:03:09.860000	0:03:14.080000	95.mp3	95.webp	こんなのに行ったら⸺　ホルダーのあんたも ステージで挨拶とかさせられ...	Al ser Holder, si vas tendrás que salu...	As the Holder, if you go there, they'll force you to make a speech on stage and-	False	False		miorine	
-97	97	98		0:03:14.046000	0:03:16.250000	97.mp3	97.webp	じゃ... じゃあ来ますよね!	Entonces él irá, ¿sí?		False			suletta	
-101	101,104	103	102	0:03:16.298000	0:03:20.760000	101.mp3	101.webp	え? 御三家来るなら⸺　エランさん きっと来ますよね!	Si van las tres casas, Elan asistirá, ¿sí?	If the three branches are going, then Mr. Elan will come too, right?	False	False		suletta	
-109	109	108	107	0:03:25.750000	0:03:27.060000	109.mp3	109.webp	スゴい	Es impresionante.	Look at this...	False	False		nika	
-112	112,114	111	110	0:03:27.290000	0:03:30.187000	112.mp3	112.webp	本当に 来てよかったのかな　僕たち	¿De seguro podíamos venir?	Are you sure it's okay for us to be here?	False	False		martin	
-116	116	117	115	0:03:30.150000	0:03:32.730000	116.mp3	116.webp	なんだか緊張しちゃうね	Comienzo a ponerme nerviosa.	I can't help but feel nervous.	False	False		nika	
-120	120,122	119	118,121	0:03:32.730000	0:03:35.484000	120.mp3	120.webp	緊張なんかする必要ないわ　あ...	No estés nerviosa.	What? There's no need for that.	False	False		miorine	
-125	125	124	123	0:03:35.480000	0:03:38.150000	125.mp3	125.webp	こんなの うわべだけのハッタリよ	Solo es una fiesta superficial.	Everything here is just for show.	False	False		miorine	
-128	128,130	127	126,129	0:03:38.150000	0:03:42.324000	128.mp3	128.webp	それに あなたたちは⸺　れっきとした ホルダーの同伴者なんだから	Además, vienen como acompañantes de la Holder.	Plus, you two... are guests of the reigning Holder.	False	False		miorine	
-132	132	133	131	0:03:42.890000	0:03:45.160000	132.mp3	132.webp	お... お待たせしました	Ya estoy lista.	S-Sorry to keep you waiting!	False	False		suletta	
-136	136	135	134	0:03:45.160000	0:03:46.495000	136.mp3	136.webp	大丈夫?	¿Estás bien?	Are you okay?	False	False		miorine	
-138	138	139	137	0:03:46.420000	0:03:48.497000	138.mp3	138.webp	胸 キツいんですけど	Me aprieta un poco el pecho.	It's pretty tight in the bust...	False	False		suletta	
-141	141	142	140	0:03:48.490000	0:03:51.590000	141.mp3	141.webp	私のドレスだから キツいのは仕方ないけど	Es inevitable. El vestido es mío.	It's my dress. Of course it's tight.	False	False		miorine	
-144	144	145	143	0:03:51.590000	0:03:54.260000	144.mp3	144.webp	もっと背筋を伸ばしなさい!	Pero ¡ponte recta como poco!	Now stand up straight!	False	False		miorine	
-149	149,151	148	147,150	0:03:55.320000	0:03:59	149.mp3	149.webp	ニカにもドレス貸せたのに　制服のままでよかったの?	Tenía más vestidos. ¿Preferías vestir el uniforme, Nika?	I could've loaned you a dress too, Nika. Are you okay in that uniform?	False	False		miorine	
-153	153	154	152	0:03:58.890000	0:04:02.440000	153.mp3	153.webp	私たち おもしろそうだからついてきたけど	Solo vinimos porque sonaba interesante.	We came along out of curiosity, but...	False	False		nika	
-156	156	157	155	0:04:02.310000	0:04:05.300000	156.mp3	156.webp	なんの集まりかも よく分かってなくて	Ni siquiera sabía qué tipo de evento era.	we didn't really know what to expect.	False	False		nika	
-160	160	159	158	0:04:05.910000	0:04:08.330000	160.mp3	160.webp	インキュベーション・パーティー	La Incubation Party.	An incubation party...	False	False		miorine	
-163	163	162	161	0:04:08.330000	0:04:12.230000	163.mp3	163.webp	要は 新規事業の 立ち上げ支援イベントよ	Un evento para apoyar la creación de nuevos negocios.	In other words, an event to promote new business startups.	False	False		miorine	
-166	166	165	164	0:04:12.810000	0:04:15.482000	166.mp3	166.webp	グループ内で 事業を起こそうって人間が⸺	Los que quieren emprender dentro del grupo	People who want to start a new project within the group	False	False		miorine	
-168	168	169	167	0:04:15.400000	0:04:18.240000	168.mp3	168.webp	ここでプランを発表して 投資を募るの	anuncian sus proyectos y buscan inversores.	announce their plans here and solicit investment.	False	False		miorine	
-172	172,173	171	170	0:04:18.590000	0:04:23.400000	172.mp3	172.webp	設定額に達すれば⸺　めでたく新しい事業が 誕生するってわけ	Si consiguen el presupuesto fijado, pueden empezar un nuevo negocio.	If they reach their target amount, then a glorious new business is born.	False	False		miorine	
-175	175	176	174	0:04:23.400000	0:04:24.908000	175.mp3	175.webp	スゴい	Es increíble.	Wow....	False	False		nika	
-179	179	178	177	0:04:24.750000	0:04:27.070000	179.mp3	179.webp	まあ お金は 集まらないだろうけどね	No creo que reúna el dinero.	But I doubt anyone will get enough money.	False	False		miorine	
-181	181		180	0:04:26.960000	0:04:27.790000	181.mp3	181.webp	え?		Huh?		False			
-184	184	182	183	0:04:27.740000	0:04:29.496000	184.mp3	184.webp	コンセプトが古すぎる	Es un concepto anticuado.	The concepts are all too old-fashioned.	False	False		miorine	
-187	187	186	185	0:04:29.770000	0:04:32.130000	187.mp3	187.webp	あれじゃプレゼンは通らないわ	La presentación no bastará.	No one will buy into their presentations.	False	False		miorine	
-190	190,191	189,192	188	0:04:33.910000	0:04:38.420000	190.mp3	190.webp	本当だ　さすが経営戦略科の成績トップ	Tenías razón. No por nada eres la mejor de Gestión Estratégica.	You're right. No wonder you're the top student in management strategy.	False	False		nika	
-194	194	195	193	0:04:38.380000	0:04:40.300000	194.mp3	194.webp	嫌味? 行くわよ	¿Es sarcasmo? Vámonos.	Is that sarcasm? Let's go.	False	False		miorine	
-198	198	197	196	0:04:42.740000	0:04:45.850000	198.mp3	198.webp	私たち これから エランを捜しに行くけど	Iremos a buscar a Elan.	We're going to go search for Elan.	False	False		miorine	
-201	201	200	199	0:04:45.850000	0:04:48.230000	201.mp3	201.webp	私はブースを見て回りたいかな	Yo quiero mirar los puestos.	I think I want to have a look at the booths.	False	False		nika	
-202	202	204	203	0:04:48.223000	0:04:50.450000	202.mp3	202.webp	いいわ じゃあ またあとで	Bien. Nos veremos luego.	Fine. See you later, then.	False	False		miorine	
-206	206	207	205	0:04:50.400000	0:04:51.600000	206.mp3	206.webp	じゃあ	Adiós.	See you.	False	False		martin	
-210	210,211	209	208	0:04:53.630000	0:04:57.980000	210.mp3	210.webp	ったく なんだって俺が⸺　強化人士の尻拭いなのさ	¿Por qué he de arreglar los problemas de un sujeto potenciado?	Why do I have to clean up after that Enhanced Person?	False	False		elan	
-214	214	213	212	0:04:57.980000	0:05:01.680000	214.mp3	214.webp	ほかの検体は まだ準備できていませんので	El siguiente aún no está preparado.	The next test subject isn't ready yet.	False	False		golneri	
-217	217	216	215	0:05:01.680000	0:05:04.530000	217.mp3	217.webp	ここは ご本人が適任かと	Lo mejor es que vaya en persona.	We believe it's best to leave this to the real you.	False	False		nevola	
-220	220	219	218	0:05:05.070000	0:05:07.610000	220.mp3	220.webp	面倒残していきやがって	Es un fastidio por su culpa.	Damn him for leaving a mess like this behind.	False	False		elan	
-224	224,226	223	222,225	0:05:08.890000	0:05:11.580000	224.mp3	224.webp	あの娘が...　花婿候補...	¿Es esa chica? -¿Es la pretendiente?	That girl is... The latest groom candidate.	False	False		invitado A/B	
-229	229,231	228	227,230	0:05:11.580000	0:05:14.410000	229.mp3	229.webp	ほら 例の　魔女なんだろ?	Es ella. -Es una bruja, ¿no?	Then she's... The witch they're talking about.	False	False		invitado C/D	
-234	234	233	232	0:05:14.410000	0:05:16	234.mp3	234.webp	まあ 怖い	Qué miedo.	Oh, scary.	False	False		invitada E	
-236	236	237	235	0:05:15.960000	0:05:18.920000	236.mp3	236.webp	なんか スッゴい 見られてるんですけど	Todos nos están mirando.	Everyone's staring at us.	False	False		suletta	
-239	239,243	240,241	238,242	0:05:18.730000	0:05:22.890000	239.mp3	239.webp	気にしない 堂々としてればいいの　で... でも...	Ignóralos. -Tú mantén la cabeza bien alta. -Pero...	Never mind them. Just behave confidently. B-But...	False	False		miorine	
-245	245,248	244,250	246,247,249	0:05:22.840000	0:05:26.050000	245.mp3	245.webp	背筋を伸ばす!　は... はい! これは珍しい	¡Ponte recta! -¡Sí! Qué extraño.	Stand up straight! R-Right! Fancy meeting you two here.	False	False		miorine/suletta,shaddiq	
-253	253	252	251	0:05:27.200000	0:05:30.800000	253.mp3	253.webp	お2人共 新規事業に 興味がおありで?	¿Les interesan los nuevos negocios?	Does this mean you're interested in new business ventures?	False	False		shaddiq	
-256	256	255	254	0:05:30.800000	0:05:32.150000	256.mp3	256.webp	シャディク	Shaddiq.	Shaddiq?	False	False		miorine	
-258	258,260	259	257	0:05:32.150000	0:05:36.647000	258.mp3	258.webp	よかったら うちのプレゼンにもアドバイス⸺　貰えないかな?	Si te parece bien, aconséjame sobre mi presentación.	If possible, I'd love to receive your advice about our presentations.	False	False		shaddiq	
-263	263	262	261	0:05:36.640000	0:05:40.150000	263.mp3	263.webp	フォーカード17地区の契約取った あんたが言っても⸺	Dice el que obtuvo el contrato del sector 17.	Coming from the man who won the contract for Four Card Sector 17,	False	False		miorine	
-265	265	266	264	0:05:40.110000	0:05:41.770000	265.mp3	265.webp	説得力ないんだけど	No me convences.	I find that hard to believe.	False	False		miorine	
-268	268	269	267	0:05:41.660000	0:05:43.530000	268.mp3	268.webp	ミオリネの意見が欲しいのさ	Quiero tu opinión, Miorine.	I'd like to hear your opinion, Miorine.	False	False		shaddiq	
-272	272,274	271	270,273	0:05:44.260000	0:05:47.040000	272.mp3	272.webp	何よ　仲良しなんです?	¿Qué sucede? -¿Sois amigos?	What? Are you two friends?	False	False		miorine/suletta	
-277	277	276	275	0:05:47.040000	0:05:49.880000	277.mp3	277.webp	違う ただの腐れ縁	No. Nos conocemos, eso es todo.	Please. I just can't get rid of him.	False	False		miorine	
-279	279	280	278	0:05:49.710000	0:05:51.240000	279.mp3	279.webp	そう言うなよ	No seas así.	Don't be that way.	False	False		shaddiq	
-283	283	282	281	0:05:51.600000	0:05:54.206000	283.mp3	283.webp	昔は こういう場で よく顔合わせてたんだ	Solíamos encontrarnos en eventos así.	We used to see each other a lot at these events.	False	False		shaddiq	
-286	286	285	284	0:05:55.230000	0:05:57.850000	286.mp3	286.webp	それで 今日は なんの用?	¿Y bien? ¿A qué viniste?	Anyway, what brings you here today?	False	False		shaddiq	
-289	289	288	287	0:05:57.850000	0:06:00.490000	289.mp3	289.webp	総裁の顔見にって わけじゃないんだろ?	Dudo que sea a ver al presidente.	I know you didn't come to see the President.	False	False		shaddiq	
-292	292	291	290	0:06:00.490000	0:06:01.964000	292.mp3	292.webp	この子の付き添い	A acompañarla a ella.	I'm just accompanying her.	False	False		miorine	
-294	294,297	293	295	0:06:02.260000	0:06:04.680000	294.mp3	294.webp	エランに会って話したいって うるさいの　ああっ あっあっあっ...	Insiste en querer ver a Elan.	She keeps whining about wanting to talk to Elan face-to-face!	False	False		miorine	
-300	300,303,305	299	301,302,304	0:06:04.590000	0:06:09.310000	300.mp3	300.webp	ミミミ... ミオリネさん!　ミオリネ 変わったね　はあ?	¡Miorine, eso era un secreto! -Cambiaste, Miorine.	M-M-Ms. Miorine! You've changed, Miorine. Th-Th-That's confidential!	False	False		suletta/shaddiq	
-308	308,310	307	306,309	0:06:09.310000	0:06:13.725000	308.mp3	308.webp	ひとのために動くなんて　昔のミオリネなら絶対やらなかった	Antes jamás movías un dedo para ayudar a otros.	Acting for another person's sake... The Miorine I knew would never do that.	False	False		shaddiq	
-313	313	312	311	0:06:14.070000	0:06:16.854000	313.mp3	313.webp	これも水星ちゃんの魔力かな う...	¿Será la magia de la mercuriana?	Is this more of the Mercurian Miss's magic?	False	False		shaddiq	
-316	316	315	314	0:06:16.850000	0:06:18.600000	316.mp3	316.webp	何言ってんだか	No sé de qué hablas.	I don't know what you mean.	False	False		miorine	
-318	318	319	317	0:06:18.480000	0:06:20.230000	318.mp3	318.webp	ほら 行くわよ	Vámonos.	Come on, let's go!	False	False		miorine	
-321	321	322	320	0:06:20.030000	0:06:21.490000	321.mp3	321.webp	は... はい	Bien.	R-Right!	False	False		suletta	
-325	325	324	323	0:06:23.010000	0:06:26.190000	325.mp3	325.webp	ミオリネさん 待ってくださーい	¡Espera, Miorine!	Ms. Miorine, wait for me!	False	False		suletta	
-328	328	327	326	0:06:26.680000	0:06:28.650000	328.mp3	328.webp	変わったよ 君は	Sí cambiaste.	You've definitely changed.	False	False		shaddiq	
-331	331	330	329	0:06:29.510000	0:06:30.960000	331.mp3	331.webp	残念だ	Es una lástima.	Too bad.	False	False		shaddiq	
-333	333	334	332	0:06:32.200000	0:06:34.371000	333.mp3	333.webp	まあ 素敵	¡Qué maravilla!	Oh, my! Look at you!	False	False		prospera	
-337	337	336	335	0:06:34.890000	0:06:36.123000	337.mp3	337.webp	お母さん	¡Mamá!	Mom!	False	False		suletta	
-340	340	339	338	0:06:36.400000	0:06:38.590000	340.mp3	340.webp	来られないって言ってたのに	Dijiste que no podías venir.	You said you weren't coming!	False	False		suletta	
-341	341	343	342	0:06:38.542000	0:06:41.170000	341.mp3	341.webp	仕事が予定より早く終わったの	Terminé el trabajo y pude venir.	I finished work earlier than expected.	False	False		prospera	
-346	346	345	344	0:06:41.780000	0:06:44.550000	346.mp3	346.webp	ドレス とっても似合ってる	El vestido te va estupendo.	The dress looks truly lovely on you!	False	False		prospera	
-350	350	349	348	0:06:45.650000	0:06:48.340000	350.mp3	350.webp	ゴドイさんも お久しぶりです	Cuánto tiempo sin verte, Godoy.	Mr. Godoy, long time no see.	False	False		suletta	
-353	353	351	352	0:06:49.220000	0:06:51.013000	353.mp3	353.webp	そちらのお嬢さんは...	¿Quién es esa chica?	And this young lady is...	False	False		prospera	
-356	356	355	354	0:06:51.010000	0:06:53.930000	356.mp3	356.webp	ああ 紹介しなきゃだよね	Ah, te la presentaré.	Oh right, I have to introduce you.	False	False		suletta	
-359	359,361	358	357,360	0:06:53.930000	0:06:57.770000	359.mp3	359.webp	ミオリネさん　このドレスも ミオリネさんが貸してくれたの	Es Miorine. El vestido me lo prestó ella.	Ms. Miorine. She's the one who loaned me this dress.	False	False		suletta	
-364	364	363	362	0:06:58.540000	0:07:00.640000	364.mp3	364.webp	ミオリネ・レンブランです	Soy Miorine Rembran.	I'm Miorine Rembran.	False	False		miorine	
-367	367	365	366,368	0:07:01.150000	0:07:04.840000	367.mp3	367.webp	スレッタの母の プロスペラ・マーキュリーです	Soy Prospera Mercury, la madre de Suletta.	I'm Suletta's mother, Prospera Mercury.	False	False		prospera	
-371	371	370	369	0:07:04.840000	0:07:06.900000	371.mp3	371.webp	またお会いできて光栄です	Es un honor verte de nuevo.	I'm so pleased to meet you again.	False	False		prospera	
-374	374	373	372	0:07:07.180000	0:07:09.670000	374.mp3	374.webp	あのときは お見苦しいところを...	Lamento el espectáculo que di.	I'm sorry you had to see me like that.	False	False		miorine	
-377	377	376	375	0:07:09.670000	0:07:13.370000	377.mp3	377.webp	とんでもない とってもカッコよかったですわ	Para nada. Estuviste estupenda.	Not at all! I was quite impressed!	False	False		prospera	
-380	380	379	378	0:07:13.370000	0:07:15.790000	380.mp3	380.webp	クソ親父! って...	¡\"Mi maldito padre\"!	\"Hypocritical loser of a father!\" Wasn't that it?	False	False		prospera	
-384	384	383	382	0:07:16.790000	0:07:21	384.mp3	384.webp	おかげでエアリアルを 認可いただけたと思っています	Creo que aprobaron al Aerial gracias a ti.	I'm of the opinion that we owe Aerial's approval to you.	False	False		prospera	
-387	387	386	385	0:07:21	0:07:22.970000	387.mp3	387.webp	ありがとうございました	Te lo agradezco.	Thank you very much.	False	False		prospera	
-390	390	389	388	0:07:25.460000	0:07:28.500000	390.mp3	390.webp	お母さん ミオリネさんと 会ったことある...	¿Ya conocías a Miorine, mamá?	Mom, you've met Ms. Miorine-	False	False		suletta	
-392	392,395,397	393	391,394,396	0:07:28.500000	0:07:33.940000	392.mp3	392.webp	スレッタ　お母さん のど渇いちゃった　何か飲み物持ってきてくれる?	Tengo sed, Suletta. ¿Puedes traerme algo de beber?	Suletta? Your mother is thirsty. Can you bring me something to drink?	False	False		prospera	
-399	399	400	398	0:07:33.940000	0:07:36.200000	399.mp3	399.webp	うん 分かった	Bien.	Sure, got it!	False	False		suletta	
-403	403	402	401	0:07:36.200000	0:07:38.101000	403.mp3	403.webp	あ... なら私も...	Te acom...	Well, in that case, I'll-	False	False		miorine	
-407	407	406	405	0:07:38.870000	0:07:43.020000	407.mp3	407.webp	お父さまとは いつも あんな感じなのかしら	¿Tu relación con tu padre siempre es igual?	Has it always been that way... between you and your father?	False	False		prospera	
-410	410	409	408	0:07:43.590000	0:07:45.740000	410.mp3	410.webp	今 それ聞きます?	¿Me preguntas eso ahora?	Is this really the place to ask?	False	False		miorine	
-412	412,414	413	411,415	0:07:45.550000	0:07:51.030000	412.mp3	412.webp	だって⸺　あなたとスレッタが結婚したら 私たち親戚になるんですもの	Es que si te casas con Suletta, seremos familia.	Well, if you and Suletta are married, we're going to be relatives.	False	False		prospera	
-418	418	417	416	0:07:51.300000	0:07:55.280000	418.mp3	418.webp	お嫁さんの実家には 仲良くしてほしいじゃない?	Quiero que nos llevemos bien.	Shouldn't I want to get along with the bride's family?	False	False		prospera	
-421	421,422	420	419	0:07:59.440000	0:08:04.590000	421.mp3	421.webp	21年前の⸺　ヴァナディース事変を 鎮圧した立役者	Fue la figura central en la supresión del Incidente Vanadis hace 21 años.	The man responsible for suppressing the Vanadis Incident 21 years ago.	False	False		prospera	
-425	425	424	423	0:08:04.590000	0:08:07.340000	425.mp3	425.webp	何よりガンダムを禁忌にした英雄	El héroe que prohibió los Gundam.	And most of all, the hero who banned the Gundams.	False	False		prospera	
-428	428	427	426	0:08:07.610000	0:08:09.930000	428.mp3	428.webp	立派なお父さまだと思うけど	Luce como un buen padre.	I'd think he'd be a splendid father.	False	False		prospera	
-430	430	431	429	0:08:09.930000	0:08:12.600000	430.mp3	430.webp	そんなの過去の栄光です	Eso son glorias pasadas.	That glory's all in the past.	False	False		miorine	
-433	433	434	432	0:08:12.440000	0:08:15.510000	433.mp3	433.webp	私たちの世代は ガンダムなんて知らないし	Mi generación no conoce los Gundam.	Our generation knows nothing of Gundams.	False	False		miorine	
-437	437	436	435,438	0:08:15.830000	0:08:19.560000	437.mp3	437.webp	手厳しいのね 何が許せないのかしら	Qué dura eres. ¿Qué es lo que no puedes perdonarle?	You're hard to please. What's so unforgivable about him?	False	False		prospera	
-441	441	440	439,442	0:08:20.750000	0:08:25.440000	441.mp3	441.webp	いつも上から目線で 説明もなしに勝手に決めて...	Siempre me menosprecia y decide las cosas sin explicarme nada.	He always looks down on me and makes decisions without consulting me.	False	False		miorine	
-445	445,446	444	443	0:08:25.790000	0:08:29.530000	445.mp3	445.webp	あなたも あのとき⸺　理不尽だって 思ったんじゃないですか?	Aquello también tuvo que parecerte irracional.	That day, didn't you think he was being unreasonable, too?	False	False		miorine	
-449	449	447	448	0:08:29.940000	0:08:30.940000	449.mp3	449.webp	それに...	Además...	But most of all...	False	False		miorine	
-452	452,455	451	450,453,454	0:08:35.470000	0:08:41.040000	452.mp3	452.webp	とにかく 私はあんな人⸺　父親だなんて 絶対に認めたくありません	Como sea, que no quiero reconocer que ese hombre es mi padre.	No matter what, I will never accept a man like that as my father!	False	False		miorine	
-459	459	457	458	0:08:45.330000	0:08:46.800000	459.mp3	459.webp	なんですか?	¿Qué sucede?	What's your problem?	False	False		miorine	
-462	462	461	460	0:08:46.800000	0:08:48.547000	462.mp3	462.webp	ああ ごめんなさいね	Discúlpame.	Oh, please excuse me.	False	False		prospera	
-464	464	465	463	0:08:48.540000	0:08:51.470000	464.mp3	464.webp	それでは こちらが初公開となります	Hoy lo mostramos por primera vez.	And now, being unveiled for the first time,	False	False		empleado B	
-468	468	467	466,469	0:08:51.470000	0:08:54.094000	468.mp3	468.webp	その素敵なドレスも...	Es que ese vestido tan bonito,	a promotion for the new color version. That beautiful dress...	False	False		prospera	
-472	472	471	473	0:08:54.510000	0:08:57.550000	472.mp3	472.webp	今身につけている ヒールもアクセサリーも...	los zapatos de tacón, los accesorios,	the high heels and accessories you're wearing,	False	False		prospera	
-476	476	475	474	0:08:57.910000	0:09:01.351000	476.mp3	476.webp	寮には入らず 理事長室で生活しているのも...	el hecho de que vivas en el despacho del director,	that you can live in the Chairman's office rather than a House,	False	False		prospera	
-479	479	478	477	0:09:01.670000	0:09:03.850000	479.mp3	479.webp	他者から受ける敬意も...	el respeto que te profesan...	the respect you receive from others...	False	False		prospera	
-482	482,484,487	481,486	480,483,485	0:09:04.170000	0:09:13.790000	482.mp3	482.webp	そのすべてが ベネリットグループ総裁である⸺　お父さまの 力のおかげなのにって思ったら...　なんだか おかしくなっちゃって	Todo ello se lo debes a tu padre, el presidente de Benerit Group. Al pensar en ello, me pareció gracioso.	When I remember all of that is because your father is the president of the Benerit Group, it somehow strikes me as funny.	False	False		prospera	
-491	491	490	489	0:09:14.360000	0:09:17.820000	491.mp3	491.webp	ああ 気に障ったら ごめんなさい	Lo siento si te molesté.	Oh, I'm sorry if I've offended you.	False	False		prospera	
-494	494	493	492	0:09:18.140000	0:09:22.331000	494.mp3	494.webp	でも まずは その かわいい意地を捨てなくっちゃね	Primero deberías deshacerte de esa tozudez tan encantadora,	But first you must throw away that adorable pride,	False	False		prospera	
-497	497	496	495	0:09:22.980000	0:09:26.260000	497.mp3	497.webp	デリング総裁のお嬢さん	hija del presidente Delling.	dear daughter of President Delling.	False	False		prospera	
-500	500	501	499,502	0:09:27.830000	0:09:30.290000	500.mp3	500.webp	お客さま! 大丈夫ですか?	¡Señorita! -¿Está bien?	Miss! Are you okay?	False	False		trabajadora A/B	
-505	505,507	504	503,506	0:09:30.290000	0:09:34.301000	505.mp3	505.webp	ご... ごごご... ごめんなさい!　あわわわわわ... 私...	Lo siento, yo...	I-I-I'm so sorry! Wh-What should I do?	False	False		suletta	
-510	510	509	508	0:09:34.300000	0:09:36.930000	510.mp3	510.webp	情けない	Patético. -Lo siento.	Pathetic.	False	False		lauda	
-513	513	512	511	0:09:36.930000	0:09:40.390000	513.mp3	513.webp	なんだって にいさんは あんな愚鈍な女を...	¿Qué le vio mi hermano?	How could my brother fall for such an oafish woman?	False	False		lauda	
-519	519	518	517	0:09:40.680000	0:09:43.770000	519.mp3	519.webp	そろそろだ 指示どおりにな	Ya casi es la hora. Sigue mis instrucciones.	It's about time. Do as I instructed.	False	False		vim	
-522	522	521	520	0:09:44.360000	0:09:46.100000	522.mp3	522.webp	はい 父さん	Sí, padre.	Yes, Dad.	False	False		lauda	
-523	523,527	525	524,526,528	0:09:46.730000	0:09:51.443000	523.mp3	523.webp	ああ... どどどど... どうしよう　どうしよう はい これ	Ay, ¿qué hago? -Toma.	Wh-Wh-What am I going to...? What do I- Here you are.	False	False		suletta/elan	
-531	531	530	529	0:09:53.440000	0:09:54.820000	531.mp3	531.webp	大丈夫?	¿Estás bien?	Are you okay?	False	False		elan	
-534	534	533	532	0:09:58.530000	0:10:02.037000	534.mp3	534.webp	お待ちしておりました デリング総裁	Lo esperaba, presidente Delling.	I've been waiting for you, President Delling.	False	False		sarius	
-536	536	538	537	0:10:21.723000	0:10:23.760000	536.mp3	536.webp	あ... よかったら どうぞ	Aquí tienes.	Have this one, if you like.	False	False		shaddiq	
-541	541,543	540	539,542	0:10:25.240000	0:10:29.190000	541.mp3	541.webp	ありがとうございます　こういうの よく分かんなくて	Muchas gracias. No sé cómo funcionan estas cosas.	Oh, thank you very much! I wasn't really sure what to do.	False	False		nika	
-545	545	546	544	0:10:29.190000	0:10:30.691000	545.mp3	545.webp	どういたしまして	De nada.	You're welcome.	False	False		shaddiq	
-548	548,550	549	547	0:10:31.210000	0:10:36.070000	548.mp3	548.webp	こちらこそ このあいだは ありがとう　ニカ・ナナウラ	Gracias a ti por tu ayuda la última vez, Nika Nanaura.	In fact, I'm the one who owes you thanks, Nika Nanaura.	False	False		shaddiq	
-553	553	552	551	0:10:36.880000	0:10:38.280000	553.mp3	553.webp	いえ...	De nada.	Not at all...	False	False		nika	
-555	555		554	0:10:39.820000	0:10:41.030000	555.mp3	555.webp	んあ?		What?		False			
-558	558	557	556	0:10:41.840000	0:10:42.870000	558.mp3	558.webp	はい	Toma.	Here you are.	False	False		elan	
-560	560	561	559	0:10:43.220000	0:10:46.206000	560.mp3	560.webp	あ... あの... ごめんなさい!	Este... Lo siento.	Uh... I'm very sorry!	False	False		suletta	
-562	562	563	564	0:10:46.665000	0:10:49.460000	562.mp3	562.webp	いいよ そのハンカチは 気にしないで	No te preocupes por el pañuelo.	It's fine. Don't worry about the handkerchief.	False	False		elan	
-565	565	567	566	0:10:49.376000	0:10:51.211000	565.mp3	565.webp	そうじゃなくて... ん?	No lo digo por eso.	That's not what I meant.	False	False		suletta	
-569	569	570	568	0:10:51.520000	0:10:54.670000	569.mp3	569.webp	待ち合わせ 来なかったし...	No viniste el día que quedamos	You didn't show up the other day,	False	False		suletta	
-573	573,574	572,576	571,575	0:10:54.670000	0:11:00.680000	573.mp3	573.webp	連絡もつかなかったから　その 私 心配で...	y no conseguía contactarte. Estaba preocupada.	and I couldn't contact you afterwards. I was worried.	False	False		suletta	
-578	578,581	579	577,580	0:11:01.320000	0:11:06.184000	578.mp3	578.webp	僕のほうこそ⸺　君に謝らなきゃって ずっと思ってた	Yo también quería disculparme contigo.	No, in fact... I've been wanting to apologize to you all this time.	False	False		elan	
-584	584	585	583,586	0:11:07.240000	0:11:11.900000	584.mp3	584.webp	ペイル社の所用で あの日から学園は休学してたんだ	Falté a la escuela por asuntos de Pale Technologies.	Because of Peil company business, I've been taking a leave of absence since then.	False	False		elan	
-589	589	588	587	0:11:11.900000	0:11:15.070000	589.mp3	589.webp	出先のフロントは磁気嵐が強くてね	Fui a un sitio con una tormenta magnética.	The front I went to is affected by strong magnetic storms.	False	False		elan	
-592	592	591	590	0:11:15.070000	0:11:16.880000	592.mp3	592.webp	心配かけて ごめん	Siento que te preocuparas.	I'm sorry to have worried you.	False	False		elan	
-594	594	595	593	0:11:16.880000	0:11:20.090000	594.mp3	594.webp	じゃあ また学園来ますか?	¿Y regresarás a la academia?	Then... you'll be coming back to school?	False	False		suletta	
-597	597	598	596	0:11:20.090000	0:11:22.660000	597.mp3	597.webp	もちろん 約束する	Por supuesto. Lo prometo.	Of course. I promise!	False	False		elan	
-599	599	600	601	0:11:23.368000	0:11:26.163000	599.mp3	599.webp	あ... よかった... です	Qué alivio.	I'm glad...	False	False		suletta	
-604	604	603	602	0:11:26.760000	0:11:29.620000	604.mp3	604.webp	笑ってくれるようになって...	Me alegro de que sonrías.	to see you smiling now.	False	False		suletta	
-607	607	606	605	0:11:30.540000	0:11:33.040000	607.mp3	607.webp	じゃあ そろそろ行こうか	¿Nos vamos ya?	Now then, we should get moving.	False	False		elan	
-611	611	610	609	0:11:34.020000	0:11:36.460000	611.mp3	611.webp	もうすぐ ホルダーの登壇でしょ?	Pronto tendrás que hablar tú.	The Holder has to take the stage soon.	False	False		elan	
-614	614	613	612	0:11:36.460000	0:11:38.050000	614.mp3	614.webp	僕も一緒に行くよ	Te acompaño.	I'll go with you.	False	False		elan	
-618	618,621	617	616,619,620	0:11:39.590000	0:11:42.640000	618.mp3	618.webp	ニカ ん?　スレッタ見なかった?	¡Nika! ¿Viste a Suletta?	Nika! What? Have you seen Suletta?	False	False		miorine	
-624	624	622	623	0:11:42.630000	0:11:43.847000	624.mp3	624.webp	はぐれちゃったの?	¿Se separaron?	Were you separated?	False	False		nevola	
-627	627	626	625	0:11:43.840000	0:11:47.810000	627.mp3	627.webp	まったく どこに行ったのよ あいつは	¿Dónde rayos se metió?	Unbelievable. Where did she wander off to?	False	False		miorine	
-631	631	629	630	0:11:50.680000	0:11:52.480000	631.mp3	631.webp	ご来場の皆さま	Señores y señoras,	Ladies and gentlemen,	False	False		presentador	
-633	633	634	632	0:11:52.460000	0:11:55.570000	633.mp3	633.webp	ここからは 特別プレゼンターとして⸺	hoy tenemos como locutores especiales	we will now turn over the stage	False	False		presentador	
-636	636	637	635,638	0:11:55.570000	0:12:00.200000	636.mp3	636.webp	ペイル・テクノロジーズCEOの 皆さまに ご登壇いただきます	a la presidencia de Pale Technologies.	to the CEOs of Peil Technologies for a special presentation.	False	False		presentador	
-641	641	640	639	0:12:05.470000	0:12:10.250000	641.mp3	641.webp	本日は アスティカシア 高等専門学園の⸺	Es un honor poder presentar	Greetings. It is my great honor today	False	False		nugen	
-643	643,645,647	644,650	642,648,649	0:12:10.250000	0:12:18.340000	643.mp3	643.webp	将来有望なる生徒さんを⸺　皆さまにご紹介できますこと 大変光栄に存じます　は... スレッタ!?	a unos brillantes alumnos de la Escuela Tecnológica Asticassia. ¿Suletta?	to present to you two students of the Asticassia School of Technology who represent its bright future. Suletta?	False	False		miorine,nugen	
-654	654	653	652	0:12:24.130000	0:12:28.058000	654.mp3	654.webp	それでは あらためて ご紹介しましょう	Permítanme presentarlos como es debido.	And now, let me reintroduce the pilot	False	False		nevola	
-657	657,659	656,658	655,660	0:12:28.410000	0:12:33.940000	657.mp3	657.webp	弊社の誇るモビルスーツ⸺　ファラクトのパイロット エラン・ケレス	Elan Ceres, piloto del Pharact, el Mobile Suit del que nos enorgullecemos.	of the Pharact, the mobile suit that is our pride and joy, Elan Ceres.	False	False		nevola	
-664	664,666,669	663,668	662,665,667	0:12:34.900000	0:12:44.820000	664.mp3	664.webp	そして 先日の決闘で⸺　そのファラクトを見事に撃破した 現ホルダーでもある⸺　スレッタ・マーキュリーさんです	Y la chica que venció al Pharact recientemente, la Holder actual, Suletta Mercury.	And next to him, the pilot who so impressively defeated the Pharact in a recent duel. The current Holder, Ms. Suletta Mercury.	False	False		kal	
-672	672	671	670	0:12:44.820000	0:12:48.030000	672.mp3	672.webp	ス... スススル... ス...	Soy Su...	I-I-I'm...	False	False		suletta	
-675	675	674	673	0:12:48.030000	0:12:49.830000	675.mp3	675.webp	背筋を伸ばす!	¡Ponte recta!	Stand up straight!	False	False		miorine	
-677	677	678	679	0:12:52.749000	0:12:56.336000	677.mp3	677.webp	は... スレッタ・マーキュリーです!	Soy Suletta Mercury.	I'm Suletta Mercury!	False	False		suletta	
-682	682	681	680	0:12:56.730000	0:12:59.960000	682.mp3	682.webp	水星から来た私にとって⸺	Vengo de Mercurio,	As someone from Mercury,	False	False		suletta	
-684	684	685	683	0:12:59.960000	0:13:02.926000	684.mp3	684.webp	学園には学びがたくさんで...	así que tengo mucho que aprender.	I'm going to learn so many new things at this school...	False	False		suletta	
-687	687	688	686	0:13:02.920000	0:13:05.680000	687.mp3	687.webp	じゅ... 充実してます!	Me siento realizada.	and every day is fulfilling!	False	False		suletta	
-691	691	690	689	0:13:05.680000	0:13:08.930000	691.mp3	691.webp	これからも勉強 頑張ります!	Seguiré estudiando cuanto pueda.	I will continue to do my best... in my studies!	False	False		suletta	
-695	695	694	693	0:13:13.540000	0:13:16.570000	695.mp3	695.webp	ありがとう スレッタ・マーキュリーさん	Gracias, Suletta Mercury.	Thank you, Ms. Suletta Mercury.	False	False		nugen	
-697	697	698	696	0:13:16.570000	0:13:20.980000	697.mp3	697.webp	ときに あなたのモビルスーツ とてもユニークですけど	Tu Mobile Suit es único.	By the way, your mobile suit is quite a unique machine.	False	False		kal	
-700	700	701	699	0:13:20.820000	0:13:24.531000	700.mp3	700.webp	操縦は複雑な技術を 要するのではなくて?	Usarás tecnología muy compleja para pilotarlo.	Does its operation require complex skills?	False	False		nevola	
-704	704	703	702	0:13:24.320000	0:13:27.242000	704.mp3	704.webp	それとも あなたの才能かしら	¿O es tu talento?	Or could it be your own special talent?	False	False		golneri	
-706	706	707	705	0:13:27.240000	0:13:29.410000	706.mp3	706.webp	エアリアルがスゴいんです	Es el Aerial.	Aerial's the amazing one!	False	False		suletta	
-709	709	710	708	0:13:29.410000	0:13:33.210000	709.mp3	709.webp	エアリアルは子供のころから ずっと一緒だった⸺	El Aerial estuvo conmigo desde que era niña.	Aerial and I have been together since childhood.	False	False		suletta	
-713	713	712	711	0:13:33.210000	0:13:35.460000	713.mp3	713.webp	大切な家族ですから!	Es parte de mi familia.	She's a precious family member!	False	False		suletta	
-716	716,718	715	714,717	0:13:35.460000	0:13:40.130000	716.mp3	716.webp	家族 素敵なお話ね　では もう一つ	Tu familia... Qué lindo. Tenemos otra pregunta.	Family? What a lovely sentiment. I have one more question, then.	False	False		nugen	
-721	721,722	720	719,723	0:13:40.480000	0:13:47.010000	721.mp3	721.webp	そちらのエラン・ケレスから⸺　先日の決闘中 不思議な感覚が あったというお話が	Elan Ceres dijo que sintió algo extraño durante su duelo.	We've heard from Elan Ceres that he felt a strange sensation during his recent duel with you.	False	False		nugen	
-727	727	726	725	0:13:48.400000	0:13:51.790000	727.mp3	727.webp	あのとき一瞬 変な反応があったんだ	Hubo una reacción por un segundo.	For a split second, I picked up a strange response.	False	False		elan	
-730	730	729	728	0:13:51.790000	0:13:55.770000	730.mp3	730.webp	僕と君の機体が混線するみたいな	Como si se cruzaran las señales de nuestras máquinas.	Almost as if your machine and mine had become entangled.	False	False		elan	
-732	732	733	731	0:13:55.770000	0:13:57.730000	732.mp3	732.webp	君も感じなかった?	¿No lo notaste?	Didn't you feel it too?	False	False		elan	
-736	736	735	734	0:13:58.600000	0:14:01.820000	736.mp3	736.webp	いつもより声 聞こえた気がする	Hoy siento que te escuché más que de costumbre.	I could hear your voice more than ever today.	False	False		suletta	
-739	739	738	737	0:14:02.420000	0:14:05.030000	739.mp3	739.webp	はい ありました	Sí. Sí que lo noté.	Yes. I did.	False	False		suletta	
-741	741	742	740	0:14:04.950000	0:14:08.450000	741.mp3	741.webp	なるほど 間違いありませんね?	Ya veo. ¿Estás completamente segura?	I see. Then there's no mistake.	False	False		nugen	
-745	745	744	743	0:14:08.450000	0:14:10.570000	745.mp3	745.webp	は... い... あ...	Sí.	Huh? What?	False	False		suletta	
-749	749	748	747	0:14:11.800000	0:14:14.080000	749.mp3	749.webp	これでハッキリしました	Esto aclara las cosas.	The truth is now clear.	False	False		nugen	
-751	751	752	750	0:14:14.080000	0:14:18.420000	751.mp3	751.webp	シン・セー開発公社のモビルスーツ エアリアルは⸺	El Aerial, desarrollado por Corporación de Desarrollo Shin Sei,	Shin Sei Development Corporation's mobile suit Aerial is...	False	False		nugen	
-754	754	753	755	0:14:18.360000	0:14:19.790000	754.mp3	754.webp	ガンダムです!	es un Gundam.	a Gundam!	False	False		nugen	
-758	758	757	759	0:14:22.960000	0:14:24.500000	758.mp3	758.webp	ガンダムだって!?	¿Un Gundam?	A Gundam?!	False	False		elan	
-763	763	762	761	0:14:25.360000	0:14:27.010000	763.mp3	763.webp	ご説明します	Se lo explicaré.	Allow me to explain.	False	False		kal	
-765	765,767	766	764	0:14:27.010000	0:14:32.307000	765.mp3	765.webp	弊社のモビルスーツ ファラクトが⸺　GUNDフォーマットを使用していたと	Nuestro Mobile Suit, el Pharact, usaba el GUND Format.	Our company's mobile suit Pharact was using the GUND Format.	False	False		kal	
-769	769,771	770	768,772	0:14:32.300000	0:14:37.896000	769.mp3	769.webp	決闘委員会⸺　及び弊社監査部門からの 報告で発覚しました	Lo confirman el Comité de Duelos y la inspección de nuestra empresa.	This has been revealed to us by reports from the Dueling Committee and our internal auditor.	False	False		nevola	
-774	774,776	775	773	0:14:37.890000	0:14:43.650000	774.mp3	774.webp	あの現象は GUNDフォーマットの⸺　相互干渉によって発現するもの	Ese fenómeno lo produce la interferencia mutua del GUND Format.	That phenomenon is the result of mutual interference between GUND Formats.	False	False		golneri	
-778	778	779	777	0:14:44.040000	0:14:47.860000	778.mp3	778.webp	ガンダムに反応するのは ガンダムだけ	Solo un Gundam reacciona a un Gundam.	Only Gundams respond to other Gundams.	False	False		nugen	
-781	781	782	780	0:14:47.860000	0:14:52.910000	781.mp3	781.webp	つまり エアリアルは ガンダムに相違ないのです!	Por tanto, el Aerial ha de ser uno.	Which means the Aerial is, without a doubt, a Gundam!	False	False		nugen	
-784	784,787	785	783,786	0:14:53.490000	0:14:57.910000	784.mp3	784.webp	ま... 待ってください!　エアリアルは ガンダムじゃありません!	¡Un momento! ¡El Aerial no es un Gundam!	W-Wait a minute! Aerial isn't a Gundam!	False	False		suletta	
-789	789,792	790	788,791	0:14:57.910000	0:15:03.090000	789.mp3	789.webp	先ほど お認めに なられたではありませんか　あなたご自身が	Tú misma lo admitiste hace unos segundos.	You already admitted the truth, didn't you? In your own words.	False	False		nugen	
-794	794	793	795	0:15:03.080000	0:15:04.090000	794.mp3	794.webp	違います!	¡No!	It's not true!	False	False		suletta	
-797	797	798	796	0:15:04.090000	0:15:09.380000	797.mp3	797.webp	ガンダムの製造 所持はカテドラルの協約違反だ	Construir o poseer un Gundam va contra la Convención de Cathedral.	Building and possessing a Gundam is against the Cathedra Agreement.	False	False		vim	
-800	800	801	799	0:15:09.380000	0:15:12.090000	800.mp3	800.webp	ペイルは この責任を どう取る?	Deberán asumir la responsabilidad.	How will the Peil company make amends for this?	False	False		vim	
-803	803	804	802	0:15:12.090000	0:15:16.560000	803.mp3	803.webp	事の重大さを鑑みて 弊社は機体の廃棄と...	Teniendo en cuenta la gravedad del asunto...	As this is a grave matter, our company promises to dispose of the machine...	False	False		nevola	
-807	807	806	805	0:15:16.560000	0:15:20.647000	807.mp3	807.webp	当該開発部門の 解体をお約束します	Eliminaremos la unidad y cerraremos el equipo de desarrollo.	...and to dissolve the development team that produced it.	False	False		golneri	
-809	809	810	808	0:15:21.070000	0:15:26.190000	809.mp3	809.webp	であれば シン・セーも 同様の処分を受けるべきだな	En ese caso, Shin Sei deberá recibir el mismo castigo.	In that case, Shin Sei should accept the same settlement.	False	False		vim	
-812	812	813	811	0:15:26.190000	0:15:27.780000	812.mp3	812.webp	ダ... ダメです!	¡No!	Y-You can't!	False	False		suletta	
-815	815	816	814	0:15:27.780000	0:15:30.490000	815.mp3	815.webp	そんな... だって この前は...	No puede ser. Si hace poco...	This is absurd! They already...	False	False		martin	
-818	818	819	817	0:15:30.490000	0:15:34.160000	818.mp3	818.webp	あいつら... エアリアルも一緒に沈めるつもりだ	Piensan hundir al Aerial con ellos.	Those creeps. They intend to bury Aerial along with it.	False	False		miorine	
-821	821	822	820	0:15:34.160000	0:15:36.450000	821.mp3	821.webp	待ってよ ニューゲンCEO!	Espere, presidenta Nugen.	Wait, Ms. Nugen!	False	False		elan	
-824	824	825	823	0:15:36.450000	0:15:39.410000	824.mp3	824.webp	彼女は自分の機体が ガンダムだって知らないんだ!	Ella no sabía que era un Gundam.	She was truly unaware that her machine is a Gundam!	False	False		elan	
-828	828	827	826	0:15:39.410000	0:15:42.170000	828.mp3	828.webp	開発者の話を聞くのが筋だ	Deberíamos hablar con el desarrollador.	It would be reasonable to let the developer explain.	False	False		elan	
-829	829,835	831,833	830,832,834	0:15:42.502000	0:15:48.216000	829.mp3	829.webp	は... お母さん! お母さん!　お母さん お母さん!	¡Mamá! ¡Mamá!	Mom! Mom! Mom... Mom!	False	False		suletta	
-838	838,839	837	836	0:15:49.780000	0:15:54.220000	838.mp3	838.webp	なんでしょう　会場の外でないとできないお話って	¿Por qué tenemos que hablar fuera del recinto?	What was so important that we could only discuss it outside?	False	False		prospera	
-842	842	841	840	0:15:54.620000	0:15:56.390000	842.mp3	842.webp	父からの伝言です	Tengo un mensaje de mi padre.	It's a message from my father.	False	False		lauda	
-845	845	844	843	0:15:56.740000	0:15:59.350000	845.mp3	845.webp	例の件の再取引をと	Quiere negociar de nuevo sobre eso.	He'd like to renegotiate your previous deal.	False	False		lauda	
-849	849	848	847,850	0:16:01.100000	0:16:04.980000	849.mp3	849.webp	エアリアルは違います! ガンダムじゃないんです!	¡El Aerial no es un Gundam!	Aerial isn't like that! She's not a Gundam!	False	False		suletta	
-852	852	853	851,854	0:16:04.980000	0:16:06.651000	852.mp3	852.webp	やはりガンダムだったか	Lo sabía, era un Gundam.	So it was a Gundam, after all. My mom, too...	False	False		invitado F	
-857	857,862	856,861	855,858,859,860	0:16:06.650000	0:16:10.240000	857.mp3	857.webp	シン・セーは終わりだな　当然だ	Shin Sei está acabada. Naturalmente.	This is the end for Shin Sei. ...said that Aerial... ...isn't a Gundam! Naturally.	False	False		invitado B,invitado G	
-865	865	864	863	0:16:10.240000	0:16:13.200000	865.mp3	865.webp	まずいよ このままじゃエアリアルが...	A este paso, destruirán el Aerial.	This is bad. At this rate, Aerial...	False	False		martin	
-870	870,874	869,873	867,868,871,872	0:16:13.730000	0:16:20.081000	870.mp3	870.webp	我々 ベネリットグループは ガンダムを看過しない　そうですね?	Benerit Group no puede ignorar un Gundam. ¿Verdad?	...family to me! The Benerit Group won't overlook a Gundam. This is wrong! Indeed.	False	False		sarius	
-876	876	877	875,878	0:16:20.080000	0:16:22.792000	876.mp3	876.webp	お願いです 聞いてください!	¡Por favor, escúchenme!	Please! Please listen to me!	False	False		suletta	
-880	880	881	879	0:16:22.790000	0:16:26.040000	880.mp3	880.webp	ご裁可を 総裁	Decida la sanción, presidente.	Your decision, Mr. President?	False	False		sarius	
-884	884	883	882	0:16:28.150000	0:16:30.840000	884.mp3	884.webp	エアリアルは廃棄させないわ!	¡No permitiré que lo eliminen!	I won't let you dispose of Aerial!	False	False		miorine	
-887	887,889,890	888	886	0:16:36.490000	0:16:41.478000	887.mp3	887.webp	エアリアルは⸺　ペイル社にも ジェターク社にも勝った⸺　優秀な機体よ!	El Aerial es una unidad que venció a Pale y a Jeturk.	Aerial is a superior machine that defeated both the Jeturk and Peil companies.	False	False		miorine	
-894	894	893	892	0:16:42.410000	0:16:44.440000	894.mp3	894.webp	廃棄するなんて もったいないわ	Sería un desperdicio.	Destroying it would be a waste!	False	False		miorine	
-896	896	897	895	0:16:45.290000	0:16:48.730000	896.mp3	896.webp	なぜ あなたが... ミオリネさま	¿Por qué interviene, señorita Miorine?	Why are you here, Mistress Miorine?	False	False		sarius	
-899	899,902	900	898,901	0:16:49.340000	0:16:53.450000	899.mp3	899.webp	決まってるでしょ　あの子の花嫁だからよ!	Porque soy su prometida, naturalmente.	Isn't it obvious? Because I'm that girl's bride!	False	False		miorine	
-904	904	905	903	0:16:54.470000	0:16:56.610000	904.mp3	904.webp	ミオリネ... さん	Miorine...	Ms. Miorine?	False	False		suletta	
-908	908	907	906	0:16:56.610000	0:16:59.870000	908.mp3	908.webp	問題を はき違えていらっしゃるようだ	Creo que está confundiendo el problema.	You seem to misunderstand the issue here.	False	False		sarius	
-911	911	910	909	0:17:00.390000	0:17:05.085000	911.mp3	911.webp	パイロットの命を奪う非人道兵器を 認めるわけにはいきません	No podemos tolerar máquinas inhumanas que matan a sus pilotos.	An inhuman weapon that steals the lives of its pilots cannot be tolerated.	False	False		sarius	
-914	914	913	912	0:17:05	0:17:07.380000	914.mp3	914.webp	スレッタはピンピンしてるじゃない	Suletta está perfectamente.	Suletta's alive and well!	False	False		miorine	
-916	916	917	915	0:17:07.380000	0:17:10.780000	916.mp3	916.webp	ただ否定して排除することしか できないの?	¿Es que la única opción es desecharlo?	Is denying and disposing of things all you can possibly do?	False	False		miorine	
-920	920	919	918	0:17:10.780000	0:17:13.550000	920.mp3	920.webp	排除以外の道があると?	¿Insinúa que hay otra solución?	You're saying there's an option other than disposal?	False	False		sarius	
-923	923	922	921	0:17:14.340000	0:17:16.720000	923.mp3	923.webp	接続 お願いします	Conéctenme, por favor.	Establish connection, please.	False	False		miorine	
-926	926	925	924	0:17:19.120000	0:17:21.560000	926.mp3	926.webp	過去の決算報告から⸺	Según pasados informes financieros,	Based on past financial statements,	False	False		miorine	
-928	928,931,934	929,932	927,930,933	0:17:21.480000	0:17:29.320000	928.mp3	928.webp	ファラクトの機体廃棄と⸺　同開発部門の解体に伴う ペイル社の損金を⸺　1200億と見積もり⸺	eliminar el Pharact y su equipo de desarrollo le costaría a Pale Technologies 120 000 millones.	I estimate that after disposing of the Pharact and dissolving the development team responsible, Peil's loss will amount to 120 billion.	False	False		miorine	
-936	936	937	935	0:17:29.320000	0:17:32.280000	936.mp3	936.webp	その倍の2400億	Planteemos el doble, 240 000 millones.	I thus propose twice that amount, 240 billion...	False	False		miorine	
-940	940,941	938	939	0:17:32.740000	0:17:38.240000	940.mp3	940.webp	これを目標金額とした 新規事業のプランを⸺　ご提案させていただきます!	Presentaré un proyecto de nuevo negocio con esa cifra como meta.	as the investment goal for my new business plan.	False	False		miorine	
-944	944,945	942,946	943,947	0:17:38.520000	0:17:44.700000	944.mp3	944.webp	シン・セーとペイル社の 開発部門を⸺　M&Aにより買収し これらを統合	La compra por M&A y posterior fusión de los departamentos de desarrollo de Pale y Shin Sei.	We'll purchase Shin Sei's and Peil's development teams through M&A, then merge them together.	False	False		miorine	
-949	949,953	950,952,954	948,951	0:17:45.060000	0:17:52.550000	949.mp3	949.webp	生命の安全を前提に 管理 運用を目的とした⸺　新会社を設立します!	Fundaré una empresa que los controle y opere priorizando la seguridad.	A new company will be established, managed and operated with the protection of life as its top priority!	False	False		miorine	
-956	956,959,962	957,961	955,958,960	0:17:52.550000	0:17:57.053000	956.mp3	956.webp	ミ... ミオリネさん　エアリアルはガンダムじゃ...　黙ってて!	Miorine, el Aerial no es... ¡Cállate!	M-Ms. Miorine? Aerial isn't a Gun- Shut up!	False	False		miorine,suletta	
-965	965	964	963	0:17:56.970000	0:17:59.055000	965.mp3	965.webp	その新会社の社名は⸺	El nombre de la empresa será...	The name of the new company will be...	False	False		miorine	
-968	968	967	966	0:18:01.490000	0:18:02.980000	968.mp3	968.webp	GUND-ARM!	¡GUND-ARM!	GUND-ARM!	False	False		miorine	
-970	970,973	971	969,972	0:18:03.770000	0:18:06.187000	970.mp3	970.webp	ガン...　ダム...	¿Gun... -...dam?	GUND... ...ARM?	False	False		nika/elan	
-976	976	975	977	0:18:07.230000	0:18:09.770000	976.mp3	976.webp	ふ... ふざけるな!	¡Esto es absurdo!	S-Stop messing around!	False	False		vim	
-980	980,982,983	979	978,981	0:18:09.770000	0:18:15.530000	980.mp3	980.webp	皆さんは 今⸺　ベネリットグループの 業績を立て直す⸺　起爆剤を欲しているはず!	Quieren un detonador para restablecer los resultados de Benerit Group.	Everyone gathered here wants a spark to reignite the Benerit Group's profitability.	False	False		miorine	
-986	986	985,988	984,987	0:18:15.530000	0:18:20.870000	986.mp3	986.webp	協約の縛りや生命倫理問題は 私と会社が引き受けます!	La empresa y yo asumiremos las ataduras de la Convención y los problemas éticos.	The company and I will be responsible for bioethical issues and complying with the Agreement's restrictions.	False	False		miorine	
-990	990,992	991,994	989,993	0:18:20.870000	0:18:26.870000	990.mp3	990.webp	投資は匿名契約　グループからも独立させれば リスクはありません!	Si invierten mediante contratos anónimos independientes del grupo, no hay ningún riesgo.	If investment is by anonymous contract, and it's independent from the group... then there's no risk to anyone!	False	False		miorine	
-997	997,998	996,999	995,1000	0:18:28.080000	0:18:35.133000	997.mp3	997.webp	この話に 価値があると思った方は⸺　株式会社GUND-ARMの設立に どうか投資を!	Si creen que lo que digo merece la pena, por favor, inviertan en la creación de la S. p. A. GUND-ARM.	If any of you see value in this idea, please invest in the establishment of GUND-ARM, Inc.!	False	False		miorine	
-1002	1002	1003	1001,1004	0:18:40.110000	0:18:43.390000	1002.mp3	1002.webp	でも ダメなんだ それだけじゃ	Eso no basta.	It's no good, though. That's not enough.	False	False		shaddiq	
-1008	1008	1007	1009	0:18:51.880000	0:18:53.270000	1008.mp3	1008.webp	なんで...	¿Por qué?	Why?	False	False		miorine	
-1011	1011	1012	1010	0:18:53.270000	0:18:56.070000	1011.mp3	1011.webp	お前の提案には価値がない	Tu propuesta no vale nada.	There's no value in your proposal.	False	False		delling	
-1015	1015	1014	1013	0:18:56.880000	0:18:59.290000	1015.mp3	1015.webp	皆 そう言っているのだ	Eso es lo que te están diciendo.	They're all saying that.	False	False		delling	
-1018	1018	1017	1016	0:18:59.290000	0:19:02.320000	1018.mp3	1018.webp	どんな大言壮語を吐こうとも⸺	Por muy grandiosa que sea tu idea,	No matter how big and lofty you may sound,	False	False		delling	
-1020	1020	1021	1019	0:19:02.320000	0:19:07.290000	1020.mp3	1020.webp	それを裏づける信用が お前にはない	no puedes reforzarla con confianza.	you have absolutely no credibility to back it up.	False	False		delling	
-1024	1024	1023	1022	0:19:07.750000	0:19:09.370000	1024.mp3	1024.webp	当然だよね	Claro que no.	Naturally.	False	False		elan	
-1026	1026	1027	1025	0:19:09.370000	0:19:11.290000	1026.mp3	1026.webp	出ていけ	Márchate.	Get out.	False	False		delling	
-1030	1030	1029	1028	0:19:11.290000	0:19:14.710000	1030.mp3	1030.webp	子供の意地に付き合うつもりはない	No venimos a entretener la terquedad de una niña.	I have no further interest in indulging a child's pride.	False	False		delling	
-1033	1033	1032	1031	0:19:16.820000	0:19:18.380000	1033.mp3	1033.webp	待ってください!	¡Espera!	Please wait!	False	False		miorine	
-1037	1037	1036	1035	0:19:21.800000	0:19:24.030000	1037.mp3	1037.webp	ミオリネさん...	Miorine...	Ms. Miorine?	False	False		suletta	
-1039	1039,1042	1040	1038,1041	0:19:24.030000	0:19:27.770000	1039.mp3	1039.webp	守るわよ　私が あんたを	Te protegeré.	I'll protect you. Leave it to me.	False	False		miorine	
-1046	1046	1047	1045	0:19:33.190000	0:19:36.610000	1046.mp3	1046.webp	まずは その かわいい意地を捨てなくっちゃね	Primero deberías deshacerte de esa tozudez tan encantadora.	But first you must throw away that adorable pride.	False	False		prospera	
-1049	1049	1050	1048	0:19:37.130000	0:19:39.110000	1049.mp3	1049.webp	意地じゃない!	¡No es tozudez!	It's not pride!	False	False		miorine	
-1056	1056	1055	1054	0:19:53.100000	0:19:55.030000	1056.mp3	1056.webp	なんのマネだ	¿Qué pretendes?	What now?	False	False		delling	
-1058	1058	1059	1057	0:19:55.030000	0:19:57.920000	1058.mp3	1058.webp	あなたに投資してほしい!	Quiero que inviertas.	I want you to invest in my company.	False	False		miorine	
-1062	1062	1061	1060	0:19:58.650000	0:20:00.470000	1062.mp3	1062.webp	あなたの言うとおり⸺	Tienes razón.	As you say,	False	False		miorine	
-1065	1065	1064	1063	0:20:00.470000	0:20:03.590000	1065.mp3	1065.webp	今のままじゃ 私の提案に 乗る人なんていません!	Nadie apoyará mi oferta tal cual está.	nobody is willing to support my proposal as is.	False	False		miorine	
-1068	1068	1067	1066	0:20:03.590000	0:20:07.640000	1068.mp3	1068.webp	ですから ベネリットグループの 総裁である⸺	Por eso quiero tomar prestada la reputación	That's why I want to borrow your credibility	False	False		miorine	
-1070	1070	1071	1069	0:20:07.640000	0:20:10.270000	1070.mp3	1070.webp	あなたの信用を お借りしたいんです!	del presidente de Benerit Group.	as president of the Benerit Group!	False	False		miorine	
-1074	1074	1073	1072	0:20:11.120000	0:20:12.770000	1074.mp3	1074.webp	お願いします!	¡Por favor!	Please!	False	False		miorine	
-1078	1078	1077	1076	0:20:23.340000	0:20:25.201000	1078.mp3	1078.webp	逃げるなよ は...	No huyas.	You can't run away.	False	False		delling	
-1082	1082,1083	1081	1080	0:20:26.550000	0:20:32.120000	1082.mp3	1082.webp	お前が考えてる以上に⸺　ガンダムの呪いは重い	La maldición de los Gundam es más grave de lo que piensas.	The Gundam's curse is a heavier burden than you think.	False	False		delling	
-1091	1091		1090	0:20:58.170000	0:20:59.193000	1091.mp3	1091.webp	へえー		Huh.		False			
-1094	1094	1093	1092	0:20:59.750000	0:21:01.110000	1094.mp3	1094.webp	お見事	Bien hecho.	Well done.	False	False		shaddiq	
-1097	1097	1098	1096	0:21:02.570000	0:21:05.390000	1097.mp3	1097.webp	風向き変わりそうね	El viento está cambiando.	The winds seem to be shifting.	False	False		golneri	
-1100	1100	1101	1099	0:21:05.390000	0:21:06.660000	1100.mp3	1100.webp	ええ	Sí.	Indeed.	False	False		nugen	
-1105	1105,1109	1104	1103,1108	0:21:07.430000	0:21:11.870000	1105.mp3	1105.webp	やはり認めたな　ガンダムを	Aprobó los Gundam.	So you accepted it, after all... Gundam.	False	False		sarius	
-1114	1114	1113	1112	0:21:13.220000	0:21:14.460000	1114.mp3	1114.webp	ミオリネさん!	¡Miorine!	Ms. Miorine!	False	False		suletta	
-1117	1117	1116	1115	0:21:17.900000	0:21:20	1117.mp3	1117.webp	ありがとうございます!	¡Muchas gracias!	Thank you very much!	False	False		miorine	
-1119	1119	1120	1118	0:21:20.770000	0:21:22.930000	1119.mp3	1119.webp	株式会社GUND-ARMは...	S. p. A. GUND-ARM trabajará duro...	GUND-ARM, Inc...	False	False		miorine	
-1121	1121	1122	1123,1124	0:21:22.842000	0:21:25.150000	1121.mp3	1121.webp	なんだか にぎやかね	Qué escándalo.	My, things have livened up in here. ...will surely deliver results...	False	False		prospera	
-1128	1128	1127	1125,1126	0:21:25.150000	0:21:28.140000	1128.mp3	1128.webp	お話 まだ続きます?	¿Seguimos con nuestra conversación?	...that will be worthy of your trust! Shall we continue our conversation?	False	False		prospera	
-1131	1131,1136	1132	1130,1133,1134,1135	0:21:29.700000	0:21:33.650000	1131.mp3	1131.webp	まったく　何もかも急すぎるよ	Todo pasó demasiado rápido.	Unbelievable. Ladies and gentlemen... It's too much, too fast. ...thank you for taking the time...	False	False		martin	
-1140	1140	1137	1138,1139	0:21:33.560000	0:21:36.020000	1140.mp3	1140.webp	いきなり会社なんて...	De repente tienes una empresa.	Suddenly it's a company? ...to attend today's incubation party...	False	False		martin	
-1143	1143	1144	1141,1142	0:21:36.020000	0:21:37.400000	1143.mp3	1143.webp	スレッタ あ...	Suletta.	Suletta? ...for the Benerit Group.	False	False		prospera	
-1147	1147	1146	1145	0:21:37.400000	0:21:38.760000	1147.mp3	1147.webp	お母さん	Mamá.	Mom?	False	False		suletta	
-1150	1150,1151	1149	1148	0:21:38.760000	0:21:42.070000	1150.mp3	1150.webp	ごめんね　ちょっと用事で離れてて	Lo siento, tuve que ausentarme.	I had some business to attend to.	False	False		prospera	
-1153	1153		1152	0:21:41.950000	0:21:44.320000	1153.mp3	1153.webp	ん...		We are happy to have presented to you....		False			
-1156	1156,1160,1161	1157	1154,1155,1158,1159	0:21:44.320000	0:21:49.830000	1156.mp3	1156.webp	助けていただいて ありがとうございます　ミオリネ・レンブランさん　あ...	Muchas gracias por ayudarnos, Miorine Rembran.	Thank you for your help. ...plans with high future potential. Ms. Miorine Rembran. We appreciate your support.	False	False		prospera	
-1164	1164,1165	1163	1162	0:21:49.830000	0:21:54.620000	1164.mp3	1164.webp	あなたになら⸺　安心して うちの娘たちを 任せられますわ	Puedo dejar a mi hija en tus manos y estar tranquila.	If it's with you, I know that I'm leaving my daughters in good hands.	False	False		prospera	
-1168	1168	1167	1166	0:21:55.020000	0:21:56.542000	1168.mp3	1168.webp	ご心配なく	No te preocupes.	Worry not.	False	False		miorine	
-1171	1171	1170	1169	0:21:57.190000	0:22:00.500000	1171.mp3	1171.webp	こちらこそ よろしくお願いします	Cuento contigo.	We're looking forward to working with you.	False	False		miorine	
-1173	1173	1174	1172	0:22:01.460000	0:22:03.590000	1173.mp3	1173.webp	お... お母さん	¡Mamá!	M-Mom!	False	False		suletta	
-1178	1178	1177	1176	0:22:04.070000	0:22:06.928000	1178.mp3	1178.webp	エアリアル ガンダムじゃないよね!	El Aerial no es un Gundam, ¿no?	Aerial isn't a Gundam, right?	False	False		suletta	
-1181	1181	1180	1179	0:22:06.880000	0:22:08.680000	1181.mp3	1181.webp	だって お母さん ガンダムじゃ...	Dijiste que no...	You said she wasn't-	False	False		suletta	
-1183	1183	1184	1182	0:22:08.680000	0:22:10.850000	1183.mp3	1183.webp	いいえ ガンダムよ	No. Sí que lo es.	No, she's a Gundam.	False	False		prospera	
-1186	1186		1185	0:22:11.700000	0:22:12.767000	1186.mp3	1186.webp	え...		What?		False			
-1189	1189	1188	1187	0:22:13.200000	0:22:16.730000	1189.mp3	1189.webp	ごめんね とうとうバレちゃった	Lo siento. Ya lo han descubierto.	I'm so sorry. The truth is out now.	False	False		prospera	
-1191	1191,1194	1192	1190,1193	0:22:17.100000	0:22:20.530000	1191.mp3	1191.webp	エアリアルは⸺　ガンダムなの	El Aerial es un Gundam.	Aerial... is a Gundam.	False	False		prospera	
+767373892c	2	1	0	0:00:02.629000	0:00:04.482000	767373892c.mp3	767373892c.webp	ええ 認めます	Lo admito.	Why, yes. We acknowledge it.	False	False		nugen	
+cc479bf9fc	5	4	3	0:00:04.750000	0:00:07.610000	cc479bf9fc.mp3	cc479bf9fc.webp	ファラクトは ガンダムです	El Pharact es un Gundam.	The Pharact is indeed a Gundam.	False	False		nugen	
+fe50160908	8	7	6	0:00:07.610000	0:00:11.650000	fe50160908.mp3	fe50160908.webp	いやしいな 協定の裏でのうのうと	Ignoraron lo que se pactó.	It's despicable of you to breach the Agreement so casually.	False	False		vim	
+4f44225d4b	10	11	9	0:00:11.620000	0:00:14.575000	4f44225d4b.mp3	4f44225d4b.webp	汚いマネは そちらもお得意でしょうに	Usted también sabe jugar sucio.	I believe you know a thing or two about that yourself.	False	False		kal	
+78f7b85355	14	13	12	0:00:14.570000	0:00:18.080000	78f7b85355.mp3	78f7b85355.webp	それで そちらのご提案とは?	¿Cuál es su propuesta?	Now then, what are you proposing?	False	False		nugen	
+1cd3c592ec	17	16	15	0:00:18.980000	0:00:23.540000	1cd3c592ec.mp3	1cd3c592ec.webp	ペイル社にも 我々の計画に協力してもらいたい	Quiero que Pale colabore en nuestro proyecto.	We'd like Peil Technologies to cooperate with our plan.	False	False		sarius	
+932935e7c6	20	19	18	0:00:23.890000	0:00:27.500000	932935e7c6.mp3	932935e7c6.webp	これは またとない好機なのだ	Esta es una oportunidad única	This is an opportunity we'll never see again.	False	False		sarius	
+4c71e8f9a3	23,25	22	21,24	0:00:27.780000	0:00:32.220000	4c71e8f9a3.mp3	4c71e8f9a3.webp	ヤツの...　デリングの手を読むための	para predecir la próxima jugada de Delling.	To learn what he... what Delling has up his sleeve.	False	False		sarius	
+c6358f781b	28,32	30	29,31	0:02:09.190000	0:02:12.820000	c6358f781b.mp3	c6358f781b.webp	あたっ ボーっとしない　トマトに傷がつくでしょ	No te distraigas. Arruinarás los tomates.	Don't let your mind wander! You'll hurt the tomatoes.	False	False		miorine	
+5b63a2595a	34	33	35	0:02:13.080000	0:02:15.196000	5b63a2595a.mp3	5b63a2595a.webp	ご... ごめんなさい	Lo siento.	I-I'm sorry.	False	False		suletta	
+f465968fa0	38	37	36	0:02:15.190000	0:02:17.080000	f465968fa0.mp3	f465968fa0.webp	まったく	Cielos...	Honestly...	False	False		miorine	
+c89d799dce	40	41	39	0:02:16.940000	0:02:19.880000	c89d799dce.mp3	c89d799dce.webp	そんなに気になるの? エランのこと	¿Tanto te preocupa Elan?	Are you really that worried about Elan?	False	False		miorine	
+a43d51e454	44	43	42	0:02:20.560000	0:02:23.970000	a43d51e454.mp3	a43d51e454.webp	あれから 学校にも来てないっていうし	No regresó a la escuela desde entonces.	He hasn't been to school since then, either.	False	False		suletta	
+aeee0dcc8a	47	46	45	0:02:23.970000	0:02:25.664000	aeee0dcc8a.mp3	aeee0dcc8a.webp	大丈夫でしょうか	Espero que esté bien.	Is he really okay?	False	False		suletta	
+a11ab1020d	50	49	48	0:02:25.940000	0:02:29.420000	a11ab1020d.mp3	a11ab1020d.webp	勝手に干渉して 勝手に心配して	Interfieres como quieres y luego te preocupas.	Butting into other people's problems and worrying without being asked...	False	False		miorine	
+fa9e897830	52	53	51	0:02:29.420000	0:02:31.800000	fa9e897830.mp3	fa9e897830.webp	一体 何が楽しいんだか	¿Qué es tan divertido?	Are you enjoying this or something?	False	False		miorine	
+564d1abab6	56,58	55	54,57	0:02:31.800000	0:02:36.270000	564d1abab6.mp3	564d1abab6.webp	ミオリネさんは ないんですか?　人のことで頭がいっぱいに...	¿A ti nunca te ocurrió que solo puedes pensar en al...?	Haven't you ever been troubled, Ms. Miorine... about somebody else's-	False	False		suletta	
+07b1b06fa1	60,63	59	61,62	0:02:36.010000	0:02:39.470000	07b1b06fa1.mp3	07b1b06fa1.webp	ない　私が考えることは ただ一つ	No. Yo solo pienso en una cosa.	Never. I only ever think about one thing.	False	False		miorine	
+cbfd7588ee	66	65	64	0:02:39.470000	0:02:42.723000	cbfd7588ee.mp3	cbfd7588ee.webp	ここから脱出して 地球に行くことだけ	Salir de aquí e ir a la Tierra.	Getting out of this place and going to Earth.	False	False		miorine	
+9441cface8	69,70	67	68	0:02:43.370000	0:02:47.311000	9441cface8.mp3	9441cface8.webp	あんたも余計なことばっか 考えてると⸺　また実習落ちるよ	Tú sigue distrayéndote y reprobarás la práctica de nuevo.	If your mind is always elsewhere, you'll fail the exam again.	False	False		miorine	
+599662f429	72	73	71	0:02:47.230000	0:02:49.860000	599662f429.mp3	599662f429.webp	そうですけど...	Lo sé, pero...	I guess that's true, but...	False	False		suletta	
+4f824ad98c	77	76	75	0:02:54.300000	0:02:55.980000	4f824ad98c.mp3	4f824ad98c.webp	招待状?	¿Una invitación?	An invitation?	False	False		suletta	
+33a1d75fa3	80	79	78	0:02:55.980000	0:02:57.830000	33a1d75fa3.mp3	33a1d75fa3.webp	インキュベーションね	La Incubation.	An incubation party, huh?	False	False		miorine	
+0eec4ab1d1	83	82	81	0:02:57.830000	0:02:59.360000	0eec4ab1d1.mp3	0eec4ab1d1.webp	行く必要なし	No es necesario ir.	There's no need to go.	False	False		miorine	
+7f0b01f0db	86	85	84	0:02:59.360000	0:03:01.040000	7f0b01f0db.mp3	7f0b01f0db.webp	いいんですか?	¿Seguro?	Are you sure?	False	False		suletta	
+6c80120d3e	89,91	88,90	87,92	0:03:01.040000	0:03:09.580000	6c80120d3e.mp3	6c80120d3e.webp	まあ グループ内の 社交パーティーみたいなものよ　大体 学生で参加するの 御三家くらいのものだしね	Es básicamente una reunión social. Los únicos estudiantes que van son de las tres casas.	It's like a social party for people among the group companies. As far as students, only those from the three branches will be going.	False	False		miorine	
+80a34aaeda	95,96	94	93	0:03:09.860000	0:03:14.080000	80a34aaeda.mp3	80a34aaeda.webp	こんなのに行ったら⸺　ホルダーのあんたも ステージで挨拶とかさせられ...	Al ser Holder, si vas tendrás que salu...	As the Holder, if you go there, they'll force you to make a speech on stage and-	False	False		miorine	
+42aa44e548	97	98		0:03:14.046000	0:03:16.250000	42aa44e548.mp3	42aa44e548.webp	じゃ... じゃあ来ますよね!	Entonces él irá, ¿sí?		False	False		suletta	
+5c5c95cad0	101,104	103	102	0:03:16.298000	0:03:20.760000	5c5c95cad0.mp3	5c5c95cad0.webp	え? 御三家来るなら⸺　エランさん きっと来ますよね!	Si van las tres casas, Elan asistirá, ¿sí?	If the three branches are going, then Mr. Elan will come too, right?	False	False		suletta	
+7159698ede	109	108	107	0:03:25.750000	0:03:27.060000	7159698ede.mp3	7159698ede.webp	スゴい	Es impresionante.	Look at this...	False	False		nika	
+82e985f642	112,114	111	110	0:03:27.290000	0:03:30.187000	82e985f642.mp3	82e985f642.webp	本当に 来てよかったのかな　僕たち	¿De seguro podíamos venir?	Are you sure it's okay for us to be here?	False	False		martin	
+83e999fd7d	116	117	115	0:03:30.150000	0:03:32.730000	83e999fd7d.mp3	83e999fd7d.webp	なんだか緊張しちゃうね	Comienzo a ponerme nerviosa.	I can't help but feel nervous.	False	False		nika	
+42eb798e49	120,122	119	118,121	0:03:32.730000	0:03:35.484000	42eb798e49.mp3	42eb798e49.webp	緊張なんかする必要ないわ　あ...	No estés nerviosa.	What? There's no need for that.	False	False		miorine	
+793063491a	125	124	123	0:03:35.480000	0:03:38.150000	793063491a.mp3	793063491a.webp	こんなの うわべだけのハッタリよ	Solo es una fiesta superficial.	Everything here is just for show.	False	False		miorine	
+a421c7df9f	128,130	127	126,129	0:03:38.150000	0:03:42.324000	a421c7df9f.mp3	a421c7df9f.webp	それに あなたたちは⸺　れっきとした ホルダーの同伴者なんだから	Además, vienen como acompañantes de la Holder.	Plus, you two... are guests of the reigning Holder.	False	False		miorine	
+9a9272c768	132	133	131	0:03:42.890000	0:03:45.160000	9a9272c768.mp3	9a9272c768.webp	お... お待たせしました	Ya estoy lista.	S-Sorry to keep you waiting!	False	False		suletta	
+14541c6444	136	135	134	0:03:45.160000	0:03:46.495000	14541c6444.mp3	14541c6444.webp	大丈夫?	¿Estás bien?	Are you okay?	False	False		miorine	
+997a85be0a	138	139	137	0:03:46.420000	0:03:48.497000	997a85be0a.mp3	997a85be0a.webp	胸 キツいんですけど	Me aprieta un poco el pecho.	It's pretty tight in the bust...	False	False		suletta	
+139d9a41ac	141	142	140	0:03:48.490000	0:03:51.590000	139d9a41ac.mp3	139d9a41ac.webp	私のドレスだから キツいのは仕方ないけど	Es inevitable. El vestido es mío.	It's my dress. Of course it's tight.	False	False		miorine	
+2862407695	144	145	143	0:03:51.590000	0:03:54.260000	2862407695.mp3	2862407695.webp	もっと背筋を伸ばしなさい!	Pero ¡ponte recta como poco!	Now stand up straight!	False	False		miorine	
+1e86ef0fda	149,151	148	147,150	0:03:55.320000	0:03:59	1e86ef0fda.mp3	1e86ef0fda.webp	ニカにもドレス貸せたのに　制服のままでよかったの?	Tenía más vestidos. ¿Preferías vestir el uniforme, Nika?	I could've loaned you a dress too, Nika. Are you okay in that uniform?	False	False		miorine	
+4f86c0a2e5	153	154	152	0:03:58.890000	0:04:02.440000	4f86c0a2e5.mp3	4f86c0a2e5.webp	私たち おもしろそうだからついてきたけど	Solo vinimos porque sonaba interesante.	We came along out of curiosity, but...	False	False		nika	
+fdf3c6371f	156	157	155	0:04:02.310000	0:04:05.300000	fdf3c6371f.mp3	fdf3c6371f.webp	なんの集まりかも よく分かってなくて	Ni siquiera sabía qué tipo de evento era.	we didn't really know what to expect.	False	False		nika	
+b755ef90b2	160	159	158	0:04:05.910000	0:04:08.330000	b755ef90b2.mp3	b755ef90b2.webp	インキュベーション・パーティー	La Incubation Party.	An incubation party...	False	False		miorine	
+6b70765fe0	163	162	161	0:04:08.330000	0:04:12.230000	6b70765fe0.mp3	6b70765fe0.webp	要は 新規事業の 立ち上げ支援イベントよ	Un evento para apoyar la creación de nuevos negocios.	In other words, an event to promote new business startups.	False	False		miorine	
+3a5e9abe30	166	165	164	0:04:12.810000	0:04:15.482000	3a5e9abe30.mp3	3a5e9abe30.webp	グループ内で 事業を起こそうって人間が⸺	Los que quieren emprender dentro del grupo	People who want to start a new project within the group	False	False		miorine	
+5a23e5677b	168	169	167	0:04:15.400000	0:04:18.240000	5a23e5677b.mp3	5a23e5677b.webp	ここでプランを発表して 投資を募るの	anuncian sus proyectos y buscan inversores.	announce their plans here and solicit investment.	False	False		miorine	
+193669ee26	172,173	171	170	0:04:18.590000	0:04:23.400000	193669ee26.mp3	193669ee26.webp	設定額に達すれば⸺　めでたく新しい事業が 誕生するってわけ	Si consiguen el presupuesto fijado, pueden empezar un nuevo negocio.	If they reach their target amount, then a glorious new business is born.	False	False		miorine	
+e597c7e743	175	176	174	0:04:23.400000	0:04:24.908000	e597c7e743.mp3	e597c7e743.webp	スゴい	Es increíble.	Wow....	False	False		nika	
+176da60b34	179	178	177	0:04:24.750000	0:04:27.070000	176da60b34.mp3	176da60b34.webp	まあ お金は 集まらないだろうけどね	No creo que reúna el dinero.	But I doubt anyone will get enough money.	False	False		miorine	
+ffad17ea5b	181		180	0:04:26.960000	0:04:27.790000	ffad17ea5b.mp3	ffad17ea5b.webp	え?		Huh?	False	False			
+6f15e5674b	184	182	183	0:04:27.740000	0:04:29.496000	6f15e5674b.mp3	6f15e5674b.webp	コンセプトが古すぎる	Es un concepto anticuado.	The concepts are all too old-fashioned.	False	False		miorine	
+4e998f0be0	187	186	185	0:04:29.770000	0:04:32.130000	4e998f0be0.mp3	4e998f0be0.webp	あれじゃプレゼンは通らないわ	La presentación no bastará.	No one will buy into their presentations.	False	False		miorine	
+caf25d83d7	190,191	189,192	188	0:04:33.910000	0:04:38.420000	caf25d83d7.mp3	caf25d83d7.webp	本当だ　さすが経営戦略科の成績トップ	Tenías razón. No por nada eres la mejor de Gestión Estratégica.	You're right. No wonder you're the top student in management strategy.	False	False		nika	
+786c881f94	194	195	193	0:04:38.380000	0:04:40.300000	786c881f94.mp3	786c881f94.webp	嫌味? 行くわよ	¿Es sarcasmo? Vámonos.	Is that sarcasm? Let's go.	False	False		miorine	
+65b10ad2bd	198	197	196	0:04:42.740000	0:04:45.850000	65b10ad2bd.mp3	65b10ad2bd.webp	私たち これから エランを捜しに行くけど	Iremos a buscar a Elan.	We're going to go search for Elan.	False	False		miorine	
+306927ead1	201	200	199	0:04:45.850000	0:04:48.230000	306927ead1.mp3	306927ead1.webp	私はブースを見て回りたいかな	Yo quiero mirar los puestos.	I think I want to have a look at the booths.	False	False		nika	
+9a809d45da	202	204	203	0:04:48.223000	0:04:50.450000	9a809d45da.mp3	9a809d45da.webp	いいわ じゃあ またあとで	Bien. Nos veremos luego.	Fine. See you later, then.	False	False		miorine	
+82cbd5b2b0	206	207	205	0:04:50.400000	0:04:51.600000	82cbd5b2b0.mp3	82cbd5b2b0.webp	じゃあ	Adiós.	See you.	False	False		martin	
+04bb26d09a	210,211	209	208	0:04:53.630000	0:04:57.980000	04bb26d09a.mp3	04bb26d09a.webp	ったく なんだって俺が⸺　強化人士の尻拭いなのさ	¿Por qué he de arreglar los problemas de un sujeto potenciado?	Why do I have to clean up after that Enhanced Person?	False	False		elan	
+2802984b50	214	213	212	0:04:57.980000	0:05:01.680000	2802984b50.mp3	2802984b50.webp	ほかの検体は まだ準備できていませんので	El siguiente aún no está preparado.	The next test subject isn't ready yet.	False	False		golneri	
+7652b923c5	217	216	215	0:05:01.680000	0:05:04.530000	7652b923c5.mp3	7652b923c5.webp	ここは ご本人が適任かと	Lo mejor es que vaya en persona.	We believe it's best to leave this to the real you.	False	False		nevola	
+54f1b39675	220	219	218	0:05:05.070000	0:05:07.610000	54f1b39675.mp3	54f1b39675.webp	面倒残していきやがって	Es un fastidio por su culpa.	Damn him for leaving a mess like this behind.	False	False		elan	
+cac9f872e0	224,226	223	222,225	0:05:08.890000	0:05:11.580000	cac9f872e0.mp3	cac9f872e0.webp	あの娘が...　花婿候補...	¿Es esa chica? -¿Es la pretendiente?	That girl is... The latest groom candidate.	False	False		invitado A/B	
+90a07ee9c8	229,231	228	227,230	0:05:11.580000	0:05:14.410000	90a07ee9c8.mp3	90a07ee9c8.webp	ほら 例の　魔女なんだろ?	Es ella. -Es una bruja, ¿no?	Then she's... The witch they're talking about.	False	False		invitado C/D	
+4a95b77237	234	233	232	0:05:14.410000	0:05:16	4a95b77237.mp3	4a95b77237.webp	まあ 怖い	Qué miedo.	Oh, scary.	False	False		invitada E	
+519ed58b5b	236	237	235	0:05:15.960000	0:05:18.920000	519ed58b5b.mp3	519ed58b5b.webp	なんか スッゴい 見られてるんですけど	Todos nos están mirando.	Everyone's staring at us.	False	False		suletta	
+c9ad2c0bd8	239,243	240,241	238,242	0:05:18.730000	0:05:22.890000	c9ad2c0bd8.mp3	c9ad2c0bd8.webp	気にしない 堂々としてればいいの　で... でも...	Ignóralos. -Tú mantén la cabeza bien alta. -Pero...	Never mind them. Just behave confidently. B-But...	False	False		miorine	
+ced83ce084	245,248	244,250	246,247,249	0:05:22.840000	0:05:26.050000	ced83ce084.mp3	ced83ce084.webp	背筋を伸ばす!　は... はい! これは珍しい	¡Ponte recta! -¡Sí! Qué extraño.	Stand up straight! R-Right! Fancy meeting you two here.	False	False		miorine/suletta,shaddiq	
+cf5be863c0	253	252	251	0:05:27.200000	0:05:30.800000	cf5be863c0.mp3	cf5be863c0.webp	お2人共 新規事業に 興味がおありで?	¿Les interesan los nuevos negocios?	Does this mean you're interested in new business ventures?	False	False		shaddiq	
+7a9993a717	256	255	254	0:05:30.800000	0:05:32.150000	7a9993a717.mp3	7a9993a717.webp	シャディク	Shaddiq.	Shaddiq?	False	False		miorine	
+c4391867db	258,260	259	257	0:05:32.150000	0:05:36.647000	c4391867db.mp3	c4391867db.webp	よかったら うちのプレゼンにもアドバイス⸺　貰えないかな?	Si te parece bien, aconséjame sobre mi presentación.	If possible, I'd love to receive your advice about our presentations.	False	False		shaddiq	
+b5d824bc83	263	262	261	0:05:36.640000	0:05:40.150000	b5d824bc83.mp3	b5d824bc83.webp	フォーカード17地区の契約取った あんたが言っても⸺	Dice el que obtuvo el contrato del sector 17.	Coming from the man who won the contract for Four Card Sector 17,	False	False		miorine	
+a1b16122ca	265	266	264	0:05:40.110000	0:05:41.770000	a1b16122ca.mp3	a1b16122ca.webp	説得力ないんだけど	No me convences.	I find that hard to believe.	False	False		miorine	
+a9cfc07893	268	269	267	0:05:41.660000	0:05:43.530000	a9cfc07893.mp3	a9cfc07893.webp	ミオリネの意見が欲しいのさ	Quiero tu opinión, Miorine.	I'd like to hear your opinion, Miorine.	False	False		shaddiq	
+0234160e85	272,274	271	270,273	0:05:44.260000	0:05:47.040000	0234160e85.mp3	0234160e85.webp	何よ　仲良しなんです?	¿Qué sucede? -¿Sois amigos?	What? Are you two friends?	False	False		miorine/suletta	
+5c25cf6e19	277	276	275	0:05:47.040000	0:05:49.880000	5c25cf6e19.mp3	5c25cf6e19.webp	違う ただの腐れ縁	No. Nos conocemos, eso es todo.	Please. I just can't get rid of him.	False	False		miorine	
+20b7fe03ed	279	280	278	0:05:49.710000	0:05:51.240000	20b7fe03ed.mp3	20b7fe03ed.webp	そう言うなよ	No seas así.	Don't be that way.	False	False		shaddiq	
+ab9d6aeab8	283	282	281	0:05:51.600000	0:05:54.206000	ab9d6aeab8.mp3	ab9d6aeab8.webp	昔は こういう場で よく顔合わせてたんだ	Solíamos encontrarnos en eventos así.	We used to see each other a lot at these events.	False	False		shaddiq	
+7ef5ebddea	286	285	284	0:05:55.230000	0:05:57.850000	7ef5ebddea.mp3	7ef5ebddea.webp	それで 今日は なんの用?	¿Y bien? ¿A qué viniste?	Anyway, what brings you here today?	False	False		shaddiq	
+6946d804b6	289	288	287	0:05:57.850000	0:06:00.490000	6946d804b6.mp3	6946d804b6.webp	総裁の顔見にって わけじゃないんだろ?	Dudo que sea a ver al presidente.	I know you didn't come to see the President.	False	False		shaddiq	
+e4e4b00354	292	291	290	0:06:00.490000	0:06:01.964000	e4e4b00354.mp3	e4e4b00354.webp	この子の付き添い	A acompañarla a ella.	I'm just accompanying her.	False	False		miorine	
+6eb4f3cbc4	294,297	293	295	0:06:02.260000	0:06:04.680000	6eb4f3cbc4.mp3	6eb4f3cbc4.webp	エランに会って話したいって うるさいの　ああっ あっあっあっ...	Insiste en querer ver a Elan.	She keeps whining about wanting to talk to Elan face-to-face!	False	False		miorine	
+a7d33af42a	300,303,305	299	301,302,304	0:06:04.590000	0:06:09.310000	a7d33af42a.mp3	a7d33af42a.webp	ミミミ... ミオリネさん!　ミオリネ 変わったね　はあ?	¡Miorine, eso era un secreto! -Cambiaste, Miorine.	M-M-Ms. Miorine! You've changed, Miorine. Th-Th-That's confidential!	False	False		suletta/shaddiq	
+be44c50bec	308,310	307	306,309	0:06:09.310000	0:06:13.725000	be44c50bec.mp3	be44c50bec.webp	ひとのために動くなんて　昔のミオリネなら絶対やらなかった	Antes jamás movías un dedo para ayudar a otros.	Acting for another person's sake... The Miorine I knew would never do that.	False	False		shaddiq	
+6acd57a95a	313	312	311	0:06:14.070000	0:06:16.854000	6acd57a95a.mp3	6acd57a95a.webp	これも水星ちゃんの魔力かな う...	¿Será la magia de la mercuriana?	Is this more of the Mercurian Miss's magic?	False	False		shaddiq	
+c6182ab26f	316	315	314	0:06:16.850000	0:06:18.600000	c6182ab26f.mp3	c6182ab26f.webp	何言ってんだか	No sé de qué hablas.	I don't know what you mean.	False	False		miorine	
+49cda49eda	318	319	317	0:06:18.480000	0:06:20.230000	49cda49eda.mp3	49cda49eda.webp	ほら 行くわよ	Vámonos.	Come on, let's go!	False	False		miorine	
+ee9abc241a	321	322	320	0:06:20.030000	0:06:21.490000	ee9abc241a.mp3	ee9abc241a.webp	は... はい	Bien.	R-Right!	False	False		suletta	
+2c80761d0a	325	324	323	0:06:23.010000	0:06:26.190000	2c80761d0a.mp3	2c80761d0a.webp	ミオリネさん 待ってくださーい	¡Espera, Miorine!	Ms. Miorine, wait for me!	False	False		suletta	
+7314bf9328	328	327	326	0:06:26.680000	0:06:28.650000	7314bf9328.mp3	7314bf9328.webp	変わったよ 君は	Sí cambiaste.	You've definitely changed.	False	False		shaddiq	
+0c489a0c4e	331	330	329	0:06:29.510000	0:06:30.960000	0c489a0c4e.mp3	0c489a0c4e.webp	残念だ	Es una lástima.	Too bad.	False	False		shaddiq	
+2998b69ea6	333	334	332	0:06:32.200000	0:06:34.371000	2998b69ea6.mp3	2998b69ea6.webp	まあ 素敵	¡Qué maravilla!	Oh, my! Look at you!	False	False		prospera	
+de60f1920c	337	336	335	0:06:34.890000	0:06:36.123000	de60f1920c.mp3	de60f1920c.webp	お母さん	¡Mamá!	Mom!	False	False		suletta	
+6b1f5c43bc	340	339	338	0:06:36.400000	0:06:38.590000	6b1f5c43bc.mp3	6b1f5c43bc.webp	来られないって言ってたのに	Dijiste que no podías venir.	You said you weren't coming!	False	False		suletta	
+9dcf3c3697	341	343	342	0:06:38.542000	0:06:41.170000	9dcf3c3697.mp3	9dcf3c3697.webp	仕事が予定より早く終わったの	Terminé el trabajo y pude venir.	I finished work earlier than expected.	False	False		prospera	
+0f0928c84f	346	345	344	0:06:41.780000	0:06:44.550000	0f0928c84f.mp3	0f0928c84f.webp	ドレス とっても似合ってる	El vestido te va estupendo.	The dress looks truly lovely on you!	False	False		prospera	
+9e9a180ad6	350	349	348	0:06:45.650000	0:06:48.340000	9e9a180ad6.mp3	9e9a180ad6.webp	ゴドイさんも お久しぶりです	Cuánto tiempo sin verte, Godoy.	Mr. Godoy, long time no see.	False	False		suletta	
+af9264f155	353	351	352	0:06:49.220000	0:06:51.013000	af9264f155.mp3	af9264f155.webp	そちらのお嬢さんは...	¿Quién es esa chica?	And this young lady is...	False	False		prospera	
+b3376365ee	356	355	354	0:06:51.010000	0:06:53.930000	b3376365ee.mp3	b3376365ee.webp	ああ 紹介しなきゃだよね	Ah, te la presentaré.	Oh right, I have to introduce you.	False	False		suletta	
+4d1077a240	359,361	358	357,360	0:06:53.930000	0:06:57.770000	4d1077a240.mp3	4d1077a240.webp	ミオリネさん　このドレスも ミオリネさんが貸してくれたの	Es Miorine. El vestido me lo prestó ella.	Ms. Miorine. She's the one who loaned me this dress.	False	False		suletta	
+8fd2619914	364	363	362	0:06:58.540000	0:07:00.640000	8fd2619914.mp3	8fd2619914.webp	ミオリネ・レンブランです	Soy Miorine Rembran.	I'm Miorine Rembran.	False	False		miorine	
+aade8a573d	367	365	366,368	0:07:01.150000	0:07:04.840000	aade8a573d.mp3	aade8a573d.webp	スレッタの母の プロスペラ・マーキュリーです	Soy Prospera Mercury, la madre de Suletta.	I'm Suletta's mother, Prospera Mercury.	False	False		prospera	
+9ffa561727	371	370	369	0:07:04.840000	0:07:06.900000	9ffa561727.mp3	9ffa561727.webp	またお会いできて光栄です	Es un honor verte de nuevo.	I'm so pleased to meet you again.	False	False		prospera	
+1bb3791b2d	374	373	372	0:07:07.180000	0:07:09.670000	1bb3791b2d.mp3	1bb3791b2d.webp	あのときは お見苦しいところを...	Lamento el espectáculo que di.	I'm sorry you had to see me like that.	False	False		miorine	
+6ebd22c0ad	377	376	375	0:07:09.670000	0:07:13.370000	6ebd22c0ad.mp3	6ebd22c0ad.webp	とんでもない とってもカッコよかったですわ	Para nada. Estuviste estupenda.	Not at all! I was quite impressed!	False	False		prospera	
+f90d597b12	380	379	378	0:07:13.370000	0:07:15.790000	f90d597b12.mp3	f90d597b12.webp	クソ親父! って...	¡"Mi maldito padre"!	"Hypocritical loser of a father!" Wasn't that it?	False	False		prospera	
+e301486267	384	383	382	0:07:16.790000	0:07:21	e301486267.mp3	e301486267.webp	おかげでエアリアルを 認可いただけたと思っています	Creo que aprobaron al Aerial gracias a ti.	I'm of the opinion that we owe Aerial's approval to you.	False	False		prospera	
+f247f99c24	387	386	385	0:07:21	0:07:22.970000	f247f99c24.mp3	f247f99c24.webp	ありがとうございました	Te lo agradezco.	Thank you very much.	False	False		prospera	
+4083c96d33	390	389	388	0:07:25.460000	0:07:28.500000	4083c96d33.mp3	4083c96d33.webp	お母さん ミオリネさんと 会ったことある...	¿Ya conocías a Miorine, mamá?	Mom, you've met Ms. Miorine-	False	False		suletta	
+6ebc548f50	392,395,397	393	391,394,396	0:07:28.500000	0:07:33.940000	6ebc548f50.mp3	6ebc548f50.webp	スレッタ　お母さん のど渇いちゃった　何か飲み物持ってきてくれる?	Tengo sed, Suletta. ¿Puedes traerme algo de beber?	Suletta? Your mother is thirsty. Can you bring me something to drink?	False	False		prospera	
+3f304cb362	399	400	398	0:07:33.940000	0:07:36.200000	3f304cb362.mp3	3f304cb362.webp	うん 分かった	Bien.	Sure, got it!	False	False		suletta	
+80fc90d3c4	403	402	401	0:07:36.200000	0:07:38.101000	80fc90d3c4.mp3	80fc90d3c4.webp	あ... なら私も...	Te acom...	Well, in that case, I'll-	False	False		miorine	
+de2c2981ee	407	406	405	0:07:38.870000	0:07:43.020000	de2c2981ee.mp3	de2c2981ee.webp	お父さまとは いつも あんな感じなのかしら	¿Tu relación con tu padre siempre es igual?	Has it always been that way... between you and your father?	False	False		prospera	
+d999331944	410	409	408	0:07:43.590000	0:07:45.740000	d999331944.mp3	d999331944.webp	今 それ聞きます?	¿Me preguntas eso ahora?	Is this really the place to ask?	False	False		miorine	
+d4653a7397	412,414	413	411,415	0:07:45.550000	0:07:51.030000	d4653a7397.mp3	d4653a7397.webp	だって⸺　あなたとスレッタが結婚したら 私たち親戚になるんですもの	Es que si te casas con Suletta, seremos familia.	Well, if you and Suletta are married, we're going to be relatives.	False	False		prospera	
+191de19273	418	417	416	0:07:51.300000	0:07:55.280000	191de19273.mp3	191de19273.webp	お嫁さんの実家には 仲良くしてほしいじゃない?	Quiero que nos llevemos bien.	Shouldn't I want to get along with the bride's family?	False	False		prospera	
+a952ce31a0	421,422	420	419	0:07:59.440000	0:08:04.590000	a952ce31a0.mp3	a952ce31a0.webp	21年前の⸺　ヴァナディース事変を 鎮圧した立役者	Fue la figura central en la supresión del Incidente Vanadis hace 21 años.	The man responsible for suppressing the Vanadis Incident 21 years ago.	False	False		prospera	
+4672b3bc3f	425	424	423	0:08:04.590000	0:08:07.340000	4672b3bc3f.mp3	4672b3bc3f.webp	何よりガンダムを禁忌にした英雄	El héroe que prohibió los Gundam.	And most of all, the hero who banned the Gundams.	False	False		prospera	
+2dc1294955	428	427	426	0:08:07.610000	0:08:09.930000	2dc1294955.mp3	2dc1294955.webp	立派なお父さまだと思うけど	Luce como un buen padre.	I'd think he'd be a splendid father.	False	False		prospera	
+6d3ba95287	430	431	429	0:08:09.930000	0:08:12.600000	6d3ba95287.mp3	6d3ba95287.webp	そんなの過去の栄光です	Eso son glorias pasadas.	That glory's all in the past.	False	False		miorine	
+899c7044a3	433	434	432	0:08:12.440000	0:08:15.510000	899c7044a3.mp3	899c7044a3.webp	私たちの世代は ガンダムなんて知らないし	Mi generación no conoce los Gundam.	Our generation knows nothing of Gundams.	False	False		miorine	
+f58d119b14	437	436	435,438	0:08:15.830000	0:08:19.560000	f58d119b14.mp3	f58d119b14.webp	手厳しいのね 何が許せないのかしら	Qué dura eres. ¿Qué es lo que no puedes perdonarle?	You're hard to please. What's so unforgivable about him?	False	False		prospera	
+514eb1366a	441	440	439,442	0:08:20.750000	0:08:25.440000	514eb1366a.mp3	514eb1366a.webp	いつも上から目線で 説明もなしに勝手に決めて...	Siempre me menosprecia y decide las cosas sin explicarme nada.	He always looks down on me and makes decisions without consulting me.	False	False		miorine	
+e877e484c2	445,446	444	443	0:08:25.790000	0:08:29.530000	e877e484c2.mp3	e877e484c2.webp	あなたも あのとき⸺　理不尽だって 思ったんじゃないですか?	Aquello también tuvo que parecerte irracional.	That day, didn't you think he was being unreasonable, too?	False	False		miorine	
+a52b3cddc4	449	447	448	0:08:29.940000	0:08:30.940000	a52b3cddc4.mp3	a52b3cddc4.webp	それに...	Además...	But most of all...	False	False		miorine	
+eefa2af4fd	452,455	451	450,453,454	0:08:35.470000	0:08:41.040000	eefa2af4fd.mp3	eefa2af4fd.webp	とにかく 私はあんな人⸺　父親だなんて 絶対に認めたくありません	Como sea, que no quiero reconocer que ese hombre es mi padre.	No matter what, I will never accept a man like that as my father!	False	False		miorine	
+88f1a4f79f	459	457	458	0:08:45.330000	0:08:46.800000	88f1a4f79f.mp3	88f1a4f79f.webp	なんですか?	¿Qué sucede?	What's your problem?	False	False		miorine	
+36fc9d6e34	462	461	460	0:08:46.800000	0:08:48.547000	36fc9d6e34.mp3	36fc9d6e34.webp	ああ ごめんなさいね	Discúlpame.	Oh, please excuse me.	False	False		prospera	
+85201e80e1	464	465	463	0:08:48.540000	0:08:51.470000	85201e80e1.mp3	85201e80e1.webp	それでは こちらが初公開となります	Hoy lo mostramos por primera vez.	And now, being unveiled for the first time,	False	False		empleado B	
+1e5eaba00b	468	467	466,469	0:08:51.470000	0:08:54.094000	1e5eaba00b.mp3	1e5eaba00b.webp	その素敵なドレスも...	Es que ese vestido tan bonito,	a promotion for the new color version. That beautiful dress...	False	False		prospera	
+6a6a237299	472	471	473	0:08:54.510000	0:08:57.550000	6a6a237299.mp3	6a6a237299.webp	今身につけている ヒールもアクセサリーも...	los zapatos de tacón, los accesorios,	the high heels and accessories you're wearing,	False	False		prospera	
+618d4cda06	476	475	474	0:08:57.910000	0:09:01.351000	618d4cda06.mp3	618d4cda06.webp	寮には入らず 理事長室で生活しているのも...	el hecho de que vivas en el despacho del director,	that you can live in the Chairman's office rather than a House,	False	False		prospera	
+c57f0cebd1	479	478	477	0:09:01.670000	0:09:03.850000	c57f0cebd1.mp3	c57f0cebd1.webp	他者から受ける敬意も...	el respeto que te profesan...	the respect you receive from others...	False	False		prospera	
+567c39c353	482,484,487	481,486	480,483,485	0:09:04.170000	0:09:13.790000	567c39c353.mp3	567c39c353.webp	そのすべてが ベネリットグループ総裁である⸺　お父さまの 力のおかげなのにって思ったら...　なんだか おかしくなっちゃって	Todo ello se lo debes a tu padre, el presidente de Benerit Group. Al pensar en ello, me pareció gracioso.	When I remember all of that is because your father is the president of the Benerit Group, it somehow strikes me as funny.	False	False		prospera	
+adb6a3ed15	491	490	489	0:09:14.360000	0:09:17.820000	adb6a3ed15.mp3	adb6a3ed15.webp	ああ 気に障ったら ごめんなさい	Lo siento si te molesté.	Oh, I'm sorry if I've offended you.	False	False		prospera	
+0ca271998b	494	493	492	0:09:18.140000	0:09:22.331000	0ca271998b.mp3	0ca271998b.webp	でも まずは その かわいい意地を捨てなくっちゃね	Primero deberías deshacerte de esa tozudez tan encantadora,	But first you must throw away that adorable pride,	False	False		prospera	
+7e36477a0a	497	496	495	0:09:22.980000	0:09:26.260000	7e36477a0a.mp3	7e36477a0a.webp	デリング総裁のお嬢さん	hija del presidente Delling.	dear daughter of President Delling.	False	False		prospera	
+b98b37d801	500	501	499,502	0:09:27.830000	0:09:30.290000	b98b37d801.mp3	b98b37d801.webp	お客さま! 大丈夫ですか?	¡Señorita! -¿Está bien?	Miss! Are you okay?	False	False		trabajadora A/B	
+87b7f64684	505,507	504	503,506	0:09:30.290000	0:09:34.301000	87b7f64684.mp3	87b7f64684.webp	ご... ごごご... ごめんなさい!　あわわわわわ... 私...	Lo siento, yo...	I-I-I'm so sorry! Wh-What should I do?	False	False		suletta	
+0f8aace0f5	510	509	508	0:09:34.300000	0:09:36.930000	0f8aace0f5.mp3	0f8aace0f5.webp	情けない	Patético. -Lo siento.	Pathetic.	False	False		lauda	
+e82ba9dc0f	513	512	511	0:09:36.930000	0:09:40.390000	e82ba9dc0f.mp3	e82ba9dc0f.webp	なんだって にいさんは あんな愚鈍な女を...	¿Qué le vio mi hermano?	How could my brother fall for such an oafish woman?	False	False		lauda	
+9ce91476cc	519	518	517	0:09:40.680000	0:09:43.770000	9ce91476cc.mp3	9ce91476cc.webp	そろそろだ 指示どおりにな	Ya casi es la hora. Sigue mis instrucciones.	It's about time. Do as I instructed.	False	False		vim	
+273e1dbacb	522	521	520	0:09:44.360000	0:09:46.100000	273e1dbacb.mp3	273e1dbacb.webp	はい 父さん	Sí, padre.	Yes, Dad.	False	False		lauda	
+d39e5d0cda	523,527	525	524,526,528	0:09:46.730000	0:09:51.443000	d39e5d0cda.mp3	d39e5d0cda.webp	ああ... どどどど... どうしよう　どうしよう はい これ	Ay, ¿qué hago? -Toma.	Wh-Wh-What am I going to...? What do I- Here you are.	False	False		suletta/elan	
+b991dc2a62	531	530	529	0:09:53.440000	0:09:54.820000	b991dc2a62.mp3	b991dc2a62.webp	大丈夫?	¿Estás bien?	Are you okay?	False	False		elan	
+73ab960093	534	533	532	0:09:58.530000	0:10:02.037000	73ab960093.mp3	73ab960093.webp	お待ちしておりました デリング総裁	Lo esperaba, presidente Delling.	I've been waiting for you, President Delling.	False	False		sarius	
+60230d9150	536	538	537	0:10:21.723000	0:10:23.760000	60230d9150.mp3	60230d9150.webp	あ... よかったら どうぞ	Aquí tienes.	Have this one, if you like.	False	False		shaddiq	
+91c81fe216	541,543	540	539,542	0:10:25.240000	0:10:29.190000	91c81fe216.mp3	91c81fe216.webp	ありがとうございます　こういうの よく分かんなくて	Muchas gracias. No sé cómo funcionan estas cosas.	Oh, thank you very much! I wasn't really sure what to do.	False	False		nika	
+70c96cfca4	545	546	544	0:10:29.190000	0:10:30.691000	70c96cfca4.mp3	70c96cfca4.webp	どういたしまして	De nada.	You're welcome.	False	False		shaddiq	
+3f60539a7c	548,550	549	547	0:10:31.210000	0:10:36.070000	3f60539a7c.mp3	3f60539a7c.webp	こちらこそ このあいだは ありがとう　ニカ・ナナウラ	Gracias a ti por tu ayuda la última vez, Nika Nanaura.	In fact, I'm the one who owes you thanks, Nika Nanaura.	False	False		shaddiq	
+85783a278c	553	552	551	0:10:36.880000	0:10:38.280000	85783a278c.mp3	85783a278c.webp	いえ...	De nada.	Not at all...	False	False		nika	
+e00d69bb40	555		554	0:10:39.820000	0:10:41.030000	e00d69bb40.mp3	e00d69bb40.webp	んあ?		What?	False	False			
+3177663ddb	558	557	556	0:10:41.840000	0:10:42.870000	3177663ddb.mp3	3177663ddb.webp	はい	Toma.	Here you are.	False	False		elan	
+11fae5c38a	560	561	559	0:10:43.220000	0:10:46.206000	11fae5c38a.mp3	11fae5c38a.webp	あ... あの... ごめんなさい!	Este... Lo siento.	Uh... I'm very sorry!	False	False		suletta	
+887ade2232	562	563	564	0:10:46.665000	0:10:49.460000	887ade2232.mp3	887ade2232.webp	いいよ そのハンカチは 気にしないで	No te preocupes por el pañuelo.	It's fine. Don't worry about the handkerchief.	False	False		elan	
+bc92cd2e62	565	567	566	0:10:49.376000	0:10:51.211000	bc92cd2e62.mp3	bc92cd2e62.webp	そうじゃなくて... ん?	No lo digo por eso.	That's not what I meant.	False	False		suletta	
+d1712cf743	569	570	568	0:10:51.520000	0:10:54.670000	d1712cf743.mp3	d1712cf743.webp	待ち合わせ 来なかったし...	No viniste el día que quedamos	You didn't show up the other day,	False	False		suletta	
+ffd0131d00	573,574	572,576	571,575	0:10:54.670000	0:11:00.680000	ffd0131d00.mp3	ffd0131d00.webp	連絡もつかなかったから　その 私 心配で...	y no conseguía contactarte. Estaba preocupada.	and I couldn't contact you afterwards. I was worried.	False	False		suletta	
+de3c6057d7	578,581	579	577,580	0:11:01.320000	0:11:06.184000	de3c6057d7.mp3	de3c6057d7.webp	僕のほうこそ⸺　君に謝らなきゃって ずっと思ってた	Yo también quería disculparme contigo.	No, in fact... I've been wanting to apologize to you all this time.	False	False		elan	
+447f72a1c2	584	585	583,586	0:11:07.240000	0:11:11.900000	447f72a1c2.mp3	447f72a1c2.webp	ペイル社の所用で あの日から学園は休学してたんだ	Falté a la escuela por asuntos de Pale Technologies.	Because of Peil company business, I've been taking a leave of absence since then.	False	False		elan	
+8529e7a932	589	588	587	0:11:11.900000	0:11:15.070000	8529e7a932.mp3	8529e7a932.webp	出先のフロントは磁気嵐が強くてね	Fui a un sitio con una tormenta magnética.	The front I went to is affected by strong magnetic storms.	False	False		elan	
+30fc27f3da	592	591	590	0:11:15.070000	0:11:16.880000	30fc27f3da.mp3	30fc27f3da.webp	心配かけて ごめん	Siento que te preocuparas.	I'm sorry to have worried you.	False	False		elan	
+fb5a28d7d4	594	595	593	0:11:16.880000	0:11:20.090000	fb5a28d7d4.mp3	fb5a28d7d4.webp	じゃあ また学園来ますか?	¿Y regresarás a la academia?	Then... you'll be coming back to school?	False	False		suletta	
+a75f02f2f4	597	598	596	0:11:20.090000	0:11:22.660000	a75f02f2f4.mp3	a75f02f2f4.webp	もちろん 約束する	Por supuesto. Lo prometo.	Of course. I promise!	False	False		elan	
+99ad93e695	599	600	601	0:11:23.368000	0:11:26.163000	99ad93e695.mp3	99ad93e695.webp	あ... よかった... です	Qué alivio.	I'm glad...	False	False		suletta	
+9203dbe94a	604	603	602	0:11:26.760000	0:11:29.620000	9203dbe94a.mp3	9203dbe94a.webp	笑ってくれるようになって...	Me alegro de que sonrías.	to see you smiling now.	False	False		suletta	
+a78cefcb0a	607	606	605	0:11:30.540000	0:11:33.040000	a78cefcb0a.mp3	a78cefcb0a.webp	じゃあ そろそろ行こうか	¿Nos vamos ya?	Now then, we should get moving.	False	False		elan	
+f22df09f15	611	610	609	0:11:34.020000	0:11:36.460000	f22df09f15.mp3	f22df09f15.webp	もうすぐ ホルダーの登壇でしょ?	Pronto tendrás que hablar tú.	The Holder has to take the stage soon.	False	False		elan	
+e9fb0873e5	614	613	612	0:11:36.460000	0:11:38.050000	e9fb0873e5.mp3	e9fb0873e5.webp	僕も一緒に行くよ	Te acompaño.	I'll go with you.	False	False		elan	
+76f4e80380	618,621	617	616,619,620	0:11:39.590000	0:11:42.640000	76f4e80380.mp3	76f4e80380.webp	ニカ ん?　スレッタ見なかった?	¡Nika! ¿Viste a Suletta?	Nika! What? Have you seen Suletta?	False	False		miorine	
+911aa50b0d	624	622	623	0:11:42.630000	0:11:43.847000	911aa50b0d.mp3	911aa50b0d.webp	はぐれちゃったの?	¿Se separaron?	Were you separated?	False	False		nevola	
+94c58063b9	627	626	625	0:11:43.840000	0:11:47.810000	94c58063b9.mp3	94c58063b9.webp	まったく どこに行ったのよ あいつは	¿Dónde rayos se metió?	Unbelievable. Where did she wander off to?	False	False		miorine	
+bf54ffd634	631	629	630	0:11:50.680000	0:11:52.480000	bf54ffd634.mp3	bf54ffd634.webp	ご来場の皆さま	Señores y señoras,	Ladies and gentlemen,	False	False		presentador	
+0238580d4c	633	634	632	0:11:52.460000	0:11:55.570000	0238580d4c.mp3	0238580d4c.webp	ここからは 特別プレゼンターとして⸺	hoy tenemos como locutores especiales	we will now turn over the stage	False	False		presentador	
+fd6793945d	636	637	635,638	0:11:55.570000	0:12:00.200000	fd6793945d.mp3	fd6793945d.webp	ペイル・テクノロジーズCEOの 皆さまに ご登壇いただきます	a la presidencia de Pale Technologies.	to the CEOs of Peil Technologies for a special presentation.	False	False		presentador	
+e675005590	641	640	639	0:12:05.470000	0:12:10.250000	e675005590.mp3	e675005590.webp	本日は アスティカシア 高等専門学園の⸺	Es un honor poder presentar	Greetings. It is my great honor today	False	False		nugen	
+7fe6fdd54c	643,645,647	644,650	642,648,649	0:12:10.250000	0:12:18.340000	7fe6fdd54c.mp3	7fe6fdd54c.webp	将来有望なる生徒さんを⸺　皆さまにご紹介できますこと 大変光栄に存じます　は... スレッタ!?	a unos brillantes alumnos de la Escuela Tecnológica Asticassia. ¿Suletta?	to present to you two students of the Asticassia School of Technology who represent its bright future. Suletta?	False	False		miorine,nugen	
+abbc266709	654	653	652	0:12:24.130000	0:12:28.058000	abbc266709.mp3	abbc266709.webp	それでは あらためて ご紹介しましょう	Permítanme presentarlos como es debido.	And now, let me reintroduce the pilot	False	False		nevola	
+51a89bf820	657,659	656,658	655,660	0:12:28.410000	0:12:33.940000	51a89bf820.mp3	51a89bf820.webp	弊社の誇るモビルスーツ⸺　ファラクトのパイロット エラン・ケレス	Elan Ceres, piloto del Pharact, el Mobile Suit del que nos enorgullecemos.	of the Pharact, the mobile suit that is our pride and joy, Elan Ceres.	False	False		nevola	
+f65df72695	664,666,669	663,668	662,665,667	0:12:34.900000	0:12:44.820000	f65df72695.mp3	f65df72695.webp	そして 先日の決闘で⸺　そのファラクトを見事に撃破した 現ホルダーでもある⸺　スレッタ・マーキュリーさんです	Y la chica que venció al Pharact recientemente, la Holder actual, Suletta Mercury.	And next to him, the pilot who so impressively defeated the Pharact in a recent duel. The current Holder, Ms. Suletta Mercury.	False	False		kal	
+e82da02183	672	671	670	0:12:44.820000	0:12:48.030000	e82da02183.mp3	e82da02183.webp	ス... スススル... ス...	Soy Su...	I-I-I'm...	False	False		suletta	
+15c0c039e7	675	674	673	0:12:48.030000	0:12:49.830000	15c0c039e7.mp3	15c0c039e7.webp	背筋を伸ばす!	¡Ponte recta!	Stand up straight!	False	False		miorine	
+ab81263fc2	677	678	679	0:12:52.749000	0:12:56.336000	ab81263fc2.mp3	ab81263fc2.webp	は... スレッタ・マーキュリーです!	Soy Suletta Mercury.	I'm Suletta Mercury!	False	False		suletta	
+7fd7080314	682	681	680	0:12:56.730000	0:12:59.960000	7fd7080314.mp3	7fd7080314.webp	水星から来た私にとって⸺	Vengo de Mercurio,	As someone from Mercury,	False	False		suletta	
+a2e22a0fc6	684	685	683	0:12:59.960000	0:13:02.926000	a2e22a0fc6.mp3	a2e22a0fc6.webp	学園には学びがたくさんで...	así que tengo mucho que aprender.	I'm going to learn so many new things at this school...	False	False		suletta	
+483f4b4f02	687	688	686	0:13:02.920000	0:13:05.680000	483f4b4f02.mp3	483f4b4f02.webp	じゅ... 充実してます!	Me siento realizada.	and every day is fulfilling!	False	False		suletta	
+d538facbbf	691	690	689	0:13:05.680000	0:13:08.930000	d538facbbf.mp3	d538facbbf.webp	これからも勉強 頑張ります!	Seguiré estudiando cuanto pueda.	I will continue to do my best... in my studies!	False	False		suletta	
+792baed700	695	694	693	0:13:13.540000	0:13:16.570000	792baed700.mp3	792baed700.webp	ありがとう スレッタ・マーキュリーさん	Gracias, Suletta Mercury.	Thank you, Ms. Suletta Mercury.	False	False		nugen	
+fe67a2646b	697	698	696	0:13:16.570000	0:13:20.980000	fe67a2646b.mp3	fe67a2646b.webp	ときに あなたのモビルスーツ とてもユニークですけど	Tu Mobile Suit es único.	By the way, your mobile suit is quite a unique machine.	False	False		kal	
+b335631328	700	701	699	0:13:20.820000	0:13:24.531000	b335631328.mp3	b335631328.webp	操縦は複雑な技術を 要するのではなくて?	Usarás tecnología muy compleja para pilotarlo.	Does its operation require complex skills?	False	False		nevola	
+c897332d7a	704	703	702	0:13:24.320000	0:13:27.242000	c897332d7a.mp3	c897332d7a.webp	それとも あなたの才能かしら	¿O es tu talento?	Or could it be your own special talent?	False	False		golneri	
+0697ee2263	706	707	705	0:13:27.240000	0:13:29.410000	0697ee2263.mp3	0697ee2263.webp	エアリアルがスゴいんです	Es el Aerial.	Aerial's the amazing one!	False	False		suletta	
+2220991e67	709	710	708	0:13:29.410000	0:13:33.210000	2220991e67.mp3	2220991e67.webp	エアリアルは子供のころから ずっと一緒だった⸺	El Aerial estuvo conmigo desde que era niña.	Aerial and I have been together since childhood.	False	False		suletta	
+065dff4db7	713	712	711	0:13:33.210000	0:13:35.460000	065dff4db7.mp3	065dff4db7.webp	大切な家族ですから!	Es parte de mi familia.	She's a precious family member!	False	False		suletta	
+8a09f9156f	716,718	715	714,717	0:13:35.460000	0:13:40.130000	8a09f9156f.mp3	8a09f9156f.webp	家族 素敵なお話ね　では もう一つ	Tu familia... Qué lindo. Tenemos otra pregunta.	Family? What a lovely sentiment. I have one more question, then.	False	False		nugen	
+a9385b0f80	721,722	720	719,723	0:13:40.480000	0:13:47.010000	a9385b0f80.mp3	a9385b0f80.webp	そちらのエラン・ケレスから⸺　先日の決闘中 不思議な感覚が あったというお話が	Elan Ceres dijo que sintió algo extraño durante su duelo.	We've heard from Elan Ceres that he felt a strange sensation during his recent duel with you.	False	False		nugen	
+aae4ce5247	727	726	725	0:13:48.400000	0:13:51.790000	aae4ce5247.mp3	aae4ce5247.webp	あのとき一瞬 変な反応があったんだ	Hubo una reacción por un segundo.	For a split second, I picked up a strange response.	False	False		elan	
+6506e8b928	730	729	728	0:13:51.790000	0:13:55.770000	6506e8b928.mp3	6506e8b928.webp	僕と君の機体が混線するみたいな	Como si se cruzaran las señales de nuestras máquinas.	Almost as if your machine and mine had become entangled.	False	False		elan	
+9bc4ca7d07	732	733	731	0:13:55.770000	0:13:57.730000	9bc4ca7d07.mp3	9bc4ca7d07.webp	君も感じなかった?	¿No lo notaste?	Didn't you feel it too?	False	False		elan	
+8b991185ca	736	735	734	0:13:58.600000	0:14:01.820000	8b991185ca.mp3	8b991185ca.webp	いつもより声 聞こえた気がする	Hoy siento que te escuché más que de costumbre.	I could hear your voice more than ever today.	False	False		suletta	
+3828908ac2	739	738	737	0:14:02.420000	0:14:05.030000	3828908ac2.mp3	3828908ac2.webp	はい ありました	Sí. Sí que lo noté.	Yes. I did.	False	False		suletta	
+9224fcb81b	741	742	740	0:14:04.950000	0:14:08.450000	9224fcb81b.mp3	9224fcb81b.webp	なるほど 間違いありませんね?	Ya veo. ¿Estás completamente segura?	I see. Then there's no mistake.	False	False		nugen	
+eff67f16b0	745	744	743	0:14:08.450000	0:14:10.570000	eff67f16b0.mp3	eff67f16b0.webp	は... い... あ...	Sí.	Huh? What?	False	False		suletta	
+bc2b3a8fe3	749	748	747	0:14:11.800000	0:14:14.080000	bc2b3a8fe3.mp3	bc2b3a8fe3.webp	これでハッキリしました	Esto aclara las cosas.	The truth is now clear.	False	False		nugen	
+03a9fb0bca	751	752	750	0:14:14.080000	0:14:18.420000	03a9fb0bca.mp3	03a9fb0bca.webp	シン・セー開発公社のモビルスーツ エアリアルは⸺	El Aerial, desarrollado por Corporación de Desarrollo Shin Sei,	Shin Sei Development Corporation's mobile suit Aerial is...	False	False		nugen	
+7fb11acf0c	754	753	755	0:14:18.360000	0:14:19.790000	7fb11acf0c.mp3	7fb11acf0c.webp	ガンダムです!	es un Gundam.	a Gundam!	False	False		nugen	
+2759beac99	758	757	759	0:14:22.960000	0:14:24.500000	2759beac99.mp3	2759beac99.webp	ガンダムだって!?	¿Un Gundam?	A Gundam?!	False	False		elan	
+fa832ad222	763	762	761	0:14:25.360000	0:14:27.010000	fa832ad222.mp3	fa832ad222.webp	ご説明します	Se lo explicaré.	Allow me to explain.	False	False		kal	
+25cbaba3c9	765,767	766	764	0:14:27.010000	0:14:32.307000	25cbaba3c9.mp3	25cbaba3c9.webp	弊社のモビルスーツ ファラクトが⸺　GUNDフォーマットを使用していたと	Nuestro Mobile Suit, el Pharact, usaba el GUND Format.	Our company's mobile suit Pharact was using the GUND Format.	False	False		kal	
+c0b7e5793f	769,771	770	768,772	0:14:32.300000	0:14:37.896000	c0b7e5793f.mp3	c0b7e5793f.webp	決闘委員会⸺　及び弊社監査部門からの 報告で発覚しました	Lo confirman el Comité de Duelos y la inspección de nuestra empresa.	This has been revealed to us by reports from the Dueling Committee and our internal auditor.	False	False		nevola	
+13e487bd75	774,776	775	773	0:14:37.890000	0:14:43.650000	13e487bd75.mp3	13e487bd75.webp	あの現象は GUNDフォーマットの⸺　相互干渉によって発現するもの	Ese fenómeno lo produce la interferencia mutua del GUND Format.	That phenomenon is the result of mutual interference between GUND Formats.	False	False		golneri	
+fafe6cc8d9	778	779	777	0:14:44.040000	0:14:47.860000	fafe6cc8d9.mp3	fafe6cc8d9.webp	ガンダムに反応するのは ガンダムだけ	Solo un Gundam reacciona a un Gundam.	Only Gundams respond to other Gundams.	False	False		nugen	
+2bc32e6f9e	781	782	780	0:14:47.860000	0:14:52.910000	2bc32e6f9e.mp3	2bc32e6f9e.webp	つまり エアリアルは ガンダムに相違ないのです!	Por tanto, el Aerial ha de ser uno.	Which means the Aerial is, without a doubt, a Gundam!	False	False		nugen	
+4e138195e7	784,787	785	783,786	0:14:53.490000	0:14:57.910000	4e138195e7.mp3	4e138195e7.webp	ま... 待ってください!　エアリアルは ガンダムじゃありません!	¡Un momento! ¡El Aerial no es un Gundam!	W-Wait a minute! Aerial isn't a Gundam!	False	False		suletta	
+ea996e7bbd	789,792	790	788,791	0:14:57.910000	0:15:03.090000	ea996e7bbd.mp3	ea996e7bbd.webp	先ほど お認めに なられたではありませんか　あなたご自身が	Tú misma lo admitiste hace unos segundos.	You already admitted the truth, didn't you? In your own words.	False	False		nugen	
+2c33bdc9ff	794	793	795	0:15:03.080000	0:15:04.090000	2c33bdc9ff.mp3	2c33bdc9ff.webp	違います!	¡No!	It's not true!	False	False		suletta	
+62ef0d86d7	797	798	796	0:15:04.090000	0:15:09.380000	62ef0d86d7.mp3	62ef0d86d7.webp	ガンダムの製造 所持はカテドラルの協約違反だ	Construir o poseer un Gundam va contra la Convención de Cathedral.	Building and possessing a Gundam is against the Cathedra Agreement.	False	False		vim	
+bbc66a074c	800	801	799	0:15:09.380000	0:15:12.090000	bbc66a074c.mp3	bbc66a074c.webp	ペイルは この責任を どう取る?	Deberán asumir la responsabilidad.	How will the Peil company make amends for this?	False	False		vim	
+845e1dfbb2	803	804	802	0:15:12.090000	0:15:16.560000	845e1dfbb2.mp3	845e1dfbb2.webp	事の重大さを鑑みて 弊社は機体の廃棄と...	Teniendo en cuenta la gravedad del asunto...	As this is a grave matter, our company promises to dispose of the machine...	False	False		nevola	
+697870bc23	807	806	805	0:15:16.560000	0:15:20.647000	697870bc23.mp3	697870bc23.webp	当該開発部門の 解体をお約束します	Eliminaremos la unidad y cerraremos el equipo de desarrollo.	...and to dissolve the development team that produced it.	False	False		golneri	
+eaa1caca6f	809	810	808	0:15:21.070000	0:15:26.190000	eaa1caca6f.mp3	eaa1caca6f.webp	であれば シン・セーも 同様の処分を受けるべきだな	En ese caso, Shin Sei deberá recibir el mismo castigo.	In that case, Shin Sei should accept the same settlement.	False	False		vim	
+873845e263	812	813	811	0:15:26.190000	0:15:27.780000	873845e263.mp3	873845e263.webp	ダ... ダメです!	¡No!	Y-You can't!	False	False		suletta	
+1bb82dfb45	815	816	814	0:15:27.780000	0:15:30.490000	1bb82dfb45.mp3	1bb82dfb45.webp	そんな... だって この前は...	No puede ser. Si hace poco...	This is absurd! They already...	False	False		martin	
+c6d6fa8af9	818	819	817	0:15:30.490000	0:15:34.160000	c6d6fa8af9.mp3	c6d6fa8af9.webp	あいつら... エアリアルも一緒に沈めるつもりだ	Piensan hundir al Aerial con ellos.	Those creeps. They intend to bury Aerial along with it.	False	False		miorine	
+40a6464b58	821	822	820	0:15:34.160000	0:15:36.450000	40a6464b58.mp3	40a6464b58.webp	待ってよ ニューゲンCEO!	Espere, presidenta Nugen.	Wait, Ms. Nugen!	False	False		elan	
+a2a439726a	824	825	823	0:15:36.450000	0:15:39.410000	a2a439726a.mp3	a2a439726a.webp	彼女は自分の機体が ガンダムだって知らないんだ!	Ella no sabía que era un Gundam.	She was truly unaware that her machine is a Gundam!	False	False		elan	
+66ab592e8a	828	827	826	0:15:39.410000	0:15:42.170000	66ab592e8a.mp3	66ab592e8a.webp	開発者の話を聞くのが筋だ	Deberíamos hablar con el desarrollador.	It would be reasonable to let the developer explain.	False	False		elan	
+8fa5fa2888	829,835	831,833	830,832,834	0:15:42.502000	0:15:48.216000	8fa5fa2888.mp3	8fa5fa2888.webp	は... お母さん! お母さん!　お母さん お母さん!	¡Mamá! ¡Mamá!	Mom! Mom! Mom... Mom!	False	False		suletta	
+e267c09b52	838,839	837	836	0:15:49.780000	0:15:54.220000	e267c09b52.mp3	e267c09b52.webp	なんでしょう　会場の外でないとできないお話って	¿Por qué tenemos que hablar fuera del recinto?	What was so important that we could only discuss it outside?	False	False		prospera	
+41f2a428a8	842	841	840	0:15:54.620000	0:15:56.390000	41f2a428a8.mp3	41f2a428a8.webp	父からの伝言です	Tengo un mensaje de mi padre.	It's a message from my father.	False	False		lauda	
+33ea1e0cb4	845	844	843	0:15:56.740000	0:15:59.350000	33ea1e0cb4.mp3	33ea1e0cb4.webp	例の件の再取引をと	Quiere negociar de nuevo sobre eso.	He'd like to renegotiate your previous deal.	False	False		lauda	
+6de40e0d8a	849	848	847,850	0:16:01.100000	0:16:04.980000	6de40e0d8a.mp3	6de40e0d8a.webp	エアリアルは違います! ガンダムじゃないんです!	¡El Aerial no es un Gundam!	Aerial isn't like that! She's not a Gundam!	False	False		suletta	
+9e1e0d81d2	852	853	851,854	0:16:04.980000	0:16:06.651000	9e1e0d81d2.mp3	9e1e0d81d2.webp	やはりガンダムだったか	Lo sabía, era un Gundam.	So it was a Gundam, after all. My mom, too...	False	False		invitado F	
+3979234fc0	857,862	856,861	855,858,859,860	0:16:06.650000	0:16:10.240000	3979234fc0.mp3	3979234fc0.webp	シン・セーは終わりだな　当然だ	Shin Sei está acabada. Naturalmente.	This is the end for Shin Sei. ...said that Aerial... ...isn't a Gundam! Naturally.	False	False		invitado B,invitado G	
+38078e241d	865	864	863	0:16:10.240000	0:16:13.200000	38078e241d.mp3	38078e241d.webp	まずいよ このままじゃエアリアルが...	A este paso, destruirán el Aerial.	This is bad. At this rate, Aerial...	False	False		martin	
+f199253182	870,874	869,873	867,868,871,872	0:16:13.730000	0:16:20.081000	f199253182.mp3	f199253182.webp	我々 ベネリットグループは ガンダムを看過しない　そうですね?	Benerit Group no puede ignorar un Gundam. ¿Verdad?	...family to me! The Benerit Group won't overlook a Gundam. This is wrong! Indeed.	False	False		sarius	
+497fec5b0f	876	877	875,878	0:16:20.080000	0:16:22.792000	497fec5b0f.mp3	497fec5b0f.webp	お願いです 聞いてください!	¡Por favor, escúchenme!	Please! Please listen to me!	False	False		suletta	
+a3f10f8584	880	881	879	0:16:22.790000	0:16:26.040000	a3f10f8584.mp3	a3f10f8584.webp	ご裁可を 総裁	Decida la sanción, presidente.	Your decision, Mr. President?	False	False		sarius	
+62503d71df	884	883	882	0:16:28.150000	0:16:30.840000	62503d71df.mp3	62503d71df.webp	エアリアルは廃棄させないわ!	¡No permitiré que lo eliminen!	I won't let you dispose of Aerial!	False	False		miorine	
+0ac966e886	887,889,890	888	886	0:16:36.490000	0:16:41.478000	0ac966e886.mp3	0ac966e886.webp	エアリアルは⸺　ペイル社にも ジェターク社にも勝った⸺　優秀な機体よ!	El Aerial es una unidad que venció a Pale y a Jeturk.	Aerial is a superior machine that defeated both the Jeturk and Peil companies.	False	False		miorine	
+20b9b8ba30	894	893	892	0:16:42.410000	0:16:44.440000	20b9b8ba30.mp3	20b9b8ba30.webp	廃棄するなんて もったいないわ	Sería un desperdicio.	Destroying it would be a waste!	False	False		miorine	
+c66e44d36b	896	897	895	0:16:45.290000	0:16:48.730000	c66e44d36b.mp3	c66e44d36b.webp	なぜ あなたが... ミオリネさま	¿Por qué interviene, señorita Miorine?	Why are you here, Mistress Miorine?	False	False		sarius	
+eb95a08a5d	899,902	900	898,901	0:16:49.340000	0:16:53.450000	eb95a08a5d.mp3	eb95a08a5d.webp	決まってるでしょ　あの子の花嫁だからよ!	Porque soy su prometida, naturalmente.	Isn't it obvious? Because I'm that girl's bride!	False	False		miorine	
+289d610d10	904	905	903	0:16:54.470000	0:16:56.610000	289d610d10.mp3	289d610d10.webp	ミオリネ... さん	Miorine...	Ms. Miorine?	False	False		suletta	
+93e31ab8c3	908	907	906	0:16:56.610000	0:16:59.870000	93e31ab8c3.mp3	93e31ab8c3.webp	問題を はき違えていらっしゃるようだ	Creo que está confundiendo el problema.	You seem to misunderstand the issue here.	False	False		sarius	
+9705b478ff	911	910	909	0:17:00.390000	0:17:05.085000	9705b478ff.mp3	9705b478ff.webp	パイロットの命を奪う非人道兵器を 認めるわけにはいきません	No podemos tolerar máquinas inhumanas que matan a sus pilotos.	An inhuman weapon that steals the lives of its pilots cannot be tolerated.	False	False		sarius	
+ab2d21d584	914	913	912	0:17:05	0:17:07.380000	ab2d21d584.mp3	ab2d21d584.webp	スレッタはピンピンしてるじゃない	Suletta está perfectamente.	Suletta's alive and well!	False	False		miorine	
+8b30f4c602	916	917	915	0:17:07.380000	0:17:10.780000	8b30f4c602.mp3	8b30f4c602.webp	ただ否定して排除することしか できないの?	¿Es que la única opción es desecharlo?	Is denying and disposing of things all you can possibly do?	False	False		miorine	
+37f08fa5b7	920	919	918	0:17:10.780000	0:17:13.550000	37f08fa5b7.mp3	37f08fa5b7.webp	排除以外の道があると?	¿Insinúa que hay otra solución?	You're saying there's an option other than disposal?	False	False		sarius	
+2077acd517	923	922	921	0:17:14.340000	0:17:16.720000	2077acd517.mp3	2077acd517.webp	接続 お願いします	Conéctenme, por favor.	Establish connection, please.	False	False		miorine	
+b2fb637d77	926	925	924	0:17:19.120000	0:17:21.560000	b2fb637d77.mp3	b2fb637d77.webp	過去の決算報告から⸺	Según pasados informes financieros,	Based on past financial statements,	False	False		miorine	
+55ba665070	928,931,934	929,932	927,930,933	0:17:21.480000	0:17:29.320000	55ba665070.mp3	55ba665070.webp	ファラクトの機体廃棄と⸺　同開発部門の解体に伴う ペイル社の損金を⸺　1200億と見積もり⸺	eliminar el Pharact y su equipo de desarrollo le costaría a Pale Technologies 120 000 millones.	I estimate that after disposing of the Pharact and dissolving the development team responsible, Peil's loss will amount to 120 billion.	False	False		miorine	
+32eb98317d	936	937	935	0:17:29.320000	0:17:32.280000	32eb98317d.mp3	32eb98317d.webp	その倍の2400億	Planteemos el doble, 240 000 millones.	I thus propose twice that amount, 240 billion...	False	False		miorine	
+2e4e3718ff	940,941	938	939	0:17:32.740000	0:17:38.240000	2e4e3718ff.mp3	2e4e3718ff.webp	これを目標金額とした 新規事業のプランを⸺　ご提案させていただきます!	Presentaré un proyecto de nuevo negocio con esa cifra como meta.	as the investment goal for my new business plan.	False	False		miorine	
+825836f013	944,945	942,946	943,947	0:17:38.520000	0:17:44.700000	825836f013.mp3	825836f013.webp	シン・セーとペイル社の 開発部門を⸺　M&Aにより買収し これらを統合	La compra por M&A y posterior fusión de los departamentos de desarrollo de Pale y Shin Sei.	We'll purchase Shin Sei's and Peil's development teams through M&A, then merge them together.	False	False		miorine	
+03b709fc85	949,953	950,952,954	948,951	0:17:45.060000	0:17:52.550000	03b709fc85.mp3	03b709fc85.webp	生命の安全を前提に 管理 運用を目的とした⸺　新会社を設立します!	Fundaré una empresa que los controle y opere priorizando la seguridad.	A new company will be established, managed and operated with the protection of life as its top priority!	False	False		miorine	
+e5472128a8	956,959,962	957,961	955,958,960	0:17:52.550000	0:17:57.053000	e5472128a8.mp3	e5472128a8.webp	ミ... ミオリネさん　エアリアルはガンダムじゃ...　黙ってて!	Miorine, el Aerial no es... ¡Cállate!	M-Ms. Miorine? Aerial isn't a Gun- Shut up!	False	False		miorine,suletta	
+c6041c3bf8	965	964	963	0:17:56.970000	0:17:59.055000	c6041c3bf8.mp3	c6041c3bf8.webp	その新会社の社名は⸺	El nombre de la empresa será...	The name of the new company will be...	False	False		miorine	
+10b41d751e	968	967	966	0:18:01.490000	0:18:02.980000	10b41d751e.mp3	10b41d751e.webp	GUND-ARM!	¡GUND-ARM!	GUND-ARM!	False	False		miorine	
+dd9d4801e8	970,973	971	969,972	0:18:03.770000	0:18:06.187000	dd9d4801e8.mp3	dd9d4801e8.webp	ガン...　ダム...	¿Gun... -...dam?	GUND... ...ARM?	False	False		nika/elan	
+bab900b7a3	976	975	977	0:18:07.230000	0:18:09.770000	bab900b7a3.mp3	bab900b7a3.webp	ふ... ふざけるな!	¡Esto es absurdo!	S-Stop messing around!	False	False		vim	
+3cbfc76dfa	980,982,983	979	978,981	0:18:09.770000	0:18:15.530000	3cbfc76dfa.mp3	3cbfc76dfa.webp	皆さんは 今⸺　ベネリットグループの 業績を立て直す⸺　起爆剤を欲しているはず!	Quieren un detonador para restablecer los resultados de Benerit Group.	Everyone gathered here wants a spark to reignite the Benerit Group's profitability.	False	False		miorine	
+727d47037e	986	985,988	984,987	0:18:15.530000	0:18:20.870000	727d47037e.mp3	727d47037e.webp	協約の縛りや生命倫理問題は 私と会社が引き受けます!	La empresa y yo asumiremos las ataduras de la Convención y los problemas éticos.	The company and I will be responsible for bioethical issues and complying with the Agreement's restrictions.	False	False		miorine	
+8fd13f4276	990,992	991,994	989,993	0:18:20.870000	0:18:26.870000	8fd13f4276.mp3	8fd13f4276.webp	投資は匿名契約　グループからも独立させれば リスクはありません!	Si invierten mediante contratos anónimos independientes del grupo, no hay ningún riesgo.	If investment is by anonymous contract, and it's independent from the group... then there's no risk to anyone!	False	False		miorine	
+373eed9c7e	997,998	996,999	995,1000	0:18:28.080000	0:18:35.133000	373eed9c7e.mp3	373eed9c7e.webp	この話に 価値があると思った方は⸺　株式会社GUND-ARMの設立に どうか投資を!	Si creen que lo que digo merece la pena, por favor, inviertan en la creación de la S. p. A. GUND-ARM.	If any of you see value in this idea, please invest in the establishment of GUND-ARM, Inc.!	False	False		miorine	
+1dc6a92e02	1002	1003	1001,1004	0:18:40.110000	0:18:43.390000	1dc6a92e02.mp3	1dc6a92e02.webp	でも ダメなんだ それだけじゃ	Eso no basta.	It's no good, though. That's not enough.	False	False		shaddiq	
+6e262468c5	1008	1007	1009	0:18:51.880000	0:18:53.270000	6e262468c5.mp3	6e262468c5.webp	なんで...	¿Por qué?	Why?	False	False		miorine	
+238ee00803	1011	1012	1010	0:18:53.270000	0:18:56.070000	238ee00803.mp3	238ee00803.webp	お前の提案には価値がない	Tu propuesta no vale nada.	There's no value in your proposal.	False	False		delling	
+ee474fa574	1015	1014	1013	0:18:56.880000	0:18:59.290000	ee474fa574.mp3	ee474fa574.webp	皆 そう言っているのだ	Eso es lo que te están diciendo.	They're all saying that.	False	False		delling	
+fba6713b76	1018	1017	1016	0:18:59.290000	0:19:02.320000	fba6713b76.mp3	fba6713b76.webp	どんな大言壮語を吐こうとも⸺	Por muy grandiosa que sea tu idea,	No matter how big and lofty you may sound,	False	False		delling	
+9edf897a59	1020	1021	1019	0:19:02.320000	0:19:07.290000	9edf897a59.mp3	9edf897a59.webp	それを裏づける信用が お前にはない	no puedes reforzarla con confianza.	you have absolutely no credibility to back it up.	False	False		delling	
+e7c9567e2c	1024	1023	1022	0:19:07.750000	0:19:09.370000	e7c9567e2c.mp3	e7c9567e2c.webp	当然だよね	Claro que no.	Naturally.	False	False		elan	
+aea38bc512	1026	1027	1025	0:19:09.370000	0:19:11.290000	aea38bc512.mp3	aea38bc512.webp	出ていけ	Márchate.	Get out.	False	False		delling	
+8225c66930	1030	1029	1028	0:19:11.290000	0:19:14.710000	8225c66930.mp3	8225c66930.webp	子供の意地に付き合うつもりはない	No venimos a entretener la terquedad de una niña.	I have no further interest in indulging a child's pride.	False	False		delling	
+9d75fc2054	1033	1032	1031	0:19:16.820000	0:19:18.380000	9d75fc2054.mp3	9d75fc2054.webp	待ってください!	¡Espera!	Please wait!	False	False		miorine	
+b88ce794ab	1037	1036	1035	0:19:21.800000	0:19:24.030000	b88ce794ab.mp3	b88ce794ab.webp	ミオリネさん...	Miorine...	Ms. Miorine?	False	False		suletta	
+01987630f9	1039,1042	1040	1038,1041	0:19:24.030000	0:19:27.770000	01987630f9.mp3	01987630f9.webp	守るわよ　私が あんたを	Te protegeré.	I'll protect you. Leave it to me.	False	False		miorine	
+3d3d720250	1046	1047	1045	0:19:33.190000	0:19:36.610000	3d3d720250.mp3	3d3d720250.webp	まずは その かわいい意地を捨てなくっちゃね	Primero deberías deshacerte de esa tozudez tan encantadora.	But first you must throw away that adorable pride.	False	False		prospera	
+b3bd21a87a	1049	1050	1048	0:19:37.130000	0:19:39.110000	b3bd21a87a.mp3	b3bd21a87a.webp	意地じゃない!	¡No es tozudez!	It's not pride!	False	False		miorine	
+e2c54127d5	1056	1055	1054	0:19:53.100000	0:19:55.030000	e2c54127d5.mp3	e2c54127d5.webp	なんのマネだ	¿Qué pretendes?	What now?	False	False		delling	
+50b3949a49	1058	1059	1057	0:19:55.030000	0:19:57.920000	50b3949a49.mp3	50b3949a49.webp	あなたに投資してほしい!	Quiero que inviertas.	I want you to invest in my company.	False	False		miorine	
+579e3dd1e1	1062	1061	1060	0:19:58.650000	0:20:00.470000	579e3dd1e1.mp3	579e3dd1e1.webp	あなたの言うとおり⸺	Tienes razón.	As you say,	False	False		miorine	
+e44076c2c3	1065	1064	1063	0:20:00.470000	0:20:03.590000	e44076c2c3.mp3	e44076c2c3.webp	今のままじゃ 私の提案に 乗る人なんていません!	Nadie apoyará mi oferta tal cual está.	nobody is willing to support my proposal as is.	False	False		miorine	
+48fd245e2c	1068	1067	1066	0:20:03.590000	0:20:07.640000	48fd245e2c.mp3	48fd245e2c.webp	ですから ベネリットグループの 総裁である⸺	Por eso quiero tomar prestada la reputación	That's why I want to borrow your credibility	False	False		miorine	
+f322343c9d	1070	1071	1069	0:20:07.640000	0:20:10.270000	f322343c9d.mp3	f322343c9d.webp	あなたの信用を お借りしたいんです!	del presidente de Benerit Group.	as president of the Benerit Group!	False	False		miorine	
+8783c7961c	1074	1073	1072	0:20:11.120000	0:20:12.770000	8783c7961c.mp3	8783c7961c.webp	お願いします!	¡Por favor!	Please!	False	False		miorine	
+00c447a080	1078	1077	1076	0:20:23.340000	0:20:25.201000	00c447a080.mp3	00c447a080.webp	逃げるなよ は...	No huyas.	You can't run away.	False	False		delling	
+f6e333f792	1082,1083	1081	1080	0:20:26.550000	0:20:32.120000	f6e333f792.mp3	f6e333f792.webp	お前が考えてる以上に⸺　ガンダムの呪いは重い	La maldición de los Gundam es más grave de lo que piensas.	The Gundam's curse is a heavier burden than you think.	False	False		delling	
+7ac7d0c77f	1091		1090	0:20:58.170000	0:20:59.193000	7ac7d0c77f.mp3	7ac7d0c77f.webp	へえー		Huh.	False	False			
+590eb1a84d	1094	1093	1092	0:20:59.750000	0:21:01.110000	590eb1a84d.mp3	590eb1a84d.webp	お見事	Bien hecho.	Well done.	False	False		shaddiq	
+5ddd461789	1097	1098	1096	0:21:02.570000	0:21:05.390000	5ddd461789.mp3	5ddd461789.webp	風向き変わりそうね	El viento está cambiando.	The winds seem to be shifting.	False	False		golneri	
+ffc7009341	1100	1101	1099	0:21:05.390000	0:21:06.660000	ffc7009341.mp3	ffc7009341.webp	ええ	Sí.	Indeed.	False	False		nugen	
+6d9ac341af	1105,1109	1104	1103,1108	0:21:07.430000	0:21:11.870000	6d9ac341af.mp3	6d9ac341af.webp	やはり認めたな　ガンダムを	Aprobó los Gundam.	So you accepted it, after all... Gundam.	False	False		sarius	
+3d5d69b18b	1114	1113	1112	0:21:13.220000	0:21:14.460000	3d5d69b18b.mp3	3d5d69b18b.webp	ミオリネさん!	¡Miorine!	Ms. Miorine!	False	False		suletta	
+f17d7e51f7	1117	1116	1115	0:21:17.900000	0:21:20	f17d7e51f7.mp3	f17d7e51f7.webp	ありがとうございます!	¡Muchas gracias!	Thank you very much!	False	False		miorine	
+b428d213c8	1119	1120	1118	0:21:20.770000	0:21:22.930000	b428d213c8.mp3	b428d213c8.webp	株式会社GUND-ARMは...	S. p. A. GUND-ARM trabajará duro...	GUND-ARM, Inc...	False	False		miorine	
+d5d1b7f57f	1121	1122	1123,1124	0:21:22.842000	0:21:25.150000	d5d1b7f57f.mp3	d5d1b7f57f.webp	なんだか にぎやかね	Qué escándalo.	My, things have livened up in here. ...will surely deliver results...	False	False		prospera	
+2ad394350b	1128	1127	1125,1126	0:21:25.150000	0:21:28.140000	2ad394350b.mp3	2ad394350b.webp	お話 まだ続きます?	¿Seguimos con nuestra conversación?	...that will be worthy of your trust! Shall we continue our conversation?	False	False		prospera	
+b4ad7135c3	1131,1136	1132	1130,1133,1134,1135	0:21:29.700000	0:21:33.650000	b4ad7135c3.mp3	b4ad7135c3.webp	まったく　何もかも急すぎるよ	Todo pasó demasiado rápido.	Unbelievable. Ladies and gentlemen... It's too much, too fast. ...thank you for taking the time...	False	False		martin	
+f1c73bc1ab	1140	1137	1138,1139	0:21:33.560000	0:21:36.020000	f1c73bc1ab.mp3	f1c73bc1ab.webp	いきなり会社なんて...	De repente tienes una empresa.	Suddenly it's a company? ...to attend today's incubation party...	False	False		martin	
+2b525f931a	1143	1144	1141,1142	0:21:36.020000	0:21:37.400000	2b525f931a.mp3	2b525f931a.webp	スレッタ あ...	Suletta.	Suletta? ...for the Benerit Group.	False	False		prospera	
+8654448039	1147	1146	1145	0:21:37.400000	0:21:38.760000	8654448039.mp3	8654448039.webp	お母さん	Mamá.	Mom?	False	False		suletta	
+5d8d0ad7e6	1150,1151	1149	1148	0:21:38.760000	0:21:42.070000	5d8d0ad7e6.mp3	5d8d0ad7e6.webp	ごめんね　ちょっと用事で離れてて	Lo siento, tuve que ausentarme.	I had some business to attend to.	False	False		prospera	
+308829d038	1153		1152	0:21:41.950000	0:21:44.320000	308829d038.mp3	308829d038.webp	ん...		We are happy to have presented to you....	False	False			
+0ddbc241d2	1156,1160,1161	1157	1154,1155,1158,1159	0:21:44.320000	0:21:49.830000	0ddbc241d2.mp3	0ddbc241d2.webp	助けていただいて ありがとうございます　ミオリネ・レンブランさん　あ...	Muchas gracias por ayudarnos, Miorine Rembran.	Thank you for your help. ...plans with high future potential. Ms. Miorine Rembran. We appreciate your support.	False	False		prospera	
+76f36a7fae	1164,1165	1163	1162	0:21:49.830000	0:21:54.620000	76f36a7fae.mp3	76f36a7fae.webp	あなたになら⸺　安心して うちの娘たちを 任せられますわ	Puedo dejar a mi hija en tus manos y estar tranquila.	If it's with you, I know that I'm leaving my daughters in good hands.	False	False		prospera	
+1f3485a799	1168	1167	1166	0:21:55.020000	0:21:56.542000	1f3485a799.mp3	1f3485a799.webp	ご心配なく	No te preocupes.	Worry not.	False	False		miorine	
+76f35cd3f0	1171	1170	1169	0:21:57.190000	0:22:00.500000	76f35cd3f0.mp3	76f35cd3f0.webp	こちらこそ よろしくお願いします	Cuento contigo.	We're looking forward to working with you.	False	False		miorine	
+b78fe68f41	1173	1174	1172	0:22:01.460000	0:22:03.590000	b78fe68f41.mp3	b78fe68f41.webp	お... お母さん	¡Mamá!	M-Mom!	False	False		suletta	
+04798ce6b3	1178	1177	1176	0:22:04.070000	0:22:06.928000	04798ce6b3.mp3	04798ce6b3.webp	エアリアル ガンダムじゃないよね!	El Aerial no es un Gundam, ¿no?	Aerial isn't a Gundam, right?	False	False		suletta	
+746cd74871	1181	1180	1179	0:22:06.880000	0:22:08.680000	746cd74871.mp3	746cd74871.webp	だって お母さん ガンダムじゃ...	Dijiste que no...	You said she wasn't-	False	False		suletta	
+572e54b7d6	1183	1184	1182	0:22:08.680000	0:22:10.850000	572e54b7d6.mp3	572e54b7d6.webp	いいえ ガンダムよ	No. Sí que lo es.	No, she's a Gundam.	False	False		prospera	
+ff253d7ecc	1186		1185	0:22:11.700000	0:22:12.767000	ff253d7ecc.mp3	ff253d7ecc.webp	え...		What?	False	False			
+e2a1dee4b8	1189	1188	1187	0:22:13.200000	0:22:16.730000	e2a1dee4b8.mp3	e2a1dee4b8.webp	ごめんね とうとうバレちゃった	Lo siento. Ya lo han descubierto.	I'm so sorry. The truth is out now.	False	False		prospera	
+79aab94a3e	1191,1194	1192	1190,1193	0:22:17.100000	0:22:20.530000	79aab94a3e.mp3	79aab94a3e.webp	エアリアルは⸺　ガンダムなの	El Aerial es un Gundam.	Aerial... is a Gundam.	False	False		prospera	

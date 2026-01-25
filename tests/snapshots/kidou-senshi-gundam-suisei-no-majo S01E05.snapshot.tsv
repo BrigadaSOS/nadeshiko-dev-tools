@@ -1,291 +1,291 @@
 ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREENSHOT	CONTENT	CONTENT_TRANSLATION_SPANISH	CONTENT_TRANSLATION_ENGLISH	CONTENT_SPANISH_MT	CONTENT_ENGLISH_MT	ACTOR_JA	ACTOR_ES	ACTOR_EN
-5	5	4	3	0:00:05.839000	0:00:08.911000	5.mp3	5.webp	ウーメイ オッシュ タイミング合わせろ!	¡Woomei, Osh, sincronícense!	Wumei! Osh! Synchronize your timing!	False	False		wansie	
-9	9	8	6	0:00:08.910000	0:00:10.290000	9.mp3	9.webp	了解!	¡Recibido!	Roger!	False	False		woomei/osh	
-12	12	11	10	0:00:18.530000	0:00:19.960000	12.mp3	12.webp	オッシュ 上だ!	¡Arriba, Osh!	Osh! Above you!	False	False		wansie	
-15	15,17	14	13,16	0:00:25.450000	0:00:29.490000	15.mp3	15.webp	珍しいな　エランが決闘を受けるなんて	Es raro que Elan acepte un duelo.	Now this is something. You don't often see Elan accept a duel.	False	False		shaddiq	
-20	20	19	18	0:00:29.490000	0:00:33.970000	20.mp3	20.webp	誰かさんの悪い癖が うつったんじゃないですかー?	Habrá aprendido el mal hábito de cierta persona.	I wonder if a certain someone's bad habits are contagious.	False	False		seseria	
-23	23	22	21	0:00:33.970000	0:00:36.680000	23.mp3	23.webp	3対1とか なめすぎっしょ	¿Uno contra tres? Los subestima.	Three against one... Just how conceited is he?	False	False		chuchu	
-25	25	26	24	0:00:36.570000	0:00:39.520000	25.mp3	25.webp	プライド見せろよ ダイゴウ寮	¡Adelante, residencia Daigo!	Show some pride, Daigo House!	False	False		ojelo	
-27	27	29	28	0:00:39.517000	0:00:41.060000	27.mp3	27.webp	また賭けてるの?	¿Apostaste de nuevo?	Are you gambling on this again?	False	False		nika	
-31	31	32	30	0:00:41.060000	0:00:43.230000	31.mp3	31.webp	エランが負けるほうに20万	Sí. 20 000 a que pierde Elan.	I bet 200,000 that Elan loses.	False	False		ojelo	
-35	35	34	33	0:00:48.980000	0:00:50.820000	35.mp3	35.webp	逃げきれるかよ!	¡No escaparás!	Just try and shake them off!	False	False		wansie	
-40	40	39	38	0:01:10.410000	0:01:12.250000	40.mp3	40.webp	オッシュ ウーメイ!	¡Osh! ¡Woomei!	Osh! Wumei!	False	False		wansie	
-43	43	42	41	0:01:12.250000	0:01:13.551000	43.mp3	43.webp	クッソー!	¡Maldición!	Damn it...	False	False		wansie	
-45	45	46	44	0:01:27.480000	0:01:29.790000	45.mp3	45.webp	は... はあ... あああ... 勝っちゃいましたね	Gané.	Looks like he won.	False	False		lilique	
-48	48	47	49	0:01:29.740000	0:01:31.694000	48.mp3	48.webp	俺の20万...	Mis 20 000...	My 200,000...	False	False		ojelo	
-51	51	52	50	0:01:31.690000	0:01:34.980000	51.mp3	51.webp	ダッサ 3対1で負けるとか	Qué patético. ¿Cómo perdieron tres contra uno?	How lame. Losing three against one...	False	False		chuchu	
-55	55	54	53	0:01:34.960000	0:01:38.460000	55.mp3	55.webp	違うわ エランの作戦どおりよ	No. Triunfó el plan de Elan.	You've got it wrong. They played right into Elan's hands.	False	False		miorine	
-58	58,59	57,60	56	0:01:41.230000	0:01:44.623000	58.mp3	58.webp	燃えてるよー　消火ー	Está ardiendo. Extínganlo.	It's burning, you know. Extinguish it!	False	False		seseria	
-63	63,65	62	61,64	0:01:47.610000	0:01:52.440000	63.mp3	63.webp	強化人士4号の生体データ⸺　すべて正常範囲です	Datos biológicos del sujeto potenciado 4 estables.	Biological data for Enhanced Person Number 4 is all within normal range.	False	False		belmeria	
-68	68	67	66	0:01:52.840000	0:01:56.010000	68.mp3	68.webp	次のフェーズに移行できる結果かと	Creo que podemos pasar a la siguiente fase.	With these results, we can move on to the next phase.	False	False		belmeria	
-70	70	71	69	0:01:56.010000	0:01:58.350000	70.mp3	70.webp	あちらの魔女は どうかしら?	¿Cómo le va a la otra bruja?	And what about the other witch?	False	False		kal	
-73	73	72	74	0:01:58.560000	0:02:00.900000	73.mp3	73.webp	先のジェターク社との決闘でも⸺	En el duelo contra Jetark	Even in her previous duel with Jeturk,	False	False		belmeria	
-77	77,78	76	75	0:02:00.900000	0:02:04.930000	77.mp3	77.webp	GUNDフォーマットの データストームは⸺　特定できませんでした	no pudimos determinar la tormenta de datos del GUND Format.	we couldn't identify a GUND Format data storm.	False	False		belmeria	
-81	81,83	80,84	79,82	0:02:05.750000	0:02:13.650000	81.mp3	81.webp	あの機体は ガンダム最大の懸念であった⸺　搭乗者の生命倫理問題を クリアしていると思われます	Esa unidad resolvió el mayor problema ético de los Gundam respecto a la vida del piloto.	It's possible that machine has cleared the greatest issue with Gundams... the bioethical concerns involving pilots.	False	False		belmeria	
-86	86,88	85	87	0:02:13.940000	0:02:18.310000	86.mp3	86.webp	クリアしているのは⸺　モビルスーツのほうか それとも...	No sabemos si la solución está en el Mobile Suit o...	I wonder whether it's the mobile suit itself that cleared it, or...	False	False		golneri	
-91	91	90	89	0:02:18.310000	0:02:22.130000	91.mp3	91.webp	やはり 我々が調べるしかないわね	Tendremos que investigarlo nosotros.	It seems we'll have to investigate directly, after all.	False	False		nevola	
-94	94	93	92	0:02:22.130000	0:02:25.830000	94.mp3	94.webp	強化人士4号に 動いてもらいましょう	Que trabaje el sujeto potenciado 4.	Let's have Enhanced Person Number Four act on our behalf.	False	False		nugen	
-97	97	96	95	0:02:26.230000	0:02:31.330000	97.mp3	97.webp	彼なら あれがガンダムかどうか 確かめられるはず	Él podrá comprobar si es un Gundam o no.	He must be able to figure out whether or not that thing is a Gundam.	False	False		nugen	
-100	100	99	98	0:02:31.700000	0:02:35	100.mp3	100.webp	そのために用意したのですから	Para eso lo preparamos.	Isn't this what we prepared him for?	False	False		nugen	
-104	104	105	103	0:04:11.300000	0:04:12.480000	104.mp3	104.webp	スゴい	Increíble.	Wow!	False	False		nika	
-108	108	107	106	0:04:12.480000	0:04:16.640000	108.mp3	108.webp	フレーム動作の最適化に こんな方法があったんだ	No sabía que se podía optimizar el armazón así.	I never knew you could optimize frame action this way.	False	False		nika	
-111	111	109	110	0:04:16.620000	0:04:19.153000	111.mp3	111.webp	複雑すぎて わーけ分かんねえ	Es demasiado complicado para mí.	It's too complicated. I can't make heads or tails of it.	False	False		ojelo	
-114	114	113	112	0:04:19	0:04:21.697000	114.mp3	114.webp	ヌーノ システム群は どう?	¿Cómo están los sistemas, Nuno?	Nuno! What are the systems like?	False	False		nika	
-117	117	116	115	0:04:21.920000	0:04:24.910000	117.mp3	117.webp	神業レベルに統合されてるよ	Unificados estupendamente.	The level of integration is worthy of the gods themselves.	False	False		nuno	
-120	120	119	118	0:04:24.910000	0:04:28.120000	120.mp3	120.webp	1級エンジニアを どんだけ動員したんだか	A saber cuántos ingenieros de primera usaron.	How many first-class engineers worked on this thing?	False	False		nuno	
-123	123	122	121	0:04:28.120000	0:04:31.250000	123.mp3	123.webp	そんな予算よくあったなー	¿De dónde sacaron el presupuesto?	I can't believe they had that kind of budget.	False	False		martin	
-126	126	125	124	0:04:31.250000	0:04:36.010000	126.mp3	126.webp	やっぱり君 最高にミステリアスだね	Eres un misterio inigualable.	You really are thrillingly mysterious.	False	False		nika	
-130	130	129	128	0:04:44.250000	0:04:46.470000	130.mp3	130.webp	この石は 君のお母さん	Esta piedra es tu madre.	This stone is your mother.	False	False		aliya	
-133	133	132	131	0:04:46.470000	0:04:48.110000	133.mp3	133.webp	とても大きい	Es grande.	It's really big.	False	False		aliya	
-136	136	135	134	0:04:48.110000	0:04:49.440000	136.mp3	136.webp	はい	Sí.	Right...	False	False		suletta	
-139	139	138	137	0:04:49.400000	0:04:51.710000	139.mp3	139.webp	お父さんが見えないな	No veo a tu padre.	I don't see any sign of your father.	False	False		aliya	
-142	142	141	140	0:04:51.710000	0:04:54.350000	142.mp3	142.webp	お父さん... は...	Mi padre...	My father... well...	False	False		suletta	
-144	144	145	143	0:04:54.350000	0:04:59.720000	144.mp3	144.webp	私が小さいころに 死んじゃったって... 聞きました	Me dijeron que falleció cuando yo era pequeña.	I'm told that he died when I was very young.	False	False		suletta	
-148	148	147	146	0:04:59.720000	0:05:01.900000	148.mp3	148.webp	気を悪くさせたなら すまない	Lo siento si te molestó.	I apologize if I hit a sore spot.	False	False		aliya	
-151	151	150	149	0:05:01.900000	0:05:02.940000	151.mp3	151.webp	いえ	No importa.	Not at all!	False	False		suletta	
-153	153	154	152	0:05:02.910000	0:05:05.740000	153.mp3	153.webp	この石は 兄弟とか?	Esta piedra... ¿Puede ser un hermano?	Is this stone... a brother, maybe?	False	False		aliya	
-157	157	156	155	0:05:06.020000	0:05:07.750000	157.mp3	157.webp	いないです	No tengo.	I don't have any.	False	False		suletta	
-159	159	161	158,160	0:05:07.750000	0:05:11.430000	159.mp3	159.webp	うーん じゃあ なんだろう	¿Qué será, pues?	Hmm... What could it be, then?	False	False		aliya	
-164	164	163	162,165	0:05:11.430000	0:05:16.380000	164.mp3	164.webp	あの... ここにいない人も 占えますか?	¿Puedes adivinar la vida de alguien que no está aquí?	Can you also read fortunes for people who aren't here?	False	False		suletta	
-168	168	167	166	0:05:16.380000	0:05:17.795000	168.mp3	168.webp	誕生日 あ...	El cumpleaños.	Their birthday.	False	False		aliya	
-171	171	170	169	0:05:17.790000	0:05:20.460000	171.mp3	171.webp	占いたい人の誕生日教えて	Dime la fecha de su cumpleaños.	Just tell me the person's birthday.	False	False		aliya	
-173	173	174	172	0:05:22.870000	0:05:25.230000	173.mp3	173.webp	知らないです...	No la sé.	I don't know it.	False	False		suletta	
-178	178,180	177	176,179	0:05:29.830000	0:05:35.070000	178.mp3	178.webp	エランさん!?　も... もももももももも... もし... えっ	¿Elan? Ho... Hola.	Mr. Elan?! H-H-H-Hello?	False	False		suletta	
-183	183	182	181	0:05:35.550000	0:05:39.480000	183.mp3	183.webp	あ... はい 大丈夫... です	Sí. No hay problema.	Oh, yes. That sounds fine.	False	False		suletta	
-186	186,188	185	184,187,189	0:05:39.480000	0:05:43.362000	186.mp3	186.webp	はい はい え?　あああ... じゃ...	Sí. Sí. ¿Qué?	Right. Yes. What? In that case, uh...	False	False		suletta	
-192	192	191	190	0:05:43.360000	0:05:44.800000	192.mp3	192.webp	どうした?	¿Qué pasa?	What's wrong?	False	False		aliya	
-195	195	194	193,196	0:05:44.800000	0:05:50.130000	195.mp3	195.webp	そ... その... 付き合ってくれって	Este... Dice que quiere salir conmigo.	H-He, uh... He wants me to go out with him.	False	False		suletta	
-201	201	200	199	0:05:54.750000	0:05:56.083000	201.mp3	201.webp	デート?	¿Es una cita?	On a date?	False	False		nika	
-203	203	204	202	0:05:56.080000	0:05:58.010000	203.mp3	203.webp	ちち... 違います	¡No!	N-No! That's not it!	False	False		suletta	
-207	207	206	205	0:05:58.010000	0:06:01.890000	207.mp3	207.webp	今度の休日 お出かけしませんかって...	Quiere que lo acompañe el próximo día que no haya clases.	He just asked if I'd like to go somewhere on our next day off.	False	False		suletta	
-208	208	210	209	0:06:01.880000	0:06:03.757000	208.mp3	208.webp	それをデートっつんだろが	A eso se le llama \"cita\".	That's what a date is, dummy.	False	False		chuchu	
-213	213,215	212	211,214	0:06:03.750000	0:06:07.970000	213.mp3	213.webp	スレッタ先輩　こないだのプロポーズ断ったの⸺	Suletta, ¿rechazaste la petición de mano	Ms. Suletta! Did you turn down that other proposal...	False	False		lilique	
-218	218	217	216	0:06:07.940000	0:06:11.240000	218.mp3	218.webp	もしかして エラン先輩が 本命だからですか?	porque estás interesada en Elan?	because you're really after Mr. Elan?	False	False		lilique	
-220	220,222	221	219,223	0:06:11.070000	0:06:15.686000	220.mp3	220.webp	あああ... いやいやいやいやいや...　ううー きゃあー	¡No, no, no, no!	N-N-No! That's not it!	False	False		suletta	
-225	225	224	226	0:06:15.600000	0:06:18.100000	225.mp3	225.webp	人気あるんだよ 2人共	Los dos son populares.	Both of them are really popular.	False	False		nika	
-228	228	229	227	0:06:18.030000	0:06:21.270000	228.mp3	228.webp	でも 意外だな あの氷の君が	No me esperaba algo así del Soberano Helado.	But who'd have thought the Ice Prince would make a move.	False	False		aliya	
-232	232,234	231	230,233,235	0:06:21.270000	0:06:25.120000	232.mp3	232.webp	氷?　彼 いつも無表情だろう?	¿Helado? -Siempre tiene cara de póker.	Ice Prince? Elan. He never shows any emotion, does he?	False	False		suletta	
-237	237	238	236	0:06:25.120000	0:06:28.630000	237.mp3	237.webp	笑うとこも怒るとこも 誰も見たことがない	Nadie lo vio ni reírse ni enojarse.	Be it anger or a smile, nobody's ever seen it on his face.	False	False		aliya	
-240	240	241	239	0:06:28.630000	0:06:32.786000	240.mp3	240.webp	そこがクールでいいって子も 多いんですよねー	Eso es lo que les gusta a muchas chicas.	But a lot of girls are into cool guys like that!	False	False		lilique	
-243	243	244	242	0:06:32.780000	0:06:34.420000	243.mp3	243.webp	息詰まりそー	Me parece agobiante.	Sounds suffocating.	False	False		chuchu	
-246	246	247	245	0:06:34.380000	0:06:36.457000	246.mp3	246.webp	あーしだったら速攻断るね	Yo lo rechazaría a la primera.	If I were you, I'd kick him to the curb.	False	False		chuchu	
-249	249	250	248	0:06:36.450000	0:06:39.130000	249.mp3	249.webp	誘われたのはスレッタだよ	Pero habló con Suletta.	Well, Suletta's the one he asked.	False	False		nika	
-253	253	252	251	0:06:39.130000	0:06:40.720000	253.mp3	253.webp	笑わない?	¿No se ríe?	He never smiles?	False	False		suletta	
-256	256	255	254	0:06:42.100000	0:06:44.460000	256.mp3	256.webp	どうしたの こんな時間に	¿Cómo es que llamas a estas horas?	What's wrong? Calling at a time like this...	False	False		prospera	
-259	259	258	257,260	0:06:45.310000	0:06:48.530000	259.mp3	259.webp	あのね 今度 お出かけするんだけど...	Saldré un día de estos.	It's just... I might go out on my next day off.	False	False		suletta	
-263	263	261,264	262,265	0:06:48.820000	0:06:51.490000	263.mp3	263.webp	その それでね...	Y... Bueno...	And, uh... I...	False	False		suletta	
-268	268	267	266	0:06:51.480000	0:06:54.880000	268.mp3	268.webp	やりたいことリスト また埋まりそうね	Seguirás llenando tu lista de cosas por hacer.	Sound like you're making progress on your wish list.	False	False		prospera	
-271	271	270	269	0:06:54.880000	0:06:56.780000	271.mp3	271.webp	友達と行くんでしょ?	Será con un amigo, ¿no?	You're going with a friend, right?	False	False		prospera	
-275	275	274	273,276	0:06:57.420000	0:07:00.981000	275.mp3	275.webp	その... よく知らない人	Es alguien a quien no conozco mucho.	Actually, it's... someone I don't know all that well.	False	False		suletta	
-277	277	278	279	0:07:01.356000	0:07:03.620000	277.mp3	277.webp	知らないのに一緒に行くの?	¿E irán juntos?	And yet you're going out together?	False	False		prospera	
-282	282	281	280	0:07:03.620000	0:07:05.980000	282.mp3	282.webp	変... だよね	Es raro, ¿no?	It's weird, right?	False	False		suletta	
-285	285	284	283	0:07:05.980000	0:07:08	285.mp3	285.webp	そんなことないよ	Para nada.	Not at all.	False	False		prospera	
-288	288	287	286	0:07:08.310000	0:07:11.160000	288.mp3	288.webp	知らないけど 知りたい人ってことなんでしょ?	No lo conoces, pero quieres conocerlo, ¿no?	You want to learn about someone you hardly know?	False	False		prospera	
-289	289	291	290	0:07:11.450000	0:07:14.210000	289.mp3	289.webp	そうなのかな...	No sé...	Is that what it is?	False	False		suletta	
-294	294	293	292	0:07:14.210000	0:07:16.450000	294.mp3	294.webp	お母さん うれしいな	Estoy muy contenta.	You've made your mother happy.	False	False		prospera	
-298	298	297	296	0:07:17.480000	0:07:20.980000	298.mp3	298.webp	教えたでしょ 進めば2つって	Ya te lo dije: \"Si avanzas, ganas dos cosas\".	Isn't this what I taught you? Move forward, gain two.	False	False		prospera	
-300	300		299	0:07:21.460000	0:07:22.377000	300.mp3	300.webp	うん		Right.		False			
-303	303	302	301	0:07:22.400000	0:07:23.760000	303.mp3	303.webp	いってらっしゃい	Pásala bien.	Go have fun.	False	False		prospera	
-306	306	305	304	0:07:24.110000	0:07:26.460000	306.mp3	306.webp	ありがとう お母さん	Gracias, mamá.	Thanks, Mom.	False	False		suletta	
-308	308	309	307	0:07:27.280000	0:07:29	308.mp3	308.webp	ご息女ですか?	¿Era su hija?	Was that your daughter?	False	False		godoy	
-312	312	311	310	0:07:29.330000	0:07:31.620000	312.mp3	312.webp	学校 楽しんでるって	Se divierte en la escuela.	She seems to be enjoying school.	False	False		prospera	
-315	315	314	313	0:07:31.620000	0:07:33.220000	315.mp3	315.webp	何かあった?	¿Ocurre algo?	Do you need something?	False	False		prospera	
-318	318	317	316	0:07:33.750000	0:07:35.900000	318.mp3	318.webp	ペイル社が動きます	Pale Technologies está activa.	Peil Technologies is making its move.	False	False		godoy	
-320	320	321	319	0:07:37.090000	0:07:40.160000	320.mp3	320.webp	思ったより早かったわね	Empezaron antes de lo esperado.	It's sooner than we expected.	False	False		prospera	
-323	323	322	324	0:07:56.580000	0:08:00.250000	323.mp3	323.webp	まさに人機一体ってとこかしら	Es una fusión entre humano y máquina.	True synergy of man and machine, is that it?	False	False		belmeria	
-327	327,329	326	325,328	0:08:00.250000	0:08:05.220000	327.mp3	327.webp	重心の軌道グラフが⸺　姿勢制御パターンの どれとも一致しない	La órbita gravitatoria no coincide con ningún patrón de postura.	The balance trajectory graph doesn't correspond to any attitude control patterns.	False	False		belmeria	
-331	331	332	330	0:08:05.220000	0:08:09.510000	331.mp3	331.webp	反応性も駆動システムの それに比べて有機的すぎる	Y las reacciones son más eficaces que las del sistema impulsor.	And its reactivity is far too organic for the drive system it's using.	False	False		belmeria	
-334	334	335	333	0:08:09.510000	0:08:13.100000	334.mp3	334.webp	やはり身体拡張制御ってこと?	¿Es control por expansión física?	So you think it's body-augmentation control?	False	False		elan	
-338	338	337	336	0:08:13.100000	0:08:16.090000	338.mp3	338.webp	GUNDフォーマットの理想形ね	La versión ideal del GUND Format.	The ideal form of the GUND Format.	False	False		belmeria	
-341	341	340	339	0:08:16.090000	0:08:18.767000	341.mp3	341.webp	もっとも このタスクレベルじゃ⸺	Aunque con este nivel de tareas,	Normally, a task level this heavy	False	False		belmeria	
-344	344	343	342	0:08:18.760000	0:08:23.280000	344.mp3	344.webp	膨大なパーメットの流入で パイロットは即死だけど	el piloto moriría al instante por el influjo de Permet.	would instantly kill the pilot with a massive Permet influx.	False	False		belmeria	
-346	346	347	345	0:08:24.170000	0:08:28.080000	346.mp3	346.webp	スレッタ・マーキュリーは おそらく強化人士だ	Suletta Mercury debe de ser un sujeto potenciado.	Which means that Suletta Mercury must be an enhanced person.	False	False		elan	
-350	350	349	348	0:08:28.650000	0:08:31.905000	350.mp3	350.webp	ガンダムに乗るためだけに 作られた人間	Un ser humano creado solo para pilotar Gundams.	A human created for the sole purpose of piloting a Gundam.	False	False		elan	
-353	353	352	351	0:08:32.810000	0:08:35.160000	353.mp3	353.webp	僕と同じようにね	Igual que yo.	Just like me.	False	False		elan	
-356	356	355	354	0:08:35.160000	0:08:37.080000	356.mp3	356.webp	恨みごとはやめて	No te quejes.	This is no time for your grievances.	False	False		belmeria	
-358	358	359	357	0:08:36.960000	0:08:40.260000	358.mp3	358.webp	彼女の顔も別人のものだったりして	Su cara también podría pertenecerle a otro.	Is her face borrowed from another, too?	False	False		elan	
-362	362	361	360	0:08:41.190000	0:08:44.930000	362.mp3	362.webp	あなた ひょっとして うれしいの?	Espera, ¿estás contento?	Wait... Are you happy about this?	False	False		belmeria	
-365	365	364	363	0:08:46.280000	0:08:49.560000	365.mp3	365.webp	彼女を調べろと言ったのは あんたたちだろ	Ustedes me ordenaron investigarla.	You're the ones who asked me to look into her.	False	False		elan	
-368	368	367	366	0:08:50.370000	0:08:54.100000	368.mp3	368.webp	身体調整が済んだなら学園に戻るよ	Si acabaste el examen, regreso a la academia.	If the physical examination is done, I'm going back to class.	False	False		elan	
-371	371	370	369,372	0:08:54.450000	0:08:58.140000	371.mp3	371.webp	エアリアルと戦う前に ファラクトのテストがしたいわ	Quiero probar el Pharact antes de que luche contra el Aerial.	Before you try battling the Aerial, I'd like to test the Pharact.	False	False		belmeria	
-375	375	374	373	0:08:58.140000	0:09:01.240000	375.mp3	375.webp	もう1回 決闘を取りつけておいて	Prepara otro duelo.	We'll need you to arrange another duel.	False	False		belmeria	
-377	377	376	378	0:09:01.740000	0:09:03.640000	377.mp3	377.webp	ご命令とあれば	Si esas son las órdenes...	I'll just follow your orders.	False	False		elan	
-382	382	381	380	0:09:10.300000	0:09:13.280000	382.mp3	382.webp	オーライ そのまま乗せて	Sigan. Ya pueden subirlo.	All right! Set it down just like that!	False	False		nika	
-384	384	385	383,386	0:09:13.280000	0:09:16.990000	384.mp3	384.webp	準備できました チュチュ... 先輩	Estoy lista, Chuchu.	It's ready! Ms... Chuchu!	False	False		suletta	
-389	389	388	387	0:09:16.990000	0:09:19.750000	389.mp3	389.webp	お前 本当に その格好で行くんかよ	¿De verdad irás así vestida?	You're really going dressed like that?	False	False		chuchu	
-391	391	392	390	0:09:19.750000	0:09:23.580000	391.mp3	391.webp	エランさんが エアリアルも一緒にって	Elan me pidió que vaya con el Aerial.	Mr. Elan said to bring Aerial too.	False	False		suletta	
-394	394	395	393	0:09:23.580000	0:09:26.010000	394.mp3	394.webp	保護者同伴か	Estarán supervisados.	A chaperoned date, huh?	False	False		chuchu	
-397	397	398	396	0:09:26.990000	0:09:30.310000	397.mp3	397.webp	スレッタ コンテナ いつでも発進できるよ	El contenedor está listo para marcharse.	Suletta! The container can go whenever you're ready.	False	False		nika	
-401	401	400	399	0:09:30.310000	0:09:32.180000	401.mp3	401.webp	ありがとうございます	Muchas gracias.	Thank you very much!	False	False		suletta	
-403	403,406	404	402,405	0:09:32.800000	0:09:38.090000	403.mp3	403.webp	皆さんも エアリアル... その...　直していただいて...	A todos. Por reparar el Aerial también.	On behalf of Aerial, I can't thank you all enough for the repairs...	False	False		suletta	
-409	409	408	407,410	0:09:40.250000	0:09:43.480000	409.mp3	409.webp	スレッタ! あんた 何考えてんのよ!	¿En qué estás pensando, Suletta?	Suletta! What the heck are you thinking?	False	False		miorine	
-413	413	412	411,414	0:09:43.470000	0:09:45.720000	413.mp3	413.webp	エランとデートなんて!	¿Tienes una cita con Elan?	A date with Elan? Oh, no!	False	False		miorine	
-416	416	417	415	0:09:45.660000	0:09:47.060000	416.mp3	416.webp	ミオリネさん!	¡Miorine!	Ms. Miorine!	False	False		suletta	
-419	419	420	418	0:09:47.060000	0:09:48.440000	419.mp3	419.webp	先輩 早く乗りましょう	Vamos, sube.	Hurry aboard, Ms. Suletta.	False	False		lilique	
-422	422	423	421,424	0:09:48.440000	0:09:51.526000	422.mp3	422.webp	御三家は敵だって言ったでしょ!	Calma. -¡Las tres grandes casas son el enemigo!	I told you the three branches are our enemies, didn't I?! Now, now...	False	False		nika/miorine	
-426	426	427	425	0:09:51.510000	0:09:54.120000	426.mp3	426.webp	デート 頑張ってくださいね	Ánimo con la cita.	Have fun on your date!	False	False		lilique	
-428	428	430	429,431	0:09:54.071000	0:09:56.490000	428.mp3	428.webp	ちゃんと誕生日聞くんだぞー	Pregúntale lo del cumpleaños.	Make sure to ask about his birthday! Let go!	False	False		aliya	
-433	433	434	432,435	0:09:56	0:09:58.250000	433.mp3	433.webp	い... いってきます	Sí. Me voy. -Cálmate.	I-I'm off! This is between me and Suletta!	False	False		suletta/nika	
-438	438	437	436,439	0:09:58.250000	0:10:01.953000	438.mp3	438.webp	スレッタ! ロミジュリったら許さないからね!	¡Suletta, no toleraré un Romeo y Julieta!	Suletta! Don't you dare go all Romeo and Juliet on me!	False	False		miorine	
-442	442,445	441	440,443,444	0:10:06.150000	0:10:10.020000	442.mp3	442.webp	ねえ なんでエランさんいるの?　さあ	¿Qué hace Elan aquí? -Ni idea.	Hey, what's Mr. Elan doing here? I wonder...	False	False		estudiante1	
-447	447	448	446,449	0:10:10.010000	0:10:12.090000	447.mp3	447.webp	聞いてこいよ やだよ	Pregúntale. -No quiero.	Go ask him. No way!	False	False		estudiantes3/4	
-452	452	451	450	0:10:21.830000	0:10:24.600000	452.mp3	452.webp	お... おはよう... ございます!	Buenos días.	G-Good morning!	False	False		suletta	
-455	455	454	453	0:10:24.930000	0:10:26.720000	455.mp3	455.webp	時間どおりだね	Llegas a la hora justa.	I see you came on time.	False	False		elan	
-458	458,460	457	456,459	0:10:26.720000	0:10:29.240000	458.mp3	458.webp	じゃあ 行こうか　はい	¿Vamos? -Sí.	Let's go, then. Right!	False	False		elan/suletta	
-461	461	463	462	0:10:29.815000	0:10:31.660000	461.mp3	461.webp	うう... グエル先輩!	¡Guel!	Mr. Guel!	False	False		felsi	
-465	465	466	464	0:10:31.650000	0:10:33.160000	465.mp3	465.webp	大変っす!	¡Es terrible!	You won't believe this!	False	False		petra	
-468	468	469	467	0:10:33.080000	0:10:34.380000	468.mp3	468.webp	なんだ	¿Qué pasa?	What is it?	False	False		guel	
-471	471	472	470	0:10:34.250000	0:10:38.120000	471.mp3	471.webp	水星女が氷の君と デートに行ったって!	La mercuriana tiene una cita con el Soberano Helado.	The Mercurian girl is going on a date with the Ice Prince!	False	False		petra	
-475	475	476	474	0:10:38.530000	0:10:40.800000	475.mp3	475.webp	あのエランが? まさか	¿Elan? No puede ser.	With Elan? Don't make me laugh.	False	False		kamil	
-478	478	479	477	0:10:40.670000	0:10:43.300000	478.mp3	478.webp	本当っすよ! あいつら いつのまに...	Lo juro. No sé cuándo pasó, pero...	It's true! Somehow, they've...	False	False		felsi	
-481	481	480	482	0:10:43.120000	0:10:44.630000	481.mp3	481.webp	フェルシー う...	Felsi.	Felsi.	False	False		guel	
-485	485	486	484	0:10:46.750000	0:10:48.870000	485.mp3	485.webp	場所は どこだ	¿Dónde están?	Where did they go?	False	False		guel	
-489	489	487	488	0:10:55.880000	0:10:56.883000	489.mp3	489.webp	悪いね	Lo siento.	I'm sorry about this.	False	False		elan	
-492	492	491	490	0:10:57.500000	0:11:01.150000	492.mp3	492.webp	僕のザウォートは この前の決闘で整備中だから	Mi Zowort está en mantenimiento tras el último duelo.	My Zowort... is under repair after the last duel.	False	False		elan	
-495	495,497	494	493,496,498	0:11:01.150000	0:11:07.590000	495.mp3	495.webp	いえ お手伝いできて...　その うれしいです	No importa. Me alegro de poder ayudar.	Not at all! If I... can be of help... I'm happy!	False	False		suletta	
-501	501	499	500	0:11:07.520000	0:11:11.100000	501.mp3	501.webp	試験区域のチェックも 決闘委員会の仕事でね	El Comité de Duelos ha de revisar las áreas de examinación.	Inspecting the testing sector is also the job of the Dueling Committee.	False	False		elan	
-504	504	503	502	0:11:11.470000	0:11:13.620000	504.mp3	504.webp	この順番に回ってほしいんだ	Ve en este orden, por favor.	Can you go around in this order?	False	False		elan	
-507	507	506	505	0:11:13.610000	0:11:15.610000	507.mp3	507.webp	分かりました	De acuerdo.	You got it!	False	False		suletta	
-510	510	508	509	0:11:22.800000	0:11:24.910000	510.mp3	510.webp	操縦上手だね	Lo haces muy bien.	Impressive piloting skills.	False	False		elan	
-513	513,515	512	511,514	0:11:24.910000	0:11:28.970000	513.mp3	513.webp	いえ そんな...　いつから この機体に?	No es la gran cosa. -¿Cuánto hace que eres su piloto?	Not at all. I just... How long with this machine?	False	False		suletta/elan	
-517	517		516	0:11:28.970000	0:11:30.041000	517.mp3	517.webp	え?		What?		False			
-520	520	519	518	0:11:30.040000	0:11:33.003000	520.mp3	520.webp	君のこと もっと聞かせてほしい	Quiero saber más de ti.	I'd like to know more about you.	False	False		elan	
-523	523	521	522,524	0:11:35.020000	0:11:39.260000	523.mp3	523.webp	小さいころから ずっと... です	Desde siempre. Desde que era una niña.	I've always been with her. Since I was a child.	False	False		suletta	
-527	527	526	525	0:11:39.260000	0:11:40.730000	527.mp3	527.webp	ずっと?	¿Desde siempre?	Always?	False	False		elan	
-530	530,532	529	528,531	0:11:41.200000	0:11:45.530000	530.mp3	530.webp	辛かったり苦しかったりは?　これに乗ることが	¿Y nunca te hizo sufrir el montar en él?	Did you ever struggle or suffer? While piloting, I mean.	False	False		elan	
-535	535	534	533,536	0:11:46.420000	0:11:50.520000	535.mp3	535.webp	苦しいっていうか安心します	No sufro. De hecho, me tranquiliza.	There wasn't any suffering... I rather felt at ease.	False	False		suletta	
-539	539	538	537	0:11:52.470000	0:11:55.960000	539.mp3	539.webp	子供のころから一緒だったから	Porque siempre estuvo conmigo.	We've always been together, from childhood onwards.	False	False		suletta	
-542	542	541	540	0:11:55.960000	0:11:59.570000	542.mp3	542.webp	エアリアルは 私の大切な友達で⸺	Aerial es un amigo.	To me, Aerial is like a good friend.	False	False		suletta	
-545	545	544	543	0:12:00.010000	0:12:02.450000	545.mp3	545.webp	家族なんです	Es mi familia.	Or even family.	False	False		suletta	
-548	548	547	546	0:12:02.800000	0:12:05.786000	548.mp3	548.webp	おかしい... ですよね...	Es raro, ¿no?	That sounds weird, right?	False	False		suletta	
-551	551,554	552	550,553	0:12:08.290000	0:12:14.640000	551.mp3	551.webp	うう... エランさん!　た... たたたた... 誕生日! 教えてください!	¡Dime cuándo es tu cumpleaños, Elan!	Uh... Mr. Elan! P-P-Please tell me when your birthday is!	False	False		suletta	
-556	556	557	555	0:12:14.640000	0:12:16.110000	556.mp3	556.webp	お願いがあるんだけど	Quiero pedirte algo.	Can you do me a favor?	False	False		elan	
-559	559	560	558	0:12:16.110000	0:12:19.140000	559.mp3	559.webp	ん... は... はい	¿Sí?	Huh? Sure...	False	False		suletta	
-563	563	562	561	0:12:19.140000	0:12:22.220000	563.mp3	563.webp	エアリアルに 1人で乗ってみたいんだ	Quiero montar en el Aerial yo solo.	I'd like to pilot Aerial by myself.	False	False		elan	
-565	565		564	0:12:22.220000	0:12:23.180000	565.mp3	565.webp	え?		What?		False			
-568	568	567	566	0:12:23.180000	0:12:25.760000	568.mp3	568.webp	君の家族に乱暴はしないよ	No me portaré mal con tu familia.	I won't be rough with one of your family.	False	False		elan	
-571	571	570	569	0:12:26.050000	0:12:27.480000	571.mp3	571.webp	だから...	Por favor.	So...	False	False		elan	
-575	575,577	574	573,576	0:12:33.970000	0:12:38.690000	575.mp3	575.webp	誕生日...　聞かれたくなかったのかな	¿No querría decirme cuándo es su cumpleaños?	Maybe he did this... to avoid talking about his birthday.	False	False		suletta	
-580	580,582	579	578,581	0:12:42.690000	0:12:47.320000	580.mp3	580.webp	僕なら暴ける　お前がガンダムかどうか	Yo puedo descubrir si eres un Gundam o no.	I can expose the truth. Whether or not you're a Gundam.	False	False		elan	
-585	585	584	583,586	0:12:48.610000	0:12:51.470000	585.mp3	585.webp	パーメットスコア 2	Permet puntuación dos.	Permet score... Two.	False	False		elan	
-589	589	590	588,591	0:13:02.540000	0:13:06.690000	589.mp3	589.webp	やはり これはGUNDフォーマット...	Esto es el GUND Format.	I knew it. This is the GUND Format.	False	False		elan	
-593	593	592	594,595	0:13:07.280000	0:13:10.530000	593.mp3	593.webp	いや あの感覚が来ない	No. No siento lo de siempre.	No, wait... It lacks that sensation.	False	False		elan	
-598	598	597	596	0:13:10.880000	0:13:14	598.mp3	598.webp	脳に手を突っ込まれるような ざらついた...	Esa aspereza... Como si te hurgaran en el cerebro.	Like a hand reaching so roughly into my brain.	False	False		elan	
-600	600	601	599	0:13:16.050000	0:13:18.490000	600.mp3	600.webp	パーメットが反応していない	El Permet no reacciona.	The Permet isn't responding.	False	False		elan	
-604	604,605	603	602	0:13:19.470000	0:13:23.660000	604.mp3	604.webp	ならば...　呪いをクリアしているのは...	Entonces, lo que anula la maldición es...	Which means, the one who has lifted the curse is...	False	False		elan	
-606	606	608	607	0:13:28.994000	0:13:31.420000	606.mp3	606.webp	スレッタ・マーキュリー	Suletta Mercury...	Suletta Mercury...	False	False		elan	
-611	611	610	609	0:13:32.100000	0:13:34.880000	611.mp3	611.webp	君は 僕とは違う	Tú no eres como yo.	You're nothing like me!	False	False		elan	
-615	615	614	613	0:13:41.410000	0:13:42.640000	615.mp3	615.webp	エランさん	¡Elan!	Mr. Elan!	False	False		suletta	
-618	618,619	617	616	0:13:44.800000	0:13:48.560000	618.mp3	618.webp	あ... あの...　ごめんなさい	Este... Perdóname.	I-I'm sorry!	False	False		suletta	
-622	622	621	620	0:13:48.550000	0:13:53.110000	622.mp3	622.webp	誕生日 聞かれたくなかったですか?	No querías que te preguntara el cumpleaños, ¿no?	You didn't want to tell me your birthday?	False	False		suletta	
-625	625,627	624	623,626	0:13:54.210000	0:13:57.700000	625.mp3	625.webp	そんなもの⸺　僕にはない	No tengo cumpleaños.	That's something... I've never had.	False	False		elan	
-630	630,632	629	628,631	0:13:58.510000	0:14:03.520000	630.mp3	630.webp	お母さんに⸺　教えてもらってないってこと... ですか?	¿Tu madre no te dijo cuándo es?	Do you mean... your mom never told you?	False	False		suletta	
-633	633	635	634	0:14:03.445000	0:14:04.990000	633.mp3	633.webp	うっとうしいよ 君は	Eres un incordio.	How you annoy me.	False	False		elan	
-639	639	638	637	0:14:05.850000	0:14:08	639.mp3	639.webp	モビルスーツが家族?	¿Que un Mobile Suit es tu familia?	Your mobile suit is like family?	False	False		elan	
-642	642	641	640	0:14:08.370000	0:14:10.660000	642.mp3	642.webp	あんなもの僕には呪いでしかない	Para mí no son más que una maldición.	These things are nothing but a curse to me.	False	False		elan	
-645	645	643	644	0:14:11.680000	0:14:13.630000	645.mp3	645.webp	同じだと思ってたのに	Pensaba que éramos iguales.	I thought we were alike,	False	False		elan	
-647	647	648	646	0:14:14.410000	0:14:16.970000	647.mp3	647.webp	君は 僕と...	Tú y yo.	but you and I are...	False	False		elan	
-651	651	650	649,652	0:14:24.920000	0:14:27.928000	651.mp3	651.webp	エラン 貴様 こいつに... あ...	Elan, ¿qué has...?	Elan! You bastard, what did...	False	False		guel	
-656	656,658	655	654,657	0:14:31.540000	0:14:35.330000	656.mp3	656.webp	こいつに何をした　返答次第では...	¿Qué le hiciste? Dependiendo de lo que...	what did you do to her? Depending on your answer...	False	False		guel	
-659	659	661	660	0:14:35.268000	0:14:36.770000	659.mp3	659.webp	決闘でもする?	¿Nos batimos en duelo?	You'll ask for a duel?	False	False		elan	
-663	663		662	0:14:36.770000	0:14:37.729000	663.mp3	663.webp	ん?		What?		False			
-666	666,669,671	664,667	665,668,670	0:14:37.700000	0:14:44.790000	666.mp3	666.webp	ちょうどいい グエル・ジェターク　君に決闘を⸺　申し込む	Eres oportuno. Guel Jetark, te reto a un duelo.	Perfect timing, Guel Jeturk. I challenge you... to a duel.	False	False		elan	
-674	674	673	672,675	0:14:48.210000	0:14:52.240000	674.mp3	674.webp	双方 魂の代償をリーブラに	Pongan el precio de sus almas en las balanzas de Libra.	Both parties, deposit your souls on Libra's scales.	False	False		shaddiq	
-677	677	678	676	0:14:52.240000	0:14:55.990000	677.mp3	677.webp	決闘者はグエル・ジェタークと エラン・ケレス	Los duelistas son Guel Jetark y Elan Ceres.	The duelists are Guel Jeturk and Elan Ceres.	False	False		shaddiq	
-681	681	680	679	0:14:55.990000	0:14:59.160000	681.mp3	681.webp	場所は戦術試験区域11番	Será en la 11.a área de examinación.	The location will be the 11th tactical testing sector.	False	False		shaddiq	
-683	683	684	682	0:14:59.160000	0:15:01.120000	683.mp3	683.webp	個人戦を採用	Será individual.	The one-on-one code will apply.	False	False		shaddiq	
-687	687	686	685	0:15:01.120000	0:15:02.240000	687.mp3	687.webp	異論はないか?	¿Alguna objeción?	Any objections?	False	False		shaddiq	
-690	690	689	688	0:15:02.210000	0:15:03.421000	690.mp3	690.webp	ああ	No.	None.	False	False		guel	
-693	693	692	691	0:15:03.420000	0:15:05.170000	693.mp3	693.webp	異論はない	Ninguna.	No objections.	False	False		elan	
-696	696	695	694	0:15:05.170000	0:15:09.550000	696.mp3	696.webp	久しぶりっすね 御三家同士の決闘なんて	Hace tiempo que no veía un duelo entre las grandes casas.	It's been a while since we've seen a duel among the three branches.	False	False		seseria	
-699	699,701	698	697,700	0:15:09.550000	0:15:13.970000	699.mp3	699.webp	グエル・ジェターク　君は この決闘に何を賭ける	Guel Jetark, ¿qué apostarás en este duelo?	Guel Jeturk. What is your stake in this duel?	False	False		shaddiq	
-704	704	703	702	0:15:13.970000	0:15:17.440000	704.mp3	704.webp	こいつがスレッタ・マーキュリーに 近づかないことだ	Que él no vuelva a acercarse a Suletta Mercury.	That this jerk stays away from Suletta Mercury.	False	False		guel	
-706	706		705	0:15:17.440000	0:15:18.311000	706.mp3	706.webp	へえー		I see.		False			
-708	708	709	707	0:15:18.310000	0:15:22.230000	708.mp3	708.webp	そ... そんなの余計なお世話... です	¡Eso no es cosa tuya!	H-Hey, that's... none of your business!	False	False		suletta	
-711	711	712	710	0:15:22.230000	0:15:23.984000	711.mp3	711.webp	お前 分かってるのか?	¿Eres consciente?	Don't you get it?	False	False		guel	
-715	715	714	713	0:15:23.980000	0:15:26.860000	715.mp3	715.webp	こいつは敵だ 御三家なんだぞ	Es tu enemigo. Es de las tres casas.	This guy is your enemy. He's from the three branches!	False	False		guel	
-717	717,719	718,721	716,720,722	0:15:26.860000	0:15:32.820000	717.mp3	717.webp	あなたも そうじゃないですか　あ... 俺は... チッ	Tú también. Pero yo...	Doesn't that go for you too? I... Heck.	False	False		guel,suletta	
-725	725,727	724	723,726	0:15:32.820000	0:15:37.030000	725.mp3	725.webp	水星ちゃん　これはグエルと エランの決闘だからね	Mercuriana, este duelo es entre Guel y Elan.	Mercurian Miss. This duel is between Guel and Elan.	False	False		shaddiq	
-730	730	729	728	0:15:37.030000	0:15:39.480000	730.mp3	730.webp	君が口をはさむことはできないよ	No puedes intervenir.	It's not your place to interfere.	False	False		shaddiq	
-733	733	732	731	0:15:39.480000	0:15:41.290000	733.mp3	733.webp	ですけど...	Pero...	Yeah, but...	False	False		suletta	
-735	735	736,738	734,737	0:15:41.290000	0:15:45.920000	735.mp3	735.webp	結果が気に入らなければ 次は君が決闘すればいい	Si no te gusta el resultado, bátete en duelo tú.	If you're unhappy with the result, then fight another duel yourself.	False	False		shaddiq	
-740	740	741	739	0:15:45.920000	0:15:49.090000	740.mp3	740.webp	この学園は そういう ルールで動いている	Esas son las reglas de esta academia.	Those are the rules that govern this school.	False	False		shaddiq	
-744	744	742	743	0:15:49.440000	0:15:52.850000	744.mp3	744.webp	エラン・ケレス 君は何を賭ける?	Elan Ceres, ¿qué apostarás tú?	Elan Ceres, what is your stake in this duel?	False	False		shaddiq	
-747	747	746	745	0:15:52.850000	0:15:54.430000	747.mp3	747.webp	僕は⸺	Yo...	I...	False	False		elan	
-750	750	749	748	0:15:55.400000	0:15:57.142000	750.mp3	750.webp	スレッタ・マーキュリー	Suletta Mercury,	Suletta Mercury.	False	False		elan	
-753	753	752	751	0:15:57.950000	0:16:01.350000	753.mp3	753.webp	僕が勝ったら 君と決闘する	si gano, me batiré en duelo contigo.	If I win, I will fight a duel with you.	False	False		elan	
-756	756	755	754	0:16:03.200000	0:16:04.560000	756.mp3	756.webp	分かりました	De acuerdo.	Very well.	False	False		suletta	
-758	758,761	759	757,760	0:16:04.560000	0:16:09.070000	758.mp3	758.webp	Alea jacta est　決闘を承認する	Alea jacta est. Apruebo el duelo.	Alea jacta est. The duel is approved.	False	False		shaddiq	
-764	764	763	762	0:16:10.820000	0:16:12.740000	764.mp3	764.webp	おい 止まれ!	¡Alto!	Hey! Stop right there!	False	False		kamil	
-767	767	766	765	0:16:13.280000	0:16:15.620000	767.mp3	767.webp	誰がラウダの ディランザに乗ってるんだ	¿Quién hay en el Dilanza de Lauda?	Who the hell just boarded Lauda's Dilanza?	False	False		kamil	
-770	770	769	768	0:16:15.620000	0:16:16.920000	770.mp3	770.webp	それが...	Pues...	Actually, it's...	False	False		hugo	
-772	772	773	771,774	0:16:16.780000	0:16:19.080000	772.mp3	772.webp	にいさん! 決闘はダメだ!	¡No puedes batirte en duelo, Guel!	Brother! You're forbidden to duel!	False	False		lauda	
-777	777	776	775	0:16:19.360000	0:16:21.490000	777.mp3	777.webp	こんなこと 父さんに知られたら...	Si papá lo descubre...	If Dad finds out about this...	False	False		lauda	
-780	780	779	778	0:16:21.960000	0:16:26.250000	780.mp3	780.webp	勝ちさえすれば 父さんだって文句はないはずだ!	No me dirá nada si gano.	If I win, Dad will have nothing to complain about.	False	False		guel	
-783	783	782	781	0:16:28.380000	0:16:31.426000	783.mp3	783.webp	なんでグエルとエランが 決闘すんだよ	¿Por qué se enfrentan Guel y Elan?	Why the heck are Elan and Guel dueling?	False	False		ojelo	
-785	785,788	786	784,787	0:16:31.420000	0:16:35.730000	785.mp3	785.webp	決まってるじゃないですかー　ねっ スレッタ先輩	Es muy obvio. ¿Verdad, Suletta?	It's perfectly obvious! Right, Ms. Suletta?	False	False		lilique	
-789	789	791	790,792	0:16:35.722000	0:16:38.340000	789.mp3	789.webp	そ... そんなんじゃ...	No es eso.	That's... That's not it.	False	False		suletta	
-793	793,797	794	795,796	0:16:38.266000	0:16:42.180000	793.mp3	793.webp	いい展開ね　あいつらには 潰し合ってもらおうじゃない	Perfecto. Que se aplasten entre ellos.	This is a good development. Let them destroy each other.	False	False		miorine	
-799	799	800	798	0:16:41.980000	0:16:44.390000	799.mp3	799.webp	お前 性格悪すぎんだろ	Tienes muy mal carácter.	You really are mean-spirited.	False	False		chuchu	
-804	804,806	803	802,805	0:16:50.110000	0:16:55.860000	804.mp3	804.webp	KP001 グエル・ジェターク　ディランザ 出る!	KP-001, Guel Jetark. Dilanza, en marcha.	KP001, Guel Jeturk. Dilanza... let's go!	False	False		guel	
-809	809	808	807	0:16:56.490000	0:16:58.370000	809.mp3	809.webp	これ まずいっしょ	Esto es un problema.	This won't end well.	False	False		felsi	
-812	812	811	810	0:16:58.370000	0:17:00.450000	812.mp3	812.webp	CEOにバレたら...	Si el presidente lo descubre...	If the CEO finds out...	False	False		petra	
-815	815	814	813	0:17:00.450000	0:17:02.207000	815.mp3	815.webp	決闘を止めてください!	¡Detengan el duelo!	Please abort the duel!	False	False		lauda	
-818	818	817	816	0:17:02.560000	0:17:05.170000	818.mp3	818.webp	にいさんは決闘を禁止されています	Mi hermano los tiene prohibidos.	My brother is not permitted to fight.	False	False		lauda	
-821	821	820	819	0:17:05.170000	0:17:06.890000	821.mp3	821.webp	この決闘は無効だ!	¡No es válido!	The duel is invalid!	False	False		lauda	
-824	824	823	822	0:17:06.890000	0:17:10.800000	824.mp3	824.webp	グエル先輩は とっくに了承済みっすよー	Guel lo aceptó hace rato.	We already gave Mr. Guel authorization.	False	False		seseria	
-828	828	827	826	0:17:11.380000	0:17:13.050000	828.mp3	828.webp	悪いね ラウダ	Lo siento, Lauda.	Forgive me, Lauda.	False	False		shaddiq	
-831	831	830	829	0:17:13.050000	0:17:16.090000	831.mp3	831.webp	俺も この決闘 見たいんだ	Yo también quiero ver este duelo.	I too want to see this duel.	False	False		shaddiq	
-833	833		832	0:17:26.230000	0:17:27.232000	833.mp3	833.webp	あ?		What?		False			
-836	836	835	834	0:17:27.230000	0:17:28.800000	836.mp3	836.webp	黒いザウォート?	¿Un Zowort negro?	A black Zowort?	False	False		seseria	
-838	838,841	839	837,840	0:17:28.730000	0:17:31.900000	838.mp3	838.webp	違いますね　あれは...	No. Eso es...	I don't think so. That one is...	False	False		rouji	
-844	844,846	843	842,845	0:17:32.860000	0:17:38.460000	844.mp3	844.webp	KP002 エラン・ケレス　ファラクト 出る	KP-002, Elan Ceres. Pharact, en marcha.	KP002, Elan Ceres. Pharact, going out.	False	False		elan	
-848	848	849	847	0:17:43.580000	0:17:45.890000	848.mp3	848.webp	ペイル寮まで新型かよ	¿Otra novedad de Pale?	Peil House has a new model, too?	False	False		ojelo	
-851	851	850	852	0:17:45.820000	0:17:47	851.mp3	851.webp	金持ちが	Estúpidos ricos.	Damn rich kids.	False	False		chuchu	
-855	855	854	853	0:17:47	0:17:49.420000	855.mp3	855.webp	両者 向顔	Pónganse cara a cara.	Both parties, face off.	False	False		shaddiq	
-858	858	857	856	0:17:50.520000	0:17:54.420000	858.mp3	858.webp	勝敗は モビルスーツの性能のみで決まらず	La victoria no se decide solo gracias al Mobile Suit.	Victory is never decided by mobile suit performance alone.	False	False		guel	
-861	861	859	860	0:17:54.960000	0:17:57.680000	861.mp3	861.webp	操縦者の技のみで決まらず	Ni tampoco a la pericia del piloto.	Nor by the skill of the pilot, alone.	False	False		elan	
-865	865	864	862	0:17:57.680000	0:18:01	865.mp3	865.webp	ただ結果のみが真実	El resultado es la única verdad.	The result itself is the only truth!	False	False		elan/guel	
-868	868	867	866	0:18:01.430000	0:18:02.934000	868.mp3	868.webp	フィックス・リリース	Fix Release.	Fix release.	False	False		shaddiq	
-871	871	870,873	869,872	0:18:09.120000	0:18:12.360000	871.mp3	871.webp	新型も飛行タイプか だが...	¿Un nuevo modelo volador? Aun así...	The new model flies too, huh? Even so!	False	False		guel	
-878	878	876	877	0:18:25.630000	0:18:27.960000	878.mp3	878.webp	低重力ならディランザだって!	¡En baja gravedad, incluso el Dilanza puede!	In low gravity, the Dilanza can do that too!	False	False		guel	
-884	884	883	882	0:18:30.630000	0:18:33.214000	884.mp3	884.webp	いけー 1.4倍! くう...	¡Ánimo, ve por ese x1.4!	Go! Odds are 1.4-to-1!	False	False		ojelo	
-887	887	886	885	0:18:33.080000	0:18:35.960000	887.mp3	887.webp	お前 あいつに よく勝てたよな	¿Cómo conseguiste ganarle?	I can't believe you bet on that guy.	False	False		nuno	
-891	891	890	889	0:18:37.130000	0:18:39.930000	891.mp3	891.webp	戦いかたが荒すぎだよ ほら	Lucha sin cuidado alguno.	He's fighting too violently.	False	False		martin	
-893	893	894	892	0:18:39.930000	0:18:43.050000	893.mp3	893.webp	静電気帯びた砂が あんなに舞っちゃってさ	Esparció la arena con electricidad estática.	Look at all the clouds of sand charged with static electricity!	False	False		martin	
-897	897	896	895	0:18:43.300000	0:18:44.680000	897.mp3	897.webp	レゴリス...	Regolito.	Regolith...	False	False		elan	
-903	903	901	902	0:18:51.600000	0:18:54.480000	903.mp3	903.webp	ファラクトのテスト 手伝ってもらう	Me ayudarás con la prueba del Pharact.	You'll be my assistant in testing the Pharact.	False	False		elan	
-905	905		904	0:18:55.280000	0:18:56.030000	905.mp3	905.webp	は...		What?		False			
-908	908	907	906	0:19:00.530000	0:19:01.910000	908.mp3	908.webp	ガンダム?	¿Un Gundam?	A Gundam?	False	False		rouji	
-911	911	910	909,912	0:19:02.530000	0:19:05.470000	911.mp3	911.webp	パーメットスコア 3	Permet puntuación tres.	Permet score... three.	False	False		elan	
-914	914		913	0:19:15.170000	0:19:16.300000	914.mp3	914.webp	チイッ		What the...		False			
-916	916	917	915	0:19:22.140000	0:19:23.800000	916.mp3	916.webp	ダ... ダメージ!?	¡Está dañado!	D-Damage!	False	False		guel	
-920	920	919	918	0:19:27.470000	0:19:28.730000	920.mp3	920.webp	違う... あ...	¿No?	No, it's not that.	False	False		guel	
-922	922	923	921,924	0:19:37.610000	0:19:40.365000	922.mp3	922.webp	機能が戻った これは...	¿Recuperé las funciones? ¿Qué...?	Functions are restored? That looks like...	False	False		guel	
-927	927	926	925	0:19:40.360000	0:19:42.490000	927.mp3	927.webp	スタン効果の電磁ビーム	Un rayo electromagnético aturdidor.	An electromagnetic stun beam.	False	False		rouji	
-930	930	929	928	0:19:43.130000	0:19:46.200000	930.mp3	930.webp	こいつも ドローンか	¿Él también usa drones?	So this one uses drones too!	False	False		guel	
-933	933,935	932	931,934	0:19:46.950000	0:19:49.624000	933.mp3	933.webp	ドローンじゃない　あれは...	No son drones. Eso es...	Those are no drones. They're...	False	False		prospera	
-938	938	937	936	0:19:50.140000	0:19:51.800000	938.mp3	938.webp	GUNDフォーマットです	GUND Format.	The GUND Format.	False	False		belmeria	
-941	941	940	939,942	0:19:53.840000	0:19:56.920000	941.mp3	941.webp	お久しぶりです 先輩	Cuánto tiempo sin verte.	It's been so long... Old friend.	False	False		belmeria	
-945	945	944	943	0:19:57.940000	0:20:01.090000	945.mp3	945.webp	魔女は もう1人いたってわけね	Así que había otra bruja.	So there was another witch all along.	False	False		prospera	
-948	948	947	946	0:20:08.430000	0:20:10.770000	948.mp3	948.webp	クッソ だったら!	¡Rayos! En ese caso...	Damn it... in that case!	False	False		guel	
-952	952,954	951	950,953	0:20:17.480000	0:20:22.448000	952.mp3	952.webp	触れさえしなければ こんなもの!　甘いよ	Si no me toca, no pasa nada. -No seas ingenuo.	As long as they don't touch me, this is nothing! You wish.	False	False		guel/elan	
-957	957	956	955	0:20:23.990000	0:20:25.780000	957.mp3	957.webp	すり抜けてみせる!	¡Lo atravesaré!	I'll make it through!	False	False		guel	
-960	960	959	958	0:20:32.040000	0:20:33.250000	960.mp3	960.webp	見切った!	¡Lo tengo!	I did it!	False	False		guel	
-965	965	964	963	0:20:46.800000	0:20:49.220000	965.mp3	965.webp	エランのワナにかかったな	Cayó en la trampa de Elan.	He fell into Elan's trap.	False	False		shaddiq	
-968	968	967,970	966,969	0:20:49.790000	0:20:54.770000	968.mp3	968.webp	電磁ビームの導電性を利用して レゴリスを帯電化させましたね	Aprovechó la conductividad del rayo para electrificar el regolito.	Elan used the conductivity of the electromagnetic beams to give the regolith an electrostatic charge.	False	False		rouji	
-973	973,974	972	971,975	0:20:54.770000	0:20:59.770000	973.mp3	973.webp	関節駆動部に吸着させることで⸺　過負荷状態を引き起こした	Y al adherirlo a las articulaciones lo sobrecargó.	When the dust adhered to the joint drive parts, it created an overload.	False	False		rouji	
-976	976,980	978	977,979	0:21:00.278000	0:21:05.410000	976.mp3	976.webp	その要因を作ったのは⸺　グエルさん自身です	Y Guel se lo puso en bandeja.	The key factor was actually caused by Mr. Guel himself.	False	False		rouji	
-983	983	982	981	0:21:35.270000	0:21:37.020000	983.mp3	983.webp	やめろ	No lo hagas.	Stop...	False	False		guel	
-986	986	985	984	0:21:37.020000	0:21:39.200000	986.mp3	986.webp	ガンダムを倒せるのは...	Para vencer a un Gundam necesitas...	The only way to defeat a Gundam...	False	False		elan	
-989	989	988	987	0:21:40.150000	0:21:42.153000	989.mp3	989.webp	やめろー!	¡Para!	I said stop!	False	False		guel	
-991	991	992	990	0:21:42.150000	0:21:43.613000	991.mp3	991.webp	ガンダムだけだ	...un Gundam.	...is with a Gundam.	False	False		elan	
-995	995	994,997	993,996	0:21:49.780000	0:21:53.600000	995.mp3	995.webp	3倍来たー! はずしたー	¡Lo tripliqué! ¡Qué mal!	I tripled my wager! I can't believe this.	False	False		nuno,ojelo	
-1003	1003	1002	1001,1004	0:21:55.040000	0:21:58.540000	1003.mp3	1003.webp	あ... あの... エランさん...	Este... ¿Elan?	H-Hello? Mr. Elan, you...	False	False		suletta	
-1007	1007	1006	1005	0:21:58.540000	0:22:01.540000	1007.mp3	1007.webp	勝ったよ スレッタ・マーキュリー	Gané, Suletta Mercury.	I won. Suletta Mercury.	False	False		elan	
-1010	1010	1009	1008	0:22:01.540000	0:22:05.340000	1010.mp3	1010.webp	約束どおり 次は僕と戦ってもらう	Ahora te enfrentaré a ti, como acordamos.	As promised, you will now fight me.	False	False		elan	
-1011	1011,1015	1013	1012,1014	0:22:05.051000	0:22:09.800000	1011.mp3	1011.webp	ん... 約束?　スレッタ あんた...	¿\"Como acordamos\"? Suletta, ¿qué...?	Promised? Suletta, did you...	False	False		miorine	
-1018	1018	1017	1016	0:22:09.800000	0:22:12.500000	1018.mp3	1018.webp	君が僕との決闘で賭けるのは⸺	En nuestro duelo apostarás...	The stakes of our duel will be...	False	False		elan	
-1021	1021	1020	1019	0:22:13.660000	0:22:14.811000	1021.mp3	1021.webp	エアリアルだ	el Aerial.	the Aerial.	False	False		elan	
-1025	1025	1024	1023	0:22:15.990000	0:22:17.730000	1025.mp3	1025.webp	僕が勝ったら⸺	Si gano yo,	If I win,	False	False		elan	
-1028	1028	1027	1026	0:22:18.290000	0:22:21.020000	1028.mp3	1028.webp	君のガンダムをいただくよ	me quedaré con tu Gundam.	your Gundam will be mine.	False	False		elan	
+cc479bf9fc	5	4	3	0:00:05.839000	0:00:08.911000	cc479bf9fc.mp3	cc479bf9fc.webp	ウーメイ オッシュ タイミング合わせろ!	¡Woomei, Osh, sincronícense!	Wumei! Osh! Synchronize your timing!	False	False		wansie	
+506a8d1970	9	8	6	0:00:08.910000	0:00:10.290000	506a8d1970.mp3	506a8d1970.webp	了解!	¡Recibido!	Roger!	False	False		woomei/osh	
+4bffc4db48	12	11	10	0:00:18.530000	0:00:19.960000	4bffc4db48.mp3	4bffc4db48.webp	オッシュ 上だ!	¡Arriba, Osh!	Osh! Above you!	False	False		wansie	
+67c0c0670f	15,17	14	13,16	0:00:25.450000	0:00:29.490000	67c0c0670f.mp3	67c0c0670f.webp	珍しいな　エランが決闘を受けるなんて	Es raro que Elan acepte un duelo.	Now this is something. You don't often see Elan accept a duel.	False	False		shaddiq	
+932935e7c6	20	19	18	0:00:29.490000	0:00:33.970000	932935e7c6.mp3	932935e7c6.webp	誰かさんの悪い癖が うつったんじゃないですかー?	Habrá aprendido el mal hábito de cierta persona.	I wonder if a certain someone's bad habits are contagious.	False	False		seseria	
+4bde48f193	23	22	21	0:00:33.970000	0:00:36.680000	4bde48f193.mp3	4bde48f193.webp	3対1とか なめすぎっしょ	¿Uno contra tres? Los subestima.	Three against one... Just how conceited is he?	False	False		chuchu	
+6e12da2442	25	26	24	0:00:36.570000	0:00:39.520000	6e12da2442.mp3	6e12da2442.webp	プライド見せろよ ダイゴウ寮	¡Adelante, residencia Daigo!	Show some pride, Daigo House!	False	False		ojelo	
+39d4f09bf2	27	29	28	0:00:39.517000	0:00:41.060000	39d4f09bf2.mp3	39d4f09bf2.webp	また賭けてるの?	¿Apostaste de nuevo?	Are you gambling on this again?	False	False		nika	
+570ba82921	31	32	30	0:00:41.060000	0:00:43.230000	570ba82921.mp3	570ba82921.webp	エランが負けるほうに20万	Sí. 20 000 a que pierde Elan.	I bet 200,000 that Elan loses.	False	False		ojelo	
+cdeb540d07	35	34	33	0:00:48.980000	0:00:50.820000	cdeb540d07.mp3	cdeb540d07.webp	逃げきれるかよ!	¡No escaparás!	Just try and shake them off!	False	False		wansie	
+c89d799dce	40	39	38	0:01:10.410000	0:01:12.250000	c89d799dce.mp3	c89d799dce.webp	オッシュ ウーメイ!	¡Osh! ¡Woomei!	Osh! Wumei!	False	False		wansie	
+e8bd9b4ab8	43	42	41	0:01:12.250000	0:01:13.551000	e8bd9b4ab8.mp3	e8bd9b4ab8.webp	クッソー!	¡Maldición!	Damn it...	False	False		wansie	
+a380d426c8	45	46	44	0:01:27.480000	0:01:29.790000	a380d426c8.mp3	a380d426c8.webp	は... はあ... あああ... 勝っちゃいましたね	Gané.	Looks like he won.	False	False		lilique	
+9f16250585	48	47	49	0:01:29.740000	0:01:31.694000	9f16250585.mp3	9f16250585.webp	俺の20万...	Mis 20 000...	My 200,000...	False	False		ojelo	
+7e3f2612ee	51	52	50	0:01:31.690000	0:01:34.980000	7e3f2612ee.mp3	7e3f2612ee.webp	ダッサ 3対1で負けるとか	Qué patético. ¿Cómo perdieron tres contra uno?	How lame. Losing three against one...	False	False		chuchu	
+fd0508c343	55	54	53	0:01:34.960000	0:01:38.460000	fd0508c343.mp3	fd0508c343.webp	違うわ エランの作戦どおりよ	No. Triunfó el plan de Elan.	You've got it wrong. They played right into Elan's hands.	False	False		miorine	
+7b3241d5b0	58,59	57,60	56	0:01:41.230000	0:01:44.623000	7b3241d5b0.mp3	7b3241d5b0.webp	燃えてるよー　消火ー	Está ardiendo. Extínganlo.	It's burning, you know. Extinguish it!	False	False		seseria	
+151b08c9e1	63,65	62	61,64	0:01:47.610000	0:01:52.440000	151b08c9e1.mp3	151b08c9e1.webp	強化人士4号の生体データ⸺　すべて正常範囲です	Datos biológicos del sujeto potenciado 4 estables.	Biological data for Enhanced Person Number 4 is all within normal range.	False	False		belmeria	
+78dd7ced84	68	67	66	0:01:52.840000	0:01:56.010000	78dd7ced84.mp3	78dd7ced84.webp	次のフェーズに移行できる結果かと	Creo que podemos pasar a la siguiente fase.	With these results, we can move on to the next phase.	False	False		belmeria	
+d5b5b13e1f	70	71	69	0:01:56.010000	0:01:58.350000	d5b5b13e1f.mp3	d5b5b13e1f.webp	あちらの魔女は どうかしら?	¿Cómo le va a la otra bruja?	And what about the other witch?	False	False		kal	
+e235b9d134	73	72	74	0:01:58.560000	0:02:00.900000	e235b9d134.mp3	e235b9d134.webp	先のジェターク社との決闘でも⸺	En el duelo contra Jetark	Even in her previous duel with Jeturk,	False	False		belmeria	
+a08649ec0e	77,78	76	75	0:02:00.900000	0:02:04.930000	a08649ec0e.mp3	a08649ec0e.webp	GUNDフォーマットの データストームは⸺　特定できませんでした	no pudimos determinar la tormenta de datos del GUND Format.	we couldn't identify a GUND Format data storm.	False	False		belmeria	
+a1b4f2bc39	81,83	80,84	79,82	0:02:05.750000	0:02:13.650000	a1b4f2bc39.mp3	a1b4f2bc39.webp	あの機体は ガンダム最大の懸念であった⸺　搭乗者の生命倫理問題を クリアしていると思われます	Esa unidad resolvió el mayor problema ético de los Gundam respecto a la vida del piloto.	It's possible that machine has cleared the greatest issue with Gundams... the bioethical concerns involving pilots.	False	False		belmeria	
+890b599d0a	86,88	85	87	0:02:13.940000	0:02:18.310000	890b599d0a.mp3	890b599d0a.webp	クリアしているのは⸺　モビルスーツのほうか それとも...	No sabemos si la solución está en el Mobile Suit o...	I wonder whether it's the mobile suit itself that cleared it, or...	False	False		golneri	
+540bdc3748	91	90	89	0:02:18.310000	0:02:22.130000	540bdc3748.mp3	540bdc3748.webp	やはり 我々が調べるしかないわね	Tendremos que investigarlo nosotros.	It seems we'll have to investigate directly, after all.	False	False		nevola	
+e4c50a01e7	94	93	92	0:02:22.130000	0:02:25.830000	e4c50a01e7.mp3	e4c50a01e7.webp	強化人士4号に 動いてもらいましょう	Que trabaje el sujeto potenciado 4.	Let's have Enhanced Person Number Four act on our behalf.	False	False		nugen	
+42aa44e548	97	96	95	0:02:26.230000	0:02:31.330000	42aa44e548.mp3	42aa44e548.webp	彼なら あれがガンダムかどうか 確かめられるはず	Él podrá comprobar si es un Gundam o no.	He must be able to figure out whether or not that thing is a Gundam.	False	False		nugen	
+11e2fd215a	100	99	98	0:02:31.700000	0:02:35	11e2fd215a.mp3	11e2fd215a.webp	そのために用意したのですから	Para eso lo preparamos.	Isn't this what we prepared him for?	False	False		nugen	
+c9e8bd4f59	104	105	103	0:04:11.300000	0:04:12.480000	c9e8bd4f59.mp3	c9e8bd4f59.webp	スゴい	Increíble.	Wow!	False	False		nika	
+1115e3bce3	108	107	106	0:04:12.480000	0:04:16.640000	1115e3bce3.mp3	1115e3bce3.webp	フレーム動作の最適化に こんな方法があったんだ	No sabía que se podía optimizar el armazón así.	I never knew you could optimize frame action this way.	False	False		nika	
+5083a1af1f	111	109	110	0:04:16.620000	0:04:19.153000	5083a1af1f.mp3	5083a1af1f.webp	複雑すぎて わーけ分かんねえ	Es demasiado complicado para mí.	It's too complicated. I can't make heads or tails of it.	False	False		ojelo	
+9accf4fc23	114	113	112	0:04:19	0:04:21.697000	9accf4fc23.mp3	9accf4fc23.webp	ヌーノ システム群は どう?	¿Cómo están los sistemas, Nuno?	Nuno! What are the systems like?	False	False		nika	
+cc8a171fa6	117	116	115	0:04:21.920000	0:04:24.910000	cc8a171fa6.mp3	cc8a171fa6.webp	神業レベルに統合されてるよ	Unificados estupendamente.	The level of integration is worthy of the gods themselves.	False	False		nuno	
+fd16cc5984	120	119	118	0:04:24.910000	0:04:28.120000	fd16cc5984.mp3	fd16cc5984.webp	1級エンジニアを どんだけ動員したんだか	A saber cuántos ingenieros de primera usaron.	How many first-class engineers worked on this thing?	False	False		nuno	
+9dedd4bccb	123	122	121	0:04:28.120000	0:04:31.250000	9dedd4bccb.mp3	9dedd4bccb.webp	そんな予算よくあったなー	¿De dónde sacaron el presupuesto?	I can't believe they had that kind of budget.	False	False		martin	
+5b5b035de6	126	125	124	0:04:31.250000	0:04:36.010000	5b5b035de6.mp3	5b5b035de6.webp	やっぱり君 最高にミステリアスだね	Eres un misterio inigualable.	You really are thrillingly mysterious.	False	False		nika	
+aa027271c3	130	129	128	0:04:44.250000	0:04:46.470000	aa027271c3.mp3	aa027271c3.webp	この石は 君のお母さん	Esta piedra es tu madre.	This stone is your mother.	False	False		aliya	
+02138e1451	133	132	131	0:04:46.470000	0:04:48.110000	02138e1451.mp3	02138e1451.webp	とても大きい	Es grande.	It's really big.	False	False		aliya	
+14541c6444	136	135	134	0:04:48.110000	0:04:49.440000	14541c6444.mp3	14541c6444.webp	はい	Sí.	Right...	False	False		suletta	
+65cfe01ca3	139	138	137	0:04:49.400000	0:04:51.710000	65cfe01ca3.mp3	65cfe01ca3.webp	お父さんが見えないな	No veo a tu padre.	I don't see any sign of your father.	False	False		aliya	
+fd72a56a12	142	141	140	0:04:51.710000	0:04:54.350000	fd72a56a12.mp3	fd72a56a12.webp	お父さん... は...	Mi padre...	My father... well...	False	False		suletta	
+2862407695	144	145	143	0:04:54.350000	0:04:59.720000	2862407695.mp3	2862407695.webp	私が小さいころに 死んじゃったって... 聞きました	Me dijeron que falleció cuando yo era pequeña.	I'm told that he died when I was very young.	False	False		suletta	
+11097131f8	148	147	146	0:04:59.720000	0:05:01.900000	11097131f8.mp3	11097131f8.webp	気を悪くさせたなら すまない	Lo siento si te molestó.	I apologize if I hit a sore spot.	False	False		aliya	
+14b73397be	151	150	149	0:05:01.900000	0:05:02.940000	14b73397be.mp3	14b73397be.webp	いえ	No importa.	Not at all!	False	False		suletta	
+4f86c0a2e5	153	154	152	0:05:02.910000	0:05:05.740000	4f86c0a2e5.mp3	4f86c0a2e5.webp	この石は 兄弟とか?	Esta piedra... ¿Puede ser un hermano?	Is this stone... a brother, maybe?	False	False		aliya	
+eb6fce4e74	157	156	155	0:05:06.020000	0:05:07.750000	eb6fce4e74.mp3	eb6fce4e74.webp	いないです	No tengo.	I don't have any.	False	False		suletta	
+f303de5707	159	161	158,160	0:05:07.750000	0:05:11.430000	f303de5707.mp3	f303de5707.webp	うーん じゃあ なんだろう	¿Qué será, pues?	Hmm... What could it be, then?	False	False		aliya	
+c4fe3a2950	164	163	162,165	0:05:11.430000	0:05:16.380000	c4fe3a2950.mp3	c4fe3a2950.webp	あの... ここにいない人も 占えますか?	¿Puedes adivinar la vida de alguien que no está aquí?	Can you also read fortunes for people who aren't here?	False	False		suletta	
+5a23e5677b	168	167	166	0:05:16.380000	0:05:17.795000	5a23e5677b.mp3	5a23e5677b.webp	誕生日 あ...	El cumpleaños.	Their birthday.	False	False		aliya	
+923b74aec6	171	170	169	0:05:17.790000	0:05:20.460000	923b74aec6.mp3	923b74aec6.webp	占いたい人の誕生日教えて	Dime la fecha de su cumpleaños.	Just tell me the person's birthday.	False	False		aliya	
+5c8bd0e1d4	173	174	172	0:05:22.870000	0:05:25.230000	5c8bd0e1d4.mp3	5c8bd0e1d4.webp	知らないです...	No la sé.	I don't know it.	False	False		suletta	
+cbcd6ab27e	178,180	177	176,179	0:05:29.830000	0:05:35.070000	cbcd6ab27e.mp3	cbcd6ab27e.webp	エランさん!?　も... もももももももも... もし... えっ	¿Elan? Ho... Hola.	Mr. Elan?! H-H-H-Hello?	False	False		suletta	
+68257d98a4	183	182	181	0:05:35.550000	0:05:39.480000	68257d98a4.mp3	68257d98a4.webp	あ... はい 大丈夫... です	Sí. No hay problema.	Oh, yes. That sounds fine.	False	False		suletta	
+329b1b35ff	186,188	185	184,187,189	0:05:39.480000	0:05:43.362000	329b1b35ff.mp3	329b1b35ff.webp	はい はい え?　あああ... じゃ...	Sí. Sí. ¿Qué?	Right. Yes. What? In that case, uh...	False	False		suletta	
+5cf2105fb2	192	191	190	0:05:43.360000	0:05:44.800000	5cf2105fb2.mp3	5cf2105fb2.webp	どうした?	¿Qué pasa?	What's wrong?	False	False		aliya	
+0a451dbd17	195	194	193,196	0:05:44.800000	0:05:50.130000	0a451dbd17.mp3	0a451dbd17.webp	そ... その... 付き合ってくれって	Este... Dice que quiere salir conmigo.	H-He, uh... He wants me to go out with him.	False	False		suletta	
+306927ead1	201	200	199	0:05:54.750000	0:05:56.083000	306927ead1.mp3	306927ead1.webp	デート?	¿Es una cita?	On a date?	False	False		nika	
+ce9c1b8f92	203	204	202	0:05:56.080000	0:05:58.010000	ce9c1b8f92.mp3	ce9c1b8f92.webp	ちち... 違います	¡No!	N-No! That's not it!	False	False		suletta	
+41b7e1e96a	207	206	205	0:05:58.010000	0:06:01.890000	41b7e1e96a.mp3	41b7e1e96a.webp	今度の休日 お出かけしませんかって...	Quiere que lo acompañe el próximo día que no haya clases.	He just asked if I'd like to go somewhere on our next day off.	False	False		suletta	
+63c0990957	208	210	209	0:06:01.880000	0:06:03.757000	63c0990957.mp3	63c0990957.webp	それをデートっつんだろが	A eso se le llama "cita".	That's what a date is, dummy.	False	False		chuchu	
+a65b8f0ec8	213,215	212	211,214	0:06:03.750000	0:06:07.970000	a65b8f0ec8.mp3	a65b8f0ec8.webp	スレッタ先輩　こないだのプロポーズ断ったの⸺	Suletta, ¿rechazaste la petición de mano	Ms. Suletta! Did you turn down that other proposal...	False	False		lilique	
+7bd3b85833	218	217	216	0:06:07.940000	0:06:11.240000	7bd3b85833.mp3	7bd3b85833.webp	もしかして エラン先輩が 本命だからですか?	porque estás interesada en Elan?	because you're really after Mr. Elan?	False	False		lilique	
+cfcc59ac98	220,222	221	219,223	0:06:11.070000	0:06:15.686000	cfcc59ac98.mp3	cfcc59ac98.webp	あああ... いやいやいやいやいや...　ううー きゃあー	¡No, no, no, no!	N-N-No! That's not it!	False	False		suletta	
+521b1ccbc0	225	224	226	0:06:15.600000	0:06:18.100000	521b1ccbc0.mp3	521b1ccbc0.webp	人気あるんだよ 2人共	Los dos son populares.	Both of them are really popular.	False	False		nika	
+ad37ca2271	228	229	227	0:06:18.030000	0:06:21.270000	ad37ca2271.mp3	ad37ca2271.webp	でも 意外だな あの氷の君が	No me esperaba algo así del Soberano Helado.	But who'd have thought the Ice Prince would make a move.	False	False		aliya	
+01410abe35	232,234	231	230,233,235	0:06:21.270000	0:06:25.120000	01410abe35.mp3	01410abe35.webp	氷?　彼 いつも無表情だろう?	¿Helado? -Siempre tiene cara de póker.	Ice Prince? Elan. He never shows any emotion, does he?	False	False		suletta	
+0212832342	237	238	236	0:06:25.120000	0:06:28.630000	0212832342.mp3	0212832342.webp	笑うとこも怒るとこも 誰も見たことがない	Nadie lo vio ni reírse ni enojarse.	Be it anger or a smile, nobody's ever seen it on his face.	False	False		aliya	
+4d9555e9db	240	241	239	0:06:28.630000	0:06:32.786000	4d9555e9db.mp3	4d9555e9db.webp	そこがクールでいいって子も 多いんですよねー	Eso es lo que les gusta a muchas chicas.	But a lot of girls are into cool guys like that!	False	False		lilique	
+59860ab660	243	244	242	0:06:32.780000	0:06:34.420000	59860ab660.mp3	59860ab660.webp	息詰まりそー	Me parece agobiante.	Sounds suffocating.	False	False		chuchu	
+a84c9b5e56	246	247	245	0:06:34.380000	0:06:36.457000	a84c9b5e56.mp3	a84c9b5e56.webp	あーしだったら速攻断るね	Yo lo rechazaría a la primera.	If I were you, I'd kick him to the curb.	False	False		chuchu	
+0eb61f0f00	249	250	248	0:06:36.450000	0:06:39.130000	0eb61f0f00.mp3	0eb61f0f00.webp	誘われたのはスレッタだよ	Pero habló con Suletta.	Well, Suletta's the one he asked.	False	False		nika	
+cf5be863c0	253	252	251	0:06:39.130000	0:06:40.720000	cf5be863c0.mp3	cf5be863c0.webp	笑わない?	¿No se ríe?	He never smiles?	False	False		suletta	
+7a9993a717	256	255	254	0:06:42.100000	0:06:44.460000	7a9993a717.mp3	7a9993a717.webp	どうしたの こんな時間に	¿Cómo es que llamas a estas horas?	What's wrong? Calling at a time like this...	False	False		prospera	
+224f68ccea	259	258	257,260	0:06:45.310000	0:06:48.530000	224f68ccea.mp3	224f68ccea.webp	あのね 今度 お出かけするんだけど...	Saldré un día de estos.	It's just... I might go out on my next day off.	False	False		suletta	
+b5d824bc83	263	261,264	262,265	0:06:48.820000	0:06:51.490000	b5d824bc83.mp3	b5d824bc83.webp	その それでね...	Y... Bueno...	And, uh... I...	False	False		suletta	
+a9cfc07893	268	267	266	0:06:51.480000	0:06:54.880000	a9cfc07893.mp3	a9cfc07893.webp	やりたいことリスト また埋まりそうね	Seguirás llenando tu lista de cosas por hacer.	Sound like you're making progress on your wish list.	False	False		prospera	
+4004ed48b7	271	270	269	0:06:54.880000	0:06:56.780000	4004ed48b7.mp3	4004ed48b7.webp	友達と行くんでしょ?	Será con un amigo, ¿no?	You're going with a friend, right?	False	False		prospera	
+f842d8be20	275	274	273,276	0:06:57.420000	0:07:00.981000	f842d8be20.mp3	f842d8be20.webp	その... よく知らない人	Es alguien a quien no conozco mucho.	Actually, it's... someone I don't know all that well.	False	False		suletta	
+5c25cf6e19	277	278	279	0:07:01.356000	0:07:03.620000	5c25cf6e19.mp3	5c25cf6e19.webp	知らないのに一緒に行くの?	¿E irán juntos?	And yet you're going out together?	False	False		prospera	
+aafee4deea	282	281	280	0:07:03.620000	0:07:05.980000	aafee4deea.mp3	aafee4deea.webp	変... だよね	Es raro, ¿no?	It's weird, right?	False	False		suletta	
+46aefcf580	285	284	283	0:07:05.980000	0:07:08	46aefcf580.mp3	46aefcf580.webp	そんなことないよ	Para nada.	Not at all.	False	False		prospera	
+c06f74ec92	288	287	286	0:07:08.310000	0:07:11.160000	c06f74ec92.mp3	c06f74ec92.webp	知らないけど 知りたい人ってことなんでしょ?	No lo conoces, pero quieres conocerlo, ¿no?	You want to learn about someone you hardly know?	False	False		prospera	
+6946d804b6	289	291	290	0:07:11.450000	0:07:14.210000	6946d804b6.mp3	6946d804b6.webp	そうなのかな...	No sé...	Is that what it is?	False	False		suletta	
+177125dcb0	294	293	292	0:07:14.210000	0:07:16.450000	177125dcb0.mp3	177125dcb0.webp	お母さん うれしいな	Estoy muy contenta.	You've made your mother happy.	False	False		prospera	
+e62d1854ef	298	297	296	0:07:17.480000	0:07:20.980000	e62d1854ef.mp3	e62d1854ef.webp	教えたでしょ 進めば2つって	Ya te lo dije: "Si avanzas, ganas dos cosas".	Isn't this what I taught you? Move forward, gain two.	False	False		prospera	
+3104f9bc18	300		299	0:07:21.460000	0:07:22.377000	3104f9bc18.mp3	3104f9bc18.webp	うん		Right.	False	False			
+dab0d1d12e	303	302	301	0:07:22.400000	0:07:23.760000	dab0d1d12e.mp3	dab0d1d12e.webp	いってらっしゃい	Pásala bien.	Go have fun.	False	False		prospera	
+e83e154418	306	305	304	0:07:24.110000	0:07:26.460000	e83e154418.mp3	e83e154418.webp	ありがとう お母さん	Gracias, mamá.	Thanks, Mom.	False	False		suletta	
+04ab407597	308	309	307	0:07:27.280000	0:07:29	04ab407597.mp3	04ab407597.webp	ご息女ですか?	¿Era su hija?	Was that your daughter?	False	False		godoy	
+0cd93ed7c6	312	311	310	0:07:29.330000	0:07:31.620000	0cd93ed7c6.mp3	0cd93ed7c6.webp	学校 楽しんでるって	Se divierte en la escuela.	She seems to be enjoying school.	False	False		prospera	
+c46a176145	315	314	313	0:07:31.620000	0:07:33.220000	c46a176145.mp3	c46a176145.webp	何かあった?	¿Ocurre algo?	Do you need something?	False	False		prospera	
+49cda49eda	318	317	316	0:07:33.750000	0:07:35.900000	49cda49eda.mp3	49cda49eda.webp	ペイル社が動きます	Pale Technologies está activa.	Peil Technologies is making its move.	False	False		godoy	
+59cb547a36	320	321	319	0:07:37.090000	0:07:40.160000	59cb547a36.mp3	59cb547a36.webp	思ったより早かったわね	Empezaron antes de lo esperado.	It's sooner than we expected.	False	False		prospera	
+df330e7e19	323	322	324	0:07:56.580000	0:08:00.250000	df330e7e19.mp3	df330e7e19.webp	まさに人機一体ってとこかしら	Es una fusión entre humano y máquina.	True synergy of man and machine, is that it?	False	False		belmeria	
+08139edcb3	327,329	326	325,328	0:08:00.250000	0:08:05.220000	08139edcb3.mp3	08139edcb3.webp	重心の軌道グラフが⸺　姿勢制御パターンの どれとも一致しない	La órbita gravitatoria no coincide con ningún patrón de postura.	The balance trajectory graph doesn't correspond to any attitude control patterns.	False	False		belmeria	
+0c489a0c4e	331	332	330	0:08:05.220000	0:08:09.510000	0c489a0c4e.mp3	0c489a0c4e.webp	反応性も駆動システムの それに比べて有機的すぎる	Y las reacciones son más eficaces que las del sistema impulsor.	And its reactivity is far too organic for the drive system it's using.	False	False		belmeria	
+eab3452e49	334	335	333	0:08:09.510000	0:08:13.100000	eab3452e49.mp3	eab3452e49.webp	やはり身体拡張制御ってこと?	¿Es control por expansión física?	So you think it's body-augmentation control?	False	False		elan	
+46033b343c	338	337	336	0:08:13.100000	0:08:16.090000	46033b343c.mp3	46033b343c.webp	GUNDフォーマットの理想形ね	La versión ideal del GUND Format.	The ideal form of the GUND Format.	False	False		belmeria	
+9dcf3c3697	341	340	339	0:08:16.090000	0:08:18.767000	9dcf3c3697.mp3	9dcf3c3697.webp	もっとも このタスクレベルじゃ⸺	Aunque con este nivel de tareas,	Normally, a task level this heavy	False	False		belmeria	
+c98019df81	344	343	342	0:08:18.760000	0:08:23.280000	c98019df81.mp3	c98019df81.webp	膨大なパーメットの流入で パイロットは即死だけど	el piloto moriría al instante por el influjo de Permet.	would instantly kill the pilot with a massive Permet influx.	False	False		belmeria	
+0f0928c84f	346	347	345	0:08:24.170000	0:08:28.080000	0f0928c84f.mp3	0f0928c84f.webp	スレッタ・マーキュリーは おそらく強化人士だ	Suletta Mercury debe de ser un sujeto potenciado.	Which means that Suletta Mercury must be an enhanced person.	False	False		elan	
+9e9a180ad6	350	349	348	0:08:28.650000	0:08:31.905000	9e9a180ad6.mp3	9e9a180ad6.webp	ガンダムに乗るためだけに 作られた人間	Un ser humano creado solo para pilotar Gundams.	A human created for the sole purpose of piloting a Gundam.	False	False		elan	
+af9264f155	353	352	351	0:08:32.810000	0:08:35.160000	af9264f155.mp3	af9264f155.webp	僕と同じようにね	Igual que yo.	Just like me.	False	False		elan	
+b3376365ee	356	355	354	0:08:35.160000	0:08:37.080000	b3376365ee.mp3	b3376365ee.webp	恨みごとはやめて	No te quejes.	This is no time for your grievances.	False	False		belmeria	
+7c3ac5c8a0	358	359	357	0:08:36.960000	0:08:40.260000	7c3ac5c8a0.mp3	7c3ac5c8a0.webp	彼女の顔も別人のものだったりして	Su cara también podría pertenecerle a otro.	Is her face borrowed from another, too?	False	False		elan	
+34427a2a08	362	361	360	0:08:41.190000	0:08:44.930000	34427a2a08.mp3	34427a2a08.webp	あなた ひょっとして うれしいの?	Espera, ¿estás contento?	Wait... Are you happy about this?	False	False		belmeria	
+7a2999f2b2	365	364	363	0:08:46.280000	0:08:49.560000	7a2999f2b2.mp3	7a2999f2b2.webp	彼女を調べろと言ったのは あんたたちだろ	Ustedes me ordenaron investigarla.	You're the ones who asked me to look into her.	False	False		elan	
+76d133b2e2	368	367	366	0:08:50.370000	0:08:54.100000	76d133b2e2.mp3	76d133b2e2.webp	身体調整が済んだなら学園に戻るよ	Si acabaste el examen, regreso a la academia.	If the physical examination is done, I'm going back to class.	False	False		elan	
+9ffa561727	371	370	369,372	0:08:54.450000	0:08:58.140000	9ffa561727.mp3	9ffa561727.webp	エアリアルと戦う前に ファラクトのテストがしたいわ	Quiero probar el Pharact antes de que luche contra el Aerial.	Before you try battling the Aerial, I'd like to test the Pharact.	False	False		belmeria	
+ec21c5ab34	375	374	373	0:08:58.140000	0:09:01.240000	ec21c5ab34.mp3	ec21c5ab34.webp	もう1回 決闘を取りつけておいて	Prepara otro duelo.	We'll need you to arrange another duel.	False	False		belmeria	
+6ebd22c0ad	377	376	378	0:09:01.740000	0:09:03.640000	6ebd22c0ad.mp3	6ebd22c0ad.webp	ご命令とあれば	Si esas son las órdenes...	I'll just follow your orders.	False	False		elan	
+2267ad5091	382	381	380	0:09:10.300000	0:09:13.280000	2267ad5091.mp3	2267ad5091.webp	オーライ そのまま乗せて	Sigan. Ya pueden subirlo.	All right! Set it down just like that!	False	False		nika	
+e301486267	384	385	383,386	0:09:13.280000	0:09:16.990000	e301486267.mp3	e301486267.webp	準備できました チュチュ... 先輩	Estoy lista, Chuchu.	It's ready! Ms... Chuchu!	False	False		suletta	
+7ed4d5401d	389	388	387	0:09:16.990000	0:09:19.750000	7ed4d5401d.mp3	7ed4d5401d.webp	お前 本当に その格好で行くんかよ	¿De verdad irás así vestida?	You're really going dressed like that?	False	False		chuchu	
+4e591308d0	391	392	390	0:09:19.750000	0:09:23.580000	4e591308d0.mp3	4e591308d0.webp	エランさんが エアリアルも一緒にって	Elan me pidió que vaya con el Aerial.	Mr. Elan said to bring Aerial too.	False	False		suletta	
+e44eef1d47	394	395	393	0:09:23.580000	0:09:26.010000	e44eef1d47.mp3	e44eef1d47.webp	保護者同伴か	Estarán supervisados.	A chaperoned date, huh?	False	False		chuchu	
+299c362d4c	397	398	396	0:09:26.990000	0:09:30.310000	299c362d4c.mp3	299c362d4c.webp	スレッタ コンテナ いつでも発進できるよ	El contenedor está listo para marcharse.	Suletta! The container can go whenever you're ready.	False	False		nika	
+4b675fe6a7	401	400	399	0:09:30.310000	0:09:32.180000	4b675fe6a7.mp3	4b675fe6a7.webp	ありがとうございます	Muchas gracias.	Thank you very much!	False	False		suletta	
+a5bc4191fb	403,406	404	402,405	0:09:32.800000	0:09:38.090000	a5bc4191fb.mp3	a5bc4191fb.webp	皆さんも エアリアル... その...　直していただいて...	A todos. Por reparar el Aerial también.	On behalf of Aerial, I can't thank you all enough for the repairs...	False	False		suletta	
+2df275bb11	409	408	407,410	0:09:40.250000	0:09:43.480000	2df275bb11.mp3	2df275bb11.webp	スレッタ! あんた 何考えてんのよ!	¿En qué estás pensando, Suletta?	Suletta! What the heck are you thinking?	False	False		miorine	
+12a2dcabf4	413	412	411,414	0:09:43.470000	0:09:45.720000	12a2dcabf4.mp3	12a2dcabf4.webp	エランとデートなんて!	¿Tienes una cita con Elan?	A date with Elan? Oh, no!	False	False		miorine	
+9e03f17d90	416	417	415	0:09:45.660000	0:09:47.060000	9e03f17d90.mp3	9e03f17d90.webp	ミオリネさん!	¡Miorine!	Ms. Miorine!	False	False		suletta	
+6a3869c601	419	420	418	0:09:47.060000	0:09:48.440000	6a3869c601.mp3	6a3869c601.webp	先輩 早く乗りましょう	Vamos, sube.	Hurry aboard, Ms. Suletta.	False	False		lilique	
+22f96a64a3	422	423	421,424	0:09:48.440000	0:09:51.526000	22f96a64a3.mp3	22f96a64a3.webp	御三家は敵だって言ったでしょ!	Calma. -¡Las tres grandes casas son el enemigo!	I told you the three branches are our enemies, didn't I?! Now, now...	False	False		nika/miorine	
+a6db2b5579	426	427	425	0:09:51.510000	0:09:54.120000	a6db2b5579.mp3	a6db2b5579.webp	デート 頑張ってくださいね	Ánimo con la cita.	Have fun on your date!	False	False		lilique	
+2dc1294955	428	430	429,431	0:09:54.071000	0:09:56.490000	2dc1294955.mp3	2dc1294955.webp	ちゃんと誕生日聞くんだぞー	Pregúntale lo del cumpleaños.	Make sure to ask about his birthday! Let go!	False	False		aliya	
+899c7044a3	433	434	432,435	0:09:56	0:09:58.250000	899c7044a3.mp3	899c7044a3.webp	い... いってきます	Sí. Me voy. -Cálmate.	I-I'm off! This is between me and Suletta!	False	False		suletta/nika	
+99da5d5f88	438	437	436,439	0:09:58.250000	0:10:01.953000	99da5d5f88.mp3	99da5d5f88.webp	スレッタ! ロミジュリったら許さないからね!	¡Suletta, no toleraré un Romeo y Julieta!	Suletta! Don't you dare go all Romeo and Juliet on me!	False	False		miorine	
+9f76e682a9	442,445	441	440,443,444	0:10:06.150000	0:10:10.020000	9f76e682a9.mp3	9f76e682a9.webp	ねえ なんでエランさんいるの?　さあ	¿Qué hace Elan aquí? -Ni idea.	Hey, what's Mr. Elan doing here? I wonder...	False	False		estudiante1	
+a823dd7bcf	447	448	446,449	0:10:10.010000	0:10:12.090000	a823dd7bcf.mp3	a823dd7bcf.webp	聞いてこいよ やだよ	Pregúntale. -No quiero.	Go ask him. No way!	False	False		estudiantes3/4	
+558a4c4505	452	451	450	0:10:21.830000	0:10:24.600000	558a4c4505.mp3	558a4c4505.webp	お... おはよう... ございます!	Buenos días.	G-Good morning!	False	False		suletta	
+b484d62c5c	455	454	453	0:10:24.930000	0:10:26.720000	b484d62c5c.mp3	b484d62c5c.webp	時間どおりだね	Llegas a la hora justa.	I see you came on time.	False	False		elan	
+b046953847	458,460	457	456,459	0:10:26.720000	0:10:29.240000	b046953847.mp3	b046953847.webp	じゃあ 行こうか　はい	¿Vamos? -Sí.	Let's go, then. Right!	False	False		elan/suletta	
+021c0c6a1c	461	463	462	0:10:29.815000	0:10:31.660000	021c0c6a1c.mp3	021c0c6a1c.webp	うう... グエル先輩!	¡Guel!	Mr. Guel!	False	False		felsi	
+00bc0b0036	465	466	464	0:10:31.650000	0:10:33.160000	00bc0b0036.mp3	00bc0b0036.webp	大変っす!	¡Es terrible!	You won't believe this!	False	False		petra	
+1e5eaba00b	468	469	467	0:10:33.080000	0:10:34.380000	1e5eaba00b.mp3	1e5eaba00b.webp	なんだ	¿Qué pasa?	What is it?	False	False		guel	
+6f6a5395e8	471	472	470	0:10:34.250000	0:10:38.120000	6f6a5395e8.mp3	6f6a5395e8.webp	水星女が氷の君と デートに行ったって!	La mercuriana tiene una cita con el Soberano Helado.	The Mercurian girl is going on a date with the Ice Prince!	False	False		petra	
+c2b13612ea	475	476	474	0:10:38.530000	0:10:40.800000	c2b13612ea.mp3	c2b13612ea.webp	あのエランが? まさか	¿Elan? No puede ser.	With Elan? Don't make me laugh.	False	False		kamil	
+e20dc955b5	478	479	477	0:10:40.670000	0:10:43.300000	e20dc955b5.mp3	e20dc955b5.webp	本当っすよ! あいつら いつのまに...	Lo juro. No sé cuándo pasó, pero...	It's true! Somehow, they've...	False	False		felsi	
+f6fef71233	481	480	482	0:10:43.120000	0:10:44.630000	f6fef71233.mp3	f6fef71233.webp	フェルシー う...	Felsi.	Felsi.	False	False		guel	
+836bd609b4	485	486	484	0:10:46.750000	0:10:48.870000	836bd609b4.mp3	836bd609b4.webp	場所は どこだ	¿Dónde están?	Where did they go?	False	False		guel	
+951b3d50fe	489	487	488	0:10:55.880000	0:10:56.883000	951b3d50fe.mp3	951b3d50fe.webp	悪いね	Lo siento.	I'm sorry about this.	False	False		elan	
+00714c3251	492	491	490	0:10:57.500000	0:11:01.150000	00714c3251.mp3	00714c3251.webp	僕のザウォートは この前の決闘で整備中だから	Mi Zowort está en mantenimiento tras el último duelo.	My Zowort... is under repair after the last duel.	False	False		elan	
+bad3be00b4	495,497	494	493,496,498	0:11:01.150000	0:11:07.590000	bad3be00b4.mp3	bad3be00b4.webp	いえ お手伝いできて...　その うれしいです	No importa. Me alegro de poder ayudar.	Not at all! If I... can be of help... I'm happy!	False	False		suletta	
+12e7232a54	501	499	500	0:11:07.520000	0:11:11.100000	12e7232a54.mp3	12e7232a54.webp	試験区域のチェックも 決闘委員会の仕事でね	El Comité de Duelos ha de revisar las áreas de examinación.	Inspecting the testing sector is also the job of the Dueling Committee.	False	False		elan	
+82d338f356	504	503	502	0:11:11.470000	0:11:13.620000	82d338f356.mp3	82d338f356.webp	この順番に回ってほしいんだ	Ve en este orden, por favor.	Can you go around in this order?	False	False		elan	
+b78cca4824	507	506	505	0:11:13.610000	0:11:15.610000	b78cca4824.mp3	b78cca4824.webp	分かりました	De acuerdo.	You got it!	False	False		suletta	
+0f8aace0f5	510	508	509	0:11:22.800000	0:11:24.910000	0f8aace0f5.mp3	0f8aace0f5.webp	操縦上手だね	Lo haces muy bien.	Impressive piloting skills.	False	False		elan	
+5be9e49b2a	513,515	512	511,514	0:11:24.910000	0:11:28.970000	5be9e49b2a.mp3	5be9e49b2a.webp	いえ そんな...　いつから この機体に?	No es la gran cosa. -¿Cuánto hace que eres su piloto?	Not at all. I just... How long with this machine?	False	False		suletta/elan	
+c3b78b6cba	517		516	0:11:28.970000	0:11:30.041000	c3b78b6cba.mp3	c3b78b6cba.webp	え?		What?	False	False			
+acca6bfb8e	520	519	518	0:11:30.040000	0:11:33.003000	acca6bfb8e.mp3	acca6bfb8e.webp	君のこと もっと聞かせてほしい	Quiero saber más de ti.	I'd like to know more about you.	False	False		elan	
+e9455708ac	523	521	522,524	0:11:35.020000	0:11:39.260000	e9455708ac.mp3	e9455708ac.webp	小さいころから ずっと... です	Desde siempre. Desde que era una niña.	I've always been with her. Since I was a child.	False	False		suletta	
+553cfa4047	527	526	525	0:11:39.260000	0:11:40.730000	553cfa4047.mp3	553cfa4047.webp	ずっと?	¿Desde siempre?	Always?	False	False		elan	
+6beb3472ba	530,532	529	528,531	0:11:41.200000	0:11:45.530000	6beb3472ba.mp3	6beb3472ba.webp	辛かったり苦しかったりは?　これに乗ることが	¿Y nunca te hizo sufrir el montar en él?	Did you ever struggle or suffer? While piloting, I mean.	False	False		elan	
+9178607a1b	535	534	533,536	0:11:46.420000	0:11:50.520000	9178607a1b.mp3	9178607a1b.webp	苦しいっていうか安心します	No sufro. De hecho, me tranquiliza.	There wasn't any suffering... I rather felt at ease.	False	False		suletta	
+0ce601a1b3	539	538	537	0:11:52.470000	0:11:55.960000	0ce601a1b3.mp3	0ce601a1b3.webp	子供のころから一緒だったから	Porque siempre estuvo conmigo.	We've always been together, from childhood onwards.	False	False		suletta	
+86a00b541e	542	541	540	0:11:55.960000	0:11:59.570000	86a00b541e.mp3	86a00b541e.webp	エアリアルは 私の大切な友達で⸺	Aerial es un amigo.	To me, Aerial is like a good friend.	False	False		suletta	
+70c96cfca4	545	544	543	0:12:00.010000	0:12:02.450000	70c96cfca4.mp3	70c96cfca4.webp	家族なんです	Es mi familia.	Or even family.	False	False		suletta	
+6e928a03f1	548	547	546	0:12:02.800000	0:12:05.786000	6e928a03f1.mp3	6e928a03f1.webp	おかしい... ですよね...	Es raro, ¿no?	That sounds weird, right?	False	False		suletta	
+a7e27c0ffd	551,554	552	550,553	0:12:08.290000	0:12:14.640000	a7e27c0ffd.mp3	a7e27c0ffd.webp	うう... エランさん!　た... たたたた... 誕生日! 教えてください!	¡Dime cuándo es tu cumpleaños, Elan!	Uh... Mr. Elan! P-P-Please tell me when your birthday is!	False	False		suletta	
+0c029ef7d9	556	557	555	0:12:14.640000	0:12:16.110000	0c029ef7d9.mp3	0c029ef7d9.webp	お願いがあるんだけど	Quiero pedirte algo.	Can you do me a favor?	False	False		elan	
+1f338f4aa2	559	560	558	0:12:16.110000	0:12:19.140000	1f338f4aa2.mp3	1f338f4aa2.webp	ん... は... はい	¿Sí?	Huh? Sure...	False	False		suletta	
+b0fb4c0657	563	562	561	0:12:19.140000	0:12:22.220000	b0fb4c0657.mp3	b0fb4c0657.webp	エアリアルに 1人で乗ってみたいんだ	Quiero montar en el Aerial yo solo.	I'd like to pilot Aerial by myself.	False	False		elan	
+bc92cd2e62	565		564	0:12:22.220000	0:12:23.180000	bc92cd2e62.mp3	bc92cd2e62.webp	え?		What?	False	False			
+d339831fca	568	567	566	0:12:23.180000	0:12:25.760000	d339831fca.mp3	d339831fca.webp	君の家族に乱暴はしないよ	No me portaré mal con tu familia.	I won't be rough with one of your family.	False	False		elan	
+f9e3d17222	571	570	569	0:12:26.050000	0:12:27.480000	f9e3d17222.mp3	f9e3d17222.webp	だから...	Por favor.	So...	False	False		elan	
+936452059c	575,577	574	573,576	0:12:33.970000	0:12:38.690000	936452059c.mp3	936452059c.webp	誕生日...　聞かれたくなかったのかな	¿No querría decirme cuándo es su cumpleaños?	Maybe he did this... to avoid talking about his birthday.	False	False		suletta	
+cf2b56adb8	580,582	579	578,581	0:12:42.690000	0:12:47.320000	cf2b56adb8.mp3	cf2b56adb8.webp	僕なら暴ける　お前がガンダムかどうか	Yo puedo descubrir si eres un Gundam o no.	I can expose the truth. Whether or not you're a Gundam.	False	False		elan	
+5f81e7c48b	585	584	583,586	0:12:48.610000	0:12:51.470000	5f81e7c48b.mp3	5f81e7c48b.webp	パーメットスコア 2	Permet puntuación dos.	Permet score... Two.	False	False		elan	
+8529e7a932	589	590	588,591	0:13:02.540000	0:13:06.690000	8529e7a932.mp3	8529e7a932.webp	やはり これはGUNDフォーマット...	Esto es el GUND Format.	I knew it. This is the GUND Format.	False	False		elan	
+944c3c53c1	593	592	594,595	0:13:07.280000	0:13:10.530000	944c3c53c1.mp3	944c3c53c1.webp	いや あの感覚が来ない	No. No siento lo de siempre.	No, wait... It lacks that sensation.	False	False		elan	
+6569572a92	598	597	596	0:13:10.880000	0:13:14	6569572a92.mp3	6569572a92.webp	脳に手を突っ込まれるような ざらついた...	Esa aspereza... Como si te hurgaran en el cerebro.	Like a hand reaching so roughly into my brain.	False	False		elan	
+a2dd73ec34	600	601	599	0:13:16.050000	0:13:18.490000	a2dd73ec34.mp3	a2dd73ec34.webp	パーメットが反応していない	El Permet no reacciona.	The Permet isn't responding.	False	False		elan	
+917b1d2ca1	604,605	603	602	0:13:19.470000	0:13:23.660000	917b1d2ca1.mp3	917b1d2ca1.webp	ならば...　呪いをクリアしているのは...	Entonces, lo que anula la maldición es...	Which means, the one who has lifted the curse is...	False	False		elan	
+cb016bb184	606	608	607	0:13:28.994000	0:13:31.420000	cb016bb184.mp3	cb016bb184.webp	スレッタ・マーキュリー	Suletta Mercury...	Suletta Mercury...	False	False		elan	
+f22df09f15	611	610	609	0:13:32.100000	0:13:34.880000	f22df09f15.mp3	f22df09f15.webp	君は 僕とは違う	Tú no eres como yo.	You're nothing like me!	False	False		elan	
+36059295e6	615	614	613	0:13:41.410000	0:13:42.640000	36059295e6.mp3	36059295e6.webp	エランさん	¡Elan!	Mr. Elan!	False	False		suletta	
+95195c199e	618,619	617	616	0:13:44.800000	0:13:48.560000	95195c199e.mp3	95195c199e.webp	あ... あの...　ごめんなさい	Este... Perdóname.	I-I'm sorry!	False	False		suletta	
+8a74670fa4	622	621	620	0:13:48.550000	0:13:53.110000	8a74670fa4.mp3	8a74670fa4.webp	誕生日 聞かれたくなかったですか?	No querías que te preguntara el cumpleaños, ¿no?	You didn't want to tell me your birthday?	False	False		suletta	
+ac13d72834	625,627	624	623,626	0:13:54.210000	0:13:57.700000	ac13d72834.mp3	ac13d72834.webp	そんなもの⸺　僕にはない	No tengo cumpleaños.	That's something... I've never had.	False	False		elan	
+71fd0fd7d0	630,632	629	628,631	0:13:58.510000	0:14:03.520000	71fd0fd7d0.mp3	71fd0fd7d0.webp	お母さんに⸺　教えてもらってないってこと... ですか?	¿Tu madre no te dijo cuándo es?	Do you mean... your mom never told you?	False	False		suletta	
+0238580d4c	633	635	634	0:14:03.445000	0:14:04.990000	0238580d4c.mp3	0238580d4c.webp	うっとうしいよ 君は	Eres un incordio.	How you annoy me.	False	False		elan	
+415e0c82bb	639	638	637	0:14:05.850000	0:14:08	415e0c82bb.mp3	415e0c82bb.webp	モビルスーツが家族?	¿Que un Mobile Suit es tu familia?	Your mobile suit is like family?	False	False		elan	
+872943619b	642	641	640	0:14:08.370000	0:14:10.660000	872943619b.mp3	872943619b.webp	あんなもの僕には呪いでしかない	Para mí no son más que una maldición.	These things are nothing but a curse to me.	False	False		elan	
+e24a179d92	645	643	644	0:14:11.680000	0:14:13.630000	e24a179d92.mp3	e24a179d92.webp	同じだと思ってたのに	Pensaba que éramos iguales.	I thought we were alike,	False	False		elan	
+6e1874ca83	647	648	646	0:14:14.410000	0:14:16.970000	6e1874ca83.mp3	6e1874ca83.webp	君は 僕と...	Tú y yo.	but you and I are...	False	False		elan	
+cbcbe8fe27	651	650	649,652	0:14:24.920000	0:14:27.928000	cbcbe8fe27.mp3	cbcbe8fe27.webp	エラン 貴様 こいつに... あ...	Elan, ¿qué has...?	Elan! You bastard, what did...	False	False		guel	
+f25aa7a2ec	656,658	655	654,657	0:14:31.540000	0:14:35.330000	f25aa7a2ec.mp3	f25aa7a2ec.webp	こいつに何をした　返答次第では...	¿Qué le hiciste? Dependiendo de lo que...	what did you do to her? Depending on your answer...	False	False		guel	
+92e0eb3d18	659	661	660	0:14:35.268000	0:14:36.770000	92e0eb3d18.mp3	92e0eb3d18.webp	決闘でもする?	¿Nos batimos en duelo?	You'll ask for a duel?	False	False		elan	
+e3d41586d7	663		662	0:14:36.770000	0:14:37.729000	e3d41586d7.mp3	e3d41586d7.webp	ん?		What?	False	False			
+bd0c491923	666,669,671	664,667	665,668,670	0:14:37.700000	0:14:44.790000	bd0c491923.mp3	bd0c491923.webp	ちょうどいい グエル・ジェターク　君に決闘を⸺　申し込む	Eres oportuno. Guel Jetark, te reto a un duelo.	Perfect timing, Guel Jeturk. I challenge you... to a duel.	False	False		elan	
+48e14dff49	674	673	672,675	0:14:48.210000	0:14:52.240000	48e14dff49.mp3	48e14dff49.webp	双方 魂の代償をリーブラに	Pongan el precio de sus almas en las balanzas de Libra.	Both parties, deposit your souls on Libra's scales.	False	False		shaddiq	
+ab81263fc2	677	678	676	0:14:52.240000	0:14:55.990000	ab81263fc2.mp3	ab81263fc2.webp	決闘者はグエル・ジェタークと エラン・ケレス	Los duelistas son Guel Jetark y Elan Ceres.	The duelists are Guel Jeturk and Elan Ceres.	False	False		shaddiq	
+4af1fc4b3e	681	680	679	0:14:55.990000	0:14:59.160000	4af1fc4b3e.mp3	4af1fc4b3e.webp	場所は戦術試験区域11番	Será en la 11.a área de examinación.	The location will be the 11th tactical testing sector.	False	False		shaddiq	
+99ed9854e8	683	684	682	0:14:59.160000	0:15:01.120000	99ed9854e8.mp3	99ed9854e8.webp	個人戦を採用	Será individual.	The one-on-one code will apply.	False	False		shaddiq	
+483f4b4f02	687	686	685	0:15:01.120000	0:15:02.240000	483f4b4f02.mp3	483f4b4f02.webp	異論はないか?	¿Alguna objeción?	Any objections?	False	False		shaddiq	
+5a7c1ecb6e	690	689	688	0:15:02.210000	0:15:03.421000	5a7c1ecb6e.mp3	5a7c1ecb6e.webp	ああ	No.	None.	False	False		guel	
+899ac56dbd	693	692	691	0:15:03.420000	0:15:05.170000	899ac56dbd.mp3	899ac56dbd.webp	異論はない	Ninguna.	No objections.	False	False		elan	
+228c5225e2	696	695	694	0:15:05.170000	0:15:09.550000	228c5225e2.mp3	228c5225e2.webp	久しぶりっすね 御三家同士の決闘なんて	Hace tiempo que no veía un duelo entre las grandes casas.	It's been a while since we've seen a duel among the three branches.	False	False		seseria	
+e1176f8881	699,701	698	697,700	0:15:09.550000	0:15:13.970000	e1176f8881.mp3	e1176f8881.webp	グエル・ジェターク　君は この決闘に何を賭ける	Guel Jetark, ¿qué apostarás en este duelo?	Guel Jeturk. What is your stake in this duel?	False	False		shaddiq	
+c897332d7a	704	703	702	0:15:13.970000	0:15:17.440000	c897332d7a.mp3	c897332d7a.webp	こいつがスレッタ・マーキュリーに 近づかないことだ	Que él no vuelva a acercarse a Suletta Mercury.	That this jerk stays away from Suletta Mercury.	False	False		guel	
+0697ee2263	706		705	0:15:17.440000	0:15:18.311000	0697ee2263.mp3	0697ee2263.webp	へえー		I see.	False	False			
+48651d6b15	708	709	707	0:15:18.310000	0:15:22.230000	48651d6b15.mp3	48651d6b15.webp	そ... そんなの余計なお世話... です	¡Eso no es cosa tuya!	H-Hey, that's... none of your business!	False	False		suletta	
+9925f0909e	711	712	710	0:15:22.230000	0:15:23.984000	9925f0909e.mp3	9925f0909e.webp	お前 分かってるのか?	¿Eres consciente?	Don't you get it?	False	False		guel	
+7b50aa4599	715	714	713	0:15:23.980000	0:15:26.860000	7b50aa4599.mp3	7b50aa4599.webp	こいつは敵だ 御三家なんだぞ	Es tu enemigo. Es de las tres casas.	This guy is your enemy. He's from the three branches!	False	False		guel	
+97304b9fed	717,719	718,721	716,720,722	0:15:26.860000	0:15:32.820000	97304b9fed.mp3	97304b9fed.webp	あなたも そうじゃないですか　あ... 俺は... チッ	Tú también. Pero yo...	Doesn't that go for you too? I... Heck.	False	False		guel,suletta	
+eac70a94fc	725,727	724	723,726	0:15:32.820000	0:15:37.030000	eac70a94fc.mp3	eac70a94fc.webp	水星ちゃん　これはグエルと エランの決闘だからね	Mercuriana, este duelo es entre Guel y Elan.	Mercurian Miss. This duel is between Guel and Elan.	False	False		shaddiq	
+6506e8b928	730	729	728	0:15:37.030000	0:15:39.480000	6506e8b928.mp3	6506e8b928.webp	君が口をはさむことはできないよ	No puedes intervenir.	It's not your place to interfere.	False	False		shaddiq	
+7f92419647	733	732	731	0:15:39.480000	0:15:41.290000	7f92419647.mp3	7f92419647.webp	ですけど...	Pero...	Yeah, but...	False	False		suletta	
+14315d178f	735	736,738	734,737	0:15:41.290000	0:15:45.920000	14315d178f.mp3	14315d178f.webp	結果が気に入らなければ 次は君が決闘すればいい	Si no te gusta el resultado, bátete en duelo tú.	If you're unhappy with the result, then fight another duel yourself.	False	False		shaddiq	
+0907aeaa00	740	741	739	0:15:45.920000	0:15:49.090000	0907aeaa00.mp3	0907aeaa00.webp	この学園は そういう ルールで動いている	Esas son las reglas de esta academia.	Those are the rules that govern this school.	False	False		shaddiq	
+3988d12dc2	744	742	743	0:15:49.440000	0:15:52.850000	3988d12dc2.mp3	3988d12dc2.webp	エラン・ケレス 君は何を賭ける?	Elan Ceres, ¿qué apostarás tú?	Elan Ceres, what is your stake in this duel?	False	False		shaddiq	
+237e1c5691	747	746	745	0:15:52.850000	0:15:54.430000	237e1c5691.mp3	237e1c5691.webp	僕は⸺	Yo...	I...	False	False		elan	
+12daf62ce5	750	749	748	0:15:55.400000	0:15:57.142000	12daf62ce5.mp3	12daf62ce5.webp	スレッタ・マーキュリー	Suletta Mercury,	Suletta Mercury.	False	False		elan	
+48a630d610	753	752	751	0:15:57.950000	0:16:01.350000	48a630d610.mp3	48a630d610.webp	僕が勝ったら 君と決闘する	si gano, me batiré en duelo contigo.	If I win, I will fight a duel with you.	False	False		elan	
+28cc9c9842	756	755	754	0:16:03.200000	0:16:04.560000	28cc9c9842.mp3	28cc9c9842.webp	分かりました	De acuerdo.	Very well.	False	False		suletta	
+6c6199889c	758,761	759	757,760	0:16:04.560000	0:16:09.070000	6c6199889c.mp3	6c6199889c.webp	Alea jacta est　決闘を承認する	Alea jacta est. Apruebo el duelo.	Alea jacta est. The duel is approved.	False	False		shaddiq	
+b456706ac0	764	763	762	0:16:10.820000	0:16:12.740000	b456706ac0.mp3	b456706ac0.webp	おい 止まれ!	¡Alto!	Hey! Stop right there!	False	False		kamil	
+8f2d2c4c6f	767	766	765	0:16:13.280000	0:16:15.620000	8f2d2c4c6f.mp3	8f2d2c4c6f.webp	誰がラウダの ディランザに乗ってるんだ	¿Quién hay en el Dilanza de Lauda?	Who the hell just boarded Lauda's Dilanza?	False	False		kamil	
+de020bfb4b	770	769	768	0:16:15.620000	0:16:16.920000	de020bfb4b.mp3	de020bfb4b.webp	それが...	Pues...	Actually, it's...	False	False		hugo	
+c89f5e0ae2	772	773	771,774	0:16:16.780000	0:16:19.080000	c89f5e0ae2.mp3	c89f5e0ae2.webp	にいさん! 決闘はダメだ!	¡No puedes batirte en duelo, Guel!	Brother! You're forbidden to duel!	False	False		lauda	
+d12e819f4a	777	776	775	0:16:19.360000	0:16:21.490000	d12e819f4a.mp3	d12e819f4a.webp	こんなこと 父さんに知られたら...	Si papá lo descubre...	If Dad finds out about this...	False	False		lauda	
+e097fd6b04	780	779	778	0:16:21.960000	0:16:26.250000	e097fd6b04.mp3	e097fd6b04.webp	勝ちさえすれば 父さんだって文句はないはずだ!	No me dirá nada si gano.	If I win, Dad will have nothing to complain about.	False	False		guel	
+f41a56d0aa	783	782	781	0:16:28.380000	0:16:31.426000	f41a56d0aa.mp3	f41a56d0aa.webp	なんでグエルとエランが 決闘すんだよ	¿Por qué se enfrentan Guel y Elan?	Why the heck are Elan and Guel dueling?	False	False		ojelo	
+c61428f0db	785,788	786	784,787	0:16:31.420000	0:16:35.730000	c61428f0db.mp3	c61428f0db.webp	決まってるじゃないですかー　ねっ スレッタ先輩	Es muy obvio. ¿Verdad, Suletta?	It's perfectly obvious! Right, Ms. Suletta?	False	False		lilique	
+0a1d766615	789	791	790,792	0:16:35.722000	0:16:38.340000	0a1d766615.mp3	0a1d766615.webp	そ... そんなんじゃ...	No es eso.	That's... That's not it.	False	False		suletta	
+fb14a0c095	793,797	794	795,796	0:16:38.266000	0:16:42.180000	fb14a0c095.mp3	fb14a0c095.webp	いい展開ね　あいつらには 潰し合ってもらおうじゃない	Perfecto. Que se aplasten entre ellos.	This is a good development. Let them destroy each other.	False	False		miorine	
+51ab8208e8	799	800	798	0:16:41.980000	0:16:44.390000	51ab8208e8.mp3	51ab8208e8.webp	お前 性格悪すぎんだろ	Tienes muy mal carácter.	You really are mean-spirited.	False	False		chuchu	
+941a59f36c	804,806	803	802,805	0:16:50.110000	0:16:55.860000	941a59f36c.mp3	941a59f36c.webp	KP001 グエル・ジェターク　ディランザ 出る!	KP-001, Guel Jetark. Dilanza, en marcha.	KP001, Guel Jeturk. Dilanza... let's go!	False	False		guel	
+eaa1caca6f	809	808	807	0:16:56.490000	0:16:58.370000	eaa1caca6f.mp3	eaa1caca6f.webp	これ まずいっしょ	Esto es un problema.	This won't end well.	False	False		felsi	
+873845e263	812	811	810	0:16:58.370000	0:17:00.450000	873845e263.mp3	873845e263.webp	CEOにバレたら...	Si el presidente lo descubre...	If the CEO finds out...	False	False		petra	
+1bb82dfb45	815	814	813	0:17:00.450000	0:17:02.207000	1bb82dfb45.mp3	1bb82dfb45.webp	決闘を止めてください!	¡Detengan el duelo!	Please abort the duel!	False	False		lauda	
+c6d6fa8af9	818	817	816	0:17:02.560000	0:17:05.170000	c6d6fa8af9.mp3	c6d6fa8af9.webp	にいさんは決闘を禁止されています	Mi hermano los tiene prohibidos.	My brother is not permitted to fight.	False	False		lauda	
+40a6464b58	821	820	819	0:17:05.170000	0:17:06.890000	40a6464b58.mp3	40a6464b58.webp	この決闘は無効だ!	¡No es válido!	The duel is invalid!	False	False		lauda	
+a2a439726a	824	823	822	0:17:06.890000	0:17:10.800000	a2a439726a.mp3	a2a439726a.webp	グエル先輩は とっくに了承済みっすよー	Guel lo aceptó hace rato.	We already gave Mr. Guel authorization.	False	False		seseria	
+66ab592e8a	828	827	826	0:17:11.380000	0:17:13.050000	66ab592e8a.mp3	66ab592e8a.webp	悪いね ラウダ	Lo siento, Lauda.	Forgive me, Lauda.	False	False		shaddiq	
+a165278744	831	830	829	0:17:13.050000	0:17:16.090000	a165278744.mp3	a165278744.webp	俺も この決闘 見たいんだ	Yo también quiero ver este duelo.	I too want to see this duel.	False	False		shaddiq	
+f347f74ac7	833		832	0:17:26.230000	0:17:27.232000	f347f74ac7.mp3	f347f74ac7.webp	あ?		What?	False	False			
+c3a4032924	836	835	834	0:17:27.230000	0:17:28.800000	c3a4032924.mp3	c3a4032924.webp	黒いザウォート?	¿Un Zowort negro?	A black Zowort?	False	False		seseria	
+42680f3c60	838,841	839	837,840	0:17:28.730000	0:17:31.900000	42680f3c60.mp3	42680f3c60.webp	違いますね　あれは...	No. Eso es...	I don't think so. That one is...	False	False		rouji	
+d09b2135b6	844,846	843	842,845	0:17:32.860000	0:17:38.460000	d09b2135b6.mp3	d09b2135b6.webp	KP002 エラン・ケレス　ファラクト 出る	KP-002, Elan Ceres. Pharact, en marcha.	KP002, Elan Ceres. Pharact, going out.	False	False		elan	
+cdb60e1732	848	849	847	0:17:43.580000	0:17:45.890000	cdb60e1732.mp3	cdb60e1732.webp	ペイル寮まで新型かよ	¿Otra novedad de Pale?	Peil House has a new model, too?	False	False		ojelo	
+c447ad66f1	851	850	852	0:17:45.820000	0:17:47	c447ad66f1.mp3	c447ad66f1.webp	金持ちが	Estúpidos ricos.	Damn rich kids.	False	False		chuchu	
+6a851e7b56	855	854	853	0:17:47	0:17:49.420000	6a851e7b56.mp3	6a851e7b56.webp	両者 向顔	Pónganse cara a cara.	Both parties, face off.	False	False		shaddiq	
+2e3dca7507	858	857	856	0:17:50.520000	0:17:54.420000	2e3dca7507.mp3	2e3dca7507.webp	勝敗は モビルスーツの性能のみで決まらず	La victoria no se decide solo gracias al Mobile Suit.	Victory is never decided by mobile suit performance alone.	False	False		guel	
+97b6e02972	861	859	860	0:17:54.960000	0:17:57.680000	97b6e02972.mp3	97b6e02972.webp	操縦者の技のみで決まらず	Ni tampoco a la pericia del piloto.	Nor by the skill of the pilot, alone.	False	False		elan	
+38078e241d	865	864	862	0:17:57.680000	0:18:01	38078e241d.mp3	38078e241d.webp	ただ結果のみが真実	El resultado es la única verdad.	The result itself is the only truth!	False	False		elan/guel	
+f36e0426a3	868	867	866	0:18:01.430000	0:18:02.934000	f36e0426a3.mp3	f36e0426a3.webp	フィックス・リリース	Fix Release.	Fix release.	False	False		shaddiq	
+4b24d0831d	871	870,873	869,872	0:18:09.120000	0:18:12.360000	4b24d0831d.mp3	4b24d0831d.webp	新型も飛行タイプか だが...	¿Un nuevo modelo volador? Aun así...	The new model flies too, huh? Even so!	False	False		guel	
+b161045d3c	878	876	877	0:18:25.630000	0:18:27.960000	b161045d3c.mp3	b161045d3c.webp	低重力ならディランザだって!	¡En baja gravedad, incluso el Dilanza puede!	In low gravity, the Dilanza can do that too!	False	False		guel	
+62503d71df	884	883	882	0:18:30.630000	0:18:33.214000	62503d71df.mp3	62503d71df.webp	いけー 1.4倍! くう...	¡Ánimo, ve por ese x1.4!	Go! Odds are 1.4-to-1!	False	False		ojelo	
+34c2555ea3	887	886	885	0:18:33.080000	0:18:35.960000	34c2555ea3.mp3	34c2555ea3.webp	お前 あいつに よく勝てたよな	¿Cómo conseguiste ganarle?	I can't believe you bet on that guy.	False	False		nuno	
+a057efbdf7	891	890	889	0:18:37.130000	0:18:39.930000	a057efbdf7.mp3	a057efbdf7.webp	戦いかたが荒すぎだよ ほら	Lucha sin cuidado alguno.	He's fighting too violently.	False	False		martin	
+9c61abd557	893	894	892	0:18:39.930000	0:18:43.050000	9c61abd557.mp3	9c61abd557.webp	静電気帯びた砂が あんなに舞っちゃってさ	Esparció la arena con electricidad estática.	Look at all the clouds of sand charged with static electricity!	False	False		martin	
+b98e47dfa9	897	896	895	0:18:43.300000	0:18:44.680000	b98e47dfa9.mp3	b98e47dfa9.webp	レゴリス...	Regolito.	Regolith...	False	False		elan	
+3f0460bf2b	903	901	902	0:18:51.600000	0:18:54.480000	3f0460bf2b.mp3	3f0460bf2b.webp	ファラクトのテスト 手伝ってもらう	Me ayudarás con la prueba del Pharact.	You'll be my assistant in testing the Pharact.	False	False		elan	
+68c15cf279	905		904	0:18:55.280000	0:18:56.030000	68c15cf279.mp3	68c15cf279.webp	は...		What?	False	False			
+93e31ab8c3	908	907	906	0:19:00.530000	0:19:01.910000	93e31ab8c3.mp3	93e31ab8c3.webp	ガンダム?	¿Un Gundam?	A Gundam?	False	False		rouji	
+9705b478ff	911	910	909,912	0:19:02.530000	0:19:05.470000	9705b478ff.mp3	9705b478ff.webp	パーメットスコア 3	Permet puntuación tres.	Permet score... three.	False	False		elan	
+ab2d21d584	914		913	0:19:15.170000	0:19:16.300000	ab2d21d584.mp3	ab2d21d584.webp	チイッ		What the...	False	False			
+8b30f4c602	916	917	915	0:19:22.140000	0:19:23.800000	8b30f4c602.mp3	8b30f4c602.webp	ダ... ダメージ!?	¡Está dañado!	D-Damage!	False	False		guel	
+37f08fa5b7	920	919	918	0:19:27.470000	0:19:28.730000	37f08fa5b7.mp3	37f08fa5b7.webp	違う... あ...	¿No?	No, it's not that.	False	False		guel	
+af0c52a97b	922	923	921,924	0:19:37.610000	0:19:40.365000	af0c52a97b.mp3	af0c52a97b.webp	機能が戻った これは...	¿Recuperé las funciones? ¿Qué...?	Functions are restored? That looks like...	False	False		guel	
+923e1d6529	927	926	925	0:19:40.360000	0:19:42.490000	923e1d6529.mp3	923e1d6529.webp	スタン効果の電磁ビーム	Un rayo electromagnético aturdidor.	An electromagnetic stun beam.	False	False		rouji	
+d33002e890	930	929	928	0:19:43.130000	0:19:46.200000	d33002e890.mp3	d33002e890.webp	こいつも ドローンか	¿Él también usa drones?	So this one uses drones too!	False	False		guel	
+bfafd46211	933,935	932	931,934	0:19:46.950000	0:19:49.624000	bfafd46211.mp3	bfafd46211.webp	ドローンじゃない　あれは...	No son drones. Eso es...	Those are no drones. They're...	False	False		prospera	
+d5d063d523	938	937	936	0:19:50.140000	0:19:51.800000	d5d063d523.mp3	d5d063d523.webp	GUNDフォーマットです	GUND Format.	The GUND Format.	False	False		belmeria	
+dff453960f	941	940	939,942	0:19:53.840000	0:19:56.920000	dff453960f.mp3	dff453960f.webp	お久しぶりです 先輩	Cuánto tiempo sin verte.	It's been so long... Old friend.	False	False		belmeria	
+6dc19e0658	945	944	943	0:19:57.940000	0:20:01.090000	6dc19e0658.mp3	6dc19e0658.webp	魔女は もう1人いたってわけね	Así que había otra bruja.	So there was another witch all along.	False	False		prospera	
+f8aec2a88f	948	947	946	0:20:08.430000	0:20:10.770000	f8aec2a88f.mp3	f8aec2a88f.webp	クッソ だったら!	¡Rayos! En ese caso...	Damn it... in that case!	False	False		guel	
+c69cb60983	952,954	951	950,953	0:20:17.480000	0:20:22.448000	c69cb60983.mp3	c69cb60983.webp	触れさえしなければ こんなもの!　甘いよ	Si no me toca, no pasa nada. -No seas ingenuo.	As long as they don't touch me, this is nothing! You wish.	False	False		guel/elan	
+2da62278e4	957	956	955	0:20:23.990000	0:20:25.780000	2da62278e4.mp3	2da62278e4.webp	すり抜けてみせる!	¡Lo atravesaré!	I'll make it through!	False	False		guel	
+7ba135c3a8	960	959	958	0:20:32.040000	0:20:33.250000	7ba135c3a8.mp3	7ba135c3a8.webp	見切った!	¡Lo tengo!	I did it!	False	False		guel	
+c6041c3bf8	965	964	963	0:20:46.800000	0:20:49.220000	c6041c3bf8.mp3	c6041c3bf8.webp	エランのワナにかかったな	Cayó en la trampa de Elan.	He fell into Elan's trap.	False	False		shaddiq	
+10b41d751e	968	967,970	966,969	0:20:49.790000	0:20:54.770000	10b41d751e.mp3	10b41d751e.webp	電磁ビームの導電性を利用して レゴリスを帯電化させましたね	Aprovechó la conductividad del rayo para electrificar el regolito.	Elan used the conductivity of the electromagnetic beams to give the regolith an electrostatic charge.	False	False		rouji	
+3b44bb8554	973,974	972	971,975	0:20:54.770000	0:20:59.770000	3b44bb8554.mp3	3b44bb8554.webp	関節駆動部に吸着させることで⸺　過負荷状態を引き起こした	Y al adherirlo a las articulaciones lo sobrecargó.	When the dust adhered to the joint drive parts, it created an overload.	False	False		rouji	
+7012536319	976,980	978	977,979	0:21:00.278000	0:21:05.410000	7012536319.mp3	7012536319.webp	その要因を作ったのは⸺　グエルさん自身です	Y Guel se lo puso en bandeja.	The key factor was actually caused by Mr. Guel himself.	False	False		rouji	
+85cafd585f	983	982	981	0:21:35.270000	0:21:37.020000	85cafd585f.mp3	85cafd585f.webp	やめろ	No lo hagas.	Stop...	False	False		guel	
+727d47037e	986	985	984	0:21:37.020000	0:21:39.200000	727d47037e.mp3	727d47037e.webp	ガンダムを倒せるのは...	Para vencer a un Gundam necesitas...	The only way to defeat a Gundam...	False	False		elan	
+694aaed097	989	988	987	0:21:40.150000	0:21:42.153000	694aaed097.mp3	694aaed097.webp	やめろー!	¡Para!	I said stop!	False	False		guel	
+dfe9f0bbda	991	992	990	0:21:42.150000	0:21:43.613000	dfe9f0bbda.mp3	dfe9f0bbda.webp	ガンダムだけだ	...un Gundam.	...is with a Gundam.	False	False		elan	
+5bad9a9b16	995	994,997	993,996	0:21:49.780000	0:21:53.600000	5bad9a9b16.mp3	5bad9a9b16.webp	3倍来たー! はずしたー	¡Lo tripliqué! ¡Qué mal!	I tripled my wager! I can't believe this.	False	False		nuno,ojelo	
+25e26dc1d0	1003	1002	1001,1004	0:21:55.040000	0:21:58.540000	25e26dc1d0.mp3	25e26dc1d0.webp	あ... あの... エランさん...	Este... ¿Elan?	H-Hello? Mr. Elan, you...	False	False		suletta	
+2ab9eac10d	1007	1006	1005	0:21:58.540000	0:22:01.540000	2ab9eac10d.mp3	2ab9eac10d.webp	勝ったよ スレッタ・マーキュリー	Gané, Suletta Mercury.	I won. Suletta Mercury.	False	False		elan	
+3459c9dde9	1010	1009	1008	0:22:01.540000	0:22:05.340000	3459c9dde9.mp3	3459c9dde9.webp	約束どおり 次は僕と戦ってもらう	Ahora te enfrentaré a ti, como acordamos.	As promised, you will now fight me.	False	False		elan	
+da97ecb4bd	1011,1015	1013	1012,1014	0:22:05.051000	0:22:09.800000	da97ecb4bd.mp3	da97ecb4bd.webp	ん... 約束?　スレッタ あんた...	¿"Como acordamos"? Suletta, ¿qué...?	Promised? Suletta, did you...	False	False		miorine	
+fba6713b76	1018	1017	1016	0:22:09.800000	0:22:12.500000	fba6713b76.mp3	fba6713b76.webp	君が僕との決闘で賭けるのは⸺	En nuestro duelo apostarás...	The stakes of our duel will be...	False	False		elan	
+324140cfba	1021	1020	1019	0:22:13.660000	0:22:14.811000	324140cfba.mp3	324140cfba.webp	エアリアルだ	el Aerial.	the Aerial.	False	False		elan	
+4f1b449496	1025	1024	1023	0:22:15.990000	0:22:17.730000	4f1b449496.mp3	4f1b449496.webp	僕が勝ったら⸺	Si gano yo,	If I win,	False	False		elan	
+fc4a098d2c	1028	1027	1026	0:22:18.290000	0:22:21.020000	fc4a098d2c.mp3	fc4a098d2c.webp	君のガンダムをいただくよ	me quedaré con tu Gundam.	your Gundam will be mine.	False	False		elan	

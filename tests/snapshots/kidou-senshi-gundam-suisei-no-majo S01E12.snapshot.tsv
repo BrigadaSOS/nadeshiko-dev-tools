@@ -1,249 +1,249 @@
 ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREENSHOT	CONTENT	CONTENT_TRANSLATION_SPANISH	CONTENT_TRANSLATION_ENGLISH	CONTENT_SPANISH_MT	CONTENT_ENGLISH_MT	ACTOR_JA	ACTOR_ES	ACTOR_EN
-2	2	0	1	0:00:03.309000	0:00:04.361000	2.mp3	2.webp	ミオリネさん!?	¿Miorine?	Ms. Miorine!	False	False		suletta	
-4	4	5	3	0:00:07.540000	0:00:08.870000	4.mp3	4.webp	スレッタ...	¿Suletta?	Suletta...?	False	False		miorine	
-8	8	7	6	0:00:10.750000	0:00:13.741000	8.mp3	8.webp	ミオリネさん ミオリネさん! あ...	¡Miorine!	Ms. Miorine? Ms. Miorine!	False	False		suletta	
-11	11		9	0:00:14.510000	0:00:16.452000	11.mp3	11.webp	あれあれあれあれー?		What in the world? What the heck is that?!		False			
-14	14		12	0:00:16.450000	0:00:18.830000	14.mp3	14.webp	スレッタ・マーキュリー?		Suletta Mercury?		False			
-16	16		15	0:00:18.830000	0:00:21.580000	16.mp3	16.webp	もう会えちゃった スゴくない?		I get to meet you already! How cool is that?		False			
-20	20		18	0:00:22.300000	0:00:24.460000	20.mp3	20.webp	私は ソフィ・プロネ		I'm Sophie Pulone,		False			
-23	23		21	0:00:25.020000	0:00:26.712000	23.mp3	23.webp	地球の魔女よ		a witch from Earth.		False			
-25	25	26	24	0:00:27.480000	0:00:29.460000	25.mp3	25.webp	モビルスーツ...	¿Un Mobile Suit?	That mobile suit...	False	False		suletta	
-29	29		27	0:00:29.770000	0:00:32.170000	29.mp3	29.webp	ねえ 水星の魔女さん		Tell me, Ms. Witch from Mercury...		False			
-32	32		30	0:00:32.170000	0:00:34.220000	32.mp3	32.webp	エアリアルは どこ?		Where's the Aerial?		False			
-34	34		33	0:00:34.190000	0:00:37.030000	34.mp3	34.webp	あるんでしょ? 見せてよ		It must be here. Show it to me.		False			
-38	38		36	0:00:37.030000	0:00:38.820000	38.mp3	38.webp	あっ そっか		Oh, I see.		False			
-40	40		39,41	0:00:38.820000	0:00:41.850000	40.mp3	40.webp	聞こえてないのか じゃあ...		You can't hear me. In that case...		False			
-47	47		45	0:00:47.520000	0:00:48.776000	47.mp3	47.webp	ほらほら!		Hurry up, now!		False			
-49	49		48	0:00:48.760000	0:00:51.190000	49.mp3	49.webp	早く エアリアルに乗らないと⸺		You'd better get in the Aerial quick!		False			
-51	51		50	0:00:51.190000	0:00:53.940000	51.mp3	51.webp	死んじゃうよ!		Or else you'll die!		False			
-55	55	56	54	0:00:59.080000	0:01:00.620000	55.mp3	55.webp	スレッタ!	¡Suletta!	Suletta!	False	False		miorine	
-58	58,61	59	57,60	0:01:01.080000	0:01:03.450000	58.mp3	58.webp	代表!　近いわね	Delegada. -Está cerca.	Madam President? They're close.	False	False		godoy/prospera	
-64	64,66	63	62,65	0:01:03.770000	0:01:07.510000	64.mp3	64.webp	先輩!　エアリアルで 戦闘するつもりですか?	¿Pretende luchar con el Aerial?	Ma'am... are you really sending Aerial into battle?	False	False		belmeria	
-69	69	68	67	0:01:07.510000	0:01:10.210000	69.mp3	69.webp	そんなことよりも スレッタたちの救援に...	Deberíamos ayudar a Suletta y...	Isn't rescuing Suletta and the others more-	False	False		belmeria	
-70	70	71	72	0:01:10.172000	0:01:11.750000	70.mp3	70.webp	あの子は来るわ	Ella vendrá.	The girl will come to us.	False	False		prospera	
-75	75,77	74	73,76	0:01:14.270000	0:01:18.260000	75.mp3	75.webp	エアリアルが⸺　ここにいるもの	Porque el Aerial está aquí.	After all... Aerial is here.	False	False		prospera	
-83	83,86	81,87	82,85	0:02:50.700000	0:02:55.640000	83.mp3	83.webp	緊急事態警報 B1...　これ 訓練じゃないですよね?	Emergencia. Alerta B1. No es un simulacro, ¿no?	Emergency warning... This isn't a drill, is it?	False	False		anuncio,lilique	
-89	89	90	88	0:02:55.610000	0:02:58.050000	89.mp3	89.webp	当然だろ B1だよ!	Obvio que no. ¡Es una B1!	Of course not! It's a B-1 warning!	False	False		martin	
-93	93	92	91,94	0:02:58.050000	0:03:00.580000	93.mp3	93.webp	てことはよ つまり...	Eso significa que...	Then that means... This is...	False	False		ojelo	
-97	97	96	95	0:03:00.960000	0:03:02.490000	97.mp3	97.webp	戦争だ	Es la guerra.	It's war.	False	False		aliya	
-101	101		100	0:03:12.850000	0:03:14.790000	101.mp3	101.webp	推進部の損傷を確認しろ!		Check on damage to the propulsion units!		False			
-104	104	103	102	0:03:15.150000	0:03:16.470000	104.mp3	104.webp	ディランザを出せ!	Saquen el Dilanza.	Send out the Dilanzas!	False	False		vim	
-107	107	106	105	0:03:16.460000	0:03:18.880000	107.mp3	107.webp	ジェタークCEO ご無事で	Está a salvo, presidente Jeturk.	Mr. Jeturk! We're glad you're safe.	False	False		tripulación jeturk A	
-109	109	110	108	0:03:18.880000	0:03:20.780000	109.mp3	109.webp	俺が乗る 準備しろ!	Lo pilotearé yo. Prepárenlo.	I'll pilot one! Prepare it now.	False	False		vim	
-112	112,114	113	111	0:03:20.760000	0:03:23.055000	112.mp3	112.webp	は? あ... しかし...　ええい!	¿Qué? Pero...	Right. But sir, that's-	False	False		tripulación jeturk A	
-117	117	116	115	0:03:23.050000	0:03:27.400000	117.mp3	117.webp	グラスレーの若造に これ以上 なめられてたまるか!	No permitiré que ese mocoso de Grassley se burle de mí.	I won't let that Grassley brat make a monkey of me anymore!	False	False		vim	
-120	120,121	119	118	0:03:31.490000	0:03:34.820000	120.mp3	120.webp	総裁は51番シェルターに⸺　向かう手筈になっている	El presidente debería ir hacia el refugio 51.	The President is supposed to evacuate to Shelter 51.	False	False		rajan	
-123	123	124	122	0:03:34.820000	0:03:36.260000	123.mp3	123.webp	必ず確保しろ	Atrápenlo.	You must protect him.	False	False		rajan	
-126	126	127	125	0:03:36.230000	0:03:38.830000	126.mp3	126.webp	ラジャン司令 いつでも行けます	Estamos listos, comandante Rajan.	Commander Rajan. We're ready when you are.	False	False		líder dominicus	
-129	129	130	128,131	0:03:38.820000	0:03:41.110000	129.mp3	129.webp	総裁の救出に向かう 急ぐぞ	Salvaremos al presidente. Rápido.	To the President's rescue. Hurry.	False	False		rajan	
-134	134	133	132	0:03:50.260000	0:03:52.400000	134.mp3	134.webp	ノレア・デュノク 合流します	Norea Du Noc. Me uno.	Norea Du Noc, reporting for rendezvous.	False	False		norea	
-137	137	136	135	0:03:52.390000	0:03:53.920000	137.mp3	137.webp	時間どおりだな	Justo a tiempo.	Right on time.	False	False		olcott	
-138	138	140	139	0:03:53.585000	0:03:54.970000	138.mp3	138.webp	オルコット	Olcott.	Olcott!	False	False		naji	
-143	143	142	141	0:03:54.960000	0:03:58.430000	143.mp3	143.webp	Dブロックからモビルスーツの 識別コードが4機	Hay cuatro códigos de Mobile Suit en el bloque D.	We've detected four mobile suit ID codes in D Block.	False	False		naji	
-146	146	145	144	0:03:58.420000	0:03:59.720000	146.mp3	146.webp	ドミニコスだ	Son Dominicus.	It's Dominicus.	False	False		naji	
-148	148	149	147,150	0:03:59.710000	0:04:02.550000	148.mp3	148.webp	ブリッジ 確認した ソフィ	Entendido, puente. Sophie.	Roger, Bridge. Sophie!	False	False		olcott	
-151	151		152	0:04:02.511000	0:04:04.346000	151.mp3	151.webp	スレッタ・マーキュリー あ?		Suletta Mercury!		False			
-156	156		155	0:04:04.340000	0:04:06.265000	156.mp3	156.webp	会えたよ 動画の人!		The girl from the video! I met her!		False			
-159	159		158	0:04:06.240000	0:04:07.891000	159.mp3	159.webp	このプラントにいた!		She's here in this plant!		False			
-163	163		161	0:04:07.890000	0:04:09.852000	163.mp3	163.webp	アスティカシアの...		The Asticassia girl?		False			
-166	166	167	165,168	0:04:09.770000	0:04:12.280000	166.mp3	166.webp	ソフィ 魔女狩り部隊が来る	Vienen cazadores de brujas.	Sophie! The Witch Hunters are coming.	False	False		olcott	
-170	170	171	169	0:04:12.810000	0:04:14.780000	170.mp3	170.webp	作戦どおり 足止めに回れ	Céntrate en frenarlos.	As planned, you keep them occupied!	False	False		olcott	
-173	173		172	0:04:14.600000	0:04:15.691000	173.mp3	173.webp	えー!		What?!		False			
-176	176		174	0:04:15.690000	0:04:17.900000	176.mp3	176.webp	みんなで会いに行かないの?		Aren't we all going together?		False			
-178	178,182	179,181	177,180	0:04:17.900000	0:04:22.490000	178.mp3	178.webp	1人じゃ不安? ん...　加勢が必要なら早めに言って	¿Te preocupa ir sola? Si necesitas refuerzos, pídelos pronto.	Scared to go alone? If you need any help, don't hesitate to ask.	False	False		norea	
-185	185		183	0:04:22.490000	0:04:23.950000	185.mp3	185.webp	冗談!		You're joking!		False			
-188	188	187	186	0:04:27.470000	0:04:30.670000	188.mp3	188.webp	オルコット プラント側面から守備隊が接近	Olcott, se acerca una guarnición de la planta.	Olcott! A plant garrison force is approaching.	False	False		bessie	
-190	190	191	189	0:04:30.660000	0:04:32.120000	190.mp3	190.webp	数は8	Son ocho.	There's eight of them.	False	False		bessie	
-194	194	193	192,195	0:04:32.470000	0:04:34.700000	194.mp3	194.webp	迎撃する 全機潰せ	Intercéptenlos. A todos.	We'll intercept. Shoot them all down!	False	False		olcott	
-198	198	199	196	0:04:34.620000	0:04:35.980000	198.mp3	198.webp	コピー	Recibido.	Copy that!	False	False		norea/bessie/gristan	
-202	202,203	201	200	0:04:39.270000	0:04:42.980000	202.mp3	202.webp	コントロールセンターなら⸺　隔壁を開けられるはず	Debería poder abrir la compuerta mediante un sensor.	I'm sure I can open the bulkhead from the control center!	False	False		miorine	
-206	206	205	204	0:04:43.900000	0:04:44.980000	206.mp3	206.webp	動くな! う...	¡No te muevas!	Don't move!	False	False		sp 1	
-209	209	208	207	0:04:44.970000	0:04:46.470000	209.mp3	209.webp	ミオリネさま	¿Señorita Miorine?	Mistress Miorine?	False	False		sp 1	
-210	210	212	211	0:04:48.307000	0:04:51.080000	210.mp3	210.webp	う... なんで あんたがここに...	¿Qué haces tú aquí?	What are you doing here?	False	False		miorine	
-214	214	215	213	0:04:51.010000	0:04:53.228000	214.mp3	214.webp	その格好は なんだ え?	¿Y esa ropa?	Why are you dressed like that?	False	False		delling	
-219	219	217	218	0:04:53.600000	0:04:56.520000	219.mp3	219.webp	避難時は ノーマルスーツが鉄則だろう	Al huir debes ponerte un traje espacial.	You have to wear a normal suit when evacuating.	False	False		delling	
-222	222	221	220	0:04:57.560000	0:05:00.160000	222.mp3	222.webp	まずは 娘の心配じゃないの!?	¿No deberías preocuparte por mí?	Why not worry about your daughter first?!	False	False		miorine	
-225	225	224	223	0:05:00.540000	0:05:03.900000	225.mp3	225.webp	各機 これより内部へ侵入する	Entraremos. Preparados.	All units, we will now enter the plant's interior.	False	False		piloto dominicus A	
-229	229	228	227	0:05:07.950000	0:05:09.360000	229.mp3	229.webp	敵か!?	¿Enemigos?	An enemy?	False	False		piloto dominicus D	
-231	231	232	230	0:05:09.360000	0:05:11.660000	231.mp3	231.webp	1機だけだ 逃がすなよ	Solo es uno. Que no escape.	Just one. Don't let them escape.	False	False		piloto dominicus A	
-235	235	234	233	0:05:11.660000	0:05:12.840000	235.mp3	235.webp	散開!	Dispérsense.	Fan out!	False	False		piloto dominicus A	
-237	237		236	0:05:12.830000	0:05:14.790000	237.mp3	237.webp	来た来た来た来た		Here they come, here they come!		False			
-241	241		239	0:05:15.210000	0:05:18.003000	241.mp3	241.webp	全部 ぶっ壊しちゃうよー!		I'll blow them all to bits!		False			
-243	243		242	0:05:18	0:05:20.290000	243.mp3	243.webp	パーメットスコア 2!		Permet score... two!		False			
-247	247		245	0:05:25.190000	0:05:28.680000	247.mp3	247.webp	各個撃破って 知ってるー!?		I'm gonna pick you off... one by one!		False			
-250	250	249	248,251	0:05:33.970000	0:05:36.900000	250.mp3	250.webp	GUNDフォーマット ガンダムだと!?	¿GUND Format? ¿Es un Gundam?	The GUND Format?! That thing's a Gundam?!	False	False		piloto dominicus C	
-254	254,256	253	252,255	0:05:36.900000	0:05:40.110000	254.mp3	254.webp	アンチドートを使う　囲んで仕留めるぞ!	Usemos Antidote. Eliminémosla rodeándola.	We'll use Antidote. Surround it and take it down.	False	False		piloto dominicus B	
-259	259	258	257	0:05:53.240000	0:05:54.870000	259.mp3	259.webp	魔女め!	¡Maldita bruja!	Take this, witch!	False	False		piloto dominicus B	
-263	263	262	261	0:06:05.050000	0:06:06.930000	263.mp3	263.webp	墜ちろ ガンダム!	¡Muere, Gundam!	Down you go, Gundam!	False	False		piloto dominicus B	
-265	265		264	0:06:06.920000	0:06:09.138000	265.mp3	265.webp	パーメットスコア 4		Permet score... four.		False			
-270	270		268	0:06:18.980000	0:06:21.320000	270.mp3	270.webp	心臓 痛い...		My heart's hurting so badly.		False			
-272	272		271	0:06:21.320000	0:06:23.250000	272.mp3	272.webp	息 できない...		I can't... breathe.		False			
-273	273		274	0:06:23.235000	0:06:25.571000	273.mp3	273.webp	さっき食べたお菓子 吐きそう		I might throw up the snacks I just ate.		False			
-278	278		276,279	0:06:26	0:06:30.450000	278.mp3	278.webp	でも 私 生きてる!		But... I'm still alive!		False			
-283	283	282	281	0:06:41.460000	0:06:43.380000	283.mp3	283.webp	アンチドートが効かない!	¿El Antidote no funciona?	The Antidote isn't working!	False	False		piloto dominicus C	
-286	286,287		284	0:06:53.900000	0:06:57.394000	286.mp3	286.webp	そいつが通じるのは⸺　スコア3までだよ		That thing only works up to score three!		False			
-290	290	289	288	0:06:59.740000	0:07:02.080000	290.mp3	290.webp	実弾使用は条約違反だ!	¿Munición activa? ¡Eso es ilegal!	The use of physical ammunition is forbidden by treaty!	False	False		piloto guarnición G	
-292	292	293	291	0:07:02.060000	0:07:04.660000	292.mp3	292.webp	宇宙を汚しやがって!	¡Están ensuciando el espacio!	You bastards are polluting space!	False	False		piloto guarnición G	
-296	296,297	295	294	0:07:11.990000	0:07:16.205000	296.mp3	296.webp	地球を汚して逃げたスペーシアンが どの口で...　ん...	Y lo dicen los Spacians que ensuciaron la Tierra y huyeron.	You Spacians polluted Earth and ran. You're one to talk.	False	False		norea	
-300	300,302	299	298,301	0:07:26.380000	0:07:30.180000	300.mp3	300.webp	テロリストどもが!　邪魔	¡Terroristas! -Estorbas.	Damn terrorists! What a bother.	False	False		piloto guarnición F/norea	
-305	305	304	303	0:07:32.030000	0:07:35.270000	305.mp3	305.webp	ブリッジ 敵の戦力を無力化した	Puente, incapacitamos al enemigo.	Bridge, the enemy forces have been neutralized.	False	False		olcott	
-307	307	308	306	0:07:35.260000	0:07:37.650000	307.mp3	307.webp	引き続き サブの制圧に入る	Iremos por las reservas.	We'll proceed to securing the sub-gates.	False	False		olcott	
-311	311	310,313	309,312	0:07:37.640000	0:07:41.480000	311.mp3	311.webp	すぐに 次の守備隊が来る 怠るなよ	Llegará otra guarnición. Manténganse alerta.	More garrison forces will come soon. Keep your guard up.	False	False		naji	
-316	316	315	314	0:07:41.870000	0:07:43.570000	316.mp3	316.webp	後方待機班に通達	Los de la retaguardia,	Tell the standby team in the rear.	False	False		naji	
-319	319	318	317	0:07:43.910000	0:07:47.570000	319.mp3	319.webp	プラントの通信が回復する前に 仕事を片づける	terminen antes de que recuperen las comunicaciones.	We need to finish the job before the front's communications are restored.	False	False		naji	
-322	322	321	320	0:07:48.130000	0:07:49.660000	322.mp3	322.webp	行動を開始しろ	Empiecen.	Move out.	False	False		naji	
-326	326,328	325	324,327	0:07:59.460000	0:08:03.290000	326.mp3	326.webp	止まった?　ミオリネさん 助けなきゃ	¿Paró? He de ayudar a Miorine.	It stopped. I have to help Ms. Miorine.	False	False		suletta	
-331	331	330	332	0:08:03.360000	0:08:06	331.mp3	331.webp	でも どうやって...	Pero ¿cómo?	How?	False	False		suletta	
-335	335	334	333	0:08:10.080000	0:08:11.900000	335.mp3	335.webp	78ハンガー...	El hangar 78.	Hangar 78...	False	False		suletta	
-338	338,340	337	336,339	0:08:12.570000	0:08:16.970000	338.mp3	338.webp	エアリアルと一緒なら⸺　ミオリネさん 助けられる	Con el Aerial podré ayudar a Miorine.	If I have Aerial with me... I can rescue Ms. Miorine!	False	False		suletta	
-342	342	344	343	0:08:24.147000	0:08:26.900000	342.mp3	342.webp	あ... お父さん!	¡Papá!	Dad!	False	False		miorine	
-347	347	346	345	0:08:26.900000	0:08:29.280000	347.mp3	347.webp	逃げ... ろ	Huye...	You have to... run.	False	False		delling	
-348	348	349	350	0:08:30.404000	0:08:32.250000	348.mp3	348.webp	ふざけんな!	¡Ni hablar!	Don't you dare!	False	False		miorine	
-352	352	353	351	0:08:32.250000	0:08:34.866000	352.mp3	352.webp	勝手に死んでんじゃないわよ!	¡Ni pienses en morirte!	You can't just die on me!	False	False		miorine	
-354	354,358	356	355,357	0:08:35.367000	0:08:41.200000	354.mp3	354.webp	生存確率の高い⸺　選択を... しろ	Elige lo que te haga sobrevivir.	Choose the option with... the best odds of survival.	False	False		delling	
-361	361	360	359,362	0:08:41.200000	0:08:45.330000	361.mp3	361.webp	ノートレットなら そうする	Eso haría Noughtret.	That's what... Notrette would do.	False	False		delling	
-365	365	364	363	0:08:46.640000	0:08:50.680000	365.mp3	365.webp	なんで... お母さんが出てくるのよ	¿Por qué mencionas a mamá ahora?	Why bring up my mother now?	False	False		miorine	
-368	368	367	366	0:08:51.610000	0:08:54.550000	368.mp3	368.webp	2人で... 決めた	Lo decidimos ambos.	We decided together.	False	False		delling	
-371	371,373	370	369,372,374	0:08:54.980000	0:09:00.180000	371.mp3	371.webp	何かあれば⸺　どちらかだけ... でも...	Si pasaba algo, debía sobrevivir uno.	If anything happened... at least one of us... should...	False	False		delling	
-377	377	376	375	0:09:00.950000	0:09:03.480000	377.mp3	377.webp	言い訳なら聞きたくないわ	No quiero oír excusas.	I don't want your excuses.	False	False		miorine	
-380	380	379	378	0:09:03.910000	0:09:06.270000	380.mp3	380.webp	なんで一緒に逃げなかったのよ	¿Por qué no huyeron juntos?	Why didn't you both escape?	False	False		miorine	
-383	383	381	382,384	0:09:07.880000	0:09:12.070000	383.mp3	383.webp	卑怯者 最初から そう言えばよかったじゃない!	Cobarde. Haberlo hablado desde un principio.	Coward... You could have just told me!	False	False		miorine	
-387	387,388	386	385	0:09:15.170000	0:09:17.920000	387.mp3	387.webp	マチェイ ジャリル　三手に分かれる	Machey, Jalil, dividámonos.	Machei, Jalil... We're splitting up three ways.	False	False		piloto terr C	
-392	392	391	389	0:09:17.880000	0:09:19.090000	392.mp3	392.webp	コピー	Recibido.	Copy that!	False	False		machey/jalil	
-397	397	396	395	0:09:32.150000	0:09:33.460000	397.mp3	397.webp	行くぞ	Adelante.	Let's go.	False	False		unidad infilt	
-400	400	399	398	0:09:35.150000	0:09:37.200000	400.mp3	400.webp	ダメだ つながらない	No sirve.	It's no use. No signal...	False	False		trabajador planta A	
-402	402	403	401	0:09:37.090000	0:09:39	402.mp3	402.webp	なんなんだよ 一体	¿Qué demonios...?	What the hell is going on?	False	False		trabajador planta B	
-408	408,409	407	406	0:09:45.120000	0:09:48.610000	408.mp3	408.webp	ブリッジ　対象のトレーサーは ロストして確認できない	Puente, perdimos el rastreador.	Bridge, we've lost target's tracer and can't confirm location.	False	False		líder unidad infilt	
-412	412	411	410	0:09:48.960000	0:09:50.990000	412.mp3	412.webp	引き続き 突入を継続する	Continuamos con la infiltración.	We'll continue forcing our way in.	False	False		líder unidad infilt	
-415	415,417	414	413,416	0:09:55.920000	0:09:59.460000	415.mp3	415.webp	なんなんだよ これ　なんなんだよ!	¿Qué es esto? ¡¿Qué está pasando aquí?!	How could they... How could anyone do this?!	False	False		ojelo	
-420	420	419	418	0:09:59.800000	0:10:01.787000	420.mp3	420.webp	逃げよう ここは危ない	Huyamos. Es peligroso.	We have to run. It's dangerous here.	False	False		till	
-423	423	422	421	0:10:01.700000	0:10:03.450000	423.mp3	423.webp	逃げるって どこに!	¿Y adónde vamos?	Run where?!	False	False		chuchu	
-424	424	425	426	0:10:03.246000	0:10:05.340000	424.mp3	424.webp	スレッタとミオリネも 戻ってないぞ!	Suletta y Miorine no regresaron.	Suletta and Miorine aren't back yet.	False	False		aliya	
-429	429,432	431	430	0:10:12.130000	0:10:15.342000	429.mp3	429.webp	うわあ! みんな 早く!　うわあー! ああー!	¡Rápido!	Everyone, hurry!	False	False		till	
-434	434	435	433	0:10:15.440000	0:10:17.300000	434.mp3	434.webp	死にたくねえー!	¡No quiero morir!	I don't want to die!	False	False		nuno	
-438	438,441	437	436,439,440	0:10:17.920000	0:10:22.510000	438.mp3	438.webp	実弾... まさか⸺　アーシアン?	¿Munición activa? ¿Son Earthians?	Physical ammunition? Don't tell me... they're Earthians?	False	False		nika	
-444	444	443	442	0:10:22.510000	0:10:26.100000	444.mp3	444.webp	逃走手段は すべて破壊する	Eliminaré todas sus vías de huida.	Any means of escape must be destroyed.	False	False		norea	
-448	448	447	446	0:10:28.950000	0:10:32.440000	448.mp3	448.webp	私たちのコールサイン?	¿Esa es nuestra señal?	Is that our call sign?	False	False		norea	
-451	451	450	449	0:10:33.320000	0:10:35.290000	451.mp3	451.webp	プリンスの仲間?	¿Una aliada del príncipe?	An ally of the Prince?	False	False		norea	
-455	455	456	454	0:10:48.720000	0:10:50.010000	455.mp3	455.webp	ニカ? あ...	¿Nika?	Nika...	False	False		martin	
-459	459	458	457	0:10:55.230000	0:10:58.220000	459.mp3	459.webp	今のは 何をしたんだ?	¿Qué hiciste?	What did you... just do?	False	False		martin	
-462	462	463	461	0:11:02.360000	0:11:05.790000	462.mp3	462.webp	CEO 保安宙域に 船姿を1隻確認	Detectamos una nave en esta región.	Sir, we've detected a ship in the security airspace.	False	False		tripulación jeturk A	
-466	466	465	464	0:11:05.790000	0:11:08.490000	466.mp3	466.webp	襲撃直前に 警告を受けていたやつです	Son los que recibieron el aviso.	It's the one we sent a warning to just before the attack.	False	False		tripulación jeturk A	
-468	468	467	469	0:11:08.840000	0:11:12.040000	468.mp3	468.webp	さっさと巡回艦隊を こっちに回せ!	¡Envíennos una flota de una vez!	Send the patrol fleet this way, immediately!	False	False		vim	
-472	472	471	470	0:11:12.040000	0:11:13.240000	472.mp3	472.webp	ご武運を	Buena suerte.	Good luck, sir.	False	False		tripulación jeturk A	
-474	474	475	473	0:11:13.160000	0:11:15.520000	474.mp3	474.webp	ディランザ・ソル 出るぞ!	Dilanza Sol, en marcha.	Dilanza Sol... moving out!	False	False		vim	
-477	477,480	478	476,479	0:11:19.280000	0:11:26.080000	477.mp3	477.webp	俺はライバルの頭を 直接ぶったたくことで⸺　勝ち上がってきた男だ	Llegué hasta aquí partiendo yo mismo los cráneos de mis rivales.	Don't forget that I worked my way up the ladder... by personally claiming my rivals' heads!	False	False		vim	
-482	482,484		483	0:11:26.872000	0:11:30.709000	482.mp3	482.webp	右舷 ポイントF13に⸺　敵モビルスーツ 4機接近		Four enemy mobile suits incoming at starboard point F13.		False			
-486	486,489	487	485,488	0:11:30.660000	0:11:33.086000	486.mp3	486.webp	まだいたか　回避	¿Hay más? Esquívenlos.	They still have more? Evade!	False	False		naji	
-492	492	491	490	0:11:35.420000	0:11:39.800000	492.mp3	492.webp	俺を敵に回したこと 後悔させてやる!	¡Se arrepentirán de haberse enfrentado a mí!	I'll make you regret ever crossing me!	False	False		vim	
-495	495,498	494	496,497	0:11:45.890000	0:11:48.210000	495.mp3	495.webp	あ... 扉が...　早く外に...	La puerta... -Salgamos.	Hey, the door! Let's get out of here!	False	False		transporte A/B	
-499	499	501	500	0:11:48.185000	0:11:49.480000	499.mp3	499.webp	待て ダメだ	Espera. No.	Wait, no!	False	False		capitán	
-504	504	502	503	0:11:50.420000	0:11:53.410000	504.mp3	504.webp	聞いたか プラントにガンダムがいるって話	¿Oíste que hay Gundams en la planta?	Did you hear? There's a Gundam in that plant.	False	False		terrorista C	
-506	506,508	507	505	0:11:53.410000	0:11:56.450000	506.mp3	506.webp	アスティカシアのだろ?　ソフィが報告してた	De Asticassia, ¿no? El que mencionó Sophie.	From Asticassia, right? Sophie reported it.	False	False		terrorista D	
-511	511	510	509	0:11:57.940000	0:11:59.700000	511.mp3	511.webp	ガンダムって なんだ?	¿Qué es un Gundam?	What the heck is a Gundam?	False	False		transporte A	
-514	514	513	512	0:11:59.690000	0:12:01.110000	514.mp3	514.webp	さあ...	Ni idea.	Beats me...	False	False		transporte B	
-518	518	517	516,519	0:12:01.990000	0:12:04.530000	518.mp3	518.webp	ボブ! おい ボブ!	¿Bob? -¡Bob!	Bob! Hey, Bob!	False	False		transporte A/capitán	
-522	522,524	521	520,523,525	0:12:05.240000	0:12:10.500000	522.mp3	522.webp	スレッタ・マーキュリー　いるのか? このプラントに	¿Suletta Mercury está en esta planta?	Suletta Mercury... Are you here? In this plant?	False	False		guel	
-528	528,530	527	526,529	0:12:13.250000	0:12:16.800000	528.mp3	528.webp	なに!　デスルターだと!?	¿Qué? ¿Desultor?	What?! Desultors?!	False	False		vim	
-532	532	533	531	0:12:16.790000	0:12:20.550000	532.mp3	532.webp	我が社のモビルスーツを使って よくも!	¿Cómo osan usar nuestros Mobile Suits?	How dare you use my company's mobile suits like this!	False	False		vim	
-535	535	536	534	0:12:21.260000	0:12:23.345000	535.mp3	535.webp	換装を急いでくれ あ...	Equípalo rápido.	Hurry up with the refitting!	False	False		philip	
-539	539	537	538,540	0:12:24.080000	0:12:26.720000	539.mp3	539.webp	おい お前 何してんだ!	¿Qué estás haciendo?	Hey, you! What are you doing?!	False	False		philip	
-543	543	544	542	0:12:32.730000	0:12:35.607000	543.mp3	543.webp	早く プラント・クエタに あ...	He de llegar a la planta.	Got to get to Plant Quetta!	False	False		guel	
-547	547,549	546	545,548	0:12:39.400000	0:12:42.940000	547.mp3	547.webp	待ってくれ!　違う 敵じゃない!	¡Espera! ¡No soy tu enemigo!	Wait! Stop! I'm not the enemy!	False	False		guel	
-552	552	551	550	0:12:42.940000	0:12:45.160000	552.mp3	552.webp	俺は グエル・ジェタークだ! ぐうっ...	¡Soy Guel Jeturk!	It's me, Guel Jeturk!	False	False		guel	
-555	555	557	556	0:13:05.136000	0:13:08.140000	555.mp3	555.webp	し... 死ねない	No puedo morir.	I can't die here.	False	False		guel	
-560	560	559	558	0:13:12.890000	0:13:14.813000	560.mp3	560.webp	死にたくない!	¡No quiero morir!	I don't want to die!	False	False		guel	
-563	563	562	561	0:13:26.950000	0:13:28.160000	563.mp3	563.webp	俺は あいつに...	No hice...	Not when I...	False	False		guel	
-565	565	566	564	0:13:29.990000	0:13:33.748000	565.mp3	565.webp	スレッタ・マーキュリーに 進めていない!	¡No hice avances con Suletta Mercury!	I haven't moved forward after Suletta Mercury!	False	False		guel	
-567	567,571	568	569,570	0:13:41.298000	0:13:46.887000	567.mp3	567.webp	ハアハア... やった　やった は...	Lo logré. Lo logré.	I did it. I did it!	False	False		guel	
-574	574,576	573	572,575	0:13:47.190000	0:13:51.641000	574.mp3	574.webp	お... 俺だ!　ヴィム・ジェタークの息子 グエル・ジェタークだ!	¡Soy yo, Guel Jeturk, el hijo de Vim Jeturk!	It's me! Vim Jeturk's son! Guel Jeturk!	False	False		guel	
-579	579	577	578	0:13:51.980000	0:13:54.820000	579.mp3	579.webp	敵じゃな... グエル... か?	No soy tu enemi... -Guel...	I'm on your side-	False	False		vim/guel	
-584	584	583	582	0:13:57.330000	0:14:00.500000	584.mp3	584.webp	無事... だったか	Estás bien.	So you... were okay...	False	False		vim	
-587	587	585	586	0:14:01.260000	0:14:04.154000	587.mp3	587.webp	捜したん... だぞ	Te estuve buscando.	I've been... searching...	False	False		vim	
-590	590,594	589,592	588,591,593	0:14:06.210000	0:14:10.780000	590.mp3	590.webp	父さん... 父さん!　脱出しろ 父さん!	¿Papá? ¡Papá! ¡Sal de ahí!	Dad... Dad! Eject, Dad!	False	False		guel	
-597	597	596	595	0:14:10.780000	0:14:12.040000	597.mp3	597.webp	俺が 今 そっちに...	Ahora vo...	I'll be right there!	False	False		guel	
-605	605,607	604	603,606	0:14:38.900000	0:14:42.192000	605.mp3	605.webp	78ハンガー　ここだ	Hangar 78. Es aquí.	Hangar 78... This is it.	False	False		suletta	
-610	610,612	609	608,611	0:14:42.870000	0:14:46.150000	610.mp3	610.webp	ブリッジ　ガンダムらしき モビルスーツを発見	Puente, encontramos un posible Gundam.	Bridge... We've discovered what looks like a Gundam.	False	False		unidad infilt A	
-615	615	614	613	0:14:46.500000	0:14:49.110000	615.mp3	615.webp	Cブロック 78番ハンガー	Hangar 78 del bloque C.	C Block, Hangar 78...	False	False		unidad infilt A	
-617	617		616	0:14:49.110000	0:14:51.370000	617.mp3	617.webp	エアリアルだ 私 行く!		That's the Aerial! I'm going!		False			
-621	621	620	619	0:14:51.370000	0:14:53.870000	621.mp3	621.webp	ソフィ あんたまた...	¿Otra vez, Sophie?	Sophie! This again?	False	False		norea	
-624	624	623	622	0:14:53.790000	0:14:56.122000	624.mp3	624.webp	その機体 確保できるか?	¿Pueden hacerse con la unidad?	That machine... Can you secure it?	False	False		naji	
-626	626,628	627	625	0:14:56.120000	0:14:58.708000	626.mp3	626.webp	了解 ただちに確保に...　ん?	Recibido. De inmediato la...	Roger. We'll go ahead and-	False	False		unidad infilt A	
-636	636	635	634	0:15:24.280000	0:15:25.720000	636.mp3	636.webp	スレッタ は...	Suletta.	Suletta?	False	False		prospera	
-640	640	639	638	0:15:29.680000	0:15:31.040000	640.mp3	640.webp	お母さん...	Mamá.	Mom?	False	False		suletta	
-642	642	643	641	0:15:31.040000	0:15:32.620000	642.mp3	642.webp	大丈夫?	¿Estás bien?	Are you okay?	False	False		prospera	
-646	646	645	644	0:15:32.620000	0:15:35.745000	646.mp3	646.webp	ごめんね 怖い思いさせちゃって	Lo siento. Pasaste mucho miedo, ¿eh?	Sorry about that. You must have been scared.	False	False		prospera	
-648	648	649	647	0:15:35.740000	0:15:37.830000	648.mp3	648.webp	し... 死に... し...	Está...	Th-They... They're-	False	False		suletta	
-651	651,654	652	650,653	0:15:37.740000	0:15:40.583000	651.mp3	651.webp	死んでるわ　大丈夫	Está muerto. Tranquila.	They're dead. Nothing to worry about.	False	False		prospera	
-657	657	656	655	0:15:40.550000	0:15:42.210000	657.mp3	657.webp	そうじゃ... なくて	No es eso.	That's not what I...	False	False		suletta	
-660	660	659	658	0:15:43.610000	0:15:44.963000	660.mp3	660.webp	殺したんだよ?	Lo mataste.	You killed them!	False	False		suletta	
-663	663	662	661,664	0:15:45.480000	0:15:49.170000	663.mp3	663.webp	そうしなければ あなたが殺されてたでしょ?	Si no, te habría matado él a ti. -Pero...	If I hadn't... They'd have killed you.	False	False		prospera	
-665	665,669	668	666,667	0:15:48.717000	0:15:52.430000	665.mp3	665.webp	でも! 逃げたら1つ　進めば2つ	Si huyes ganas una cosa. Si avanzas, ganas dos.	But that's... If you run, gain one. Move forward, gain two.	False	False		prospera	
-671	671		670	0:15:53.640000	0:15:54.750000	671.mp3	671.webp	え?		Huh?		False			
-674	674	673	672	0:15:54.750000	0:15:57.420000	674.mp3	674.webp	扉の向こうに こもっていれば⸺	Si hubiera permanecido encerrada,	If I'd hidden behind the door,	False	False		prospera	
-677	677	676	675	0:15:57.420000	0:16:00.630000	677.mp3	677.webp	お母さんは この人たちを殺さずに済んだ	no habría tenido que matarlos.	I could have gained by not killing them.	False	False		prospera	
-680	680	679	678	0:16:01.120000	0:16:05.020000	680.mp3	680.webp	でも 戦ったことで スレッタを死なせずに済んだ	Pero al luchar evité que murieras tú.	But by fighting, I've kept you alive.	False	False		prospera	
-683	683	682	681	0:16:05.560000	0:16:07.480000	683.mp3	683.webp	そして もう一つ⸺	Y si además...	And one other thing...	False	False		prospera	
-686	686	685	684	0:16:08.080000	0:16:11.990000	686.mp3	686.webp	スレッタが エアリアルと一緒に 戦ってくれたら...	tú luchas junto al Aerial...	If you fight together with Aerial, Suletta...	False	False		prospera	
-690	690	689	688,691	0:16:14.210000	0:16:16.770000	690.mp3	690.webp	無理だよ だって...	No puedo. Yo...	I can't. It would mean...	False	False		suletta	
-693	693,696	694	692,695	0:16:16.770000	0:16:20.582000	693.mp3	693.webp	そうね　今 起こってるのは決闘じゃない	Lo sé. Esto no es un duelo.	That's right. What's happening now is not a duel.	False	False		prospera	
-699	699,700	698	697	0:16:21.060000	0:16:24.670000	699.mp3	699.webp	怖いよね　傷つきたくないよね	Da miedo. No quieres lastimar a nadie.	It's scary, right? You don't want to get hurt, do you?	False	False		prospera	
-703	703	702	701,704	0:16:25.170000	0:16:28.330000	703.mp3	703.webp	でも あなたとエアリアルなら...	Pero el Aerial y tú juntos...	But... If you and Aerial work together,	False	False		prospera	
-706	706,711	707	705,708,709,710	0:16:28.640000	0:16:35.250000	706.mp3	706.webp	お母さんも スレッタも ミオリネさんも⸺　みんな救われる	A Miorine, a ti, a mí... Pueden salvarnos a todos.	then Mom... and Suletta... and Ms. Miorine... Everyone can be saved.	False	False		prospera	
-714	714	713	712	0:16:35.940000	0:16:37.140000	714.mp3	714.webp	救う...	¿Salvarnos?	Saved?	False	False		suletta	
-717	717,718	716	715	0:16:37.440000	0:16:41.470000	717.mp3	717.webp	今 みんなを救えるのは⸺　あなたたちだけよ	Sois los únicos que pueden.	Only the two of you can save them now.	False	False		prospera	
-721	721	720	719	0:16:42.280000	0:16:45.810000	721.mp3	721.webp	スレッタ あなたは進める子	Suletta, tú eres de las que avanzan.	Suletta, I know you're ready to move forward.	False	False		prospera	
-724	724	723	722	0:16:46.740000	0:16:47.970000	724.mp3	724.webp	でしょ?	¿Verdad?	Right?	False	False		prospera	
-727	727	726	728	0:16:54.900000	0:16:57.570000	727.mp3	727.webp	うん 進める	Sí. Puedo avanzar.	I can move forward.	False	False		suletta	
-730	730	731	729	0:16:57.570000	0:16:59.700000	730.mp3	730.webp	進んで... きた	Eso hice siempre.	I have moved forward.	False	False		suletta	
-734	734	733	732	0:17:02.800000	0:17:05.420000	734.mp3	734.webp	逃げたら 1つ	Si huyes, ganas una cosa.	If you run, gain one.	False	False		prospera	
-739	739	738	736	0:17:07.680000	0:17:09.830000	739.mp3	739.webp	進めば2つ	Si avanzas, ganas dos.	Move forward, gain two!	False	False		suletta/prospera	
-743	743		742	0:17:14.520000	0:17:15.970000	743.mp3	743.webp	やっほー		Hi there!		False			
-746	746		744,747	0:17:15.970000	0:17:19.224000	746.mp3	746.webp	来たよ スレッタ・マーキュリー		I've arrived... Suletta Mercury!		False			
-750	750		748	0:17:20.400000	0:17:22.570000	750.mp3	750.webp	エアリアル いるんでしょ?		The Aerial is here too, right?		False			
-752	752		751	0:17:22.570000	0:17:24.230000	752.mp3	752.webp	出てきてよ		Come on out!		False			
-754	754		753	0:17:24.230000	0:17:26.850000	754.mp3	754.webp	それとも かくれんぼしてるのかな		Or are we playing hide and seek?		False			
-758	758		756,759	0:17:28.350000	0:17:31.440000	758.mp3	758.webp	エアリアル 見ーつけた		The Aerial... Found you!		False			
-763	763		761	0:17:41.210000	0:17:42.650000	763.mp3	763.webp	ガンビット?		GUND-Bits?		False			
-766	766	765	764	0:17:46.090000	0:17:48.460000	766.mp3	766.webp	お母さんから 教わらなかったんですか?	¿Tu madre no te enseñó	Didn't your mother ever teach you?	False	False		suletta	
-769	769	768	767,770	0:17:51.230000	0:17:53.960000	769.mp3	769.webp	そんなことしちゃ... ダメです!	que eso no se hace?	You can't... behave like that!	False	False		suletta	
-774	774		772	0:18:16.030000	0:18:18.900000	774.mp3	774.webp	やっぱり 君 エアリアル!		I knew it. You're the Aerial!		False			
-777	777		775	0:18:22.170000	0:18:24.080000	777.mp3	777.webp	なんか怖い顔		That's a scary face you've got.		False			
-780	780		778	0:18:24.570000	0:18:27.625000	780.mp3	780.webp	前のほうが... 好きだったな!		If you ask me... I liked you better before!		False			
-783	783	782	781	0:18:29.040000	0:18:30.580000	783.mp3	783.webp	この子もガンダム!?	¿También es un Gundam?	Is she a Gundam too?	False	False		suletta	
-786	786		784,787	0:18:33.500000	0:18:36.870000	786.mp3	786.webp	あー またガンビット ズルいー		Hey, GUND-Bits again? No fair!		False			
-790	790,792	788	789,791	0:18:40.010000	0:18:45.894000	790.mp3	790.webp	地球寮 船 無事?　ああ よかった あ...	¿Los de la residencia? ¿Una nave? ¿Están bien? Menos mal.	Earth House... our ship... they're okay? Thank goodness.	False	False		suletta	
-795	795		793	0:18:53.870000	0:18:55.960000	795.mp3	795.webp	ノレア 邪魔しないで!		Norea, don't interfere!		False			
-796	796	798	797	0:18:55.862000	0:18:58.190000	796.mp3	796.webp	あんたが いつまでも 遊んでるからでしょ	Es que estás jugando demasiado.	I have to unless you stop fooling around!	False	False		norea	
-801	801	800	799	0:19:00.750000	0:19:03.320000	801.mp3	801.webp	いくよ みんな!	Vamos, chicos.	Now's our chance. Everyone!	False	False		suletta	
-802	802	804	803	0:19:10.293000	0:19:11.920000	802.mp3	802.webp	オルコット 後退して!	Retrocede, Olcott.	Olcott! Back off!	False	False		norea	
-807	807	806,809	805,808	0:19:22.100000	0:19:26.390000	807.mp3	807.webp	実戦仕様じゃない? それで あの威力か...	¿No es para luchar? ¿Y tiene esa potencia?	It's not meant for combat... but it's still that powerful?	False	False		olcott	
-813	813		812	0:19:30.320000	0:19:31.981000	813.mp3	813.webp	スッゴーい		Incredible!		False			
-816	816		814	0:19:32.530000	0:19:35.140000	816.mp3	816.webp	ハート 撃ち抜かれちゃった		You've pierced right through my heart!		False			
-819	819	818	817	0:19:41.830000	0:19:43.410000	819.mp3	819.webp	やれやれ	Cielos...	Oh my.	False	False		kenanji	
-822	822	821	820	0:19:44.210000	0:19:48.350000	822.mp3	822.webp	悪い予感だけは 当たるよな 俺	¿Por qué mis malos presentimientos siempre aciertan?	Only my bad feelings hit the mark.	False	False		kenanji	
-825	825	824	823	0:19:50.300000	0:19:51.920000	825.mp3	825.webp	タイムリミットだな	Se acabó el tiempo.	We've reached our time limit.	False	False		naji	
-828	828	826	827	0:19:52.670000	0:19:55.046000	828.mp3	828.webp	全員 帰艦しろ 撤退する	Regresen a la nave. Nos retiramos.	Everyone back to the ship. We're leaving.	False	False		naji	
-831	831		829,832	0:19:55.710000	0:19:59.280000	831.mp3	831.webp	えー! まだ 暴れたいのに!		Huh?! I'm not done having fun!		False			
-835	835	834	833	0:19:59.280000	0:20:02.300000	835.mp3	835.webp	本気の魔女狩り部隊と ドンパチやる気?	¿Te enfrentarás a cazadores de brujas?	Do you want to mess with the gung-ho Witch Hunters?	False	False		norea	
-838	838		836	0:20:02.600000	0:20:04.931000	838.mp3	838.webp	ノレアは命が惜しいんだ?		Is your life that precious, Norea?		False			
-840	840	841	839	0:20:05.230000	0:20:06.930000	840.mp3	840.webp	そんなこと言ってない	No dije eso.	That's not what I said.	False	False		norea	
-844	844		842	0:20:07.230000	0:20:08.680000	844.mp3	844.webp	まあ いっか		Whatever.		False			
-847	847,848		846	0:20:09.530000	0:20:13.430000	847.mp3	847.webp	また会いにくるね　スレッタおねえちゃん		I'll come visit you again... Big Sister Suletta.		False			
-851	851	850	849	0:20:16.320000	0:20:18.820000	851.mp3	851.webp	フォルドの夜明けから メッセージが来た	Tenemos un mensaje de Alba de Fold.	We've received a message from the Dawn of Fold.	False	False		sabina	
-854	854	853	852	0:20:19.790000	0:20:21.823000	854.mp3	854.webp	作戦は失敗したと	La operación fracasó.	The operation failed.	False	False		sabina	
-857	857,859	856	855,858	0:20:24.570000	0:20:29.620000	857.mp3	857.webp	アーシアンのガンダムねえ　関わりたくないな	Un Gundam Earthian, ¿eh? No quiero relacionarme con eso.	Earthian Gundams, huh? We'd better not get involved.	False	False		elan	
-862	862	861	860	0:20:32.590000	0:20:34.030000	862.mp3	862.webp	終わった?	¿Se terminó?	It's over....?	False	False		suletta	
-865	865	864	863	0:20:34.930000	0:20:37.090000	865.mp3	865.webp	うん そうだよね	Sí. Es verdad.	Right. It must be.	False	False		suletta	
-868	868	867	866	0:20:42.350000	0:20:43.420000	868.mp3	868.webp	見つけた	Te encontré.	Found her!	False	False		suletta	
-871	871	870	869,872	0:20:44.100000	0:20:47.100000	871.mp3	871.webp	今行くよ ミオリネさん!	Enseguida voy, Miorine.	I'm on my way... Ms. Miorine!	False	False		suletta	
-878	878	877	876	0:22:23.190000	0:22:25.196000	878.mp3	878.webp	絶対 助けてやる	Te salvaré.	I'll save you, no matter what.	False	False		miorine	
-881	881	880	879	0:22:26.040000	0:22:29.660000	881.mp3	881.webp	病院のベッドで一晩中 罵倒してやるんだから	Te insultaré toda la noche en la cama del hospital.	So I can curse you all night while you're in a hospital bed!	False	False		miorine	
-886	886	885	884	0:22:32.290000	0:22:35.430000	886.mp3	886.webp	見つけた デリング・レンブラン	Te encontré, Delling Rembran.	Found you, Delling Rembran.	False	False		terrorista E	
-889	889,891	888,890	887	0:22:35.430000	0:22:40.960000	889.mp3	889.webp	地球に帰れなくても⸺　お前とは ここで刺し違える!	Aunque no regrese a la Tierra, podré llevarte conmigo a la tumba.	Even if I can't get back to Earth, I'm taking you down with me!	False	False		terrorista E	
-897	897,899	896	895,898	0:22:52.800000	0:22:55.351000	897.mp3	897.webp	ミオリネさん!　クソ! うう...	¡Miorine! -¡Maldición!	Ms. Miorine! Damn it!	False	False		suletta/terrorista E	
-902	902	901	900	0:22:55.940000	0:22:57.680000	902.mp3	902.webp	やめなさい!	¡Quieto!	Oh no you don't!	False	False		suletta	
-906	906	907	908	0:23:18.499000	0:23:21.170000	906.mp3	906.webp	エヘヘ 締まらないなー	Qué desastre.	I'm such a klutz.	False	False		suletta	
-911	911	910	909	0:23:24.970000	0:23:27.425000	911.mp3	911.webp	助けに来たよ ミオリネさん	Vine a salvarte, Miorine.	I came to rescue you, Ms. Miorine!	False	False		suletta	
-913	913,916	912	914,915	0:23:32.010000	0:23:35.140000	913.mp3	913.webp	なんで...　笑ってるの?	¿Cómo puedes sonreír?	How... How can you smile like that?	False	False		miorine	
-917	917		918	0:23:35.057000	0:23:35.930000	917.mp3	917.webp	え?		Huh?		False			
+767373892c	2	0	1	0:00:03.309000	0:00:04.361000	767373892c.mp3	767373892c.webp	ミオリネさん!?	¿Miorine?	Ms. Miorine!	False	False		suletta	
+9032e3897b	4	5	3	0:00:07.540000	0:00:08.870000	9032e3897b.mp3	9032e3897b.webp	スレッタ...	¿Suletta?	Suletta...?	False	False		miorine	
+fe50160908	8	7	6	0:00:10.750000	0:00:13.741000	fe50160908.mp3	fe50160908.webp	ミオリネさん ミオリネさん! あ...	¡Miorine!	Ms. Miorine? Ms. Miorine!	False	False		suletta	
+474f0e9871	11		9	0:00:14.510000	0:00:16.452000	474f0e9871.mp3	474f0e9871.webp	あれあれあれあれー?		What in the world? What the heck is that?!	False	False			
+78f7b85355	14		12	0:00:16.450000	0:00:18.830000	78f7b85355.mp3	78f7b85355.webp	スレッタ・マーキュリー?		Suletta Mercury?	False	False			
+582e4452cc	16		15	0:00:18.830000	0:00:21.580000	582e4452cc.mp3	582e4452cc.webp	もう会えちゃった スゴくない?		I get to meet you already! How cool is that?	False	False			
+932935e7c6	20		18	0:00:22.300000	0:00:24.460000	932935e7c6.mp3	932935e7c6.webp	私は ソフィ・プロネ		I'm Sophie Pulone,	False	False			
+4bde48f193	23		21	0:00:25.020000	0:00:26.712000	4bde48f193.mp3	4bde48f193.webp	地球の魔女よ		a witch from Earth.	False	False			
+6e12da2442	25	26	24	0:00:27.480000	0:00:29.460000	6e12da2442.mp3	6e12da2442.webp	モビルスーツ...	¿Un Mobile Suit?	That mobile suit...	False	False		suletta	
+7d16230b04	29		27	0:00:29.770000	0:00:32.170000	7d16230b04.mp3	7d16230b04.webp	ねえ 水星の魔女さん		Tell me, Ms. Witch from Mercury...	False	False			
+cdd3cfd302	32		30	0:00:32.170000	0:00:34.220000	cdd3cfd302.mp3	cdd3cfd302.webp	エアリアルは どこ?		Where's the Aerial?	False	False			
+5b63a2595a	34		33	0:00:34.190000	0:00:37.030000	5b63a2595a.mp3	5b63a2595a.webp	あるんでしょ? 見せてよ		It must be here. Show it to me.	False	False			
+f465968fa0	38		36	0:00:37.030000	0:00:38.820000	f465968fa0.mp3	f465968fa0.webp	あっ そっか		Oh, I see.	False	False			
+c89d799dce	40		39,41	0:00:38.820000	0:00:41.850000	c89d799dce.mp3	c89d799dce.webp	聞こえてないのか じゃあ...		You can't hear me. In that case...	False	False			
+aeee0dcc8a	47		45	0:00:47.520000	0:00:48.776000	aeee0dcc8a.mp3	aeee0dcc8a.webp	ほらほら!		Hurry up, now!	False	False			
+fccce1fdb6	49		48	0:00:48.760000	0:00:51.190000	fccce1fdb6.mp3	fccce1fdb6.webp	早く エアリアルに乗らないと⸺		You'd better get in the Aerial quick!	False	False			
+7e3f2612ee	51		50	0:00:51.190000	0:00:53.940000	7e3f2612ee.mp3	7e3f2612ee.webp	死んじゃうよ!		Or else you'll die!	False	False			
+fd0508c343	55	56	54	0:00:59.080000	0:01:00.620000	fd0508c343.mp3	fd0508c343.webp	スレッタ!	¡Suletta!	Suletta!	False	False		miorine	
+2e95fd547d	58,61	59	57,60	0:01:01.080000	0:01:03.450000	2e95fd547d.mp3	2e95fd547d.webp	代表!　近いわね	Delegada. -Está cerca.	Madam President? They're close.	False	False		godoy/prospera	
+1a7168a035	64,66	63	62,65	0:01:03.770000	0:01:07.510000	1a7168a035.mp3	1a7168a035.webp	先輩!　エアリアルで 戦闘するつもりですか?	¿Pretende luchar con el Aerial?	Ma'am... are you really sending Aerial into battle?	False	False		belmeria	
+b0431c9789	69	68	67	0:01:07.510000	0:01:10.210000	b0431c9789.mp3	b0431c9789.webp	そんなことよりも スレッタたちの救援に...	Deberíamos ayudar a Suletta y...	Isn't rescuing Suletta and the others more-	False	False		belmeria	
+d5b5b13e1f	70	71	72	0:01:10.172000	0:01:11.750000	d5b5b13e1f.mp3	d5b5b13e1f.webp	あの子は来るわ	Ella vendrá.	The girl will come to us.	False	False		prospera	
+4abbad73af	75,77	74	73,76	0:01:14.270000	0:01:18.260000	4abbad73af.mp3	4abbad73af.webp	エアリアルが⸺　ここにいるもの	Porque el Aerial está aquí.	After all... Aerial is here.	False	False		prospera	
+a6ade331c9	83,86	81,87	82,85	0:02:50.700000	0:02:55.640000	a6ade331c9.mp3	a6ade331c9.webp	緊急事態警報 B1...　これ 訓練じゃないですよね?	Emergencia. Alerta B1. No es un simulacro, ¿no?	Emergency warning... This isn't a drill, is it?	False	False		anuncio,lilique	
+0131c75a15	89	90	88	0:02:55.610000	0:02:58.050000	0131c75a15.mp3	0131c75a15.webp	当然だろ B1だよ!	Obvio que no. ¡Es una B1!	Of course not! It's a B-1 warning!	False	False		martin	
+ea1aafe309	93	92	91,94	0:02:58.050000	0:03:00.580000	ea1aafe309.mp3	ea1aafe309.webp	てことはよ つまり...	Eso significa que...	Then that means... This is...	False	False		ojelo	
+42aa44e548	97	96	95	0:03:00.960000	0:03:02.490000	42aa44e548.mp3	42aa44e548.webp	戦争だ	Es la guerra.	It's war.	False	False		aliya	
+c08afba0f2	101		100	0:03:12.850000	0:03:14.790000	c08afba0f2.mp3	c08afba0f2.webp	推進部の損傷を確認しろ!		Check on damage to the propulsion units!	False	False			
+c9e8bd4f59	104	103	102	0:03:15.150000	0:03:16.470000	c9e8bd4f59.mp3	c9e8bd4f59.webp	ディランザを出せ!	Saquen el Dilanza.	Send out the Dilanzas!	False	False		vim	
+410bede512	107	106	105	0:03:16.460000	0:03:18.880000	410bede512.mp3	410bede512.webp	ジェタークCEO ご無事で	Está a salvo, presidente Jeturk.	Mr. Jeturk! We're glad you're safe.	False	False		tripulación jeturk A	
+7159698ede	109	110	108	0:03:18.880000	0:03:20.780000	7159698ede.mp3	7159698ede.webp	俺が乗る 準備しろ!	Lo pilotearé yo. Prepárenlo.	I'll pilot one! Prepare it now.	False	False		vim	
+82e985f642	112,114	113	111	0:03:20.760000	0:03:23.055000	82e985f642.mp3	82e985f642.webp	は? あ... しかし...　ええい!	¿Qué? Pero...	Right. But sir, that's-	False	False		tripulación jeturk A	
+cc8a171fa6	117	116	115	0:03:23.050000	0:03:27.400000	cc8a171fa6.mp3	cc8a171fa6.webp	グラスレーの若造に これ以上 なめられてたまるか!	No permitiré que ese mocoso de Grassley se burle de mí.	I won't let that Grassley brat make a monkey of me anymore!	False	False		vim	
+201e9a1458	120,121	119	118	0:03:31.490000	0:03:34.820000	201e9a1458.mp3	201e9a1458.webp	総裁は51番シェルターに⸺　向かう手筈になっている	El presidente debería ir hacia el refugio 51.	The President is supposed to evacuate to Shelter 51.	False	False		rajan	
+9dedd4bccb	123	124	122	0:03:34.820000	0:03:36.260000	9dedd4bccb.mp3	9dedd4bccb.webp	必ず確保しろ	Atrápenlo.	You must protect him.	False	False		rajan	
+5b5b035de6	126	127	125	0:03:36.230000	0:03:38.830000	5b5b035de6.mp3	5b5b035de6.webp	ラジャン司令 いつでも行けます	Estamos listos, comandante Rajan.	Commander Rajan. We're ready when you are.	False	False		líder dominicus	
+5b67004a09	129	130	128,131	0:03:38.820000	0:03:41.110000	5b67004a09.mp3	5b67004a09.webp	総裁の救出に向かう 急ぐぞ	Salvaremos al presidente. Rápido.	To the President's rescue. Hurry.	False	False		rajan	
+fad0a6ebcb	134	133	132	0:03:50.260000	0:03:52.400000	fad0a6ebcb.mp3	fad0a6ebcb.webp	ノレア・デュノク 合流します	Norea Du Noc. Me uno.	Norea Du Noc, reporting for rendezvous.	False	False		norea	
+695e2d8e56	137	136	135	0:03:52.390000	0:03:53.920000	695e2d8e56.mp3	695e2d8e56.webp	時間どおりだな	Justo a tiempo.	Right on time.	False	False		olcott	
+997a85be0a	138	140	139	0:03:53.585000	0:03:54.970000	997a85be0a.mp3	997a85be0a.webp	オルコット	Olcott.	Olcott!	False	False		naji	
+642126fb49	143	142	141	0:03:54.960000	0:03:58.430000	642126fb49.mp3	642126fb49.webp	Dブロックからモビルスーツの 識別コードが4機	Hay cuatro códigos de Mobile Suit en el bloque D.	We've detected four mobile suit ID codes in D Block.	False	False		naji	
+fd62a3498d	146	145	144	0:03:58.420000	0:03:59.720000	fd62a3498d.mp3	fd62a3498d.webp	ドミニコスだ	Son Dominicus.	It's Dominicus.	False	False		naji	
+11097131f8	148	149	147,150	0:03:59.710000	0:04:02.550000	11097131f8.mp3	11097131f8.webp	ブリッジ 確認した ソフィ	Entendido, puente. Sophie.	Roger, Bridge. Sophie!	False	False		olcott	
+14b73397be	151		152	0:04:02.511000	0:04:04.346000	14b73397be.mp3	14b73397be.webp	スレッタ・マーキュリー あ?		Suletta Mercury!	False	False			
+fdf3c6371f	156		155	0:04:04.340000	0:04:06.265000	fdf3c6371f.mp3	fdf3c6371f.webp	会えたよ 動画の人!		The girl from the video! I met her!	False	False			
+f303de5707	159		158	0:04:06.240000	0:04:07.891000	f303de5707.mp3	f303de5707.webp	このプラントにいた!		She's here in this plant!	False	False			
+6b70765fe0	163		161	0:04:07.890000	0:04:09.852000	6b70765fe0.mp3	6b70765fe0.webp	アスティカシアの...		The Asticassia girl?	False	False			
+3a5e9abe30	166	167	165,168	0:04:09.770000	0:04:12.280000	3a5e9abe30.mp3	3a5e9abe30.webp	ソフィ 魔女狩り部隊が来る	Vienen cazadores de brujas.	Sophie! The Witch Hunters are coming.	False	False		olcott	
+951c77fa5f	170	171	169	0:04:12.810000	0:04:14.780000	951c77fa5f.mp3	951c77fa5f.webp	作戦どおり 足止めに回れ	Céntrate en frenarlos.	As planned, you keep them occupied!	False	False		olcott	
+5c8bd0e1d4	173		172	0:04:14.600000	0:04:15.691000	5c8bd0e1d4.mp3	5c8bd0e1d4.webp	えー!		What?!	False	False			
+2c4d398148	176		174	0:04:15.690000	0:04:17.900000	2c4d398148.mp3	2c4d398148.webp	みんなで会いに行かないの?		Aren't we all going together?	False	False			
+0e6c6750b9	178,182	179,181	177,180	0:04:17.900000	0:04:22.490000	0e6c6750b9.mp3	0e6c6750b9.webp	1人じゃ不安? ん...　加勢が必要なら早めに言って	¿Te preocupa ir sola? Si necesitas refuerzos, pídelos pronto.	Scared to go alone? If you need any help, don't hesitate to ask.	False	False		norea	
+8b8491dd31	185		183	0:04:22.490000	0:04:23.950000	8b8491dd31.mp3	8b8491dd31.webp	冗談!		You're joking!	False	False			
+d05f09527c	188	187	186	0:04:27.470000	0:04:30.670000	d05f09527c.mp3	d05f09527c.webp	オルコット プラント側面から守備隊が接近	Olcott, se acerca una guarnición de la planta.	Olcott! A plant garrison force is approaching.	False	False		bessie	
+a37e63859f	190	191	189	0:04:30.660000	0:04:32.120000	a37e63859f.mp3	a37e63859f.webp	数は8	Son ocho.	There's eight of them.	False	False		bessie	
+786c881f94	194	193	192,195	0:04:32.470000	0:04:34.700000	786c881f94.mp3	786c881f94.webp	迎撃する 全機潰せ	Intercéptenlos. A todos.	We'll intercept. Shoot them all down!	False	False		olcott	
+65b10ad2bd	198	199	196	0:04:34.620000	0:04:35.980000	65b10ad2bd.mp3	65b10ad2bd.webp	コピー	Recibido.	Copy that!	False	False		norea/bessie/gristan	
+a94ce462ba	202,203	201	200	0:04:39.270000	0:04:42.980000	a94ce462ba.mp3	a94ce462ba.webp	コントロールセンターなら⸺　隔壁を開けられるはず	Debería poder abrir la compuerta mediante un sensor.	I'm sure I can open the bulkhead from the control center!	False	False		miorine	
+82cbd5b2b0	206	205	204	0:04:43.900000	0:04:44.980000	82cbd5b2b0.mp3	82cbd5b2b0.webp	動くな! う...	¡No te muevas!	Don't move!	False	False		sp 1	
+853e22e1a3	209	208	207	0:04:44.970000	0:04:46.470000	853e22e1a3.mp3	853e22e1a3.webp	ミオリネさま	¿Señorita Miorine?	Mistress Miorine?	False	False		sp 1	
+dfb7940034	210	212	211	0:04:48.307000	0:04:51.080000	dfb7940034.mp3	dfb7940034.webp	う... なんで あんたがここに...	¿Qué haces tú aquí?	What are you doing here?	False	False		miorine	
+2802984b50	214	215	213	0:04:51.010000	0:04:53.228000	2802984b50.mp3	2802984b50.webp	その格好は なんだ え?	¿Y esa ropa?	Why are you dressed like that?	False	False		delling	
+f6fe40dfe4	219	217	218	0:04:53.600000	0:04:56.520000	f6fe40dfe4.mp3	f6fe40dfe4.webp	避難時は ノーマルスーツが鉄則だろう	Al huir debes ponerte un traje espacial.	You have to wear a normal suit when evacuating.	False	False		delling	
+da18c27323	222	221	220	0:04:57.560000	0:05:00.160000	da18c27323.mp3	da18c27323.webp	まずは 娘の心配じゃないの!?	¿No deberías preocuparte por mí?	Why not worry about your daughter first?!	False	False		miorine	
+521b1ccbc0	225	224	223	0:05:00.540000	0:05:03.900000	521b1ccbc0.mp3	521b1ccbc0.webp	各機 これより内部へ侵入する	Entraremos. Preparados.	All units, we will now enter the plant's interior.	False	False		piloto dominicus A	
+0a064a6f59	229	228	227	0:05:07.950000	0:05:09.360000	0a064a6f59.mp3	0a064a6f59.webp	敵か!?	¿Enemigos?	An enemy?	False	False		piloto dominicus D	
+8aa277f77c	231	232	230	0:05:09.360000	0:05:11.660000	8aa277f77c.mp3	8aa277f77c.webp	1機だけだ 逃がすなよ	Solo es uno. Que no escape.	Just one. Don't let them escape.	False	False		piloto dominicus A	
+4ea1bf4226	235	234	233	0:05:11.660000	0:05:12.840000	4ea1bf4226.mp3	4ea1bf4226.webp	散開!	Dispérsense.	Fan out!	False	False		piloto dominicus A	
+0212832342	237		236	0:05:12.830000	0:05:14.790000	0212832342.mp3	0212832342.webp	来た来た来た来た		Here they come, here they come!	False	False			
+88c72eb161	241		239	0:05:15.210000	0:05:18.003000	88c72eb161.mp3	88c72eb161.webp	全部 ぶっ壊しちゃうよー!		I'll blow them all to bits!	False	False			
+59860ab660	243		242	0:05:18	0:05:20.290000	59860ab660.mp3	59860ab660.webp	パーメットスコア 2!		Permet score... two!	False	False			
+16c9c6fa91	247		245	0:05:25.190000	0:05:28.680000	16c9c6fa91.mp3	16c9c6fa91.webp	各個撃破って 知ってるー!?		I'm gonna pick you off... one by one!	False	False			
+3a86b57daa	250	249	248,251	0:05:33.970000	0:05:36.900000	3a86b57daa.mp3	3a86b57daa.webp	GUNDフォーマット ガンダムだと!?	¿GUND Format? ¿Es un Gundam?	The GUND Format?! That thing's a Gundam?!	False	False		piloto dominicus C	
+4b0f1713e3	254,256	253	252,255	0:05:36.900000	0:05:40.110000	4b0f1713e3.mp3	4b0f1713e3.webp	アンチドートを使う　囲んで仕留めるぞ!	Usemos Antidote. Eliminémosla rodeándola.	We'll use Antidote. Surround it and take it down.	False	False		piloto dominicus B	
+224f68ccea	259	258	257	0:05:53.240000	0:05:54.870000	224f68ccea.mp3	224f68ccea.webp	魔女め!	¡Maldita bruja!	Take this, witch!	False	False		piloto dominicus B	
+b5d824bc83	263	262	261	0:06:05.050000	0:06:06.930000	b5d824bc83.mp3	b5d824bc83.webp	墜ちろ ガンダム!	¡Muere, Gundam!	Down you go, Gundam!	False	False		piloto dominicus B	
+a1b16122ca	265		264	0:06:06.920000	0:06:09.138000	a1b16122ca.mp3	a1b16122ca.webp	パーメットスコア 4		Permet score... four.	False	False			
+687e46caf2	270		268	0:06:18.980000	0:06:21.320000	687e46caf2.mp3	687e46caf2.webp	心臓 痛い...		My heart's hurting so badly.	False	False			
+fc19ebf4a5	272		271	0:06:21.320000	0:06:23.250000	fc19ebf4a5.mp3	fc19ebf4a5.webp	息 できない...		I can't... breathe.	False	False			
+3dc27882ed	273		274	0:06:23.235000	0:06:25.571000	3dc27882ed.mp3	3dc27882ed.webp	さっき食べたお菓子 吐きそう		I might throw up the snacks I just ate.	False	False			
+4d5a099f9a	278		276,279	0:06:26	0:06:30.450000	4d5a099f9a.mp3	4d5a099f9a.webp	でも 私 生きてる!		But... I'm still alive!	False	False			
+ab9d6aeab8	283	282	281	0:06:41.460000	0:06:43.380000	ab9d6aeab8.mp3	ab9d6aeab8.webp	アンチドートが効かない!	¿El Antidote no funciona?	The Antidote isn't working!	False	False		piloto dominicus C	
+bebc60e088	286,287		284	0:06:53.900000	0:06:57.394000	bebc60e088.mp3	bebc60e088.webp	そいつが通じるのは⸺　スコア3までだよ		That thing only works up to score three!	False	False			
+99b3ffa027	290	289	288	0:06:59.740000	0:07:02.080000	99b3ffa027.mp3	99b3ffa027.webp	実弾使用は条約違反だ!	¿Munición activa? ¡Eso es ilegal!	The use of physical ammunition is forbidden by treaty!	False	False		piloto guarnición G	
+e4e4b00354	292	293	291	0:07:02.060000	0:07:04.660000	e4e4b00354.mp3	e4e4b00354.webp	宇宙を汚しやがって!	¡Están ensuciando el espacio!	You bastards are polluting space!	False	False		piloto guarnición G	
+fe627b764b	296,297	295	294	0:07:11.990000	0:07:16.205000	fe627b764b.mp3	fe627b764b.webp	地球を汚して逃げたスペーシアンが どの口で...　ん...	Y lo dicen los Spacians que ensuciaron la Tierra y huyeron.	You Spacians polluted Earth and ran. You're one to talk.	False	False		norea	
+b5bfc100d9	300,302	299	298,301	0:07:26.380000	0:07:30.180000	b5bfc100d9.mp3	b5bfc100d9.webp	テロリストどもが!　邪魔	¡Terroristas! -Estorbas.	Damn terrorists! What a bother.	False	False		piloto guarnición F/norea	
+6306f13c28	305	304	303	0:07:32.030000	0:07:35.270000	6306f13c28.mp3	6306f13c28.webp	ブリッジ 敵の戦力を無力化した	Puente, incapacitamos al enemigo.	Bridge, the enemy forces have been neutralized.	False	False		olcott	
+2f4986e5fc	307	308	306	0:07:35.260000	0:07:37.650000	2f4986e5fc.mp3	2f4986e5fc.webp	引き続き サブの制圧に入る	Iremos por las reservas.	We'll proceed to securing the sub-gates.	False	False		olcott	
+a6bcf069b6	311	310,313	309,312	0:07:37.640000	0:07:41.480000	a6bcf069b6.mp3	a6bcf069b6.webp	すぐに 次の守備隊が来る 怠るなよ	Llegará otra guarnición. Manténganse alerta.	More garrison forces will come soon. Keep your guard up.	False	False		naji	
+c6182ab26f	316	315	314	0:07:41.870000	0:07:43.570000	c6182ab26f.mp3	c6182ab26f.webp	後方待機班に通達	Los de la retaguardia,	Tell the standby team in the rear.	False	False		naji	
+0e9e75ce89	319	318	317	0:07:43.910000	0:07:47.570000	0e9e75ce89.mp3	0e9e75ce89.webp	プラントの通信が回復する前に 仕事を片づける	terminen antes de que recuperen las comunicaciones.	We need to finish the job before the front's communications are restored.	False	False		naji	
+31c6aa6e0e	322	321	320	0:07:48.130000	0:07:49.660000	31c6aa6e0e.mp3	31c6aa6e0e.webp	行動を開始しろ	Empiecen.	Move out.	False	False		naji	
+c8a25d2448	326,328	325	324,327	0:07:59.460000	0:08:03.290000	c8a25d2448.mp3	c8a25d2448.webp	止まった?　ミオリネさん 助けなきゃ	¿Paró? He de ayudar a Miorine.	It stopped. I have to help Ms. Miorine.	False	False		suletta	
+0c489a0c4e	331	330	332	0:08:03.360000	0:08:06	0c489a0c4e.mp3	0c489a0c4e.webp	でも どうやって...	Pero ¿cómo?	How?	False	False		suletta	
+e1bb39df26	335	334	333	0:08:10.080000	0:08:11.900000	e1bb39df26.mp3	e1bb39df26.webp	78ハンガー...	El hangar 78.	Hangar 78...	False	False		suletta	
+35078edec3	338,340	337	336,339	0:08:12.570000	0:08:16.970000	35078edec3.mp3	35078edec3.webp	エアリアルと一緒なら⸺　ミオリネさん 助けられる	Con el Aerial podré ayudar a Miorine.	If I have Aerial with me... I can rescue Ms. Miorine!	False	False		suletta	
+7445215f6d	342	344	343	0:08:24.147000	0:08:26.900000	7445215f6d.mp3	7445215f6d.webp	あ... お父さん!	¡Papá!	Dad!	False	False		miorine	
+0ddfbcd979	347	346	345	0:08:26.900000	0:08:29.280000	0ddfbcd979.mp3	0ddfbcd979.webp	逃げ... ろ	Huye...	You have to... run.	False	False		delling	
+44ba1cb8c6	348	349	350	0:08:30.404000	0:08:32.250000	44ba1cb8c6.mp3	44ba1cb8c6.webp	ふざけんな!	¡Ni hablar!	Don't you dare!	False	False		miorine	
+93e0f38abe	352	353	351	0:08:32.250000	0:08:34.866000	93e0f38abe.mp3	93e0f38abe.webp	勝手に死んでんじゃないわよ!	¡Ni pienses en morirte!	You can't just die on me!	False	False		miorine	
+98c6a1bf77	354,358	356	355,357	0:08:35.367000	0:08:41.200000	98c6a1bf77.mp3	98c6a1bf77.webp	生存確率の高い⸺　選択を... しろ	Elige lo que te haga sobrevivir.	Choose the option with... the best odds of survival.	False	False		delling	
+660f75d179	361	360	359,362	0:08:41.200000	0:08:45.330000	660f75d179.mp3	660f75d179.webp	ノートレットなら そうする	Eso haría Noughtret.	That's what... Notrette would do.	False	False		delling	
+7a2999f2b2	365	364	363	0:08:46.640000	0:08:50.680000	7a2999f2b2.mp3	7a2999f2b2.webp	なんで... お母さんが出てくるのよ	¿Por qué mencionas a mamá ahora?	Why bring up my mother now?	False	False		miorine	
+76d133b2e2	368	367	366	0:08:51.610000	0:08:54.550000	76d133b2e2.mp3	76d133b2e2.webp	2人で... 決めた	Lo decidimos ambos.	We decided together.	False	False		delling	
+98d8bbde66	371,373	370	369,372,374	0:08:54.980000	0:09:00.180000	98d8bbde66.mp3	98d8bbde66.webp	何かあれば⸺　どちらかだけ... でも...	Si pasaba algo, debía sobrevivir uno.	If anything happened... at least one of us... should...	False	False		delling	
+6ebd22c0ad	377	376	375	0:09:00.950000	0:09:03.480000	6ebd22c0ad.mp3	6ebd22c0ad.webp	言い訳なら聞きたくないわ	No quiero oír excusas.	I don't want your excuses.	False	False		miorine	
+f90d597b12	380	379	378	0:09:03.910000	0:09:06.270000	f90d597b12.mp3	f90d597b12.webp	なんで一緒に逃げなかったのよ	¿Por qué no huyeron juntos?	Why didn't you both escape?	False	False		miorine	
+cf214324ca	383	381	382,384	0:09:07.880000	0:09:12.070000	cf214324ca.mp3	cf214324ca.webp	卑怯者 最初から そう言えばよかったじゃない!	Cobarde. Haberlo hablado desde un principio.	Coward... You could have just told me!	False	False		miorine	
+fd481e6775	387,388	386	385	0:09:15.170000	0:09:17.920000	fd481e6775.mp3	fd481e6775.webp	マチェイ ジャリル　三手に分かれる	Machey, Jalil, dividámonos.	Machei, Jalil... We're splitting up three ways.	False	False		piloto terr C	
+71076e99e5	392	391	389	0:09:17.880000	0:09:19.090000	71076e99e5.mp3	71076e99e5.webp	コピー	Recibido.	Copy that!	False	False		machey/jalil	
+299c362d4c	397	396	395	0:09:32.150000	0:09:33.460000	299c362d4c.mp3	299c362d4c.webp	行くぞ	Adelante.	Let's go.	False	False		unidad infilt	
+1ff3f5f1c8	400	399	398	0:09:35.150000	0:09:37.200000	1ff3f5f1c8.mp3	1ff3f5f1c8.webp	ダメだ つながらない	No sirve.	It's no use. No signal...	False	False		trabajador planta A	
+981a7f4a88	402	403	401	0:09:37.090000	0:09:39	981a7f4a88.mp3	981a7f4a88.webp	なんなんだよ 一体	¿Qué demonios...?	What the hell is going on?	False	False		trabajador planta B	
+a333cd0feb	408,409	407	406	0:09:45.120000	0:09:48.610000	a333cd0feb.mp3	a333cd0feb.webp	ブリッジ　対象のトレーサーは ロストして確認できない	Puente, perdimos el rastreador.	Bridge, we've lost target's tracer and can't confirm location.	False	False		líder unidad infilt	
+9801773d6d	412	411	410	0:09:48.960000	0:09:50.990000	9801773d6d.mp3	9801773d6d.webp	引き続き 突入を継続する	Continuamos con la infiltración.	We'll continue forcing our way in.	False	False		líder unidad infilt	
+72eccc89ff	415,417	414	413,416	0:09:55.920000	0:09:59.460000	72eccc89ff.mp3	72eccc89ff.webp	なんなんだよ これ　なんなんだよ!	¿Qué es esto? ¡¿Qué está pasando aquí?!	How could they... How could anyone do this?!	False	False		ojelo	
+64479aac2b	420	419	418	0:09:59.800000	0:10:01.787000	64479aac2b.mp3	64479aac2b.webp	逃げよう ここは危ない	Huyamos. Es peligroso.	We have to run. It's dangerous here.	False	False		till	
+272ce7eda6	423	422	421	0:10:01.700000	0:10:03.450000	272ce7eda6.mp3	272ce7eda6.webp	逃げるって どこに!	¿Y adónde vamos?	Run where?!	False	False		chuchu	
+b935be0eec	424	425	426	0:10:03.246000	0:10:05.340000	b935be0eec.mp3	b935be0eec.webp	スレッタとミオリネも 戻ってないぞ!	Suletta y Miorine no regresaron.	Suletta and Miorine aren't back yet.	False	False		aliya	
+da9dd15bb1	429,432	431	430	0:10:12.130000	0:10:15.342000	da9dd15bb1.mp3	da9dd15bb1.webp	うわあ! みんな 早く!　うわあー! ああー!	¡Rápido!	Everyone, hurry!	False	False		till	
+da66175f67	434	435	433	0:10:15.440000	0:10:17.300000	da66175f67.mp3	da66175f67.webp	死にたくねえー!	¡No quiero morir!	I don't want to die!	False	False		nuno	
+4adaea4e7d	438,441	437	436,439,440	0:10:17.920000	0:10:22.510000	4adaea4e7d.mp3	4adaea4e7d.webp	実弾... まさか⸺　アーシアン?	¿Munición activa? ¿Son Earthians?	Physical ammunition? Don't tell me... they're Earthians?	False	False		nika	
+41ecfc98a5	444	443	442	0:10:22.510000	0:10:26.100000	41ecfc98a5.mp3	41ecfc98a5.webp	逃走手段は すべて破壊する	Eliminaré todas sus vías de huida.	Any means of escape must be destroyed.	False	False		norea	
+600769c2b4	448	447	446	0:10:28.950000	0:10:32.440000	600769c2b4.mp3	600769c2b4.webp	私たちのコールサイン?	¿Esa es nuestra señal?	Is that our call sign?	False	False		norea	
+52d5ffd3fc	451	450	449	0:10:33.320000	0:10:35.290000	52d5ffd3fc.mp3	52d5ffd3fc.webp	プリンスの仲間?	¿Una aliada del príncipe?	An ally of the Prince?	False	False		norea	
+b484d62c5c	455	456	454	0:10:48.720000	0:10:50.010000	b484d62c5c.mp3	b484d62c5c.webp	ニカ? あ...	¿Nika?	Nika...	False	False		martin	
+88f1a4f79f	459	458	457	0:10:55.230000	0:10:58.220000	88f1a4f79f.mp3	88f1a4f79f.webp	今のは 何をしたんだ?	¿Qué hiciste?	What did you... just do?	False	False		martin	
+36fc9d6e34	462	463	461	0:11:02.360000	0:11:05.790000	36fc9d6e34.mp3	36fc9d6e34.webp	CEO 保安宙域に 船姿を1隻確認	Detectamos una nave en esta región.	Sir, we've detected a ship in the security airspace.	False	False		tripulación jeturk A	
+2b830499d8	466	465	464	0:11:05.790000	0:11:08.490000	2b830499d8.mp3	2b830499d8.webp	襲撃直前に 警告を受けていたやつです	Son los que recibieron el aviso.	It's the one we sent a warning to just before the attack.	False	False		tripulación jeturk A	
+1e5eaba00b	468	467	469	0:11:08.840000	0:11:12.040000	1e5eaba00b.mp3	1e5eaba00b.webp	さっさと巡回艦隊を こっちに回せ!	¡Envíennos una flota de una vez!	Send the patrol fleet this way, immediately!	False	False		vim	
+6a6a237299	472	471	470	0:11:12.040000	0:11:13.240000	6a6a237299.mp3	6a6a237299.webp	ご武運を	Buena suerte.	Good luck, sir.	False	False		tripulación jeturk A	
+c6e2af4dc4	474	475	473	0:11:13.160000	0:11:15.520000	c6e2af4dc4.mp3	c6e2af4dc4.webp	ディランザ・ソル 出るぞ!	Dilanza Sol, en marcha.	Dilanza Sol... moving out!	False	False		vim	
+4a60b27958	477,480	478	476,479	0:11:19.280000	0:11:26.080000	4a60b27958.mp3	4a60b27958.webp	俺はライバルの頭を 直接ぶったたくことで⸺　勝ち上がってきた男だ	Llegué hasta aquí partiendo yo mismo los cráneos de mis rivales.	Don't forget that I worked my way up the ladder... by personally claiming my rivals' heads!	False	False		vim	
+b7345f56c6	482,484		483	0:11:26.872000	0:11:30.709000	b7345f56c6.mp3	b7345f56c6.webp	右舷 ポイントF13に⸺　敵モビルスーツ 4機接近		Four enemy mobile suits incoming at starboard point F13.	False	False			
+8104a4a67b	486,489	487	485,488	0:11:30.660000	0:11:33.086000	8104a4a67b.mp3	8104a4a67b.webp	まだいたか　回避	¿Hay más? Esquívenlos.	They still have more? Evade!	False	False		naji	
+00714c3251	492	491	490	0:11:35.420000	0:11:39.800000	00714c3251.mp3	00714c3251.webp	俺を敵に回したこと 後悔させてやる!	¡Se arrepentirán de haberse enfrentado a mí!	I'll make you regret ever crossing me!	False	False		vim	
+940ac43206	495,498	494	496,497	0:11:45.890000	0:11:48.210000	940ac43206.mp3	940ac43206.webp	あ... 扉が...　早く外に...	La puerta... -Salgamos.	Hey, the door! Let's get out of here!	False	False		transporte A/B	
+32fa5d354d	499	501	500	0:11:48.185000	0:11:49.480000	32fa5d354d.mp3	32fa5d354d.webp	待て ダメだ	Espera. No.	Wait, no!	False	False		capitán	
+82d338f356	504	502	503	0:11:50.420000	0:11:53.410000	82d338f356.mp3	82d338f356.webp	聞いたか プラントにガンダムがいるって話	¿Oíste que hay Gundams en la planta?	Did you hear? There's a Gundam in that plant.	False	False		terrorista C	
+a2552c429c	506,508	507	505	0:11:53.410000	0:11:56.450000	a2552c429c.mp3	a2552c429c.webp	アスティカシアのだろ?　ソフィが報告してた	De Asticassia, ¿no? El que mencionó Sophie.	From Asticassia, right? Sophie reported it.	False	False		terrorista D	
+45ae464b65	511	510	509	0:11:57.940000	0:11:59.700000	45ae464b65.mp3	45ae464b65.webp	ガンダムって なんだ?	¿Qué es un Gundam?	What the heck is a Gundam?	False	False		transporte A	
+7b9b3ab3a6	514	513	512	0:11:59.690000	0:12:01.110000	7b9b3ab3a6.mp3	7b9b3ab3a6.webp	さあ...	Ni idea.	Beats me...	False	False		transporte B	
+90f1722ee3	518	517	516,519	0:12:01.990000	0:12:04.530000	90f1722ee3.mp3	90f1722ee3.webp	ボブ! おい ボブ!	¿Bob? -¡Bob!	Bob! Hey, Bob!	False	False		transporte A/capitán	
+a9d35063e5	522,524	521	520,523,525	0:12:05.240000	0:12:10.500000	a9d35063e5.mp3	a9d35063e5.webp	スレッタ・マーキュリー　いるのか? このプラントに	¿Suletta Mercury está en esta planta?	Suletta Mercury... Are you here? In this plant?	False	False		guel	
+c28c53daf4	528,530	527	526,529	0:12:13.250000	0:12:16.800000	c28c53daf4.mp3	c28c53daf4.webp	なに!　デスルターだと!?	¿Qué? ¿Desultor?	What?! Desultors?!	False	False		vim	
+1625b5e6ce	532	533	531	0:12:16.790000	0:12:20.550000	1625b5e6ce.mp3	1625b5e6ce.webp	我が社のモビルスーツを使って よくも!	¿Cómo osan usar nuestros Mobile Suits?	How dare you use my company's mobile suits like this!	False	False		vim	
+9178607a1b	535	536	534	0:12:21.260000	0:12:23.345000	9178607a1b.mp3	9178607a1b.webp	換装を急いでくれ あ...	Equípalo rápido.	Hurry up with the refitting!	False	False		philip	
+0ce601a1b3	539	537	538,540	0:12:24.080000	0:12:26.720000	0ce601a1b3.mp3	0ce601a1b3.webp	おい お前 何してんだ!	¿Qué estás haciendo?	Hey, you! What are you doing?!	False	False		philip	
+ca55953d5d	543	544	542	0:12:32.730000	0:12:35.607000	ca55953d5d.mp3	ca55953d5d.webp	早く プラント・クエタに あ...	He de llegar a la planta.	Got to get to Plant Quetta!	False	False		guel	
+934320ae5e	547,549	546	545,548	0:12:39.400000	0:12:42.940000	934320ae5e.mp3	934320ae5e.webp	待ってくれ!　違う 敵じゃない!	¡Espera! ¡No soy tu enemigo!	Wait! Stop! I'm not the enemy!	False	False		guel	
+c1cf24d036	552	551	550	0:12:42.940000	0:12:45.160000	c1cf24d036.mp3	c1cf24d036.webp	俺は グエル・ジェタークだ! ぐうっ...	¡Soy Guel Jeturk!	It's me, Guel Jeturk!	False	False		guel	
+e00d69bb40	555	557	556	0:13:05.136000	0:13:08.140000	e00d69bb40.mp3	e00d69bb40.webp	し... 死ねない	No puedo morir.	I can't die here.	False	False		guel	
+11fae5c38a	560	559	558	0:13:12.890000	0:13:14.813000	11fae5c38a.mp3	11fae5c38a.webp	死にたくない!	¡No quiero morir!	I don't want to die!	False	False		guel	
+b0fb4c0657	563	562	561	0:13:26.950000	0:13:28.160000	b0fb4c0657.mp3	b0fb4c0657.webp	俺は あいつに...	No hice...	Not when I...	False	False		guel	
+bc92cd2e62	565	566	564	0:13:29.990000	0:13:33.748000	bc92cd2e62.mp3	bc92cd2e62.webp	スレッタ・マーキュリーに 進めていない!	¡No hice avances con Suletta Mercury!	I haven't moved forward after Suletta Mercury!	False	False		guel	
+e0ec1e6f03	567,571	568	569,570	0:13:41.298000	0:13:46.887000	e0ec1e6f03.mp3	e0ec1e6f03.webp	ハアハア... やった　やった は...	Lo logré. Lo logré.	I did it. I did it!	False	False		guel	
+1c065732b9	574,576	573	572,575	0:13:47.190000	0:13:51.641000	1c065732b9.mp3	1c065732b9.webp	お... 俺だ!　ヴィム・ジェタークの息子 グエル・ジェタークだ!	¡Soy yo, Guel Jeturk, el hijo de Vim Jeturk!	It's me! Vim Jeturk's son! Guel Jeturk!	False	False		guel	
+a20a030feb	579	577	578	0:13:51.980000	0:13:54.820000	a20a030feb.mp3	a20a030feb.webp	敵じゃな... グエル... か?	No soy tu enemi... -Guel...	I'm on your side-	False	False		vim/guel	
+447f72a1c2	584	583	582	0:13:57.330000	0:14:00.500000	447f72a1c2.mp3	447f72a1c2.webp	無事... だったか	Estás bien.	So you... were okay...	False	False		vim	
+89f15f1221	587	585	586	0:14:01.260000	0:14:04.154000	89f15f1221.mp3	89f15f1221.webp	捜したん... だぞ	Te estuve buscando.	I've been... searching...	False	False		vim	
+9b40a34ca5	590,594	589,592	588,591,593	0:14:06.210000	0:14:10.780000	9b40a34ca5.mp3	9b40a34ca5.webp	父さん... 父さん!　脱出しろ 父さん!	¿Papá? ¡Papá! ¡Sal de ahí!	Dad... Dad! Eject, Dad!	False	False		guel	
+a75f02f2f4	597	596	595	0:14:10.780000	0:14:12.040000	a75f02f2f4.mp3	a75f02f2f4.webp	俺が 今 そっちに...	Ahora vo...	I'll be right there!	False	False		guel	
+3dc272cf49	605,607	604	603,606	0:14:38.900000	0:14:42.192000	3dc272cf49.mp3	3dc272cf49.webp	78ハンガー　ここだ	Hangar 78. Es aquí.	Hangar 78... This is it.	False	False		suletta	
+89a7fbac02	610,612	609	608,611	0:14:42.870000	0:14:46.150000	89a7fbac02.mp3	89a7fbac02.webp	ブリッジ　ガンダムらしき モビルスーツを発見	Puente, encontramos un posible Gundam.	Bridge... We've discovered what looks like a Gundam.	False	False		unidad infilt A	
+36059295e6	615	614	613	0:14:46.500000	0:14:49.110000	36059295e6.mp3	36059295e6.webp	Cブロック 78番ハンガー	Hangar 78 del bloque C.	C Block, Hangar 78...	False	False		unidad infilt A	
+dcf27410fc	617		616	0:14:49.110000	0:14:51.370000	dcf27410fc.mp3	dcf27410fc.webp	エアリアルだ 私 行く!		That's the Aerial! I'm going!	False	False			
+08dc26a341	621	620	619	0:14:51.370000	0:14:53.870000	08dc26a341.mp3	08dc26a341.webp	ソフィ あんたまた...	¿Otra vez, Sophie?	Sophie! This again?	False	False		norea	
+911aa50b0d	624	623	622	0:14:53.790000	0:14:56.122000	911aa50b0d.mp3	911aa50b0d.webp	その機体 確保できるか?	¿Pueden hacerse con la unidad?	That machine... Can you secure it?	False	False		naji	
+d17fda8667	626,628	627	625	0:14:56.120000	0:14:58.708000	d17fda8667.mp3	d17fda8667.webp	了解 ただちに確保に...　ん?	Recibido. De inmediato la...	Roger. We'll go ahead and-	False	False		unidad infilt A	
+fd6793945d	636	635	634	0:15:24.280000	0:15:25.720000	fd6793945d.mp3	fd6793945d.webp	スレッタ は...	Suletta.	Suletta?	False	False		prospera	
+0a46fd61ce	640	639	638	0:15:29.680000	0:15:31.040000	0a46fd61ce.mp3	0a46fd61ce.webp	お母さん...	Mamá.	Mom?	False	False		suletta	
+872943619b	642	643	641	0:15:31.040000	0:15:32.620000	872943619b.mp3	872943619b.webp	大丈夫?	¿Estás bien?	Are you okay?	False	False		prospera	
+b8177a74f1	646	645	644	0:15:32.620000	0:15:35.745000	b8177a74f1.mp3	b8177a74f1.webp	ごめんね 怖い思いさせちゃって	Lo siento. Pasaste mucho miedo, ¿eh?	Sorry about that. You must have been scared.	False	False		prospera	
+d5cacd6e74	648	649	647	0:15:35.740000	0:15:37.830000	d5cacd6e74.mp3	d5cacd6e74.webp	し... 死に... し...	Está...	Th-They... They're-	False	False		suletta	
+4dd4b74d12	651,654	652	650,653	0:15:37.740000	0:15:40.583000	4dd4b74d12.mp3	4dd4b74d12.webp	死んでるわ　大丈夫	Está muerto. Tranquila.	They're dead. Nothing to worry about.	False	False		prospera	
+c836efe6fd	657	656	655	0:15:40.550000	0:15:42.210000	c836efe6fd.mp3	c836efe6fd.webp	そうじゃ... なくて	No es eso.	That's not what I...	False	False		suletta	
+b9e4e144e9	660	659	658	0:15:43.610000	0:15:44.963000	b9e4e144e9.mp3	b9e4e144e9.webp	殺したんだよ?	Lo mataste.	You killed them!	False	False		suletta	
+e3d41586d7	663	662	661,664	0:15:45.480000	0:15:49.170000	e3d41586d7.mp3	e3d41586d7.webp	そうしなければ あなたが殺されてたでしょ?	Si no, te habría matado él a ti. -Pero...	If I hadn't... They'd have killed you.	False	False		prospera	
+d4abc27ef6	665,669	668	666,667	0:15:48.717000	0:15:52.430000	d4abc27ef6.mp3	d4abc27ef6.webp	でも! 逃げたら1つ　進めば2つ	Si huyes ganas una cosa. Si avanzas, ganas dos.	But that's... If you run, gain one. Move forward, gain two.	False	False		prospera	
+871dbd1ba8	671		670	0:15:53.640000	0:15:54.750000	871dbd1ba8.mp3	871dbd1ba8.webp	え?		Huh?	False	False			
+48e14dff49	674	673	672	0:15:54.750000	0:15:57.420000	48e14dff49.mp3	48e14dff49.webp	扉の向こうに こもっていれば⸺	Si hubiera permanecido encerrada,	If I'd hidden behind the door,	False	False		prospera	
+ab81263fc2	677	676	675	0:15:57.420000	0:16:00.630000	ab81263fc2.mp3	ab81263fc2.webp	お母さんは この人たちを殺さずに済んだ	no habría tenido que matarlos.	I could have gained by not killing them.	False	False		prospera	
+59ecd2c8da	680	679	678	0:16:01.120000	0:16:05.020000	59ecd2c8da.mp3	59ecd2c8da.webp	でも 戦ったことで スレッタを死なせずに済んだ	Pero al luchar evité que murieras tú.	But by fighting, I've kept you alive.	False	False		prospera	
+99ed9854e8	683	682	681	0:16:05.560000	0:16:07.480000	99ed9854e8.mp3	99ed9854e8.webp	そして もう一つ⸺	Y si además...	And one other thing...	False	False		prospera	
+5b113456e3	686	685	684	0:16:08.080000	0:16:11.990000	5b113456e3.mp3	5b113456e3.webp	スレッタが エアリアルと一緒に 戦ってくれたら...	tú luchas junto al Aerial...	If you fight together with Aerial, Suletta...	False	False		prospera	
+5a7c1ecb6e	690	689	688,691	0:16:14.210000	0:16:16.770000	5a7c1ecb6e.mp3	5a7c1ecb6e.webp	無理だよ だって...	No puedo. Yo...	I can't. It would mean...	False	False		suletta	
+65bde5401f	693,696	694	692,695	0:16:16.770000	0:16:20.582000	65bde5401f.mp3	65bde5401f.webp	そうね　今 起こってるのは決闘じゃない	Lo sé. Esto no es un duelo.	That's right. What's happening now is not a duel.	False	False		prospera	
+1298207745	699,700	698	697	0:16:21.060000	0:16:24.670000	1298207745.mp3	1298207745.webp	怖いよね　傷つきたくないよね	Da miedo. No quieres lastimar a nadie.	It's scary, right? You don't want to get hurt, do you?	False	False		prospera	
+094a7e0037	703	702	701,704	0:16:25.170000	0:16:28.330000	094a7e0037.mp3	094a7e0037.webp	でも あなたとエアリアルなら...	Pero el Aerial y tú juntos...	But... If you and Aerial work together,	False	False		prospera	
+24d659f059	706,711	707	705,708,709,710	0:16:28.640000	0:16:35.250000	24d659f059.mp3	24d659f059.webp	お母さんも スレッタも ミオリネさんも⸺　みんな救われる	A Miorine, a ti, a mí... Pueden salvarnos a todos.	then Mom... and Suletta... and Ms. Miorine... Everyone can be saved.	False	False		prospera	
+9393fee106	714	713	712	0:16:35.940000	0:16:37.140000	9393fee106.mp3	9393fee106.webp	救う...	¿Salvarnos?	Saved?	False	False		suletta	
+2aba17a5ef	717,718	716	715	0:16:37.440000	0:16:41.470000	2aba17a5ef.mp3	2aba17a5ef.webp	今 みんなを救えるのは⸺　あなたたちだけよ	Sois los únicos que pueden.	Only the two of you can save them now.	False	False		prospera	
+845ea16bcb	721	720	719	0:16:42.280000	0:16:45.810000	845ea16bcb.mp3	845ea16bcb.webp	スレッタ あなたは進める子	Suletta, tú eres de las que avanzan.	Suletta, I know you're ready to move forward.	False	False		prospera	
+3d6840811d	724	723	722	0:16:46.740000	0:16:47.970000	3d6840811d.mp3	3d6840811d.webp	でしょ?	¿Verdad?	Right?	False	False		prospera	
+aae4ce5247	727	726	728	0:16:54.900000	0:16:57.570000	aae4ce5247.mp3	aae4ce5247.webp	うん 進める	Sí. Puedo avanzar.	I can move forward.	False	False		suletta	
+6506e8b928	730	731	729	0:16:57.570000	0:16:59.700000	6506e8b928.mp3	6506e8b928.webp	進んで... きた	Eso hice siempre.	I have moved forward.	False	False		suletta	
+7e81edfdf1	734	733	732	0:17:02.800000	0:17:05.420000	7e81edfdf1.mp3	7e81edfdf1.webp	逃げたら 1つ	Si huyes, ganas una cosa.	If you run, gain one.	False	False		prospera	
+3828908ac2	739	738	736	0:17:07.680000	0:17:09.830000	3828908ac2.mp3	3828908ac2.webp	進めば2つ	Si avanzas, ganas dos.	Move forward, gain two!	False	False		suletta/prospera	
+5c910e5974	743		742	0:17:14.520000	0:17:15.970000	5c910e5974.mp3	5c910e5974.webp	やっほー		Hi there!	False	False			
+1e7aa122a6	746		744,747	0:17:15.970000	0:17:19.224000	1e7aa122a6.mp3	1e7aa122a6.webp	来たよ スレッタ・マーキュリー		I've arrived... Suletta Mercury!	False	False			
+12daf62ce5	750		748	0:17:20.400000	0:17:22.570000	12daf62ce5.mp3	12daf62ce5.webp	エアリアル いるんでしょ?		The Aerial is here too, right?	False	False			
+ac091cbb1f	752		751	0:17:22.570000	0:17:24.230000	ac091cbb1f.mp3	ac091cbb1f.webp	出てきてよ		Come on out!	False	False			
+7fb11acf0c	754		753	0:17:24.230000	0:17:26.850000	7fb11acf0c.mp3	7fb11acf0c.webp	それとも かくれんぼしてるのかな		Or are we playing hide and seek?	False	False			
+2759beac99	758		756,759	0:17:28.350000	0:17:31.440000	2759beac99.mp3	2759beac99.webp	エアリアル 見ーつけた		The Aerial... Found you!	False	False			
+fa832ad222	763		761	0:17:41.210000	0:17:42.650000	fa832ad222.mp3	fa832ad222.webp	ガンビット?		GUND-Bits?	False	False			
+5114c65047	766	765	764	0:17:46.090000	0:17:48.460000	5114c65047.mp3	5114c65047.webp	お母さんから 教わらなかったんですか?	¿Tu madre no te enseñó	Didn't your mother ever teach you?	False	False		suletta	
+264cdbb909	769	768	767,770	0:17:51.230000	0:17:53.960000	264cdbb909.mp3	264cdbb909.webp	そんなことしちゃ... ダメです!	que eso no se hace?	You can't... behave like that!	False	False		suletta	
+0b9e6482cd	774		772	0:18:16.030000	0:18:18.900000	0b9e6482cd.mp3	0b9e6482cd.webp	やっぱり 君 エアリアル!		I knew it. You're the Aerial!	False	False			
+d12e819f4a	777		775	0:18:22.170000	0:18:24.080000	d12e819f4a.mp3	d12e819f4a.webp	なんか怖い顔		That's a scary face you've got.	False	False			
+e097fd6b04	780		778	0:18:24.570000	0:18:27.625000	e097fd6b04.mp3	e097fd6b04.webp	前のほうが... 好きだったな!		If you ask me... I liked you better before!	False	False			
+f41a56d0aa	783	782	781	0:18:29.040000	0:18:30.580000	f41a56d0aa.mp3	f41a56d0aa.webp	この子もガンダム!?	¿También es un Gundam?	Is she a Gundam too?	False	False		suletta	
+bf1346aec4	786		784,787	0:18:33.500000	0:18:36.870000	bf1346aec4.mp3	bf1346aec4.webp	あー またガンビット ズルいー		Hey, GUND-Bits again? No fair!	False	False			
+563ae829b8	790,792	788	789,791	0:18:40.010000	0:18:45.894000	563ae829b8.mp3	563ae829b8.webp	地球寮 船 無事?　ああ よかった あ...	¿Los de la residencia? ¿Una nave? ¿Están bien? Menos mal.	Earth House... our ship... they're okay? Thank goodness.	False	False		suletta	
+19affc1fb0	795		793	0:18:53.870000	0:18:55.960000	19affc1fb0.mp3	19affc1fb0.webp	ノレア 邪魔しないで!		Norea, don't interfere!	False	False			
+3b0ecc7e80	796	798	797	0:18:55.862000	0:18:58.190000	3b0ecc7e80.mp3	3b0ecc7e80.webp	あんたが いつまでも 遊んでるからでしょ	Es que estás jugando demasiado.	I have to unless you stop fooling around!	False	False		norea	
+0866efee2b	801	800	799	0:19:00.750000	0:19:03.320000	0866efee2b.mp3	0866efee2b.webp	いくよ みんな!	Vamos, chicos.	Now's our chance. Everyone!	False	False		suletta	
+9a73f88085	802	804	803	0:19:10.293000	0:19:11.920000	9a73f88085.mp3	9a73f88085.webp	オルコット 後退して!	Retrocede, Olcott.	Olcott! Back off!	False	False		norea	
+697870bc23	807	806,809	805,808	0:19:22.100000	0:19:26.390000	697870bc23.mp3	697870bc23.webp	実戦仕様じゃない? それで あの威力か...	¿No es para luchar? ¿Y tiene esa potencia?	It's not meant for combat... but it's still that powerful?	False	False		olcott	
+37af0dfa72	813		812	0:19:30.320000	0:19:31.981000	37af0dfa72.mp3	37af0dfa72.webp	スッゴーい		Incredible!	False	False			
+894ee40b50	816		814	0:19:32.530000	0:19:35.140000	894ee40b50.mp3	894ee40b50.webp	ハート 撃ち抜かれちゃった		You've pierced right through my heart!	False	False			
+f11ba17181	819	818	817	0:19:41.830000	0:19:43.410000	f11ba17181.mp3	f11ba17181.webp	やれやれ	Cielos...	Oh my.	False	False		kenanji	
+3cca454a5f	822	821	820	0:19:44.210000	0:19:48.350000	3cca454a5f.mp3	3cca454a5f.webp	悪い予感だけは 当たるよな 俺	¿Por qué mis malos presentimientos siempre aciertan?	Only my bad feelings hit the mark.	False	False		kenanji	
+e454115f53	825	824	823	0:19:50.300000	0:19:51.920000	e454115f53.mp3	e454115f53.webp	タイムリミットだな	Se acabó el tiempo.	We've reached our time limit.	False	False		naji	
+66ab592e8a	828	826	827	0:19:52.670000	0:19:55.046000	66ab592e8a.mp3	66ab592e8a.webp	全員 帰艦しろ 撤退する	Regresen a la nave. Nos retiramos.	Everyone back to the ship. We're leaving.	False	False		naji	
+a165278744	831		829,832	0:19:55.710000	0:19:59.280000	a165278744.mp3	a165278744.webp	えー! まだ 暴れたいのに!		Huh?! I'm not done having fun!	False	False			
+e34beddba4	835	834	833	0:19:59.280000	0:20:02.300000	e34beddba4.mp3	e34beddba4.webp	本気の魔女狩り部隊と ドンパチやる気?	¿Te enfrentarás a cazadores de brujas?	Do you want to mess with the gung-ho Witch Hunters?	False	False		norea	
+72d5fe5b0f	838		836	0:20:02.600000	0:20:04.931000	72d5fe5b0f.mp3	72d5fe5b0f.webp	ノレアは命が惜しいんだ?		Is your life that precious, Norea?	False	False			
+02d6b54df4	840	841	839	0:20:05.230000	0:20:06.930000	02d6b54df4.mp3	02d6b54df4.webp	そんなこと言ってない	No dije eso.	That's not what I said.	False	False		norea	
+0887d2260b	844		842	0:20:07.230000	0:20:08.680000	0887d2260b.mp3	0887d2260b.webp	まあ いっか		Whatever.	False	False			
+6c80ef51c3	847,848		846	0:20:09.530000	0:20:13.430000	6c80ef51c3.mp3	6c80ef51c3.webp	また会いにくるね　スレッタおねえちゃん		I'll come visit you again... Big Sister Suletta.	False	False			
+c447ad66f1	851	850	849	0:20:16.320000	0:20:18.820000	c447ad66f1.mp3	c447ad66f1.webp	フォルドの夜明けから メッセージが来た	Tenemos un mensaje de Alba de Fold.	We've received a message from the Dawn of Fold.	False	False		sabina	
+8cf7304476	854	853	852	0:20:19.790000	0:20:21.823000	8cf7304476.mp3	8cf7304476.webp	作戦は失敗したと	La operación fracasó.	The operation failed.	False	False		sabina	
+0fb0722071	857,859	856	855,858	0:20:24.570000	0:20:29.620000	0fb0722071.mp3	0fb0722071.webp	アーシアンのガンダムねえ　関わりたくないな	Un Gundam Earthian, ¿eh? No quiero relacionarme con eso.	Earthian Gundams, huh? We'd better not get involved.	False	False		elan	
+af4252c4a8	862	861	860	0:20:32.590000	0:20:34.030000	af4252c4a8.mp3	af4252c4a8.webp	終わった?	¿Se terminó?	It's over....?	False	False		suletta	
+38078e241d	865	864	863	0:20:34.930000	0:20:37.090000	38078e241d.mp3	38078e241d.webp	うん そうだよね	Sí. Es verdad.	Right. It must be.	False	False		suletta	
+f36e0426a3	868	867	866	0:20:42.350000	0:20:43.420000	f36e0426a3.mp3	f36e0426a3.webp	見つけた	Te encontré.	Found her!	False	False		suletta	
+4b24d0831d	871	870	869,872	0:20:44.100000	0:20:47.100000	4b24d0831d.mp3	4b24d0831d.webp	今行くよ ミオリネさん!	Enseguida voy, Miorine.	I'm on my way... Ms. Miorine!	False	False		suletta	
+b161045d3c	878	877	876	0:22:23.190000	0:22:25.196000	b161045d3c.mp3	b161045d3c.webp	絶対 助けてやる	Te salvaré.	I'll save you, no matter what.	False	False		miorine	
+7722221ab1	881	880	879	0:22:26.040000	0:22:29.660000	7722221ab1.mp3	7722221ab1.webp	病院のベッドで一晩中 罵倒してやるんだから	Te insultaré toda la noche en la cama del hospital.	So I can curse you all night while you're in a hospital bed!	False	False		miorine	
+e078bcfb9c	886	885	884	0:22:32.290000	0:22:35.430000	e078bcfb9c.mp3	e078bcfb9c.webp	見つけた デリング・レンブラン	Te encontré, Delling Rembran.	Found you, Delling Rembran.	False	False		terrorista E	
+5443698d47	889,891	888,890	887	0:22:35.430000	0:22:40.960000	5443698d47.mp3	5443698d47.webp	地球に帰れなくても⸺　お前とは ここで刺し違える!	Aunque no regrese a la Tierra, podré llevarte conmigo a la tumba.	Even if I can't get back to Earth, I'm taking you down with me!	False	False		terrorista E	
+40f7ea3a48	897,899	896	895,898	0:22:52.800000	0:22:55.351000	40f7ea3a48.mp3	40f7ea3a48.webp	ミオリネさん!　クソ! うう...	¡Miorine! -¡Maldición!	Ms. Miorine! Damn it!	False	False		suletta/terrorista E	
+0549318716	902	901	900	0:22:55.940000	0:22:57.680000	0549318716.mp3	0549318716.webp	やめなさい!	¡Quieto!	Oh no you don't!	False	False		suletta	
+ca095149a6	906	907	908	0:23:18.499000	0:23:21.170000	ca095149a6.mp3	ca095149a6.webp	エヘヘ 締まらないなー	Qué desastre.	I'm such a klutz.	False	False		suletta	
+9705b478ff	911	910	909	0:23:24.970000	0:23:27.425000	9705b478ff.mp3	9705b478ff.webp	助けに来たよ ミオリネさん	Vine a salvarte, Miorine.	I came to rescue you, Ms. Miorine!	False	False		suletta	
+6df0e8393d	913,916	912	914,915	0:23:32.010000	0:23:35.140000	6df0e8393d.mp3	6df0e8393d.webp	なんで...　笑ってるの?	¿Cómo puedes sonreír?	How... How can you smile like that?	False	False		miorine	
+32c982354a	917		918	0:23:35.057000	0:23:35.930000	32c982354a.mp3	32c982354a.webp	え?		Huh?	False	False			

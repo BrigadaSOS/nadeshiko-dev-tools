@@ -1,316 +1,456 @@
-import concurrent
-import argparse
-import threading
-import csv
-import json
+import hashlib
 import logging
 import os
-import pathlib
 import re
-import shutil
-import string
 import subprocess
+import warnings
 from collections import namedtuple
 from datetime import timedelta
-from pathlib import Path
 from multiprocessing.pool import ThreadPool as Pool
+from pathlib import Path
 
 import babelfish
 import deepl
 import ffmpeg
-import inquirer
-import jaconvV2
-import moviepy.editor as mp
-import pysubs2
-import requests
-from anilist import Client
-from langdetect import detect
 from dotenv import load_dotenv
 from guessit import guessit
+from langdetect import detect
+from rich.console import Console
 
-logging.getLogger("moviepy").setLevel(logging.ERROR)
+from media_sub_splitter.utils.anilist import CachedAnilist
+from media_sub_splitter.utils.cli import command_args
+from media_sub_splitter.utils.config import (
+    ProcessingConfig,
+    load_subtitle_config,
+    save_subtitle_config,
+)
+from media_sub_splitter.utils.display_utils import (
+    display_file_details,
+    display_folder_mappings,
+)
+from media_sub_splitter.utils.ffmpeg_utils import probe_files
+from media_sub_splitter.utils.file_utils import (
+    discover_input_folders,
+    save_info_json,
+    write_data_json,
+)
+from media_sub_splitter.utils.prompts import (
+    confirm_processing,
+    map_folder_to_anilist,
+    restore_terminal,
+    select_audio_tracks,
+    select_subtitle_tracks,
+    setup_signal_handlers,
+)
+from media_sub_splitter.utils.subtitle_utils import (
+    SUPPORTED_LANGUAGES,
+    load_subtitle_file,
+)
+from media_sub_splitter.utils.text_utils import (
+    extract_anime_title_for_guessit,
+    join_sentences_to_segment,
+    process_subtitle_line,
+)
 
+warnings.filterwarnings("ignore", message="Subtitle stream parsing is not supported")
+
+console = Console()
 logger = logging.getLogger(__name__)
 logger.propagate = 0
 if not logger.handlers:
-    handler = logging.StreamHandler()
-    formatter = logging.Formatter("%(asctime)-15s %(message)s")
-    handler.setFormatter(formatter)
+    from rich.logging import RichHandler
+
+    handler = RichHandler(console=console, show_time=True, show_path=False, markup=True)
+    handler.setFormatter(logging.Formatter("%(message)s"))
     logger.addHandler(handler)
-
-emoji = re.compile(
-    "["
-    "\U0001F600-\U0001F64F"  # emoticons
-    "\U0001F300-\U0001F5FF"  # symbols & pictographs
-    "\U0001F680-\U0001F6FF"  # transport & map symbols
-    "\U0001F1E0-\U0001F1FF"  # flags (iOS)
-    "]+",
-    re.UNICODE,
-)
-
-SUPPORTED_LANGUAGES = ["en", "ja", "es"]
-
-EpisodeTsvRow = namedtuple(
-    "Row",
-    [
-        "ID",
-        "SUBS_JP_IDS",
-        "SUBS_ES_IDS",
-        "SUBS_EN_IDS",
-        "START_TIME",
-        "END_TIME",
-        "NAME_AUDIO",
-        "NAME_SCREENSHOT",
-        "CONTENT",
-        "CONTENT_TRANSLATION_SPANISH",
-        "CONTENT_TRANSLATION_ENGLISH",
-        "CONTENT_SPANISH_MT",
-        "CONTENT_ENGLISH_MT",
-        "ACTOR_JA",
-        "ACTOR_ES",
-        "ACTOR_EN",
-    ],
-)
+logger.setLevel(logging.INFO)
 
 MatchingSubtitle = namedtuple("MatchingSubtitle", ["origin", "data", "filepath"])
 
 
 def main():
-    load_dotenv()
-    args = command_args()
-    logger.setLevel(logging.DEBUG if args.verbose else logging.INFO)
+    """Main entry point for the media-sub-splitter CLI.
 
-    deepl_token = os.getenv("TOKEN") or args.token
+    This function orchestrates the entire workflow:
+    1. Discover folders with .mkv files
+    2. Map folders to Anilist media
+    3. Probe files for audio/subtitle streams
+    4. Select audio and subtitle tracks
+    5. Process episodes into segments
+    """
+    setup_signal_handlers()
+
+    try:
+        args = command_args()
+        config = ProcessingConfig(
+            input_folder=args.input,
+            output_folder=args.output,
+            deepl_token=args.token,
+            verbose=args.verbose,
+            dryrun=args.dryrun,
+            extra_punctuation=args.extra_punctuation,
+            parallel=args.parallel,
+        )
+
+        # 1. Discover folders with .mkv files
+        media_folders = discover_input_folders(config.input_folder)
+
+        if not media_folders:
+            msg = (
+                f"[red]No folders with .mkv files found in {config.input_folder}! "
+                "Nothing else to do.[/red]"
+            )
+            console.print(msg)
+            return
+
+        console.print(
+            f"[green]Found {len(media_folders)} folder(s) to process in "
+            f"{config.input_folder}[/green]"
+        )
+
+        console.print("\n[green bold]Discovered folders:[/green bold]")
+        for folder in media_folders:
+            console.print(f"  [cyan]{folder['name']}[/cyan] ({folder['file_count']} files)")
+
+        # 2. Map each folder to Anilist media
+        anilist = CachedAnilist()
+        folder_mappings = {}
+
+        console.print("\n[cyan]Mapping folders to Anilist media...[/cyan]")
+        for folder in media_folders:
+            anime_data = map_folder_to_anilist(folder, anilist)
+            if anime_data:
+                folder_mappings[folder["name"]] = {
+                    "anime": anime_data,
+                    "path": folder["path"],
+                    "files": folder["files"],
+                }
+
+        if not folder_mappings:
+            console.print(
+                "[yellow]No folders were mapped to Anilist media. Nothing to process.[/yellow]"
+            )
+            return
+
+        display_folder_mappings(folder_mappings)
+
+        # Load existing config
+        config_data = load_subtitle_config()
+
+        # Probe files for streams
+        all_file_details = probe_files(folder_mappings)
+        display_file_details(all_file_details)
+
+        # Select audio and subtitle tracks (prompts)
+        audio_config = select_audio_tracks(
+            folder_mappings, all_file_details, config_data.get("audio", {})
+        )
+        subtitle_config = select_subtitle_tracks(
+            folder_mappings, all_file_details, config_data.get("subtitles", {})
+        )
+
+        # Save config if anything changed
+        if audio_config != config_data.get("audio", {}) or subtitle_config != config_data.get(
+            "subtitles", {}
+        ):
+            config_data["audio"] = audio_config
+            config_data["subtitles"] = subtitle_config
+            save_subtitle_config(config_data)
+            console.print("\n[green]Configuration saved![/green]")
+
+        # Confirm and process
+        total_files = sum(len(m["files"]) for m in folder_mappings.values())
+        if confirm_processing(total_files, len(folder_mappings)):
+            process_episodes(config, folder_mappings, audio_config=audio_config)
+
+    except KeyboardInterrupt:
+        restore_terminal()
+        import sys
+
+        sys.exit(130)
+    except Exception:
+        restore_terminal()
+        raise
+
+
+# ----------------------------------------------------------------------------
+# Processing Functions
+# ----------------------------------------------------------------------------
+
+
+def process_episodes(
+    config: ProcessingConfig,
+    folder_mappings: dict,
+    subtitles_dict_remembered: dict | None = None,
+    audio_config: dict | None = None,
+):
+    """Process episodes in folder mappings."""
+    load_dotenv()
+    logger.setLevel(logging.DEBUG if config.verbose else logging.INFO)
+
+    deepl_token = os.getenv("TOKEN") or config.deepl_token
     if not deepl_token:
         logger.warning(
-            " > IMPORTANT < DEEPL TOKEN has not been detected. Subtitles won't be translated to all supported languages"
+            " > IMPORTANT < DEEPL TOKEN has not been detected. "
+            "Subtitles won't be translated to all supported languages"
         )
 
     translator = deepl.Translator(deepl_token) if deepl_token else None
+    output_folder = config.output_folder
 
-    # Input and output folders
-    input_folder = args.input
-    output_folder = args.output
+    if subtitles_dict_remembered is None:
+        subtitles_dict_remembered = {}
 
-    episode_filepaths = sorted(
-        [
-            os.path.join(root, name)
-            for root, dirs, files in os.walk(input_folder)
-            for name in files
-            if name.endswith(".mkv")
-        ]
-    )
+    if audio_config is None:
+        audio_config = {}
 
-    if not episode_filepaths:
-        logger.error(f"No .mkv files found in {input_folder}! Nothing else to do.")
-        return
+    # Process each folder
+    pool = Pool(config.pool_size)
 
-    logger.info(f"Found {len(episode_filepaths)} files to process in {input_folder}...")
+    for folder_name, mapping in folder_mappings.items():
+        console.print(f"\n[cyan]Processing folder: {folder_name}[/cyan]")
 
-    anilist = CachedAnilist()
-    subtitles_dict_remembered = {}
+        # Create output folder for this media
+        anime_data = mapping["anime"]
+        anime_folder_name = str(anime_data.id)
+        anime_folder_fullpath = os.path.join(output_folder, anime_folder_name)
+        os.makedirs(anime_folder_fullpath, exist_ok=True)
 
-    pool = Pool(6)
+        # Save info.json for this media (also generates/loads the hash salt)
+        info_json_fullpath = os.path.join(anime_folder_fullpath, "info.json")
+        hash_salt = save_info_json(info_json_fullpath, anime_data, anime_folder_name)
 
-    for episode_filepath in episode_filepaths:
-        pool, subtitles_dict_remembered = extract_segments_from_episode(
-            pool,
-            episode_filepath,
-            output_folder,
-            translator,
-            anilist,
-            subtitles_dict_remembered,
-            args,
-        )
+        # Process each file in the folder
+        for filename in mapping["files"]:
+            filepath = os.path.join(mapping["path"], filename)
+            pool, subtitles_dict_remembered = extract_segments_from_episode(
+                pool,
+                filepath,
+                anime_folder_fullpath,
+                translator,
+                anime_data,
+                subtitles_dict_remembered,
+                config,
+                hash_salt,
+                mapping["path"],  # folder_path
+                audio_config,  # audio_config
+            )
 
     pool.close()
     pool.join()
+
+    console.print("[green]Processing complete![/green]")
 
 
 def extract_segments_from_episode(
     pool,
     episode_filepath,
-    output_folder,
+    anime_folder_fullpath,
     translator,
-    anilist,
+    anime_data,
     subtitles_dict_remembered,
-    args,
+    config,
+    hash_salt: str,
+    folder_path: str,
+    audio_config: dict,
 ):
+    """Extract segments from a single episode file."""
     try:
-        logger.info(f"Filepath: {episode_filepath}\n")
+        logger.info(f"Anime: {anime_data.title.romaji}")
 
-        # Guessit
-        guessit_query = extract_anime_title_for_guessit(episode_filepath)
-        logger.info(f"> Query for Guessit: {guessit_query}")
-        episode_info = guessit(guessit_query)
-
-        guessed_anime_title = episode_info["title"]
-        season_number_pretty = f"S{episode_info['season']:02d}"
-        episode_number_pretty = f"E{episode_info['episode']:02d}"
-        logger.info(
-            f"Guessed information: {guessed_anime_title} {season_number_pretty}{episode_number_pretty}\n"
+        # Discover and match subtitles
+        (
+            episode_number,
+            episode_number_pretty,
+            matching_subtitles,
+            subtitles_dict_remembered,
+            sync_external_subs,
+            main_mkv,
+            audio_index,
+        ) = discover_episode_subtitles(
+            episode_filepath,
+            anime_folder_fullpath,
+            subtitles_dict_remembered,
+            folder_path,
+            audio_config,
         )
 
-        # Anilist
-        anilist_query = extract_anime_title_for_anilist(guessed_anime_title)
-        logger.info(f"Query for Anilist: {anilist_query}")
-        anime_info = anilist.get_anime(anilist_query)
-        name_romaji = anime_info.title.romaji
-        logger.info(f"Anime found: {name_romaji}\n")
+        # Process episode into segments
+        process_episode_segments(
+            pool,
+            main_mkv,
+            anime_folder_fullpath,
+            episode_number,
+            episode_number_pretty,
+            matching_subtitles,
+            translator,
+            anime_data,
+            config,
+            hash_salt,
+            sync_external_subs,
+            audio_index,
+        )
 
-        # Create folder for saving info.json and segments
-        anime_folder_name = map_anime_title_to_media_folder(name_romaji)
-        anime_folder_fullpath = os.path.join(output_folder, anime_folder_name)
-        os.makedirs(anime_folder_fullpath, exist_ok=True)
-        logger.info(f"> Base anime folder: {anime_folder_fullpath}")
+    except Exception:
+        logger.error("Error processing episode. Skipping...", exc_info=True)
 
-        info_json_fullpath = os.path.join(anime_folder_fullpath, "info.json")
-        logger.info(f"Filepath for info.json: {info_json_fullpath}\n")
+    return pool, subtitles_dict_remembered
 
-        if not os.path.exists(info_json_fullpath):
-            logger.info("Creating new info.json file...")
 
-            with open(info_json_fullpath, "wb") as f:
-                info_json = {
-                    "id": anime_info.id,
-                    "version": "4",
-                    "folder_media_anime": anime_folder_name,
-                    "japanese_name": anime_info.title.native,
-                    "english_name": anime_info.title.english,
-                    "romaji_name": anime_info.title.romaji,
-                    "airing_format": anime_info.format,
-                    "airing_status": anime_info.status,
-                    "genres": anime_info.genres,
-                }
+def discover_episode_subtitles(
+    episode_filepath: str,
+    anime_folder_fullpath: str,
+    subtitles_dict_remembered: dict,
+    folder_path: str,
+    audio_config: dict,
+) -> tuple:
+    """Discover and match subtitles for an episode file."""
+    from media_sub_splitter.utils.file_utils import discover_matching_mkv_files
+    from media_sub_splitter.utils.prompts import (
+        select_mkv_sources_and_tracks,
+        select_subtitle_streams,
+    )
 
-                if "cover" not in info_json:
-                    cover_data = requests.get(anime_info.cover.extra_large).content
-                    cover_filename = (
-                        f"cover{os.path.splitext(anime_info.cover.extra_large)[1]}"
-                    )
-                    with open(
-                        os.path.join(anime_folder_fullpath, cover_filename), "wb"
-                    ) as handler:
-                        handler.write(cover_data)
-                    info_json["cover"] = os.path.join(anime_folder_name, cover_filename)
+    logger.info(f"Filepath: {episode_filepath}\n")
 
-                if "banner" not in info_json:
-                    banner_data = requests.get(anime_info.banner).content
-                    banner_filename = (
-                        f"banner{os.path.splitext(anime_info.cover.extra_large)[1]}"
-                    )
-                    with open(
-                        os.path.join(anime_folder_fullpath, banner_filename), "wb"
-                    ) as handler:
-                        handler.write(banner_data)
-                    info_json["banner"] = os.path.join(
-                        anime_folder_name, banner_filename
-                    )
+    # Get episode info from guessit
+    guessit_query = extract_anime_title_for_guessit(episode_filepath)
+    logger.info(f"> Query for Guessit: {guessit_query}")
+    episode_info = guessit(guessit_query)
 
-                logger.info(f"Json Data: {info_json}\n")
+    episode_number = episode_info.get("episode", 1)
+    episode_number_pretty = str(episode_number)
+    logger.info(f"Episode: {episode_number_pretty}")
 
-                # Use utf8 for writing Japanese characters correctly
-                json_data = json.dumps(info_json, indent=2, ensure_ascii=False).encode(
-                    "utf8"
-                )
-                f.write(json_data)
+    # Get subtitles
+    logger.info("> Finding matching subtitles...")
+    matching_subtitles = {}
 
-        # Get subtitles
-        logger.info("> Finding matching subtitles...")
-        matching_subtitles = {}
+    # Part 1: Find subtitle files on same directory as episode, with same episode number
+    input_episode_parent_folder = Path(episode_filepath).parent
+    subtitle_filepaths = [
+        os.path.join(input_episode_parent_folder, filename)
+        for filename in os.listdir(input_episode_parent_folder)
+        if filename.endswith(".ass") or filename.endswith(".srt")
+    ]
+    logger.debug(f"Subtitle filepaths: {subtitle_filepaths}")
 
-        # Part 1: Find subtitle files on same directory as episode, with same episode number
-        input_episode_parent_folder = Path(episode_filepath).parent
-        subtitle_filepaths = [
-            os.path.join(input_episode_parent_folder, filename)
-            for filename in os.listdir(input_episode_parent_folder)
-            if filename.endswith(".ass") or filename.endswith(".srt")
-        ]
-        logger.debug(f"Subtitle filepaths: {subtitle_filepaths}")
-
-        for subtitle_filepath in subtitle_filepaths:
-            subtitle_filename = re.sub(
-                r"\[.*?\]|\(.*?\)", "", os.path.basename(subtitle_filepath)
-            )
-            guessed_subtitle_info = guessit(subtitle_filename)
-            if "episode" in guessed_subtitle_info:
-                subtitle_episode = guessed_subtitle_info["episode"]
+    for subtitle_filepath in subtitle_filepaths:
+        subtitle_filename = re.sub(r"\[.*?\]|\(.*?\)", "", os.path.basename(subtitle_filepath))
+        guessed_subtitle_info = guessit(subtitle_filename)
+        if "episode" in guessed_subtitle_info:
+            subtitle_episode = guessed_subtitle_info["episode"]
+        else:
+            episode_matches = re.search(r"(?!S)(\D\d\d|\D\d)\D", subtitle_filename)
+            if episode_matches:
+                subtitle_episode = episode_matches.group(1)
             else:
-                episode_matches = re.search(r"(?!S)(\D\d\d|\D\d)\D", subtitle_filename)
-                if episode_matches:
-                    subtitle_episode = episode_matches.group(1)
-                else:
-                    logger.info(
-                        "> Could not guess Episode number for subtitle: {subtitle_filepath}"
-                    )
+                logger.info(f"> Could not guess Episode number for subtitle: {subtitle_filepath}")
+                continue
 
-            if int(subtitle_episode) == int(episode_info["episode"]):
-                logger.info(
-                    f"> (E{subtitle_episode}) Found external subtitle: {subtitle_filepath}"
-                )
+        if int(subtitle_episode) == episode_number:
+            logger.info(f"> (E{subtitle_episode}) Found external subtitle: {subtitle_filepath}")
 
-                subtitle_language = None
-                if "subtitle_language" in guessed_subtitle_info:
-                    subtitle_language = guessed_subtitle_info[
-                        "subtitle_language"
-                    ].alpha2
-                else:
-                    try:
-                        subtitle_data = pysubs2.load(subtitle_filepath)
-
-                        # Concatenate all the subtitle lines into a single string for better accuracy
-                        subtitle_text = " ".join(
-                            [event.text for event in subtitle_data]
-                        )
-
-                        # Use langdetect to guess the language
-                        subtitle_language = detect(subtitle_text)
-                        logger.info(
-                            f"> External subtitle detected language: {subtitle_language}"
-                        )
-                    except Exception as e:
-                        logger.error(f"Failed to detect language for subtitle: {e}")
-                        continue
-
-                if not subtitle_language:
-                    logger.error(
-                        "Impossible to guess the language of the subtitle. Skipping..."
-                    )
+            subtitle_language = None
+            if "subtitle_language" in guessed_subtitle_info:
+                subtitle_language = guessed_subtitle_info["subtitle_language"].alpha2
+            else:
+                try:
+                    subtitle_data = load_subtitle_file(subtitle_filepath)
+                    subtitle_text = " ".join([event.text for event in subtitle_data])
+                    subtitle_language = detect(subtitle_text)
+                    logger.info(f"> External subtitle detected language: {subtitle_language}")
+                except Exception as e:
+                    logger.error(f"Failed to detect language for subtitle: {e}")
                     continue
 
-                if subtitle_language not in SUPPORTED_LANGUAGES:
-                    logger.info(
-                        f"Language {subtitle_language} is currently not supported. Skipping..."
-                    )
-                    continue
+            if not subtitle_language:
+                logger.error("Impossible to guess the language of the subtitle. Skipping...")
+                continue
 
-                subtitle_data = pysubs2.load(subtitle_filepath)
-                logger.info(f">Found [{subtitle_language}] subtitles: {subtitle_data}")
+            if subtitle_language not in SUPPORTED_LANGUAGES:
+                logger.info(f"Language {subtitle_language} is not supported. Skipping...")
+                continue
 
-                if subtitle_language in matching_subtitles and len(subtitle_data) < len(
-                    matching_subtitles[subtitle_language]
-                ):
-                    logger.info(
-                        f"Already found better matching subtitles for this language. Skipping..."
-                    )
-                    continue
+            subtitle_data = load_subtitle_file(subtitle_filepath)
+            logger.info(f">Found [{subtitle_language}] subtitles: {subtitle_data}")
 
-                logger.info(f"Saving subtitles: {subtitle_data}\n")
-                matching_subtitles[subtitle_language] = MatchingSubtitle(
-                    origin="external",
-                    filepath=subtitle_filepath,
-                    data=subtitle_data,
-                )
+            if subtitle_language in matching_subtitles and len(subtitle_data) < len(
+                matching_subtitles[subtitle_language]
+            ):
+                logger.info("Already found better matching subtitles. Skipping...")
+                continue
 
-        # Part 2: extract srt/ass from mkv (WIP)
-        # * Get every subtitle and filter it by using a checkbox select
-        # * Extract to /tmp
-        # * Add subtitles to matching_subtitles
-        tmp_output_folder = os.path.join(anime_folder_fullpath, "tmp")
-        os.makedirs(tmp_output_folder, exist_ok=True)
+            logger.info(f"Saving subtitles: {subtitle_data}\n")
+            matching_subtitles[subtitle_language] = MatchingSubtitle(
+                origin="external",
+                filepath=subtitle_filepath,
+                data=subtitle_data,
+            )
+
+    # Part 2: Discover and process MKV files (including the original episode file)
+    folder_name = Path(episode_filepath).parent.name
+    tmp_output_folder = os.path.join(anime_folder_fullpath, "tmp")
+    os.makedirs(tmp_output_folder, exist_ok=True)
+
+    # Find all matching MKV files for this episode
+    matching_mkv_sources = discover_matching_mkv_files(episode_filepath, episode_number)
+    logger.info(
+        f"Found {len(matching_mkv_sources)} matching MKV file(s) for episode {episode_number}"
+    )
+
+    # Determine main MKV and subtitle sources
+    main_mkv = episode_filepath
+    audio_index = None
+    subtitle_selections = {}
+
+    if len(matching_mkv_sources) > 1:
+        # Multiple MKV files - let user select main file, audio track, and subtitle sources
+        logger.info("Multiple MKV files found for this episode")
+        main_mkv, audio_index, subtitle_selections, subtitles_dict_remembered = (
+            select_mkv_sources_and_tracks(
+                matching_mkv_sources,
+                folder_name,
+                subtitles_dict_remembered,
+                audio_config,
+                folder_path,
+            )
+        )
+    else:
+        # Single MKV file - use existing behavior
         file_probe = ffmpeg.probe(episode_filepath)
 
-        # Generate the list of available subs
+        # Try to use folder audio_config if available
+        from media_sub_splitter.utils.prompts import _get_config_key
+
+        config_key = _get_config_key(folder_name, folder_path)
+        if audio_config and config_key in audio_config:
+            audio_index = audio_config[config_key].get("index")
+            # Verify the audio track exists
+            if audio_index is not None:
+                audio_streams = [s for s in file_probe["streams"] if s["codec_type"] == "audio"]
+                audio_stream = next((s for s in audio_streams if s["index"] == audio_index), None)
+                if audio_stream is None:
+                    audio_index = None
+
+        # Auto-select audio if not configured
+        if audio_index is None:
+            japanese_stream = None
+            for stream in file_probe["streams"]:
+                if stream["codec_type"] == "audio":
+                    lang = stream.get("tags", {}).get("language", "").lower()
+                    if lang in ("jpn", "ja", "japanese"):
+                        japanese_stream = stream
+                        break
+
+            if japanese_stream:
+                audio_index = japanese_stream["index"]
+            else:
+                audio_streams = [s for s in file_probe["streams"] if s["codec_type"] == "audio"]
+                if audio_streams:
+                    audio_index = audio_streams[0]["index"]
+
+        # Generate the list of available subs from the single file
         subtitles_dict = {}
         for stream in file_probe["streams"]:
             if stream["codec_type"] == "subtitle":
@@ -321,81 +461,24 @@ def extract_segments_from_episode(
                 if title and language:
                     subtitles_dict[index] = {"title": title, "language": language}
 
-        subtitle_choices = [
-            {"name": f"{details['title']} ({details['language']})", "value": index}
-            for index, details in subtitles_dict.items()
-        ]
+        # Get subtitle selection from prompts module
+        selected_indices, subtitles_dict_remembered, sync_external_subs = select_subtitle_streams(
+            subtitles_dict, folder_name, subtitles_dict_remembered
+        )
+        subtitle_selections = {episode_filepath: selected_indices}
 
-        subtitle_questions = [
-            inquirer.Checkbox(
-                "subtitle_streams",
-                message="What subtitles do you want to use?",
-                choices=subtitle_choices,
-            ),
-        ]
+    # Part 3: Extract subtitles from all selected MKV sources
+    for mkv_filepath, stream_indices in subtitle_selections.items():
+        logger.info(f"Processing subtitles from: {os.path.basename(mkv_filepath)}")
 
-        # Check if want to remember this selection for future episodes
-        current_subtitles_dict = {
-            index: subtitles_dict[index]
-            for index in subtitles_dict
-            if index in subtitles_dict_remembered
-        }
+        # Probe the specific file
+        file_probe = ffmpeg.probe(mkv_filepath)
 
-        # If there was a previous selection
-        if subtitles_dict_remembered:
-            # If the current subtitles dictionary is different from the remembered one
-            if current_subtitles_dict != subtitles_dict_remembered:
-                logger.info(
-                    "Previous subtitles used are different from current episode. Asking for selection again..."
-                )
-                selected_subtitles = inquirer.prompt(subtitle_questions)
-                selected_indices = [
-                    subtitle["value"]
-                    for subtitle in selected_subtitles["subtitle_streams"]
-                ]
-
-                subtitle_remember_question = [
-                    inquirer.Confirm(
-                        "subtitle_remember",
-                        message="Do you want to remember this selection for future episodes?",
-                        default=False,
-                    )
-                ]
-                selected_remember_subtitles = inquirer.prompt(
-                    subtitle_remember_question
-                )
-                if selected_remember_subtitles["subtitle_remember"]:
-                    subtitles_dict_remembered = {
-                        index: subtitles_dict[index] for index in selected_indices
-                    }
-            else:
-                # Previous selection if the current and remembered dictionaries are the same
-                selected_indices = [index for index in subtitles_dict_remembered]
-        else:
-            # If it's the first time or if the remembered selection was cleared, ask for the selection
-            selected_subtitles = inquirer.prompt(subtitle_questions)
-            selected_indices = [
-                subtitle["value"] for subtitle in selected_subtitles["subtitle_streams"]
-            ]
-
-            subtitle_remember_question = [
-                inquirer.Confirm(
-                    "subtitle_remember",
-                    message="Do you want to remember this selection for future episodes?",
-                    default=False,
-                )
-            ]
-            selected_remember_subtitles = inquirer.prompt(subtitle_remember_question)
-            if selected_remember_subtitles["subtitle_remember"]:
-                subtitles_dict_remembered = {
-                    index: subtitles_dict[index] for index in selected_indices
-                }
-
+        # Get the subtitle streams for this file
         subtitle_streams = [
             stream
             for stream in file_probe["streams"]
-            if stream["codec_type"] == "subtitle"
-            and stream["index"] in selected_indices
+            if stream["codec_type"] == "subtitle" and stream["index"] in stream_indices
         ]
 
         for subtitle_stream in subtitle_streams:
@@ -405,19 +488,17 @@ def extract_segments_from_episode(
 
             # Support for non-ISO 639-3 language tags
             tag_language_normalizer = {"fre": "fra", "ger": "deu"}
-
             if tag_language_normalizer.get(tag_language):
                 tag_language = tag_language_normalizer.get(tag_language)
 
             subtitle_language = babelfish.Language(tag_language).alpha2
             logger.info(
-                f"Found internal subtitle stream. Index: {index}. Codec: {codec}. Language: {subtitle_language}"
+                f"Found internal subtitle stream. Index: {index}. "
+                f"Codec: {codec}. Language: {subtitle_language}"
             )
 
             if subtitle_language not in SUPPORTED_LANGUAGES:
-                logger.info(
-                    f"Language {subtitle_language} is currently not supported. Skipping..."
-                )
+                logger.info(f"Language {subtitle_language} is not supported. Skipping...")
                 continue
 
             output_sub_tmp_filepath = os.path.join(tmp_output_folder, f"tmp.{codec}")
@@ -427,7 +508,7 @@ def extract_segments_from_episode(
                     "ffmpeg",
                     "-y",
                     "-i",
-                    episode_filepath,
+                    mkv_filepath,
                     "-map",
                     f"0:{index}",
                     "-c",
@@ -439,26 +520,25 @@ def extract_segments_from_episode(
             )
             logger.info(f"Exported subtitle to: {output_sub_tmp_filepath}")
 
-            subtitle_data = pysubs2.load(output_sub_tmp_filepath)
+            subtitle_data = load_subtitle_file(output_sub_tmp_filepath)
             logger.info(f">Found [{subtitle_language}] subtitles: {subtitle_data}")
 
             if subtitle_language in matching_subtitles:
-                logger.info(f"> Already matched subtitles for this language!!")
+                logger.info(f"> Already matched subtitles for {subtitle_language}!!")
 
                 if (
                     len(subtitle_data) > len(matching_subtitles[subtitle_language])
                     and matching_subtitles[subtitle_language].origin != "external"
                 ):
-                    logger.info(
-                        ">> Current subtitle internal file is longer than previous selected. Overriding..."
-                    )
+                    logger.info(">> Internal subtitle is longer. Overriding...")
                 else:
                     continue
 
             logger.info(f"Saving subtitles: {subtitle_data}\n")
+            anime_folder_name = os.path.basename(anime_folder_fullpath)
             output_sub_final_filepath = os.path.join(
                 tmp_output_folder,
-                f"{anime_folder_name} {season_number_pretty}{episode_number_pretty}.{subtitle_language}.{codec}",
+                f"{anime_folder_name} {episode_number_pretty}.{subtitle_language}.{codec}",
             )
             subtitle_data.save(output_sub_final_filepath)
             matching_subtitles[subtitle_language] = MatchingSubtitle(
@@ -467,49 +547,90 @@ def extract_segments_from_episode(
                 data=subtitle_data,
             )
 
-        logger.info(f"Matching subtitles: {matching_subtitles}\n")
+    logger.info(f"Matching subtitles: {matching_subtitles}\n")
 
-        # Having matching JP subtitles is required
-        if "ja" not in matching_subtitles:
-            raise Exception("Could not find Japanese subtitles. Skipping...")
+    # Having matching JP subtitles is required
+    if "ja" not in matching_subtitles:
+        raise Exception("Could not find Japanese subtitles. Skipping...")
 
-        # Start segmenting file
-        logger.info("Start file segmentation...")
+    # Default sync_external_subs to True if not set
+    if "sync_external_subs" not in locals():
+        sync_external_subs = True
 
-        episode_folder_output_path = os.path.join(
-            anime_folder_fullpath, season_number_pretty, episode_number_pretty
-        )
-        os.makedirs(episode_folder_output_path, exist_ok=True)
+    return (
+        episode_number,
+        episode_number_pretty,
+        matching_subtitles,
+        subtitles_dict_remembered,
+        sync_external_subs,
+        main_mkv,
+        audio_index,
+    )
 
-        if args.parallel:
-            pool.apply_async(
-                split_video_by_subtitles,
-                (
-                    translator,
-                    episode_filepath,
-                    matching_subtitles,
-                    episode_folder_output_path,
-                    args,
-                ),
-            )
-        else:
-            split_video_by_subtitles(
+
+def process_episode_segments(
+    pool,
+    main_mkv_filepath: str,
+    anime_folder_fullpath: str,
+    episode_number: int,
+    episode_number_pretty: str,
+    matching_subtitles: dict,
+    translator,
+    anime_data,
+    config,
+    hash_salt: str,
+    sync_external_subs: bool,
+    audio_index: int | None = None,
+):
+    """Process episode into segments using discovered subtitles."""
+    logger.info("Start file segmentation...")
+
+    # Get video duration for metadata
+    file_probe = ffmpeg.probe(main_mkv_filepath)
+    duration_seconds = float(file_probe["format"]["duration"])
+    duration_ms = int(duration_seconds * 1000)
+
+    # Create episode folder (no season subfolder, just E01, E02, etc.)
+    episode_folder_output_path = os.path.join(anime_folder_fullpath, episode_number_pretty)
+    os.makedirs(episode_folder_output_path, exist_ok=True)
+
+    if config.parallel:
+        logger.info(f"[blue][E{episode_number}] Queued for parallel processing[/blue]")
+        pool.apply_async(
+            split_video_by_subtitles,
+            (
                 translator,
-                episode_filepath,
+                main_mkv_filepath,
                 matching_subtitles,
                 episode_folder_output_path,
-                args,
-            )
-
-        # shutil.rmtree(tmp_output_folder, ignore_errors=True)
-        logger.info(f"Finished")
-
-    except Exception:
-        logger.error(
-            "Something happened processing the anime. Skipping...", exc_info=True
+                config,
+                anime_data,
+                episode_number,
+                duration_ms,
+                hash_salt,
+                sync_external_subs,
+                audio_index,
+            ),
+            callback=lambda _: logger.info(
+                f"[green][E{episode_number}] Completed processing[/green]"
+            ),
+            error_callback=lambda e: logger.error(f"[red][E{episode_number}] Error: {e}[/red]"),
         )
-
-    return pool, subtitles_dict_remembered
+    else:
+        split_video_by_subtitles(
+            translator,
+            main_mkv_filepath,
+            matching_subtitles,
+            episode_folder_output_path,
+            config,
+            anime_data,
+            episode_number,
+            duration_ms,
+            hash_salt,
+            sync_external_subs,
+            audio_index,
+        )
+        logger.info(f"[green][E{episode_number}] Completed processing[/green]")
 
 
 def split_video_by_subtitles(
@@ -517,13 +638,60 @@ def split_video_by_subtitles(
     video_file,
     subtitles,
     episode_folder_output_path,
-    args,
-    output_tsv_name="data.tsv",
+    config,
+    anime_data,
+    episode_number,
+    duration_ms,
+    hash_salt: str,
+    sync_external_subs: bool,
+    audio_index: int | None = None,
 ):
-    video = mp.VideoFileClip(video_file) if video_file else None
+    """Split a video file into segments based on subtitles."""
+    logger.info(f"[cyan][E{episode_number}] Starting segmentation...[/cyan]")
 
-    # # TODO: Sync subtitles calling ffsubsync
-    # Use first found internal sub as reference for timing since it should be 100% perfect
+    # Sync external subtitles with internal reference if requested
+    if sync_external_subs:
+        # Find first internal subtitle track as reference
+        internal_ref = None
+        for _lang, sub in subtitles.items():
+            if sub.origin == "internal":
+                internal_ref = sub
+                break
+
+        if internal_ref:
+            for lang, sub in subtitles.items():
+                if sub.origin == "external":
+                    try:
+                        # Create output filepath for synced subtitle
+                        synced_filepath = sub.filepath.replace(
+                            os.path.basename(sub.filepath),
+                            f"synced_{os.path.basename(sub.filepath)}",
+                        )
+
+                        # Run ffsubsync
+                        subprocess.run(
+                            [
+                                "ffsubsync",
+                                internal_ref.filepath,
+                                "-i",
+                                sub.filepath,
+                                "-o",
+                                synced_filepath,
+                            ],
+                            check=True,
+                            capture_output=True,
+                        )
+
+                        # Load synced subtitle and update
+                        synced_data = load_subtitle_file(synced_filepath)
+                        subtitles[lang] = MatchingSubtitle(
+                            origin="external", filepath=synced_filepath, data=synced_data
+                        )
+                        logger.info(f"Synced {lang} subtitles against internal reference")
+                    except (subprocess.CalledProcessError, Exception) as e:
+                        logger.warning(f"Failed to sync {lang} subtitles: {e}")
+        else:
+            logger.info("No internal subtitle found for sync reference, skipping sync")
 
     # > From here on just assume all subtitles are perfectly synced
     synced_subtitles = subtitles
@@ -532,7 +700,7 @@ def split_video_by_subtitles(
     sorted_lines = []
     for language, subs in synced_subtitles.items():
         for line in subs.data:
-            sentence = process_subtitle_line(line, args)
+            sentence = process_subtitle_line(line, config)
             sorted_lines.append(
                 {
                     "start": line.start,
@@ -565,109 +733,200 @@ def split_video_by_subtitles(
         else:
             sorted_lines.remove(line)
 
-    tsv_filepath = os.path.join(episode_folder_output_path, output_tsv_name)
-    with open(tsv_filepath, "w+", newline="", encoding="utf-8") as tsvfile:
-        writer = csv.DictWriter(
-            tsvfile,
-            fieldnames=EpisodeTsvRow._fields,
-            delimiter="\t",
-            quoting=csv.QUOTE_NONE,
-            escapechar="\\",
-        )
-        writer.writeheader()
+    segments_data = []
+    ignored_segments = []
+    failed_segments = []
+    segment_index = 0
 
-        segment_start = sorted_lines[0]["start"] - 1
-        segment_end = sorted_lines[0]["end"] + 1
-        segment_sentences = {}
-        line_logs = [episode_folder_output_path, ""]
-        for i, line in enumerate(sorted_lines):
-            ln = line["language"]
+    segment_start = sorted_lines[0]["start"] - 1
+    segment_end = sorted_lines[0]["end"] + 1
+    segment_sentences = {}
+    line_logs = [episode_folder_output_path, ""]
+    for line in sorted_lines:
+        ln = line["language"]
 
-            # New line when:
-            #   * No overlap
-            #   * Overlap, but gap is smaller than 500
-            if not (segment_start < line["end"] and line["start"] < segment_end) or (
-                (segment_start < line["end"] and line["start"] < segment_end)
-                and abs(segment_end - line["start"]) < 500
+        # New line when:
+        #   * No overlap
+        #   * Overlap, but gap is smaller than 500
+        if not (segment_start < line["end"] and line["start"] < segment_end) or (
+            (segment_start < line["end"] and line["start"] < segment_end)
+            and abs(segment_end - line["start"]) < 500
+        ):
+            if "ja" in segment_sentences and (
+                "en" in segment_sentences or "es" in segment_sentences
             ):
-                if "ja" in segment_sentences and (
-                    "en" in segment_sentences or "es" in segment_sentences
-                ):
-                    segment_logs = generate_segment(
-                        i,
-                        segment_sentences,
-                        segment_start,
-                        segment_end,
-                        episode_folder_output_path,
-                        video,
-                        translator,
-                        writer,
-                        args,
+                segment_index += 1
+                segment_logs, segment_dict, failure_reason = generate_segment(
+                    segment_index,
+                    episode_number,
+                    segment_sentences,
+                    segment_start,
+                    segment_end,
+                    episode_folder_output_path,
+                    video_file,
+                    translator,
+                    config,
+                    anime_data,
+                    hash_salt,
+                    audio_index,
+                )
+                if segment_logs:
+                    line_logs = line_logs + segment_logs
+                if segment_dict:
+                    segments_data.append(segment_dict)
+                elif failure_reason:
+                    failed_segments.append(
+                        {
+                            "segment_index": segment_index,
+                            "start_ms": segment_start,
+                            "reason": failure_reason,
+                        }
                     )
-                    if segment_logs:
-                        line_logs = line_logs + segment_logs
-
-                else:
-                    line_logs.append("No en/es subtitle match. Ignoring...\n")
-
-                line_logs.append("-------------------------------------------------")
-                logger.info("\n".join(line_logs))
-                line_logs = [episode_folder_output_path, ""]
-                line_logs.append(f"[{ln}] Line: {line}")
-
-                segment_sentences = {ln: [line]}
-                segment_start = line["start"]
-                segment_end = line["end"]
 
             else:
-                line_logs.append(f"[{ln}] Line: {line}")
-                segment_sentences[ln] = segment_sentences.get(ln, [])
+                if "ja" in segment_sentences:
+                    segment_index += 1
+                    sentence_ja, actor_ja, subs_jp = join_sentences_to_segment(
+                        segment_sentences["ja"], "ja"
+                    )
+                    sentence_en, actor_en, subs_en = (
+                        join_sentences_to_segment(segment_sentences["en"], "en")
+                        if "en" in segment_sentences
+                        else (None, None, [])
+                    )
+                    sentence_es, actor_es, subs_es = (
+                        join_sentences_to_segment(segment_sentences["es"], "es")
+                        if "es" in segment_sentences
+                        else (None, None, [])
+                    )
+                    ignored_segment = {
+                        "segment_index": segment_index,
+                        "start_ms": segment_start,
+                        "end_ms": segment_end,
+                        "duration_ms": segment_end - segment_start,
+                        "content_ja": sentence_ja,
+                        "content_es": sentence_es,
+                        "content_en": sentence_en,
+                        "actor_ja": actor_ja or None,
+                        "actor_es": actor_es or None,
+                        "actor_en": actor_en or None,
+                        "files": None,
+                        "subtitles": {
+                            "ja": subs_jp,
+                            "es": subs_es,
+                            "en": subs_en,
+                        },
+                    }
+                    ignored_segments.append(ignored_segment)
+                line_logs.append("[yellow]No en/es subtitle match. Ignoring...[/yellow]")
 
-                # Sometimes when two characters are speaking the same line is repeated several times. Detect that
-                # to avoid duplicating the same sentence
-                eq_match = False
-                for saved_line in segment_sentences[ln]:
-                    if (
-                        saved_line["sentence"] == line["sentence"]
-                        and segment_sentences[ln][-1]["end"] == line["start"]
-                    ):
-                        eq_match = True
+            line_logs.append("-------------------------------------------------")
+            logger.info("\n".join(line_logs))
+            line_logs = [episode_folder_output_path, ""]
+            line_logs.append(f"[{ln}] Line: {line}")
 
-                if not eq_match:
-                    segment_sentences[ln].append(line)
+            segment_sentences = {ln: [line]}
+            segment_start = line["start"]
+            segment_end = line["end"]
 
-                segment_start = min(segment_start, line["start"])
-                segment_end = max(segment_end, line["end"])
+        else:
+            line_logs.append(f"[{ln}] Line: {line}")
+            segment_sentences[ln] = segment_sentences.get(ln, [])
+
+            # Sometimes when two characters are speaking the same line is repeated.
+            # Detect that to avoid duplicating the same sentence
+            eq_match = False
+            for saved_line in segment_sentences[ln]:
+                if (
+                    saved_line["sentence"] == line["sentence"]
+                    and segment_sentences[ln][-1]["end"] == line["start"]
+                ):
+                    eq_match = True
+
+            if not eq_match:
+                segment_sentences[ln].append(line)
+
+            segment_start = min(segment_start, line["start"])
+            segment_end = max(segment_end, line["end"])
+
+    if segments_data or ignored_segments:
+        write_data_json(
+            episode_folder_output_path,
+            segments_data,
+            episode_number,
+            duration_ms,
+            anime_data,
+            ignored_segments,
+        )
+        ignored_msg = f", {len(ignored_segments)} ignored" if ignored_segments else ""
+        logger.info(
+            f"[green][E{episode_number}] Created _data.json with "
+            f"{len(segments_data)} segments{ignored_msg}[/green]"
+        )
+    else:
+        logger.warning(f"[yellow][E{episode_number}] No segments generated[/yellow]")
+
+    if failed_segments:
+        logger.error(f"[red][E{episode_number}] {len(failed_segments)} segment(s) failed:[/red]")
+        for failed in failed_segments:
+            start_td = timedelta(milliseconds=failed["start"])
+            logger.error(
+                f"[red]  - Segment #{failed['index']} at {start_td} ({failed['reason']})[/red]"
+            )
+
+
+def generate_segment_hash(
+    anilist_id: int, episode_number: int, subtitle_id: int, subs_jp_ids: list, salt: str
+) -> str:
+    """Generate a salted hash for a segment.
+
+    The salt prevents reverse engineering the hash to extract Anilist IDs
+    and other internal structure.
+    """
+    subs_str = ",".join(map(str, subs_jp_ids))
+    hash_input = f"{salt}:{anilist_id}:{episode_number}:{subtitle_id}:{subs_str}"
+    return hashlib.sha256(hash_input.encode()).hexdigest()[:10]
 
 
 def generate_segment(
-    i,
+    segment_index,
+    episode_number,
     segment_sentences,
     segment_start,
     segment_end,
     output_path,
-    video,
+    video_file,
     translator,
-    writer,
-    args,
+    config,
+    anime_data,
+    hash_salt: str,
+    audio_index: int | None = None,
 ):
+    """Generate a single segment with audio, screenshot, and video."""
     logs = []
-    sentence_japanese, actor_japanese, subs_jp_ids = join_sentences_to_segment(
+    sentence_japanese, actor_japanese, subs_jp = join_sentences_to_segment(
         segment_sentences["ja"], "ja"
     )
-    sentence_english, actor_english, subs_en_ids = (
+    sentence_english, actor_english, subs_en = (
         join_sentences_to_segment(segment_sentences["en"], "en")
         if "en" in segment_sentences
         else (None, None, [])
     )
-    sentence_spanish, actor_spanish, subs_es_ids = (
+    sentence_spanish, actor_spanish, subs_es = (
         join_sentences_to_segment(segment_sentences["es"], "es")
         if "es" in segment_sentences
         else (None, None, [])
     )
-    # Use ID of the japanese sentence to identify the whole segment, since we always
-    # have to include japanese subtitles
-    segment_id = subs_jp_ids[0]
+    # Extract IDs for hashing
+    subs_jp_ids = [s["id"] for s in subs_jp]
+    subs_en_ids = [s["id"] for s in subs_en]
+    subs_es_ids = [s["id"] for s in subs_es]
+
+    # Generate salted hash for segment identification
+    original_subtitle_id = subs_jp_ids[0]
+    segment_hash = generate_segment_hash(
+        anime_data.id, episode_number, original_subtitle_id, subs_jp_ids, hash_salt
+    )
 
     sentence_spanish_is_mt = False if sentence_spanish else None
     sentence_english_is_mt = False if sentence_english else None
@@ -691,60 +950,150 @@ def generate_segment(
     end_time_delta = timedelta(milliseconds=segment_end)
     end_time_seconds = end_time_delta.total_seconds()
 
+    start_ms = segment_start
+    end_ms = segment_end
+    duration_ms = segment_end - segment_start
+
     subs_jp_ids_str = ",".join(list(map(str, subs_jp_ids)))
     subs_es_ids_str = ",".join(list(map(str, subs_es_ids)))
     subs_en_ids_str = ",".join(list(map(str, subs_en_ids)))
-    logs.append(f"({segment_id}) {start_time_delta} - {end_time_delta}")
+    logs.append(f"({segment_hash}) {start_time_delta} - {end_time_delta}")
     logs.append(f"[JA] ({subs_jp_ids_str}) {sentence_japanese}")
     logs.append(f"[ES] ({subs_es_ids_str}) {sentence_spanish}")
     logs.append(f"[EN] ({subs_en_ids_str}) {sentence_english}")
 
-    audio_filename = f"{segment_id}.mp3"
-    screenshot_filename = f"{segment_id}.webp"
-    video_filename = f"{segment_id}.mp4"
+    audio_filename = f"{segment_hash}.mp3"
+    screenshot_filename = f"{segment_hash}.webp"
+    screenshot_preview_filename = f"{segment_hash}p.webp"
+    video_filename = f"{segment_hash}.mp4"
 
-    # Audio
-    if video and not args.dryrun:
+    if video_file and not config.dryrun:
         try:
-            subclip = video.subclip(start_time_seconds, end_time_seconds)
-            audio = subclip.audio
             audio_path = os.path.join(output_path, audio_filename)
 
-            audio.write_audiofile(audio_path, codec="mp3", logger=None)
+            # Build ffmpeg command for audio extraction
+            ffmpeg_cmd = [
+                "ffmpeg",
+                "-y",
+                "-ss",
+                str(start_time_seconds),
+                "-i",
+                video_file,
+                "-t",
+                str(end_time_seconds - start_time_seconds),
+            ]
+
+            # Add -map option if specific audio track is selected
+            if audio_index is not None:
+                ffmpeg_cmd.extend(["-map", f"0:{audio_index}"])
+
+            ffmpeg_cmd.extend(
+                [
+                    "-vn",
+                    "-af",
+                    "loudnorm=I=-16:LRA=11:TP=-2",
+                    "-c:a",
+                    "libmp3lame",
+                    "-q:a",
+                    "5",
+                    audio_path,
+                ]
+            )
+
+            subprocess.call(
+                ffmpeg_cmd,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.STDOUT,
+            )
 
             logs.append(f"> Saved audio in {audio_path}")
 
         except Exception as err:
-            logger.exception(f"Error creating audio '{audio_filename}'", err)
-            return
+            logger.error(f"[red]Error creating audio '{audio_filename}': {err}[/red]")
+            return logs, None, "audio"
 
-        # Screenshot
         try:
             screenshot_path = os.path.join(output_path, screenshot_filename)
-
-            # Take a screenshot on the middle of the dialog
+            screenshot_preview_path = os.path.join(output_path, screenshot_preview_filename)
             screenshot_time = (start_time_seconds + end_time_seconds) / 2
-            video.save_frame(screenshot_path, t=screenshot_time)
+
+            # Generate main screenshot
+            result = subprocess.run(
+                [
+                    "ffmpeg",
+                    "-y",
+                    "-ss",
+                    str(screenshot_time),
+                    "-i",
+                    video_file,
+                    "-vframes",
+                    "1",
+                    "-vf",
+                    "scale='min(1920,iw)':'min(1080,ih)'",
+                    "-c:v",
+                    "libwebp",
+                    "-quality",
+                    "85",
+                    "-method",
+                    "6",
+                    screenshot_path,
+                ],
+                stdout=subprocess.PIPE,
+                stderr=subprocess.STDOUT,
+                text=True,
+            )
+            if result.returncode != 0:
+                logger.error(f"[red]ffmpeg screenshot failed: {result.stdout}[/red]")
+                raise RuntimeError(f"ffmpeg screenshot failed with code {result.returncode}")
+
+            # Generate preview screenshot
+            result = subprocess.run(
+                [
+                    "ffmpeg",
+                    "-y",
+                    "-ss",
+                    str(screenshot_time),
+                    "-i",
+                    video_file,
+                    "-vframes",
+                    "1",
+                    "-vf",
+                    "scale=960:540",
+                    "-c:v",
+                    "libwebp",
+                    "-quality",
+                    "85",
+                    "-method",
+                    "6",
+                    screenshot_preview_path,
+                ],
+                stdout=subprocess.PIPE,
+                stderr=subprocess.STDOUT,
+                text=True,
+            )
+            if result.returncode != 0:
+                logger.error(f"[red]ffmpeg preview screenshot failed: {result.stdout}[/red]")
+                raise RuntimeError(f"ffmpeg preview failed: code {result.returncode}")
 
             logs.append(f"> Saved screenshot in {screenshot_path}")
+            logs.append(f"> Saved preview in {screenshot_preview_path}")
 
         except Exception as err:
-            logger.exception(f"Error creating screenshot '{screenshot_filename}'", err)
-            return
+            logger.error(f"[red]Error creating screenshot '{screenshot_filename}': {err}[/red]")
+            return logs, None, "screenshot"
 
-        # Video
         video_path = os.path.join(output_path, video_filename)
         video_length_delta = end_time_delta - start_time_delta
 
         try:
-            subprocess.call(
+            result = subprocess.run(
                 [
                     "ffmpeg",
                     "-y",
                     "-loop",
                     "1",
                     "-framerate",
-                    "10",
+                    "1",
                     "-i",
                     screenshot_path,
                     "-i",
@@ -755,273 +1104,58 @@ def generate_segment(
                     "libx264",
                     "-tune",
                     "stillimage",
-                    "-b:v",
-                    "200k",
+                    "-crf",
+                    "40",
                     "-pix_fmt",
                     "yuv420p",
+                    "-c:a",
+                    "aac",
+                    "-b:a",
+                    "96k",
                     "-movflags",
                     "+faststart",
-                    "-t",
-                    str(video_length_delta),
+                    "-shortest",
                     video_path,
                 ],
                 stdout=subprocess.PIPE,
                 stderr=subprocess.STDOUT,
+                text=True,
             )
+            if result.returncode != 0:
+                logger.error(f"[red]ffmpeg video failed: {result.stdout}[/red]")
+                raise RuntimeError(f"ffmpeg video failed with code {result.returncode}")
             logs.append(f"> Saved video in {video_path}")
 
         except Exception as err:
-            logger.exception(f"Error creating video `{video_path}", err)
-            return
+            logger.error(f"[red]Error creating video '{video_filename}': {err}[/red]")
+            return logs, None, "video"
 
-    writer.writerow(
-        EpisodeTsvRow(
-            ID=segment_id,
-            SUBS_JP_IDS=subs_jp_ids_str,
-            SUBS_ES_IDS=subs_es_ids_str,
-            SUBS_EN_IDS=subs_en_ids_str,
-            START_TIME=start_time_delta,
-            END_TIME=end_time_delta,
-            NAME_AUDIO=audio_filename,
-            NAME_SCREENSHOT=screenshot_filename,
-            CONTENT=sentence_japanese,
-            CONTENT_TRANSLATION_SPANISH=sentence_spanish,
-            CONTENT_TRANSLATION_ENGLISH=sentence_english,
-            CONTENT_SPANISH_MT=sentence_spanish_is_mt,
-            CONTENT_ENGLISH_MT=sentence_english_is_mt,
-            ACTOR_JA=actor_japanese,
-            ACTOR_ES=actor_spanish,
-            ACTOR_EN=actor_english,
-        )._asdict()
-    )
-    logs.append("Segment saved!\n")
-    return logs
+    segment_dict = {
+        "segment_hash": segment_hash,
+        "segment_index": segment_index,
+        "start_ms": start_ms,
+        "end_ms": end_ms,
+        "duration_ms": duration_ms,
+        "content_ja": sentence_japanese,
+        "content_es": sentence_spanish,
+        "content_en": sentence_english,
+        "is_mt_es": sentence_spanish_is_mt or False,
+        "is_mt_en": sentence_english_is_mt or False,
+        "actor_ja": actor_japanese or None,
+        "actor_es": actor_spanish or None,
+        "actor_en": actor_english or None,
+        "files": {
+            "audio": audio_filename,
+            "screenshot": screenshot_filename,
+            "preview": screenshot_preview_filename,
+            "video": video_filename,
+        },
+        "subtitles": {
+            "ja": subs_jp,
+            "es": subs_es,
+            "en": subs_en,
+        },
+    }
 
-
-def join_sentences_to_segment(sentences, ln):
-    join_symbol = "　" if ln == "ja" else " "
-    joined_sentence = join_symbol.join(map(lambda x: x["sentence"].strip(), sentences))
-
-    # Sometimes japanese subs don't use the appropriate " symbol for quotes
-    invalid_quotes = r"``|''"
-    joined_sentence = re.sub(invalid_quotes, '"', joined_sentence)
-
-    # On certain cases it makes sense to not add a - since there is another symbol
-    # Already indicating the end of the sentence
-    remove_redundant_symbols = [
-        r"(?<=\.\.\.)-",
-        r"(?<=\?)-",
-        r"(?<=!)-",
-        r"(?<=\.)-",
-        r"(?<=,)-",
-        r"(?<=ー)-",
-        r"(?<=-)-",
-        r"(?<=。)\s",
-        r"^-",
-        r"(?<=\s)+\s",
-        r"(?<=\.\.\.)。",
-    ]
-
-    actor_sentence = ",".join(
-        sorted(set(map(lambda x: x["actor"].replace("\t", "").strip(), sentences)))
-    )
-
-    # Get all the ids that form the segment
-    subs_ids = list(map(lambda s: s["sub_id"], sentences))
-
-    return (
-        re.sub(rf"{'|'.join(remove_redundant_symbols)}", "", joined_sentence),
-        actor_sentence,
-        subs_ids,
-    )
-
-
-def process_subtitle_line(line, args):
-    if line.type != "Dialogue":
-        return ""
-
-    # Ass subtitles include an actor name that sometimes can be used to filter
-    # non-dialog subtitles
-    if line.name and re.search(r"sign|[_\-\s]?ed|op[_\-\s]?", line.name.lower()):
-        return ""
-
-    # *Top, sign... is usually used for background conversations with an ongoing
-    # dialog
-
-    if line.style and re.search(r"top|sign|tipo tv|block|alt|cart", line.style.lower()):
-        return ""
-
-    # Sometimes .ass subtitles include the signs subs on the main dialog
-    # Skip all lines that have pos() or move() ass method as it is not a real dialog line
-    if re.search(r"pos\(.*?\)|move\(.*?\)", line.text):
-        return ""
-
-    # Normaliza half-width (Hankaku) a full-width (Zenkaku) caracteres
-    processed_sentence = jaconvV2.normalize(line.plaintext, "NFKC")
-
-    # Replace all new lines / tabs / separators with just one space
-    processed_sentence = re.sub("\r?\n|\t", " ", processed_sentence)
-
-    if hasattr(args, "extra_punctuation") and args.extra_punctuation:
-        processed_sentence = processed_sentence.replace("・", " ")
-
-    processed_sentence = remove_nested_parenthesis(processed_sentence)
-
-    special_chars = r"⚟|⚞|<|>|=|●|→|ー?♪ー?|\u202a|\u202c|➡|&lrm;"
-    processed_sentence = re.sub(special_chars, "", processed_sentence)
-
-    processed_sentence = emoji.sub("", processed_sentence)
-
-    return processed_sentence.strip()
-
-
-def remove_nested_parenthesis(sentence):
-    nb_rep = 1
-    while nb_rep:
-        (sentence, nb_rep) = re.subn(
-            r"\([^\(\)（）\[\]\{\}《》【】]*\)|\[[^\(\)（）\[\]\{\}《》【】]*\]", "", sentence
-        )
-
-    return sentence
-
-
-def extract_anime_title_for_guessit(episode_filepath):
-    """
-    This method tries to parse the full episode path and get a coherent anime title. This methods does the following
-    postprocessing:
-      * Take only the episode name and the parent folder name
-      * Remove everything between [ and ]. This is usually the encoder name or the file ID
-      * Remove tags related to file quality and format (1080p/720p, Audio, HEVC, x265, BDRip...)
-
-    Example:
-      * Input:  Shingeki No Kyojin S01 1080p BDRip 10 bits x265-EMBER/S01E01- To You, in 2000 Years [14197707]
-      * Output: Shingeki No Kyojin S01 -EMBER S01E01- To You, in 2000 Years
-
-    This allows guessit to return "Shingeki No Kyojin" as the anime title, instead of returning the episode title
-    """
-    return re.sub(
-        r"\[.*?\]|1080p|720p|BDRip|Dual\s?Audio|x?26[4|5]-?|HEVC|10\sbits|EMBER",
-        "",
-        " ".join(episode_filepath.split("/")[-2:]),
-    )
-
-
-def extract_anime_title_for_anilist(guessed_anime_title):
-    """
-    After extracting the name from Guessit, we have to do a bit more of postprocessing because Anilist is really
-    sensitive with the title search. Including extra information like season or episodoe number will case Anilist
-    to return nothing:
-        * Remove Season and Episode numbers
-    """
-    return re.sub(r"S\d.*?(\s|$)", "", guessed_anime_title).strip()
-
-
-def map_anime_title_to_media_folder(anime_title):
-    """
-    Root folder for all the anime information (subfolders for seasons/episodes, info.json, etc) will be stored using
-    lower case, kebab case, without any punctuation or invalid symbols
-
-    Example:
-        * Input: Mobile Suit Gundam: The Witch from Mercury
-        * Ooutput: mobile-suit-gundam-the-witch-from-mercury
-    """
-    return "-".join(
-        anime_title.lower().translate(str.maketrans("", "", string.punctuation)).split()
-    )
-
-
-class CachedAnilist:
-    def __init__(self):
-        self.client = Client()
-        self.cached_results = {}
-
-    def get_anime(self, search_query):
-        if search_query in self.cached_results:
-            return self.cached_results[search_query]
-
-        # Also, have
-        search_results = self.client.search(search_query)
-        logger.debug("Search results", search_results)
-
-        if not search_results:
-            raise Exception(
-                f"Anime with title {search_results} not found. Please check file name"
-            )
-
-        selected_index = 0
-        if len(search_results) > 1:
-            logger.info("Multiple animes found! Please select better match")
-            for i, result in enumerate(search_results):
-                try:
-                    english_title = result.title.english
-                except AttributeError:
-                    english_title = None
-                logger.info(f"[{i}]: {result.title.romaji} - {english_title}")
-
-            selected_index = input("> Please select a number:")
-
-        anime_id = search_results[int(selected_index)].id
-        anime_result = self.client.get_anime(anime_id)
-        self.cached_results[search_query] = anime_result
-
-        return anime_result
-
-
-def command_args():
-    parser = argparse.ArgumentParser(
-        description="Split one or several .mkv files onto separate audio segments with images"
-    )
-    parser.add_argument(
-        "input", type=pathlib.Path, help="Input folder with .mkv files and subtitles"
-    )
-    parser.add_argument(
-        "output",
-        type=pathlib.Path,
-        help="Output folder",
-    )
-    parser.add_argument(
-        "-t",
-        "--token",
-        dest="token",
-        type=str,
-        help="DeepL token for translating subtitles. If not provided, the only generated subtitles will be taken from "
-        "existing subtitle files",
-    )
-    parser.add_argument(
-        "-v",
-        "--verbose",
-        dest="verbose",
-        action=argparse.BooleanOptionalAction,
-        default=False,
-        help="Add extra debug information to the execution",
-    )
-    parser.add_argument(
-        "-d",
-        "--dry-run",
-        dest="dryrun",
-        action=argparse.BooleanOptionalAction,
-        default=False,
-        help="Execute and parse subtitles, but without generating the segments",
-    )
-    parser.add_argument(
-        "-x",
-        "--x",
-        dest="extra_punctuation",
-        action=argparse.BooleanOptionalAction,
-        default=False,
-        help="Remove other common punctuation symbols like ・. This might cause certain"
-        "subtitles to lose fidelity.",
-    )
-    parser.add_argument(
-        "-p",
-        "--parallel",
-        dest="parallel",
-        action=argparse.BooleanOptionalAction,
-        default=False,
-        help="Generate segments for episodes in parallel",
-    )
-    return parser.parse_args()
-
-
-if __name__ == "__main__":
-    main()
+    logs.append("[green]Segment saved![/green]")
+    return logs, segment_dict, None

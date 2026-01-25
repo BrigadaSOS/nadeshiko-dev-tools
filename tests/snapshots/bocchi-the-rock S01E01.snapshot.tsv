@@ -1,357 +1,357 @@
 ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREENSHOT	CONTENT	CONTENT_TRANSLATION_SPANISH	CONTENT_TRANSLATION_ENGLISH	CONTENT_SPANISH_MT	CONTENT_ENGLISH_MT	ACTOR_JA	ACTOR_ES	ACTOR_EN
-1	1	2	0	0:00:00.459000	0:00:03.941000	1.mp3	1.webp	かーくれんぼする人 この指 とまれ	¡Vengan si quieren jugar a las escondidas!	Come over now if you wanna play hide-and-seek!	False	False		Preschooler (Male)	Preschooler (Male)
-6	6	7	5	0:00:04.740000	0:00:08.860000	6.mp3	6.webp	私なんかが あの指に とまっていいのかな...	La chica que se preguntaba si podría sumarse.	The girl who wonders, \"Would it be okay for me to join in?\"	False	False		Hitori	Hitori
-11	11,14	12	10	0:00:10.200000	0:00:16.110000	11.mp3	11.webp	そう悩んでるうちに乗り遅れて　気付いたら ひとりぼっちな子	Al final perdía su oportunidad y acababa sola.	and so misses her chance, ending up all alone.	False	False		Hitori	Hitori
-15	15,18,20	17,22	16,21	0:00:17.767000	0:00:24.040000	15.mp3	15.webp	遠足のときに...　どうぞ　先生とお弁当のおかずを 交換していた ひとりぼっちな子	La chica que en los pícnics se quedaba sola intercambiando comida con la profe.	The girl who ends up all alone at a picnic, swapping parts of her lunch with the teacher.	False	False		Hitori	Hitori
-25	25	26	24	0:00:28.080000	0:00:29.380000	25.mp3	25.webp	ただいま	Ya llegué.	I'm home.	False	False		Hitori	Hitori
-28	28	29	27,30	0:00:30.310000	0:00:33.720000	28.mp3	28.webp	部活も入らず 放課後は即帰宅	La que no estaba en clubes y siempre se iba a casa temprano	The girl who doesn't join any clubs, comes home right after school,	False	False		Hitori	Hitori
-35	35,38	36,41	34,39	0:00:35.320000	0:00:41.124000	35.mp3	35.webp	スマホに届くのは　親からのメッセージか クーポンのお知らせだけ	y en el celular solo veía mensajes de sus padres y cupones de descuento.	and finds her smartphone full of nothing but messages from her parents and coupon offers.	False	False		Hitori	Hitori
-43	43	44	42	0:00:41.590000	0:00:42.730000	43.mp3	43.webp	それが私	Esa soy yo.	That's me.	False	False		Hitori	Hitori
-47	47	48	46	0:00:43.700000	0:00:46.980000	47.mp3	47.webp	後藤ひとり 中学1年生	Me llamo Hitori Goto y estoy en primero de preparatoria.	Hitori Goto, first-year in middle school.	False	False		Hitori	Hitori
-52	52	53	51	0:00:47.480000	0:00:49.450000	52.mp3	52.webp	たまーに思う	A veces pienso	Sometimes I think	False	False		Hitori	Hitori
-56	56	57	54	0:00:49.450000	0:00:51.910000	56.mp3	56.webp	このままで いいんだろうかって	que debería cambiar mi forma de ser.	I should really change the way I am...	False	False		Hitori	Hitori
-59	59	60	58	0:00:52.750000	0:00:56.780000	59.mp3	59.webp	でも 私 話す前に \"あっ\"って言っちゃうし	Cuando intento hablar, siempre tartamudeo	But I always stammer when I try to speak,	False	False		Hitori	Hitori
-62	62	63	61	0:00:56.780000	0:00:59.050000	62.mp3	62.webp	目 合わすのも苦手だし	y aparto la mirada...	and I'm really bad at keeping eye contact...	False	False		Hitori	Hitori
-65	65	66	64	0:00:59.050000	0:01:02.780000	65.mp3	65.webp	\"THE 陰キャ\"のような日々が 身の丈に合って...	La vida típica de introvertida es lo mío.	A life as the archetypal introvert just seems to fit me best.	False	False		Hitori	Hitori
-71	71	69	70	0:01:02.370000	0:01:03.540000	71.mp3	71.webp	これ見てる?	¿Estás viendo eso?	You watching this?	False	False		Naoki	Naoki
-74	74	72	73	0:01:03.950000	0:01:05.273000	74.mp3	74.webp	ううん	No.	Nah.	False	False		Hitori	Hitori
-76	76,78	77	75	0:01:06.870000	0:01:11.710000	76.mp3	76.webp	学生のころは 教室の隅っこで　本読んでるふりしてるヤツでした	En la escuela, yo era el que se sentaba al fondo y hacía como que leía.	Back in school, I was the guy who sat in the back of the classroom pretending to read.	False	False		Musician	Musician
-80	80	81	79	0:01:11.710000	0:01:13.100000	80.mp3	80.webp	友達いなくて	No tenía amigos.	No friends.	False	False		Musician	Musician
-84	84,86	85	83	0:01:13.540000	0:01:18.220000	84.mp3	84.webp	それが今では　若者に絶大な人気を誇る バンドになったと	Y ahora eres parte de una banda muy famosa entre los jóvenes.	And now you're part of a band that's extremely popular with young people!	False	False		Interviewer	Interviewer
-89	89	88	87	0:01:18.660000	0:01:21.560000	89.mp3	89.webp	まあ バンドは陰キャでも輝けるんで	Sí. Los introvertidos podemos brillar en una banda.	Yeah. A band is a place where even introverts can shine.	False	False		Musician	Musician
-90	90	92	91	0:01:21.581000	0:01:24.310000	90.mp3	90.webp	そうなんですねー!	Ya veo.	I see!	False	False		Interviewer	Interviewer
-94	94,96	95	93	0:01:24.310000	0:01:28.770000	94.mp3	94.webp	それでは お聴きください　インストームスで\"引き金\"	A continuación: Detonante, de Instorms.	Now, here's \"Trigger\" by Instorms!	False	False		Interviewer	Interviewer
-98	98	99	100	0:01:34.552000	0:01:36.030000	98.mp3	98.webp	おっ どうした?	¿Qué pasa?	What is it?	False	False		Naoki	Naoki
-102	102	103	101	0:01:36.030000	0:01:38.390000	102.mp3	102.webp	お... お父さん ギター貸して	Papá, ¿me prestas tu guitarra?	D-Dad, can I use your guitar?	False	False		Hitori	Hitori
-104	104	105	106	0:01:38.389000	0:01:39.974000	104.mp3	104.webp	えっ? いいよ	Claro.	Sure!	False	False		Naoki	Naoki
-109	109	108	107	0:01:39.820000	0:01:41.380000	109.mp3	109.webp	あ... ありがとう!	¡Gracias!	Th-Thanks!	False	False		Hitori	Hitori
-112	112	113,115	111,114	0:01:43.040000	0:01:46.750000	112.mp3	112.webp	そうか ひとりも ついにギターに興味を	Ya veo. Por fin se interesa por la guitarra.	Aha! At last, Hitori's getting into guitar too!	False	False		Naoki	Naoki
-118	118,120	119	117,121	0:01:49.460000	0:01:54.906000	118.mp3	118.webp	バンド組んだら　私みたいな人間でも もしかしたら 輝ける?	Si estuviera en una banda, ¿incluso alguien como yo podría brillar?	Maybe even someone like me can shine if I'm in a band!	False	False		Hitori	Hitori
-127	127	125	126,128	0:02:08.810000	0:02:11.270000	127.mp3	127.webp	決めた! ギターうまくなる!	Decidido. ¡Aprenderé a tocar la guitarra!	I've made up my mind. I'm gonna learn to play guitar!	False	False		Hitori	Hitori
-132	132	133	131	0:02:11.840000	0:02:14.150000	132.mp3	132.webp	で 学校でバンド組んで...	Formaré una banda y...	Then I'll form a band at school, and...	False	False		Hitori	Hitori
-137	137	138	136	0:02:14.770000	0:02:17.240000	137.mp3	137.webp	\"E A G\"...	E, A, G...	E, A, G...	False	False		Hitori	Hitori
-140	140	141	139	0:02:17.240000	0:02:18.990000	140.mp3	140.webp	なんで突然 英語?	¿A qué viene tanto inglés?	What's with all the English?	False	False		Hitori	Hitori
-144	144	145	143	0:02:23.590000	0:02:26.450000	144.mp3	144.webp	それで 文化祭でライブして	Además, tocaré en el festival cultural	Then I'll play at the culture festival	False	False		Hitori	Hitori
-146	146	148	147	0:02:26.396000	0:02:29.274000	146.mp3	146.webp	みんなから ちやほやされるんだ!	y volveré loco a todo el mundo.	and have everyone go crazy for me!	False	False		Hitori	Hitori
-156	156	157	155	0:02:51.950000	0:02:54.020000	156.mp3	156.webp	ちや... ほや?	¿Locos... por mí?	Crazy... for me?	False	False		Hitori	Hitori
-181	181,184	183,186	182,185	0:04:29.018000	0:04:35.080000	181.mp3	181.webp	人様の前で演奏出来るように　毎日6時間練習を続けた結果...	Ensayé seis horas al día para aprender a tocar delante de la gente... ¿El resultado?	I practiced six hours every day, so I could learn how to play in front of people... The result?	False	False		Hitori	Hitori
-187	187	189	188	0:04:35.024000	0:04:38.470000	187.mp3	187.webp	いつの間にか中学終わってた!	Acabó el año y nadie me escuchó.	Middle school ended, and I never played a single note for them!	False	False		Hitori	Hitori
-195	195,198	196	192,197	0:04:39	0:04:41.880000	195.mp3	195.webp	ライブ出れなかった　文化祭!	Nunca he actuado... -¡En el festival!	I never performed once... At the culture festival!	False	False		Hitori	Hitori,Students
-200	200,203	201	199,202	0:04:41.880000	0:04:44.630000	200.mp3	200.webp	集められなかった　バンドメンバー!	Nunca he reunido... -A miembros de una banda.	I never put together... The members for a band!	False	False		Hitori	Hitori,Students
-205	205	206	204	0:04:44.630000	0:04:47.240000	205.mp3	205.webp	そもそも友達 一人もできなかった	Nunca me he hecho amiga de nadie...	And I never made a single friend...	False	False		Hitori	Hitori
-208	208	209	207	0:04:47.240000	0:04:48.480000	208.mp3	208.webp	3年間!	En tres años.	In three whole years!	False	False		Students	Students
-210	210	212	211	0:04:48.121000	0:04:50.100000	210.mp3	210.webp	高校こそは...	Ya estoy en la prepa...	Now, in high school...	False	False		Hitori	Hitori
-218	218	219	217	0:04:50.850000	0:04:55.044000	218.mp3	218.webp	高校になったら 絶対バンドやるんだぁ!	¡Tengo que formar una banda aunque sea lo último que haga!	I gotta form a band or die trying!	False	False		Hitori	Hitori
-221	221	222	220	0:04:56.280000	0:05:00.120000	221.mp3	221.webp	と 決意した高校生活も 始まって早一ヵ月	Por mucho que lo dijera, ya hace un mes que empezaron las clases	But despite my vow, it's been a whole month since high school started,	False	False		Hitori	Hitori
-223	223	225	224	0:05:00.091000	0:05:02.730000	223.mp3	223.webp	心の拠り所はギターだけ	y mi corazón sigue pegado a la guitarra.	and yet my heart remains grounded in the guitar,	False	False		Hitori	Hitori
-226	226	228	227	0:05:02.677000	0:05:07.300000	226.mp3	226.webp	ひきこもり一歩手前ですぅー	Parece que me gusta encerrarme...	little better than a shut-in...	False	False		Hitori	Hitori
-230	230	231,233	229,232	0:05:08.840000	0:05:13.160000	230.mp3	230.webp	作詞作曲 私 \"押し入れより愛をこめて\"	La letra y la música son mías. Con amor desde el armario.	Lyrics and music by me. From the closet with love.	False	False		Hitori	Hitori
-235	235,237	236	234	0:05:13.940000	0:05:19.160000	235.mp3	235.webp	って 真夜中に 私のクソなオリジナル曲で　ご近所トラブル起こす前に	Pero antes de molestar a los vecinos con mis pobres creaciones,	But before I cause neighborhood problems playing my crummy original song late at night,	False	False		Hitori	Hitori
-245	245	246	244	0:05:19.160000	0:05:21.821000	245.mp3	245.webp	人気バンドのカバー動画 アップしなきゃ	subiré una versión de una banda famosa.	I've gotta upload a cover I did of a popular band.	False	False		Hitori	Hitori
-250	250,252,255	251,253	249,254	0:05:22.830000	0:05:29.140000	250.mp3	250.webp	お父さんに勧められて　ギターヒーロー名義で 弾いてみた動画 上げだして　結構たつけど	Ya hace bastante desde que subo videos con el nick \"guitarhero\" por culpa de mi papá...	It's been a pretty long time since I started uploading myself playing under the name \"guitarhero\" on my dad's advice, but...	False	False		,Hitori	,Hitori
-256	256,276	258	257	0:05:29.120000	0:05:33.770000	256.mp3	256.webp	あっ この前の動画　もう こんな コメントついてる	Vaya, mi último video tiene muchos comentarios.	Wow, my latest video already has so many comments.	False	False		Hitori	Hitori
-284	284	283	282	0:05:35.480000	0:05:38.270000	284.mp3	284.webp	最近は再生数も結構あるし	Últimamente tengo más visitas	I've been racking up the views lately, too,	False	False		Hitori	Hitori
-285	285	287	286	0:05:38.212000	0:05:40.214000	285.mp3	285.webp	うまいって言われるし	y la gente me dice que soy buena...	and people are telling me I'm good...	False	False		Hitori	Hitori
-289	289	290	288	0:05:40.120000	0:05:43.350000	289.mp3	289.webp	そうだよ 現実が つらくても大丈夫	Si no me sale bien en la vida real, me conformaré con esto.	Yeah, maybe it's okay if I can't handle real life!	False	False		Hitori	Hitori
-291	291,301	293	292	0:05:43.301000	0:05:46.760000	291.mp3	291.webp	ネットには 私に反応してくれる人が　たくさん いるもん	En internet me apoya mucha gente.	There are tons of people cheering for me online!	False	False		Hitori	Hitori
-305	305	306	304	0:05:46.760000	0:05:49.940000	305.mp3	305.webp	ここには 私と同じ 根暗コミュ症が あふれて...	En internet hay mucha gente tan introvertida como yo.	The internet is filled with socially anxious introverts just like me!	False	False		Hitori	Hitori
-312	312	313	311	0:05:49.940000	0:05:51.660000	312.mp3	312.webp	\"この曲 バンド組んで文化祭で弾きま\"...	Formé una banda y tocamos...	\"I formed a band and played this for our culー\"	False	False		Comment	Comment
-316	316	317	315	0:05:56	0:05:58.290000	316.mp3	316.webp	私だって努力はした	Ya lo intenté.	I put the effort in, okay?	False	False		Hitori	Hitori
-319	319	320	318	0:05:58.770000	0:06:01.770000	319.mp3	319.webp	CD持っていって 机に置いたり	Llevé CDs y los puse en mi mesa.	I brought CDs to school and set them on my desk.	False	False		Hitori	Hitori
-321	321	323	322	0:06:01.736000	0:06:03.090000	321.mp3	321.webp	話しかけて...	Hablen conmigo.	Talk to me!	False	False		Hitori	Hitori
-325	325	326	324	0:06:03.090000	0:06:05.580000	325.mp3	325.webp	バンドグッズ持って アピールしたり	Compré productos de una banda y los enseñé.	I bought band merch and showed it off.	False	False		Hitori	Hitori
-328	328	329	327	0:06:05.580000	0:06:06.970000	328.mp3	328.webp	話しかけてー	Hablen conmigo.	Talk to me!	False	False		Hitori	Hitori
-331	331	332	330	0:06:06.970000	0:06:09.360000	331.mp3	331.webp	お昼のリクエストソングで...	Pedí canciones durante el almuerzo...	I put in song requests at lunch...	False	False		Hitori	Hitori
-334	334,336	335	333	0:06:09.360000	0:06:12.850000	334.mp3	334.webp	次の曲は　2年A組 後藤さんの リクエストです	La próxima es una petición de Goto, de 2-A.	This next song is a request from Goto-san in Class 2-A.	False	False		Speaker Voice	Speaker Voice
-340	340	339	338	0:06:13.200000	0:06:16.270000	340.mp3	340.webp	当時 ハマってた デスメタル 流して...	Pedí la canción metal con la que estoy obsesionada.	...for the death metal song I'd been obsessed with lately.	False	False		Hitori	Hitori
-342	342,345	344		0:06:16.209000	0:06:19.980000	342.mp3	342.webp	お前の頭蓋骨を粉砕して　ぼえええー!	¡Voy a aplastarte el cráneo!		False			Speaker Song	
-348	348	349	347	0:06:21.980000	0:06:24.100000	348.mp3	348.webp	フラッシュバックがー!	¡No quiero flashbacks!	Not the flashbacks!	False	False		Hitori	Hitori
-350	350	352	351	0:06:23.716000	0:06:25.940000	350.mp3	350.webp	ぐうっ 忘れろ 忘れろ!	¡Fuera, feos recuerdos!	Begone! Begone, filthy memories!	False	False		Hitori	Hitori
-360	360	361	359	0:06:33.480000	0:06:35.790000	360.mp3	360.webp	いいな... ライブ	Ojalá pudiera tocar en directo...	I wish I could perform live...	False	False		Hitori	Hitori
-378	378	376	377	0:06:43.920000	0:06:45.090000	378.mp3	378.webp	そっ...	Oye...	That...	False	False		Hitori	Hitori
-379	379	381	380	0:06:45.113000	0:06:47.365000	379.mp3	379.webp	その手があったか!	¡Podría funcionar!	That could work!	False	False		Hitori	Hitori
-385	385	387	386	0:06:59.710000	0:07:02.600000	385.mp3	385.webp	かっ... かっこいいー!	Qué genial.	I look... I look so cool!	False	False		Hitori	Hitori
-388	388	390	389	0:07:02.547000	0:07:04.470000	388.mp3	388.webp	一気にバンド女子だ	Parezco una roquera.	I'm already a total rocker chick!	False	False		Hitori	Hitori
-391	391	393	392	0:07:04.340000	0:07:06.590000	391.mp3	391.webp	ただ者じゃない感が半端ない	Parezco alguien interesante.	I look like a real somebody!	False	False		Hitori	Hitori
-395	395	396	394	0:07:06.590000	0:07:08.030000	395.mp3	395.webp	存在感すごい!	La gente me mirará.	The people can't look away!	False	False		Hitori	Hitori
-397	397,400	399	398	0:07:09.554000	0:07:14.160000	397.mp3	397.webp	これは...　絶対 誰か話しかけてくれるはず	Seguro que así alguien hablará conmigo.	Someone's just gotta talk to me now!	False	False		Hitori	Hitori
-402	402	403	401	0:07:14.600000	0:07:18.230000	402.mp3	402.webp	今年の文化祭は忙しくなるぞ!	¡Voy a estar muy ocupada en este festival!	I'm gonna be all over this year's culture festival!	False	False		Hitori	Hitori
-406	406	408	407	0:07:33.202000	0:07:35.180000	406.mp3	406.webp	だから そのコギ尻が...	Solo veía el trasero del corgi...	So you could see the corgi's butt...	False	False		Boy Student	Boy Student
-409	409	410	411,412	0:07:35.204000	0:07:37.310000	409.mp3	409.webp	次 移動教室? 理科室B	¿Dónde nos toca? -Ciencias. Clase B.	Do we move rooms next period? Science Room B.	False	False		Girl Student A	Girl Student A,Girl Student B
-413	413	415	414	0:07:37.331000	0:07:39.560000	413.mp3	413.webp	このあとさー カラオケとかさ	¿Quieres ir al karaoke?	Hey, wanna karaoke after this?	False	False		Girl Student C	Girl Student C
-416	416	418	417,419	0:07:39.417000	0:07:41.600000	416.mp3	416.webp	フフッ それいいね	Buena idea. -¿Segura?	Great idea! You sure?	False	False		Girl Student D	Girl Student C,Girl Student D
-422	422	424	423	0:07:46.591000	0:07:48.570000	422.mp3	422.webp	あれー?	¿Eh?	Huh?	False	False		Hitori	Hitori
-426	426	427	425	0:07:51.450000	0:07:54.340000	426.mp3	426.webp	深夜テンションのまま 暴走し過ぎた?	¿Se me habrán subido demasiado los humos?	Did I go overboard hyping myself up last night?	False	False		Hitori	Hitori
-429	429	430	428	0:07:54.340000	0:07:57.750000	429.mp3	429.webp	こんなに分かりやすいほど バンド少女感 出してるのに	Pero si parezco una roquera...	But I'm putting out such powerful rocker chick vibes...	False	False		Hitori	Hitori
-432	432	433	431	0:07:57.750000	0:08:00.830000	432.mp3	432.webp	あっ あえて 話しかけてこない という可能性は...	¿Quizás ahora parezco demasiado inalcanzable?	D-Did I end up making myself unapproachable?!	False	False		Hitori	Hitori
-435	435	436	434,437	0:08:00.830000	0:08:03.210000	435.mp3	435.webp	ないないない 精神崩壊する!	¡No, no! ¡Ya estoy con mis crisis!	No, no, no! I'm having a mental breakdown!	False	False		Hitori	Hitori
-439	439,444,447	440,446,449	438,443,445,448	0:08:03.210000	0:08:09.710000	439.mp3	439.webp	うわっ ちょっと 見て見て!　い... 今 笑われようものなら　精神崩壊どころか 消滅してしまうー!	¡Vaya, mira! -¿Qué? Si se ríen de mí, no tendré una crisis... ¡Querré morirme!	Wow, look at that! At what? I-If they're laughing at me now, it won't just be a mental breakdown, it'll be mental annihilation!	False	False		Hitori,Kita's Friend A	Hitori,Kita's Friend A,Kita's Friend B
-450	450	452	451	0:08:09.739000	0:08:12.920000	450.mp3	450.webp	ヤバい! かわい過ぎて笑っちゃう	Es tan lindo que tienes que reírte.	Aw, it's so cute, I've gotta laugh!	False	False		Kita's Friend A	Kita's Friend A
-453	453	456	454	0:08:12.617000	0:08:15.203000	453.mp3	453.webp	ギター? 癒やされるー	¿Una guitarra? -Me alegraste el día.	Guitar?	False	False		Kita	Kita
-457	457	458	459	0:08:15.286000	0:08:16.913000	457.mp3	457.webp	ねー 喜多ちゃん	Oye, Kita.	Right, Kita-chan?	False	False		Kita's Friend B	Kita's Friend B
-460	460	462	461	0:08:16.996000	0:08:18.260000	460.mp3	460.webp	喜多ちゃん?	¿Kita?	Kita-chan?	False	False		Kita's Friend B	Kita's Friend B
-463	463	465	464	0:08:17.914000	0:08:21.100000	463.mp3	463.webp	あっ ごめんごめん なになに?	¡Lo siento! ¿Qué pasa?	Sorry, sorry! What was it?	False	False		Kita	Kita
-467	467	469	468	0:08:25.004000	0:08:27.030000	467.mp3	467.webp	いや 分かってますよ	Lo entiendo.	Look, I know.	False	False		Hitori	Hitori
-471	471	472	470	0:08:27.030000	0:08:30.280000	471.mp3	471.webp	他力本願で 物事うまくいくはずないって	No puedo esperar que la gente sea perfecta.	You can't put the onus on others and expect perfect results.	False	False		Hitori	Hitori
-474	474	475	473	0:08:33.240000	0:08:37.760000	474.mp3	474.webp	ここに集う人たちは 私と同じで 孤独を抱えてるんだ	Veo que aquí viene la gente solitaria como yo.	This is a gathering place for people just as lonely as me.	False	False		Hitori	Hitori
-477	477,480	478	476	0:08:37.760000	0:08:40.603000	477.mp3	477.webp	あの人は きっと家庭内別...　パパ! え?	Seguro que ese hombre no... -¡Papá!	I bet that guy's separated fromー	False	False		Hitori	Hitori
-481	481	483	482	0:08:41.187000	0:08:43.710000	481.mp3	481.webp	エヘッ ごめんね 遅れちゃって	Perdón por llegar tarde.	Sorry we're late!	False	False		Worker's Wife	Worker's Wife
-484	484,488	486,491	485,490	0:08:43.689000	0:08:48.140000	484.mp3	484.webp	いいって いいって　絵に描いたような家族団欒!	Descuida. Vamos, a comer. ¡Es la familia perfecta!	Hey, no problem. They're the perfect freakin' family!	False	False		Hitori,Worker	Hitori,Worker
-493	493	494	492	0:08:48.140000	0:08:51.460000	493.mp3	493.webp	すいません 勝手に\"私と同じ\"とか言って	Perdón por haberlo comparado conmigo...	Please forgive my presumptuous empathizing...	False	False		Hitori	Hitori
-496	496	497	495	0:08:53.490000	0:08:56.577000	496.mp3	496.webp	あ... 登録者数3万 超えてる	Ya tengo más de 30 000 suscriptores.	Ah. I broke 30,000 subscribers.	False	False		Hitori	Hitori
-499	499	500,502	498,501	0:08:57.360000	0:09:01.720000	499.mp3	499.webp	うん そうだよ 私の居場所はネットだけ	Eso es. Mi mundo es el virtual.	Hey, that's right. The online world is where I belong.	False	False		Hitori	Hitori
-504	504	505	503	0:09:02.700000	0:09:05.419000	504.mp3	504.webp	もう 学校 行きたくないな...	Creo que no quiero volver a clases...	Sorta makes me not wanna go back to school...	False	False		Hitori	Hitori
-507	507	509	508	0:09:07.255000	0:09:09.423000	507.mp3	507.webp	ギター!	¡Una guitarra!	Guitar!	False	False		Nijina	Nijina
-512	512,514	513	511,515	0:09:12.230000	0:09:14.850000	512.mp3	512.webp	それ ギターだよね?　あっ あっ... 弾けるの?	¿Eso es una guitarra? ¿La tocas?	That's a guitar, right? Do you play?!	False	False		Nijina	Nijina
-519	519	518	517	0:09:17.010000	0:09:18.270000	519.mp3	519.webp	おーい?	¿Hola?	Hello?	False	False		Nijina	Nijina
-520	520	522	521	0:09:18.266000	0:09:21.200000	520.mp3	520.webp	しゃ... しゃべるの 久しぶりすぎて 声が...	Me petrificó de la impresión.	I-I haven't talked to anyone in so long... my voice!	False	False		Hitori	Hitori
-524	524	525	523	0:09:21.610000	0:09:23.420000	524.mp3	524.webp	あっ いきなり ごめんね	Disculpa lo repentino.	Hey, sorry to ambush you.	False	False		Nijina	Nijina
-526	526	528	527	0:09:23.396000	0:09:26.500000	526.mp3	526.webp	あたし 下北沢高校2年 伊地知虹夏	Me llamo Nijika Ijichi. Estoy en 2.o en Shimo-Kitazawa.	I'm Nijika Ijichi, second-year at Shimo-Kitazawa High.	False	False		Nijina	Nijina
-529	529	531	530	0:09:27.024000	0:09:30.450000	529.mp3	529.webp	あっ 後藤ひとり 秀華高校1年です	Hitori Goto. Shuka. Primero.	Hitori Goto. Shuka High. First-year.	False	False		Hitori	Hitori
-532	532,536	534	533,535	0:09:30.444000	0:09:33.170000	532.mp3	532.webp	ちなみに ひとりちゃんはさ...　いきなり名前呼び!	Dime, Hitori... -¿Ya me llama por el nombre?	So tell me, Hitori-chan... Right to first names, are we?!	False	False		Nijika/Hitori	Hitori,Nijika
-538	538	539	537	0:09:33.170000	0:09:35.230000	538.mp3	538.webp	ギター どのくらい弾ける?	¿Eres buena con la guitarra?	How good are you at guitar?	False	False		Nijika	Nijika
-540	540	542	541	0:09:35.241000	0:09:37.220000	540.mp3	540.webp	あっ そこそこかと	Me defiendo...	Pretty decent, I guess...	False	False		Hitori	Hitori
-544	544	545	543	0:09:37.220000	0:09:38.590000	544.mp3	544.webp	そっか!	¿En serio?	Really?!	False	False		Nijika	Nijika
-547	547	548	546	0:09:38.590000	0:09:41.290000	547.mp3	547.webp	あ... あのさ ちょっと今 困ってて	Verás, quiero pedirte un favor...	Say, I'm in kind of a fix here...	False	False		Nijika	Nijika
-549	549	551	550	0:09:41.122000	0:09:43.374000	549.mp3	549.webp	無理だったら 大丈夫なんだけど	Si no puedes, está bien...	If you can't do it, that's okay, but...	False	False		Nijika	Nijika
-554	554	553	552	0:09:43.180000	0:09:45.250000	554.mp3	554.webp	大丈夫なんだけど 困ってて...	Está bien, pero...	It's really okay, but I'm in a real fix...	False	False		Nijika	Nijika
-556	556	557	555	0:09:45.250000	0:09:47.190000	556.mp3	556.webp	絶対 だいじょばないやつ!	¡La que no está bien eres tú!	There's nothing okay about her!	False	False		Hitori	Hitori
-558	558	560	559	0:09:47.211000	0:09:49.560000	558.mp3	558.webp	うん 思い切って言っちゃおう!	¡Bien, aquí voy!	Okay, I'll come right out with it!	False	False		Nijika	Nijika
-562	562,564	563	561	0:09:50.180000	0:09:55.440000	562.mp3	562.webp	お願い!　あたしのバンドで 今日だけ サポートギターしてくれないかな!	¿Podrías tocar la guitarra hoy en mi banda?	Please, will you play second guitar for my band for today?!	False	False		Nijika	Nijika
-567	567	565	566	0:09:56.190000	0:09:57.360000	567.mp3	567.webp	バンド?	¿Banda?	Band?	False	False		Hitori	Hitori
-569	569	570	568	0:09:57.360000	0:10:01.180000	569.mp3	569.webp	これからライブなのに ギターの子が突然 辞めちゃって	¡Tenemos un concierto pronto y se nos fue la guitarrista!	We've got a concert coming up, and our guitarist just split!	False	False		Nijika	Nijika
-572	572	574	571	0:10:01.180000	0:10:04.110000	572.mp3	572.webp	ある程度 弾ける人なら... これから? ライブ?	¿Un concierto? ¿Ahora?	The song's not too hard! You'll pick it up right away!	False	False		Hitori	Nijika
-575	575	577	576	0:10:04.103000	0:10:05.730000	575.mp3	575.webp	なにとぞー	¡Por favor!	Please! Please!	False	False		Nijika	Nijika
-578	578		579	0:10:05.980000	0:10:06.981000	578.mp3	578.webp	あっ や...		Um, err...		False			Hitori
-582	582	583	581	0:10:10.500000	0:10:13.270000	582.mp3	582.webp	ありがとう! 早速 ライブハウスへ ゴー!	¡Gracias, vamos al club!	Thanks! Let's head to the club!	False	False		Nijika	Nijika
-584	584	586	585	0:10:13.195000	0:10:15.323000	584.mp3	584.webp	まだ何も言ってない!	¡Pero si no he dicho nada!	I haven't even said anything yet!	False	False		Hitori	Hitori
-588	588	589	587	0:10:17.920000	0:10:19.840000	588.mp3	588.webp	来てしまった...	Me arrastró...	I got dragged along.	False	False		Hitori	Hitori
-590	590	592	591	0:10:19.785000	0:10:22.440000	590.mp3	590.webp	ひとりちゃんは下北は よく来る?	¿Vienes por Shimo-Kita mucho, Hitori?	Do you come to Shimo-Kita a lot, Hitori-chan?	False	False		Nijika	Nijika
-593	593	595	594	0:10:22.371000	0:10:23.760000	593.mp3	593.webp	あっ いや...	Pues...	Oh, well...	False	False		Hitori	Hitori
-597	597	598	596	0:10:23.720000	0:10:27.310000	597.mp3	597.webp	こんな 個性みなぎる おしゃれタウンに 来れるわけない	Como si pudiera venir a un sitio tan popular...	Right, like I've got the courage to visit a fashion town for trendy people...	False	False		Hitori	Hitori
-600	600	601	599	0:10:27.810000	0:10:29.879000	600.mp3	600.webp	ライブハウス もうちょいだから	Ya casi llegamos.	We're almost to the club.	False	False		Nijika	Nijika
-603	603	604	602	0:10:31.440000	0:10:33.870000	603.mp3	603.webp	虹夏ちゃんは おしゃれだなー	Nijika va muy a la moda.	Nijika-chan's fashionable, too.	False	False		Hitori	Hitori
-606	606	607	605	0:10:33.870000	0:10:36.400000	606.mp3	606.webp	これこそバンド女子って感じ	Ella sí que parece una roquera.	She's got the real rocker-chick vibe.	False	False		Hitori	Hitori
-609	609	610,612	608,611	0:10:36.400000	0:10:41.230000	609.mp3	609.webp	それに比べて私は 芋ジャージだし クマすごいし 猫背だし...	A su lado, me veo patética. Ojerosa y encorvada como un gato...	Meanwhile, I'm in a potato-quality tracksuit with a real bear of a set of bags under my eyes, and a back as arched as a cat...	False	False		Hitori	Hitori
-613	613	615,617	614,616	0:10:41.140000	0:10:45.700000	613.mp3	613.webp	あっ 私 かび臭いかも いつも押し入れにいるから	¿También huelo a moho? Con tanto tiempo en el armario...	Wait, do I also smell like mold? I spend so much time in the closet...	False	False		Hitori	Hitori
-618	618	620	619	0:10:45.686000	0:10:47.370000	618.mp3	618.webp	いや 防虫剤のにおいだ	No, huelo a naftalina.	No, I smell like mothballs.	False	False		Hitori	Hitori
-622	622	623	621	0:10:48.360000	0:10:52.130000	622.mp3	622.webp	それにひきかえ 虹夏ちゃん めっちゃ いいにおい	Por su parte, Nijika huele muy bien.	Meanwhile, Nijika-chan smells great!	False	False		Hitori	Hitori
-625	625,627	626	624	0:10:52.130000	0:10:55.446000	625.mp3	625.webp	本来あるべき　女子高生の香りだー	Huele como debería oler una adolescente.	She smells just the way a high school girl should!	False	False		Hitori	Hitori
-629	629,632	630	628,631	0:10:55.380000	0:10:57.800000	629.mp3	629.webp	歩くペース早い?　いっ... いえ	¿Quieres ir más deprisa? -No...	Oh, am I walking too fast? N-No...	False	False		Nijika	Hitori,Nijika
-633	633,636	635	634	0:10:57.823000	0:11:02.040000	633.mp3	633.webp	今日 出演するライブハウスは　STARRYっていうんだけどね	El club donde tocamos se llama Starry.	The club we're gonna play at is called Starry.	False	False		Nijika	Nijika
-639	639	640	637	0:11:02.040000	0:11:04.680000	639.mp3	639.webp	あたしのお姉ちゃんが... 出演するライブハウス	Tocar en un club... -Mi hermana es la gerente.	My big sister's the manager there.	False	False		Hitori	Nijika
-641	641	643	642	0:11:04.705000	0:11:07.180000	641.mp3	641.webp	なんか ぽい響き	¿Y ese sonido?	That sounds weirdly legit.	False	False		Hitori	Hitori
-644	644	646	645	0:11:07.124000	0:11:09.060000	644.mp3	644.webp	あれ なんか心臓ヤバい	¿Es mi corazón?	Wait, what's my heart doing?	False	False		Hitori	Hitori
-647	647	648	649	0:11:09.085000	0:11:10.961000	647.mp3	647.webp	でね! あっ	Y...	And so...	False	False		Nijika	Nijika
-651	651	652	650	0:11:11.450000	0:11:13.923000	651.mp3	651.webp	あたし そこでバイトしてて...	Yo he trabajado allí y...	I've been working there part-time...	False	False		Nijika	Nijika
-655	655	656	654	0:11:16.010000	0:11:19.178000	655.mp3	655.webp	ひとりちゃん 実は結構 運動できる?	Hitori, ¿se te dan bien los deportes?	Hitori-chan, are you actually pretty athletic?	False	False		Nijika	Nijika
-659	659,660	658	657	0:11:19.070000	0:11:24.170000	659.mp3	659.webp	いえ あっ でも ドッジボールだけは　なぜか いつも 最後まで残ってました	No, pero suelo ganar cuando jugamos a los quemados.	N-No, but I'm always the last one standing in dodgeball for some reason.	False	False		Hitori	Hitori
-662	662	663	661	0:11:24.170000	0:11:25.700000	662.mp3	662.webp	そ... そっか	Ya veo.	I... I see.	False	False		Nijika	Nijika
-664	664	666	665	0:11:25.726000	0:11:28.620000	664.mp3	664.webp	私がライブハウスで演奏	¿Yo tocando en un club?	Me? Playing in a club?	False	False		Hitori	Hitori
-667	667	669	668	0:11:28.562000	0:11:32.040000	667.mp3	667.webp	あっ ああ... ダメダメ 今 弱気になっちゃ	¡No, ya no hay marcha atrás!	No, don't back down now!	False	False		Hitori	Hitori
-670	670	672	671	0:11:32.024000	0:11:35.290000	670.mp3	670.webp	思い出せ 妄想で毎日した文化祭ライブを!	¡Recuerda cuando soñabas con tocar en el festival cultural!	Remember your daydreams of performing at the culture festival!	False	False		Hitori	Hitori
-674	674,676,677	675	673	0:11:36.160000	0:11:40.320000	674.mp3	674.webp	そして 初のワンマン　Zepp!　スーパーアリーナ!	¡Y tu primer concierto como solista en el Zepp!	And your first solo show at Zepp Super Arena!	False	False		Hitori	Hitori
-678	678	680	679	0:11:40.157000	0:11:43.411000	678.mp3	678.webp	ひとり! ひとり! ひとり...	¡Hitori! ¡Hitori! ¡Hitori!	Hitori! Hitori! Hitori!	False	False		Crowd	Crowd
-682	682	683	681	0:11:44.150000	0:11:46.710000	682.mp3	682.webp	私は武道館をも埋めた女...	Yo llené el Budokan...	I'm the girl who sold out the Budokan...	False	False		Hitori	Hitori
-684	684	686	685,687	0:11:46.664000	0:11:48.720000	684.mp3	684.webp	えっ? あっ いや...	Nada.	What? Oh, nothing!	False	False		Hitori	Hitori,Nijika
-689	689	691	690	0:11:49.959000	0:11:53.510000	689.mp3	689.webp	頼む相手 間違った って思われてませんように!	¡No dejes que crea que elegirme fue un error!	Please, don't let her think she made a mistake choosing me!	False	False		Hitori	Hitori
-693	693	694	692	0:11:53.510000	0:11:55.440000	693.mp3	693.webp	頼む相手 間違えたか?	Puede que me haya equivocado...	I might've made a mistake choosing her...	False	False		Nijika	Nijika
-697	697	695	696,698	0:11:56.230000	0:11:58.230000	697.mp3	697.webp	着いた! ここだよー	Ya estamos. Es aquí.	We're here! This is the place!	False	False		Nijika	Nijika
-699	699	701	700	0:12:00.136000	0:12:02.570000	699.mp3	699.webp	ま... 魔境?	¿Las tierras oscuras?	Th-The dark lands?	False	False		Hitori	Hitori
-703	703	704	702	0:12:03.300000	0:12:05.474000	703.mp3	703.webp	おっはようございまーす!	¡Buenas!	Good morning!	False	False		Nijika	Nijika
-706	706	707	705	0:12:08.210000	0:12:10.120000	706.mp3	706.webp	初ライブハウス	Mi primer club...	My first club...	False	False		Hitori	Hitori
-708	708	710	709	0:12:10.146000	0:12:13.870000	708.mp3	708.webp	この暗さ 圧迫感...	Qué oscuro... Qué calor...	It's so dark... So stuffy...	False	False		Hitori	Hitori
-712	712	713	711	0:12:13.870000	0:12:15.985000	712.mp3	712.webp	お... 落ち着くー	Pero es reconfortante.	I-It's so soothing!	False	False		Hitori	Hitori
-715	715	716	714	0:12:15.960000	0:12:17.500000	715.mp3	715.webp	ひとりちゃん 大丈夫?	¿Estás bien, Hitori?	You okay, Hitori-chan?	False	False		Nijika	Nijika
-717	717,721	719	718,720	0:12:17.486000	0:12:19.880000	717.mp3	717.webp	わ... 私の家　違うよ?	Me siento como en casa. -¿Ah, sí?	I'm home! It is not!	False	False		Hitori	Hitori,Nijika
-723	723,725,728	726	722,727	0:12:19.880000	0:12:25.250000	723.mp3	723.webp	今回もPAさんに...　今日 共演する...　バンドって どうしても 怖そうなイメージあるけど	Esa es la banda que toca hoy. -Creía que las bandas daban miedo.	Could we ask the PA to record again? I thought bands would be intimidating,	False	False		Nijika	Hitori,Women
-730	730,734	733,736	731,735	0:12:25.244000	0:12:30.150000	730.mp3	730.webp	所詮 インドアの集まり　影の者 陰キャの集団 みんな 私と同じ	Resulta que todas son introvertidas. Son como yo.	but they're all indoorsy, shy introverts! They're just like me!	False	False		Hitori	Hitori
-738	738	739	737	0:12:30.150000	0:12:31.980000	738.mp3	738.webp	そこにいるのがPAさん	Mira, ahí está la ayudante.	That there's the PA.	False	False		Nijika	Nijika
-743	743	744		0:12:33.169000	0:12:34.560000	743.mp3	743.webp	おはようございます	Buenas.		False			PA	
-745	745,749	747	746,748	0:12:34.587000	0:12:37.520000	745.mp3	745.webp	いいい... イキって すみません　急に どうした!	Disculpa mi arrogancia. -¿Qué pasa ahora?	Please forgive my arrogance! What's wrong now?!	False	False		Hitori	Hitori,Nijika
-751	751	752	750,753	0:12:38.240000	0:12:40.530000	751.mp3	751.webp	やっと帰ってきた おっ リョウ	Hasta que volviste. -¡Ryo!	You're finally back. Ryo!	False	False		Ryo	Nijika,Ryo
-755	755	756	754	0:12:41.440000	0:12:43.520000	755.mp3	755.webp	この子 後藤ひとりちゃん	Te presento a Hitori Goto.	This is Hitori Goto. Hitori-chan!	False	False		Nijika	Nijika
-757	757	759	758	0:12:43.512000	0:12:46.280000	757.mp3	757.webp	奇跡的に公園にいた ギタリストだよ	Me la encontré en el parque y es guitarrista.	I met her in the park by miraculous happenstance! She's a guitarist!	False	False		Nijika	Nijika
-761	761		760	0:12:46.240000	0:12:47.391000	761.mp3	761.webp	へえー		Oh?		False			Ryo
-763	763	764	762	0:12:47.390000	0:12:49.530000	763.mp3	763.webp	怖っ! にらまれてる?	¡Qué miedo! ¿Me está observando?	Scary! Is she glaring at me?	False	False		Hitori	Hitori
-765	765	767	766	0:12:49.560000	0:12:51.870000	765.mp3	765.webp	この子は ベースの山田リョウだよ	Ella es Ryo Yamada, la bajista.	This is Ryo Yamada. She plays bass.	False	False		Nijika	Nijika
-769	769	770	768	0:12:51.870000	0:12:54.900000	769.mp3	769.webp	ごご... 後藤ひとりです 大変 申し訳ございません!	¡Me llamo Hitori Goto! ¡Lo siento mucho!	I-I'm Hitori Goto! I'm so very sorry!	False	False		Hitori	Hitori
-772	772	771	773	0:12:54.750000	0:12:55.750000	772.mp3	772.webp	えっ ちょっ...	Oye...	Hang on!	False	False		Nijika	Nijika
-774	774	776,778	775,777	0:12:55.774000	0:12:59.760000	774.mp3	774.webp	大丈夫だから リョウは表情が出にくいだけ	Tranquila. Ryo no es muy habladora.	Y-You're okay! Ryo's just not the expressive type.	False	False		Nijika	Nijika
-780	780	781	779	0:12:59.760000	0:13:01.670000	780.mp3	780.webp	\"変人\"って言ったら喜ぶよー	Le gusta que le digan \"rarita\".	Feel free to call her weird! She likes it!	False	False		Nijika	Nijika
-782	782	784	783	0:13:01.655000	0:13:03.280000	782.mp3	782.webp	うれしくないし	En realidad no...	I don't, actually.	False	False		Ryo	Ryo
-785	785	786	787	0:13:03.199000	0:13:04.380000	785.mp3	785.webp	うれしそうだ	Ya veo...	Seemed like she did...	False	False		Hitori	Hitori
-788	788	790	789	0:13:04.408000	0:13:06.740000	788.mp3	788.webp	そういえば 店長が... えっ?	Por cierto, la gerente...	By the way, about the manager...	False	False		Ryo	Ryo
-792	792	793	791	0:13:06.740000	0:13:08.980000	792.mp3	792.webp	時間まで練習しとけって	Te dijo que ensayaras,	She told you to practice until it was time,	False	False		Ryo	Ryo
-794	794	796	795	0:13:08.954000	0:13:11.820000	794.mp3	794.webp	あと 虹夏が勝手に ライブハウス抜け出したこと	pero te escabulliste.	but instead you snuck out of the club,	False	False		Ryo	Ryo
-797	797,801	798,803	799,800,802	0:13:11.749000	0:13:16.690000	797.mp3	797.webp	怒りながら買い出し行った　ひいー ウソ! 帰ってくる前に スタジオ行こう	Salió a comprar furiosa. -No puede ser. Estaremos en el estudio cuando vuelva.	so she got so mad she went out shopping. N-No way! Let's be in the studio before she comes back!	False	False		Nijika,Ryo	Nijika,Ryo
-806	806	805	804	0:13:17.090000	0:13:18.310000	806.mp3	806.webp	ひとりちゃんも あっ	Ven, Hitori.	You too, Hitori-chan!	False	False		Nijika	Nijika
-807	807	808	809	0:13:18.339000	0:13:19.610000	807.mp3	807.webp	ほら!	¡Vamos!	C'mon!	False	False		Nijika	Nijika
-812	812	810	811	0:13:20.610000	0:13:21.801000	812.mp3	812.webp	は... はい!	Sí.	R-Right!	False	False		Hitori	Hitori
-813	813	815	814	0:13:22.301000	0:13:23.780000	813.mp3	813.webp	現実は怖い	La vida real da miedo.	Real life is scary.	False	False		Hitori	Hitori
-817	817	818	816	0:13:24.660000	0:13:29.570000	817.mp3	817.webp	でも これから楽しいことが たくさん待っている気がする	Pero siento que me espera bastante diversión.	But I feel like there's some fun stuff coming up!	False	False		Hitori	Hitori
-820	820	821	819	0:13:30.800000	0:13:33.120000	820.mp3	820.webp	これ 今日のセットリストとスコア	Aquí tienes las canciones y las partituras.	Here's today's set list and score.	False	False		Nijika	Nijika
-822	822,825	824	823	0:13:33.145000	0:13:36.160000	822.mp3	822.webp	あっ あの...　バンドメンバーは?	¿Dónde están las demás?	Wh-Where are the other band members?	False	False		Hitori	Hitori
-826	826	828	827	0:13:36.148000	0:13:37.820000	826.mp3	826.webp	これで全員だよ	Ya estamos todas.	This is everyone!	False	False		Nijika	Nijika
-829	829	831	830	0:13:37.816000	0:13:40	829.mp3	829.webp	あたしたち 今回は インストバンドだから	Hoy haremos los instrumentales.	We'll be doing all instrumentals this time.	False	False		Nijika	Nijika
-833	833	834	832	0:13:40.600000	0:13:43.660000	833.mp3	833.webp	うん この曲ならいける	Bien, puedo con esta canción.	Right. I can handle this song.	False	False		Hitori	Hitori
-835	835	837	836	0:13:43.572000	0:13:46.510000	835.mp3	835.webp	でも ボーカルいない分 演奏 頑張らないと	Pero sin cantante vamos a tener que esforzarnos...	Though without any vocals, the playing's gotta be all that much better...	False	False		Hitori	Hitori
-840	840,842	841,844	839,843	0:13:47.280000	0:13:50.720000	840.mp3	840.webp	私 ギターうまいらしいし　やれる やれるはず!	Soy buena tocando. Puedo hacerlo. Creo que puedo.	But I'm supposedly good at guitar. I can do this. I think I can do this!	False	False		Hitori	Hitori
-848	848	846	847	0:13:53.270000	0:13:54.667000	848.mp3	848.webp	ゴリラ? フンフン!	¿Un gorila?	Gorilla?	False	False		Ryo	Ryo
-850	850	851	849	0:13:57.230000	0:14:00.190000	850.mp3	850.webp	演奏聴いたら 2人とも驚くかも	A lo mejor las sorprendo cuando toque.	Maybe they'll be blown away by my playing!	False	False		Hitori	Hitori
-852	852	854	853	0:14:00.214000	0:14:04.570000	852.mp3	852.webp	だって ネットだと結構... いや わりと評判いいし	O sea, soy buena... o, al menos, en internet.	I mean, I get pretty good... pretty decent reactions online.	False	False		Hitori	Hitori
-858	858	859	857	0:14:05.050000	0:14:07.730000	858.mp3	858.webp	登録者数3万人だし	Yo tengo 30 000 suscriptores.	I even have 30,000 subscribers!	False	False		Hitori	Hitori
-861	861	863	862	0:14:07.721000	0:14:09.840000	861.mp3	861.webp	よし やってやる!	¡Bien, aquí voy!	Yeah, let's do this!	False	False		Hitori	Hitori
-865	865	866	864	0:14:09.840000	0:14:11.080000	865.mp3	865.webp	それじゃ いくよ!	Empecemos.	Okay, let's go!	False	False		Nijika	Nijika
-872	872	873	871	0:14:26.630000	0:14:27.840000	872.mp3	872.webp	ド下手だ プッ	Eres horrible.	You suck!	False	False		Nijika	Nijika
-876	876	877	875	0:14:29.090000	0:14:30.650000	876.mp3	876.webp	ななな... なんで? あっ ウソウソ	¿Por qué?	H-How can I suck?	False	False		Hitori	Hitori
-880	880	881	879	0:14:30.650000	0:14:32.730000	880.mp3	880.webp	私 ギターヒーローなのに	¡Soy guitarhero!	I'm guitarhero!	False	False		Hitori	Hitori
-884	884	885	883	0:14:32.730000	0:14:34.890000	884.mp3	884.webp	登録者3万人なのにー?	¡Tengo 30 000 suscriptores!	I've got 30,000 subscribers!	False	False		Hitori	Hitori
-887	887	888	886	0:14:34.890000	0:14:36.875000	887.mp3	887.webp	説明しよう! えっ?	¡Yo les explico!	Allow me to explain!	False	False		Guitar Man	Guitar Man
-891	891,894	893	892	0:14:36.959000	0:14:41.130000	891.mp3	891.webp	バンドは 生身の人間と　呼吸を合わせることが とっても重要だけど	¡En una banda es esencial estar en armonía!	In a band, it's super important to be in sync with your fellow live performers!	False	False		Guitar Man	Guitar Man
-895	895	897	896	0:14:41.088000	0:14:43.940000	895.mp3	895.webp	コミュ症の ひとりは 目すら合わせられないので	Hitori tiene ansiedad social y no mira a los ojos.	But Hitori has social anxiety and can't make eye contact,	False	False		Guitar Man	Guitar Man
-899	899	900	898	0:14:43.940000	0:14:45.759000	899.mp3	899.webp	突っ走る演奏をする!	Por eso se adelanta.	and she'll be inclined to rush ahead of the others!	False	False		Guitar Man	Guitar Man
-913	913	912	901	0:14:46.320000	0:14:48.030000	913.mp3	913.webp	ソロ弾きは最強でも	Por muy buena solista que sea,	She might be an awesome solo player,	False	False		Guitar Man	Guitar Man
-914	914,917	916	915	0:14:47.887000	0:14:51.740000	914.mp3	914.webp	バンドになるとミジンコ以下　最弱になるのだ!	en una banda está en el nivel más bajo de todos.	but when in a band, she's sub-water-flea level, the worst there is!	False	False		Guitar Man	Guitar Man
-918	918	920	919	0:14:51.765000	0:14:54.280000	918.mp3	918.webp	どうも プランクトン後藤でーす	Hola, me llamo Plancton Goto.	Hello. I'm Plankton Goto.	False	False		Hitori	Hitori
-921	921	923	922	0:14:54.268000	0:14:57.080000	921.mp3	921.webp	売れないお笑い芸人みたいな人 出てきた!	¡Parece una humorista sin gracia!	She sounds like an unfunny comedian!	False	False		Nijika	Nijika
-924	924	926	925	0:14:57.104000	0:14:59.710000	924.mp3	924.webp	こうして 後藤ひとりは灰となり	Hitori Goto se convirtió en historia	And thus, Hitori Goto turned to dust,	False	False		Hitori	Hitori
-927	927	929	928	0:14:59.648000	0:15:02.960000	927.mp3	927.webp	もう二度とギターを持つことは なかったのでした	y nunca volvió a tomar la guitarra.	and never picked up a guitar again.	False	False		Hitori	Hitori
-943	943	945		0:15:09.408000	0:15:11.010000	943.mp3	943.webp	ちょちょ... ちょちょ!	¡Un momento!		False			Nijika	
-946	946	948	947	0:15:11.035000	0:15:12.760000	946.mp3	946.webp	ねえ 出てきてー	Sal de ahí.	Come out, please!	False	False		Nijika	Nijika
-949	949	951	950	0:15:12.786000	0:15:14.600000	949.mp3	949.webp	本番 始まっちゃうよ	Ya vamos a empezar.	The show's about to start!	False	False		Nijika	Nijika
-952	952	954	953	0:15:14.330000	0:15:16.520000	952.mp3	952.webp	やっ ややや... やっぱり できません!	No puedo hacerlo.	I c-c-can't do it!	False	False		Hitori	Hitori
-955	955	957	956	0:15:16.498000	0:15:19.180000	955.mp3	955.webp	しょうがないよ 即席バンドなんだし	No es para tanto. Hoy es nuestro primer día.	It's not your fault! We just came together today!	False	False		Nijika	Nijika
-958	958	960	959	0:15:19.126000	0:15:21.440000	958.mp3	958.webp	あたしだって そんな うまくないし	Yo tampoco soy buena.	It's not like I'm very good either.	False	False		Nijika	Nijika
-961	961	963	962	0:15:21.378000	0:15:22.770000	961.mp3	961.webp	私は うまい	Yo soy muy buena.	I'm very good.	False	False		Ryo	Ryo
-966	966	967	965	0:15:24.230000	0:15:26.360000	966.mp3	966.webp	とりあえず こっち向いて!	¡Mírame a mí!	Just look at me, okay!	False	False		Nijika	Nijika
-969	969	970	968	0:15:26.360000	0:15:28.140000	969.mp3	969.webp	現実逃避しないでー	Quédate con nosotras.	Stay here in reality!	False	False		Nijika	Nijika
-971	971	973	972	0:15:27.926000	0:15:32.680000	971.mp3	971.webp	あっ エ... MCでも 全くお役に立てないですし	Ni siquiera hago bien el principio...	It isn't like I could do the intro or anything...	False	False		Hitori	Hitori
-974	974	976	975	0:15:32.640000	0:15:36.570000	974.mp3	974.webp	ア... アハハハ 私の命をもって ハラキリショーでも...	Podría suicidarme en vivo.	I-I could offer up my life to put on a harakiri show!	False	False		Hitori	Hitori
-977	977	979	978	0:15:36.518000	0:15:39.490000	977.mp3	977.webp	バ... バンド名くらい 覚えて帰ってもらえるはず...	Al menos entretendremos a la gente, ¿no?	Th-They'll at least remember the name of the band, right?	False	False		Hitori	Hitori
-980	980	982	981	0:15:39.480000	0:15:40.880000	980.mp3	980.webp	ド下手で すみません!	Siento ser tan mala.	Sorry I sucked!	False	False		Hitori	Hitori
-985	985	983	984	0:15:40.870000	0:15:41.920000	985.mp3	985.webp	ロックすぎる!	¡Eso es demasiado!	That's a little too rock!	False	False		Nijika	Nijika
-986	986	987	988	0:15:41.941000	0:15:43.450000	986.mp3	986.webp	大丈夫	Tranquila.	It's okay.	False	False		Ryo	Ryo
-989	989	991	990	0:15:43.400000	0:15:47.130000	989.mp3	989.webp	ひとりがヤジられたら 私がベースで ポムッてするから	Si te abuchean, les pego con el bajo.	If they boo you, I'll give them a bonk with my bass.	False	False		Ryo	Ryo
-995	995	996	994	0:15:47.130000	0:15:50.680000	995.mp3	995.webp	べ... ベース そんなファンシーな音しますかね	¿El bajo hace ese ruido?	Does a bass make such a fancy noise?	False	False		Hitori	Hitori
-998	998,1000	999	997,1001	0:15:50.680000	0:15:53.630000	998.mp3	998.webp	流血沙汰もロックだから　ロックだから	Bueno, la sangre es muy roquera. -Es rock.	I mean, bloodshed is pretty rock. It's rock.	False	False		Nijika	Nijika,Ryo
-1002	1002	1004	1003	0:15:53.577000	0:15:55.730000	1002.mp3	1002.webp	ロック 免罪符すぎる!	¡Todo no es rock!	You can't justify everything with \"rock\"!	False	False		Hitori	Hitori
-1006	1006	1007	1005	0:15:55.730000	0:16:00.170000	1006.mp3	1006.webp	それに うちのバンド見に来るの 多分 あたしの友達だけだし	Además, seguro que solo vienen nuestros amigos.	Besides, it'll probably just be my friends who come to watch us play!	False	False		Nijika	Nijika
-1009	1009	1011	1010	0:16:00.960000	0:16:03.630000	1009.mp3	1009.webp	私 友達 虹夏だけだから	Nijika es mi única amiga, así que...	And Nijika is my only friend, so...	False	False		Ryo	Ryo
-1012	1012	1014	1013	0:16:03.587000	0:16:07.720000	1012.mp3	1012.webp	普通の女子高生に 演奏の よしあしとか 分かんないって	Las adolescentes no saben nada de calidad musical.	Normal high school girls don't know good music from bad.	False	False		Nijika	Nijika
-1015	1015	1017	1016	0:16:07.716000	0:16:10.030000	1015.mp3	1015.webp	炎上しそうな発言	Eso es lo que se dice en internet...	That kind of take could get you in trouble on the internet.	False	False		Hitori	Hitori
-1019	1019	1020	1018	0:16:10.600000	0:16:12.730000	1019.mp3	1019.webp	ねっ? だから安心せい!	Vamos, tranquilízate.	Okay? So just chill!	False	False		Nijika	Nijika
-1021	1021	1023	1022	0:16:13.138000	0:16:14.760000	1021.mp3	1021.webp	と... 言われても	No sé...	I d-dunno...	False	False		Hitori	Hitori
-1025	1025	1026	1024	0:16:14.760000	0:16:16.550000	1025.mp3	1025.webp	私は よしあし分かるけど	Yo sí distingo la calidad.	I know good music from bad.	False	False		Ryo	Ryo
-1027	1027	1029	1028	0:16:16.517000	0:16:19.520000	1027.mp3	1027.webp	リョウは普通じゃないから えっ... エヘヘヘヘ	Pero tú no eres normal.	Well, you're not normal.	False	False		Nijika	Nijika
-1030	1030	1032	1031	0:16:19.603000	0:16:21.540000	1030.mp3	1030.webp	いや 喜ぶな 喜ぶな	Oye, eso no es un cumplido.	Hey, that wasn't a compliment.	False	False		Nijika	Nijika
-1033	1033	1035	1034	0:16:21.563000	0:16:23.140000	1033.mp3	1033.webp	ごめんなさい	Lo siento.	Sorry.	False	False		Hitori	Hitori
-1037	1037	1036	1038	0:16:23.500000	0:16:24.720000	1037.mp3	1037.webp	けど...	Pero...	But...	False	False		Nijika	Nijika
-1040	1040	1041	1039	0:16:24.720000	0:16:26.568000	1040.mp3	1040.webp	無理強いするもんじゃない	No podemos obligarla.	We can't force her.	False	False		Ryo	Ryo
-1043	1043	1042	1044	0:16:27.710000	0:16:29.060000	1043.mp3	1043.webp	だよね	Cierto.	You're right.	False	False		Nijika	Nijika
-1045	1045	1046	1047	0:16:29.029000	0:16:30.700000	1045.mp3	1045.webp	無理なお願いして ごめん	Siento haberte obligado.	Sorry to push you so hard.	False	False		Nijika	Nijika
-1048	1048	1050	1049	0:16:30.656000	0:16:32.170000	1048.mp3	1048.webp	あっ いや そこは! ん?	No, en realidad...	No, actually...	False	False		Hitori	Hitori
-1052	1052,1054	1053	1051	0:16:32.970000	0:16:37.050000	1052.mp3	1052.webp	あっ ほ... 本当に うれしかったんです　声かけられて	Me alegro de que hayas hablado conmigo.	I r-really was happy you reached out to me.	False	False		Hitori	Hitori
-1056	1056	1057	1055	0:16:37.700000	0:16:40.600000	1056.mp3	1056.webp	バンドは ずっと 組みたいと思ってたから	Llevo mucho queriendo estar en una banda,	I've wanted to be in a band for so long...	False	False		Hitori	Hitori
-1058	1058	1060	1059	0:16:40.374000	0:16:43.470000	1058.mp3	1058.webp	で... でも メンバー集まらなくて	pero no encontraba gente,	B-But I couldn't get the people together...	False	False		Hitori	Hitori
-1061	1061	1063	1062	0:16:43.419000	0:16:46.520000	1061.mp3	1061.webp	だから ふだんは カバー曲 ネットに上げたり	así que me dedico a subir versiones a internet.	So I just upload covers to the internet instead.	False	False		Hitori	Hitori
-1065	1065	1066	1064	0:16:46.520000	0:16:48.190000	1065.mp3	1065.webp	ふだんは何弾くの?	¿Qué tocas?	What do you usually play?	False	False		Ryo	Ryo
-1067	1067	1069	1068	0:16:48.173000	0:16:51.230000	1067.mp3	1067.webp	あっ 結成したとき すぐ対応できるように	Canciones famosas recientes	M-Mostly songs by popular bands from the last few years,	False	False		Hitori	Hitori
-1070	1070	1072	1071	0:16:51.218000	0:16:54.260000	1070.mp3	1070.webp	ここ数年の 売れ線バンドの曲は大体...	para tocarlas en cuanto formara una banda...	so I could play them right away once the band got together...	False	False		Hitori	Hitori
-1075	1075	1073	1074	0:16:53.980000	0:16:54.990000	1075.mp3	1075.webp	えっ すご!	Increíble.	That's awesome!	False	False		Nijika	Nijika
-1076	1076	1078	1077	0:16:55.013000	0:16:56.800000	1076.mp3	1076.webp	いや 全然	Para nada.	It's not.	False	False		Hitori	Hitori
-1079	1079	1081	1080	0:16:56.724000	0:16:59.380000	1079.mp3	1079.webp	結局 こんな感じになって	Por eso soy así.	It's the reason I'm the way I am now.	False	False		Hitori	Hitori
-1083	1083	1084	1082	0:16:59.380000	0:17:02.750000	1083.mp3	1083.webp	やっぱり 私には 誰かとバンド組むなんて...	Estar en una banda era un sueño imposible.	Being in a band with other people was a pipe dream after all.	False	False		Hitori	Hitori
-1086	1086	1087	1085	0:17:03.130000	0:17:05.360000	1086.mp3	1086.webp	売れ線のカバーばっか...	¿Haces versiones famosas?	Covering all popular songs?	False	False		Nijika	Nijika
-1089	1089,1092	1090	1088,1091	0:17:05.360000	0:17:08.460000	1089.mp3	1089.webp	なんか ギターヒーローさんみたいだね　って 知ってる?	¿No es lo que hace guitarhero? ¿Te suena?	She sounds like guitarhero-san! Have you heard of her?	False	False		Nijika	Nijika
-1096	1096	1094	1095	0:17:09.090000	0:17:11.630000	1096.mp3	1096.webp	ギターヒーロー	Creo que tiene nuestra edad... -Guitarhero...	guitarhero...	False	False		Nijika	Hitori
-1106	1106	1108	1107	0:17:11.530000	0:17:12.990000	1106.mp3	1106.webp	えっ! 私?	¿Yo?	M-Me?!	False	False		Hitori	Hitori
-1110	1110	1111	1109	0:17:12.990000	0:17:15.560000	1110.mp3	1110.webp	知らないなら あとでURL送るよ	Si no la conoces, luego te la enseño.	I'll send you a link if you haven't!	False	False		Nijika	Nijika
-1113	1113	1114	1112	0:17:15.560000	0:17:18.160000	1113.mp3	1113.webp	もう最高に うまいから 聴いてみて!	¡Es la mejor! Deberías escucharla.	She's super awesome! You should hear her!	False	False		Nijika	Nijika
-1116	1116	1117	1115	0:17:18.160000	0:17:20.080000	1116.mp3	1116.webp	最高?	¿La mejor?	Awe... some?	False	False		Hitori	Hitori
-1119	1119,1121,1124	1120,1123	1118,1122,1125	0:17:20.080000	0:17:26.040000	1119.mp3	1119.webp	私も オススメに 何度も上がってくるから　見たことあるけど すごく うまかった　ねっ!	Me salió recomendada. La veo bastante. -Es excelente. -¿A que sí?	She comes up in my recommendations a lot, so I've seen her too. She really is excellent. Right?!	False	False		Ryo	Nijika,Ryo
-1126	1126	1128	1127	0:17:26.003000	0:17:28.213000	1126.mp3	1126.webp	ネーミングセンスは ちょっと痛いけど...	Aunque su apodo da asquito...	Though her naming sense is a bit cringy...	False	False		Nijika	Nijika
-1131	1131	1129	1130	0:17:28.480000	0:17:29.650000	1131.mp3	1131.webp	痛いの?	¿Ah, sí?	It is?!	False	False		Hitori	Hitori
-1135	1135	1136	1132	0:17:29.650000	0:17:33.520000	1135.mp3	1135.webp	あたし フォローして 新着通知もオンにしてるんだー	Yo tengo las notificaciones activadas solo para ella.	I follow her with notifications on!	False	False		Nijika	Nijika
-1137	1137	1139	1138	0:17:33.510000	0:17:35.780000	1137.mp3	1137.webp	いつか 一緒に演奏してみたいな	Ojalá toque con ella algún día.	I'd love to play with her some day!	False	False		Nijika	Nijika
-1140	1140	1142	1141	0:17:35.763000	0:17:37.660000	1140.mp3	1140.webp	今 したんですけどね	Pues acabas de hacerlo...	You just did, actually...	False	False		Hitori	Hitori
-1143	1143	1145	1144	0:17:37.681000	0:17:41.280000	1143.mp3	1143.webp	えーっとね 何が言いたいかっていうと	Lo que intento decir es que,	Look, what I'm getting at here	False	False		Nijika	Nijika
-1146	1146	1148	1147	0:17:41.268000	0:17:44.770000	1146.mp3	1146.webp	うまくて話題の人もね 私たちが見てないところで	por muy buena que seas, mucha gente toca la guitarra.	is that even awesome, popular people are out there playing guitar,	False	False		Nijika	Nijika
-1149	1149	1151	1150	0:17:44.730000	0:17:48.580000	1149.mp3	1149.webp	たっくさん たっくさん ギターを弾いてきたんだろうなって	Hay tanta gente que no podemos ver a todo el mundo.	lots and lots of them, in places we're not even watching.	False	False		Nijika	Nijika
-1154	1154	1155,1157	1153,1156	0:17:49.400000	0:17:53.030000	1154.mp3	1154.webp	あとで見てみて 動画見てると伝わってくるから	Vela luego. Cuando la veas, me entenderás.	You should watch her later! I think you'll get what I mean if you watch the videos.	False	False		Nijika	Nijika
-1160	1160,1162	1161	1159	0:17:54.650000	0:18:00.120000	1160.mp3	1160.webp	現実世界の人たちは　誰も 私なんか 興味ないと思ってた	Siempre pensé que la gente no se preocupaba por mí...	I always figured real-life people didn't care about me at all...	False	False		Hitori	Hitori
-1164	1164	1165	1163	0:18:02.470000	0:18:05.940000	1164.mp3	1164.webp	今日がダメだからって バンド 諦めるのは早いって	No abandones el sueño de formar una banda por lo de hoy.	You can't give up on playing in a band just because it didn't work out today!	False	False		Nijika	Nijika
-1167	1167	1168	1166	0:18:05.940000	0:18:08.290000	1167.mp3	1167.webp	あたしたちが アレなだけかもだし	Puede que fuera culpa nuestra...	It's possible it's our problem, anyway...	False	False		Nijika	Nijika
-1170	1170		1169	0:18:08.290000	0:18:09.338000	1170.mp3	1170.webp	アレ? ううっ...		Our problem?		False			Ryo
-1173	1173	1171	1172	0:18:09.850000	0:18:11.090000	1173.mp3	1173.webp	ひとりちゃん?	¿Hitori?	Hitori-chan?	False	False		Nijika	Nijika
-1175	1175	1176	1174	0:18:11.090000	0:18:14.780000	1175.mp3	1175.webp	けど こんな優しい人が ずっと見ていてくれて	Una persona como ella me vio	But someone this nice has been watching me all this time,	False	False		Hitori	Hitori
-1178	1178	1179	1177	0:18:14.780000	0:18:17.170000	1178.mp3	1178.webp	私なんかに声をかけてくれた	y habló conmigo...	and actually spoke to me...	False	False		Hitori	Hitori
-1181	1181	1180	1182	0:18:17.130000	0:18:18.240000	1181.mp3	1181.webp	あっ あっ 立った	Se paró.	She stood up.	False	False		Ryo	Ryo
-1184	1184	1185	1183	0:18:18.740000	0:18:22.160000	1184.mp3	1184.webp	こんな奇跡 多分 一生 起こらない	Es un milagro que no ocurre mucho.	It's the kind of miracle most people never experience!	False	False		Hitori	Hitori
-1187	1187	1188	1186	0:18:22.870000	0:18:24.978000	1187.mp3	1187.webp	絶対 ムダにしちゃダメだ!	¡No puedo perder la ocasión!	I can't let it go to waste!	False	False		Hitori	Hitori
-1189	1189	1191	1190	0:18:25.562000	0:18:27.500000	1189.mp3	1189.webp	わ... 私 その...	Yo...	I... I'm...	False	False		Hitori	Hitori
-1193	1193	1194	1192	0:18:27.960000	0:18:31.026000	1193.mp3	1193.webp	もしかして 出てくれる気になったとか?	¿Quieres actuar?	D-Do you want to perform after all?	False	False		Nijika	Nijika
-1196	1196	1197	1198	0:18:33.028000	0:18:34.420000	1196.mp3	1196.webp	ひ... ひとりちゃん?	¿Hitori?	Hitori-chan?	False	False		Nijika	Nijika
-1200	1200	1201,1203	1199,1202	0:18:34.420000	0:18:37.820000	1200.mp3	1200.webp	頭では分かってる でも やっぱり怖い	Sé que en el fondo... Tengo miedo.	I know all that, rationally... But I'm still too scared...	False	False		Hitori	Hitori
-1204	1204	1206	1205	0:18:37.783000	0:18:40.390000	1204.mp3	1204.webp	お客さんの目線も 耐えられるわけが...	No puedo actuar con público...	There's no way I can play in front of an audience...	False	False		Hitori	Hitori
-1207	1207	1209	1208	0:18:40.410000	0:18:43.330000	1207.mp3	1207.webp	怖いなら これに入って演奏したら?	Si tienes miedo, toca aquí adentro.	If you're scared, you could play from in here.	False	False		Ryo	Ryo
-1216	1216	1217	1214	0:18:44.310000	0:18:48.560000	1216.mp3	1216.webp	いっ い... いつも弾いてる環境と同じですー	Se parece a donde toco siempre.	I-It's the same environment that I play in all the time!	False	False		Hitori	Hitori
-1218	1218	1220	1219	0:18:49.086000	0:18:51.190000	1218.mp3	1218.webp	どんな所に住んでるの?	¿Dónde vives?	Where exactly do you live?	False	False		Nijika	Nijika
-1224	1224	1225	1223	0:18:51.630000	0:18:54.640000	1224.mp3	1224.webp	皆さん 下北 盛り上げていきましょう!	¿Cómo están, gente?	How you feelin' tonight, Shimo-Kita?!	False	False		Hitori	Hitori
-1226	1226	1228	1227	0:18:54.424000	0:18:56.150000	1226.mp3	1226.webp	少し気が大きくなった	Ahora es otra.	She's suddenly more outgoing.	False	False		Ryo	Ryo
-1229	1229	1231	1230	0:18:56.176000	0:18:59.480000	1229.mp3	1229.webp	そういえば ライブで なんて紹介すればいい?	Por cierto, ¿cómo te presentamos?	By the way, how do you want us to introduce you?	False	False		Nijika	Nijika
-1233	1233	1234	1232	0:18:59.480000	0:19:02.170000	1233.mp3	1233.webp	ひとりちゃん? 本名でいいかな?	¿Hitori? ¿Usamos tu nombre?	\"Hitori-chan\"? Should we use your real name?	False	False		Nijika	Nijika
-1236	1236	1237	1235	0:19:02.170000	0:19:03.900000	1236.mp3	1236.webp	い... いや それは...	Mejor no...	I'd... I'd rather not...	False	False		Hitori	Hitori
-1239	1239	1240	1238	0:19:03.900000	0:19:05.770000	1239.mp3	1239.webp	じゃあ あだ名とかはないの?	¿Te ponemos algún apodo?	Any nicknames, then?	False	False		Nijika	Nijika
-1242	1242	1243	1241	0:19:05.770000	0:19:09.106000	1242.mp3	1242.webp	ちゅ... 中学では \"あのー\"とか\"おい\"とか	En la secundaria me llamaban \"oye\" y \"tú\"...	In middle school, they called me \"Hey\" and \"You there\"...	False	False		Hitori	Hitori
-1246	1246	1245	1244	0:19:09.020000	0:19:10.840000	1246.mp3	1246.webp	それ あだ名じゃなくない?	Esos no son apodos.	I don't think those are nicknames!	False	False		Nijika	Nijika
-1247	1247,1250	1249	1248	0:19:10.816000	0:19:14.790000	1247.mp3	1247.webp	あああ... あだ名で呼び合うほど　親しい交友関係は 持ったことが...	Nunca he conocido a nadie tanto como para que me ponga apodos.	I never knew anyone well enough to get nicknames from them!	False	False		Hitori	Hitori
-1251	1251	1253,1255	1252,1254	0:19:14.820000	0:19:17.940000	1251.mp3	1251.webp	ひとり... ひとりぼっち...	Hitori... Hitoribocchi, solitaria...	Hitori... Hitoribocchi ...	False	False		Ryo	Ryo
-1257	1257	1258	1256	0:19:17.940000	0:19:19.120000	1257.mp3	1257.webp	ぼっちちゃんは?	¿Qué tal Bocchi?	How about Bocchi-chan?	False	False		Ryo	Ryo
-1260	1260	1261	1259	0:19:19.120000	0:19:21.180000	1260.mp3	1260.webp	うっ またデリケートなところを	Tú y tu falta de tacto otra vez.	Another tactless comment!	False	False		Nijika	Nijika
-1263	1263,1265	1264	1262,1266	0:19:21.180000	0:19:24.140000	1263.mp3	1263.webp	ぼぼぼ... ぼっちです!　喜んでるし	¡Bocchi! -¿Le gusta?	I'm B-B-Bocchi! She likes it?	False	False		Hitori	Hitori,Nijika
-1267	1267	1269	1268	0:19:24.162000	0:19:26.180000	1267.mp3	1267.webp	あだ名とか初めてで	Es mi primer apodo...	It's just my first ever nickname...	False	False		Hitori	Hitori
-1270	1270	1272	1271	0:19:26.164000	0:19:28.360000	1270.mp3	1270.webp	ううー なんか 涙出てきた	Va a llorar...	This is making me teary-eyed.	False	False		Nijika	Nijika
-1273	1273	1275	1274	0:19:28.292000	0:19:31.030000	1273.mp3	1273.webp	あっ まだ バンド名 聞いてなかったです	Por cierto, no sé cómo se llama la banda.	Oh, you haven't told me your band name yet.	False	False		Hitori	Hitori
-1279	1279	1280	1278	0:19:33.110000	0:19:34.715000	1279.mp3	1279.webp	結束バンドだよ	Somos Kessoku Band.	It's Kessoku Band.	False	False		Ryo	Ryo
-1283	1283	1284	1282	0:19:37.030000	0:19:39.020000	1283.mp3	1283.webp	結束バンド...	Kessoku Band...	Kessoku Band...	False	False		Hitori	Hitori
-1286	1286	1287	1285	0:19:39.020000	0:19:40.820000	1286.mp3	1286.webp	結束バンド?	¿Eso no significa \"cinta\"?	Isn't that the word for \"zip tie\"?	False	False		Hitori	Hitori
-1288	1288	1289	1290	0:19:40.846000	0:19:42.639000	1288.mp3	1288.webp	プッ 傑作	Es genial.	It's brilliant.	False	False		Ryo	Ryo
-1292	1292	1293	1291	0:19:42.570000	0:19:44.820000	1292.mp3	1292.webp	寒いし 絶対 変えるからー!	¡No tiene gracia! Vamos a cambiarlo.	It's the worst pun! We're totally changing it!	False	False		Nijika	Nijika
-1295	1295	1296	1294	0:19:44.820000	0:19:46.600000	1295.mp3	1295.webp	なんで? かわいいよね	¿Por qué? Es lindo.	Why? It's cute.	False	False		Ryo	Ryo
-1297	1297	1299	1298	0:19:46.560000	0:19:48.854000	1297.mp3	1297.webp	あっ はい うああー!	Sí.	Y-Yes.	False	False		Hitori	Hitori
-1301	1301	1302	1300	0:19:48.910000	0:19:52.050000	1301.mp3	1301.webp	バンド名は後回しで そろそろ出番だよ!	Vamos, ya es hora de tocar.	Band name aside, it's time to play!	False	False		Nijika	Nijika
-1305	1305	1306	1304	0:19:53.190000	0:19:54.420000	1305.mp3	1305.webp	大丈夫 あっ	Tranquila.	Don't worry.	False	False		Nijika	Nijika
-1308	1308	1309	1307	0:19:54.840000	0:19:58.550000	1308.mp3	1308.webp	下手でも 楽しく弾くことだけは 心掛けよう	Aunque no seas tan buena, la clave está en divertirte.	The key is to have fun, even if you suck!	False	False		Nijika	Nijika
-1311	1311	1312	1310	0:19:58.550000	0:20:01.260000	1311.mp3	1311.webp	音って ものすごく 感情が表れやすいから	Cuando tocas dejas ver lo que sientes.	Your feelings really come out in your playing, see?	False	False		Nijika	Nijika
-1314	1314	1315	1313	0:20:01.980000	0:20:03.680000	1314.mp3	1314.webp	は... はい	Bien...	R-Right...	False	False		Hitori	Hitori
-1316	1316	1318	1317	0:20:03.702000	0:20:07.040000	1316.mp3	1316.webp	技術を求めていくのは 次からで 全然いいよ	Ya trabajaremos la técnica para la próxima vez.	We can always work on the skill part next time.	False	False		Nijika	Nijika
-1321	1321	1319	1320	0:20:06.970000	0:20:08.220000	1321.mp3	1321.webp	うん	Sí.	Yeah.	False	False		Ryo	Ryo
-1323	1323	1324	1322	0:20:08.130000	0:20:09.540000	1323.mp3	1323.webp	\"次\"って...	La próxima...	Next... time...	False	False		Hitori	Hitori
-1326	1326	1327	1325,1328	0:20:09.540000	0:20:11.460000	1326.mp3	1326.webp	よし 行こう! うん	Bien, vamos. -Sí.	Okay, let's go! Right.	False	False		Nijika	Nijika,Ryo
-1330	1330,1332	1331	1329	0:20:12.720000	0:20:15.797000	1330.mp3	1330.webp	私...　次も いていいんだ	Quieren una próxima vez.	They're okay with there being a next time!	False	False		Hitori	Hitori
-1333	1333	1335	1334	0:20:19.051000	0:20:22.240000	1333.mp3	1333.webp	はじめまして! 結束バンドでーす!	Encantadas. ¡Somos Kessoku Band!	Nice to meet you! We're Kessoku Band!	False	False		Nijika	Nijika
-1337	1337,1340	1338	1336,1339	0:20:22.240000	0:20:26.320000	1337.mp3	1337.webp	今日は みんなも多分 知ってる曲を何曲か やるので　聴いてください!	¡Seguro que conocen nuestras canciones, así que disfruten!	We'll play a bunch of songs you probably know, so please enjoy!	False	False		Nijika	Nijika
-1341	1341	1342	1343	0:20:26.350000	0:20:27.700000	1341.mp3	1341.webp	んだ? あれ	¿Quién es esa?	Who's that?	False	False		Seika	Seika
-1346	1346	1347	1345	0:20:37.800000	0:20:41.560000	1346.mp3	1346.webp	いつもの実力 出せなくて 最悪だけど	Odio no poder tocar como de costumbre, pero...	I hate that I can't play as well as I usually do, but...	False	False		Hitori	Hitori
-1349	1349,1351	1350	1348	0:20:41.560000	0:20:46.390000	1349.mp3	1349.webp	バンド組んで 誰かと演奏するのって　こんな楽しいんだ!	¡Me está encantando tocar con más gente!	playing in a band with other people is so much fun!	False	False		Hitori	Hitori
-1354	1354	1353	1352	0:20:48.600000	0:20:52.100000	1354.mp3	1354.webp	私 今日 最高に輝いて...	Hasta ahora nunca he brillado...	I've never really shone before today...	False	False		Hitori	Hitori
-1357	1357	1355	1356	0:20:52.560000	0:20:53.730000	1357.mp3	1357.webp	ない!	Y aún no brillo.	And I still don't!	False	False		Hitori	Hitori
-1359	1359	1360	1358	0:20:53.730000	0:20:57.030000	1359.mp3	1359.webp	むしろ人生で 一番みじめかも!	¡Es lo más bajo que he caído hasta ahora!	This might actually be a low point for me!	False	False		Hitori	Hitori
-1361	1361	1363	1362	0:21:00.842000	0:21:02.880000	1361.mp3	1361.webp	ミスりまくったー	Metí la pata.	Boy, I screwed up!	False	False		Nijika	Nijika
-1364	1364,1368	1366	1365,1367	0:21:02.844000	0:21:05.820000	1364.mp3	1364.webp	MC スベってたね エヘッ　あっ あの! ん?	Sí, en tu entrada. -Este...	Your intro bombed, too. E-Excuse me!	False	False		Ryo	Hitori,Ryo
-1372	1372	1370	1371	0:21:07.200000	0:21:08.475000	1372.mp3	1372.webp	何?	¿Qué?	What?	False	False		Nijika	Nijika
-1375	1375	1374,1377	1373,1376	0:21:08.390000	0:21:11.770000	1375.mp3	1375.webp	つつ つつつ... 何? 怖いんだけど!	A... ¡Me das miedo!	B-B-B-B-B... Okay, you're freaking me out!	False	False		,Nijika	,Nijika
-1379	1379,1381	1380	1378	0:21:12.250000	0:21:17.010000	1379.mp3	1379.webp	次のライブまでには クラスメイトに　挨拶できるくらいには なっておきます!	¡Antes de la próxima, seré valiente y saludaré a mis compañeros de clase!	B-Before our next performance, I'm gonna get brave enough to say hello to my classmates!	False	False		Hitori	Hitori
-1383	1383	1382	1384	0:21:16.960000	0:21:18.170000	1383.mp3	1383.webp	なんの宣言?	Cuánto dramatismo.	What a dramatic declaration.	False	False		Nijika	Nijika
-1385	1385	1387	1386	0:21:18.193000	0:21:20.250000	1385.mp3	1385.webp	目覚ましい成長	Cuánto has crecido...	Such growth...	False	False		Ryo	Ryo
-1388	1388	1390	1389,1391	0:21:20.195000	0:21:22.320000	1388.mp3	1388.webp	でも そっか... うん!	Pero te entiendo.	Okay, I get it. Sure!	False	False		Nijika	Nijika
-1392	1392,1395	1394	1393	0:21:22.280000	0:21:26.550000	1392.mp3	1392.webp	よーし じゃあ今から　ぼっちちゃん歓迎会 兼 ライブの反省会だー	¡Celebraremos tu fiesta de bienvenida y funeral posconcierto!	Then let's have a Bocchi-chan-welcome-party- slash-concert-post-mortem!	False	False		Nijika	Nijika
-1396	1396	1398	1397	0:21:26.576000	0:21:30.260000	1396.mp3	1396.webp	あっ 今日は人と話し過ぎて 疲れたので帰りまーす	Ya hablé demasiado hoy, así que me voy.	Actually, I'm pretty exhausted from all this social interaction, so I'm gonna go.	False	False		Hitori	Hitori
-1399	1399	1401	1400	0:21:30.288000	0:21:31.850000	1399.mp3	1399.webp	え? ごめん 眠い	Perdón. Tengo sueño.	Sorry. I'm sleepy.	False	False		Ryo	Ryo
-1404	1404	1405	1403	0:21:32.280000	0:21:33.760000	1404.mp3	1404.webp	しし... 失礼します!	Con permiso.	P-Pardon me!	False	False		Hitori	Hitori
-1408	1408	1409	1407	0:21:38.900000	0:21:41.383000	1408.mp3	1408.webp	結束力 全然ないっ!	¡En esta banda no hay nada que nos una!	There's no \"ties\" in this band at all!	False	False		Nijika	Nijika
-1411	1411	1412	1410	0:21:49.370000	0:21:51.300000	1411.mp3	1411.webp	絶対 コミュ症 治して	Superaré mi ansiedad	I'm gonna get over my social anxiety	False	False		Hitori	Hitori
-1414	1414	1415	1413	0:21:51.300000	0:21:54.896000	1414.mp3	1414.webp	ギターヒーローの私としての 力を発揮するんだ	y sacaré toda mi fuerza de guitarhero.	and bring out my full guitarhero powers!	False	False		Hitori	Hitori
-1418	1418	1416,1420,1422	1417,1419,1421	0:21:56.670000	0:22:01.210000	1418.mp3	1418.webp	虹夏ちゃん リョウさん 結束バンドのために!	Lo haré por Nijika, Ryo y Kessoku Band.	For Nijika-chan, Ryo-san, and Kessoku Band!	False	False		Hitori	Hitori
-1425	1425	1426	1424	0:22:02.860000	0:22:04.960000	1425.mp3	1425.webp	すす... すいません! すいません!	¡Perdón! ¡Perdón!	S-Sorry! Sorry!	False	False		Hitori	Hitori
+63fed026a5	1	2	0	0:00:00.459000	0:00:03.941000	63fed026a5.mp3	63fed026a5.webp	かーくれんぼする人 この指 とまれ	¡Vengan si quieren jugar a las escondidas!	Come over now if you wanna play hide-and-seek!	False	False		Preschooler (Male)	Preschooler (Male)
+40c63db16a	6	7	5	0:00:04.740000	0:00:08.860000	40c63db16a.mp3	40c63db16a.webp	私なんかが あの指に とまっていいのかな...	La chica que se preguntaba si podría sumarse.	The girl who wonders, "Would it be okay for me to join in?"	False	False		Hitori	Hitori
+d3750505b0	11,14	12	10	0:00:10.200000	0:00:16.110000	d3750505b0.mp3	d3750505b0.webp	そう悩んでるうちに乗り遅れて　気付いたら ひとりぼっちな子	Al final perdía su oportunidad y acababa sola.	and so misses her chance, ending up all alone.	False	False		Hitori	Hitori
+341b440a54	15,18,20	17,22	16,21	0:00:17.767000	0:00:24.040000	341b440a54.mp3	341b440a54.webp	遠足のときに...　どうぞ　先生とお弁当のおかずを 交換していた ひとりぼっちな子	La chica que en los pícnics se quedaba sola intercambiando comida con la profe.	The girl who ends up all alone at a picnic, swapping parts of her lunch with the teacher.	False	False		Hitori	Hitori
+6e12da2442	25	26	24	0:00:28.080000	0:00:29.380000	6e12da2442.mp3	6e12da2442.webp	ただいま	Ya llegué.	I'm home.	False	False		Hitori	Hitori
+97ef8705dc	28	29	27,30	0:00:30.310000	0:00:33.720000	97ef8705dc.mp3	97ef8705dc.webp	部活も入らず 放課後は即帰宅	La que no estaba en clubes y siempre se iba a casa temprano	The girl who doesn't join any clubs, comes home right after school,	False	False		Hitori	Hitori
+d3cbb98f47	35,38	36,41	34,39	0:00:35.320000	0:00:41.124000	d3cbb98f47.mp3	d3cbb98f47.webp	スマホに届くのは　親からのメッセージか クーポンのお知らせだけ	y en el celular solo veía mensajes de sus padres y cupones de descuento.	and finds her smartphone full of nothing but messages from her parents and coupon offers.	False	False		Hitori	Hitori
+e8bd9b4ab8	43	44	42	0:00:41.590000	0:00:42.730000	e8bd9b4ab8.mp3	e8bd9b4ab8.webp	それが私	Esa soy yo.	That's me.	False	False		Hitori	Hitori
+aeee0dcc8a	47	48	46	0:00:43.700000	0:00:46.980000	aeee0dcc8a.mp3	aeee0dcc8a.webp	後藤ひとり 中学1年生	Me llamo Hitori Goto y estoy en primero de preparatoria.	Hitori Goto, first-year in middle school.	False	False		Hitori	Hitori
+fa9e897830	52	53	51	0:00:47.480000	0:00:49.450000	fa9e897830.mp3	fa9e897830.webp	たまーに思う	A veces pienso	Sometimes I think	False	False		Hitori	Hitori
+38a0cbb067	56	57	54	0:00:49.450000	0:00:51.910000	38a0cbb067.mp3	38a0cbb067.webp	このままで いいんだろうかって	que debería cambiar mi forma de ser.	I should really change the way I am...	False	False		Hitori	Hitori
+5e943963a7	59	60	58	0:00:52.750000	0:00:56.780000	5e943963a7.mp3	5e943963a7.webp	でも 私 話す前に "あっ"って言っちゃうし	Cuando intento hablar, siempre tartamudeo	But I always stammer when I try to speak,	False	False		Hitori	Hitori
+6cbb1297a1	62	63	61	0:00:56.780000	0:00:59.050000	6cbb1297a1.mp3	6cbb1297a1.webp	目 合わすのも苦手だし	y aparto la mirada...	and I'm really bad at keeping eye contact...	False	False		Hitori	Hitori
+ecdf48cf73	65	66	64	0:00:59.050000	0:01:02.780000	ecdf48cf73.mp3	ecdf48cf73.webp	"THE 陰キャ"のような日々が 身の丈に合って...	La vida típica de introvertida es lo mío.	A life as the archetypal introvert just seems to fit me best.	False	False		Hitori	Hitori
+e9b1bdb0d9	71	69	70	0:01:02.370000	0:01:03.540000	e9b1bdb0d9.mp3	e9b1bdb0d9.webp	これ見てる?	¿Estás viendo eso?	You watching this?	False	False		Naoki	Naoki
+5d014c7596	74	72	73	0:01:03.950000	0:01:05.273000	5d014c7596.mp3	5d014c7596.webp	ううん	No.	Nah.	False	False		Hitori	Hitori
+5e531297ca	76,78	77	75	0:01:06.870000	0:01:11.710000	5e531297ca.mp3	5e531297ca.webp	学生のころは 教室の隅っこで　本読んでるふりしてるヤツでした	En la escuela, yo era el que se sentaba al fondo y hacía como que leía.	Back in school, I was the guy who sat in the back of the classroom pretending to read.	False	False		Musician	Musician
+33a1d75fa3	80	81	79	0:01:11.710000	0:01:13.100000	33a1d75fa3.mp3	33a1d75fa3.webp	友達いなくて	No tenía amigos.	No friends.	False	False		Musician	Musician
+5d1dacfb51	84,86	85	83	0:01:13.540000	0:01:18.220000	5d1dacfb51.mp3	5d1dacfb51.webp	それが今では　若者に絶大な人気を誇る バンドになったと	Y ahora eres parte de una banda muy famosa entre los jóvenes.	And now you're part of a band that's extremely popular with young people!	False	False		Interviewer	Interviewer
+0131c75a15	89	88	87	0:01:18.660000	0:01:21.560000	0131c75a15.mp3	0131c75a15.webp	まあ バンドは陰キャでも輝けるんで	Sí. Los introvertidos podemos brillar en una banda.	Yeah. A band is a place where even introverts can shine.	False	False		Musician	Musician
+0dbc5ee846	90	92	91	0:01:21.581000	0:01:24.310000	0dbc5ee846.mp3	0dbc5ee846.webp	そうなんですねー!	Ya veo.	I see!	False	False		Interviewer	Interviewer
+83e1bd3ade	94,96	95	93	0:01:24.310000	0:01:28.770000	83e1bd3ade.mp3	83e1bd3ade.webp	それでは お聴きください　インストームスで"引き金"	A continuación: Detonante, de Instorms.	Now, here's "Trigger" by Instorms!	False	False		Interviewer	Interviewer
+a37f3147d6	98	99	100	0:01:34.552000	0:01:36.030000	a37f3147d6.mp3	a37f3147d6.webp	おっ どうした?	¿Qué pasa?	What is it?	False	False		Naoki	Naoki
+f14e78b66b	102	103	101	0:01:36.030000	0:01:38.390000	f14e78b66b.mp3	f14e78b66b.webp	お... お父さん ギター貸して	Papá, ¿me prestas tu guitarra?	D-Dad, can I use your guitar?	False	False		Hitori	Hitori
+c9e8bd4f59	104	105	106	0:01:38.389000	0:01:39.974000	c9e8bd4f59.mp3	c9e8bd4f59.webp	えっ? いいよ	Claro.	Sure!	False	False		Naoki	Naoki
+7159698ede	109	108	107	0:01:39.820000	0:01:41.380000	7159698ede.mp3	7159698ede.webp	あ... ありがとう!	¡Gracias!	Th-Thanks!	False	False		Hitori	Hitori
+920f0d41ed	112	113,115	111,114	0:01:43.040000	0:01:46.750000	920f0d41ed.mp3	920f0d41ed.webp	そうか ひとりも ついにギターに興味を	Ya veo. Por fin se interesa por la guitarra.	Aha! At last, Hitori's getting into guitar too!	False	False		Naoki	Naoki
+b7ac404fa0	118,120	119	117,121	0:01:49.460000	0:01:54.906000	b7ac404fa0.mp3	b7ac404fa0.webp	バンド組んだら　私みたいな人間でも もしかしたら 輝ける?	Si estuviera en una banda, ¿incluso alguien como yo podría brillar?	Maybe even someone like me can shine if I'm in a band!	False	False		Hitori	Hitori
+9aaa1fea18	127	125	126,128	0:02:08.810000	0:02:11.270000	9aaa1fea18.mp3	9aaa1fea18.webp	決めた! ギターうまくなる!	Decidido. ¡Aprenderé a tocar la guitarra!	I've made up my mind. I'm gonna learn to play guitar!	False	False		Hitori	Hitori
+9a9272c768	132	133	131	0:02:11.840000	0:02:14.150000	9a9272c768.mp3	9a9272c768.webp	で 学校でバンド組んで...	Formaré una banda y...	Then I'll form a band at school, and...	False	False		Hitori	Hitori
+695e2d8e56	137	138	136	0:02:14.770000	0:02:17.240000	695e2d8e56.mp3	695e2d8e56.webp	"E A G"...	E, A, G...	E, A, G...	False	False		Hitori	Hitori
+1566fc41cc	140	141	139	0:02:17.240000	0:02:18.990000	1566fc41cc.mp3	1566fc41cc.webp	なんで突然 英語?	¿A qué viene tanto inglés?	What's with all the English?	False	False		Hitori	Hitori
+2862407695	144	145	143	0:02:23.590000	0:02:26.450000	2862407695.mp3	2862407695.webp	それで 文化祭でライブして	Además, tocaré en el festival cultural	Then I'll play at the culture festival	False	False		Hitori	Hitori
+fd62a3498d	146	148	147	0:02:26.396000	0:02:29.274000	fd62a3498d.mp3	fd62a3498d.webp	みんなから ちやほやされるんだ!	y volveré loco a todo el mundo.	and have everyone go crazy for me!	False	False		Hitori	Hitori
+fdf3c6371f	156	157	155	0:02:51.950000	0:02:54.020000	fdf3c6371f.mp3	fdf3c6371f.webp	ちや... ほや?	¿Locos... por mí?	Crazy... for me?	False	False		Hitori	Hitori
+884e5e994b	181,184	183,186	182,185	0:04:29.018000	0:04:35.080000	884e5e994b.mp3	884e5e994b.webp	人様の前で演奏出来るように　毎日6時間練習を続けた結果...	Ensayé seis horas al día para aprender a tocar delante de la gente... ¿El resultado?	I practiced six hours every day, so I could learn how to play in front of people... The result?	False	False		Hitori	Hitori
+4e998f0be0	187	189	188	0:04:35.024000	0:04:38.470000	4e998f0be0.mp3	4e998f0be0.webp	いつの間にか中学終わってた!	Acabó el año y nadie me escuchó.	Middle school ended, and I never played a single note for them!	False	False		Hitori	Hitori
+ef6d1f363c	195,198	196	192,197	0:04:39	0:04:41.880000	ef6d1f363c.mp3	ef6d1f363c.webp	ライブ出れなかった　文化祭!	Nunca he actuado... -¡En el festival!	I never performed once... At the culture festival!	False	False		Hitori	Hitori,Students
+87405a0694	200,203	201	199,202	0:04:41.880000	0:04:44.630000	87405a0694.mp3	87405a0694.webp	集められなかった　バンドメンバー!	Nunca he reunido... -A miembros de una banda.	I never put together... The members for a band!	False	False		Hitori	Hitori,Students
+7514884756	205	206	204	0:04:44.630000	0:04:47.240000	7514884756.mp3	7514884756.webp	そもそも友達 一人もできなかった	Nunca me he hecho amiga de nadie...	And I never made a single friend...	False	False		Hitori	Hitori
+63c0990957	208	209	207	0:04:47.240000	0:04:48.480000	63c0990957.mp3	63c0990957.webp	3年間!	En tres años.	In three whole years!	False	False		Students	Students
+dfb7940034	210	212	211	0:04:48.121000	0:04:50.100000	dfb7940034.mp3	dfb7940034.webp	高校こそは...	Ya estoy en la prepa...	Now, in high school...	False	False		Hitori	Hitori
+7bd3b85833	218	219	217	0:04:50.850000	0:04:55.044000	7bd3b85833.mp3	7bd3b85833.webp	高校になったら 絶対バンドやるんだぁ!	¡Tengo que formar una banda aunque sea lo último que haga!	I gotta form a band or die trying!	False	False		Hitori	Hitori
+e659d72316	221	222	220	0:04:56.280000	0:05:00.120000	e659d72316.mp3	e659d72316.webp	と 決意した高校生活も 始まって早一ヵ月	Por mucho que lo dijera, ya hace un mes que empezaron las clases	But despite my vow, it's been a whole month since high school started,	False	False		Hitori	Hitori
+7d7b42d6fb	223	225	224	0:05:00.091000	0:05:02.730000	7d7b42d6fb.mp3	7d7b42d6fb.webp	心の拠り所はギターだけ	y mi corazón sigue pegado a la guitarra.	and yet my heart remains grounded in the guitar,	False	False		Hitori	Hitori
+c15a8132da	226	228	227	0:05:02.677000	0:05:07.300000	c15a8132da.mp3	c15a8132da.webp	ひきこもり一歩手前ですぅー	Parece que me gusta encerrarme...	little better than a shut-in...	False	False		Hitori	Hitori
+1a6337ac71	230	231,233	229,232	0:05:08.840000	0:05:13.160000	1a6337ac71.mp3	1a6337ac71.webp	作詞作曲 私 "押し入れより愛をこめて"	La letra y la música son mías. Con amor desde el armario.	Lyrics and music by me. From the closet with love.	False	False		Hitori	Hitori
+9107b559ba	235,237	236	234	0:05:13.940000	0:05:19.160000	9107b559ba.mp3	9107b559ba.webp	って 真夜中に 私のクソなオリジナル曲で　ご近所トラブル起こす前に	Pero antes de molestar a los vecinos con mis pobres creaciones,	But before I cause neighborhood problems playing my crummy original song late at night,	False	False		Hitori	Hitori
+2ad343fd47	245	246	244	0:05:19.160000	0:05:21.821000	2ad343fd47.mp3	2ad343fd47.webp	人気バンドのカバー動画 アップしなきゃ	subiré una versión de una banda famosa.	I've gotta upload a cover I did of a popular band.	False	False		Hitori	Hitori
+f26dcb8b9b	250,252,255	251,253	249,254	0:05:22.830000	0:05:29.140000	f26dcb8b9b.mp3	f26dcb8b9b.webp	お父さんに勧められて　ギターヒーロー名義で 弾いてみた動画 上げだして　結構たつけど	Ya hace bastante desde que subo videos con el nick "guitarhero" por culpa de mi papá...	It's been a pretty long time since I started uploading myself playing under the name "guitarhero" on my dad's advice, but...	False	False		,Hitori	,Hitori
+b83be65d10	256,276	258	257	0:05:29.120000	0:05:33.770000	b83be65d10.mp3	b83be65d10.webp	あっ この前の動画　もう こんな コメントついてる	Vaya, mi último video tiene muchos comentarios.	Wow, my latest video already has so many comments.	False	False		Hitori	Hitori
+1bee7f742f	284	283	282	0:05:35.480000	0:05:38.270000	1bee7f742f.mp3	1bee7f742f.webp	最近は再生数も結構あるし	Últimamente tengo más visitas	I've been racking up the views lately, too,	False	False		Hitori	Hitori
+46aefcf580	285	287	286	0:05:38.212000	0:05:40.214000	46aefcf580.mp3	46aefcf580.webp	うまいって言われるし	y la gente me dice que soy buena...	and people are telling me I'm good...	False	False		Hitori	Hitori
+6946d804b6	289	290	288	0:05:40.120000	0:05:43.350000	6946d804b6.mp3	6946d804b6.webp	そうだよ 現実が つらくても大丈夫	Si no me sale bien en la vida real, me conformaré con esto.	Yeah, maybe it's okay if I can't handle real life!	False	False		Hitori	Hitori
+2351a4e515	291,301	293	292	0:05:43.301000	0:05:46.760000	2351a4e515.mp3	2351a4e515.webp	ネットには 私に反応してくれる人が　たくさん いるもん	En internet me apoya mucha gente.	There are tons of people cheering for me online!	False	False		Hitori	Hitori
+6306f13c28	305	306	304	0:05:46.760000	0:05:49.940000	6306f13c28.mp3	6306f13c28.webp	ここには 私と同じ 根暗コミュ症が あふれて...	En internet hay mucha gente tan introvertida como yo.	The internet is filled with socially anxious introverts just like me!	False	False		Hitori	Hitori
+0cd93ed7c6	312	313	311	0:05:49.940000	0:05:51.660000	0cd93ed7c6.mp3	0cd93ed7c6.webp	"この曲 バンド組んで文化祭で弾きま"...	Formé una banda y tocamos...	"I formed a band and played this for our culー"	False	False		Comment	Comment
+c6182ab26f	316	317	315	0:05:56	0:05:58.290000	c6182ab26f.mp3	c6182ab26f.webp	私だって努力はした	Ya lo intenté.	I put the effort in, okay?	False	False		Hitori	Hitori
+0e9e75ce89	319	320	318	0:05:58.770000	0:06:01.770000	0e9e75ce89.mp3	0e9e75ce89.webp	CD持っていって 机に置いたり	Llevé CDs y los puse en mi mesa.	I brought CDs to school and set them on my desk.	False	False		Hitori	Hitori
+ee9abc241a	321	323	322	0:06:01.736000	0:06:03.090000	ee9abc241a.mp3	ee9abc241a.webp	話しかけて...	Hablen conmigo.	Talk to me!	False	False		Hitori	Hitori
+2c80761d0a	325	326	324	0:06:03.090000	0:06:05.580000	2c80761d0a.mp3	2c80761d0a.webp	バンドグッズ持って アピールしたり	Compré productos de una banda y los enseñé.	I bought band merch and showed it off.	False	False		Hitori	Hitori
+7314bf9328	328	329	327	0:06:05.580000	0:06:06.970000	7314bf9328.mp3	7314bf9328.webp	話しかけてー	Hablen conmigo.	Talk to me!	False	False		Hitori	Hitori
+0c489a0c4e	331	332	330	0:06:06.970000	0:06:09.360000	0c489a0c4e.mp3	0c489a0c4e.webp	お昼のリクエストソングで...	Pedí canciones durante el almuerzo...	I put in song requests at lunch...	False	False		Hitori	Hitori
+ac1aa7f76f	334,336	335	333	0:06:09.360000	0:06:12.850000	ac1aa7f76f.mp3	ac1aa7f76f.webp	次の曲は　2年A組 後藤さんの リクエストです	La próxima es una petición de Goto, de 2-A.	This next song is a request from Goto-san in Class 2-A.	False	False		Speaker Voice	Speaker Voice
+6b1f5c43bc	340	339	338	0:06:13.200000	0:06:16.270000	6b1f5c43bc.mp3	6b1f5c43bc.webp	当時 ハマってた デスメタル 流して...	Pedí la canción metal con la que estoy obsesionada.	...for the death metal song I'd been obsessed with lately.	False	False		Hitori	Hitori
+3e9f0df603	342,345	344		0:06:16.209000	0:06:19.980000	3e9f0df603.mp3	3e9f0df603.webp	お前の頭蓋骨を粉砕して　ぼえええー!	¡Voy a aplastarte el cráneo!		False	False		Speaker Song	
+44ba1cb8c6	348	349	347	0:06:21.980000	0:06:24.100000	44ba1cb8c6.mp3	44ba1cb8c6.webp	フラッシュバックがー!	¡No quiero flashbacks!	Not the flashbacks!	False	False		Hitori	Hitori
+9e9a180ad6	350	352	351	0:06:23.716000	0:06:25.940000	9e9a180ad6.mp3	9e9a180ad6.webp	ぐうっ 忘れろ 忘れろ!	¡Fuera, feos recuerdos!	Begone! Begone, filthy memories!	False	False		Hitori	Hitori
+68e17ff1ae	360	361	359	0:06:33.480000	0:06:35.790000	68e17ff1ae.mp3	68e17ff1ae.webp	いいな... ライブ	Ojalá pudiera tocar en directo...	I wish I could perform live...	False	False		Hitori	Hitori
+102060176b	378	376	377	0:06:43.920000	0:06:45.090000	102060176b.mp3	102060176b.webp	そっ...	Oye...	That...	False	False		Hitori	Hitori
+f73331ba02	379	381	380	0:06:45.113000	0:06:47.365000	f73331ba02.mp3	f73331ba02.webp	その手があったか!	¡Podría funcionar!	That could work!	False	False		Hitori	Hitori
+68d8732d9b	385	387	386	0:06:59.710000	0:07:02.600000	68d8732d9b.mp3	68d8732d9b.webp	かっ... かっこいいー!	Qué genial.	I look... I look so cool!	False	False		Hitori	Hitori
+b9fb591e3f	388	390	389	0:07:02.547000	0:07:04.470000	b9fb591e3f.mp3	b9fb591e3f.webp	一気にバンド女子だ	Parezco una roquera.	I'm already a total rocker chick!	False	False		Hitori	Hitori
+4e591308d0	391	393	392	0:07:04.340000	0:07:06.590000	4e591308d0.mp3	4e591308d0.webp	ただ者じゃない感が半端ない	Parezco alguien interesante.	I look like a real somebody!	False	False		Hitori	Hitori
+7685b5791c	395	396	394	0:07:06.590000	0:07:08.030000	7685b5791c.mp3	7685b5791c.webp	存在感すごい!	La gente me mirará.	The people can't look away!	False	False		Hitori	Hitori
+a63e7fde1d	397,400	399	398	0:07:09.554000	0:07:14.160000	a63e7fde1d.mp3	a63e7fde1d.webp	これは...　絶対 誰か話しかけてくれるはず	Seguro que así alguien hablará conmigo.	Someone's just gotta talk to me now!	False	False		Hitori	Hitori
+981a7f4a88	402	403	401	0:07:14.600000	0:07:18.230000	981a7f4a88.mp3	981a7f4a88.webp	今年の文化祭は忙しくなるぞ!	¡Voy a estar muy ocupada en este festival!	I'm gonna be all over this year's culture festival!	False	False		Hitori	Hitori
+7012df2ef8	406	408	407	0:07:33.202000	0:07:35.180000	7012df2ef8.mp3	7012df2ef8.webp	だから そのコギ尻が...	Solo veía el trasero del corgi...	So you could see the corgi's butt...	False	False		Boy Student	Boy Student
+2df275bb11	409	410	411,412	0:07:35.204000	0:07:37.310000	2df275bb11.mp3	2df275bb11.webp	次 移動教室? 理科室B	¿Dónde nos toca? -Ciencias. Clase B.	Do we move rooms next period? Science Room B.	False	False		Girl Student A	Girl Student A,Girl Student B
+12a2dcabf4	413	415	414	0:07:37.331000	0:07:39.560000	12a2dcabf4.mp3	12a2dcabf4.webp	このあとさー カラオケとかさ	¿Quieres ir al karaoke?	Hey, wanna karaoke after this?	False	False		Girl Student C	Girl Student C
+9e03f17d90	416	418	417,419	0:07:39.417000	0:07:41.600000	9e03f17d90.mp3	9e03f17d90.webp	フフッ それいいね	Buena idea. -¿Segura?	Great idea! You sure?	False	False		Girl Student D	Girl Student C,Girl Student D
+22f96a64a3	422	424	423	0:07:46.591000	0:07:48.570000	22f96a64a3.mp3	22f96a64a3.webp	あれー?	¿Eh?	Huh?	False	False		Hitori	Hitori
+a6db2b5579	426	427	425	0:07:51.450000	0:07:54.340000	a6db2b5579.mp3	a6db2b5579.webp	深夜テンションのまま 暴走し過ぎた?	¿Se me habrán subido demasiado los humos?	Did I go overboard hyping myself up last night?	False	False		Hitori	Hitori
+691c9a81d5	429	430	428	0:07:54.340000	0:07:57.750000	691c9a81d5.mp3	691c9a81d5.webp	こんなに分かりやすいほど バンド少女感 出してるのに	Pero si parezco una roquera...	But I'm putting out such powerful rocker chick vibes...	False	False		Hitori	Hitori
+d802fd651b	432	433	431	0:07:57.750000	0:08:00.830000	d802fd651b.mp3	d802fd651b.webp	あっ あえて 話しかけてこない という可能性は...	¿Quizás ahora parezco demasiado inalcanzable?	D-Did I end up making myself unapproachable?!	False	False		Hitori	Hitori
+617f649e30	435	436	434,437	0:08:00.830000	0:08:03.210000	617f649e30.mp3	617f649e30.webp	ないないない 精神崩壊する!	¡No, no! ¡Ya estoy con mis crisis!	No, no, no! I'm having a mental breakdown!	False	False		Hitori	Hitori
+fc08bfac64	439,444,447	440,446,449	438,443,445,448	0:08:03.210000	0:08:09.710000	fc08bfac64.mp3	fc08bfac64.webp	うわっ ちょっと 見て見て!　い... 今 笑われようものなら　精神崩壊どころか 消滅してしまうー!	¡Vaya, mira! -¿Qué? Si se ríen de mí, no tendré una crisis... ¡Querré morirme!	Wow, look at that! At what? I-If they're laughing at me now, it won't just be a mental breakdown, it'll be mental annihilation!	False	False		Hitori,Kita's Friend A	Hitori,Kita's Friend A,Kita's Friend B
+dc72231cb1	450	452	451	0:08:09.739000	0:08:12.920000	dc72231cb1.mp3	dc72231cb1.webp	ヤバい! かわい過ぎて笑っちゃう	Es tan lindo que tienes que reírte.	Aw, it's so cute, I've gotta laugh!	False	False		Kita's Friend A	Kita's Friend A
+61df76ade3	453	456	454	0:08:12.617000	0:08:15.203000	61df76ade3.mp3	61df76ade3.webp	ギター? 癒やされるー	¿Una guitarra? -Me alegraste el día.	Guitar?	False	False		Kita	Kita
+f6046c2079	457	458	459	0:08:15.286000	0:08:16.913000	f6046c2079.mp3	f6046c2079.webp	ねー 喜多ちゃん	Oye, Kita.	Right, Kita-chan?	False	False		Kita's Friend B	Kita's Friend B
+a94211b530	460	462	461	0:08:16.996000	0:08:18.260000	a94211b530.mp3	a94211b530.webp	喜多ちゃん?	¿Kita?	Kita-chan?	False	False		Kita's Friend B	Kita's Friend B
+89a62c44d3	463	465	464	0:08:17.914000	0:08:21.100000	89a62c44d3.mp3	89a62c44d3.webp	あっ ごめんごめん なになに?	¡Lo siento! ¿Qué pasa?	Sorry, sorry! What was it?	False	False		Kita	Kita
+dd8cca955c	467	469	468	0:08:25.004000	0:08:27.030000	dd8cca955c.mp3	dd8cca955c.webp	いや 分かってますよ	Lo entiendo.	Look, I know.	False	False		Hitori	Hitori
+6f6a5395e8	471	472	470	0:08:27.030000	0:08:30.280000	6f6a5395e8.mp3	6f6a5395e8.webp	他力本願で 物事うまくいくはずないって	No puedo esperar que la gente sea perfecta.	You can't put the onus on others and expect perfect results.	False	False		Hitori	Hitori
+c6e2af4dc4	474	475	473	0:08:33.240000	0:08:37.760000	c6e2af4dc4.mp3	c6e2af4dc4.webp	ここに集う人たちは 私と同じで 孤独を抱えてるんだ	Veo que aquí viene la gente solitaria como yo.	This is a gathering place for people just as lonely as me.	False	False		Hitori	Hitori
+4a60b27958	477,480	478	476	0:08:37.760000	0:08:40.603000	4a60b27958.mp3	4a60b27958.webp	あの人は きっと家庭内別...　パパ! え?	Seguro que ese hombre no... -¡Papá!	I bet that guy's separated fromー	False	False		Hitori	Hitori
+f6fef71233	481	483	482	0:08:41.187000	0:08:43.710000	f6fef71233.mp3	f6fef71233.webp	エヘッ ごめんね 遅れちゃって	Perdón por llegar tarde.	Sorry we're late!	False	False		Worker's Wife	Worker's Wife
+40edd8805b	484,488	486,491	485,490	0:08:43.689000	0:08:48.140000	40edd8805b.mp3	40edd8805b.webp	いいって いいって　絵に描いたような家族団欒!	Descuida. Vamos, a comer. ¡Es la familia perfecta!	Hey, no problem. They're the perfect freakin' family!	False	False		Hitori,Worker	Hitori,Worker
+b0369b6ff8	493	494	492	0:08:48.140000	0:08:51.460000	b0369b6ff8.mp3	b0369b6ff8.webp	すいません 勝手に"私と同じ"とか言って	Perdón por haberlo comparado conmigo...	Please forgive my presumptuous empathizing...	False	False		Hitori	Hitori
+fd127dc496	496	497	495	0:08:53.490000	0:08:56.577000	fd127dc496.mp3	fd127dc496.webp	あ... 登録者数3万 超えてる	Ya tengo más de 30 000 suscriptores.	Ah. I broke 30,000 subscribers.	False	False		Hitori	Hitori
+32fa5d354d	499	500,502	498,501	0:08:57.360000	0:09:01.720000	32fa5d354d.mp3	32fa5d354d.webp	うん そうだよ 私の居場所はネットだけ	Eso es. Mi mundo es el virtual.	Hey, that's right. The online world is where I belong.	False	False		Hitori	Hitori
+82d338f356	504	505	503	0:09:02.700000	0:09:05.419000	82d338f356.mp3	82d338f356.webp	もう 学校 行きたくないな...	Creo que no quiero volver a clases...	Sorta makes me not wanna go back to school...	False	False		Hitori	Hitori
+b78cca4824	507	509	508	0:09:07.255000	0:09:09.423000	b78cca4824.mp3	b78cca4824.webp	ギター!	¡Una guitarra!	Guitar!	False	False		Nijina	Nijina
+11aed31d8c	512,514	513	511,515	0:09:12.230000	0:09:14.850000	11aed31d8c.mp3	11aed31d8c.webp	それ ギターだよね?　あっ あっ... 弾けるの?	¿Eso es una guitarra? ¿La tocas?	That's a guitar, right? Do you play?!	False	False		Nijina	Nijina
+9ce91476cc	519	518	517	0:09:17.010000	0:09:18.270000	9ce91476cc.mp3	9ce91476cc.webp	おーい?	¿Hola?	Hello?	False	False		Nijina	Nijina
+acca6bfb8e	520	522	521	0:09:18.266000	0:09:21.200000	acca6bfb8e.mp3	acca6bfb8e.webp	しゃ... しゃべるの 久しぶりすぎて 声が...	Me petrificó de la impresión.	I-I haven't talked to anyone in so long... my voice!	False	False		Hitori	Hitori
+e0b1c115b0	524	525	523	0:09:21.610000	0:09:23.420000	e0b1c115b0.mp3	e0b1c115b0.webp	あっ いきなり ごめんね	Disculpa lo repentino.	Hey, sorry to ambush you.	False	False		Nijina	Nijina
+d68f533d45	526	528	527	0:09:23.396000	0:09:26.500000	d68f533d45.mp3	d68f533d45.webp	あたし 下北沢高校2年 伊地知虹夏	Me llamo Nijika Ijichi. Estoy en 2.o en Shimo-Kitazawa.	I'm Nijika Ijichi, second-year at Shimo-Kitazawa High.	False	False		Nijina	Nijina
+a5ad2de372	529	531	530	0:09:27.024000	0:09:30.450000	a5ad2de372.mp3	a5ad2de372.webp	あっ 後藤ひとり 秀華高校1年です	Hitori Goto. Shuka. Primero.	Hitori Goto. Shuka High. First-year.	False	False		Hitori	Hitori
+fa1eb84b5a	532,536	534	533,535	0:09:30.444000	0:09:33.170000	fa1eb84b5a.mp3	fa1eb84b5a.webp	ちなみに ひとりちゃんはさ...　いきなり名前呼び!	Dime, Hitori... -¿Ya me llama por el nombre?	So tell me, Hitori-chan... Right to first names, are we?!	False	False		Nijika/Hitori	Hitori,Nijika
+3a23714b0b	538	539	537	0:09:33.170000	0:09:35.230000	3a23714b0b.mp3	3a23714b0b.webp	ギター どのくらい弾ける?	¿Eres buena con la guitarra?	How good are you at guitar?	False	False		Nijika	Nijika
+d012c6d94e	540	542	541	0:09:35.241000	0:09:37.220000	d012c6d94e.mp3	d012c6d94e.webp	あっ そこそこかと	Me defiendo...	Pretty decent, I guess...	False	False		Hitori	Hitori
+159b5335b2	544	545	543	0:09:37.220000	0:09:38.590000	159b5335b2.mp3	159b5335b2.webp	そっか!	¿En serio?	Really?!	False	False		Nijika	Nijika
+b00944efa7	547	548	546	0:09:38.590000	0:09:41.290000	b00944efa7.mp3	b00944efa7.webp	あ... あのさ ちょっと今 困ってて	Verás, quiero pedirte un favor...	Say, I'm in kind of a fix here...	False	False		Nijika	Nijika
+ba447857a1	549	551	550	0:09:41.122000	0:09:43.374000	ba447857a1.mp3	ba447857a1.webp	無理だったら 大丈夫なんだけど	Si no puedes, está bien...	If you can't do it, that's okay, but...	False	False		Nijika	Nijika
+665d792b86	554	553	552	0:09:43.180000	0:09:45.250000	665d792b86.mp3	665d792b86.webp	大丈夫なんだけど 困ってて...	Está bien, pero...	It's really okay, but I'm in a real fix...	False	False		Nijika	Nijika
+0c029ef7d9	556	557	555	0:09:45.250000	0:09:47.190000	0c029ef7d9.mp3	0c029ef7d9.webp	絶対 だいじょばないやつ!	¡La que no está bien eres tú!	There's nothing okay about her!	False	False		Hitori	Hitori
+3177663ddb	558	560	559	0:09:47.211000	0:09:49.560000	3177663ddb.mp3	3177663ddb.webp	うん 思い切って言っちゃおう!	¡Bien, aquí voy!	Okay, I'll come right out with it!	False	False		Nijika	Nijika
+1366ca6362	562,564	563	561	0:09:50.180000	0:09:55.440000	1366ca6362.mp3	1366ca6362.webp	お願い!　あたしのバンドで 今日だけ サポートギターしてくれないかな!	¿Podrías tocar la guitarra hoy en mi banda?	Please, will you play second guitar for my band for today?!	False	False		Nijika	Nijika
+4fdc46e941	567	565	566	0:09:56.190000	0:09:57.360000	4fdc46e941.mp3	4fdc46e941.webp	バンド?	¿Banda?	Band?	False	False		Hitori	Hitori
+d1712cf743	569	570	568	0:09:57.360000	0:10:01.180000	d1712cf743.mp3	d1712cf743.webp	これからライブなのに ギターの子が突然 辞めちゃって	¡Tenemos un concierto pronto y se nos fue la guitarrista!	We've got a concert coming up, and our guitarist just split!	False	False		Nijika	Nijika
+ea158c99a9	572	574	571	0:10:01.180000	0:10:04.110000	ea158c99a9.mp3	ea158c99a9.webp	ある程度 弾ける人なら... これから? ライブ?	¿Un concierto? ¿Ahora?	The song's not too hard! You'll pick it up right away!	False	False		Hitori	Nijika
+ab1fb10acf	575	577	576	0:10:04.103000	0:10:05.730000	ab1fb10acf.mp3	ab1fb10acf.webp	なにとぞー	¡Por favor!	Please! Please!	False	False		Nijika	Nijika
+43937e2060	578		579	0:10:05.980000	0:10:06.981000	43937e2060.mp3	43937e2060.webp	あっ や...		Um, err...	False	False			Hitori
+f875698c9f	582	583	581	0:10:10.500000	0:10:13.270000	f875698c9f.mp3	f875698c9f.webp	ありがとう! 早速 ライブハウスへ ゴー!	¡Gracias, vamos al club!	Thanks! Let's head to the club!	False	False		Nijika	Nijika
+447f72a1c2	584	586	585	0:10:13.195000	0:10:15.323000	447f72a1c2.mp3	447f72a1c2.webp	まだ何も言ってない!	¡Pero si no he dicho nada!	I haven't even said anything yet!	False	False		Hitori	Hitori
+5b48667e21	588	589	587	0:10:17.920000	0:10:19.840000	5b48667e21.mp3	5b48667e21.webp	来てしまった...	Me arrastró...	I got dragged along.	False	False		Hitori	Hitori
+05fbb9052d	590	592	591	0:10:19.785000	0:10:22.440000	05fbb9052d.mp3	05fbb9052d.webp	ひとりちゃんは下北は よく来る?	¿Vienes por Shimo-Kita mucho, Hitori?	Do you come to Shimo-Kita a lot, Hitori-chan?	False	False		Nijika	Nijika
+944c3c53c1	593	595	594	0:10:22.371000	0:10:23.760000	944c3c53c1.mp3	944c3c53c1.webp	あっ いや...	Pues...	Oh, well...	False	False		Hitori	Hitori
+a75f02f2f4	597	598	596	0:10:23.720000	0:10:27.310000	a75f02f2f4.mp3	a75f02f2f4.webp	こんな 個性みなぎる おしゃれタウンに 来れるわけない	Como si pudiera venir a un sitio tan popular...	Right, like I've got the courage to visit a fashion town for trendy people...	False	False		Hitori	Hitori
+a2dd73ec34	600	601	599	0:10:27.810000	0:10:29.879000	a2dd73ec34.mp3	a2dd73ec34.webp	ライブハウス もうちょいだから	Ya casi llegamos.	We're almost to the club.	False	False		Nijika	Nijika
+0d338786cc	603	604	602	0:10:31.440000	0:10:33.870000	0d338786cc.mp3	0d338786cc.webp	虹夏ちゃんは おしゃれだなー	Nijika va muy a la moda.	Nijika-chan's fashionable, too.	False	False		Hitori	Hitori
+cb016bb184	606	607	605	0:10:33.870000	0:10:36.400000	cb016bb184.mp3	cb016bb184.webp	これこそバンド女子って感じ	Ella sí que parece una roquera.	She's got the real rocker-chick vibe.	False	False		Hitori	Hitori
+ab2765d7d7	609	610,612	608,611	0:10:36.400000	0:10:41.230000	ab2765d7d7.mp3	ab2765d7d7.webp	それに比べて私は 芋ジャージだし クマすごいし 猫背だし...	A su lado, me veo patética. Ojerosa y encorvada como un gato...	Meanwhile, I'm in a potato-quality tracksuit with a real bear of a set of bags under my eyes, and a back as arched as a cat...	False	False		Hitori	Hitori
+8bc150f368	613	615,617	614,616	0:10:41.140000	0:10:45.700000	8bc150f368.mp3	8bc150f368.webp	あっ 私 かび臭いかも いつも押し入れにいるから	¿También huelo a moho? Con tanto tiempo en el armario...	Wait, do I also smell like mold? I spend so much time in the closet...	False	False		Hitori	Hitori
+b165925650	618	620	619	0:10:45.686000	0:10:47.370000	b165925650.mp3	b165925650.webp	いや 防虫剤のにおいだ	No, huelo a naftalina.	No, I smell like mothballs.	False	False		Hitori	Hitori
+8a74670fa4	622	623	621	0:10:48.360000	0:10:52.130000	8a74670fa4.mp3	8a74670fa4.webp	それにひきかえ 虹夏ちゃん めっちゃ いいにおい	Por su parte, Nijika huele muy bien.	Meanwhile, Nijika-chan smells great!	False	False		Hitori	Hitori
+ac13d72834	625,627	626	624	0:10:52.130000	0:10:55.446000	ac13d72834.mp3	ac13d72834.webp	本来あるべき　女子高生の香りだー	Huele como debería oler una adolescente.	She smells just the way a high school girl should!	False	False		Hitori	Hitori
+555b92cc73	629,632	630	628,631	0:10:55.380000	0:10:57.800000	555b92cc73.mp3	555b92cc73.webp	歩くペース早い?　いっ... いえ	¿Quieres ir más deprisa? -No...	Oh, am I walking too fast? N-No...	False	False		Nijika	Hitori,Nijika
+e9c5d3cedc	633,636	635	634	0:10:57.823000	0:11:02.040000	e9c5d3cedc.mp3	e9c5d3cedc.webp	今日 出演するライブハウスは　STARRYっていうんだけどね	El club donde tocamos se llama Starry.	The club we're gonna play at is called Starry.	False	False		Nijika	Nijika
+415e0c82bb	639	640	637	0:11:02.040000	0:11:04.680000	415e0c82bb.mp3	415e0c82bb.webp	あたしのお姉ちゃんが... 出演するライブハウス	Tocar en un club... -Mi hermana es la gerente.	My big sister's the manager there.	False	False		Hitori	Nijika
+e675005590	641	643	642	0:11:04.705000	0:11:07.180000	e675005590.mp3	e675005590.webp	なんか ぽい響き	¿Y ese sonido?	That sounds weirdly legit.	False	False		Hitori	Hitori
+ae9a9a81c4	644	646	645	0:11:07.124000	0:11:09.060000	ae9a9a81c4.mp3	ae9a9a81c4.webp	あれ なんか心臓ヤバい	¿Es mi corazón?	Wait, what's my heart doing?	False	False		Hitori	Hitori
+6e1874ca83	647	648	649	0:11:09.085000	0:11:10.961000	6e1874ca83.mp3	6e1874ca83.webp	でね! あっ	Y...	And so...	False	False		Nijika	Nijika
+cbcbe8fe27	651	652	650	0:11:11.450000	0:11:13.923000	cbcbe8fe27.mp3	cbcbe8fe27.webp	あたし そこでバイトしてて...	Yo he trabajado allí y...	I've been working there part-time...	False	False		Nijika	Nijika
+8fa82c44b0	655	656	654	0:11:16.010000	0:11:19.178000	8fa82c44b0.mp3	8fa82c44b0.webp	ひとりちゃん 実は結構 運動できる?	Hitori, ¿se te dan bien los deportes?	Hitori-chan, are you actually pretty athletic?	False	False		Nijika	Nijika
+8e4134c65d	659,660	658	657	0:11:19.070000	0:11:24.170000	8e4134c65d.mp3	8e4134c65d.webp	いえ あっ でも ドッジボールだけは　なぜか いつも 最後まで残ってました	No, pero suelo ganar cuando jugamos a los quemados.	N-No, but I'm always the last one standing in dodgeball for some reason.	False	False		Hitori	Hitori
+4590d30a28	662	663	661	0:11:24.170000	0:11:25.700000	4590d30a28.mp3	4590d30a28.webp	そ... そっか	Ya veo.	I... I see.	False	False		Nijika	Nijika
+6b630a5aa2	664	666	665	0:11:25.726000	0:11:28.620000	6b630a5aa2.mp3	6b630a5aa2.webp	私がライブハウスで演奏	¿Yo tocando en un club?	Me? Playing in a club?	False	False		Hitori	Hitori
+4860bd42de	667	669	668	0:11:28.562000	0:11:32.040000	4860bd42de.mp3	4860bd42de.webp	あっ ああ... ダメダメ 今 弱気になっちゃ	¡No, ya no hay marcha atrás!	No, don't back down now!	False	False		Hitori	Hitori
+7c4bdaf026	670	672	671	0:11:32.024000	0:11:35.290000	7c4bdaf026.mp3	7c4bdaf026.webp	思い出せ 妄想で毎日した文化祭ライブを!	¡Recuerda cuando soñabas con tocar en el festival cultural!	Remember your daydreams of performing at the culture festival!	False	False		Hitori	Hitori
+e5f44b0408	674,676,677	675	673	0:11:36.160000	0:11:40.320000	e5f44b0408.mp3	e5f44b0408.webp	そして 初のワンマン　Zepp!　スーパーアリーナ!	¡Y tu primer concierto como solista en el Zepp!	And your first solo show at Zepp Super Arena!	False	False		Hitori	Hitori
+35b96dc88d	678	680	679	0:11:40.157000	0:11:43.411000	35b96dc88d.mp3	35b96dc88d.webp	ひとり! ひとり! ひとり...	¡Hitori! ¡Hitori! ¡Hitori!	Hitori! Hitori! Hitori!	False	False		Crowd	Crowd
+7fd7080314	682	683	681	0:11:44.150000	0:11:46.710000	7fd7080314.mp3	7fd7080314.webp	私は武道館をも埋めた女...	Yo llené el Budokan...	I'm the girl who sold out the Budokan...	False	False		Hitori	Hitori
+a2e22a0fc6	684	686	685,687	0:11:46.664000	0:11:48.720000	a2e22a0fc6.mp3	a2e22a0fc6.webp	えっ? あっ いや...	Nada.	What? Oh, nothing!	False	False		Hitori	Hitori,Nijika
+8287bca4e9	689	691	690	0:11:49.959000	0:11:53.510000	8287bca4e9.mp3	8287bca4e9.webp	頼む相手 間違った って思われてませんように!	¡No dejes que crea que elegirme fue un error!	Please, don't let her think she made a mistake choosing me!	False	False		Hitori	Hitori
+899ac56dbd	693	694	692	0:11:53.510000	0:11:55.440000	899ac56dbd.mp3	899ac56dbd.webp	頼む相手 間違えたか?	Puede que me haya equivocado...	I might've made a mistake choosing her...	False	False		Nijika	Nijika
+fe67a2646b	697	695	696,698	0:11:56.230000	0:11:58.230000	fe67a2646b.mp3	fe67a2646b.webp	着いた! ここだよー	Ya estamos. Es aquí.	We're here! This is the place!	False	False		Nijika	Nijika
+c44fd9cb05	699	701	700	0:12:00.136000	0:12:02.570000	c44fd9cb05.mp3	c44fd9cb05.webp	ま... 魔境?	¿Las tierras oscuras?	Th-The dark lands?	False	False		Hitori	Hitori
+094a7e0037	703	704	702	0:12:03.300000	0:12:05.474000	094a7e0037.mp3	094a7e0037.webp	おっはようございまーす!	¡Buenas!	Good morning!	False	False		Nijika	Nijika
+0697ee2263	706	707	705	0:12:08.210000	0:12:10.120000	0697ee2263.mp3	0697ee2263.webp	初ライブハウス	Mi primer club...	My first club...	False	False		Hitori	Hitori
+48651d6b15	708	710	709	0:12:10.146000	0:12:13.870000	48651d6b15.mp3	48651d6b15.webp	この暗さ 圧迫感...	Qué oscuro... Qué calor...	It's so dark... So stuffy...	False	False		Hitori	Hitori
+a2c0ada448	712	713	711	0:12:13.870000	0:12:15.985000	a2c0ada448.mp3	a2c0ada448.webp	お... 落ち着くー	Pero es reconfortante.	I-It's so soothing!	False	False		Hitori	Hitori
+7b50aa4599	715	716	714	0:12:15.960000	0:12:17.500000	7b50aa4599.mp3	7b50aa4599.webp	ひとりちゃん 大丈夫?	¿Estás bien, Hitori?	You okay, Hitori-chan?	False	False		Nijika	Nijika
+54f1ecf6ba	717,721	719	718,720	0:12:17.486000	0:12:19.880000	54f1ecf6ba.mp3	54f1ecf6ba.webp	わ... 私の家　違うよ?	Me siento como en casa. -¿Ah, sí?	I'm home! It is not!	False	False		Hitori	Hitori,Nijika
+e73a96d7a6	723,725,728	726	722,727	0:12:19.880000	0:12:25.250000	e73a96d7a6.mp3	e73a96d7a6.webp	今回もPAさんに...　今日 共演する...　バンドって どうしても 怖そうなイメージあるけど	Esa es la banda que toca hoy. -Creía que las bandas daban miedo.	Could we ask the PA to record again? I thought bands would be intimidating,	False	False		Nijika	Hitori,Women
+b2c13e1931	730,734	733,736	731,735	0:12:25.244000	0:12:30.150000	b2c13e1931.mp3	b2c13e1931.webp	所詮 インドアの集まり　影の者 陰キャの集団 みんな 私と同じ	Resulta que todas son introvertidas. Son como yo.	but they're all indoorsy, shy introverts! They're just like me!	False	False		Hitori	Hitori
+2143c4d0e1	738	739	737	0:12:30.150000	0:12:31.980000	2143c4d0e1.mp3	2143c4d0e1.webp	そこにいるのがPAさん	Mira, ahí está la ayudante.	That there's the PA.	False	False		Nijika	Nijika
+5c910e5974	743	744		0:12:33.169000	0:12:34.560000	5c910e5974.mp3	5c910e5974.webp	おはようございます	Buenas.		False	False		PA	
+cadfa44261	745,749	747	746,748	0:12:34.587000	0:12:37.520000	cadfa44261.mp3	cadfa44261.webp	いいい... イキって すみません　急に どうした!	Disculpa mi arrogancia. -¿Qué pasa ahora?	Please forgive my arrogance! What's wrong now?!	False	False		Hitori	Hitori,Nijika
+03a9fb0bca	751	752	750,753	0:12:38.240000	0:12:40.530000	03a9fb0bca.mp3	03a9fb0bca.webp	やっと帰ってきた おっ リョウ	Hasta que volviste. -¡Ryo!	You're finally back. Ryo!	False	False		Ryo	Nijika,Ryo
+166c10468c	755	756	754	0:12:41.440000	0:12:43.520000	166c10468c.mp3	166c10468c.webp	この子 後藤ひとりちゃん	Te presento a Hitori Goto.	This is Hitori Goto. Hitori-chan!	False	False		Nijika	Nijika
+9f6d160fd1	757	759	758	0:12:43.512000	0:12:46.280000	9f6d160fd1.mp3	9f6d160fd1.webp	奇跡的に公園にいた ギタリストだよ	Me la encontré en el parque y es guitarrista.	I met her in the park by miraculous happenstance! She's a guitarist!	False	False		Nijika	Nijika
+689c21a1a0	761		760	0:12:46.240000	0:12:47.391000	689c21a1a0.mp3	689c21a1a0.webp	へえー		Oh?	False	False			Ryo
+fa832ad222	763	764	762	0:12:47.390000	0:12:49.530000	fa832ad222.mp3	fa832ad222.webp	怖っ! にらまれてる?	¡Qué miedo! ¿Me está observando?	Scary! Is she glaring at me?	False	False		Hitori	Hitori
+e50276676f	765	767	766	0:12:49.560000	0:12:51.870000	e50276676f.mp3	e50276676f.webp	この子は ベースの山田リョウだよ	Ella es Ryo Yamada, la bajista.	This is Ryo Yamada. She plays bass.	False	False		Nijika	Nijika
+264cdbb909	769	770	768	0:12:51.870000	0:12:54.900000	264cdbb909.mp3	264cdbb909.webp	ごご... 後藤ひとりです 大変 申し訳ございません!	¡Me llamo Hitori Goto! ¡Lo siento mucho!	I-I'm Hitori Goto! I'm so very sorry!	False	False		Hitori	Hitori
+c89f5e0ae2	772	771	773	0:12:54.750000	0:12:55.750000	c89f5e0ae2.mp3	c89f5e0ae2.webp	えっ ちょっ...	Oye...	Hang on!	False	False		Nijika	Nijika
+0b9e6482cd	774	776,778	775,777	0:12:55.774000	0:12:59.760000	0b9e6482cd.mp3	0b9e6482cd.webp	大丈夫だから リョウは表情が出にくいだけ	Tranquila. Ryo no es muy habladora.	Y-You're okay! Ryo's just not the expressive type.	False	False		Nijika	Nijika
+e097fd6b04	780	781	779	0:12:59.760000	0:13:01.670000	e097fd6b04.mp3	e097fd6b04.webp	"変人"って言ったら喜ぶよー	Le gusta que le digan "rarita".	Feel free to call her weird! She likes it!	False	False		Nijika	Nijika
+4bd2324eec	782	784	783	0:13:01.655000	0:13:03.280000	4bd2324eec.mp3	4bd2324eec.webp	うれしくないし	En realidad no...	I don't, actually.	False	False		Ryo	Ryo
+e818f4db55	785	786	787	0:13:03.199000	0:13:04.380000	e818f4db55.mp3	e818f4db55.webp	うれしそうだ	Ya veo...	Seemed like she did...	False	False		Hitori	Hitori
+60ce462d0a	788	790	789	0:13:04.408000	0:13:06.740000	60ce462d0a.mp3	60ce462d0a.webp	そういえば 店長が... えっ?	Por cierto, la gerente...	By the way, about the manager...	False	False		Ryo	Ryo
+e1793f832b	792	793	791	0:13:06.740000	0:13:08.980000	e1793f832b.mp3	e1793f832b.webp	時間まで練習しとけって	Te dijo que ensayaras,	She told you to practice until it was time,	False	False		Ryo	Ryo
+2c33bdc9ff	794	796	795	0:13:08.954000	0:13:11.820000	2c33bdc9ff.mp3	2c33bdc9ff.webp	あと 虹夏が勝手に ライブハウス抜け出したこと	pero te escabulliste.	but instead you snuck out of the club,	False	False		Ryo	Ryo
+4ba10b46b4	797,801	798,803	799,800,802	0:13:11.749000	0:13:16.690000	4ba10b46b4.mp3	4ba10b46b4.webp	怒りながら買い出し行った　ひいー ウソ! 帰ってくる前に スタジオ行こう	Salió a comprar furiosa. -No puede ser. Estaremos en el estudio cuando vuelva.	so she got so mad she went out shopping. N-No way! Let's be in the studio before she comes back!	False	False		Nijika,Ryo	Nijika,Ryo
+44571fd1ba	806	805	804	0:13:17.090000	0:13:18.310000	44571fd1ba.mp3	44571fd1ba.webp	ひとりちゃんも あっ	Ven, Hitori.	You too, Hitori-chan!	False	False		Nijika	Nijika
+697870bc23	807	808	809	0:13:18.339000	0:13:19.610000	697870bc23.mp3	697870bc23.webp	ほら!	¡Vamos!	C'mon!	False	False		Nijika	Nijika
+873845e263	812	810	811	0:13:20.610000	0:13:21.801000	873845e263.mp3	873845e263.webp	は... はい!	Sí.	R-Right!	False	False		Hitori	Hitori
+37af0dfa72	813	815	814	0:13:22.301000	0:13:23.780000	37af0dfa72.mp3	37af0dfa72.webp	現実は怖い	La vida real da miedo.	Real life is scary.	False	False		Hitori	Hitori
+151e0d1cca	817	818	816	0:13:24.660000	0:13:29.570000	151e0d1cca.mp3	151e0d1cca.webp	でも これから楽しいことが たくさん待っている気がする	Pero siento que me espera bastante diversión.	But I feel like there's some fun stuff coming up!	False	False		Hitori	Hitori
+0bd52fbd03	820	821	819	0:13:30.800000	0:13:33.120000	0bd52fbd03.mp3	0bd52fbd03.webp	これ 今日のセットリストとスコア	Aquí tienes las canciones y las partituras.	Here's today's set list and score.	False	False		Nijika	Nijika
+89fdce77a9	822,825	824	823	0:13:33.145000	0:13:36.160000	89fdce77a9.mp3	89fdce77a9.webp	あっ あの...　バンドメンバーは?	¿Dónde están las demás?	Wh-Where are the other band members?	False	False		Hitori	Hitori
+751d34b315	826	828	827	0:13:36.148000	0:13:37.820000	751d34b315.mp3	751d34b315.webp	これで全員だよ	Ya estamos todas.	This is everyone!	False	False		Nijika	Nijika
+0df182c394	829	831	830	0:13:37.816000	0:13:40	0df182c394.mp3	0df182c394.webp	あたしたち 今回は インストバンドだから	Hoy haremos los instrumentales.	We'll be doing all instrumentals this time.	False	False		Nijika	Nijika
+f347f74ac7	833	834	832	0:13:40.600000	0:13:43.660000	f347f74ac7.mp3	f347f74ac7.webp	うん この曲ならいける	Bien, puedo con esta canción.	Right. I can handle this song.	False	False		Hitori	Hitori
+e34beddba4	835	837	836	0:13:43.572000	0:13:46.510000	e34beddba4.mp3	e34beddba4.webp	でも ボーカルいない分 演奏 頑張らないと	Pero sin cantante vamos a tener que esforzarnos...	Though without any vocals, the playing's gotta be all that much better...	False	False		Hitori	Hitori
+eb20bb4754	840,842	841,844	839,843	0:13:47.280000	0:13:50.720000	eb20bb4754.mp3	eb20bb4754.webp	私 ギターうまいらしいし　やれる やれるはず!	Soy buena tocando. Puedo hacerlo. Creo que puedo.	But I'm supposedly good at guitar. I can do this. I think I can do this!	False	False		Hitori	Hitori
+cdb60e1732	848	846	847	0:13:53.270000	0:13:54.667000	cdb60e1732.mp3	cdb60e1732.webp	ゴリラ? フンフン!	¿Un gorila?	Gorilla?	False	False		Ryo	Ryo
+8be83f1740	850	851	849	0:13:57.230000	0:14:00.190000	8be83f1740.mp3	8be83f1740.webp	演奏聴いたら 2人とも驚くかも	A lo mejor las sorprendo cuando toque.	Maybe they'll be blown away by my playing!	False	False		Hitori	Hitori
+9e1e0d81d2	852	854	853	0:14:00.214000	0:14:04.570000	9e1e0d81d2.mp3	9e1e0d81d2.webp	だって ネットだと結構... いや わりと評判いいし	O sea, soy buena... o, al menos, en internet.	I mean, I get pretty good... pretty decent reactions online.	False	False		Hitori	Hitori
+2e3dca7507	858	859	857	0:14:05.050000	0:14:07.730000	2e3dca7507.mp3	2e3dca7507.webp	登録者数3万人だし	Yo tengo 30 000 suscriptores.	I even have 30,000 subscribers!	False	False		Hitori	Hitori
+97b6e02972	861	863	862	0:14:07.721000	0:14:09.840000	97b6e02972.mp3	97b6e02972.webp	よし やってやる!	¡Bien, aquí voy!	Yeah, let's do this!	False	False		Hitori	Hitori
+38078e241d	865	866	864	0:14:09.840000	0:14:11.080000	38078e241d.mp3	38078e241d.webp	それじゃ いくよ!	Empecemos.	Okay, let's go!	False	False		Nijika	Nijika
+dcc3f41690	872	873	871	0:14:26.630000	0:14:27.840000	dcc3f41690.mp3	dcc3f41690.webp	ド下手だ プッ	Eres horrible.	You suck!	False	False		Nijika	Nijika
+497fec5b0f	876	877	875	0:14:29.090000	0:14:30.650000	497fec5b0f.mp3	497fec5b0f.webp	ななな... なんで? あっ ウソウソ	¿Por qué?	H-How can I suck?	False	False		Hitori	Hitori
+a3f10f8584	880	881	879	0:14:30.650000	0:14:32.730000	a3f10f8584.mp3	a3f10f8584.webp	私 ギターヒーローなのに	¡Soy guitarhero!	I'm guitarhero!	False	False		Hitori	Hitori
+62503d71df	884	885	883	0:14:32.730000	0:14:34.890000	62503d71df.mp3	62503d71df.webp	登録者3万人なのにー?	¡Tengo 30 000 suscriptores!	I've got 30,000 subscribers!	False	False		Hitori	Hitori
+34c2555ea3	887	888	886	0:14:34.890000	0:14:36.875000	34c2555ea3.mp3	34c2555ea3.webp	説明しよう! えっ?	¡Yo les explico!	Allow me to explain!	False	False		Guitar Man	Guitar Man
+4729f9a026	891,894	893	892	0:14:36.959000	0:14:41.130000	4729f9a026.mp3	4729f9a026.webp	バンドは 生身の人間と　呼吸を合わせることが とっても重要だけど	¡En una banda es esencial estar en armonía!	In a band, it's super important to be in sync with your fellow live performers!	False	False		Guitar Man	Guitar Man
+cbb59adb20	895	897	896	0:14:41.088000	0:14:43.940000	cbb59adb20.mp3	cbb59adb20.webp	コミュ症の ひとりは 目すら合わせられないので	Hitori tiene ansiedad social y no mira a los ojos.	But Hitori has social anxiety and can't make eye contact,	False	False		Guitar Man	Guitar Man
+8e4a842d8b	899	900	898	0:14:43.940000	0:14:45.759000	8e4a842d8b.mp3	8e4a842d8b.webp	突っ走る演奏をする!	Por eso se adelanta.	and she'll be inclined to rush ahead of the others!	False	False		Guitar Man	Guitar Man
+818ba28e1a	913	912	901	0:14:46.320000	0:14:48.030000	818ba28e1a.mp3	818ba28e1a.webp	ソロ弾きは最強でも	Por muy buena solista que sea,	She might be an awesome solo player,	False	False		Guitar Man	Guitar Man
+e6f74ae70a	914,917	916	915	0:14:47.887000	0:14:51.740000	e6f74ae70a.mp3	e6f74ae70a.webp	バンドになるとミジンコ以下　最弱になるのだ!	en una banda está en el nivel más bajo de todos.	but when in a band, she's sub-water-flea level, the worst there is!	False	False		Guitar Man	Guitar Man
+089ecbb0bb	918	920	919	0:14:51.765000	0:14:54.280000	089ecbb0bb.mp3	089ecbb0bb.webp	どうも プランクトン後藤でーす	Hola, me llamo Plancton Goto.	Hello. I'm Plankton Goto.	False	False		Hitori	Hitori
+262080b0fc	921	923	922	0:14:54.268000	0:14:57.080000	262080b0fc.mp3	262080b0fc.webp	売れないお笑い芸人みたいな人 出てきた!	¡Parece una humorista sin gracia!	She sounds like an unfunny comedian!	False	False		Nijika	Nijika
+171c203abb	924	926	925	0:14:57.104000	0:14:59.710000	171c203abb.mp3	171c203abb.webp	こうして 後藤ひとりは灰となり	Hitori Goto se convirtió en historia	And thus, Hitori Goto turned to dust,	False	False		Hitori	Hitori
+923e1d6529	927	929	928	0:14:59.648000	0:15:02.960000	923e1d6529.mp3	923e1d6529.webp	もう二度とギターを持つことは なかったのでした	y nunca volvió a tomar la guitarra.	and never picked up a guitar again.	False	False		Hitori	Hitori
+bc1dcfc5a7	943	945		0:15:09.408000	0:15:11.010000	bc1dcfc5a7.mp3	bc1dcfc5a7.webp	ちょちょ... ちょちょ!	¡Un momento!		False	False		Nijika	
+dda96fb345	946	948	947	0:15:11.035000	0:15:12.760000	dda96fb345.mp3	dda96fb345.webp	ねえ 出てきてー	Sal de ahí.	Come out, please!	False	False		Nijika	Nijika
+e1cb8e88a6	949	951	950	0:15:12.786000	0:15:14.600000	e1cb8e88a6.mp3	e1cb8e88a6.webp	本番 始まっちゃうよ	Ya vamos a empezar.	The show's about to start!	False	False		Nijika	Nijika
+99b0baa275	952	954	953	0:15:14.330000	0:15:16.520000	99b0baa275.mp3	99b0baa275.webp	やっ ややや... やっぱり できません!	No puedo hacerlo.	I c-c-can't do it!	False	False		Hitori	Hitori
+cb7aba99bc	955	957	956	0:15:16.498000	0:15:19.180000	cb7aba99bc.mp3	cb7aba99bc.webp	しょうがないよ 即席バンドなんだし	No es para tanto. Hoy es nuestro primer día.	It's not your fault! We just came together today!	False	False		Nijika	Nijika
+26827ac8f2	958	960	959	0:15:19.126000	0:15:21.440000	26827ac8f2.mp3	26827ac8f2.webp	あたしだって そんな うまくないし	Yo tampoco soy buena.	It's not like I'm very good either.	False	False		Nijika	Nijika
+0f7e5df829	961	963	962	0:15:21.378000	0:15:22.770000	0f7e5df829.mp3	0f7e5df829.webp	私は うまい	Yo soy muy buena.	I'm very good.	False	False		Ryo	Ryo
+d877fc2eef	966	967	965	0:15:24.230000	0:15:26.360000	d877fc2eef.mp3	d877fc2eef.webp	とりあえず こっち向いて!	¡Mírame a mí!	Just look at me, okay!	False	False		Nijika	Nijika
+b12e6ea6c8	969	970	968	0:15:26.360000	0:15:28.140000	b12e6ea6c8.mp3	b12e6ea6c8.webp	現実逃避しないでー	Quédate con nosotras.	Stay here in reality!	False	False		Nijika	Nijika
+35d2b76cd3	971	973	972	0:15:27.926000	0:15:32.680000	35d2b76cd3.mp3	35d2b76cd3.webp	あっ エ... MCでも 全くお役に立てないですし	Ni siquiera hago bien el principio...	It isn't like I could do the intro or anything...	False	False		Hitori	Hitori
+cc0cf422c0	974	976	975	0:15:32.640000	0:15:36.570000	cc0cf422c0.mp3	cc0cf422c0.webp	ア... アハハハ 私の命をもって ハラキリショーでも...	Podría suicidarme en vivo.	I-I could offer up my life to put on a harakiri show!	False	False		Hitori	Hitori
+77b0dbd667	977	979	978	0:15:36.518000	0:15:39.490000	77b0dbd667.mp3	77b0dbd667.webp	バ... バンド名くらい 覚えて帰ってもらえるはず...	Al menos entretendremos a la gente, ¿no?	Th-They'll at least remember the name of the band, right?	False	False		Hitori	Hitori
+71a1e626e5	980	982	981	0:15:39.480000	0:15:40.880000	71a1e626e5.mp3	71a1e626e5.webp	ド下手で すみません!	Siento ser tan mala.	Sorry I sucked!	False	False		Hitori	Hitori
+992fc94905	985	983	984	0:15:40.870000	0:15:41.920000	992fc94905.mp3	992fc94905.webp	ロックすぎる!	¡Eso es demasiado!	That's a little too rock!	False	False		Nijika	Nijika
+727d47037e	986	987	988	0:15:41.941000	0:15:43.450000	727d47037e.mp3	727d47037e.webp	大丈夫	Tranquila.	It's okay.	False	False		Ryo	Ryo
+694aaed097	989	991	990	0:15:43.400000	0:15:47.130000	694aaed097.mp3	694aaed097.webp	ひとりがヤジられたら 私がベースで ポムッてするから	Si te abuchean, les pego con el bajo.	If they boo you, I'll give them a bonk with my bass.	False	False		Ryo	Ryo
+5bad9a9b16	995	996	994	0:15:47.130000	0:15:50.680000	5bad9a9b16.mp3	5bad9a9b16.webp	べ... ベース そんなファンシーな音しますかね	¿El bajo hace ese ruido?	Does a bass make such a fancy noise?	False	False		Hitori	Hitori
+893cc0c44d	998,1000	999	997,1001	0:15:50.680000	0:15:53.630000	893cc0c44d.mp3	893cc0c44d.webp	流血沙汰もロックだから　ロックだから	Bueno, la sangre es muy roquera. -Es rock.	I mean, bloodshed is pretty rock. It's rock.	False	False		Nijika	Nijika,Ryo
+1dc6a92e02	1002	1004	1003	0:15:53.577000	0:15:55.730000	1dc6a92e02.mp3	1dc6a92e02.webp	ロック 免罪符すぎる!	¡Todo no es rock!	You can't justify everything with "rock"!	False	False		Hitori	Hitori
+5e22a2409e	1006	1007	1005	0:15:55.730000	0:16:00.170000	5e22a2409e.mp3	5e22a2409e.webp	それに うちのバンド見に来るの 多分 あたしの友達だけだし	Además, seguro que solo vienen nuestros amigos.	Besides, it'll probably just be my friends who come to watch us play!	False	False		Nijika	Nijika
+6c067c515b	1009	1011	1010	0:16:00.960000	0:16:03.630000	6c067c515b.mp3	6c067c515b.webp	私 友達 虹夏だけだから	Nijika es mi única amiga, así que...	And Nijika is my only friend, so...	False	False		Ryo	Ryo
+74700ff4db	1012	1014	1013	0:16:03.587000	0:16:07.720000	74700ff4db.mp3	74700ff4db.webp	普通の女子高生に 演奏の よしあしとか 分かんないって	Las adolescentes no saben nada de calidad musical.	Normal high school girls don't know good music from bad.	False	False		Nijika	Nijika
+ee474fa574	1015	1017	1016	0:16:07.716000	0:16:10.030000	ee474fa574.mp3	ee474fa574.webp	炎上しそうな発言	Eso es lo que se dice en internet...	That kind of take could get you in trouble on the internet.	False	False		Hitori	Hitori
+99668bc12f	1019	1020	1018	0:16:10.600000	0:16:12.730000	99668bc12f.mp3	99668bc12f.webp	ねっ? だから安心せい!	Vamos, tranquilízate.	Okay? So just chill!	False	False		Nijika	Nijika
+324140cfba	1021	1023	1022	0:16:13.138000	0:16:14.760000	324140cfba.mp3	324140cfba.webp	と... 言われても	No sé...	I d-dunno...	False	False		Hitori	Hitori
+4f1b449496	1025	1026	1024	0:16:14.760000	0:16:16.550000	4f1b449496.mp3	4f1b449496.webp	私は よしあし分かるけど	Yo sí distingo la calidad.	I know good music from bad.	False	False		Ryo	Ryo
+ff864669ba	1027	1029	1028	0:16:16.517000	0:16:19.520000	ff864669ba.mp3	ff864669ba.webp	リョウは普通じゃないから えっ... エヘヘヘヘ	Pero tú no eres normal.	Well, you're not normal.	False	False		Nijika	Nijika
+8225c66930	1030	1032	1031	0:16:19.603000	0:16:21.540000	8225c66930.mp3	8225c66930.webp	いや 喜ぶな 喜ぶな	Oye, eso no es un cumplido.	Hey, that wasn't a compliment.	False	False		Nijika	Nijika
+9d75fc2054	1033	1035	1034	0:16:21.563000	0:16:23.140000	9d75fc2054.mp3	9d75fc2054.webp	ごめんなさい	Lo siento.	Sorry.	False	False		Hitori	Hitori
+b88ce794ab	1037	1036	1038	0:16:23.500000	0:16:24.720000	b88ce794ab.mp3	b88ce794ab.webp	けど...	Pero...	But...	False	False		Nijika	Nijika
+4fc3b0f527	1040	1041	1039	0:16:24.720000	0:16:26.568000	4fc3b0f527.mp3	4fc3b0f527.webp	無理強いするもんじゃない	No podemos obligarla.	We can't force her.	False	False		Ryo	Ryo
+b35a9e0479	1043	1042	1044	0:16:27.710000	0:16:29.060000	b35a9e0479.mp3	b35a9e0479.webp	だよね	Cierto.	You're right.	False	False		Nijika	Nijika
+037aa71cf7	1045	1046	1047	0:16:29.029000	0:16:30.700000	037aa71cf7.mp3	037aa71cf7.webp	無理なお願いして ごめん	Siento haberte obligado.	Sorry to push you so hard.	False	False		Nijika	Nijika
+25fa1f0ed8	1048	1050	1049	0:16:30.656000	0:16:32.170000	25fa1f0ed8.mp3	25fa1f0ed8.webp	あっ いや そこは! ん?	No, en realidad...	No, actually...	False	False		Hitori	Hitori
+fb55739f0f	1052,1054	1053	1051	0:16:32.970000	0:16:37.050000	fb55739f0f.mp3	fb55739f0f.webp	あっ ほ... 本当に うれしかったんです　声かけられて	Me alegro de que hayas hablado conmigo.	I r-really was happy you reached out to me.	False	False		Hitori	Hitori
+e2c54127d5	1056	1057	1055	0:16:37.700000	0:16:40.600000	e2c54127d5.mp3	e2c54127d5.webp	バンドは ずっと 組みたいと思ってたから	Llevo mucho queriendo estar en una banda,	I've wanted to be in a band for so long...	False	False		Hitori	Hitori
+50b3949a49	1058	1060	1059	0:16:40.374000	0:16:43.470000	50b3949a49.mp3	50b3949a49.webp	で... でも メンバー集まらなくて	pero no encontraba gente,	B-But I couldn't get the people together...	False	False		Hitori	Hitori
+24185a6052	1061	1063	1062	0:16:43.419000	0:16:46.520000	24185a6052.mp3	24185a6052.webp	だから ふだんは カバー曲 ネットに上げたり	así que me dedico a subir versiones a internet.	So I just upload covers to the internet instead.	False	False		Hitori	Hitori
+e44076c2c3	1065	1066	1064	0:16:46.520000	0:16:48.190000	e44076c2c3.mp3	e44076c2c3.webp	ふだんは何弾くの?	¿Qué tocas?	What do you usually play?	False	False		Ryo	Ryo
+1731f969c6	1067	1069	1068	0:16:48.173000	0:16:51.230000	1731f969c6.mp3	1731f969c6.webp	あっ 結成したとき すぐ対応できるように	Canciones famosas recientes	M-Mostly songs by popular bands from the last few years,	False	False		Hitori	Hitori
+f322343c9d	1070	1072	1071	0:16:51.218000	0:16:54.260000	f322343c9d.mp3	f322343c9d.webp	ここ数年の 売れ線バンドの曲は大体...	para tocarlas en cuanto formara una banda...	so I could play them right away once the band got together...	False	False		Hitori	Hitori
+e678951a0a	1075	1073	1074	0:16:53.980000	0:16:54.990000	e678951a0a.mp3	e678951a0a.webp	えっ すご!	Increíble.	That's awesome!	False	False		Nijika	Nijika
+cb2b5311fe	1076	1078	1077	0:16:55.013000	0:16:56.800000	cb2b5311fe.mp3	cb2b5311fe.webp	いや 全然	Para nada.	It's not.	False	False		Hitori	Hitori
+429e5df27e	1079	1081	1080	0:16:56.724000	0:16:59.380000	429e5df27e.mp3	429e5df27e.webp	結局 こんな感じになって	Por eso soy así.	It's the reason I'm the way I am now.	False	False		Hitori	Hitori
+150b83be80	1083	1084	1082	0:16:59.380000	0:17:02.750000	150b83be80.mp3	150b83be80.webp	やっぱり 私には 誰かとバンド組むなんて...	Estar en una banda era un sueño imposible.	Being in a band with other people was a pipe dream after all.	False	False		Hitori	Hitori
+888b8f76cd	1086	1087	1085	0:17:03.130000	0:17:05.360000	888b8f76cd.mp3	888b8f76cd.webp	売れ線のカバーばっか...	¿Haces versiones famosas?	Covering all popular songs?	False	False		Nijika	Nijika
+7841e87ee2	1089,1092	1090	1088,1091	0:17:05.360000	0:17:08.460000	7841e87ee2.mp3	7841e87ee2.webp	なんか ギターヒーローさんみたいだね　って 知ってる?	¿No es lo que hace guitarhero? ¿Te suena?	She sounds like guitarhero-san! Have you heard of her?	False	False		Nijika	Nijika
+09fb16d498	1096	1094	1095	0:17:09.090000	0:17:11.630000	09fb16d498.mp3	09fb16d498.webp	ギターヒーロー	Creo que tiene nuestra edad... -Guitarhero...	guitarhero...	False	False		Nijika	Hitori
+9a912ae6d8	1106	1108	1107	0:17:11.530000	0:17:12.990000	9a912ae6d8.mp3	9a912ae6d8.webp	えっ! 私?	¿Yo?	M-Me?!	False	False		Hitori	Hitori
+4528c33266	1110	1111	1109	0:17:12.990000	0:17:15.560000	4528c33266.mp3	4528c33266.webp	知らないなら あとでURL送るよ	Si no la conoces, luego te la enseño.	I'll send you a link if you haven't!	False	False		Nijika	Nijika
+e8a4f9440b	1113	1114	1112	0:17:15.560000	0:17:18.160000	e8a4f9440b.mp3	e8a4f9440b.webp	もう最高に うまいから 聴いてみて!	¡Es la mejor! Deberías escucharla.	She's super awesome! You should hear her!	False	False		Nijika	Nijika
+0395896213	1116	1117	1115	0:17:18.160000	0:17:20.080000	0395896213.mp3	0395896213.webp	最高?	¿La mejor?	Awe... some?	False	False		Hitori	Hitori
+0981979900	1119,1121,1124	1120,1123	1118,1122,1125	0:17:20.080000	0:17:26.040000	0981979900.mp3	0981979900.webp	私も オススメに 何度も上がってくるから　見たことあるけど すごく うまかった　ねっ!	Me salió recomendada. La veo bastante. -Es excelente. -¿A que sí?	She comes up in my recommendations a lot, so I've seen her too. She really is excellent. Right?!	False	False		Ryo	Nijika,Ryo
+2e0ad0d35f	1126	1128	1127	0:17:26.003000	0:17:28.213000	2e0ad0d35f.mp3	2e0ad0d35f.webp	ネーミングセンスは ちょっと痛いけど...	Aunque su apodo da asquito...	Though her naming sense is a bit cringy...	False	False		Nijika	Nijika
+e0fd2c7fe2	1131	1129	1130	0:17:28.480000	0:17:29.650000	e0fd2c7fe2.mp3	e0fd2c7fe2.webp	痛いの?	¿Ah, sí?	It is?!	False	False		Hitori	Hitori
+d938f666ac	1135	1136	1132	0:17:29.650000	0:17:33.520000	d938f666ac.mp3	d938f666ac.webp	あたし フォローして 新着通知もオンにしてるんだー	Yo tengo las notificaciones activadas solo para ella.	I follow her with notifications on!	False	False		Nijika	Nijika
+95266f67a1	1137	1139	1138	0:17:33.510000	0:17:35.780000	95266f67a1.mp3	95266f67a1.webp	いつか 一緒に演奏してみたいな	Ojalá toque con ella algún día.	I'd love to play with her some day!	False	False		Nijika	Nijika
+f1c73bc1ab	1140	1142	1141	0:17:35.763000	0:17:37.660000	f1c73bc1ab.mp3	f1c73bc1ab.webp	今 したんですけどね	Pues acabas de hacerlo...	You just did, actually...	False	False		Hitori	Hitori
+2b525f931a	1143	1145	1144	0:17:37.681000	0:17:41.280000	2b525f931a.mp3	2b525f931a.webp	えーっとね 何が言いたいかっていうと	Lo que intento decir es que,	Look, what I'm getting at here	False	False		Nijika	Nijika
+6e02876188	1146	1148	1147	0:17:41.268000	0:17:44.770000	6e02876188.mp3	6e02876188.webp	うまくて話題の人もね 私たちが見てないところで	por muy buena que seas, mucha gente toca la guitarra.	is that even awesome, popular people are out there playing guitar,	False	False		Nijika	Nijika
+d5ff8b1ecd	1149	1151	1150	0:17:44.730000	0:17:48.580000	d5ff8b1ecd.mp3	d5ff8b1ecd.webp	たっくさん たっくさん ギターを弾いてきたんだろうなって	Hay tanta gente que no podemos ver a todo el mundo.	lots and lots of them, in places we're not even watching.	False	False		Nijika	Nijika
+7e758b5850	1154	1155,1157	1153,1156	0:17:49.400000	0:17:53.030000	7e758b5850.mp3	7e758b5850.webp	あとで見てみて 動画見てると伝わってくるから	Vela luego. Cuando la veas, me entenderás.	You should watch her later! I think you'll get what I mean if you watch the videos.	False	False		Nijika	Nijika
+54d838f8be	1160,1162	1161	1159	0:17:54.650000	0:18:00.120000	54d838f8be.mp3	54d838f8be.webp	現実世界の人たちは　誰も 私なんか 興味ないと思ってた	Siempre pensé que la gente no se preocupaba por mí...	I always figured real-life people didn't care about me at all...	False	False		Hitori	Hitori
+a1db4062b6	1164	1165	1163	0:18:02.470000	0:18:05.940000	a1db4062b6.mp3	a1db4062b6.webp	今日がダメだからって バンド 諦めるのは早いって	No abandones el sueño de formar una banda por lo de hoy.	You can't give up on playing in a band just because it didn't work out today!	False	False		Nijika	Nijika
+c9609fb67b	1167	1168	1166	0:18:05.940000	0:18:08.290000	c9609fb67b.mp3	c9609fb67b.webp	あたしたちが アレなだけかもだし	Puede que fuera culpa nuestra...	It's possible it's our problem, anyway...	False	False		Nijika	Nijika
+06e7f77815	1170		1169	0:18:08.290000	0:18:09.338000	06e7f77815.mp3	06e7f77815.webp	アレ? ううっ...		Our problem?	False	False			Ryo
+b78fe68f41	1173	1171	1172	0:18:09.850000	0:18:11.090000	b78fe68f41.mp3	b78fe68f41.webp	ひとりちゃん?	¿Hitori?	Hitori-chan?	False	False		Nijika	Nijika
+ea25243316	1175	1176	1174	0:18:11.090000	0:18:14.780000	ea25243316.mp3	ea25243316.webp	けど こんな優しい人が ずっと見ていてくれて	Una persona como ella me vio	But someone this nice has been watching me all this time,	False	False		Hitori	Hitori
+04798ce6b3	1178	1179	1177	0:18:14.780000	0:18:17.170000	04798ce6b3.mp3	04798ce6b3.webp	私なんかに声をかけてくれた	y habló conmigo...	and actually spoke to me...	False	False		Hitori	Hitori
+746cd74871	1181	1180	1182	0:18:17.130000	0:18:18.240000	746cd74871.mp3	746cd74871.webp	あっ あっ 立った	Se paró.	She stood up.	False	False		Ryo	Ryo
+3ca76130df	1184	1185	1183	0:18:18.740000	0:18:22.160000	3ca76130df.mp3	3ca76130df.webp	こんな奇跡 多分 一生 起こらない	Es un milagro que no ocurre mucho.	It's the kind of miracle most people never experience!	False	False		Hitori	Hitori
+c465ec24f6	1187	1188	1186	0:18:22.870000	0:18:24.978000	c465ec24f6.mp3	c465ec24f6.webp	絶対 ムダにしちゃダメだ!	¡No puedo perder la ocasión!	I can't let it go to waste!	False	False		Hitori	Hitori
+e2a1dee4b8	1189	1191	1190	0:18:25.562000	0:18:27.500000	e2a1dee4b8.mp3	e2a1dee4b8.webp	わ... 私 その...	Yo...	I... I'm...	False	False		Hitori	Hitori
+3af8b315e7	1193	1194	1192	0:18:27.960000	0:18:31.026000	3af8b315e7.mp3	3af8b315e7.webp	もしかして 出てくれる気になったとか?	¿Quieres actuar?	D-Do you want to perform after all?	False	False		Nijika	Nijika
+c0b42e66a2	1196	1197	1198	0:18:33.028000	0:18:34.420000	c0b42e66a2.mp3	c0b42e66a2.webp	ひ... ひとりちゃん?	¿Hitori?	Hitori-chan?	False	False		Nijika	Nijika
+c435f6ecb5	1200	1201,1203	1199,1202	0:18:34.420000	0:18:37.820000	c435f6ecb5.mp3	c435f6ecb5.webp	頭では分かってる でも やっぱり怖い	Sé que en el fondo... Tengo miedo.	I know all that, rationally... But I'm still too scared...	False	False		Hitori	Hitori
+7094a089bb	1204	1206	1205	0:18:37.783000	0:18:40.390000	7094a089bb.mp3	7094a089bb.webp	お客さんの目線も 耐えられるわけが...	No puedo actuar con público...	There's no way I can play in front of an audience...	False	False		Hitori	Hitori
+cea8825daf	1207	1209	1208	0:18:40.410000	0:18:43.330000	cea8825daf.mp3	cea8825daf.webp	怖いなら これに入って演奏したら?	Si tienes miedo, toca aquí adentro.	If you're scared, you could play from in here.	False	False		Ryo	Ryo
+bbfd4ca8ad	1216	1217	1214	0:18:44.310000	0:18:48.560000	bbfd4ca8ad.mp3	bbfd4ca8ad.webp	いっ い... いつも弾いてる環境と同じですー	Se parece a donde toco siempre.	I-It's the same environment that I play in all the time!	False	False		Hitori	Hitori
+93989882c4	1218	1220	1219	0:18:49.086000	0:18:51.190000	93989882c4.mp3	93989882c4.webp	どんな所に住んでるの?	¿Dónde vives?	Where exactly do you live?	False	False		Nijika	Nijika
+a618a0016e	1224	1225	1223	0:18:51.630000	0:18:54.640000	a618a0016e.mp3	a618a0016e.webp	皆さん 下北 盛り上げていきましょう!	¿Cómo están, gente?	How you feelin' tonight, Shimo-Kita?!	False	False		Hitori	Hitori
+45a6342987	1226	1228	1227	0:18:54.424000	0:18:56.150000	45a6342987.mp3	45a6342987.webp	少し気が大きくなった	Ahora es otra.	She's suddenly more outgoing.	False	False		Ryo	Ryo
+95a4675c61	1229	1231	1230	0:18:56.176000	0:18:59.480000	95a4675c61.mp3	95a4675c61.webp	そういえば ライブで なんて紹介すればいい?	Por cierto, ¿cómo te presentamos?	By the way, how do you want us to introduce you?	False	False		Nijika	Nijika
+abbee11ede	1233	1234	1232	0:18:59.480000	0:19:02.170000	abbee11ede.mp3	abbee11ede.webp	ひとりちゃん? 本名でいいかな?	¿Hitori? ¿Usamos tu nombre?	"Hitori-chan"? Should we use your real name?	False	False		Nijika	Nijika
+c3dfa8083a	1236	1237	1235	0:19:02.170000	0:19:03.900000	c3dfa8083a.mp3	c3dfa8083a.webp	い... いや それは...	Mejor no...	I'd... I'd rather not...	False	False		Hitori	Hitori
+2e0893e961	1239	1240	1238	0:19:03.900000	0:19:05.770000	2e0893e961.mp3	2e0893e961.webp	じゃあ あだ名とかはないの?	¿Te ponemos algún apodo?	Any nicknames, then?	False	False		Nijika	Nijika
+cfd082eafb	1242	1243	1241	0:19:05.770000	0:19:09.106000	cfd082eafb.mp3	cfd082eafb.webp	ちゅ... 中学では "あのー"とか"おい"とか	En la secundaria me llamaban "oye" y "tú"...	In middle school, they called me "Hey" and "You there"...	False	False		Hitori	Hitori
+f6161abf99	1246	1245	1244	0:19:09.020000	0:19:10.840000	f6161abf99.mp3	f6161abf99.webp	それ あだ名じゃなくない?	Esos no son apodos.	I don't think those are nicknames!	False	False		Nijika	Nijika
+ba58b81a99	1247,1250	1249	1248	0:19:10.816000	0:19:14.790000	ba58b81a99.mp3	ba58b81a99.webp	あああ... あだ名で呼び合うほど　親しい交友関係は 持ったことが...	Nunca he conocido a nadie tanto como para que me ponga apodos.	I never knew anyone well enough to get nicknames from them!	False	False		Hitori	Hitori
+343911e14b	1251	1253,1255	1252,1254	0:19:14.820000	0:19:17.940000	343911e14b.mp3	343911e14b.webp	ひとり... ひとりぼっち...	Hitori... Hitoribocchi, solitaria...	Hitori... Hitoribocchi ...	False	False		Ryo	Ryo
+537a699889	1257	1258	1256	0:19:17.940000	0:19:19.120000	537a699889.mp3	537a699889.webp	ぼっちちゃんは?	¿Qué tal Bocchi?	How about Bocchi-chan?	False	False		Ryo	Ryo
+6f4104a216	1260	1261	1259	0:19:19.120000	0:19:21.180000	6f4104a216.mp3	6f4104a216.webp	うっ またデリケートなところを	Tú y tu falta de tacto otra vez.	Another tactless comment!	False	False		Nijika	Nijika
+7424f1f810	1263,1265	1264	1262,1266	0:19:21.180000	0:19:24.140000	7424f1f810.mp3	7424f1f810.webp	ぼぼぼ... ぼっちです!　喜んでるし	¡Bocchi! -¿Le gusta?	I'm B-B-Bocchi! She likes it?	False	False		Hitori	Hitori,Nijika
+420b5dee53	1267	1269	1268	0:19:24.162000	0:19:26.180000	420b5dee53.mp3	420b5dee53.webp	あだ名とか初めてで	Es mi primer apodo...	It's just my first ever nickname...	False	False		Hitori	Hitori
+d17089f67e	1270	1272	1271	0:19:26.164000	0:19:28.360000	d17089f67e.mp3	d17089f67e.webp	ううー なんか 涙出てきた	Va a llorar...	This is making me teary-eyed.	False	False		Nijika	Nijika
+5276318bcf	1273	1275	1274	0:19:28.292000	0:19:31.030000	5276318bcf.mp3	5276318bcf.webp	あっ まだ バンド名 聞いてなかったです	Por cierto, no sé cómo se llama la banda.	Oh, you haven't told me your band name yet.	False	False		Hitori	Hitori
+7277b6057d	1279	1280	1278	0:19:33.110000	0:19:34.715000	7277b6057d.mp3	7277b6057d.webp	結束バンドだよ	Somos Kessoku Band.	It's Kessoku Band.	False	False		Ryo	Ryo
+b902219701	1283	1284	1282	0:19:37.030000	0:19:39.020000	b902219701.mp3	b902219701.webp	結束バンド...	Kessoku Band...	Kessoku Band...	False	False		Hitori	Hitori
+20cb3c0a9d	1286	1287	1285	0:19:39.020000	0:19:40.820000	20cb3c0a9d.mp3	20cb3c0a9d.webp	結束バンド?	¿Eso no significa "cinta"?	Isn't that the word for "zip tie"?	False	False		Hitori	Hitori
+1e3bb5da2f	1288	1289	1290	0:19:40.846000	0:19:42.639000	1e3bb5da2f.mp3	1e3bb5da2f.webp	プッ 傑作	Es genial.	It's brilliant.	False	False		Ryo	Ryo
+0812fee73e	1292	1293	1291	0:19:42.570000	0:19:44.820000	0812fee73e.mp3	0812fee73e.webp	寒いし 絶対 変えるからー!	¡No tiene gracia! Vamos a cambiarlo.	It's the worst pun! We're totally changing it!	False	False		Nijika	Nijika
+939dbfab86	1295	1296	1294	0:19:44.820000	0:19:46.600000	939dbfab86.mp3	939dbfab86.webp	なんで? かわいいよね	¿Por qué? Es lindo.	Why? It's cute.	False	False		Ryo	Ryo
+ba9f727513	1297	1299	1298	0:19:46.560000	0:19:48.854000	ba9f727513.mp3	ba9f727513.webp	あっ はい うああー!	Sí.	Y-Yes.	False	False		Hitori	Hitori
+1d915c9806	1301	1302	1300	0:19:48.910000	0:19:52.050000	1d915c9806.mp3	1d915c9806.webp	バンド名は後回しで そろそろ出番だよ!	Vamos, ya es hora de tocar.	Band name aside, it's time to play!	False	False		Nijika	Nijika
+f43fd2dddd	1305	1306	1304	0:19:53.190000	0:19:54.420000	f43fd2dddd.mp3	f43fd2dddd.webp	大丈夫 あっ	Tranquila.	Don't worry.	False	False		Nijika	Nijika
+b1ecf75ff3	1308	1309	1307	0:19:54.840000	0:19:58.550000	b1ecf75ff3.mp3	b1ecf75ff3.webp	下手でも 楽しく弾くことだけは 心掛けよう	Aunque no seas tan buena, la clave está en divertirte.	The key is to have fun, even if you suck!	False	False		Nijika	Nijika
+bb96d192df	1311	1312	1310	0:19:58.550000	0:20:01.260000	bb96d192df.mp3	bb96d192df.webp	音って ものすごく 感情が表れやすいから	Cuando tocas dejas ver lo que sientes.	Your feelings really come out in your playing, see?	False	False		Nijika	Nijika
+72a78bf700	1314	1315	1313	0:20:01.980000	0:20:03.680000	72a78bf700.mp3	72a78bf700.webp	は... はい	Bien...	R-Right...	False	False		Hitori	Hitori
+01697e9c43	1316	1318	1317	0:20:03.702000	0:20:07.040000	01697e9c43.mp3	01697e9c43.webp	技術を求めていくのは 次からで 全然いいよ	Ya trabajaremos la técnica para la próxima vez.	We can always work on the skill part next time.	False	False		Nijika	Nijika
+b965595a24	1321	1319	1320	0:20:06.970000	0:20:08.220000	b965595a24.mp3	b965595a24.webp	うん	Sí.	Yeah.	False	False		Ryo	Ryo
+e1cba024c2	1323	1324	1322	0:20:08.130000	0:20:09.540000	e1cba024c2.mp3	e1cba024c2.webp	"次"って...	La próxima...	Next... time...	False	False		Hitori	Hitori
+fbec91744d	1326	1327	1325,1328	0:20:09.540000	0:20:11.460000	fbec91744d.mp3	fbec91744d.webp	よし 行こう! うん	Bien, vamos. -Sí.	Okay, let's go! Right.	False	False		Nijika	Nijika,Ryo
+c47c511e32	1330,1332	1331	1329	0:20:12.720000	0:20:15.797000	c47c511e32.mp3	c47c511e32.webp	私...　次も いていいんだ	Quieren una próxima vez.	They're okay with there being a next time!	False	False		Hitori	Hitori
+d9b6c40da4	1333	1335	1334	0:20:19.051000	0:20:22.240000	d9b6c40da4.mp3	d9b6c40da4.webp	はじめまして! 結束バンドでーす!	Encantadas. ¡Somos Kessoku Band!	Nice to meet you! We're Kessoku Band!	False	False		Nijika	Nijika
+38f816775d	1337,1340	1338	1336,1339	0:20:22.240000	0:20:26.320000	38f816775d.mp3	38f816775d.webp	今日は みんなも多分 知ってる曲を何曲か やるので　聴いてください!	¡Seguro que conocen nuestras canciones, así que disfruten!	We'll play a bunch of songs you probably know, so please enjoy!	False	False		Nijika	Nijika
+cfa22c3863	1341	1342	1343	0:20:26.350000	0:20:27.700000	cfa22c3863.mp3	cfa22c3863.webp	んだ? あれ	¿Quién es esa?	Who's that?	False	False		Seika	Seika
+82b4ae12c2	1346	1347	1345	0:20:37.800000	0:20:41.560000	82b4ae12c2.mp3	82b4ae12c2.webp	いつもの実力 出せなくて 最悪だけど	Odio no poder tocar como de costumbre, pero...	I hate that I can't play as well as I usually do, but...	False	False		Hitori	Hitori
+6cadfc06e5	1349,1351	1350	1348	0:20:41.560000	0:20:46.390000	6cadfc06e5.mp3	6cadfc06e5.webp	バンド組んで 誰かと演奏するのって　こんな楽しいんだ!	¡Me está encantando tocar con más gente!	playing in a band with other people is so much fun!	False	False		Hitori	Hitori
+6c530d5427	1354	1353	1352	0:20:48.600000	0:20:52.100000	6c530d5427.mp3	6c530d5427.webp	私 今日 最高に輝いて...	Hasta ahora nunca he brillado...	I've never really shone before today...	False	False		Hitori	Hitori
+3c480847f6	1357	1355	1356	0:20:52.560000	0:20:53.730000	3c480847f6.mp3	3c480847f6.webp	ない!	Y aún no brillo.	And I still don't!	False	False		Hitori	Hitori
+54f34e71f0	1359	1360	1358	0:20:53.730000	0:20:57.030000	54f34e71f0.mp3	54f34e71f0.webp	むしろ人生で 一番みじめかも!	¡Es lo más bajo que he caído hasta ahora!	This might actually be a low point for me!	False	False		Hitori	Hitori
+3080c8ab4d	1361	1363	1362	0:21:00.842000	0:21:02.880000	3080c8ab4d.mp3	3080c8ab4d.webp	ミスりまくったー	Metí la pata.	Boy, I screwed up!	False	False		Nijika	Nijika
+6fbce4c233	1364,1368	1366	1365,1367	0:21:02.844000	0:21:05.820000	6fbce4c233.mp3	6fbce4c233.webp	MC スベってたね エヘッ　あっ あの! ん?	Sí, en tu entrada. -Este...	Your intro bombed, too. E-Excuse me!	False	False		Ryo	Hitori,Ryo
+20d2727136	1372	1370	1371	0:21:07.200000	0:21:08.475000	20d2727136.mp3	20d2727136.webp	何?	¿Qué?	What?	False	False		Nijika	Nijika
+0eea8bf6d8	1375	1374,1377	1373,1376	0:21:08.390000	0:21:11.770000	0eea8bf6d8.mp3	0eea8bf6d8.webp	つつ つつつ... 何? 怖いんだけど!	A... ¡Me das miedo!	B-B-B-B-B... Okay, you're freaking me out!	False	False		,Nijika	,Nijika
+dc0da9db96	1379,1381	1380	1378	0:21:12.250000	0:21:17.010000	dc0da9db96.mp3	dc0da9db96.webp	次のライブまでには クラスメイトに　挨拶できるくらいには なっておきます!	¡Antes de la próxima, seré valiente y saludaré a mis compañeros de clase!	B-Before our next performance, I'm gonna get brave enough to say hello to my classmates!	False	False		Hitori	Hitori
+36da74c896	1383	1382	1384	0:21:16.960000	0:21:18.170000	36da74c896.mp3	36da74c896.webp	なんの宣言?	Cuánto dramatismo.	What a dramatic declaration.	False	False		Nijika	Nijika
+86afa3d996	1385	1387	1386	0:21:18.193000	0:21:20.250000	86afa3d996.mp3	86afa3d996.webp	目覚ましい成長	Cuánto has crecido...	Such growth...	False	False		Ryo	Ryo
+dabd9d6cbc	1388	1390	1389,1391	0:21:20.195000	0:21:22.320000	dabd9d6cbc.mp3	dabd9d6cbc.webp	でも そっか... うん!	Pero te entiendo.	Okay, I get it. Sure!	False	False		Nijika	Nijika
+a481bde452	1392,1395	1394	1393	0:21:22.280000	0:21:26.550000	a481bde452.mp3	a481bde452.webp	よーし じゃあ今から　ぼっちちゃん歓迎会 兼 ライブの反省会だー	¡Celebraremos tu fiesta de bienvenida y funeral posconcierto!	Then let's have a Bocchi-chan-welcome-party- slash-concert-post-mortem!	False	False		Nijika	Nijika
+6b83a77f7b	1396	1398	1397	0:21:26.576000	0:21:30.260000	6b83a77f7b.mp3	6b83a77f7b.webp	あっ 今日は人と話し過ぎて 疲れたので帰りまーす	Ya hablé demasiado hoy, así que me voy.	Actually, I'm pretty exhausted from all this social interaction, so I'm gonna go.	False	False		Hitori	Hitori
+58a1367980	1399	1401	1400	0:21:30.288000	0:21:31.850000	58a1367980.mp3	58a1367980.webp	え? ごめん 眠い	Perdón. Tengo sueño.	Sorry. I'm sleepy.	False	False		Ryo	Ryo
+0827803e25	1404	1405	1403	0:21:32.280000	0:21:33.760000	0827803e25.mp3	0827803e25.webp	しし... 失礼します!	Con permiso.	P-Pardon me!	False	False		Hitori	Hitori
+86c1397f0a	1408	1409	1407	0:21:38.900000	0:21:41.383000	86c1397f0a.mp3	86c1397f0a.webp	結束力 全然ないっ!	¡En esta banda no hay nada que nos una!	There's no "ties" in this band at all!	False	False		Nijika	Nijika
+1ad3f20f7c	1411	1412	1410	0:21:49.370000	0:21:51.300000	1ad3f20f7c.mp3	1ad3f20f7c.webp	絶対 コミュ症 治して	Superaré mi ansiedad	I'm gonna get over my social anxiety	False	False		Hitori	Hitori
+0de691753a	1414	1415	1413	0:21:51.300000	0:21:54.896000	0de691753a.mp3	0de691753a.webp	ギターヒーローの私としての 力を発揮するんだ	y sacaré toda mi fuerza de guitarhero.	and bring out my full guitarhero powers!	False	False		Hitori	Hitori
+a82fc1dd44	1418	1416,1420,1422	1417,1419,1421	0:21:56.670000	0:22:01.210000	a82fc1dd44.mp3	a82fc1dd44.webp	虹夏ちゃん リョウさん 結束バンドのために!	Lo haré por Nijika, Ryo y Kessoku Band.	For Nijika-chan, Ryo-san, and Kessoku Band!	False	False		Hitori	Hitori
+9fd07572cd	1425	1426	1424	0:22:02.860000	0:22:04.960000	9fd07572cd.mp3	9fd07572cd.webp	すす... すいません! すいません!	¡Perdón! ¡Perdón!	S-Sorry! Sorry!	False	False		Hitori	Hitori

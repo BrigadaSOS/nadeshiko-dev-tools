@@ -1,10 +1,9 @@
 import os
 
-import pysubs2
 from guessit import guessit
-from fnmatch import fnmatch
 
 from media_sub_splitter.main import MatchingSubtitle
+from media_sub_splitter.utils.subtitle_utils import load_subtitle_file
 
 
 def read_input_subtitles(anime_folder_path):
@@ -30,7 +29,7 @@ def read_input_subtitles(anime_folder_path):
             matching_subtitles[subtitle_language] = MatchingSubtitle(
                 origin="external",
                 filepath=subtitle_path,
-                data=pysubs2.load(subtitle_path),
+                data=load_subtitle_file(subtitle_path),
             )
             continue
 
@@ -41,7 +40,7 @@ def read_input_subtitles(anime_folder_path):
             subtitle_language: MatchingSubtitle(
                 origin="external",
                 filepath=subtitle_path,
-                data=pysubs2.load(subtitle_path),
+                data=load_subtitle_file(subtitle_path),
             )
         }
         current_season = season_number

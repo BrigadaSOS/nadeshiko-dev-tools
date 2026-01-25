@@ -1,244 +1,244 @@
 ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREENSHOT	CONTENT	CONTENT_TRANSLATION_SPANISH	CONTENT_TRANSLATION_ENGLISH	CONTENT_SPANISH_MT	CONTENT_ENGLISH_MT	ACTOR_JA	ACTOR_ES	ACTOR_EN
-4	4	3	2	0:00:28.310000	0:00:31.760000	4.mp3	4.webp	エリクト お願い もうやめて!	¡Detente, por favor, Ericht!	Ericht! Please! Don't do this!	False	False			
-6	6	7	5	0:00:32.280000	0:00:34.450000	6.mp3	6.webp	じゃあ お母さんの邪魔しないで	Entonces no molestes a mamá.	Then don't get in Mom's way.	False	False			
-10	10	11	9	0:00:35.950000	0:00:39.100000	10.mp3	10.webp	全部 エリクトのためなのに	Lo hace todo por mí.	This is all for Ericht's sake...	False	False			
-14	14	13	12	0:00:39.100000	0:00:41.230000	14.mp3	14.webp	どうして ここに来ちゃったの?	¿Por qué viniste?	so why did you come here?	False	False			
-17	17	15	16	0:00:41.850000	0:00:43.926000	17.mp3	17.webp	友達と学園に帰りなよ	Regresa a la escuela con tus amigos.	Go back to the school with your friends.	False	False			
-19	19,21	20	18	0:00:44.630000	0:00:49.700000	19.mp3	19.webp	これは⸺　データストームの中でしか 生きられない 僕らの問題	Es problema nuestro porque solo podemos vivir en la tormenta.	This is a matter for those of us who can only live inside the data storm.	False	False			
-23	23,26	24	22,25	0:00:49.690000	0:00:53.580000	23.mp3	23.webp	だから スレッタ⸺　君は諦めて	Tú olvídate de ello, Suletta.	So, Suletta... You must give up.	False	False			
-28	28	29	27	0:00:54.010000	0:00:55.500000	28.mp3	28.webp	嫌だ!	¡No!	No!	False	False			
-31	31,33	32	30	0:00:55.500000	0:00:59.670000	31.mp3	31.webp	私は みんなのこと 見ないフリなんて⸺　できないよ!	¡No puedo fingir que no sé nada!	I can't turn a blind eye to you guys!	False	False			
-36	36	35	34	0:01:00.430000	0:01:03.670000	36.mp3	36.webp	スレッタの... 分からず屋	Eres muy terca, Suletta.	You're so stubborn, Suletta.	False	False			
-38	38	39	37	0:01:10.840000	0:01:12.079000	38.mp3	38.webp	やめろ ラウダ!	¡Detente, Lauda!	Stop it, Lauda!	False	False			
-41	41	42	40	0:01:12.050000	0:01:14.890000	41.mp3	41.webp	なんで あの船を狙うんだ!	¿Por qué atacas a la nave?	Why are you trying to attack that ship?!	False	False			
-45	45	44	43	0:01:15.240000	0:01:16.490000	45.mp3	45.webp	にいさんこそ⸺	¿Y tú qué?	What about you, Brother...	False	False			
-47	47	48	46	0:01:16.950000	0:01:19.980000	47.mp3	47.webp	どうして あの女のそばにいるんだ!	¿Por qué estás con esa chica?	Why are you by that woman's side?	False	False			
-50	50	51	49	0:01:19.970000	0:01:21.560000	50.mp3	50.webp	ラウダ... うっ...	¿Lauda?	Lauda?	False	False			
-53	53	54	52	0:01:22.290000	0:01:25.530000	53.mp3	53.webp	ミオリネが ガンダムを持ち出さなければ⸺	Si Miorine no hubiera involucrado a los Gundams,	If Miorine hadn't brought Gundams back into the world,	False	False			
-56	56	57	55	0:01:25.960000	0:01:27.390000	56.mp3	56.webp	ペトラは!	ahora Petra...	Petra wouldn't have...!	False	False			
-59	59	61	60	0:01:33.184000	0:01:36.720000	59.mp3	59.webp	う... なんで ラウダが攻撃してくんだよ!	¿Por qué nos ataca Lauda?	Why the heck is Lauda attacking us?!	False	False			
-64	64	62	63	0:01:36.530000	0:01:38.189000	64.mp3	64.webp	知るか! うう...	¡Ni idea!	How should I know?!	False	False			
-67	67	66	65	0:01:39.330000	0:01:40.920000	67.mp3	67.webp	フェルシー先輩!	¡Felsi!	Ms. Felsi!	False	False			
-69	69	70	68	0:01:41.490000	0:01:43.080000	69.mp3	69.webp	このままじゃ巻き込まれる	Nos alcanzará.	We'll be caught up in the mess.	False	False			
-72	72	73	71,74	0:01:43.080000	0:01:44.945000	72.mp3	72.webp	ニカ チュチュ! 了解	Nika. Chuchu. -Recibido.	Nika! Chuchu! Roger!	False	False			
-76	76	77	75	0:01:44.910000	0:01:47.489000	76.mp3	76.webp	デミバーディング いくぜ!	¡Vamos, Demi Barding!	Let's go, Demi Barding!	False	False			
-79	79,81	80,82	78	0:01:54.400000	0:01:58.980000	79.mp3	79.webp	データストーム空間に入ったら⸺　パーメット通信は かき消されるわ	La zona de la tormenta anulará las comunicaciones Permet.	Permet communications will be useless within data storm space.	False	False			
-85	85	83	84	0:01:58.970000	0:02:01.020000	85.mp3	85.webp	光無線通信に切り替えて	Cambien a las ópticas inalámbricas.	Change to optical wireless communications.	False	False			
-88	88	87	86	0:02:01.010000	0:02:04.860000	88.mp3	88.webp	はい デミバーディング パーメットリンクを切断	Bien. Cortando enlace Permet del Demi Barding.	Right... Demi Barding, now terminating Permet link.	False	False			
-93	93,95	92,97	91,94,96	0:02:15.650000	0:02:21.250000	93.mp3	93.webp	死ぬー!　死ぬー! うわああー!	¡Moriremos! ¡Mamá!	We're gonna die! We're all gonna die! Mommy!	False	False			
-98	98	100	99	0:02:23.192000	0:02:26.190000	98.mp3	98.webp	ハア... ご... ごめん みんな	Lo siento, chicos.	S-Sorry, everybody!	False	False			
-103	103,104	102	101	0:02:26.190000	0:02:31.130000	103.mp3	103.webp	パーメットなしの操縦って⸺　こんなに難しいんかよ	No sabía que era tan difícil pilotear sin Permet.	Is piloting without Permet really this hard?!	False	False			
-106	106	108	107	0:02:34.286000	0:02:38.180000	106.mp3	106.webp	あ... これが... データストーム?	¿Esto es la tormenta de datos?	Is this... the data storm?	False	False			
-110	110	111	109	0:02:38.700000	0:02:41.660000	110.mp3	110.webp	この感覚 気持ち悪いんだよね	Es una sensación desagradable, ¿verdad?	This sensation is so unpleasant.	False	False			
-114	114	113	112	0:02:41.640000	0:02:44.230000	114.mp3	114.webp	さっさとクワイエット・ゼロに 行ってくれよ	Vayan a Quiet Zero cuanto antes.	Hurry up and get us to Quiet Zero!	False	False			
-116	116	117	115	0:02:44.230000	0:02:46.560000	116.mp3	116.webp	偉そうに指図すんなし!	¡A mí no me des órdenes!	Who put you in charge, loudmouth!	False	False			
-124	124	125	123	0:04:30.160000	0:04:31.153000	124.mp3	124.webp	よせ!	¡Detente!	Don't!	False	False			
-128	128	127	126	0:04:31.120000	0:04:34.782000	128.mp3	128.webp	シュバルゼッテは... ガンダムは お前の命を!	El Schwarzette... ¡El Gundam te absorbe la vida!	The Schwarzette... the Gundam will take your life!	False	False			
-131	131	130	129	0:04:34.750000	0:04:38.090000	131.mp3	131.webp	だったら殺して止めなよ	En ese caso, mátame para detenerme.	Then why don't you stop me by killing me?	False	False			
-133	133	134	132	0:04:38.090000	0:04:39.570000	133.mp3	133.webp	父さんみたいに!	Como a papá.	Just like Dad?!	False	False			
-138	138	137	136	0:04:41.570000	0:04:42.873000	138.mp3	138.webp	答えろ にいさん!	¡Contéstame!	Answer me, Brother!	False	False			
-139	139	141	140	0:04:43.624000	0:04:46.680000	139.mp3	139.webp	なぜ 父さんのことを黙っていた!	¿Por qué no me dijiste lo de papá?	Why didn't you tell me about Dad?	False	False			
-143	143	144	142	0:04:46.680000	0:04:48.730000	143.mp3	143.webp	後ろめたかったからか!?	¿Te sentías culpable?	Was it out of guilt?	False	False			
-147	147	146	145	0:04:49.210000	0:04:52.430000	147.mp3	147.webp	僕には荷が重いと思ったのか!?	¿O es que creíste que no podría con ello?	Or did you think I couldn't bear the burden?	False	False			
-149	149	150	148	0:04:56.460000	0:04:59.700000	149.mp3	149.webp	そんなにも僕は頼りないか!	¿Tan poco me valoras?	Am I really that undependable?	False	False			
-152	152	153	151	0:04:59.690000	0:05:01.280000	152.mp3	152.webp	違う	¡No!	That's not it.	False	False			
-155	155	156	154	0:05:01.280000	0:05:03.400000	155.mp3	155.webp	父さんは俺の罪だ	Lo de papá es mi pecado.	What happened to Dad was my sin alone.	False	False			
-159	159	158	157	0:05:03.400000	0:05:06.410000	159.mp3	159.webp	俺が全部 背負うべきなんだ!	¡Debo cargar con ello yo!	I'm the one who should bear it all!	False	False			
-160	160,163	161	162	0:05:06.647000	0:05:09.942000	160.mp3	160.webp	フッ そういうところだよ　にいさん!	Eso es lo malo, hermano.	That's what's wrong with you, Brother...	False	False			
-165	165	166	164	0:05:12.350000	0:05:17.170000	165.mp3	165.webp	だから ミオリネにつけ込まれる ミオリネをすがる!	¡Por eso Miorine se aprovecha de ti y tú te aferras a ella!	That's how Miorine takes advantage of you, and why you cling to her!	False	False			
-168	168	169	170	0:05:20.702000	0:05:24.123000	168.mp3	168.webp	その高潔さが... 傲慢さが⸺	Tu nobleza y tu arrogancia.	That righteousness... That arrogance...	False	False			
-173	173	172	171	0:05:24.570000	0:05:26.770000	173.mp3	173.webp	にいさんの罪だ!	¡Esos son tus pecados!	That's your sin!	False	False			
-175	175	177	176	0:05:35.175000	0:05:37.310000	175.mp3	175.webp	小型艇の接近を確認	Se acerca una nave pequeña.	A small craft is approaching.	False	False			
-180	180	179	178	0:05:37.310000	0:05:39.920000	180.mp3	180.webp	登録識別コード ベネリットグループ	Código de identificación de Benerit Group.	It has a Benerit Group registration code.	False	False			
-182	182	183	181	0:05:39.900000	0:05:42.010000	182.mp3	182.webp	交信信号を出しています	Nos envía una transmisión.	It's emitting a communication signal.	False	False			
-185	185	186,188	184,187	0:05:41.910000	0:05:45.030000	185.mp3	185.webp	1隻だけ? つなげ	¿Una sola? Conéctala.	It's alone? I'll talk to them.	False	False			
-191	191	190	189	0:05:46.260000	0:05:49.750000	191.mp3	191.webp	議会連合 査察部 グストン・パーチェだ	Guston Parche, inspector de la Unión.	This is Guston Parche, a Space Assembly League inspector.	False	False			
-192	192	193	194	0:05:49.690000	0:05:51.390000	192.mp3	192.webp	作戦本部と話がしたい	Quiero hablar con la central.	I'd like to speak to operation HQ.	False	False			
-197	197	196	195	0:05:51.850000	0:05:54.630000	197.mp3	197.webp	査察官が出る幕ではない	Esto no es asunto suyo, inspector.	What can an inspector do in this situation?	False	False			
-199	199	200	198	0:05:55.190000	0:05:59.010000	199.mp3	199.webp	企業統治体制は維持されている	Se respeta el sistema de control empresarial.	The corporate governance is still intact with our group.	False	False			
-203	203	204	202	0:06:01.690000	0:06:03.510000	203.mp3	203.webp	デリング・レンブラン	¿Delling Rembran?	Delling Rembran?	False	False			
-207	207	206	205	0:06:04.200000	0:06:07.520000	207.mp3	207.webp	我が社は連合憲章に基づく⸺	Mi empresa solicita una reunión de emergencia	In accordance with the League Charter,	False	False			
-209	209	210	208	0:06:07.520000	0:06:11.770000	209.mp3	209.webp	緊急特別総会の開催を要求する	en base al Acta de la Unión.	we request the convening of an emergency special session.	False	False			
-213	213	212	211	0:06:11.770000	0:06:13.720000	213.mp3	213.webp	特別総会だと?	¿Una reunión de emergencia?	A special session?	False	False			
-215	215	216	214	0:06:14.250000	0:06:17.030000	215.mp3	215.webp	全加盟代表を招集し⸺	Una con los representantes afiliados	Have all members send their representatives	False	False			
-218	218	219	217	0:06:17.030000	0:06:21.780000	218.mp3	218.webp	今回の介入行動の是非を 再審議したい	para deliberar de nuevo sobre la intervención actual.	and reconsider if it was justifiable to intervene in our group's affairs.	False	False			
-220	220	221	222	0:06:25.309000	0:06:27.220000	220.mp3	220.webp	うう... 総裁	Presidente.	Mr. President...	False	False			
-225	225	224	223	0:06:27.190000	0:06:29.900000	225.mp3	225.webp	ご協力 感謝します	Gracias por su colaboración.	I'm grateful... for your cooperation.	False	False			
-229	229	230	228	0:06:39.610000	0:06:41.340000	229.mp3	229.webp	下がって スレッタ	Vete, Suletta.	Stand down, Suletta.	False	False			
-233	233	232	231	0:06:41.820000	0:06:44.680000	233.mp3	233.webp	僕は 君のこと傷つけたくない	No quiero lastimarte.	I don't want to hurt you.	False	False			
-235	235	237	236	0:06:46.830000	0:06:50.550000	235.mp3	235.webp	ぐっ 私だって... そうだよ!	¡Yo tampoco!	Neither... do I!	False	False			
-239	239	240	238	0:06:50.550000	0:06:52.711000	239.mp3	239.webp	なら 止めないで	Pues no nos detengas.	Then don't stop us.	False	False			
-243	243,244	242,245	241	0:06:52.680000	0:06:57.570000	243.mp3	243.webp	お母さんが望んでるの　エリィに居場所をって	Es lo que desea mamá. Crear un lugar para Eri.	Mom wants Eri to... have a place in the world.	False	False			
-246	246	248	247	0:06:58.091000	0:07:01.678000	246.mp3	246.webp	ハアハア... そのために たくさんのフロントを飲み込むの?	¿Y para ello engullirán varios frentes?	Is it okay to gobble up all these fronts for that goal?	False	False			
-249	249	251	250	0:07:01.803000	0:07:04.223000	249.mp3	249.webp	ハアハア... 命を奪うの!?	¿Arrebatarán vidas?	To take lives?!	False	False			
-253	253	254	252	0:07:04.190000	0:07:06.910000	253.mp3	253.webp	エリィは そんなことしないよ	Eri nunca haría eso.	Eri wouldn't do that.	False	False			
-257	257,258	256,259	255	0:07:07.340000	0:07:12.180000	257.mp3	257.webp	けど 邪魔するなら⸺　お母さんは ためらわない	Pero si te interpones, mamá no dudará.	But if they get in our way, Mom won't hesitate!	False	False			
-261	261	262	260	0:07:12.180000	0:07:14.920000	261.mp3	261.webp	だから 止めたいの	Por eso quiero detenerlas.	That's why I want to stop her!	False	False			
-265	265	264	263	0:07:14.920000	0:07:19.170000	265.mp3	265.webp	お母さんを... ハア... 悪い魔法使いにしたくない!	No dejaré que mamá se vuelva una bruja malvada.	I don't want Mom... to become some evil magician!	False	False			
-269	269,271	268	267,270	0:07:27.530000	0:07:30.791000	269.mp3	269.webp	お願い スレッタ　僕らのことは忘れて	Por favor, Suletta, olvídate de nosotras.	Please, Suletta... Forget about us.	False	False			
-272	272	273	274	0:07:31.083000	0:07:34.711000	272.mp3	272.webp	ハアハアハアハアハア... 嫌!	¡No!	No!	False	False			
-276	276,280	278	277,279	0:07:36.088000	0:07:40.520000	276.mp3	276.webp	ハアハア 私は...　エリクトが好き	¡Te quiero, Ericht!	I... I care about you!	False	False			
-283	283	282	281	0:07:40.520000	0:07:42.900000	283.mp3	283.webp	お母さんが好き!	¡Quiero a mamá!	And Mom, too!	False	False			
-285	285,287	286	284,288	0:07:44.050000	0:07:48.950000	285.mp3	285.webp	お母さんが泣いてるなら...　ハアハア... 抱きしめてあげたい!	Si mamá llora, quiero abrazarla.	When Mom cries, I want to be there to hug her!	False	False			
-289	289	291	290	0:07:49.226000	0:07:51.019000	289.mp3	289.webp	ハア... そばにいてあげたい!	Estar a su lado.	I want to be by her side!	False	False			
-292	292,295	294	293,296	0:07:51.270000	0:07:55.870000	292.mp3	292.webp	ハアハア... 忘れることなんて...　ハアハア... できないよ!	¡No puedo olvidarlas!	There's no way... I could ever forget!	False	False			
-300	300	299	298	0:07:59.810000	0:08:01.630000	300.mp3	300.webp	残念だよ	Qué triste.	What a pity.	False	False			
-304	304	303	302	0:08:10.160000	0:08:11.373000	304.mp3	304.webp	囲まれちゃった	Estamos rodeados.	We're surrounded.	False	False			
-305	305	307	306	0:08:11.456000	0:08:13.910000	305.mp3	305.webp	ハア... ミオリネさん みんな!	¡Miorine! ¡Chicos!	Ms. Miorine! Everyone!	False	False			
-310	310	309	308	0:08:14.370000	0:08:16.930000	310.mp3	310.webp	スレッタが 分かってくれないなら⸺	Si no entras en razón,	If you don't understand, Suletta...	False	False			
-312	312	313	311	0:08:17.580000	0:08:19.172000	312.mp3	312.webp	僕もためらわない	yo tampoco dudaré.	than I won't hesitate, either.	False	False			
-314	314	316	315	0:08:19.298000	0:08:21.383000	314.mp3	314.webp	ハアハア... エリクト!	¡Ericht!	Ericht!	False	False			
-319	319	320	318,321	0:08:27.670000	0:08:31.240000	319.mp3	319.webp	お願い やめて エリクト!	¡Por favor, detente, Ericht!	Please! Stop it, Ericht!	False	False			
-325	325	326	324	0:08:49.750000	0:08:51.570000	325.mp3	325.webp	モビルスーツが...	Los Mobile Suits...	The mobile suits...	False	False			
-328	328	329	327	0:08:52.030000	0:08:54.130000	328.mp3	328.webp	止まった?	¿Se detuvieron?	...stopped?	False	False			
-331	331	332	330	0:08:54.130000	0:08:55.890000	331.mp3	331.webp	一体 何が...	¿Qué ocurrió?	What just happened?	False	False			
-335	335	334	333	0:08:55.890000	0:08:57.419000	335.mp3	335.webp	チュチュ ニカ!	¡Chuchu! ¡Nika!	Chuchu! Nika!	False	False			
-337	337	338	336	0:08:57.390000	0:08:58.980000	337.mp3	337.webp	おっしゃー!	¡Sí!	Okay!	False	False			
-340	340	339	341,342	0:09:01.520000	0:09:04.210000	340.mp3	340.webp	どうして! なんで邪魔するの!?	¿Por qué sigues molestando?	Why? Why do you interfere?	False	False			
-344	344	345	343	0:09:04.670000	0:09:07.137000	344.mp3	344.webp	データストームのおかげで 願いが叶うのに!	¡La tormenta cumplirá nuestro deseo!	The data storm can make our wishes come true!	False	False			
-346	346		347	0:09:07.220000	0:09:09.306000	346.mp3	346.webp	ハアハア... は?		Huh?		False			
-350	350	348	349	0:09:10.620000	0:09:11.808000	350.mp3	350.webp	原因は?	¿Cuál es la causa?	What caused it?	False	False			
-352	352	353	351	0:09:11.780000	0:09:14.610000	352.mp3	352.webp	データ干渉が発生しています	Hay una intervención de datos.	Data interference is occurring.	False	False			
-355	355	356	354	0:09:14.610000	0:09:17.410000	355.mp3	355.webp	データストームの情報密度が低下中	Disminuye a densidad de información.	The data storm's information density is degrading.	False	False			
-359	359	357	358	0:09:18.120000	0:09:19.200000	359.mp3	359.webp	どちらへ?	¿Adónde va?	Where are you going?	False	False			
-362	362	361	360	0:09:22.880000	0:09:24.730000	362.mp3	362.webp	害虫駆除よ	A eliminar una plaga.	To do pest control.	False	False			
-363	363,366	365	364	0:09:24.821000	0:09:30.570000	363.mp3	363.webp	艦長　議会連合本部から 秘匿通信のコールです	Capitana, tenemos una llamada oculta de la sede de la Unión.	Captain, Assembly League HQ is calling on a secure line.	False	False			
-369	369,370	368	367	0:09:32.240000	0:09:37.730000	369.mp3	369.webp	ラグランジュ1が所有する⸺　惑星間レーザー送電システム	Lagrange 1 tiene un sistema de transmisión láser interplanetaria.	Lagrange 1 has an interplanetary laser power transmission system.	False	False			
-373	373	372	371	0:09:37.730000	0:09:40.003000	373.mp3	373.webp	あれを使用してもらいたい	Me gustaría usarlo.	We'd like you to use it.	False	False			
-376	376	375	374	0:09:40.460000	0:09:43.690000	376.mp3	376.webp	デリングの要求した特別総会は?	¿Y la reunión que solicitó Delling?	What about the special session that Delling requested?	False	False			
-378	378	379	377	0:09:43.690000	0:09:47.690000	378.mp3	378.webp	そんな要求は受け取っていないよ	No aceptamos sus condiciones.	We've received no such request.	False	False			
-380	380,384	382	381,383	0:09:48.178000	0:09:54.090000	380.mp3	380.webp	送電システムを 隠れみのに開発している⸺　惑星間攻撃兵器...	El sistema láser es una tapadera para desarrollar un arma interplanetaria.	An interplanetary weapon developed under the guise of a power transmission system...	False	False			
-388	388,389	387	385,386	0:09:54.590000	0:09:59.510000	388.mp3	388.webp	今回は どうやら⸺　それが誤作動を 起こしてしまった	Y así parece que esta vez se activó por error.	L1 Interplanetary Laser Transmission System \"ILTS\" I wonder, what if it were to be mistakenly activated?	False	False			
-391	391,395	392,394	390,393	0:09:59.490000	0:10:05.380000	391.mp3	391.webp	あれを使えば ベネリットどころか⸺　ラグランジュ4全域に 被害を及ぼします	Si se usa, toda la zona de Lagrange 4 recibirá daños, no solo Benerit.	If we use that thing, it'll devastate not just Benerit but all of Lagrange 4.	False	False			
-397	397,400	398	396,399	0:10:05.380000	0:10:10.130000	397.mp3	397.webp	その責任は誰が?　もちろん 我々が取る	¿Quién asumirá la responsabilidad? -Nosotros, obviamente.	Who'll take responsibility? We will, of course.	False	False			
-402	402	403	401	0:10:11.190000	0:10:13.850000	402.mp3	402.webp	議会連合の失態を受け⸺	Tras el error de la Unión,	To make up for the Assembly League's blunder,	False	False			
-405	405	406	404	0:10:13.850000	0:10:18.510000	405.mp3	405.webp	ラグランジュ1の自治政府及び 有志ある企業群が⸺	los gobiernos y empresas autónomos de Lagrange 1	I imagine Lagrange 1's sovereign government and corporate volunteers	False	False			
-408	408	409	407	0:10:18.510000	0:10:21.770000	408.mp3	408.webp	復興を先導することになるだろう	encabezarán la reconstrucción.	will lead the rebuilding efforts.	False	False			
-411	411,414,415	412,416	410,413	0:10:21.770000	0:10:30.190000	411.mp3	411.webp	調停後のグループ取締は⸺　弊社からと⸺　お約束いただきましたから	Nuestra empresa supervisará el grupo tras la mediación. Se nos prometió.	And when the arbitration is over, you promise that our company will be in control of the Group.	False	False			
-418	418	419	417	0:10:43.780000	0:10:46.430000	418.mp3	418.webp	行きますよ ついてきてください	Vamos. Síganme.	Let's go. Follow me.	False	False			
-421	421	422	420	0:10:48.370000	0:10:51.690000	421.mp3	421.webp	この中はデータストーム 平気みたいだね	Aquí dentro, la tormenta se sobrelleva.	The data storm seems calmer in here.	False	False			
-424	424	425	423	0:10:51.690000	0:10:53.470000	424.mp3	424.webp	助かったー	Qué alivio.	Thank goodness!	False	False			
-428	428	429	427	0:10:57.830000	0:10:59.791000	428.mp3	428.webp	これを え?	Toma.	Take this.	False	False			
-431	431	432	430	0:10:59.920000	0:11:02.090000	431.mp3	431.webp	訓練は受けたことあるんでしょ?	Estás entrenada, ¿no?	You've had training, haven't you?	False	False			
-434	434	435	433	0:11:02.070000	0:11:03.930000	434.mp3	434.webp	無理です 私には...	No puedo...	I could never-	False	False			
-437	437	438	436	0:11:03.920000	0:11:06.780000	437.mp3	437.webp	学生に渡すわけにもいきませんから	No se la daré a un estudiante.	I can't very well hand it to a student.	False	False			
-442	442	441	440	0:11:09.220000	0:11:12.550000	442.mp3	442.webp	よーし さっさと停止コード打ち込もうぜ	Usemos los códigos de detención de una vez.	Okay! Let's go punch in that shutdown code.	False	False			
-443	443	445	444	0:11:12.471000	0:11:15	443.mp3	443.webp	ちょ... ちょっと待って チュチュ!	¡Espera, Chuchu!	W-Wait, Chuchu!	False	False			
-449	449,450	448	447,451	0:11:18.560000	0:11:21.800000	449.mp3	449.webp	ハロ?　侵入者は排除します	¿Un Haro? -Los intrusos serán eliminados.	A Haro? Intruders will be eliminated.	False	False			
-454	454	455	453,456	0:11:29.610000	0:11:33.270000	454.mp3	454.webp	これが... ガンダム...	¿Así son los Gundams?	So this is... a Gundam?	False	False			
-457	457	458	459	0:11:34.159000	0:11:37.130000	457.mp3	457.webp	これなら... にいさんに並べる!	Con esto puedo estar a la altura de Guel.	With this, I'm a match for my brother!	False	False			
-462	462	461	460	0:11:38.170000	0:11:40.430000	462.mp3	462.webp	にいさんを止められる!	¡Podré detenerlo!	I can stop him!	False	False			
-465	465,467	464	463,466	0:11:40.880000	0:11:44.850000	465.mp3	465.webp	魔女を...　ミオリネを...	Y eliminar a la bruja. A Miorine.	I can stop the witches... and Miorine!	False	False			
-470	470,472	469	468,471	0:11:44.850000	0:11:48.757000	470.mp3	470.webp	ラウダ もうやめるんだ!　これ以上は...	¡Suficiente, Lauda! ¡No sigas!	Lauda! Why don't you quit this?! Any further, and-	False	False			
-474	474	475	473	0:11:48.720000	0:11:51.550000	474.mp3	474.webp	目を覚ますのは にいさんだ!	¡Abre los ojos, hermano!	It's you who should wake up, Brother!	False	False			
-477	477	478	476	0:11:58.400000	0:12:00.900000	477.mp3	477.webp	父さんを殺した罪を...	La muerte de papá.	The crime of killing our father,	False	False			
-480	480	481	479	0:12:00.900000	0:12:03.740000	480.mp3	480.webp	ペトラを傷つけた罪を...	El daño que sufrió Petra.	the crime of wounding Petra...	False	False			
-484	484	483	482	0:12:03.740000	0:12:07.410000	484.mp3	484.webp	あの女に償わせないというなら...	Si no la harás pagar por ello...	If you won't make that woman pay for it...	False	False			
-485	485	487	486	0:12:07.400000	0:12:09.370000	485.mp3	485.webp	違う! 聞け ラウダ!	¡No! ¡Escúchame, Lauda!	You're wrong! Listen to me, Lauda!	False	False			
-489	489,491	490	488	0:12:09.350000	0:12:13.114000	489.mp3	489.webp	僕が ジェタークの誇りを守る!　は...	¡Yo defenderé el orgullo de los Jeturk!	I will defend the honor of the Jeturk name!	False	False			
-493	493	494	492	0:12:14.620000	0:12:18.190000	493.mp3	493.webp	魔女に取り込まれた にいさんの代わりに⸺	A ti te confundió esa bruja,	In place of my brother, who is in thrall to a witch,	False	False			
-496	496	497	495	0:12:18.190000	0:12:21.390000	496.mp3	496.webp	僕が罪をすべて背負う!	así que cargaré con tus pecados.	I will shoulder all of their sins!	False	False			
-499	499	500	498	0:12:21.380000	0:12:25.270000	499.mp3	499.webp	僕が... ラウダ・ジェタークが!	¡Yo, Lauda Jeturk!	I will... Lauda Jeturk will...!	False	False			
-502	502	504	503	0:12:37.639000	0:12:39.670000	502.mp3	502.webp	お前がラウダか	¿Tú eres Lauda?	You're Lauda?	False	False			
-508	508,512	507,510	506,509,511	0:12:49.820000	0:12:55.430000	508.mp3	508.webp	グエルだ 俺に弟がいたなんて　スッゲえ うれしい	Soy Guel. Me alegra mucho tener un hermano pequeño.	I'm Guel. Now I have a little brother! I'm super happy.	False	False			
-514	514	516	515	0:13:04.666000	0:13:07.650000	514.mp3	514.webp	に... にいさ...	Gu...	Brother...?	False	False			
-519	519	518	517	0:13:09.010000	0:13:11.160000	519.mp3	519.webp	お前の言うとおりだ	Tienes razón.	You're right.	False	False			
-521	521	522	520	0:13:11.760000	0:13:13.091000	521.mp3	521.webp	父さんのこと...	Lo de papá...	About Dad...	False	False			
-525	525,529	524,527	523,526,528	0:13:14.760000	0:13:21.630000	525.mp3	525.webp	みんなが... お前が...　許してくれなかったらって...	Y todo lo demás. Si tú no me lo perdonas...	If everyone... If you... can't forgive me, I...	False	False			
-532	532	533	531	0:13:24.600000	0:13:27.170000	532.mp3	532.webp	にいさん 逃げて...	Corre, Guel.	Brother! Run!	False	False			
-535	535	536	534	0:13:27.170000	0:13:30.250000	535.mp3	535.webp	俺は もう逃げない	No huiré más.	I'll... never run again.	False	False			
-538	538	539	537	0:13:30.700000	0:13:33.630000	538.mp3	538.webp	父さんからも お前からも	Ni de papá ni de ti.	From Dad or from you.	False	False			
-543	543	542	541	0:13:34.610000	0:13:36.010000	543.mp3	543.webp	だから⸺	Así que...	So at least...	False	False			
-546	546	545	544	0:13:38.240000	0:13:41.900000	546.mp3	546.webp	ガンダムなんて... もう乗るな	no pilotees de nuevo un Gundam.	Don't go piloting a Gundam anymore.	False	False			
-547	547	549	548	0:13:43.705000	0:13:47.370000	547.mp3	547.webp	あ... ごめ... にいさ...	Lo siento, Guel.	I'm sorry, Brother...	False	False			
-552	552	551	550	0:13:49.510000	0:13:51.170000	552.mp3	552.webp	ごめ...	Lo siento.	I'm sorry!	False	False			
-556	556	555	554	0:13:56.510000	0:13:58.887000	556.mp3	556.webp	2人共 バカなんすか!	¿Son idiotas o qué les pasa?	Just how stupid are you two?!	False	False			
-559	559	558	557	0:13:58.830000	0:13:59.950000	559.mp3	559.webp	フェルシー!	¿Felsi?	Felsi?!	False	False			
-561	561,564	562	560,563	0:13:59.830000	0:14:04.280000	561.mp3	561.webp	兄弟ゲンカで死ぬとか!　マジ笑えないっすから!	¡Morir en una pelea entre hermanos es estúpido!	Dying in a sibling spat?! If that's a joke, it's not funny!	False	False			
-566	566	568	567	0:14:07.020000	0:14:10.200000	566.mp3	566.webp	ハア... そうだな	Tienes razón.	You said it...	False	False			
-571	571	570	569	0:14:11.610000	0:14:15.260000	571.mp3	571.webp	ホント 笑えないな	Es completamente estúpido.	It really wouldn't... be that funny.	False	False			
-574	574	575	573	0:14:19.490000	0:14:21.300000	574.mp3	574.webp	バカ 頭下げろ!	¡Agáchate, idiota!	Idiot! Lower your head!	False	False			
-577	577	578	576	0:14:21.290000	0:14:23.270000	577.mp3	577.webp	てめっ どこでんーなもん!	¿De dónde la sacaste?	Where the hell did you get that?	False	False			
-580	580	581	579	0:14:23.270000	0:14:24.930000	580.mp3	580.webp	いいだろ どこでも	¿Qué importa eso?	Hell, who cares?	False	False			
-582	582	584	583	0:14:25.080000	0:14:28.792000	582.mp3	582.webp	うう... ウィンストンさん ミオリネ代表とコアブロックに!	Winston, ve al bloque central con Miorine.	Ms. Winston, take President Miorine to the core block!	False	False			
-587	587	586	585	0:14:28.650000	0:14:29.542000	587.mp3	587.webp	でも...	Pero...	But...	False	False			
-589	589	590	588	0:14:29.510000	0:14:30.950000	589.mp3	589.webp	行って ミオリネ!	¡Ve, Miorine!	Go, Miorine!	False	False			
-592	592	593	591	0:14:30.950000	0:14:32.629000	592.mp3	592.webp	さっさとカタつけてこい!	¡Acaba con esto!	Go and finish the job!	False	False			
-595	595	596	594	0:14:32.600000	0:14:34.850000	595.mp3	595.webp	できるだけ早くお願い!	Háganlo lo más rápido posible.	As quickly as possible, please!	False	False			
-599	599	600	598	0:14:42.970000	0:14:44.380000	599.mp3	599.webp	行きましょう	En marcha.	Let's go.	False	False			
-603	603,605	602,604	601	0:14:44.940000	0:14:48.450000	603.mp3	603.webp	こっちは任せて　今度は殺させないよ	Yo me encargo. Esta vez no matarán a nadie.	Let me take care of them. Nobody will get killed this time.	False	False			
-608	608	607	606	0:14:49.730000	0:14:52.620000	608.mp3	608.webp	いちいち嫌味だねえ	Hablas mucho.	Always rubbing it in...	False	False			
-611	611	610	609	0:15:00.120000	0:15:01.157000	611.mp3	611.webp	ここです	Es aquí.	In here.	False	False			
-614	614	613	612	0:15:07.710000	0:15:09.749000	614.mp3	614.webp	早く停止させてくれよ	Detenlo de una buena vez.	Hurry up and shut it down.	False	False			
-616	616		615	0:15:09.610000	0:15:10.500000	616.mp3	616.webp	分かってる		I know, okay?		False			
-622	622	621	620	0:15:13.960000	0:15:15.088000	622.mp3	622.webp	代わります	Déjame.	Let me try.	False	False			
-625	625	626	624	0:15:17.180000	0:15:18.830000	625.mp3	625.webp	どうして...	¿Por qué...?	Why?	False	False			
-628	628,631	629	627,630	0:15:19.180000	0:15:23.400000	628.mp3	628.webp	緊急停止コードなら⸺　変更させてもらったわ	Cambié los códigos de detención de emergencia.	If that's the emergency shutdown code, I took the liberty of changing it.	False	False			
-634	634	633	632	0:15:24.020000	0:15:26.580000	634.mp3	634.webp	気付いてないとでも思った?	¿Creíste que no lo sabía?	Did you think I was so careless?	False	False			
-636	636	637	635	0:15:30.860000	0:15:33.960000	636.mp3	636.webp	ミオリネは今 お母さんといるよ	Miorine está con mamá.	Miorine is with Mom now.	False	False			
-640	640,642	641	639	0:15:34.780000	0:15:38.850000	640.mp3	640.webp	1つを手に入れるためなら⸺　お母さんは...	Si es para ganar una cosa, mamá...	If it's to gain one, Mom will...	False	False			
-644	644	645	643	0:15:38.850000	0:15:40.390000	644.mp3	644.webp	ダメ!	¡No!	No!	False	False			
-647	647,649	648	646	0:15:40.680000	0:15:45.010000	647.mp3	647.webp	なら 僕とお母さんから⸺　居場所を奪わないで	Pues no nos robes el hogar a mamá y a mí.	Then don't take away the place where Mom and I can live freely.	False	False			
-650	650	652	651	0:15:48.038000	0:15:50.470000	650.mp3	650.webp	先輩 もうやめてください!	¡Detén esto!	Ma'am! Please stop this now!	False	False			
-654	654	655	653	0:15:50.470000	0:15:52.110000	654.mp3	654.webp	どうして?	¿Por qué?	Why?	False	False			
-657	657	658	656	0:15:52.110000	0:15:55.770000	657.mp3	657.webp	エリィはヴァナディースの理念に 祝福された子よ?	Eri fue bendecida por los ideales de Vanadis.	Eri is the child blessed by Vanadis's ideals.	False	False			
-660	660	661	659	0:15:56.510000	0:15:59.810000	660.mp3	660.webp	なのに この世界には あの子の居場所がない	Pero no hay lugar para ella en este mundo.	Yet there's no place for her in this world.	False	False			
-664	664	663	662	0:16:00.430000	0:16:02.270000	664.mp3	664.webp	だから作らなくちゃ	Por eso debemos creárselo.	So I'll have to make one.	False	False			
-666	666	667	665	0:16:03.010000	0:16:06.400000	666.mp3	666.webp	エリィが幸せになれる場所を	Un lugar en el que pueda ser feliz.	A place where Eri can be happy.	False	False			
-671	671	670	669,672	0:16:07.140000	0:16:11.186000	671.mp3	671.webp	エリィ エリィって... スレッタは どうでもいいわけ!?	Siempre hablas de Eri... ¿Y no importa qué le suceda a Suletta?	Eri, Eri... Don't you care about Suletta at all?	False	False			
-675	675	674	673	0:16:11.150000	0:16:12.960000	675.mp3	675.webp	愛してるわよ	La amo.	I do love her.	False	False			
-677	677	678	676	0:16:12.960000	0:16:15.580000	677.mp3	677.webp	でも あの子には あなたたちがいるでしょ?	Pero ella los tiene a ustedes, ¿no?	But now she has friends like you.	False	False			
-680	680	681	679	0:16:17.030000	0:16:20.670000	680.mp3	680.webp	スレッタが どんな思いで キャリバーンに乗ってるか分かる!?	¿Sabes por qué subió al Calibarn?	Can you imagine how Suletta feels aboard the Calibarn?	False	False			
-683	683	684	682	0:16:21.910000	0:16:24.450000	683.mp3	683.webp	死んじゃうかもって震えてた!	Temblaba porque podría morir.	She was trembling with fear that she might die.	False	False			
-687	687,688	686	685	0:16:24.870000	0:16:28.670000	687.mp3	687.webp	それでも⸺　あんたたちのことが好きだから!	Pero lo ignoró porque las quiere.	But even so, because she cares for you both...	False	False			
-691	691	690	689	0:16:29.170000	0:16:31.090000	691.mp3	691.webp	愛してるから!	¡Porque las ama!	because she loves you...	False	False			
-694	694	693	692	0:16:32.040000	0:16:35.600000	694.mp3	694.webp	母親なら 等しく愛してやりなさいよ!	Si eres su madre, ¡ámala igual!	If you're a mother, then love your daughters equally!	False	False			
-697	697	698	696	0:16:37.460000	0:16:39.050000	697.mp3	697.webp	言ってくれるじゃない	Eres muy crítica.	That's none of your business...	False	False			
-702	702	701	700	0:16:43.180000	0:16:45.710000	702.mp3	702.webp	おい プログラムから見直す気か?	¿Acaso revisarás el programa?	Hey! Are you trying to reprogram it or something?	False	False			
-705	705	704	703	0:16:45.710000	0:16:48.100000	705.mp3	705.webp	管理者権限を回避できれば!	Si evito los privilegios de administrador...	If I can get around the admin rights...	False	False			
-710	710	709	708	0:16:54.520000	0:16:57.840000	710.mp3	710.webp	さあ おとなしくユニットを渡し...	Entréguenme la uni...	Now, be a good girl and hand over those units-	False	False			
-714	714,715	713	712,716	0:16:59.990000	0:17:05.031000	714.mp3	714.webp	これ以上⸺　逃げ回っていられないの 私は!	Ya no puedo seguir huyendo.	I can't... keep running any longer... I...	False	False			
-718	718	719	717	0:17:17	0:17:18.640000	718.mp3	718.webp	早く 急げ!	¡Date prisa!	Hurry! Quick!	False	False			
-721	721	722	720	0:17:18.640000	0:17:20.990000	721.mp3	721.webp	うるさい! 分かってる!	¡Cállate! ¡Ya lo sé!	Shut up! I know, already!	False	False			
-726	726,728	727	725	0:17:29.100000	0:17:33.840000	726.mp3	726.webp	そしたら遺伝子コードに⸺　\"メッセージ未知なものが\"って...	En el código genético había una especie de mensaje.	There was an unknown message in the genetic code.	False	False			
-731	731	730	729	0:17:33.840000	0:17:36.938000	731.mp3	731.webp	文字コードに変換したら 言葉になったって	Al transformarlo en letras, aparecieron palabras.	When we converted it to text, it turned out to be words.	False	False			
-735	735	734	733	0:17:41.210000	0:17:42.470000	735.mp3	735.webp	私も⸺	\"Yo también...	I'll always...	False	False			
-738	738	737	736	0:17:44.050000	0:17:45.620000	738.mp3	738.webp	愛してる	te amo\".	love you too.	False	False			
-741	741	742	740	0:17:50.660000	0:17:53.340000	741.mp3	741.webp	すべては かわいい我が子のため	Todo sea por mi amada hija.	All for the love of my precious child.	False	False			
-744	744	745	743	0:17:54.830000	0:17:57.900000	744.mp3	744.webp	母は強しよ お嬢さん	Las madres somos muy fuertes, señorita.	A mother can be very strong, young lady.	False	False			
-747	747	748	746	0:18:04.130000	0:18:05.520000	747.mp3	747.webp	お母さん!	¡Mamá!	Mom!	False	False			
-752	752	751	750	0:18:21.650000	0:18:23.193000	752.mp3	752.webp	通信つながった!	Tenemos conexión.	We have a signal!	False	False			
-755	755	754	753	0:18:23.160000	0:18:25.361000	755.mp3	755.webp	パーメットリンク 接続確認	Enlace Permet confirmado.	Permet link established.	False	False			
-758	758	757	756	0:18:25.830000	0:18:27.730000	758.mp3	758.webp	コール 開始してください	Inicien el llamamiento.	Commence calling.	False	False			
-760	760		759	0:18:27.640000	0:18:28.531000	760.mp3	760.webp	了解		Roger.		False			
-763	763	761	762	0:18:28.040000	0:18:31.730000	763.mp3	763.webp	クワイエット・ゼロの 内部システムに侵入する	Recibido. Entrando en el sistema de Quiet Zero.	Now infiltrating Quiet Zero's internal systems.	False	False			
-766	766	765	764	0:18:40.760000	0:18:41.961000	766.mp3	766.webp	お母さん!	¡Mamá!	Mom!	False	False			
-769	769	768	767	0:18:41.930000	0:18:43.990000	769.mp3	769.webp	すべてセキュリティに回せ!	Úsenlo todo en seguridad.	Route everything to security!	False	False			
-770	770	772	771	0:18:43.922000	0:18:45.820000	770.mp3	770.webp	ダメです 追いつきません!	No podemos seguir el ritmo.	It's no use. There's too much.	False	False			
-779	779	778	777	0:19:09.530000	0:19:10.800000	779.mp3	779.webp	止まった?	¿Se detuvo?	It stopped?	False	False			
-781	781	782	780	0:19:11.330000	0:19:13.630000	781.mp3	781.webp	データストーム消失しました	La tormenta desapareció.	The data storm has dissipated.	False	False			
-784	784	785	783	0:19:13.980000	0:19:16.030000	784.mp3	784.webp	皆さん 無事です!	¡Estamos bien!	Everyone is okay!	False	False			
-789	789	788	787	0:19:16.870000	0:19:18.970000	789.mp3	789.webp	おっしゃー!	¡Genial!	Yes!	False	False			
-791	791	792	790	0:19:18.970000	0:19:21.280000	791.mp3	791.webp	作戦成功っす!	¡Misión cumplida!	Mission accomplished!	False	False			
-797	797	796	795	0:19:25.170000	0:19:27.100000	797.mp3	797.webp	人殺しは向いてないね	No eres una buena asesina.	You're not so good at killing people.	False	False			
-799	799	800	798	0:19:27.630000	0:19:29.980000	799.mp3	799.webp	次からは人助けにしときなよ	Mejor dedícate a salvar a alguien.	Next time, try helping them instead.	False	False			
-803	803	804	802	0:19:32.540000	0:19:34.610000	803.mp3	803.webp	進めば2つ	Si avanzas, ganas dos.	\"Move forward, gain two.\"	False	False			
-807	807	806	805	0:19:35.100000	0:19:37.210000	807.mp3	807.webp	あんたの言葉でしょ?	Lo decías tú, ¿no?	Those were your words, right?	False	False			
-809	809	810	808	0:19:37.210000	0:19:39.880000	809.mp3	809.webp	だったら言葉どおり進みなさいよ	Pues aprende de ello y avanza.	Then do as you say and move forward.	False	False			
-813	813	812	811	0:19:40.480000	0:19:43.790000	813.mp3	813.webp	あんたも スレッタもエリクトも	Suletta, Ericht y tú.	You, Suletta, Ericht...	False	False			
-815	815,817	816	814	0:19:44.160000	0:19:47.750000	815.mp3	815.webp	私たち⸺　家族になるんだから	Porque seremos familia.	All of us... will be family, after all.	False	False			
-820	820	819	818	0:19:49.700000	0:19:53	820.mp3	820.webp	クワイエット・ゼロは機能停止した	Quiet Zero se detuvo.	Quiet Zero has shut down.	False	False			
-822	822	823	821	0:19:53.700000	0:19:56.380000	822.mp3	822.webp	どうか お引き取りを	Retírense, por favor.	Now if you could please leave us...	False	False			
-824	824	826	825	0:19:56.869000	0:19:58.420000	824.mp3	824.webp	いいや あ...	No.	I'm afraid not.	False	False			
-828	828,830	829	827	0:19:58.420000	0:20:04.490000	828.mp3	828.webp	君たち企業は⸺　大きくなりすぎた	Sus empresas se volvieron demasiado grandes.	You and your companies have grown far too big.	False	False			
-832	832	833	831	0:20:06.680000	0:20:09.440000	832.mp3	832.webp	送電準備フェーズ 5に移行	Preparativos de transmisión en fase 5.	Moving power transmission preparation to Phase 5.	False	False			
-836	836	835	834	0:20:09.430000	0:20:12.270000	836.mp3	836.webp	アレイ設定 誤差範囲内	Matriz establecida en parámetros aceptables.	Array setup within error range.	False	False			
-838	838	839	837	0:20:12.270000	0:20:15.250000	838.mp3	838.webp	位相制御システム 問題なし	Sistema de control de fase correcto.	Phase control systems, all green.	False	False			
-841	841	842	840	0:20:16.390000	0:20:19.540000	841.mp3	841.webp	照準情報 軌道予測完了	Previsión de trayectoria finalizada.	Targeting data, trajectory prediction complete.	False	False			
-845	845	844	843	0:20:24.730000	0:20:27.340000	845.mp3	845.webp	惑星間レーザー送電システム	Iniciando prueba de rayo de alta potencia	Interplanetary laser transmission system,	False	False			
-847	847	848	846	0:20:27.340000	0:20:30.850000	847.mp3	847.webp	大出力照射実験 開始します	del sistema de transmisión láser interplanetaria.	commencing test firing at high output.	False	False			
-849	849	851	850	0:20:38.411000	0:20:40.830000	849.mp3	849.webp	あ... ダメ!	¡No!	No!	False	False			
-854	854	855	853	0:20:50.150000	0:20:52.450000	854.mp3	854.webp	エリィ やめなさい!	¡No, Eri!	Eri! Stop that!	False	False			
-861	861	863	860	0:21:52.780000	0:21:54.260000	861.mp3	861.webp	みんな?	¿Hola?	Everyone...?	False	False			
-866	866	868	867	0:22:06.624000	0:22:09.610000	866.mp3	866.webp	は... エリィー!	¡Eri!	Eri!	False	False			
-872	872,874,879	873,875,876	871,877,878	0:23:43.510000	0:23:49.030000	872.mp3	872.webp	次回　「機動戦士ガンダム 水星の魔女」　\"最終回\"	Próximo episodio: episodio final. Final Mobile Suit Gundam: The Witch from Mercury	Next time on Mobile Suit Gundam the Witch from Mercury, Mobile Suit Gundam the Witch from Mercury the final episode.	False	False			
+9032e3897b	4	3	2	0:00:28.310000	0:00:31.760000	9032e3897b.mp3	9032e3897b.webp	エリクト お願い もうやめて!	¡Detente, por favor, Ericht!	Ericht! Please! Don't do this!	False	False			
+40c63db16a	6	7	5	0:00:32.280000	0:00:34.450000	40c63db16a.mp3	40c63db16a.webp	じゃあ お母さんの邪魔しないで	Entonces no molestes a mamá.	Then don't get in Mom's way.	False	False			
+4f44225d4b	10	11	9	0:00:35.950000	0:00:39.100000	4f44225d4b.mp3	4f44225d4b.webp	全部 エリクトのためなのに	Lo hace todo por mí.	This is all for Ericht's sake...	False	False			
+78f7b85355	14	13	12	0:00:39.100000	0:00:41.230000	78f7b85355.mp3	78f7b85355.webp	どうして ここに来ちゃったの?	¿Por qué viniste?	so why did you come here?	False	False			
+1cd3c592ec	17	15	16	0:00:41.850000	0:00:43.926000	1cd3c592ec.mp3	1cd3c592ec.webp	友達と学園に帰りなよ	Regresa a la escuela con tus amigos.	Go back to the school with your friends.	False	False			
+6d30ced519	19,21	20	18	0:00:44.630000	0:00:49.700000	6d30ced519.mp3	6d30ced519.webp	これは⸺　データストームの中でしか 生きられない 僕らの問題	Es problema nuestro porque solo podemos vivir en la tormenta.	This is a matter for those of us who can only live inside the data storm.	False	False			
+4969d2986c	23,26	24	22,25	0:00:49.690000	0:00:53.580000	4969d2986c.mp3	4969d2986c.webp	だから スレッタ⸺　君は諦めて	Tú olvídate de ello, Suletta.	So, Suletta... You must give up.	False	False			
+97ef8705dc	28	29	27	0:00:54.010000	0:00:55.500000	97ef8705dc.mp3	97ef8705dc.webp	嫌だ!	¡No!	No!	False	False			
+f745ed1016	31,33	32	30	0:00:55.500000	0:00:59.670000	f745ed1016.mp3	f745ed1016.webp	私は みんなのこと 見ないフリなんて⸺　できないよ!	¡No puedo fingir que no sé nada!	I can't turn a blind eye to you guys!	False	False			
+89ab185654	36	35	34	0:01:00.430000	0:01:03.670000	89ab185654.mp3	89ab185654.webp	スレッタの... 分からず屋	Eres muy terca, Suletta.	You're so stubborn, Suletta.	False	False			
+f465968fa0	38	39	37	0:01:10.840000	0:01:12.079000	f465968fa0.mp3	f465968fa0.webp	やめろ ラウダ!	¡Detente, Lauda!	Stop it, Lauda!	False	False			
+32894fcba3	41	42	40	0:01:12.050000	0:01:14.890000	32894fcba3.mp3	32894fcba3.webp	なんで あの船を狙うんだ!	¿Por qué atacas a la nave?	Why are you trying to attack that ship?!	False	False			
+a380d426c8	45	44	43	0:01:15.240000	0:01:16.490000	a380d426c8.mp3	a380d426c8.webp	にいさんこそ⸺	¿Y tú qué?	What about you, Brother...	False	False			
+aeee0dcc8a	47	48	46	0:01:16.950000	0:01:19.980000	aeee0dcc8a.mp3	aeee0dcc8a.webp	どうして あの女のそばにいるんだ!	¿Por qué estás con esa chica?	Why are you by that woman's side?	False	False			
+a11ab1020d	50	51	49	0:01:19.970000	0:01:21.560000	a11ab1020d.mp3	a11ab1020d.webp	ラウダ... うっ...	¿Lauda?	Lauda?	False	False			
+f6ef1dd4cf	53	54	52	0:01:22.290000	0:01:25.530000	f6ef1dd4cf.mp3	f6ef1dd4cf.webp	ミオリネが ガンダムを持ち出さなければ⸺	Si Miorine no hubiera involucrado a los Gundams,	If Miorine hadn't brought Gundams back into the world,	False	False			
+38a0cbb067	56	57	55	0:01:25.960000	0:01:27.390000	38a0cbb067.mp3	38a0cbb067.webp	ペトラは!	ahora Petra...	Petra wouldn't have...!	False	False			
+5e943963a7	59	61	60	0:01:33.184000	0:01:36.720000	5e943963a7.mp3	5e943963a7.webp	う... なんで ラウダが攻撃してくんだよ!	¿Por qué nos ataca Lauda?	Why the heck is Lauda attacking us?!	False	False			
+24e750b988	64	62	63	0:01:36.530000	0:01:38.189000	24e750b988.mp3	24e750b988.webp	知るか! うう...	¡Ni idea!	How should I know?!	False	False			
+1d932bf8ee	67	66	65	0:01:39.330000	0:01:40.920000	1d932bf8ee.mp3	1d932bf8ee.webp	フェルシー先輩!	¡Felsi!	Ms. Felsi!	False	False			
+b0431c9789	69	70	68	0:01:41.490000	0:01:43.080000	b0431c9789.mp3	b0431c9789.webp	このままじゃ巻き込まれる	Nos alcanzará.	We'll be caught up in the mess.	False	False			
+599662f429	72	73	71,74	0:01:43.080000	0:01:44.945000	599662f429.mp3	599662f429.webp	ニカ チュチュ! 了解	Nika. Chuchu. -Recibido.	Nika! Chuchu! Roger!	False	False			
+da046830fb	76	77	75	0:01:44.910000	0:01:47.489000	da046830fb.mp3	da046830fb.webp	デミバーディング いくぜ!	¡Vamos, Demi Barding!	Let's go, Demi Barding!	False	False			
+6b920d24c0	79,81	80,82	78	0:01:54.400000	0:01:58.980000	6b920d24c0.mp3	6b920d24c0.webp	データストーム空間に入ったら⸺　パーメット通信は かき消されるわ	La zona de la tormenta anulará las comunicaciones Permet.	Permet communications will be useless within data storm space.	False	False			
+0e07e048e4	85	83	84	0:01:58.970000	0:02:01.020000	0e07e048e4.mp3	0e07e048e4.webp	光無線通信に切り替えて	Cambien a las ópticas inalámbricas.	Change to optical wireless communications.	False	False			
+bd139234ec	88	87	86	0:02:01.010000	0:02:04.860000	bd139234ec.mp3	bd139234ec.webp	はい デミバーディング パーメットリンクを切断	Bien. Cortando enlace Permet del Demi Barding.	Right... Demi Barding, now terminating Permet link.	False	False			
+724bf44332	93,95	92,97	91,94,96	0:02:15.650000	0:02:21.250000	724bf44332.mp3	724bf44332.webp	死ぬー!　死ぬー! うわああー!	¡Moriremos! ¡Mamá!	We're gonna die! We're all gonna die! Mommy!	False	False			
+a37f3147d6	98	100	99	0:02:23.192000	0:02:26.190000	a37f3147d6.mp3	a37f3147d6.webp	ハア... ご... ごめん みんな	Lo siento, chicos.	S-Sorry, everybody!	False	False			
+53f64daa36	103,104	102	101	0:02:26.190000	0:02:31.130000	53f64daa36.mp3	53f64daa36.webp	パーメットなしの操縦って⸺　こんなに難しいんかよ	No sabía que era tan difícil pilotear sin Permet.	Is piloting without Permet really this hard?!	False	False			
+5ba2340afc	106	108	107	0:02:34.286000	0:02:38.180000	5ba2340afc.mp3	5ba2340afc.webp	あ... これが... データストーム?	¿Esto es la tormenta de datos?	Is this... the data storm?	False	False			
+2a2670c8ae	110	111	109	0:02:38.700000	0:02:41.660000	2a2670c8ae.mp3	2a2670c8ae.webp	この感覚 気持ち悪いんだよね	Es una sensación desagradable, ¿verdad?	This sensation is so unpleasant.	False	False			
+9accf4fc23	114	113	112	0:02:41.640000	0:02:44.230000	9accf4fc23.mp3	9accf4fc23.webp	さっさとクワイエット・ゼロに 行ってくれよ	Vayan a Quiet Zero cuanto antes.	Hurry up and get us to Quiet Zero!	False	False			
+83e999fd7d	116	117	115	0:02:44.230000	0:02:46.560000	83e999fd7d.mp3	83e999fd7d.webp	偉そうに指図すんなし!	¡A mí no me des órdenes!	Who put you in charge, loudmouth!	False	False			
+f79bb9fbbc	124	125	123	0:04:30.160000	0:04:31.153000	f79bb9fbbc.mp3	f79bb9fbbc.webp	よせ!	¡Detente!	Don't!	False	False			
+1ad9364647	128	127	126	0:04:31.120000	0:04:34.782000	1ad9364647.mp3	1ad9364647.webp	シュバルゼッテは... ガンダムは お前の命を!	El Schwarzette... ¡El Gundam te absorbe la vida!	The Schwarzette... the Gundam will take your life!	False	False			
+50a7c959ea	131	130	129	0:04:34.750000	0:04:38.090000	50a7c959ea.mp3	50a7c959ea.webp	だったら殺して止めなよ	En ese caso, mátame para detenerme.	Then why don't you stop me by killing me?	False	False			
+02138e1451	133	134	132	0:04:38.090000	0:04:39.570000	02138e1451.mp3	02138e1451.webp	父さんみたいに!	Como a papá.	Just like Dad?!	False	False			
+997a85be0a	138	137	136	0:04:41.570000	0:04:42.873000	997a85be0a.mp3	997a85be0a.webp	答えろ にいさん!	¡Contéstame!	Answer me, Brother!	False	False			
+65cfe01ca3	139	141	140	0:04:43.624000	0:04:46.680000	65cfe01ca3.mp3	65cfe01ca3.webp	なぜ 父さんのことを黙っていた!	¿Por qué no me dijiste lo de papá?	Why didn't you tell me about Dad?	False	False			
+642126fb49	143	144	142	0:04:46.680000	0:04:48.730000	642126fb49.mp3	642126fb49.webp	後ろめたかったからか!?	¿Te sentías culpable?	Was it out of guilt?	False	False			
+1244c24603	147	146	145	0:04:49.210000	0:04:52.430000	1244c24603.mp3	1244c24603.webp	僕には荷が重いと思ったのか!?	¿O es que creíste que no podría con ello?	Or did you think I couldn't bear the burden?	False	False			
+6299d8ab69	149	150	148	0:04:56.460000	0:04:59.700000	6299d8ab69.mp3	6299d8ab69.webp	そんなにも僕は頼りないか!	¿Tan poco me valoras?	Am I really that undependable?	False	False			
+16ca6979a2	152	153	151	0:04:59.690000	0:05:01.280000	16ca6979a2.mp3	16ca6979a2.webp	違う	¡No!	That's not it.	False	False			
+2f1586c52b	155	156	154	0:05:01.280000	0:05:03.400000	2f1586c52b.mp3	2f1586c52b.webp	父さんは俺の罪だ	Lo de papá es mi pecado.	What happened to Dad was my sin alone.	False	False			
+f303de5707	159	158	157	0:05:03.400000	0:05:06.410000	f303de5707.mp3	f303de5707.webp	俺が全部 背負うべきなんだ!	¡Debo cargar con ello yo!	I'm the one who should bear it all!	False	False			
+463ad17bcb	160,163	161	162	0:05:06.647000	0:05:09.942000	463ad17bcb.mp3	463ad17bcb.webp	フッ そういうところだよ　にいさん!	Eso es lo malo, hermano.	That's what's wrong with you, Brother...	False	False			
+e7a3350c75	165	166	164	0:05:12.350000	0:05:17.170000	e7a3350c75.mp3	e7a3350c75.webp	だから ミオリネにつけ込まれる ミオリネをすがる!	¡Por eso Miorine se aprovecha de ti y tú te aferras a ella!	That's how Miorine takes advantage of you, and why you cling to her!	False	False			
+5a23e5677b	168	169	170	0:05:20.702000	0:05:24.123000	5a23e5677b.mp3	5a23e5677b.webp	その高潔さが... 傲慢さが⸺	Tu nobleza y tu arrogancia.	That righteousness... That arrogance...	False	False			
+5c8bd0e1d4	173	172	171	0:05:24.570000	0:05:26.770000	5c8bd0e1d4.mp3	5c8bd0e1d4.webp	にいさんの罪だ!	¡Esos son tus pecados!	That's your sin!	False	False			
+e597c7e743	175	177	176	0:05:35.175000	0:05:37.310000	e597c7e743.mp3	e597c7e743.webp	小型艇の接近を確認	Se acerca una nave pequeña.	A small craft is approaching.	False	False			
+b5d7561ba4	180	179	178	0:05:37.310000	0:05:39.920000	b5d7561ba4.mp3	b5d7561ba4.webp	登録識別コード ベネリットグループ	Código de identificación de Benerit Group.	It has a Benerit Group registration code.	False	False			
+3860fbf7db	182	183	181	0:05:39.900000	0:05:42.010000	3860fbf7db.mp3	3860fbf7db.webp	交信信号を出しています	Nos envía una transmisión.	It's emitting a communication signal.	False	False			
+8b8491dd31	185	186,188	184,187	0:05:41.910000	0:05:45.030000	8b8491dd31.mp3	8b8491dd31.webp	1隻だけ? つなげ	¿Una sola? Conéctala.	It's alone? I'll talk to them.	False	False			
+a4598c3082	191	190	189	0:05:46.260000	0:05:49.750000	a4598c3082.mp3	a4598c3082.webp	議会連合 査察部 グストン・パーチェだ	Guston Parche, inspector de la Unión.	This is Guston Parche, a Space Assembly League inspector.	False	False			
+5cf2105fb2	192	193	194	0:05:49.690000	0:05:51.390000	5cf2105fb2.mp3	5cf2105fb2.webp	作戦本部と話がしたい	Quiero hablar con la central.	I'd like to speak to operation HQ.	False	False			
+4dadbcc845	197	196	195	0:05:51.850000	0:05:54.630000	4dadbcc845.mp3	4dadbcc845.webp	査察官が出る幕ではない	Esto no es asunto suyo, inspector.	What can an inspector do in this situation?	False	False			
+4239591aff	199	200	198	0:05:55.190000	0:05:59.010000	4239591aff.mp3	4239591aff.webp	企業統治体制は維持されている	Se respeta el sistema de control empresarial.	The corporate governance is still intact with our group.	False	False			
+ce9c1b8f92	203	204	202	0:06:01.690000	0:06:03.510000	ce9c1b8f92.mp3	ce9c1b8f92.webp	デリング・レンブラン	¿Delling Rembran?	Delling Rembran?	False	False			
+41b7e1e96a	207	206	205	0:06:04.200000	0:06:07.520000	41b7e1e96a.mp3	41b7e1e96a.webp	我が社は連合憲章に基づく⸺	Mi empresa solicita una reunión de emergencia	In accordance with the League Charter,	False	False			
+853e22e1a3	209	210	208	0:06:07.520000	0:06:11.770000	853e22e1a3.mp3	853e22e1a3.webp	緊急特別総会の開催を要求する	en base al Acta de la Unión.	we request the convening of an emergency special session.	False	False			
+820a190f61	213	212	211	0:06:11.770000	0:06:13.720000	820a190f61.mp3	820a190f61.webp	特別総会だと?	¿Una reunión de emergencia?	A special session?	False	False			
+59aac12da1	215	216	214	0:06:14.250000	0:06:17.030000	59aac12da1.mp3	59aac12da1.webp	全加盟代表を招集し⸺	Una con los representantes afiliados	Have all members send their representatives	False	False			
+7bd3b85833	218	219	217	0:06:17.030000	0:06:21.780000	7bd3b85833.mp3	7bd3b85833.webp	今回の介入行動の是非を 再審議したい	para deliberar de nuevo sobre la intervención actual.	and reconsider if it was justifiable to intervene in our group's affairs.	False	False			
+54f1b39675	220	221	222	0:06:25.309000	0:06:27.220000	54f1b39675.mp3	54f1b39675.webp	うう... 総裁	Presidente.	Mr. President...	False	False			
+521b1ccbc0	225	224	223	0:06:27.190000	0:06:29.900000	521b1ccbc0.mp3	521b1ccbc0.webp	ご協力 感謝します	Gracias por su colaboración.	I'm grateful... for your cooperation.	False	False			
+0a064a6f59	229	230	228	0:06:39.610000	0:06:41.340000	0a064a6f59.mp3	0a064a6f59.webp	下がって スレッタ	Vete, Suletta.	Stand down, Suletta.	False	False			
+685850a7d8	233	232	231	0:06:41.820000	0:06:44.680000	685850a7d8.mp3	685850a7d8.webp	僕は 君のこと傷つけたくない	No quiero lastimarte.	I don't want to hurt you.	False	False			
+4ea1bf4226	235	237	236	0:06:46.830000	0:06:50.550000	4ea1bf4226.mp3	4ea1bf4226.webp	ぐっ 私だって... そうだよ!	¡Yo tampoco!	Neither... do I!	False	False			
+03c03f6b83	239	240	238	0:06:50.550000	0:06:52.711000	03c03f6b83.mp3	03c03f6b83.webp	なら 止めないで	Pues no nos detengas.	Then don't stop us.	False	False			
+12306c5e31	243,244	242,245	241	0:06:52.680000	0:06:57.570000	12306c5e31.mp3	12306c5e31.webp	お母さんが望んでるの　エリィに居場所をって	Es lo que desea mamá. Crear un lugar para Eri.	Mom wants Eri to... have a place in the world.	False	False			
+a84c9b5e56	246	248	247	0:06:58.091000	0:07:01.678000	a84c9b5e56.mp3	a84c9b5e56.webp	ハアハア... そのために たくさんのフロントを飲み込むの?	¿Y para ello engullirán varios frentes?	Is it okay to gobble up all these fronts for that goal?	False	False			
+0eb61f0f00	249	251	250	0:07:01.803000	0:07:04.223000	0eb61f0f00.mp3	0eb61f0f00.webp	ハアハア... 命を奪うの!?	¿Arrebatarán vidas?	To take lives?!	False	False			
+cf5be863c0	253	254	252	0:07:04.190000	0:07:06.910000	cf5be863c0.mp3	cf5be863c0.webp	エリィは そんなことしないよ	Eri nunca haría eso.	Eri wouldn't do that.	False	False			
+4f24741388	257,258	256,259	255	0:07:07.340000	0:07:12.180000	4f24741388.mp3	4f24741388.webp	けど 邪魔するなら⸺　お母さんは ためらわない	Pero si te interpones, mamá no dudará.	But if they get in our way, Mom won't hesitate!	False	False			
+cc7eb644c6	261	262	260	0:07:12.180000	0:07:14.920000	cc7eb644c6.mp3	cc7eb644c6.webp	だから 止めたいの	Por eso quiero detenerlas.	That's why I want to stop her!	False	False			
+a1b16122ca	265	264	263	0:07:14.920000	0:07:19.170000	a1b16122ca.mp3	a1b16122ca.webp	お母さんを... ハア... 悪い魔法使いにしたくない!	No dejaré que mamá se vuelva una bruja malvada.	I don't want Mom... to become some evil magician!	False	False			
+cbf8b11f9a	269,271	268	267,270	0:07:27.530000	0:07:30.791000	cbf8b11f9a.mp3	cbf8b11f9a.webp	お願い スレッタ　僕らのことは忘れて	Por favor, Suletta, olvídate de nosotras.	Please, Suletta... Forget about us.	False	False			
+fc19ebf4a5	272	273	274	0:07:31.083000	0:07:34.711000	fc19ebf4a5.mp3	fc19ebf4a5.webp	ハアハアハアハアハア... 嫌!	¡No!	No!	False	False			
+d4e73ff233	276,280	278	277,279	0:07:36.088000	0:07:40.520000	d4e73ff233.mp3	d4e73ff233.webp	ハアハア 私は...　エリクトが好き	¡Te quiero, Ericht!	I... I care about you!	False	False			
+ab9d6aeab8	283	282	281	0:07:40.520000	0:07:42.900000	ab9d6aeab8.mp3	ab9d6aeab8.webp	お母さんが好き!	¡Quiero a mamá!	And Mom, too!	False	False			
+b8d8d8fc93	285,287	286	284,288	0:07:44.050000	0:07:48.950000	b8d8d8fc93.mp3	b8d8d8fc93.webp	お母さんが泣いてるなら...　ハアハア... 抱きしめてあげたい!	Si mamá llora, quiero abrazarla.	When Mom cries, I want to be there to hug her!	False	False			
+6946d804b6	289	291	290	0:07:49.226000	0:07:51.019000	6946d804b6.mp3	6946d804b6.webp	ハア... そばにいてあげたい!	Estar a su lado.	I want to be by her side!	False	False			
+0ac4ed6a1c	292,295	294	293,296	0:07:51.270000	0:07:55.870000	0ac4ed6a1c.mp3	0ac4ed6a1c.webp	ハアハア... 忘れることなんて...　ハアハア... できないよ!	¡No puedo olvidarlas!	There's no way... I could ever forget!	False	False			
+3104f9bc18	300	299	298	0:07:59.810000	0:08:01.630000	3104f9bc18.mp3	3104f9bc18.webp	残念だよ	Qué triste.	What a pity.	False	False			
+5d8a75ce90	304	303	302	0:08:10.160000	0:08:11.373000	5d8a75ce90.mp3	5d8a75ce90.webp	囲まれちゃった	Estamos rodeados.	We're surrounded.	False	False			
+6306f13c28	305	307	306	0:08:11.456000	0:08:13.910000	6306f13c28.mp3	6306f13c28.webp	ハア... ミオリネさん みんな!	¡Miorine! ¡Chicos!	Ms. Miorine! Everyone!	False	False			
+b51b5250c1	310	309	308	0:08:14.370000	0:08:16.930000	b51b5250c1.mp3	b51b5250c1.webp	スレッタが 分かってくれないなら⸺	Si no entras en razón,	If you don't understand, Suletta...	False	False			
+0cd93ed7c6	312	313	311	0:08:17.580000	0:08:19.172000	0cd93ed7c6.mp3	0cd93ed7c6.webp	僕もためらわない	yo tampoco dudaré.	than I won't hesitate, either.	False	False			
+7def1b8209	314	316	315	0:08:19.298000	0:08:21.383000	7def1b8209.mp3	7def1b8209.webp	ハアハア... エリクト!	¡Ericht!	Ericht!	False	False			
+0e9e75ce89	319	320	318,321	0:08:27.670000	0:08:31.240000	0e9e75ce89.mp3	0e9e75ce89.webp	お願い やめて エリクト!	¡Por favor, detente, Ericht!	Please! Stop it, Ericht!	False	False			
+2c80761d0a	325	326	324	0:08:49.750000	0:08:51.570000	2c80761d0a.mp3	2c80761d0a.webp	モビルスーツが...	Los Mobile Suits...	The mobile suits...	False	False			
+7314bf9328	328	329	327	0:08:52.030000	0:08:54.130000	7314bf9328.mp3	7314bf9328.webp	止まった?	¿Se detuvieron?	...stopped?	False	False			
+0c489a0c4e	331	332	330	0:08:54.130000	0:08:55.890000	0c489a0c4e.mp3	0c489a0c4e.webp	一体 何が...	¿Qué ocurrió?	What just happened?	False	False			
+e1bb39df26	335	334	333	0:08:55.890000	0:08:57.419000	e1bb39df26.mp3	e1bb39df26.webp	チュチュ ニカ!	¡Chuchu! ¡Nika!	Chuchu! Nika!	False	False			
+de60f1920c	337	338	336	0:08:57.390000	0:08:58.980000	de60f1920c.mp3	de60f1920c.webp	おっしゃー!	¡Sí!	Okay!	False	False			
+6b1f5c43bc	340	339	341,342	0:09:01.520000	0:09:04.210000	6b1f5c43bc.mp3	6b1f5c43bc.webp	どうして! なんで邪魔するの!?	¿Por qué sigues molestando?	Why? Why do you interfere?	False	False			
+c98019df81	344	345	343	0:09:04.670000	0:09:07.137000	c98019df81.mp3	c98019df81.webp	データストームのおかげで 願いが叶うのに!	¡La tormenta cumplirá nuestro deseo!	The data storm can make our wishes come true!	False	False			
+0f0928c84f	346		347	0:09:07.220000	0:09:09.306000	0f0928c84f.mp3	0f0928c84f.webp	ハアハア... は?		Huh?	False	False			
+9e9a180ad6	350	348	349	0:09:10.620000	0:09:11.808000	9e9a180ad6.mp3	9e9a180ad6.webp	原因は?	¿Cuál es la causa?	What caused it?	False	False			
+93e0f38abe	352	353	351	0:09:11.780000	0:09:14.610000	93e0f38abe.mp3	93e0f38abe.webp	データ干渉が発生しています	Hay una intervención de datos.	Data interference is occurring.	False	False			
+95b71b360c	355	356	354	0:09:14.610000	0:09:17.410000	95b71b360c.mp3	95b71b360c.webp	データストームの情報密度が低下中	Disminuye a densidad de información.	The data storm's information density is degrading.	False	False			
+4981a4b13b	359	357	358	0:09:18.120000	0:09:19.200000	4981a4b13b.mp3	4981a4b13b.webp	どちらへ?	¿Adónde va?	Where are you going?	False	False			
+34427a2a08	362	361	360	0:09:22.880000	0:09:24.730000	34427a2a08.mp3	34427a2a08.webp	害虫駆除よ	A eliminar una plaga.	To do pest control.	False	False			
+6eb7c0fb17	363,366	365	364	0:09:24.821000	0:09:30.570000	6eb7c0fb17.mp3	6eb7c0fb17.webp	艦長　議会連合本部から 秘匿通信のコールです	Capitana, tenemos una llamada oculta de la sede de la Unión.	Captain, Assembly League HQ is calling on a secure line.	False	False			
+1ec57d5978	369,370	368	367	0:09:32.240000	0:09:37.730000	1ec57d5978.mp3	1ec57d5978.webp	ラグランジュ1が所有する⸺　惑星間レーザー送電システム	Lagrange 1 tiene un sistema de transmisión láser interplanetaria.	Lagrange 1 has an interplanetary laser power transmission system.	False	False			
+80e494ea21	373	372	371	0:09:37.730000	0:09:40.003000	80e494ea21.mp3	80e494ea21.webp	あれを使用してもらいたい	Me gustaría usarlo.	We'd like you to use it.	False	False			
+631e055f66	376	375	374	0:09:40.460000	0:09:43.690000	631e055f66.mp3	631e055f66.webp	デリングの要求した特別総会は?	¿Y la reunión que solicitó Delling?	What about the special session that Delling requested?	False	False			
+102060176b	378	379	377	0:09:43.690000	0:09:47.690000	102060176b.mp3	102060176b.webp	そんな要求は受け取っていないよ	No aceptamos sus condiciones.	We've received no such request.	False	False			
+babc1dcf65	380,384	382	381,383	0:09:48.178000	0:09:54.090000	babc1dcf65.mp3	babc1dcf65.webp	送電システムを 隠れみのに開発している⸺　惑星間攻撃兵器...	El sistema láser es una tapadera para desarrollar un arma interplanetaria.	An interplanetary weapon developed under the guise of a power transmission system...	False	False			
+02a5ca7bcd	388,389	387	385,386	0:09:54.590000	0:09:59.510000	02a5ca7bcd.mp3	02a5ca7bcd.webp	今回は どうやら⸺　それが誤作動を 起こしてしまった	Y así parece que esta vez se activó por error.	L1 Interplanetary Laser Transmission System "ILTS" I wonder, what if it were to be mistakenly activated?	False	False			
+75076a2002	391,395	392,394	390,393	0:09:59.490000	0:10:05.380000	75076a2002.mp3	75076a2002.webp	あれを使えば ベネリットどころか⸺　ラグランジュ4全域に 被害を及ぼします	Si se usa, toda la zona de Lagrange 4 recibirá daños, no solo Benerit.	If we use that thing, it'll devastate not just Benerit but all of Lagrange 4.	False	False			
+a63e7fde1d	397,400	398	396,399	0:10:05.380000	0:10:10.130000	a63e7fde1d.mp3	a63e7fde1d.webp	その責任は誰が?　もちろん 我々が取る	¿Quién asumirá la responsabilidad? -Nosotros, obviamente.	Who'll take responsibility? We will, of course.	False	False			
+981a7f4a88	402	403	401	0:10:11.190000	0:10:13.850000	981a7f4a88.mp3	981a7f4a88.webp	議会連合の失態を受け⸺	Tras el error de la Unión,	To make up for the Assembly League's blunder,	False	False			
+f9e8ef5505	405	406	404	0:10:13.850000	0:10:18.510000	f9e8ef5505.mp3	f9e8ef5505.webp	ラグランジュ1の自治政府及び 有志ある企業群が⸺	los gobiernos y empresas autónomos de Lagrange 1	I imagine Lagrange 1's sovereign government and corporate volunteers	False	False			
+638c17c2ab	408	409	407	0:10:18.510000	0:10:21.770000	638c17c2ab.mp3	638c17c2ab.webp	復興を先導することになるだろう	encabezarán la reconstrucción.	will lead the rebuilding efforts.	False	False			
+e9fc8f5a4d	411,414,415	412,416	410,413	0:10:21.770000	0:10:30.190000	e9fc8f5a4d.mp3	e9fc8f5a4d.webp	調停後のグループ取締は⸺　弊社からと⸺　お約束いただきましたから	Nuestra empresa supervisará el grupo tras la mediación. Se nos prometió.	And when the arbitration is over, you promise that our company will be in control of the Group.	False	False			
+191de19273	418	419	417	0:10:43.780000	0:10:46.430000	191de19273.mp3	191de19273.webp	行きますよ ついてきてください	Vamos. Síganme.	Let's go. Follow me.	False	False			
+56e491d102	421	422	420	0:10:48.370000	0:10:51.690000	56e491d102.mp3	56e491d102.webp	この中はデータストーム 平気みたいだね	Aquí dentro, la tormenta se sobrelleva.	The data storm seems calmer in here.	False	False			
+b935be0eec	424	425	423	0:10:51.690000	0:10:53.470000	b935be0eec.mp3	b935be0eec.webp	助かったー	Qué alivio.	Thank goodness!	False	False			
+2dc1294955	428	429	427	0:10:57.830000	0:10:59.791000	2dc1294955.mp3	2dc1294955.webp	これを え?	Toma.	Take this.	False	False			
+f49308a5bd	431	432	430	0:10:59.920000	0:11:02.090000	f49308a5bd.mp3	f49308a5bd.webp	訓練は受けたことあるんでしょ?	Estás entrenada, ¿no?	You've had training, haven't you?	False	False			
+da66175f67	434	435	433	0:11:02.070000	0:11:03.930000	da66175f67.mp3	da66175f67.webp	無理です 私には...	No puedo...	I could never-	False	False			
+f58d119b14	437	438	436	0:11:03.920000	0:11:06.780000	f58d119b14.mp3	f58d119b14.webp	学生に渡すわけにもいきませんから	No se la daré a un estudiante.	I can't very well hand it to a student.	False	False			
+ee7dd96fa7	442	441	440	0:11:09.220000	0:11:12.550000	ee7dd96fa7.mp3	ee7dd96fa7.webp	よーし さっさと停止コード打ち込もうぜ	Usemos los códigos de detención de una vez.	Okay! Let's go punch in that shutdown code.	False	False			
+08b57efabe	443	445	444	0:11:12.471000	0:11:15	08b57efabe.mp3	08b57efabe.webp	ちょ... ちょっと待って チュチュ!	¡Espera, Chuchu!	W-Wait, Chuchu!	False	False			
+322b1819c8	449,450	448	447,451	0:11:18.560000	0:11:21.800000	322b1819c8.mp3	322b1819c8.webp	ハロ?　侵入者は排除します	¿Un Haro? -Los intrusos serán eliminados.	A Haro? Intruders will be eliminated.	False	False			
+d24639391e	454	455	453,456	0:11:29.610000	0:11:33.270000	d24639391e.mp3	d24639391e.webp	これが... ガンダム...	¿Así son los Gundams?	So this is... a Gundam?	False	False			
+f6046c2079	457	458	459	0:11:34.159000	0:11:37.130000	f6046c2079.mp3	f6046c2079.webp	これなら... にいさんに並べる!	Con esto puedo estar a la altura de Guel.	With this, I'm a match for my brother!	False	False			
+36fc9d6e34	462	461	460	0:11:38.170000	0:11:40.430000	36fc9d6e34.mp3	36fc9d6e34.webp	にいさんを止められる!	¡Podré detenerlo!	I can stop him!	False	False			
+60db1e1660	465,467	464	463,466	0:11:40.880000	0:11:44.850000	60db1e1660.mp3	60db1e1660.webp	魔女を...　ミオリネを...	Y eliminar a la bruja. A Miorine.	I can stop the witches... and Miorine!	False	False			
+d865b927ec	470,472	469	468,471	0:11:44.850000	0:11:48.757000	d865b927ec.mp3	d865b927ec.webp	ラウダ もうやめるんだ!　これ以上は...	¡Suficiente, Lauda! ¡No sigas!	Lauda! Why don't you quit this?! Any further, and-	False	False			
+c6e2af4dc4	474	475	473	0:11:48.720000	0:11:51.550000	c6e2af4dc4.mp3	c6e2af4dc4.webp	目を覚ますのは にいさんだ!	¡Abre los ojos, hermano!	It's you who should wake up, Brother!	False	False			
+13f3ee1a4f	477	478	476	0:11:58.400000	0:12:00.900000	13f3ee1a4f.mp3	13f3ee1a4f.webp	父さんを殺した罪を...	La muerte de papá.	The crime of killing our father,	False	False			
+656f86a7dc	480	481	479	0:12:00.900000	0:12:03.740000	656f86a7dc.mp3	656f86a7dc.webp	ペトラを傷つけた罪を...	El daño que sufrió Petra.	the crime of wounding Petra...	False	False			
+7ebbf3e4dc	484	483	482	0:12:03.740000	0:12:07.410000	7ebbf3e4dc.mp3	7ebbf3e4dc.webp	あの女に償わせないというなら...	Si no la harás pagar por ello...	If you won't make that woman pay for it...	False	False			
+836bd609b4	485	487	486	0:12:07.400000	0:12:09.370000	836bd609b4.mp3	836bd609b4.webp	違う! 聞け ラウダ!	¡No! ¡Escúchame, Lauda!	You're wrong! Listen to me, Lauda!	False	False			
+7c1ca39335	489,491	490	488	0:12:09.350000	0:12:13.114000	7c1ca39335.mp3	7c1ca39335.webp	僕が ジェタークの誇りを守る!　は...	¡Yo defenderé el orgullo de los Jeturk!	I will defend the honor of the Jeturk name!	False	False			
+b0369b6ff8	493	494	492	0:12:14.620000	0:12:18.190000	b0369b6ff8.mp3	b0369b6ff8.webp	魔女に取り込まれた にいさんの代わりに⸺	A ti te confundió esa bruja,	In place of my brother, who is in thrall to a witch,	False	False			
+fd127dc496	496	497	495	0:12:18.190000	0:12:21.390000	fd127dc496.mp3	fd127dc496.webp	僕が罪をすべて背負う!	así que cargaré con tus pecados.	I will shoulder all of their sins!	False	False			
+32fa5d354d	499	500	498	0:12:21.380000	0:12:25.270000	32fa5d354d.mp3	32fa5d354d.webp	僕が... ラウダ・ジェタークが!	¡Yo, Lauda Jeturk!	I will... Lauda Jeturk will...!	False	False			
+af027f8ef2	502	504	503	0:12:37.639000	0:12:39.670000	af027f8ef2.mp3	af027f8ef2.webp	お前がラウダか	¿Tú eres Lauda?	You're Lauda?	False	False			
+f489d2ca3f	508,512	507,510	506,509,511	0:12:49.820000	0:12:55.430000	f489d2ca3f.mp3	f489d2ca3f.webp	グエルだ 俺に弟がいたなんて　スッゲえ うれしい	Soy Guel. Me alegra mucho tener un hermano pequeño.	I'm Guel. Now I have a little brother! I'm super happy.	False	False			
+7b9b3ab3a6	514	516	515	0:13:04.666000	0:13:07.650000	7b9b3ab3a6.mp3	7b9b3ab3a6.webp	に... にいさ...	Gu...	Brother...?	False	False			
+9ce91476cc	519	518	517	0:13:09.010000	0:13:11.160000	9ce91476cc.mp3	9ce91476cc.webp	お前の言うとおりだ	Tienes razón.	You're right.	False	False			
+a5e5cc3eac	521	522	520	0:13:11.760000	0:13:13.091000	a5e5cc3eac.mp3	a5e5cc3eac.webp	父さんのこと...	Lo de papá...	About Dad...	False	False			
+076e78ba87	525,529	524,527	523,526,528	0:13:14.760000	0:13:21.630000	076e78ba87.mp3	076e78ba87.webp	みんなが... お前が...　許してくれなかったらって...	Y todo lo demás. Si tú no me lo perdonas...	If everyone... If you... can't forgive me, I...	False	False			
+1625b5e6ce	532	533	531	0:13:24.600000	0:13:27.170000	1625b5e6ce.mp3	1625b5e6ce.webp	にいさん 逃げて...	Corre, Guel.	Brother! Run!	False	False			
+9178607a1b	535	536	534	0:13:27.170000	0:13:30.250000	9178607a1b.mp3	9178607a1b.webp	俺は もう逃げない	No huiré más.	I'll... never run again.	False	False			
+3a23714b0b	538	539	537	0:13:30.700000	0:13:33.630000	3a23714b0b.mp3	3a23714b0b.webp	父さんからも お前からも	Ni de papá ni de ti.	From Dad or from you.	False	False			
+ca55953d5d	543	542	541	0:13:34.610000	0:13:36.010000	ca55953d5d.mp3	ca55953d5d.webp	だから⸺	Así que...	So at least...	False	False			
+3f4b999b9f	546	545	544	0:13:38.240000	0:13:41.900000	3f4b999b9f.mp3	3f4b999b9f.webp	ガンダムなんて... もう乗るな	no pilotees de nuevo un Gundam.	Don't go piloting a Gundam anymore.	False	False			
+b00944efa7	547	549	548	0:13:43.705000	0:13:47.370000	b00944efa7.mp3	b00944efa7.webp	あ... ごめ... にいさ...	Lo siento, Guel.	I'm sorry, Brother...	False	False			
+c1cf24d036	552	551	550	0:13:49.510000	0:13:51.170000	c1cf24d036.mp3	c1cf24d036.webp	ごめ...	Lo siento.	I'm sorry!	False	False			
+0c029ef7d9	556	555	554	0:13:56.510000	0:13:58.887000	0c029ef7d9.mp3	0c029ef7d9.webp	2人共 バカなんすか!	¿Son idiotas o qué les pasa?	Just how stupid are you two?!	False	False			
+1f338f4aa2	559	558	557	0:13:58.830000	0:13:59.950000	1f338f4aa2.mp3	1f338f4aa2.webp	フェルシー!	¿Felsi?	Felsi?!	False	False			
+81df1be374	561,564	562	560,563	0:13:59.830000	0:14:04.280000	81df1be374.mp3	81df1be374.webp	兄弟ゲンカで死ぬとか!　マジ笑えないっすから!	¡Morir en una pelea entre hermanos es estúpido!	Dying in a sibling spat?! If that's a joke, it's not funny!	False	False			
+381867a52e	566	568	567	0:14:07.020000	0:14:10.200000	381867a52e.mp3	381867a52e.webp	ハア... そうだな	Tienes razón.	You said it...	False	False			
+f9e3d17222	571	570	569	0:14:11.610000	0:14:15.260000	f9e3d17222.mp3	f9e3d17222.webp	ホント 笑えないな	Es completamente estúpido.	It really wouldn't... be that funny.	False	False			
+6ddb550237	574	575	573	0:14:19.490000	0:14:21.300000	6ddb550237.mp3	6ddb550237.webp	バカ 頭下げろ!	¡Agáchate, idiota!	Idiot! Lower your head!	False	False			
+90935d9852	577	578	576	0:14:21.290000	0:14:23.270000	90935d9852.mp3	90935d9852.webp	てめっ どこでんーなもん!	¿De dónde la sacaste?	Where the hell did you get that?	False	False			
+c1fb7ef725	580	581	579	0:14:23.270000	0:14:24.930000	c1fb7ef725.mp3	c1fb7ef725.webp	いいだろ どこでも	¿Qué importa eso?	Hell, who cares?	False	False			
+f875698c9f	582	584	583	0:14:25.080000	0:14:28.792000	f875698c9f.mp3	f875698c9f.webp	うう... ウィンストンさん ミオリネ代表とコアブロックに!	Winston, ve al bloque central con Miorine.	Ms. Winston, take President Miorine to the core block!	False	False			
+89f15f1221	587	586	585	0:14:28.650000	0:14:29.542000	89f15f1221.mp3	89f15f1221.webp	でも...	Pero...	But...	False	False			
+8529e7a932	589	590	588	0:14:29.510000	0:14:30.950000	8529e7a932.mp3	8529e7a932.webp	行って ミオリネ!	¡Ve, Miorine!	Go, Miorine!	False	False			
+30fc27f3da	592	593	591	0:14:30.950000	0:14:32.629000	30fc27f3da.mp3	30fc27f3da.webp	さっさとカタつけてこい!	¡Acaba con esto!	Go and finish the job!	False	False			
+42b7a692ad	595	596	594	0:14:32.600000	0:14:34.850000	42b7a692ad.mp3	42b7a692ad.webp	できるだけ早くお願い!	Háganlo lo más rápido posible.	As quickly as possible, please!	False	False			
+99ad93e695	599	600	598	0:14:42.970000	0:14:44.380000	99ad93e695.mp3	99ad93e695.webp	行きましょう	En marcha.	Let's go.	False	False			
+5cb0fbcc95	603,605	602,604	601	0:14:44.940000	0:14:48.450000	5cb0fbcc95.mp3	5cb0fbcc95.webp	こっちは任せて　今度は殺させないよ	Yo me encargo. Esta vez no matarán a nadie.	Let me take care of them. Nobody will get killed this time.	False	False			
+4768872357	608	607	606	0:14:49.730000	0:14:52.620000	4768872357.mp3	4768872357.webp	いちいち嫌味だねえ	Hablas mucho.	Always rubbing it in...	False	False			
+f22df09f15	611	610	609	0:15:00.120000	0:15:01.157000	f22df09f15.mp3	f22df09f15.webp	ここです	Es aquí.	In here.	False	False			
+e9fb0873e5	614	613	612	0:15:07.710000	0:15:09.749000	e9fb0873e5.mp3	e9fb0873e5.webp	早く停止させてくれよ	Detenlo de una buena vez.	Hurry up and shut it down.	False	False			
+9127b4f69e	616		615	0:15:09.610000	0:15:10.500000	9127b4f69e.mp3	9127b4f69e.webp	分かってる		I know, okay?	False	False			
+8a74670fa4	622	621	620	0:15:13.960000	0:15:15.088000	8a74670fa4.mp3	8a74670fa4.webp	代わります	Déjame.	Let me try.	False	False			
+842537a2b5	625	626	624	0:15:17.180000	0:15:18.830000	842537a2b5.mp3	842537a2b5.webp	どうして...	¿Por qué...?	Why?	False	False			
+1ebaea56d3	628,631	629	627,630	0:15:19.180000	0:15:23.400000	1ebaea56d3.mp3	1ebaea56d3.webp	緊急停止コードなら⸺　変更させてもらったわ	Cambié los códigos de detención de emergencia.	If that's the emergency shutdown code, I took the liberty of changing it.	False	False			
+b52c9b767a	634	633	632	0:15:24.020000	0:15:26.580000	b52c9b767a.mp3	b52c9b767a.webp	気付いてないとでも思った?	¿Creíste que no lo sabía?	Did you think I was so careless?	False	False			
+fd6793945d	636	637	635	0:15:30.860000	0:15:33.960000	fd6793945d.mp3	fd6793945d.webp	ミオリネは今 お母さんといるよ	Miorine está con mamá.	Miorine is with Mom now.	False	False			
+3e26f8dfae	640,642	641	639	0:15:34.780000	0:15:38.850000	3e26f8dfae.mp3	3e26f8dfae.webp	1つを手に入れるためなら⸺　お母さんは...	Si es para ganar una cosa, mamá...	If it's to gain one, Mom will...	False	False			
+ae9a9a81c4	644	645	643	0:15:38.850000	0:15:40.390000	ae9a9a81c4.mp3	ae9a9a81c4.webp	ダメ!	¡No!	No!	False	False			
+44dcc78fc6	647,649	648	646	0:15:40.680000	0:15:45.010000	44dcc78fc6.mp3	44dcc78fc6.webp	なら 僕とお母さんから⸺　居場所を奪わないで	Pues no nos robes el hogar a mamá y a mí.	Then don't take away the place where Mom and I can live freely.	False	False			
+5e1e2a32ca	650	652	651	0:15:48.038000	0:15:50.470000	5e1e2a32ca.mp3	5e1e2a32ca.webp	先輩 もうやめてください!	¡Detén esto!	Ma'am! Please stop this now!	False	False			
+abbc266709	654	655	653	0:15:50.470000	0:15:52.110000	abbc266709.mp3	abbc266709.webp	どうして?	¿Por qué?	Why?	False	False			
+c836efe6fd	657	658	656	0:15:52.110000	0:15:55.770000	c836efe6fd.mp3	c836efe6fd.webp	エリィはヴァナディースの理念に 祝福された子よ?	Eri fue bendecida por los ideales de Vanadis.	Eri is the child blessed by Vanadis's ideals.	False	False			
+b9e4e144e9	660	661	659	0:15:56.510000	0:15:59.810000	b9e4e144e9.mp3	b9e4e144e9.webp	なのに この世界には あの子の居場所がない	Pero no hay lugar para ella en este mundo.	Yet there's no place for her in this world.	False	False			
+6b630a5aa2	664	663	662	0:16:00.430000	0:16:02.270000	6b630a5aa2.mp3	6b630a5aa2.webp	だから作らなくちゃ	Por eso debemos creárselo.	So I'll have to make one.	False	False			
+91994f1464	666	667	665	0:16:03.010000	0:16:06.400000	91994f1464.mp3	91994f1464.webp	エリィが幸せになれる場所を	Un lugar en el que pueda ser feliz.	A place where Eri can be happy.	False	False			
+871dbd1ba8	671	670	669,672	0:16:07.140000	0:16:11.186000	871dbd1ba8.mp3	871dbd1ba8.webp	エリィ エリィって... スレッタは どうでもいいわけ!?	Siempre hablas de Eri... ¿Y no importa qué le suceda a Suletta?	Eri, Eri... Don't you care about Suletta at all?	False	False			
+15c0c039e7	675	674	673	0:16:11.150000	0:16:12.960000	15c0c039e7.mp3	15c0c039e7.webp	愛してるわよ	La amo.	I do love her.	False	False			
+ab81263fc2	677	678	676	0:16:12.960000	0:16:15.580000	ab81263fc2.mp3	ab81263fc2.webp	でも あの子には あなたたちがいるでしょ?	Pero ella los tiene a ustedes, ¿no?	But now she has friends like you.	False	False			
+59ecd2c8da	680	681	679	0:16:17.030000	0:16:20.670000	59ecd2c8da.mp3	59ecd2c8da.webp	スレッタが どんな思いで キャリバーンに乗ってるか分かる!?	¿Sabes por qué subió al Calibarn?	Can you imagine how Suletta feels aboard the Calibarn?	False	False			
+99ed9854e8	683	684	682	0:16:21.910000	0:16:24.450000	99ed9854e8.mp3	99ed9854e8.webp	死んじゃうかもって震えてた!	Temblaba porque podría morir.	She was trembling with fear that she might die.	False	False			
+8131a63241	687,688	686	685	0:16:24.870000	0:16:28.670000	8131a63241.mp3	8131a63241.webp	それでも⸺　あんたたちのことが好きだから!	Pero lo ignoró porque las quiere.	But even so, because she cares for you both...	False	False			
+d538facbbf	691	690	689	0:16:29.170000	0:16:31.090000	d538facbbf.mp3	d538facbbf.webp	愛してるから!	¡Porque las ama!	because she loves you...	False	False			
+cfcd2e7d22	694	693	692	0:16:32.040000	0:16:35.600000	cfcd2e7d22.mp3	cfcd2e7d22.webp	母親なら 等しく愛してやりなさいよ!	Si eres su madre, ¡ámala igual!	If you're a mother, then love your daughters equally!	False	False			
+fe67a2646b	697	698	696	0:16:37.460000	0:16:39.050000	fe67a2646b.mp3	fe67a2646b.webp	言ってくれるじゃない	Eres muy crítica.	That's none of your business...	False	False			
+db050f81bd	702	701	700	0:16:43.180000	0:16:45.710000	db050f81bd.mp3	db050f81bd.webp	おい プログラムから見直す気か?	¿Acaso revisarás el programa?	Hey! Are you trying to reprogram it or something?	False	False			
+2c56653b65	705	704	703	0:16:45.710000	0:16:48.100000	2c56653b65.mp3	2c56653b65.webp	管理者権限を回避できれば!	Si evito los privilegios de administrador...	If I can get around the admin rights...	False	False			
+cab56f93cb	710	709	708	0:16:54.520000	0:16:57.840000	cab56f93cb.mp3	cab56f93cb.webp	さあ おとなしくユニットを渡し...	Entréguenme la uni...	Now, be a good girl and hand over those units-	False	False			
+6b4e82ec90	714,715	713	712,716	0:16:59.990000	0:17:05.031000	6b4e82ec90.mp3	6b4e82ec90.webp	これ以上⸺　逃げ回っていられないの 私は!	Ya no puedo seguir huyendo.	I can't... keep running any longer... I...	False	False			
+3c133faf95	718	719	717	0:17:17	0:17:18.640000	3c133faf95.mp3	3c133faf95.webp	早く 急げ!	¡Date prisa!	Hurry! Quick!	False	False			
+845ea16bcb	721	722	720	0:17:18.640000	0:17:20.990000	845ea16bcb.mp3	845ea16bcb.webp	うるさい! 分かってる!	¡Cállate! ¡Ya lo sé!	Shut up! I know, already!	False	False			
+06b4c5f291	726,728	727	725	0:17:29.100000	0:17:33.840000	06b4c5f291.mp3	06b4c5f291.webp	そしたら遺伝子コードに⸺　"メッセージ未知なものが"って...	En el código genético había una especie de mensaje.	There was an unknown message in the genetic code.	False	False			
+b8da4ef948	731	730	729	0:17:33.840000	0:17:36.938000	b8da4ef948.mp3	b8da4ef948.webp	文字コードに変換したら 言葉になったって	Al transformarlo en letras, aparecieron palabras.	When we converted it to text, it turned out to be words.	False	False			
+14315d178f	735	734	733	0:17:41.210000	0:17:42.470000	14315d178f.mp3	14315d178f.webp	私も⸺	"Yo también...	I'll always...	False	False			
+2143c4d0e1	738	737	736	0:17:44.050000	0:17:45.620000	2143c4d0e1.mp3	2143c4d0e1.webp	愛してる	te amo".	love you too.	False	False			
+9224fcb81b	741	742	740	0:17:50.660000	0:17:53.340000	9224fcb81b.mp3	9224fcb81b.webp	すべては かわいい我が子のため	Todo sea por mi amada hija.	All for the love of my precious child.	False	False			
+3988d12dc2	744	745	743	0:17:54.830000	0:17:57.900000	3988d12dc2.mp3	3988d12dc2.webp	母は強しよ お嬢さん	Las madres somos muy fuertes, señorita.	A mother can be very strong, young lady.	False	False			
+237e1c5691	747	748	746	0:18:04.130000	0:18:05.520000	237e1c5691.mp3	237e1c5691.webp	お母さん!	¡Mamá!	Mom!	False	False			
+ac091cbb1f	752	751	750	0:18:21.650000	0:18:23.193000	ac091cbb1f.mp3	ac091cbb1f.webp	通信つながった!	Tenemos conexión.	We have a signal!	False	False			
+166c10468c	755	754	753	0:18:23.160000	0:18:25.361000	166c10468c.mp3	166c10468c.webp	パーメットリンク 接続確認	Enlace Permet confirmado.	Permet link established.	False	False			
+2759beac99	758	757	756	0:18:25.830000	0:18:27.730000	2759beac99.mp3	2759beac99.webp	コール 開始してください	Inicien el llamamiento.	Commence calling.	False	False			
+dc78db126d	760		759	0:18:27.640000	0:18:28.531000	dc78db126d.mp3	dc78db126d.webp	了解		Roger.	False	False			
+fa832ad222	763	761	762	0:18:28.040000	0:18:31.730000	fa832ad222.mp3	fa832ad222.webp	クワイエット・ゼロの 内部システムに侵入する	Recibido. Entrando en el sistema de Quiet Zero.	Now infiltrating Quiet Zero's internal systems.	False	False			
+5114c65047	766	765	764	0:18:40.760000	0:18:41.961000	5114c65047.mp3	5114c65047.webp	お母さん!	¡Mamá!	Mom!	False	False			
+264cdbb909	769	768	767	0:18:41.930000	0:18:43.990000	264cdbb909.mp3	264cdbb909.webp	すべてセキュリティに回せ!	Úsenlo todo en seguridad.	Route everything to security!	False	False			
+de020bfb4b	770	772	771	0:18:43.922000	0:18:45.820000	de020bfb4b.mp3	de020bfb4b.webp	ダメです 追いつきません!	No podemos seguir el ritmo.	It's no use. There's too much.	False	False			
+8fda5a0eb1	779	778	777	0:19:09.530000	0:19:10.800000	8fda5a0eb1.mp3	8fda5a0eb1.webp	止まった?	¿Se detuvo?	It stopped?	False	False			
+2bc32e6f9e	781	782	780	0:19:11.330000	0:19:13.630000	2bc32e6f9e.mp3	2bc32e6f9e.webp	データストーム消失しました	La tormenta desapareció.	The data storm has dissipated.	False	False			
+aa96611a19	784	785	783	0:19:13.980000	0:19:16.030000	aa96611a19.mp3	aa96611a19.webp	皆さん 無事です!	¡Estamos bien!	Everyone is okay!	False	False			
+0a1d766615	789	788	787	0:19:16.870000	0:19:18.970000	0a1d766615.mp3	0a1d766615.webp	おっしゃー!	¡Genial!	Yes!	False	False			
+896442687a	791	792	790	0:19:18.970000	0:19:21.280000	896442687a.mp3	896442687a.webp	作戦成功っす!	¡Misión cumplida!	Mission accomplished!	False	False			
+62ef0d86d7	797	796	795	0:19:25.170000	0:19:27.100000	62ef0d86d7.mp3	62ef0d86d7.webp	人殺しは向いてないね	No eres una buena asesina.	You're not so good at killing people.	False	False			
+51ab8208e8	799	800	798	0:19:27.630000	0:19:29.980000	51ab8208e8.mp3	51ab8208e8.webp	次からは人助けにしときなよ	Mejor dedícate a salvar a alguien.	Next time, try helping them instead.	False	False			
+845e1dfbb2	803	804	802	0:19:32.540000	0:19:34.610000	845e1dfbb2.mp3	845e1dfbb2.webp	進めば2つ	Si avanzas, ganas dos.	"Move forward, gain two."	False	False			
+697870bc23	807	806	805	0:19:35.100000	0:19:37.210000	697870bc23.mp3	697870bc23.webp	あんたの言葉でしょ?	Lo decías tú, ¿no?	Those were your words, right?	False	False			
+eaa1caca6f	809	810	808	0:19:37.210000	0:19:39.880000	eaa1caca6f.mp3	eaa1caca6f.webp	だったら言葉どおり進みなさいよ	Pues aprende de ello y avanza.	Then do as you say and move forward.	False	False			
+37af0dfa72	813	812	811	0:19:40.480000	0:19:43.790000	37af0dfa72.mp3	37af0dfa72.webp	あんたも スレッタもエリクトも	Suletta, Ericht y tú.	You, Suletta, Ericht...	False	False			
+2881d3e205	815,817	816	814	0:19:44.160000	0:19:47.750000	2881d3e205.mp3	2881d3e205.webp	私たち⸺　家族になるんだから	Porque seremos familia.	All of us... will be family, after all.	False	False			
+0bd52fbd03	820	819	818	0:19:49.700000	0:19:53	0bd52fbd03.mp3	0bd52fbd03.webp	クワイエット・ゼロは機能停止した	Quiet Zero se detuvo.	Quiet Zero has shut down.	False	False			
+3cca454a5f	822	823	821	0:19:53.700000	0:19:56.380000	3cca454a5f.mp3	3cca454a5f.webp	どうか お引き取りを	Retírense, por favor.	Now if you could please leave us...	False	False			
+a2a439726a	824	826	825	0:19:56.869000	0:19:58.420000	a2a439726a.mp3	a2a439726a.webp	いいや あ...	No.	I'm afraid not.	False	False			
+a6974f0fbe	828,830	829	827	0:19:58.420000	0:20:04.490000	a6974f0fbe.mp3	a6974f0fbe.webp	君たち企業は⸺　大きくなりすぎた	Sus empresas se volvieron demasiado grandes.	You and your companies have grown far too big.	False	False			
+81714824dc	832	833	831	0:20:06.680000	0:20:09.440000	81714824dc.mp3	81714824dc.webp	送電準備フェーズ 5に移行	Preparativos de transmisión en fase 5.	Moving power transmission preparation to Phase 5.	False	False			
+c3a4032924	836	835	834	0:20:09.430000	0:20:12.270000	c3a4032924.mp3	c3a4032924.webp	アレイ設定 誤差範囲内	Matriz establecida en parámetros aceptables.	Array setup within error range.	False	False			
+72d5fe5b0f	838	839	837	0:20:12.270000	0:20:15.250000	72d5fe5b0f.mp3	72d5fe5b0f.webp	位相制御システム 問題なし	Sistema de control de fase correcto.	Phase control systems, all green.	False	False			
+9bdae8ba86	841	842	840	0:20:16.390000	0:20:19.540000	9bdae8ba86.mp3	9bdae8ba86.webp	照準情報 軌道予測完了	Previsión de trayectoria finalizada.	Targeting data, trajectory prediction complete.	False	False			
+33ea1e0cb4	845	844	843	0:20:24.730000	0:20:27.340000	33ea1e0cb4.mp3	33ea1e0cb4.webp	惑星間レーザー送電システム	Iniciando prueba de rayo de alta potencia	Interplanetary laser transmission system,	False	False			
+eaa22496ad	847	848	846	0:20:27.340000	0:20:30.850000	eaa22496ad.mp3	eaa22496ad.webp	大出力照射実験 開始します	del sistema de transmisión láser interplanetaria.	commencing test firing at high output.	False	False			
+6de40e0d8a	849	851	850	0:20:38.411000	0:20:40.830000	6de40e0d8a.mp3	6de40e0d8a.webp	あ... ダメ!	¡No!	No!	False	False			
+8cf7304476	854	855	853	0:20:50.150000	0:20:52.450000	8cf7304476.mp3	8cf7304476.webp	エリィ やめなさい!	¡No, Eri!	Eri! Stop that!	False	False			
+97b6e02972	861	863	860	0:21:52.780000	0:21:54.260000	97b6e02972.mp3	97b6e02972.webp	みんな?	¿Hola?	Everyone...?	False	False			
+af3b21b0fd	866	868	867	0:22:06.624000	0:22:09.610000	af3b21b0fd.mp3	af3b21b0fd.webp	は... エリィー!	¡Eri!	Eri!	False	False			
+b58c997133	872,874,879	873,875,876	871,877,878	0:23:43.510000	0:23:49.030000	b58c997133.mp3	b58c997133.webp	次回　「機動戦士ガンダム 水星の魔女」　"最終回"	Próximo episodio: episodio final. Final Mobile Suit Gundam: The Witch from Mercury	Next time on Mobile Suit Gundam the Witch from Mercury, Mobile Suit Gundam the Witch from Mercury the final episode.	False	False			

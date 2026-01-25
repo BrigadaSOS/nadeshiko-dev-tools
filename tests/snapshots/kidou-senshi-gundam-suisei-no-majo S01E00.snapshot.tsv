@@ -1,304 +1,304 @@
 ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREENSHOT	CONTENT	CONTENT_TRANSLATION_SPANISH	CONTENT_TRANSLATION_ENGLISH	CONTENT_SPANISH_MT	CONTENT_ENGLISH_MT	ACTOR_JA	ACTOR_ES	ACTOR_EN
-2	2	1	3	0:00:18.529000	0:00:21.640000	2.mp3	2.webp	スロールより LF03へ	Thrall a LF-03.	Thrall to LF-03.	False	False			
-5	5	4	6	0:00:21.720000	0:00:24.690000	5.mp3	5.webp	パーメットリンク 接続テスト再開	Reiniciando prueba de conexión del enlace Permet.	Restarting Permet link connection test.	False	False			
-8	8	7	9	0:00:25.620000	0:00:28.940000	8.mp3	8.webp	3 2 1	En tres, dos, uno...	Three, two, one.	False	False			
-11	11	10	12	0:00:30.210000	0:00:32.240000	11.mp3	11.webp	インターコネクト確立	Interconexión establecida.	Interconnect established.	False	False			
-13	13	14	15	0:00:32.217000	0:00:34.110000	13.mp3	13.webp	現在 レイヤー31	Actualmente en Capa 31.	Currently on layer 31.	False	False			
-17	17	16	18	0:00:34.120000	0:00:36.430000	17.mp3	17.webp	コールを開始してください	Inicia la llamada. -Entendido.	Please commence calling.	False	False			
-20	20	21	19	0:00:35.990000	0:00:40.160000	20.mp3	20.webp	了解 レイヤー31 コール開始	Llamando a la Capa 31.	Understood. Commencing call to layer 31.	False	False			
-23	23,26	22,25	24	0:00:40.270000	0:00:44.640000	23.mp3	23.webp	GUNDフォーマット 異常表示なし　レイヤー32 接続	Sin anomalías en el GUND Format. Conecta con la Capa 32.	No abnormalities detected in GUND Format. Connect to layer 32.	False	False			
-28	28,30	29,31	27,32	0:00:44.750000	0:00:50.190000	28.mp3	28.webp	レイヤー32 コール　コールバック確認 レイヤー33に接続	Llamando a la Capa 32. Recepción confirmada. Conecta con la Capa 33.	Calling layer 32. -Callback confirmed. Connect to layer 33.	False	False			
-34	34	35	33	0:00:50.210000	0:00:52.340000	34.mp3	34.webp	レイヤー33 コール	Llamando a la Capa 33.	Calling layer 33.	False	False			
-38	38	36	37	0:00:53.690000	0:00:55.740000	38.mp3	38.webp	エラー コールバックなし	Error. No hay recepción.	Error. No callback.	False	False			
-40	40	41	39	0:00:55.840000	0:00:57.700000	40.mp3	40.webp	レイヤーを10まで後退	Retírate a la Capa 10.	Fall back to layer 10.	False	False			
-42	42	43	44	0:00:57.826000	0:01:01.270000	42.mp3	42.webp	レイヤー10から 再度レイヤー33へ コール	Intentando llamar a la Capa 33 desde la Capa 10.	Calling from layer 10 to 33 again.	False	False			
-46	46	45	47	0:01:02.540000	0:01:04.750000	46.mp3	46.webp	エラー コールバックなし	Error. No hay recepción.	Error. No callback.	False	False			
-48	48	50	49	0:01:04.875000	0:01:06.835000	48.mp3	48.webp	レイヤー33 コール	Llamando a la Capa 33.	Calling layer 33.	False	False			
-52	52	51	53	0:01:08.360000	0:01:10.380000	52.mp3	52.webp	エラー コールバックなし	Error. No hay recepción.	Error. No callback.	False	False			
-56	56	55	54	0:01:10.520000	0:01:12.690000	56.mp3	56.webp	LF03より スロールへ	LF-03 a Thrall.	LF-03 to Thrall.	False	False			
-58	58	57	59	0:01:13.200000	0:01:16.260000	58.mp3	58.webp	GUNDフォーマットの スコアを上げることを要求	Solicitando aumento de la puntuación del GUND Format.	Requesting increase in GUND Format score.	False	False			
-62	62	60	61	0:01:16.430000	0:01:19.530000	62.mp3	62.webp	ネガティブ テストの目的に反します	Negativo. Iría contra el objetivo de la prueba.	Negative. That's contrary to the test objective.	False	False			
-64	64,67	63	65,66	0:01:19.550000	0:01:23.120000	64.mp3	64.webp	時間がないの 実行します　ちょっと待ちなさい	No hay tiempo. Lo ejecutaré. -Espera.	We don't have time. -Executing now. -Hold on!	False	False			
-70	70	68	69	0:01:23.360000	0:01:24.710000	70.mp3	70.webp	エルノラ	Elnora.	Elnora.	False	False			
-73	73	71	72	0:01:25.230000	0:01:27.560000	73.mp3	73.webp	今日は このへんにしておこうか	Dejémoslo por hoy.	Let's end for the day.	False	False			
-75	75	74	76	0:01:27.890000	0:01:30.420000	75.mp3	75.webp	まだ危険領域に入っていません	Aún no llegué a la zona de peligro.	I'm not yet in the dangerous range.	False	False			
-78	78,80	79	77,81	0:01:30.460000	0:01:34.530000	78.mp3	78.webp	レベルを上げて もう一度 レイヤーさんじゅ...　ここまでだよ エルノラ	Aumentaré el nivel y... -Deja ya la prueba, Elnora.	Let me increase the level and test layer 33- That's enough, Elnora.	False	False			
-85	85	83	84	0:01:37.460000	0:01:38.700000	85.mp3	85.webp	はい	Entendido.	Yes, ma'am.	False	False			
-88	88	86,89	87	0:01:39.700000	0:01:43.450000	88.mp3	88.webp	テスト終了 パーメット流入値の解析を開始して	Prueba terminada. Analicen los valores de entrada de Permet.	Test concluded. Begin analysis of Permet influx values.	False	False			
-91	91,93	92,94	90	0:01:43.310000	0:01:47.375000	91.mp3	91.webp	了解 解析始めます　異常変動の検知は どうします?	Entendido. Iniciando análisis. ¿Hay fluctuaciones anormales?	Understood. Beginning analysis. -Detected any abnormal fluctuations?	False	False			
-97	97	96	95	0:01:47.390000	0:01:49.730000	97.mp3	97.webp	気負うな	Te impacientas demasiado.	Look for tremors before the fluctuation. -Don't get too worked up.	False	False			
-99	99	98	100	0:01:49.580000	0:01:51.110000	99.mp3	99.webp	カルド先生	Doctora Cardo.	Dr. Cardo.	False	False			
-103	103	102	101	0:01:51.230000	0:01:54.530000	103.mp3	103.webp	あんたでダメなら 誰にもクリアはできないさ	Si tú no puedes superarlo, nadie podrá.	If you can't clear this, then no one can.	False	False			
-106	106	104	105	0:01:55.150000	0:01:59.160000	106.mp3	106.webp	GUNDフォーマットの健全性を 早く証明しないと	Debemos demostrar cuanto antes que el GUND Format es seguro.	We need to prove the soundness of the GUND Format as soon as possible.	False	False			
-109	109	107	108	0:01:59.420000	0:02:01.930000	109.mp3	109.webp	評議会も これ以上は...	Si no, estaremos en manos del Consejo.	Otherwise, the council will...	False	False			
-111	111	110	112,113	0:02:02.390000	0:02:06.660000	111.mp3	111.webp	それで あんたの体が お釈迦になっちゃ 元も子もない	No servirá de nada si tu cuerpo no resiste.	Our success won't mean a thing if you're crippled for life.	False	False			
-115	115	116	114	0:02:06.710000	0:02:09.370000	115.mp3	115.webp	しかし... それに お迎えも来てる	Pero... -Y vino alguien a buscarte.	But- -Besides, someone's here to see you.	False	False			
-118	118	119	117	0:02:09.420000	0:02:11.560000	118.mp3	118.webp	え? あ... ママー!	¡Mamá!	What? -Mommy!	False	False			
-122	122	121	120	0:02:16.590000	0:02:18.340000	122.mp3	122.webp	ママー!	¡Mamá!	Mommy!	False	False			
-126	126	124	125	0:02:21.210000	0:02:22.450000	126.mp3	126.webp	エリィ!	¡Eri!	Mommy! -Eri!	False	False			
-130	130	128,131	129,132	0:02:27.980000	0:02:32.270000	130.mp3	130.webp	ママ パパが待ってるよ ケーキ食べようよ ケーキ!	¡Mamá! ¡Te espera papá! ¡Comeremos pastel!	Mommy! Daddy's waiting for you too! Let's have cake together!	False	False			
-135	135	133	134	0:02:32.250000	0:02:35.150000	135.mp3	135.webp	ここに来ちゃダメって 言ってるでしょ	Te dije que no vinieras aquí.	Haven't I told you that you're not allowed to come here?	False	False			
-136	136	138	137	0:02:35.173000	0:02:37.720000	136.mp3	136.webp	あの子 まだ起きないの?	¿Sigue dormida?	Is she still sleeping?	False	False			
-141	141	139	140	0:02:42.040000	0:02:43.220000	141.mp3	141.webp	うん	Sí.	Yes.	False	False			
-143	143	142	144	0:02:44.770000	0:02:46.330000	143.mp3	143.webp	そうだね	Profundamente.	You're right.	False	False			
-146	146	145	147	0:02:48.410000	0:02:51.320000	146.mp3	146.webp	ダメでしょ おっきしないと	Se ganará un buen regaño si no despierta ya.	What a naughty girl. It's time to rise and shine.	False	False			
-149	149	148	150	0:02:51.600000	0:02:54.550000	149.mp3	149.webp	ルブリスは まだ赤ん坊なのさ	Lfrith aún es un bebé.	Lfrith is still an infant.	False	False			
-153	153	151	152	0:02:54.680000	0:02:56.150000	153.mp3	153.webp	赤ちゃん?	¿Un bebé?	A baby?	False	False			
-155	155	156	154	0:02:56.170000	0:02:59.450000	155.mp3	155.webp	そう 寝返りもできない生まれたて	Exacto. Una recién nacida incapaz de darse voltearse.	Yes. She doesn't even know how to turn over in bed.	False	False			
-159	159	158	157	0:03:00.010000	0:03:02.640000	159.mp3	159.webp	ここにいるスタッフ みんなの子供	Todos ayudamos en su nacimiento.	She's the child of all the staff members here.	False	False			
-161	161,163	160	162	0:03:03.520000	0:03:08.270000	161.mp3	161.webp	今は お前のママが⸺　いろんなことを 教えてやっているところだよ	Ahora mismo, tu madre le está enseñando de todo.	Now, your mommy is trying to teach her all sorts of stuff.	False	False			
-165	165		164	0:03:08.600000	0:03:09.749000	165.mp3	165.webp	ふーん		I see...		False			
-167	167	166	168	0:03:10.030000	0:03:12.860000	167.mp3	167.webp	じゃあ エリィのほうが おねえさんだね	Entonces, es mi hermanita.	Then I'm her big sister!	False	False			
-170	170,173	169	171,172	0:03:13.200000	0:03:16.980000	170.mp3	170.webp	エリィは何歳になったの?　4歳!	¿Cuántos años cumplirás, Eri? -¡Cuatro!	How old are you now, Eri? I'm four!	False	False			
-176	176,177,179	175,180	174,178,181	0:03:32.040000	0:03:40.080000	176.mp3	176.webp	フロント第3自治区は⸺　20日 オックス・アース社製モビルスーツ　ガンダムタイプ 購入予算の決議案を可決	El tercer sector autónomo del frente aprobó el día 20 la compra de ocho Gundams fabricados por Ochs Earth.	As of the 20th, the Front 3rd Autonomous Sector has approved a budget to purchase Gundam-type mobile suits manufactured by Ochs Earth.	False	False			
-184	184,185	182	183,186	0:03:40.030000	0:03:45.850000	184.mp3	184.webp	同社の兵器システムは⸺　搭乗者への生命倫理問題が 大きな懸念とされており⸺	Su sistema armamentístico supone problemas bioéticos para sus pilotos,	Ochs Earth's weapon system has raised major concerns regarding bioethical issues for its pilots,	False	False			
-188	188,190,193	187,192	189,191	0:03:45.930000	0:03:51.540000	188.mp3	188.webp	オックス社 及び⸺　モビルスーツ 開発評議会の⸺　説明責任が 問われています	por lo que se le solicitan responsabilidades a la empresa y también al Consejo de Desarrollo.	and the accountability of the company as well as the Mobile Suit Development Council has been called into question.	False	False			
-196	196	194	195	0:03:51.710000	0:03:53.540000	196.mp3	196.webp	GUNDフォーマットは元来⸺	El GUND Format era constructivo.	Originally, the GUND Format	False	False			
-198	198,201	199,202	197,200	0:03:53.980000	0:03:59.710000	198.mp3	198.webp	宇宙環境で生じる⸺　身体機能障害の補助を目的とした 医療技術です	Una tecnología médica que ayudaba con problemas físicos causados por el espacio.	was a medical technology meant to assist with physical dysfunctions caused by the space environment.	False	False			
-204	204	203	205	0:04:00.760000	0:04:04.450000	204.mp3	204.webp	しかし 研究元である ヴァナディース機関を⸺	Pero el Instituto Vanadis, el principal investigador,	However, when the Vanadis Institute, the lead researcher on the project,	False	False			
-208	208	207	206	0:04:04.490000	0:04:06.760000	208.mp3	208.webp	オックス・アース社が買収	lo compró Ochs Earth.	was acquired by Ochs Earth,	False	False			
-211	211,212	210	209	0:04:06.870000	0:04:10.350000	211.mp3	211.webp	GUNDフォーマットが モビルスーツへ⸺　軍事転用されると⸺	El GUND Format fue readaptado para Mobile Suits.	the GUND Format was repurposed for military mobile suits.	False	False			
-214	214,216	215	213	0:04:10.500000	0:04:15.440000	214.mp3	214.webp	今度はデータストームによる⸺　身体へのダメージの問題が 浮上しました	Pero sus pilotos se exponen a tormentas de datos que dañan su cuerpo.	Physical damage to its pilots due to data storms then emerged as a problem.	False	False			
-218	218	217	219	0:04:16.610000	0:04:18.520000	218.mp3	218.webp	想像してください	¡Imagínenselo!	Just imagine.	False	False			
-220	220	221	222	0:04:18.610000	0:04:23.010000	220.mp3	220.webp	非生物機構で動く 18メートルもの巨大な体を⸺	Una máquina de 18 metros de alto, moviéndose con mecanismos inorgánicos,	An 18-meter-tall giant frame moving with non-biological mechanisms,	False	False			
-225	225	224	223	0:04:23.050000	0:04:26.970000	225.mp3	225.webp	無理矢理 人体とリンクさせて 制御させるんです	controlado al vincularse forzosamente a un cuerpo humano.	controlled by forcibly linking it to a human body.	False	False			
-227	227	226	228	0:04:26.780000	0:04:29.830000	227.mp3	227.webp	搭乗者の負荷は計り知れませんよ	La carga que sufre el piloto es inconmensurable.	The burden placed on the pilot must be immeasurable!	False	False			
-231	231,233,235	229,232	230,234	0:04:30.010000	0:04:37.400000	231.mp3	231.webp	今回のモビルスーツ増強は⸺　地球サイドに軍拡の口実を与え⸺　両者の緊張感を 加速させる恐れもあり...	La gente teme una carrera armamentística y que la construcción de Mobile Suits haga que la Tierra aumente su ejér...	The recent mobile suit buildup may provide Earth with an excuse to expand its military and accelerate tensions between both sides...	False	False			
-237	237,239	236	238	0:04:38.260000	0:04:43.134000	237.mp3	237.webp	うちの製品を 好き勝手言ってくれるなあ　ん?	Dicen lo que quieren de nuestros productos.	Say all you want about our products.	False	False			
-241	241	240	242	0:04:44.320000	0:04:46.740000	241.mp3	241.webp	パパ ただいまー! おおー	Papá, regresé.	Daddy, I'm home!	False	False			
-243	243	244	245	0:04:46.304000	0:04:48.260000	243.mp3	243.webp	ああっ おかえり	Bienvenida.	Welcome back.	False	False			
-247	247	246	248	0:04:48.760000	0:04:52.870000	247.mp3	247.webp	素敵 ごめんね すっかりやらせちゃって	Qué lindo. Siento que tuvieras que hacer todo esto.	This looks great. I'm sorry you had to do everything.	False	False			
-250	250	249	251	0:04:52.830000	0:04:56.380000	250.mp3	250.webp	大丈夫 エリィが 手伝ってくれたからね	No te disculpes. Eri también ayudó.	It's fine. Eri helped out too.	False	False			
-252	252	254	253	0:04:56.439000	0:04:58.650000	252.mp3	252.webp	こっちはエリィがやったんだよ	Yo hice eso de ahí.	I did this part myself!	False	False			
-257	257	255	256	0:04:58.770000	0:05:01.400000	257.mp3	257.webp	スゴいねー とってもキレイ	Increíble. Es precioso.	You're amazing! It looks so pretty.	False	False			
-258	258	259	260	0:05:01.528000	0:05:04.490000	258.mp3	258.webp	エリィ お誕生日帽子も 見せてあげたら?	Eri, ¿le traes a mamá un gorro de cumpleaños?	Eri. Why don't you show Mommy your birthday hat?	False	False			
-263	263	262	261	0:05:04.470000	0:05:06.408000	263.mp3	263.webp	うん! アハハ	¡Bien!	Right!	False	False			
-265	265	264	266	0:05:08.840000	0:05:10.760000	265.mp3	265.webp	また レイヤー33?	¿Otra vez la Capa 33?	Layer 33 again?	False	False			
-269	269	268	267	0:05:10.970000	0:05:14.480000	269.mp3	269.webp	早くクリアしないと みんなに迷惑かけちゃう	Si no lo supero pronto, tendremos problemas.	If I don't clear that soon, it'll mean trouble for everyone.	False	False			
-271	271	270	272	0:05:14.730000	0:05:15.900000	271.mp3	271.webp	すまない	Lo siento.	I'm sorry.	False	False			
-273	273,277	274	275,276	0:05:16.209000	0:05:19.930000	273.mp3	273.webp	上が焦ってルブリスを ロールアウトしなけりゃ⸺　こんなこと...	Esto no pasaría si los jefes no tuvieran prisa por lanzar a Lfrith.	This wouldn't have happened if the higher-ups weren't in a rush to roll out the Lfrith.	False	False			
-279	279	278,281	280,282	0:05:20.190000	0:05:24.240000	279.mp3	279.webp	スポンサーは必要よ ナディムのおかげ	Tenemos el patrocinador necesario. Gracias a ti, Nadim.	We needed a sponsor, anyway. You helped us, Nadim.	False	False			
-284	284,286	283	285	0:05:24.290000	0:05:28.700000	284.mp3	284.webp	期日まで評議会が⸺　おとなしくしてくれれば いいんだけど	Espero que el Consejo aguante hasta la fecha límite.	I just hope the council will stay quiet until the deadline.	False	False			
-289	289	287	288	0:05:30.740000	0:05:33.310000	289.mp3	289.webp	あと1時間で会見です	La rueda de prensa será en una hora.	The press conference is in one hour.	False	False			
-292	292	290	291	0:05:33.970000	0:05:36.710000	292.mp3	292.webp	これで オックス・アースも終わりだな	Es el fin de Ochs Earth.	This is the end of Ochs Earth.	False	False			
-295	295	293	294	0:05:37.090000	0:05:41.320000	295.mp3	295.webp	アーシアン風情が出しゃばるから こういうことになる	Es lo que pasa ocurre los Earthians se ponen muy altivos.	This is what happens when Earthians get presumptuous.	False	False			
-297	297	296	298	0:05:41.650000	0:05:44.300000	297.mp3	297.webp	ことが容易く運べばいいがな	Con suerte, será tan fácil como dices.	Hopefully, it'll be as easy as you say.	False	False			
-301	301	299	300	0:05:44.660000	0:05:47.840000	301.mp3	301.webp	カルド・ナボ博士が応じるかどうか	Pero no sabemos si la doctora Cardo Nabo accederá.	We don't know if Dr. Cardo Nabo will comply.	False	False			
-303	303	302	304	0:05:48.030000	0:05:50.050000	303.mp3	303.webp	しかし 大丈夫なのか?	¿De verdad irá bien?	But are you sure this is okay?	False	False			
-307	307	306	305	0:05:50.180000	0:05:53.020000	307.mp3	307.webp	民間企業の分を越えるのでは?	¿No supera la capacidad de una empresa privada?	We may be overstepping the bounds of private enterprise...	False	False			
-309	309	308	310	0:05:53.120000	0:05:55.770000	309.mp3	309.webp	何を今さら この期に及んで	¿De qué te preocupas ahora?	You say that at this stage of the game?	False	False			
-312	312	311	313	0:05:55.890000	0:05:58.100000	312.mp3	312.webp	越えてしまえばいいのです	Sobresalir no tiene nada de malo.	What's wrong with overstepping them?	False	False			
-316	316	314	315	0:05:59.540000	0:06:02.730000	316.mp3	316.webp	デリング 発言は求めていない	No pedimos tu opinión, Delling.	We're not asking for your opinion, Delling.	False	False			
-317	317,320	318	319,321	0:06:02.714000	0:06:07.550000	317.mp3	317.webp	ヴァナディースの連中が⸺　ガンダムを完成させてからでは 手遅れになります	Será tarde si dejamos que Vanadis complete su Gundam.	Once those guys at the Vanadis Institute complete their Gundam, it will be too late.	False	False			
-324	324,325	322,326	323	0:06:08.050000	0:06:13.200000	324.mp3	324.webp	我々 モビルスーツ開発評議会は⸺　決断するべきです	Nosotros, el Consejo de Desarrollo de Mobile Suits, debemos tomar una decisión.	As the Mobile Suit Development Council, we must make a decision.	False	False			
-329	329	328	327	0:06:13.530000	0:06:16.102000	329.mp3	329.webp	人類の安寧のために	Por la paz de toda la humanidad,	So that humanity can remain in peace,	False	False			
-332	332	330	331	0:06:16.760000	0:06:19.120000	332.mp3	332.webp	魔女への鉄槌を	debemos eliminar a la bruja.	we must wield the hammer of witches.	False	False			
-335	335,337	333	334,336	0:06:19.300000	0:06:23.943000	335.mp3	335.webp	ケーキ ケーキ! じゃあ⸺　ロウソクライト刺すよ あ...	¡Pastel! ¡Un rico pastel! -Bien, le pondré la vela.	Cake! -Cake! -I'm putting in the candle lights now.	False	False			
-340	340	339	338	0:06:25.090000	0:06:26.170000	340.mp3	340.webp	あらら	Uy.	Oh, my...	False	False			
-342	342	341	343	0:06:27.280000	0:06:28.630000	342.mp3	342.webp	ママ?	¿Mamá?	Mommy?	False	False			
-344	344	345	346	0:06:28.615000	0:06:30.680000	344.mp3	344.webp	ごめん ちょっと待っててね	Perdona. Dame un segundo.	Sorry. Give me a moment.	False	False			
-347	347	349	348	0:06:35.371000	0:06:38.600000	347.mp3	347.webp	ママのガンド すぐ止まっちゃうね	Tu GUND se rompe siempre.	Your GUND always stops working, Mommy.	False	False			
-351	351,353	352,354	350	0:06:39.560000	0:06:45.400000	351.mp3	351.webp	そうねえ　でも この技術がなかったら ママは もう生きてないのよ	Supongo que sí. Pero sin esta tecnología, yo no estaría viva ahora.	Yes. But without this technology, Mommy wouldn't be alive right now.	False	False			
-356	356,358	355,359	357	0:06:46.120000	0:06:51.590000	356.mp3	356.webp	だから カルド博士は ママの先生で⸺　ママの命の恩人なの	Por eso la doctora Cardo es más que una mentora. Es mi salvadora.	So Dr. Cardo is my teacher who saved my life.	False	False			
-362	362,363	360	361,364	0:06:51.900000	0:06:54.740000	362.mp3	362.webp	バアバ 偉い!　エリィ	La abuelita es genial. -Eri.	Granny's awesome! Eri.	False	False			
-367	367	365	366	0:06:54.760000	0:06:57.600000	367.mp3	367.webp	先生は呼ばれかたなんて 気にしないわよ	A la doctora no le importa cómo la llamen.	Dr. Cardo isn't one to fuss about what people call her.	False	False			
-369	369	370	368	0:06:57.660000	0:07:01	369.mp3	369.webp	だからって... 恐れ多いよ	Pero es una falta de respeto.	Even so, that's rude.	False	False			
-373	373	372	374	0:07:03.500000	0:07:04.800000	373.mp3	373.webp	本社から?	¿El cuartel?	Is that from headquarters?	False	False			
-376	376		375	0:07:05.880000	0:07:06.903000	376.mp3	376.webp	うん		Yeah.		False			
-379	379	377	378	0:07:07.010000	0:07:09.260000	379.mp3	379.webp	エリィ ちょっと待っててな	Eri, ¿me das un minuto?	Just a moment, Eri.	False	False			
-380	380		381	0:07:09.239000	0:07:10.510000	380.mp3	380.webp	えー!		What?		False			
-383	383	382	384	0:07:10.410000	0:07:12.340000	383.mp3	383.webp	パパ お仕事なの	Papá tiene que trabajar.	Daddy has work.	False	False			
-386	386	387	385	0:07:12.390000	0:07:15.036000	386.mp3	386.webp	ごめんな むううー	Perdona.	Sorry.	False	False			
-389	389,392	388,391	390,393	0:07:15	0:07:19.120000	389.mp3	389.webp	嫌だー! 今がいい!　どうした?	¡No es justo! -¡Quiero a papá ahora! -¿Qué está pasando?	No! I want to cut it now! -What's wrong? -Now!	False	False			
-395	395	394	396	0:07:19.730000	0:07:22.060000	395.mp3	395.webp	評議会が開かれているらしい	El Consejo dará una rueda de prensa.	The council is holding a meeting now.	False	False			
-399	399	398	397	0:07:22.100000	0:07:23.710000	399.mp3	399.webp	期日は まだだぞ	Pero si aún había tiempo.	But it's not even the deadline yet!	False	False			
-401	401	400	402	0:07:23.880000	0:07:24.980000	401.mp3	401.webp	デリングだ	Es Delling.	It was Delling.	False	False			
-405	405	403	404	0:07:25.520000	0:07:27.440000	405.mp3	405.webp	ヤツが裏で動いている	Está detrás de todo.	He's behind this.	False	False			
-408	408	406	407	0:07:27.780000	0:07:30.010000	408.mp3	408.webp	例の軍人上がりか	¿Ese exmilitar?	That ex-military guy?	False	False			
-410	410	409	411	0:07:30.170000	0:07:32.380000	410.mp3	410.webp	何を仕掛けてくるか分からない	Aún no sabemos qué pretenden.	We don't know what he'll do.	False	False			
-413	413	412	414	0:07:32.550000	0:07:34.010000	413.mp3	413.webp	そっちも気をつけろ	Tengan mucho cuidado.	You be careful too.	False	False			
-416	416,418	415,420	417,419	0:07:34.180000	0:07:38.309000	416.mp3	416.webp	フォールクヴァングより⸺　輸送船ベガベントへ コントロール173	Folkvangr a nave de transporte Begavent. Control 173.	Folkvangr to transport ship Begavent. Control 173.	False	False			
-423	423	422	421	0:07:38.370000	0:07:41.040000	423.mp3	423.webp	こちらベガベント 173と交信	Aquí Begavent. Comunicándose con 173.	This is Begavent. Communicating with 173.	False	False			
-425	425	424	426	0:07:41.060000	0:07:43.420000	425.mp3	425.webp	ゲート入口まで 距離22	Distancia de la puerta: 22.	Distance to gate entrance is 22.	False	False			
-428	428,431	427,430	429	0:07:43.580000	0:07:47.590000	428.mp3	428.webp	軌道確認　3番ゲートに入港してください	Trayectoria confirmada. Entren por la puerta tres, por favor.	Course confirmed. Please enter through Gate 3.	False	False			
-434	434,436	432,435	433	0:07:55.070000	0:07:59.040000	434.mp3	434.webp	船が来たよ!　ウェンディ 搬入手伝って	Aquí hay una nave. Wendy, dame una mano con el cargamento.	The ship's here! Come help me move, Wendy.	False	False			
-438	438	437	439	0:07:59.200000	0:08:01.890000	438.mp3	438.webp	最近 関税率上がりすぎ	Los aranceles subieron mucho últimamente.	Tariff rates have increased so much recently.	False	False			
-440	440,443	441,444	442	0:08:01.833000	0:08:05.810000	440.mp3	440.webp	スッゴい癪　輸送はタダじゃないの	Es todo un fastidio. Los envíos no podían ser gratis.	It's pissing me off. -Transportation isn't free, you know?	False	False			
-445	445	446	447	0:08:05.712000	0:08:08.320000	445.mp3	445.webp	スペーシアンは独占しすぎなんだよ	Los Spacians están monopolizando el negocio.	The Spacians are monopolizing it unreasonably.	False	False			
-449	449	448,452	450,451	0:08:08.460000	0:08:12.030000	449.mp3	449.webp	あとでご褒美あげるから ね?	Luego te recompensaré. ¿Bien?	I'll treat you to something after this. Come on.	False	False			
-453	453	454	455	0:08:12.135000	0:08:13.680000	453.mp3	453.webp	ズルいなー	No es justo.	That's cheating.	False	False			
-457	457	456	458	0:08:16.400000	0:08:17.910000	457.mp3	457.webp	あったよ エリィ	Lo encontré, Eri.	I found it, Eri!	False	False			
-460	460	459	461	0:08:18.320000	0:08:19.580000	460.mp3	460.webp	これでしょ?	Es este, ¿no?	This is the one, right?	False	False			
-463	463	462	464	0:08:20.910000	0:08:21.960000	463.mp3	463.webp	エリィ?	¿Eri?	Eri?	False	False			
-466	466	468	467	0:08:28.484000	0:08:30.170000	466.mp3	466.webp	早く起きてよ!	¡Despierta ya!	Just wake up already!	False	False			
-471	471	470	469	0:08:30.510000	0:08:33.930000	471.mp3	471.webp	パパもママも みんな あなたのことばっかり!	¡Haces que papá y mamá estén siempre preocupados!	Daddy and Mommy... Everyone only cares about you!	False	False			
-473	473	472	474	0:08:34.140000	0:08:37.220000	473.mp3	473.webp	今日は エリィの誕生日なのに!	¡Incluso en mi cumpleaños!	It's supposed to be my birthday today!	False	False			
-476	476	475	477	0:08:37.840000	0:08:40.060000	476.mp3	476.webp	そいつは悪かったね	Qué mala suerte.	I'm sorry about that.	False	False			
-480	480	479	481	0:08:43.140000	0:08:44.410000	480.mp3	480.webp	バアバ	¿Abuela?	Granny.	False	False			
-483	483	482	484	0:08:44.580000	0:08:46.350000	483.mp3	483.webp	また1人で来たのか?	¿Viniste tú sola?	You came here alone again?	False	False			
-487	487	485	486	0:08:46.600000	0:08:49.290000	487.mp3	487.webp	エルノラにも ダメだって言われたろ	Elnora te regañará mucho.	Didn't Elnora say you're not supposed to?	False	False			
-490	490	488	489	0:08:49.730000	0:08:52.216000	490.mp3	490.webp	だって... ん...	Es que...	But...	False	False			
-493	493,495	492,494	491	0:08:53.360000	0:08:57.590000	493.mp3	493.webp	バアバも この子が大事?　大事だよ	¿Es importante para ti, abuela? Pues sí.	Is this child important to you too, Granny? -She is.	False	False			
-498	498	497	496	0:08:57.700000	0:08:59.010000	498.mp3	498.webp	どうして?	¿Por qué?	Why?	False	False			
-499	499	501	500	0:08:59.140000	0:09:02.350000	499.mp3	499.webp	あっちのお部屋の2人は 大事じゃないの?	¿Y esos dos de ahí?	Then you don't care about the other two over there?	False	False			
-504	504	502	503	0:09:02.570000	0:09:05.250000	504.mp3	504.webp	こいつは特別だからね	Este es especial.	This one is special.	False	False			
-506	506	505	507	0:09:05.400000	0:09:07.130000	506.mp3	506.webp	特別?	¿Especial?	Special?	False	False			
-509	509,511	508	510	0:09:07.130000	0:09:11.710000	509.mp3	509.webp	エリィや エリィのパパやママが⸺　宇宙で生きていくためには⸺	Para que tu familia y tú sigan viviendo en el espacio,	In order for you, your daddy, and your mommy to live in space,	False	False			
-512	512	514	513	0:09:11.819000	0:09:14.840000	512.mp3	512.webp	適応できる体が必要なのさ	se necesita un cuerpo adecuado.	you need to have an adaptable body	False	False			
-517	517	516	515	0:09:15.340000	0:09:17.070000	517.mp3	517.webp	こんな兵器じゃなくてね	Aunque no un arma así.	and not a weapon like this.	False	False			
-519	519	518	520	0:09:19	0:09:23.040000	519.mp3	519.webp	ルブリスは 私たちが目指すGUNDの未来	Lfrith representa el futuro que concebimos para el GUND.	Lfrith is the future of GUND that we're aiming for.	False	False			
-523	523	521,524	522	0:09:23.330000	0:09:28.190000	523.mp3	523.webp	人類の可能性を切り開く 新たな扉	Una nueva puerta hacia la frontera para toda la humanidad.	She is a new door that will open up new possibilities for humanity.	False	False			
-526	526	525	527	0:09:29.500000	0:09:31.480000	526.mp3	526.webp	よく分かんない	No lo entiendo.	I don't get it.	False	False			
-529	529	530	528	0:09:31.530000	0:09:33.800000	529.mp3	529.webp	なら こいつと話してみるかい?	¿Quieres hablar con ella?	Then, do you want to try talking to her?	False	False			
-534	534	532	533	0:09:38.680000	0:09:40.160000	534.mp3	534.webp	おいで エリィ	Vamos, Eri.	Come here, Eri.	False	False			
-538	538	536	537	0:09:41.740000	0:09:44.120000	538.mp3	538.webp	ここに 手をあててみな	Pon aquí la mano.	Place your hand here.	False	False			
-541	541	540	539	0:09:48.670000	0:09:52.050000	541.mp3	541.webp	これで ルブリスは エリィを認識した	Lfrith ya te reconoce.	Now Lfrith will recognize you.	False	False			
-543	543	542	544	0:09:52.640000	0:09:56.090000	543.mp3	543.webp	この世界は怖くないって 教えてやってくれ	Intenta decirle que no hay nada que temer.	Tell her that this world isn't scary.	False	False			
-547	547	546	548	0:09:57.730000	0:10:00.930000	547.mp3	547.webp	エリィはね エリクト・サマヤっていうの	Hola, me lamo Ericht Samaya.	My name is Ericht Samaya!	False	False			
-550	550	549	551	0:10:01.130000	0:10:02.760000	550.mp3	550.webp	ケーキは好き?	¿Te gusta el pastel?	Do you like cake?	False	False			
-553	553	552	554	0:10:02.780000	0:10:05.560000	553.mp3	553.webp	今日はエリィの誕生日なんだよ	¡Hoy cumplo años!	It's my birthday today!	False	False			
-555	555,558	556	557	0:10:05.289000	0:10:08.520000	555.mp3	555.webp	お誕生日の帽子も被るの!　どうした?	¡Y llevaba un gorrito de cumpleaños! -¿Qué pasa?	I'm going to wear my birthday hat! -What's wrong?	False	False			
-560	560	559	561	0:10:08.610000	0:10:11.340000	560.mp3	560.webp	評議会が会見を行うと	El Consejo dará una rueda de prensa.	The council is about to hold a press conference.	False	False			
-562	562	563	564	0:10:11.629000	0:10:13.030000	562.mp3	562.webp	聞いてないぞ	Nadie me dijo nada.	I wasn't told about this.	False	False			
-567	567	566	565	0:10:13.070000	0:10:15.170000	567.mp3	567.webp	オックス・アースは外されています	Ochs Earth se quedó fuera.	Ochs Earth has been left out of this.	False	False			
-569	569	568	570	0:10:15.760000	0:10:17.860000	569.mp3	569.webp	分かった すぐ行く	Entendido. Ahora mismo voy.	Got it. I'm on my way.	False	False			
-573	573,575	572	574	0:10:19.340000	0:10:22.240000	573.mp3	573.webp	エリィ 1人で戻れるか?　うん	Eri, ¿puedes bajar sola? -Sí.	Can you go back by yourself, Eri? -Yeah.	False	False			
-577	577,580	576,579	578	0:10:22.560000	0:10:25.640000	577.mp3	577.webp	ママに心配かけるなよ　うん	No hagas que se preocupe tu madre. Bien.	Don't make your mommy worry now. -Okay.	False	False			
-583	583	582	581	0:10:27.540000	0:10:30.250000	583.mp3	583.webp	ケーキはね イチゴが乗ってるの	El pastel tiene fresas.	The cake has strawberries on it.	False	False			
-586	586	584	585	0:10:30.270000	0:10:31.920000	586.mp3	586.webp	ママがね...	Ah, sí. Y mamá...	You see, Mommy...	False	False			
-588	588	587	589	0:10:39.640000	0:10:42.076000	588.mp3	588.webp	ユリシーズの配備完了しました	Ulysses en posición.	Deployment of Ulysses is complete.	False	False			
-590	590	591	592	0:10:42.326000	0:10:43.930000	590.mp3	590.webp	いつでもいけます	Cuando quieras.	We can commence at any time.	False	False			
-595	595	593	594	0:10:44.060000	0:10:47.080000	595.mp3	595.webp	本社共々 予定どおり仕掛けろ	Asántelo todo, incluido el cuartel, como planeamos.	Raid it along with their headquarters according to the plan.	False	False			
-596	596	598	597	0:10:47.206000	0:10:48.940000	596.mp3	596.webp	評議会の承認は?	¿Lo aprobó el Consejo?	Don't we need the council's approval?	False	False			
-600	600	599	601	0:10:49.040000	0:10:50.980000	600.mp3	600.webp	責任なら私が取る	De eso me encargo yo.	I'll assume full responsibility.	False	False			
-604	604	603	602	0:10:52.480000	0:10:56	604.mp3	604.webp	我々モビルスーツ 開発評議会は先ほど⸺	Nosotros, el Comité de Desarrollo de Mobile Suits,	We, the Mobile Suit Development Council, have just now made the decision	False	False			
-607	607,608	606,609	605	0:10:56.110000	0:11:02.510000	607.mp3	607.webp	ガンダムタイプの モビルスーツ開発を⸺　すべて凍結することに決定しました	anunciamos que decidimos congelar el desarrollo de todos los Mobile Suits de tipo Gundam.	to freeze all development of Gundam-type mobile suits.	False	False			
-612	612,614	611	610,613	0:11:02.910000	0:11:07.890000	612.mp3	612.webp	これに伴い⸺　評議会は同機を開発した オックス・アース社に対し⸺	Y el Consejo tomará por la fuerza a la empresa que los desarrolla, Ochs Earth,	In addition, we will forcibly seize Ochs Earth, the company that developed them,	False	False			
-617	617	616	615	0:11:08.120000	0:11:11.770000	617.mp3	617.webp	企業行政法による 強制執行を行います	que actuó bajo la autoridad de las leyes administrativas.	under the authority provided by business administrative laws.	False	False			
-619	619,622	618,621	620	0:11:11.940000	0:11:15.480000	619.mp3	619.webp	そんな...　うちを切り捨てるつもりか	Es ridículo. ¿Nos usan para dar ejemplo?	No way... -Are they planning to cut us off?	False	False			
-624	624	623	625	0:11:15.960000	0:11:17.670000	624.mp3	624.webp	入港予定の船は?	¿Vendrá alguna nave?	Any ships scheduled to enter port?	False	False			
-626	626,629	628,630	627,631	0:11:17.695000	0:11:22.010000	626.mp3	626.webp	輸送船が1隻　止めろ 入港させるな	Una de transporte. -Deténganla. ¡Que no entre!	There's one transport ship. -Stop it. Don't let it enter the port!	False	False			
-635	635,637	634	636	0:11:35.240000	0:11:39.440000	635.mp3	635.webp	そしてモビルスーツ開発の⸺　秩序と倫理を守るため⸺	Para proteger el orden y la ética del desarrollo de los Mobile Suits,	And to maintain order and ethics in the development of mobile suits,	False	False			
-639	639	638	640	0:11:39.550000	0:11:44.200000	639.mp3	639.webp	我々は監査組織 カテドラルの設立も決定しました	decidimos crear una organización auditora, Cathedral.	we will establish an auditing organization named Cathedra.	False	False			
-641	641,644,647	643,646	642,645	0:11:45.848000	0:11:52.020000	641.mp3	641.webp	ご紹介します　カテドラル統括代表　デリング・レンブランです	Les presentaré al supervisor jefe de Cathedral. Delling Rembran.	Allow me to introduce... the supervising representative of Cathedra, Delling Rembran.	False	False			
-649	649	648	650	0:11:53.150000	0:11:56.420000	649.mp3	649.webp	最初から俺たちを 受け入れるつもりはなかったんだ!	¡La adquisición fue una farsa!	They never planned to accept us!	False	False			
-652	652	651	653	0:11:56.690000	0:11:59.800000	652.mp3	652.webp	やつらは経済じゃなく 暴力で...	El dinero daba igual. Querían usar la fuer...	They aren't dealing with us financially, but by using violence-	False	False			
-654	654,658	655,657	656	0:12:00.196000	0:12:03.282000	654.mp3	654.webp	は... ヤマオカ　クソ!	¡Yamaoka! ¡Maldición!	Yamaoka... Damn it!	False	False			
-660	660	659	661	0:12:04.370000	0:12:06.830000	660.mp3	660.webp	スペーシアンの狭量が...	Malditos Spacians que no piensan...	Spacians are so narrow-minded...	False	False			
-664	664	662	663	0:12:09.410000	0:12:11.600000	664.mp3	664.webp	エルノラ? エリィ?	¿Elnora? ¿Eri?	Elnora? Eri?	False	False			
-667	667	665	666	0:12:12.870000	0:12:15.690000	667.mp3	667.webp	本部よりドミニコス隊各機へ通達	Cuartel general a las unidades Dominicus.	Headquarters to all Dominicus units.	False	False			
-670	670	669	668	0:12:15.730000	0:12:19.210000	670.mp3	670.webp	フォールクヴァング及び 周辺宙域を速やかに封鎖	Bloqueen de inmediato las inmediaciones de Folkvangr.	You are to seal off Folkvangr and its surrounding space at once.	False	False			
-671	671	673	672	0:12:20.091000	0:12:22.220000	671.mp3	671.webp	シャトル1隻 逃がしてはならん	Que no escape ni una sola lanzadera.	Don't let a single shuttle get away.	False	False			
-677	677,678	675,679	676	0:12:34.390000	0:12:36.810000	677.mp3	677.webp	ナイラ?　ウェンディ 逃げて	¿Nyla? Wendy, huye.	Nyla? -Run, Wendy.	False	False			
-682	682	680	681	0:12:37.100000	0:12:38.943000	682.mp3	682.webp	早く! あ...	¡Ahora!	Hurry up!	False	False			
-684	684	683	685	0:12:39.770000	0:12:41.260000	684.mp3	684.webp	ナイラ!	¡Nyla!	Nyla!	False	False			
-686	686,689	687	688	0:12:41.195000	0:12:44.380000	686.mp3	686.webp	警報?　エルノラ!	¿La alarma? -¡Elnora!	The alarm? -Elnora!	False	False			
-691	691	690	692	0:12:45.040000	0:12:47.140000	691.mp3	691.webp	評議会が一線を越えてきた	El Consejo cruzó la línea.	The council has crossed the line.	False	False			
-693	693,696	694	695	0:12:47.118000	0:12:49.328000	693.mp3	693.webp	エリィがいないの　エリィが?	No encuentro a Eri. -¿Desapareció?	I can't find Eri. -Eri's missing?	False	False			
-699	699,702	698,701	700	0:12:51.020000	0:12:54.310000	699.mp3	699.webp	君はエリィを頼む　僕はルブリスで出る	Ve a buscar a Eri. Yo saldré con el Lfrith.	You take care of Eri. I'm going out in the Lfrith.	False	False			
-705	705,706	704	703	0:12:54.560000	0:12:57.610000	705.mp3	705.webp	危険すぎる　敵が来てからじゃ遅すぎる	Es muy peligroso. -Será el fin si viene el enemigo.	It's too dangerous! -It'll be too late by the time they arrive!	False	False			
-708	708	707	709	0:12:58.020000	0:13:01.550000	708.mp3	708.webp	君たちの作った GUNDアームを信じろよ	Confía en los GUND-ARM que crearon.	Believe in the GUND-ARM you made.	False	False			
-711	711	710	712	0:13:02.920000	0:13:04.802000	711.mp3	711.webp	マネージャーが出るんですか?	¿Saldrá, director?	You're going yourself, manager?	False	False			
-714	714	713	715	0:13:05.090000	0:13:07.200000	714.mp3	714.webp	ウェンディと連絡が取れない	No localizo a Wendy.	I can't make contact with Wendy.	False	False			
-718	718	716	717	0:13:07.390000	0:13:10.100000	718.mp3	718.webp	僕が足止めしているあいだに 退路を確保してくれ	Los ralentizaré. Consigan una ruta de huida.	Establish an escape route while I'm holding them back!	False	False			
-721	721	719	720	0:13:10.510000	0:13:12.790000	721.mp3	721.webp	本社の救援は どうなんです?	¿Llegarán refuerzos del cuartel?	What about reinforcements from headquarters?	False	False			
-723	723	722	724	0:13:12.640000	0:13:14.370000	723.mp3	723.webp	期待はできないな	No te hagas ilusiones.	We shouldn't get our hopes up.	False	False			
-726	726	725	727	0:13:17.580000	0:13:19.960000	726.mp3	726.webp	LF01 射出!	¡LF-01, despegue!	LF-01, launching!	False	False			
-729	729	728	730	0:13:28.070000	0:13:30.990000	729.mp3	729.webp	GUNDフォーマット パーメットスコア 2!	¡GUND Format Permet puntuación dos!	GUND Format Permet score, two!	False	False			
-732	732	731	733	0:13:35.070000	0:13:38.110000	732.mp3	732.webp	識別照合 目標モビルスーツと一致	La identificación indica un Mobile Suit.	Checking identification. Matched with target mobile suit.	False	False			
-734	734	736	735	0:13:38.210000	0:13:40.940000	734.mp3	734.webp	了解 行動を開始する	Entendido. Iniciando misión.	Roger that. Initiating action.	False	False			
-738	738	737	739	0:13:43.960000	0:13:47.240000	738.mp3	738.webp	速い これがガンダムか	¡Qué rápido! ¡Ha de ser un Gundam!	So fast! So that's a Gundam?	False	False			
-742	742	740	741	0:13:57.820000	0:13:59.880000	742.mp3	742.webp	パーメットスコア 3!	¡Permet puntuación tres!	Permet score, three!	False	False			
-744	744	743	745	0:14:02.610000	0:14:04.690000	744.mp3	744.webp	よけた!? バカな!	¿Lo esquivó? ¡Es imposible!	He dodged it? Impossible!	False	False			
-749	749	747	748	0:14:11.390000	0:14:14.390000	749.mp3	749.webp	久しぶりだな この感じ	Hace mucho que no sentía esto.	It's been a while since I felt like this.	False	False			
-751	751	750	752	0:14:14.780000	0:14:16.980000	751.mp3	751.webp	やつらは妙なスウォーム兵器を使う	El objetivo usa armas de enjambre.	The opponents are using unfamiliar swarm weapons.	False	False			
-755	755	754	753	0:14:17.020000	0:14:19.560000	755.mp3	755.webp	1対1で行くな 数...	No vayas solo y...	Do not engage one-on-one. With numbers-	False	False			
-759	759	758	757	0:14:24.570000	0:14:26.320000	759.mp3	759.webp	ウェンディ 君か!	Wendy, ¿eres tú?	Is that you, Wendy?	False	False			
-762	762	760	761	0:14:26.700000	0:14:29.410000	762.mp3	762.webp	ナイラの敵を取ってやるんだ	¡Debo vengar a Nyla!	I have to avenge Nyla.	False	False			
-764	764	763	765	0:14:29.810000	0:14:31.200000	764.mp3	764.webp	そうだな	Ya veo.	I see.	False	False			
-767	767	766	768	0:14:31.680000	0:14:33.450000	767.mp3	767.webp	敵を引きつける!	Yo distraeré al enemigo.	I'm going to lure the enemy away.	False	False			
-771	771	770	769	0:14:34.870000	0:14:38.610000	771.mp3	771.webp	左舷 進行方向 ガンダムタイプ 2機目を確認	Segundo Mobile Suit de tipo Gundam ubicado a babor.	Second Gundam-type mobile suit detected to port side in travel direction.	False	False			
-774	774	773,776	772,775	0:14:38.660000	0:14:42.340000	774.mp3	774.webp	情報どおりだな 警戒を怠るな	Coincide con nuestra información. Estén muy atentos.	That matches our information. Remain on guard.	False	False			
-779	779	777,780	778	0:14:42.380000	0:14:45.150000	779.mp3	779.webp	ケナンジ ベギルベウを出せ	Kenanji. Sal con el Beguir-Beu.	Kenanji, deploy Beguir-Beu.	False	False			
-782	782	781	783	0:14:46.400000	0:14:47.760000	782.mp3	782.webp	了解	Entendido.	Roger.	False	False			
-785	785,787	784,789	786,788	0:14:51.530000	0:14:58.040000	785.mp3	785.webp	私は これまで⸺　数多の戦場を経験し 1つの結論を得ました	Gracias a mi experiencia en innumerables combates, llegué a una conclusión.	Throughout my years of experience on countless battlefields, I've come to one conclusion.	False	False			
-792	792	790	791	0:14:58.970000	0:15:03.670000	792.mp3	792.webp	兵器とは 人を殺すためだけに 存在するべきだと	Las armas solo existen para matar a otros.	Weapons should only exist to kill people.	False	False			
-794	794	793	795	0:15:04.170000	0:15:06.240000	794.mp3	794.webp	一点の言い訳もなく⸺	No tienen ninguna excusa.	There should be no excuses for this.	False	False			
-798	798	796	797	0:15:06.730000	0:15:09.950000	798.mp3	798.webp	純粋に殺すための 道具を手にすることで⸺	El mero hecho de sostener una herramienta para matar	Once someone holds in their hands a tool meant purely for killing,	False	False			
-801	801	799	800	0:15:10.210000	0:15:12.680000	801.mp3	801.webp	人は罪を背負うのです	es un pecado en sí mismo.	they have to bear the sin that comes with it.	False	False			
-804	804,805	802	803	0:15:13.480000	0:15:18.060000	804.mp3	804.webp	しかし ヴァナディースと オックス・アースの⸺　モビルスーツは違う!	Pero los Mobile Suits de Vanadis y Ochs Earth van más allá.	But the mobile suits of Vanadis and Ochs Earth are different!	False	False			
-807	807	806	808	0:15:18.490000	0:15:22.480000	807.mp3	807.webp	相手の命だけでなく 乗り手の命すら奪う!	Le arrebatan la vida al piloto y al adversario.	Not only do they take the lives of their opponents, but of their operators as well.	False	False			
-810	810	809	811	0:15:23.940000	0:15:27.900000	810.mp3	810.webp	これは道具ではなく もはや呪いです	No son herramientas, son una maldición para todos.	This is not a tool. It is a curse!	False	False			
-812	812,816	813,815	814	0:15:30.489000	0:15:35.119000	812.mp3	812.webp	ハアハアハアハア... ウェンディ!　それ以上のスコアは危険だ! あ...	¡Wendy! ¡No subas más la puntuación!	Wendy! It's too dangerous to raise the score further!	False	False			
-818	818	817	819	0:15:35.080000	0:15:37.200000	818.mp3	818.webp	命を奪った罰は⸺	El castigo por arrebatar una vida	The punishment for taking a life	False	False			
-821	821	822	820	0:15:37.270000	0:15:40.980000	821.mp3	821.webp	機械ではなく人によって 課されなければならない	debe aplicarlo un humano, no una máquina.	should be imposed upon us by humans, and not machines.	False	False			
-823	823	825	824	0:15:41	0:15:44.250000	823.mp3	823.webp	ナイラ 敵は取るから!	¡Nyla, te vengaré!	Nyla... I'll avenge your death!	False	False			
-828	828	827	826	0:15:44.310000	0:15:47.690000	828.mp3	828.webp	人と人が命を奪い合うことこそ⸺	A la gente debe matarla la gente.	People must kill or be killed by people.	False	False			
-829	829,832	830	831	0:15:48.132000	0:15:53.970000	829.mp3	829.webp	戦争という 愚かしい行為における⸺　最低限の作法であるべきです!	Al menos debemos permitir esa dignidad en esa estupidez llamada guerra.	I believe that's the minimum courtesy in the foolish act of war.	False	False			
-834	834	833	835	0:15:54.140000	0:15:55.660000	834.mp3	834.webp	離れろ ウェンディ!	¡Regresa, Wendy!	Get back, Wendy!	False	False			
-837	837	836	838	0:15:55.570000	0:15:57.790000	837.mp3	837.webp	ただの特化型じゃない!	Esa unidad es impresionante.	That's no ordinary custom type!	False	False			
-840	840	839	841	0:16:00.540000	0:16:02.670000	840.mp3	840.webp	動かない なんで!	¿Por qué no puedo moverme?	I can't move. Why?	False	False			
-843	843	842	844	0:16:02.640000	0:16:06	843.mp3	843.webp	GUNDフォーマットの リンク 制圧完了	Enlace anulado con el GUND Format.	GUND Format link suppressed.	False	False			
-846	846	845	847	0:16:06.420000	0:16:09.380000	846.mp3	846.webp	これでガンダムも終わりだな	Comienza el fin de los Gundams.	This is the end of the Gundams.	False	False			
-850	850	848	849	0:16:09.280000	0:16:10.590000	850.mp3	850.webp	ナイラ...	Nyla.	Nyla...	False	False			
-852	852	851	853	0:16:14.700000	0:16:16.410000	852.mp3	852.webp	ウェンディ!	¡Wendy!	Wendy!	False	False			
-856	856	854	855	0:16:17.470000	0:16:19.520000	856.mp3	856.webp	自ら引き金を引き⸺	Debemos tirar del gatillo nosotros	When we pull the trigger ourselves,	False	False			
-858	858	857	859	0:16:19.690000	0:16:22.370000	858.mp3	858.webp	奪った命の尊さと⸺	para comprender el valor de la vida que arrebatamos	we bear the burden of the life we're taking	False	False			
-861	861	862	860	0:16:22.440000	0:16:25.020000	861.mp3	861.webp	あがないきれない罪を背負う	y el peso de nuestro pecado imperdonable.	and of a sin we can never atone for.	False	False			
-865	865	863	864	0:16:25.800000	0:16:28.960000	865.mp3	865.webp	戦争とは 人殺しとは!	¡No olvidemos lo que significa librar una guerra	In war, or any form of murder...	False	False			
-867	867	866	868	0:16:29.480000	0:16:31.460000	867.mp3	867.webp	そうでなければならない!	y matar a seres humanos!	That's how it has to be.	False	False			
-871	871	870	872	0:16:37.680000	0:16:39.660000	871.mp3	871.webp	カルド・ナボ博士	Doctora Cardo Nabo.	Dr. Cardo Nabo.	False	False			
-875	875	873	874	0:16:39.930000	0:16:42.710000	875.mp3	875.webp	あなたには ここで死んでいただく	Aquí termina tu vida.	You are going to die here.	False	False			
-877	877	876	878	0:16:44.030000	0:16:47.650000	877.mp3	877.webp	地球という ゆりかごで生まれた人類が⸺	La humanidad, nacida en la cuna de la Tierra,	Humanity was born in the cradle of Earth.	False	False			
-881	881	880	879	0:16:47.790000	0:16:52.170000	881.mp3	881.webp	宇宙へ出るには この体は脆弱すぎる	es demasiado frágil para aventurarse en el espacio.	Our bodies are far too fragile for us to venture into space.	False	False			
-884	884	882	883	0:16:52.620000	0:16:55.090000	884.mp3	884.webp	赤子が服を着るように⸺	Al igual que vestimos a un recién nacido,	Just as an infant has to put on clothes,	False	False			
-886	886	885	887	0:16:55.760000	0:17:01.040000	886.mp3	886.webp	私たちはGUNDをまとうことで 初めて宇宙に出ていける	solo llevando el GUND podemos sobrevivir en el espacio.	humanity must don the GUND to truly go out into space.	False	False			
-890	890	888	889	0:17:01.660000	0:17:04.840000	890.mp3	890.webp	生贄を要する技術が 詭弁だな	Es una excusa para una tecnología que pide sacrificios.	That's just an excuse for a technology that requires sacrificial victims.	False	False			
-892	892	891	893	0:17:04.830000	0:17:06.919000	892.mp3	892.webp	分かってないね ん...	No entienden nada.	You don't understand.	False	False			
-896	896	894	895	0:17:07.220000	0:17:09.255000	896.mp3	896.webp	お前たちが奪うのは⸺	¡Cuando se hagan con el GUND,	What all of you are taking away...	False	False			
-898	898	897	899	0:17:09.470000	0:17:12.883000	898.mp3	898.webp	GUNDが救うだろう未来だぞ!	acabarán con su propio futuro!	is the future that the GUND will save!	False	False			
-904	904	903	905	0:17:26.360000	0:17:28.023000	904.mp3	904.webp	エリィ! あ...	¡Eri!	Eri!	False	False			
-908	908,910	906,909,911	907	0:17:28.540000	0:17:34.613000	908.mp3	908.webp	ママ!　ママ ママ! ママー! ママー!	¡Mamá! ¡Mamá! ¡Mamá!	Mommy! Mommy!	False	False			
-914	914	912	913	0:17:35.280000	0:17:36.657000	914.mp3	914.webp	ママー!	¡Mamá!	Mommy!	False	False			
-917	917	916	915,918	0:17:36.590000	0:17:40.100000	917.mp3	917.webp	もう大丈夫 大丈夫だから	Tranquila. Ya pasó todo.	It's okay now. It'll be all right.	False	False			
-920	920	921	919	0:17:44.730000	0:17:46.870000	920.mp3	920.webp	本部より 各ユニットへ	Cuartel a todas las unidades.	Headquarters to all units.	False	False			
-923	923,925	922	924	0:17:47.040000	0:17:51.172000	923.mp3	923.webp	カルド・ナボ 及び主要メンバーの 生命無力化に成功　あ...	Neutralizamos a Cardo Nabo y todos los miembros clave.	We've successfully neutralized the lives of Cardo Nabo and all key members.	False	False			
-926	926	928	927	0:17:51.255000	0:17:54.090000	926.mp3	926.webp	フロントの爆破準備後 撤退せよ	Retírsense cuando estén listos para detonar el frente.	Retreat as soon as preparations to blow up the front are complete.	False	False			
-931	931	930	929	0:17:54.240000	0:17:55.470000	931.mp3	931.webp	先生...	Doctora...	Dr. Cardo... -I repeat.	False	False			
-934	934	933	932	0:17:55.490000	0:17:57.970000	934.mp3	934.webp	どうして 先生	¿Por qué tuviste que morir?	Headquarters to all units. -Why did you have to die...	False	False			
-936	936	937	938	0:17:59.305000	0:18:01.410000	936.mp3	936.webp	うう... ママ	¿Mamá?	Cardo Nabo and all key members. -Mommy.	False	False			
-940	940		939	0:18:01.790000	0:18:04.250000	940.mp3	940.webp	あ...		Retreat as soon as preparations to blow up the front are complete.		False			
-941	941	942	943	0:18:08.731000	0:18:12.500000	941.mp3	941.webp	は... レイヤー33からの コールバック...	¿Hay respuesta de la Capa 33?	A callback from layer 33?	False	False			
-945	945	944	946	0:18:12.760000	0:18:15.321000	945.mp3	945.webp	一体 誰の認証バイタルで... はっ...	¿Con qué signos vitales se autentificó?	With whose authentication vitals...?	False	False			
-948	948	947	949	0:18:15.530000	0:18:16.800000	948.mp3	948.webp	ママ	Mamá.	Mommy...	False	False			
-951	951	950	952	0:18:18.360000	0:18:20.660000	951.mp3	951.webp	この子 起きたの?	¿Se despertó?	Did she wake up?	False	False			
-956	956	955	957	0:18:24.680000	0:18:27.600000	956.mp3	956.webp	フォールクヴァング内に 強力な電磁波	Ondas electromagnéticas detectadas en Folkvangr.	Strong electromagnetic waves detected from within Folkvangr.	False	False			
-959	959	958	960	0:18:27.900000	0:18:30.270000	959.mp3	959.webp	未登録のパーメット識別コードです	Es una ID Permet desconocida.	It's an unregistered Permet identification code.	False	False			
-963	963	962	961	0:18:30.310000	0:18:31.503000	963.mp3	963.webp	もう1機いただと?	¿Había otro más?	They have another machine?	False	False			
-964	964	966	965,967	0:18:51.982000	0:18:55.590000	964.mp3	964.webp	ひとつ ふたつ みっつ!	¡Uno, dos, tres!	One, two, three!	False	False			
-971	971	970	969	0:19:15.730000	0:19:18.342000	971.mp3	971.webp	ママ ママ あ...	¡Mamá!	Mommy, Mommy!	False	False			
-974	974	972	973	0:19:19.410000	0:19:21.820000	974.mp3	974.webp	ロウソクみたいでキレイだね	¡Qué bonito, son como las velas!	They look just like candles! Isn't it pretty?	False	False			
-976	976	975	977	0:19:23.150000	0:19:25.266000	976.mp3	976.webp	そうね	Es verdad.	You're right...	False	False			
-979	979	980	978	0:19:35.340000	0:19:37.670000	979.mp3	979.webp	なかなかやる だが...	Eres hábil, pero...	Not bad. However...	False	False			
-984	984	982	983	0:19:43.700000	0:19:46.140000	984.mp3	984.webp	しょせんは ガンダム... ぐあ!	¡No eres más que un Gundam!	This is all a Gundam can-	False	False			
-987	987	986	988	0:19:51.790000	0:19:53.730000	987.mp3	987.webp	エルノラ 君か?	Elnora, ¿eres tú?	Is that you, Elnora?	False	False			
-991	991	989	990	0:19:54.110000	0:19:56.110000	991.mp3	991.webp	ナディム パパ!	¿Nadim? -¡Papá!	Nadim! -Daddy!	False	False			
-993	993	992	994,995	0:19:55.920000	0:19:58.760000	993.mp3	993.webp	この! 放せ ガンダム!	¡Maldición! ¡Suéltame, Gundam!	Damn you... Let go of me, damn Gundam!	False	False			
-998	998	997	996	0:19:58.740000	0:20:00.760000	998.mp3	998.webp	エルノラ 君は逃げろ	Elnora, tienes que escapar.	You have to run, Elnora.	False	False			
-1000	1000,1002	1001	999,1003	0:20:00.740000	0:20:04.360000	1000.mp3	1000.webp	バカ言わないで 私も...　逃げるのは君だけじゃない!	¡No digas tonterías! Voy a... -¡No escaparás sola!	Don't be ridiculous! I'm coming- You're not the only one escaping here!	False	False			
-1005	1005,1008	1007,1009	1006,1010	0:20:05.723000	0:20:10.500000	1005.mp3	1005.webp	生きてくれ　君とエリクトと みんなのために!	Sobrevive, por favor. ¡Por tu bien, por el de Ericht, por el de todos!	Live. Both you and Ericht. For everyone's sake!	False	False			
-1012	1012	1014	1013	0:20:18.902000	0:20:21.610000	1012.mp3	1012.webp	ナディム 愛してる	Te quiero, Nadim.	I love you, Nadim.	False	False			
-1017	1017	1016	1015	0:20:26.260000	0:20:28.912000	1017.mp3	1017.webp	僕もだ 愛してる	Yo también te quiero, Elnora.	I love you too.	False	False			
-1019	1019	1018	1020	0:20:30.590000	0:20:32.690000	1019.mp3	1019.webp	パーメットスコア 4!	¡Permet puntuación cuatro!	Permet score, four!	False	False			
-1026	1026	1024	1025	0:20:46.980000	0:20:49.160000	1026.mp3	1026.webp	パパ ただいまー おおー	¡Papá, regresé!	Daddy, I'm home!	False	False			
-1027	1027	1028	1029	0:20:49.016000	0:20:50.870000	1027.mp3	1027.webp	ああっ おかえり	Bienvenida.	Welcome back.	False	False			
-1032	1032	1030	1031	0:20:50.860000	0:20:53.620000	1032.mp3	1032.webp	パパ お誕生日って何?	Papá, ¿qué es un cumpleaños?	What's a birthday, Daddy?	False	False			
-1034	1034	1035	1033	0:20:53.670000	0:20:56.540000	1034.mp3	1034.webp	エリィが生まれた日を お祝いするんだよ	Es cuando se festeja el día que naciste, Eri.	It's when we celebrate the day you were born, Eri.	False	False			
-1038	1038	1037	1036	0:20:56.590000	0:20:58.840000	1038.mp3	1038.webp	お祝いって何するの?	¿Y cómo se festeja?	And what do we do to celebrate?	False	False			
-1039	1039	1040	1041	0:20:58.817000	0:21:00.510000	1039.mp3	1039.webp	そうだなー	Pues...	Well...	False	False			
-1042	1042,1045	1043	1044	0:21:03.739000	0:21:08.577000	1042.mp3	1042.webp	ハッピーバースデー...　トゥーユー... うう...	Cumpleaños feliz.	Happy birthday to you	False	False			
-1046	1046,1049,1052,1053	1047,1050,1054	1048,1051,1055	0:21:10.037000	0:21:19.110000	1046.mp3	1046.webp	ハッピーバースデー... パパ!　パパだ! トゥーユー...　この回線を切れ　できません 発信現場はガンダムと推測	Cumpleaños... -¡Es papá! -...feliz. -Corten este canal. -No podemos. Creemos que es el Gundam. -Te deseamos...	Happy birthday to you -Daddy! It's Daddy! -Cut off the communication. -I can't. -The source appears to be the Gundam. -Happy birthday	False	False			
-1057	1057	1056	1058	0:21:19.120000	0:21:22.420000	1057.mp3	1057.webp	ディア エリクト... どういうことだ	...Ericht. -¿Qué está pasando?	What's going on? -dear Ericht	False	False			
-1061	1061	1059	1060	0:21:32.160000	0:21:37.650000	1061.mp3	1061.webp	ハッピーバースデー トゥーユ	Cumpleaños feliz.	Happy birthday to you	False	False			
-1063	1063	1062	1064	0:21:42.780000	0:21:46.490000	1063.mp3	1063.webp	そして 我らカテドラルは⸺	Y por lo tanto, nosotros, Cathedral,	And our Cathedra...	False	False			
-1067	1067	1065	1066	0:21:47.150000	0:21:49.100000	1067.mp3	1067.webp	すべてのガンダムを⸺	por la presente	shall deny	False	False			
+767373892c	2	1	3	0:00:18.529000	0:00:21.640000	767373892c.mp3	767373892c.webp	スロールより LF03へ	Thrall a LF-03.	Thrall to LF-03.	False	False			
+cc479bf9fc	5	4	6	0:00:21.720000	0:00:24.690000	cc479bf9fc.mp3	cc479bf9fc.webp	パーメットリンク 接続テスト再開	Reiniciando prueba de conexión del enlace Permet.	Restarting Permet link connection test.	False	False			
+fe50160908	8	7	9	0:00:25.620000	0:00:28.940000	fe50160908.mp3	fe50160908.webp	3 2 1	En tres, dos, uno...	Three, two, one.	False	False			
+474f0e9871	11	10	12	0:00:30.210000	0:00:32.240000	474f0e9871.mp3	474f0e9871.webp	インターコネクト確立	Interconexión establecida.	Interconnect established.	False	False			
+8937fc176d	13	14	15	0:00:32.217000	0:00:34.110000	8937fc176d.mp3	8937fc176d.webp	現在 レイヤー31	Actualmente en Capa 31.	Currently on layer 31.	False	False			
+1cd3c592ec	17	16	18	0:00:34.120000	0:00:36.430000	1cd3c592ec.mp3	1cd3c592ec.webp	コールを開始してください	Inicia la llamada. -Entendido.	Please commence calling.	False	False			
+932935e7c6	20	21	19	0:00:35.990000	0:00:40.160000	932935e7c6.mp3	932935e7c6.webp	了解 レイヤー31 コール開始	Llamando a la Capa 31.	Understood. Commencing call to layer 31.	False	False			
+4969d2986c	23,26	22,25	24	0:00:40.270000	0:00:44.640000	4969d2986c.mp3	4969d2986c.webp	GUNDフォーマット 異常表示なし　レイヤー32 接続	Sin anomalías en el GUND Format. Conecta con la Capa 32.	No abnormalities detected in GUND Format. Connect to layer 32.	False	False			
+30218e83f7	28,30	29,31	27,32	0:00:44.750000	0:00:50.190000	30218e83f7.mp3	30218e83f7.webp	レイヤー32 コール　コールバック確認 レイヤー33に接続	Llamando a la Capa 32. Recepción confirmada. Conecta con la Capa 33.	Calling layer 32. -Callback confirmed. Connect to layer 33.	False	False			
+5b63a2595a	34	35	33	0:00:50.210000	0:00:52.340000	5b63a2595a.mp3	5b63a2595a.webp	レイヤー33 コール	Llamando a la Capa 33.	Calling layer 33.	False	False			
+f465968fa0	38	36	37	0:00:53.690000	0:00:55.740000	f465968fa0.mp3	f465968fa0.webp	エラー コールバックなし	Error. No hay recepción.	Error. No callback.	False	False			
+c89d799dce	40	41	39	0:00:55.840000	0:00:57.700000	c89d799dce.mp3	c89d799dce.webp	レイヤーを10まで後退	Retírate a la Capa 10.	Fall back to layer 10.	False	False			
+1b493cb650	42	43	44	0:00:57.826000	0:01:01.270000	1b493cb650.mp3	1b493cb650.webp	レイヤー10から 再度レイヤー33へ コール	Intentando llamar a la Capa 33 desde la Capa 10.	Calling from layer 10 to 33 again.	False	False			
+27b40d3aca	46	45	47	0:01:02.540000	0:01:04.750000	27b40d3aca.mp3	27b40d3aca.webp	エラー コールバックなし	Error. No hay recepción.	Error. No callback.	False	False			
+9f16250585	48	50	49	0:01:04.875000	0:01:06.835000	9f16250585.mp3	9f16250585.webp	レイヤー33 コール	Llamando a la Capa 33.	Calling layer 33.	False	False			
+fa9e897830	52	51	53	0:01:08.360000	0:01:10.380000	fa9e897830.mp3	fa9e897830.webp	エラー コールバックなし	Error. No hay recepción.	Error. No callback.	False	False			
+38a0cbb067	56	55	54	0:01:10.520000	0:01:12.690000	38a0cbb067.mp3	38a0cbb067.webp	LF03より スロールへ	LF-03 a Thrall.	LF-03 to Thrall.	False	False			
+bd2682eadd	58	57	59	0:01:13.200000	0:01:16.260000	bd2682eadd.mp3	bd2682eadd.webp	GUNDフォーマットの スコアを上げることを要求	Solicitando aumento de la puntuación del GUND Format.	Requesting increase in GUND Format score.	False	False			
+6cbb1297a1	62	60	61	0:01:16.430000	0:01:19.530000	6cbb1297a1.mp3	6cbb1297a1.webp	ネガティブ テストの目的に反します	Negativo. Iría contra el objetivo de la prueba.	Negative. That's contrary to the test objective.	False	False			
+cf499c9f41	64,67	63	65,66	0:01:19.550000	0:01:23.120000	cf499c9f41.mp3	cf499c9f41.webp	時間がないの 実行します　ちょっと待ちなさい	No hay tiempo. Lo ejecutaré. -Espera.	We don't have time. -Executing now. -Hold on!	False	False			
+d5b5b13e1f	70	68	69	0:01:23.360000	0:01:24.710000	d5b5b13e1f.mp3	d5b5b13e1f.webp	エルノラ	Elnora.	Elnora.	False	False			
+e235b9d134	73	71	72	0:01:25.230000	0:01:27.560000	e235b9d134.mp3	e235b9d134.webp	今日は このへんにしておこうか	Dejémoslo por hoy.	Let's end for the day.	False	False			
+9cec264348	75	74	76	0:01:27.890000	0:01:30.420000	9cec264348.mp3	9cec264348.webp	まだ危険領域に入っていません	Aún no llegué a la zona de peligro.	I'm not yet in the dangerous range.	False	False			
+47428c2c46	78,80	79	77,81	0:01:30.460000	0:01:34.530000	47428c2c46.mp3	47428c2c46.webp	レベルを上げて もう一度 レイヤーさんじゅ...　ここまでだよ エルノラ	Aumentaré el nivel y... -Deja ya la prueba, Elnora.	Let me increase the level and test layer 33- That's enough, Elnora.	False	False			
+0e07e048e4	85	83	84	0:01:37.460000	0:01:38.700000	0e07e048e4.mp3	0e07e048e4.webp	はい	Entendido.	Yes, ma'am.	False	False			
+bd139234ec	88	86,89	87	0:01:39.700000	0:01:43.450000	bd139234ec.mp3	bd139234ec.webp	テスト終了 パーメット流入値の解析を開始して	Prueba terminada. Analicen los valores de entrada de Permet.	Test concluded. Begin analysis of Permet influx values.	False	False			
+37049f9d8c	91,93	92,94	90	0:01:43.310000	0:01:47.375000	37049f9d8c.mp3	37049f9d8c.webp	了解 解析始めます　異常変動の検知は どうします?	Entendido. Iniciando análisis. ¿Hay fluctuaciones anormales?	Understood. Beginning analysis. -Detected any abnormal fluctuations?	False	False			
+42aa44e548	97	96	95	0:01:47.390000	0:01:49.730000	42aa44e548.mp3	42aa44e548.webp	気負うな	Te impacientas demasiado.	Look for tremors before the fluctuation. -Don't get too worked up.	False	False			
+36229c1910	99	98	100	0:01:49.580000	0:01:51.110000	36229c1910.mp3	36229c1910.webp	カルド先生	Doctora Cardo.	Dr. Cardo.	False	False			
+7601a61705	103	102	101	0:01:51.230000	0:01:54.530000	7601a61705.mp3	7601a61705.webp	あんたでダメなら 誰にもクリアはできないさ	Si tú no puedes superarlo, nadie podrá.	If you can't clear this, then no one can.	False	False			
+5ba2340afc	106	104	105	0:01:55.150000	0:01:59.160000	5ba2340afc.mp3	5ba2340afc.webp	GUNDフォーマットの健全性を 早く証明しないと	Debemos demostrar cuanto antes que el GUND Format es seguro.	We need to prove the soundness of the GUND Format as soon as possible.	False	False			
+7159698ede	109	107	108	0:01:59.420000	0:02:01.930000	7159698ede.mp3	7159698ede.webp	評議会も これ以上は...	Si no, estaremos en manos del Consejo.	Otherwise, the council will...	False	False			
+5083a1af1f	111	110	112,113	0:02:02.390000	0:02:06.660000	5083a1af1f.mp3	5083a1af1f.webp	それで あんたの体が お釈迦になっちゃ 元も子もない	No servirá de nada si tu cuerpo no resiste.	Our success won't mean a thing if you're crippled for life.	False	False			
+3b6029d583	115	116	114	0:02:06.710000	0:02:09.370000	3b6029d583.mp3	3b6029d583.webp	しかし... それに お迎えも来てる	Pero... -Y vino alguien a buscarte.	But- -Besides, someone's here to see you.	False	False			
+78f8243869	118	119	117	0:02:09.420000	0:02:11.560000	78f8243869.mp3	78f8243869.webp	え? あ... ママー!	¡Mamá!	What? -Mommy!	False	False			
+d1338cda07	122	121	120	0:02:16.590000	0:02:18.340000	d1338cda07.mp3	d1338cda07.webp	ママー!	¡Mamá!	Mommy!	False	False			
+5b5b035de6	126	124	125	0:02:21.210000	0:02:22.450000	5b5b035de6.mp3	5b5b035de6.webp	エリィ!	¡Eri!	Mommy! -Eri!	False	False			
+aa027271c3	130	128,131	129,132	0:02:27.980000	0:02:32.270000	aa027271c3.mp3	aa027271c3.webp	ママ パパが待ってるよ ケーキ食べようよ ケーキ!	¡Mamá! ¡Te espera papá! ¡Comeremos pastel!	Mommy! Daddy's waiting for you too! Let's have cake together!	False	False			
+aef262c95c	135	133	134	0:02:32.250000	0:02:35.150000	aef262c95c.mp3	aef262c95c.webp	ここに来ちゃダメって 言ってるでしょ	Te dije que no vinieras aquí.	Haven't I told you that you're not allowed to come here?	False	False			
+14541c6444	136	138	137	0:02:35.173000	0:02:37.720000	14541c6444.mp3	14541c6444.webp	あの子 まだ起きないの?	¿Sigue dormida?	Is she still sleeping?	False	False			
+139d9a41ac	141	139	140	0:02:42.040000	0:02:43.220000	139d9a41ac.mp3	139d9a41ac.webp	うん	Sí.	Yes.	False	False			
+642126fb49	143	142	144	0:02:44.770000	0:02:46.330000	642126fb49.mp3	642126fb49.webp	そうだね	Profundamente.	You're right.	False	False			
+fd62a3498d	146	145	147	0:02:48.410000	0:02:51.320000	fd62a3498d.mp3	fd62a3498d.webp	ダメでしょ おっきしないと	Se ganará un buen regaño si no despierta ya.	What a naughty girl. It's time to rise and shine.	False	False			
+6299d8ab69	149	148	150	0:02:51.600000	0:02:54.550000	6299d8ab69.mp3	6299d8ab69.webp	ルブリスは まだ赤ん坊なのさ	Lfrith aún es un bebé.	Lfrith is still an infant.	False	False			
+4f86c0a2e5	153	151	152	0:02:54.680000	0:02:56.150000	4f86c0a2e5.mp3	4f86c0a2e5.webp	赤ちゃん?	¿Un bebé?	A baby?	False	False			
+2f1586c52b	155	156	154	0:02:56.170000	0:02:59.450000	2f1586c52b.mp3	2f1586c52b.webp	そう 寝返りもできない生まれたて	Exacto. Una recién nacida incapaz de darse voltearse.	Yes. She doesn't even know how to turn over in bed.	False	False			
+f303de5707	159	158	157	0:03:00.010000	0:03:02.640000	f303de5707.mp3	f303de5707.webp	ここにいるスタッフ みんなの子供	Todos ayudamos en su nacimiento.	She's the child of all the staff members here.	False	False			
+de8e32283e	161,163	160	162	0:03:03.520000	0:03:08.270000	de8e32283e.mp3	de8e32283e.webp	今は お前のママが⸺　いろんなことを 教えてやっているところだよ	Ahora mismo, tu madre le está enseñando de todo.	Now, your mommy is trying to teach her all sorts of stuff.	False	False			
+e7a3350c75	165		164	0:03:08.600000	0:03:09.749000	e7a3350c75.mp3	e7a3350c75.webp	ふーん		I see...	False	False			
+a6cf4492d9	167	166	168	0:03:10.030000	0:03:12.860000	a6cf4492d9.mp3	a6cf4492d9.webp	じゃあ エリィのほうが おねえさんだね	Entonces, es mi hermanita.	Then I'm her big sister!	False	False			
+413aad29e7	170,173	169	171,172	0:03:13.200000	0:03:16.980000	413aad29e7.mp3	413aad29e7.webp	エリィは何歳になったの?　4歳!	¿Cuántos años cumplirás, Eri? -¡Cuatro!	How old are you now, Eri? I'm four!	False	False			
+6e8e0e0431	176,177,179	175,180	174,178,181	0:03:32.040000	0:03:40.080000	6e8e0e0431.mp3	6e8e0e0431.webp	フロント第3自治区は⸺　20日 オックス・アース社製モビルスーツ　ガンダムタイプ 購入予算の決議案を可決	El tercer sector autónomo del frente aprobó el día 20 la compra de ocho Gundams fabricados por Ochs Earth.	As of the 20th, the Front 3rd Autonomous Sector has approved a budget to purchase Gundam-type mobile suits manufactured by Ochs Earth.	False	False			
+d964d63681	184,185	182	183,186	0:03:40.030000	0:03:45.850000	d964d63681.mp3	d964d63681.webp	同社の兵器システムは⸺　搭乗者への生命倫理問題が 大きな懸念とされており⸺	Su sistema armamentístico supone problemas bioéticos para sus pilotos,	Ochs Earth's weapon system has raised major concerns regarding bioethical issues for its pilots,	False	False			
+925e52a103	188,190,193	187,192	189,191	0:03:45.930000	0:03:51.540000	925e52a103.mp3	925e52a103.webp	オックス社 及び⸺　モビルスーツ 開発評議会の⸺　説明責任が 問われています	por lo que se le solicitan responsabilidades a la empresa y también al Consejo de Desarrollo.	and the accountability of the company as well as the Mobile Suit Development Council has been called into question.	False	False			
+cf6cfaaada	196	194	195	0:03:51.710000	0:03:53.540000	cf6cfaaada.mp3	cf6cfaaada.webp	GUNDフォーマットは元来⸺	El GUND Format era constructivo.	Originally, the GUND Format	False	False			
+418be5a10f	198,201	199,202	197,200	0:03:53.980000	0:03:59.710000	418be5a10f.mp3	418be5a10f.webp	宇宙環境で生じる⸺　身体機能障害の補助を目的とした 医療技術です	Una tecnología médica que ayudaba con problemas físicos causados por el espacio.	was a medical technology meant to assist with physical dysfunctions caused by the space environment.	False	False			
+6a717da66b	204	203	205	0:04:00.760000	0:04:04.450000	6a717da66b.mp3	6a717da66b.webp	しかし 研究元である ヴァナディース機関を⸺	Pero el Instituto Vanadis, el principal investigador,	However, when the Vanadis Institute, the lead researcher on the project,	False	False			
+63c0990957	208	207	206	0:04:04.490000	0:04:06.760000	63c0990957.mp3	63c0990957.webp	オックス・アース社が買収	lo compró Ochs Earth.	was acquired by Ochs Earth,	False	False			
+49ca5e5949	211,212	210	209	0:04:06.870000	0:04:10.350000	49ca5e5949.mp3	49ca5e5949.webp	GUNDフォーマットが モビルスーツへ⸺　軍事転用されると⸺	El GUND Format fue readaptado para Mobile Suits.	the GUND Format was repurposed for military mobile suits.	False	False			
+3bb44b208b	214,216	215	213	0:04:10.500000	0:04:15.440000	3bb44b208b.mp3	3bb44b208b.webp	今度はデータストームによる⸺　身体へのダメージの問題が 浮上しました	Pero sus pilotos se exponen a tormentas de datos que dañan su cuerpo.	Physical damage to its pilots due to data storms then emerged as a problem.	False	False			
+7bd3b85833	218	217	219	0:04:16.610000	0:04:18.520000	7bd3b85833.mp3	7bd3b85833.webp	想像してください	¡Imagínenselo!	Just imagine.	False	False			
+54f1b39675	220	221	222	0:04:18.610000	0:04:23.010000	54f1b39675.mp3	54f1b39675.webp	非生物機構で動く 18メートルもの巨大な体を⸺	Una máquina de 18 metros de alto, moviéndose con mecanismos inorgánicos,	An 18-meter-tall giant frame moving with non-biological mechanisms,	False	False			
+521b1ccbc0	225	224	223	0:04:23.050000	0:04:26.970000	521b1ccbc0.mp3	521b1ccbc0.webp	無理矢理 人体とリンクさせて 制御させるんです	controlado al vincularse forzosamente a un cuerpo humano.	controlled by forcibly linking it to a human body.	False	False			
+f26c88ca1a	227	226	228	0:04:26.780000	0:04:29.830000	f26c88ca1a.mp3	f26c88ca1a.webp	搭乗者の負荷は計り知れませんよ	La carga que sufre el piloto es inconmensurable.	The burden placed on the pilot must be immeasurable!	False	False			
+3a7dd2c0e8	231,233,235	229,232	230,234	0:04:30.010000	0:04:37.400000	3a7dd2c0e8.mp3	3a7dd2c0e8.webp	今回のモビルスーツ増強は⸺　地球サイドに軍拡の口実を与え⸺　両者の緊張感を 加速させる恐れもあり...	La gente teme una carrera armamentística y que la construcción de Mobile Suits haga que la Tierra aumente su ejér...	The recent mobile suit buildup may provide Earth with an excuse to expand its military and accelerate tensions between both sides...	False	False			
+06fdc92519	237,239	236	238	0:04:38.260000	0:04:43.134000	06fdc92519.mp3	06fdc92519.webp	うちの製品を 好き勝手言ってくれるなあ　ん?	Dicen lo que quieren de nuestros productos.	Say all you want about our products.	False	False			
+88c72eb161	241	240	242	0:04:44.320000	0:04:46.740000	88c72eb161.mp3	88c72eb161.webp	パパ ただいまー! おおー	Papá, regresé.	Daddy, I'm home!	False	False			
+59860ab660	243	244	245	0:04:46.304000	0:04:48.260000	59860ab660.mp3	59860ab660.webp	ああっ おかえり	Bienvenida.	Welcome back.	False	False			
+16c9c6fa91	247	246	248	0:04:48.760000	0:04:52.870000	16c9c6fa91.mp3	16c9c6fa91.webp	素敵 ごめんね すっかりやらせちゃって	Qué lindo. Siento que tuvieras que hacer todo esto.	This looks great. I'm sorry you had to do everything.	False	False			
+3a86b57daa	250	249	251	0:04:52.830000	0:04:56.380000	3a86b57daa.mp3	3a86b57daa.webp	大丈夫 エリィが 手伝ってくれたからね	No te disculpes. Eri también ayudó.	It's fine. Eri helped out too.	False	False			
+6d5b7b9fdc	252	254	253	0:04:56.439000	0:04:58.650000	6d5b7b9fdc.mp3	6d5b7b9fdc.webp	こっちはエリィがやったんだよ	Yo hice eso de ahí.	I did this part myself!	False	False			
+d128e1789c	257	255	256	0:04:58.770000	0:05:01.400000	d128e1789c.mp3	d128e1789c.webp	スゴいねー とってもキレイ	Increíble. Es precioso.	You're amazing! It looks so pretty.	False	False			
+a3c6dd7409	258	259	260	0:05:01.528000	0:05:04.490000	a3c6dd7409.mp3	a3c6dd7409.webp	エリィ お誕生日帽子も 見せてあげたら?	Eri, ¿le traes a mamá un gorro de cumpleaños?	Eri. Why don't you show Mommy your birthday hat?	False	False			
+b5d824bc83	263	262	261	0:05:04.470000	0:05:06.408000	b5d824bc83.mp3	b5d824bc83.webp	うん! アハハ	¡Bien!	Right!	False	False			
+a1b16122ca	265	264	266	0:05:08.840000	0:05:10.760000	a1b16122ca.mp3	a1b16122ca.webp	また レイヤー33?	¿Otra vez la Capa 33?	Layer 33 again?	False	False			
+9c6ce69141	269	268	267	0:05:10.970000	0:05:14.480000	9c6ce69141.mp3	9c6ce69141.webp	早くクリアしないと みんなに迷惑かけちゃう	Si no lo supero pronto, tendremos problemas.	If I don't clear that soon, it'll mean trouble for everyone.	False	False			
+4004ed48b7	271	270	272	0:05:14.730000	0:05:15.900000	4004ed48b7.mp3	4004ed48b7.webp	すまない	Lo siento.	I'm sorry.	False	False			
+12c1181b90	273,277	274	275,276	0:05:16.209000	0:05:19.930000	12c1181b90.mp3	12c1181b90.webp	上が焦ってルブリスを ロールアウトしなけりゃ⸺　こんなこと...	Esto no pasaría si los jefes no tuvieran prisa por lanzar a Lfrith.	This wouldn't have happened if the higher-ups weren't in a rush to roll out the Lfrith.	False	False			
+20b7fe03ed	279	278,281	280,282	0:05:20.190000	0:05:24.240000	20b7fe03ed.mp3	20b7fe03ed.webp	スポンサーは必要よ ナディムのおかげ	Tenemos el patrocinador necesario. Gracias a ti, Nadim.	We needed a sponsor, anyway. You helped us, Nadim.	False	False			
+79e3478744	284,286	283	285	0:05:24.290000	0:05:28.700000	79e3478744.mp3	79e3478744.webp	期日まで評議会が⸺　おとなしくしてくれれば いいんだけど	Espero que el Consejo aguante hasta la fecha límite.	I just hope the council will stay quiet until the deadline.	False	False			
+6946d804b6	289	287	288	0:05:30.740000	0:05:33.310000	6946d804b6.mp3	6946d804b6.webp	あと1時間で会見です	La rueda de prensa será en una hora.	The press conference is in one hour.	False	False			
+e4e4b00354	292	290	291	0:05:33.970000	0:05:36.710000	e4e4b00354.mp3	e4e4b00354.webp	これで オックス・アースも終わりだな	Es el fin de Ochs Earth.	This is the end of Ochs Earth.	False	False			
+c64cac7c22	295	293	294	0:05:37.090000	0:05:41.320000	c64cac7c22.mp3	c64cac7c22.webp	アーシアン風情が出しゃばるから こういうことになる	Es lo que pasa ocurre los Earthians se ponen muy altivos.	This is what happens when Earthians get presumptuous.	False	False			
+f18396cbb3	297	296	298	0:05:41.650000	0:05:44.300000	f18396cbb3.mp3	f18396cbb3.webp	ことが容易く運べばいいがな	Con suerte, será tan fácil como dices.	Hopefully, it'll be as easy as you say.	False	False			
+28f0014c01	301	299	300	0:05:44.660000	0:05:47.840000	28f0014c01.mp3	28f0014c01.webp	カルド・ナボ博士が応じるかどうか	Pero no sabemos si la doctora Cardo Nabo accederá.	We don't know if Dr. Cardo Nabo will comply.	False	False			
+dab0d1d12e	303	302	304	0:05:48.030000	0:05:50.050000	dab0d1d12e.mp3	dab0d1d12e.webp	しかし 大丈夫なのか?	¿De verdad irá bien?	But are you sure this is okay?	False	False			
+2f4986e5fc	307	306	305	0:05:50.180000	0:05:53.020000	2f4986e5fc.mp3	2f4986e5fc.webp	民間企業の分を越えるのでは?	¿No supera la capacidad de una empresa privada?	We may be overstepping the bounds of private enterprise...	False	False			
+c90c436e92	309	308	310	0:05:53.120000	0:05:55.770000	c90c436e92.mp3	c90c436e92.webp	何を今さら この期に及んで	¿De qué te preocupas ahora?	You say that at this stage of the game?	False	False			
+0cd93ed7c6	312	311	313	0:05:55.890000	0:05:58.100000	0cd93ed7c6.mp3	0cd93ed7c6.webp	越えてしまえばいいのです	Sobresalir no tiene nada de malo.	What's wrong with overstepping them?	False	False			
+c6182ab26f	316	314	315	0:05:59.540000	0:06:02.730000	c6182ab26f.mp3	c6182ab26f.webp	デリング 発言は求めていない	No pedimos tu opinión, Delling.	We're not asking for your opinion, Delling.	False	False			
+a1e4ad3d0d	317,320	318	319,321	0:06:02.714000	0:06:07.550000	a1e4ad3d0d.mp3	a1e4ad3d0d.webp	ヴァナディースの連中が⸺　ガンダムを完成させてからでは 手遅れになります	Será tarde si dejamos que Vanadis complete su Gundam.	Once those guys at the Vanadis Institute complete their Gundam, it will be too late.	False	False			
+de1680dc68	324,325	322,326	323	0:06:08.050000	0:06:13.200000	de1680dc68.mp3	de1680dc68.webp	我々 モビルスーツ開発評議会は⸺　決断するべきです	Nosotros, el Consejo de Desarrollo de Mobile Suits, debemos tomar una decisión.	As the Mobile Suit Development Council, we must make a decision.	False	False			
+4241821404	329	328	327	0:06:13.530000	0:06:16.102000	4241821404.mp3	4241821404.webp	人類の安寧のために	Por la paz de toda la humanidad,	So that humanity can remain in peace,	False	False			
+c0d8bd1092	332	330	331	0:06:16.760000	0:06:19.120000	c0d8bd1092.mp3	c0d8bd1092.webp	魔女への鉄槌を	debemos eliminar a la bruja.	we must wield the hammer of witches.	False	False			
+b63534a2ba	335,337	333	334,336	0:06:19.300000	0:06:23.943000	b63534a2ba.mp3	b63534a2ba.webp	ケーキ ケーキ! じゃあ⸺　ロウソクライト刺すよ あ...	¡Pastel! ¡Un rico pastel! -Bien, le pondré la vela.	Cake! -Cake! -I'm putting in the candle lights now.	False	False			
+6b1f5c43bc	340	339	338	0:06:25.090000	0:06:26.170000	6b1f5c43bc.mp3	6b1f5c43bc.webp	あらら	Uy.	Oh, my...	False	False			
+7445215f6d	342	341	343	0:06:27.280000	0:06:28.630000	7445215f6d.mp3	7445215f6d.webp	ママ?	¿Mamá?	Mommy?	False	False			
+c98019df81	344	345	346	0:06:28.615000	0:06:30.680000	c98019df81.mp3	c98019df81.webp	ごめん ちょっと待っててね	Perdona. Dame un segundo.	Sorry. Give me a moment.	False	False			
+0ddfbcd979	347	349	348	0:06:35.371000	0:06:38.600000	0ddfbcd979.mp3	0ddfbcd979.webp	ママのガンド すぐ止まっちゃうね	Tu GUND se rompe siempre.	Your GUND always stops working, Mommy.	False	False			
+c0fae30365	351,353	352,354	350	0:06:39.560000	0:06:45.400000	c0fae30365.mp3	c0fae30365.webp	そうねえ　でも この技術がなかったら ママは もう生きてないのよ	Supongo que sí. Pero sin esta tecnología, yo no estaría viva ahora.	Yes. But without this technology, Mommy wouldn't be alive right now.	False	False			
+2e0f114864	356,358	355,359	357	0:06:46.120000	0:06:51.590000	2e0f114864.mp3	2e0f114864.webp	だから カルド博士は ママの先生で⸺　ママの命の恩人なの	Por eso la doctora Cardo es más que una mentora. Es mi salvadora.	So Dr. Cardo is my teacher who saved my life.	False	False			
+9ed32f6287	362,363	360	361,364	0:06:51.900000	0:06:54.740000	9ed32f6287.mp3	9ed32f6287.webp	バアバ 偉い!　エリィ	La abuelita es genial. -Eri.	Granny's awesome! Eri.	False	False			
+aade8a573d	367	365	366	0:06:54.760000	0:06:57.600000	aade8a573d.mp3	aade8a573d.webp	先生は呼ばれかたなんて 気にしないわよ	A la doctora no le importa cómo la llamen.	Dr. Cardo isn't one to fuss about what people call her.	False	False			
+5b87087192	369	370	368	0:06:57.660000	0:07:01	5b87087192.mp3	5b87087192.webp	だからって... 恐れ多いよ	Pero es una falta de respeto.	Even so, that's rude.	False	False			
+80e494ea21	373	372	374	0:07:03.500000	0:07:04.800000	80e494ea21.mp3	80e494ea21.webp	本社から?	¿El cuartel?	Is that from headquarters?	False	False			
+631e055f66	376		375	0:07:05.880000	0:07:06.903000	631e055f66.mp3	631e055f66.webp	うん		Yeah.	False	False			
+f73331ba02	379	377	378	0:07:07.010000	0:07:09.260000	f73331ba02.mp3	f73331ba02.webp	エリィ ちょっと待っててな	Eri, ¿me das un minuto?	Just a moment, Eri.	False	False			
+f90d597b12	380		381	0:07:09.239000	0:07:10.510000	f90d597b12.mp3	f90d597b12.webp	えー!		What?	False	False			
+cf214324ca	383	382	384	0:07:10.410000	0:07:12.340000	cf214324ca.mp3	cf214324ca.webp	パパ お仕事なの	Papá tiene que trabajar.	Daddy has work.	False	False			
+307b11712f	386	387	385	0:07:12.390000	0:07:15.036000	307b11712f.mp3	307b11712f.webp	ごめんな むううー	Perdona.	Sorry.	False	False			
+39a0f6d1f2	389,392	388,391	390,393	0:07:15	0:07:19.120000	39a0f6d1f2.mp3	39a0f6d1f2.webp	嫌だー! 今がいい!　どうした?	¡No es justo! -¡Quiero a papá ahora! -¿Qué está pasando?	No! I want to cut it now! -What's wrong? -Now!	False	False			
+7685b5791c	395	394	396	0:07:19.730000	0:07:22.060000	7685b5791c.mp3	7685b5791c.webp	評議会が開かれているらしい	El Consejo dará una rueda de prensa.	The council is holding a meeting now.	False	False			
+3f304cb362	399	398	397	0:07:22.100000	0:07:23.710000	3f304cb362.mp3	3f304cb362.webp	期日は まだだぞ	Pero si aún había tiempo.	But it's not even the deadline yet!	False	False			
+4b675fe6a7	401	400	402	0:07:23.880000	0:07:24.980000	4b675fe6a7.mp3	4b675fe6a7.webp	デリングだ	Es Delling.	It was Delling.	False	False			
+f9e8ef5505	405	403	404	0:07:25.520000	0:07:27.440000	f9e8ef5505.mp3	f9e8ef5505.webp	ヤツが裏で動いている	Está detrás de todo.	He's behind this.	False	False			
+638c17c2ab	408	406	407	0:07:27.780000	0:07:30.010000	638c17c2ab.mp3	638c17c2ab.webp	例の軍人上がりか	¿Ese exmilitar?	That ex-military guy?	False	False			
+d999331944	410	409	411	0:07:30.170000	0:07:32.380000	d999331944.mp3	d999331944.webp	何を仕掛けてくるか分からない	Aún no sabemos qué pretenden.	We don't know what he'll do.	False	False			
+12a2dcabf4	413	412	414	0:07:32.550000	0:07:34.010000	12a2dcabf4.mp3	12a2dcabf4.webp	そっちも気をつけろ	Tengan mucho cuidado.	You be careful too.	False	False			
+c82a9285d7	416,418	415,420	417,419	0:07:34.180000	0:07:38.309000	c82a9285d7.mp3	c82a9285d7.webp	フォールクヴァングより⸺　輸送船ベガベントへ コントロール173	Folkvangr a nave de transporte Begavent. Control 173.	Folkvangr to transport ship Begavent. Control 173.	False	False			
+272ce7eda6	423	422	421	0:07:38.370000	0:07:41.040000	272ce7eda6.mp3	272ce7eda6.webp	こちらベガベント 173と交信	Aquí Begavent. Comunicándose con 173.	This is Begavent. Communicating with 173.	False	False			
+4672b3bc3f	425	424	426	0:07:41.060000	0:07:43.420000	4672b3bc3f.mp3	4672b3bc3f.webp	ゲート入口まで 距離22	Distancia de la puerta: 22.	Distance to gate entrance is 22.	False	False			
+da64ce1e8a	428,431	427,430	429	0:07:43.580000	0:07:47.590000	da64ce1e8a.mp3	da64ce1e8a.webp	軌道確認　3番ゲートに入港してください	Trayectoria confirmada. Entren por la puerta tres, por favor.	Course confirmed. Please enter through Gate 3.	False	False			
+ed2b7ba99f	434,436	432,435	433	0:07:55.070000	0:07:59.040000	ed2b7ba99f.mp3	ed2b7ba99f.webp	船が来たよ!　ウェンディ 搬入手伝って	Aquí hay una nave. Wendy, dame una mano con el cargamento.	The ship's here! Come help me move, Wendy.	False	False			
+99da5d5f88	438	437	439	0:07:59.200000	0:08:01.890000	99da5d5f88.mp3	99da5d5f88.webp	最近 関税率上がりすぎ	Los aranceles subieron mucho últimamente.	Tariff rates have increased so much recently.	False	False			
+674358bfd5	440,443	441,444	442	0:08:01.833000	0:08:05.810000	674358bfd5.mp3	674358bfd5.webp	スッゴい癪　輸送はタダじゃないの	Es todo un fastidio. Los envíos no podían ser gratis.	It's pissing me off. -Transportation isn't free, you know?	False	False			
+2028095675	445	446	447	0:08:05.712000	0:08:08.320000	2028095675.mp3	2028095675.webp	スペーシアンは独占しすぎなんだよ	Los Spacians están monopolizando el negocio.	The Spacians are monopolizing it unreasonably.	False	False			
+a52b3cddc4	449	448,452	450,451	0:08:08.460000	0:08:12.030000	a52b3cddc4.mp3	a52b3cddc4.webp	あとでご褒美あげるから ね?	Luego te recompensaré. ¿Bien?	I'll treat you to something after this. Come on.	False	False			
+61df76ade3	453	454	455	0:08:12.135000	0:08:13.680000	61df76ade3.mp3	61df76ade3.webp	ズルいなー	No es justo.	That's cheating.	False	False			
+f6046c2079	457	456	458	0:08:16.400000	0:08:17.910000	f6046c2079.mp3	f6046c2079.webp	あったよ エリィ	Lo encontré, Eri.	I found it, Eri!	False	False			
+a94211b530	460	459	461	0:08:18.320000	0:08:19.580000	a94211b530.mp3	a94211b530.webp	これでしょ?	Es este, ¿no?	This is the one, right?	False	False			
+89a62c44d3	463	462	464	0:08:20.910000	0:08:21.960000	89a62c44d3.mp3	89a62c44d3.webp	エリィ?	¿Eri?	Eri?	False	False			
+2b830499d8	466	468	467	0:08:28.484000	0:08:30.170000	2b830499d8.mp3	2b830499d8.webp	早く起きてよ!	¡Despierta ya!	Just wake up already!	False	False			
+6f6a5395e8	471	470	469	0:08:30.510000	0:08:33.930000	6f6a5395e8.mp3	6f6a5395e8.webp	パパもママも みんな あなたのことばっかり!	¡Haces que papá y mamá estén siempre preocupados!	Daddy and Mommy... Everyone only cares about you!	False	False			
+2be30babb6	473	472	474	0:08:34.140000	0:08:37.220000	2be30babb6.mp3	2be30babb6.webp	今日は エリィの誕生日なのに!	¡Incluso en mi cumpleaños!	It's supposed to be my birthday today!	False	False			
+618d4cda06	476	475	477	0:08:37.840000	0:08:40.060000	618d4cda06.mp3	618d4cda06.webp	そいつは悪かったね	Qué mala suerte.	I'm sorry about that.	False	False			
+656f86a7dc	480	479	481	0:08:43.140000	0:08:44.410000	656f86a7dc.mp3	656f86a7dc.webp	バアバ	¿Abuela?	Granny.	False	False			
+1aab4b44a3	483	482	484	0:08:44.580000	0:08:46.350000	1aab4b44a3.mp3	1aab4b44a3.webp	また1人で来たのか?	¿Viniste tú sola?	You came here alone again?	False	False			
+888025cca3	487	485	486	0:08:46.600000	0:08:49.290000	888025cca3.mp3	888025cca3.webp	エルノラにも ダメだって言われたろ	Elnora te regañará mucho.	Didn't Elnora say you're not supposed to?	False	False			
+d844223990	490	488	489	0:08:49.730000	0:08:52.216000	d844223990.mp3	d844223990.webp	だって... ん...	Es que...	But...	False	False			
+b0e0600206	493,495	492,494	491	0:08:53.360000	0:08:57.590000	b0e0600206.mp3	b0e0600206.webp	バアバも この子が大事?　大事だよ	¿Es importante para ti, abuela? Pues sí.	Is this child important to you too, Granny? -She is.	False	False			
+df76f0fdf7	498	497	496	0:08:57.700000	0:08:59.010000	df76f0fdf7.mp3	df76f0fdf7.webp	どうして?	¿Por qué?	Why?	False	False			
+32fa5d354d	499	501	500	0:08:59.140000	0:09:02.350000	32fa5d354d.mp3	32fa5d354d.webp	あっちのお部屋の2人は 大事じゃないの?	¿Y esos dos de ahí?	Then you don't care about the other two over there?	False	False			
+82d338f356	504	502	503	0:09:02.570000	0:09:05.250000	82d338f356.mp3	82d338f356.webp	こいつは特別だからね	Este es especial.	This one is special.	False	False			
+2e21b5b26f	506	505	507	0:09:05.400000	0:09:07.130000	2e21b5b26f.mp3	2e21b5b26f.webp	特別?	¿Especial?	Special?	False	False			
+65d852e902	509,511	508	510	0:09:07.130000	0:09:11.710000	65d852e902.mp3	65d852e902.webp	エリィや エリィのパパやママが⸺　宇宙で生きていくためには⸺	Para que tu familia y tú sigan viviendo en el espacio,	In order for you, your daddy, and your mommy to live in space,	False	False			
+d07cf2d875	512	514	513	0:09:11.819000	0:09:14.840000	d07cf2d875.mp3	d07cf2d875.webp	適応できる体が必要なのさ	se necesita un cuerpo adecuado.	you need to have an adaptable body	False	False			
+c3b78b6cba	517	516	515	0:09:15.340000	0:09:17.070000	c3b78b6cba.mp3	c3b78b6cba.webp	こんな兵器じゃなくてね	Aunque no un arma así.	and not a weapon like this.	False	False			
+9ce91476cc	519	518	520	0:09:19	0:09:23.040000	9ce91476cc.mp3	9ce91476cc.webp	ルブリスは 私たちが目指すGUNDの未来	Lfrith representa el futuro que concebimos para el GUND.	Lfrith is the future of GUND that we're aiming for.	False	False			
+e9455708ac	523	521,524	522	0:09:23.330000	0:09:28.190000	e9455708ac.mp3	e9455708ac.webp	人類の可能性を切り開く 新たな扉	Una nueva puerta hacia la frontera para toda la humanidad.	She is a new door that will open up new possibilities for humanity.	False	False			
+d68f533d45	526	525	527	0:09:29.500000	0:09:31.480000	d68f533d45.mp3	d68f533d45.webp	よく分かんない	No lo entiendo.	I don't get it.	False	False			
+a5ad2de372	529	530	528	0:09:31.530000	0:09:33.800000	a5ad2de372.mp3	a5ad2de372.webp	なら こいつと話してみるかい?	¿Quieres hablar con ella?	Then, do you want to try talking to her?	False	False			
+73ab960093	534	532	533	0:09:38.680000	0:09:40.160000	73ab960093.mp3	73ab960093.webp	おいで エリィ	Vamos, Eri.	Come here, Eri.	False	False			
+3a23714b0b	538	536	537	0:09:41.740000	0:09:44.120000	3a23714b0b.mp3	3a23714b0b.webp	ここに 手をあててみな	Pon aquí la mano.	Place your hand here.	False	False			
+2735401305	541	540	539	0:09:48.670000	0:09:52.050000	2735401305.mp3	2735401305.webp	これで ルブリスは エリィを認識した	Lfrith ya te reconoce.	Now Lfrith will recognize you.	False	False			
+ca55953d5d	543	542	544	0:09:52.640000	0:09:56.090000	ca55953d5d.mp3	ca55953d5d.webp	この世界は怖くないって 教えてやってくれ	Intenta decirle que no hay nada que temer.	Tell her that this world isn't scary.	False	False			
+b00944efa7	547	546	548	0:09:57.730000	0:10:00.930000	b00944efa7.mp3	b00944efa7.webp	エリィはね エリクト・サマヤっていうの	Hola, me lamo Ericht Samaya.	My name is Ericht Samaya!	False	False			
+4671093188	550	549	551	0:10:01.130000	0:10:02.760000	4671093188.mp3	4671093188.webp	ケーキは好き?	¿Te gusta el pastel?	Do you like cake?	False	False			
+85783a278c	553	552	554	0:10:02.780000	0:10:05.560000	85783a278c.mp3	85783a278c.webp	今日はエリィの誕生日なんだよ	¡Hoy cumplo años!	It's my birthday today!	False	False			
+7358bfb031	555,558	556	557	0:10:05.289000	0:10:08.520000	7358bfb031.mp3	7358bfb031.webp	お誕生日の帽子も被るの!　どうした?	¡Y llevaba un gorrito de cumpleaños! -¿Qué pasa?	I'm going to wear my birthday hat! -What's wrong?	False	False			
+11fae5c38a	560	559	561	0:10:08.610000	0:10:11.340000	11fae5c38a.mp3	11fae5c38a.webp	評議会が会見を行うと	El Consejo dará una rueda de prensa.	The council is about to hold a press conference.	False	False			
+887ade2232	562	563	564	0:10:11.629000	0:10:13.030000	887ade2232.mp3	887ade2232.webp	聞いてないぞ	Nadie me dijo nada.	I wasn't told about this.	False	False			
+4fdc46e941	567	566	565	0:10:13.070000	0:10:15.170000	4fdc46e941.mp3	4fdc46e941.webp	オックス・アースは外されています	Ochs Earth se quedó fuera.	Ochs Earth has been left out of this.	False	False			
+d1712cf743	569	568	570	0:10:15.760000	0:10:17.860000	d1712cf743.mp3	d1712cf743.webp	分かった すぐ行く	Entendido. Ahora mismo voy.	Got it. I'm on my way.	False	False			
+c463ba4232	573,575	572	574	0:10:19.340000	0:10:22.240000	c463ba4232.mp3	c463ba4232.webp	エリィ 1人で戻れるか?　うん	Eri, ¿puedes bajar sola? -Sí.	Can you go back by yourself, Eri? -Yeah.	False	False			
+5f0ec0b8b4	577,580	576,579	578	0:10:22.560000	0:10:25.640000	5f0ec0b8b4.mp3	5f0ec0b8b4.webp	ママに心配かけるなよ　うん	No hagas que se preocupe tu madre. Bien.	Don't make your mommy worry now. -Okay.	False	False			
+77c2200ed1	583	582	581	0:10:27.540000	0:10:30.250000	77c2200ed1.mp3	77c2200ed1.webp	ケーキはね イチゴが乗ってるの	El pastel tiene fresas.	The cake has strawberries on it.	False	False			
+4675122960	586	584	585	0:10:30.270000	0:10:31.920000	4675122960.mp3	4675122960.webp	ママがね...	Ah, sí. Y mamá...	You see, Mommy...	False	False			
+5b48667e21	588	587	589	0:10:39.640000	0:10:42.076000	5b48667e21.mp3	5b48667e21.webp	ユリシーズの配備完了しました	Ulysses en posición.	Deployment of Ulysses is complete.	False	False			
+05fbb9052d	590	591	592	0:10:42.326000	0:10:43.930000	05fbb9052d.mp3	05fbb9052d.webp	いつでもいけます	Cuando quieras.	We can commence at any time.	False	False			
+42b7a692ad	595	593	594	0:10:44.060000	0:10:47.080000	42b7a692ad.mp3	42b7a692ad.webp	本社共々 予定どおり仕掛けろ	Asántelo todo, incluido el cuartel, como planeamos.	Raid it along with their headquarters according to the plan.	False	False			
+2718fd0bd6	596	598	597	0:10:47.206000	0:10:48.940000	2718fd0bd6.mp3	2718fd0bd6.webp	評議会の承認は?	¿Lo aprobó el Consejo?	Don't we need the council's approval?	False	False			
+a2dd73ec34	600	599	601	0:10:49.040000	0:10:50.980000	a2dd73ec34.mp3	a2dd73ec34.webp	責任なら私が取る	De eso me encargo yo.	I'll assume full responsibility.	False	False			
+9203dbe94a	604	603	602	0:10:52.480000	0:10:56	9203dbe94a.mp3	9203dbe94a.webp	我々モビルスーツ 開発評議会は先ほど⸺	Nosotros, el Comité de Desarrollo de Mobile Suits,	We, the Mobile Suit Development Council, have just now made the decision	False	False			
+cf06f3f42f	607,608	606,609	605	0:10:56.110000	0:11:02.510000	cf06f3f42f.mp3	cf06f3f42f.webp	ガンダムタイプの モビルスーツ開発を⸺　すべて凍結することに決定しました	anunciamos que decidimos congelar el desarrollo de todos los Mobile Suits de tipo Gundam.	to freeze all development of Gundam-type mobile suits.	False	False			
+21473c0e65	612,614	611	610,613	0:11:02.910000	0:11:07.890000	21473c0e65.mp3	21473c0e65.webp	これに伴い⸺　評議会は同機を開発した オックス・アース社に対し⸺	Y el Consejo tomará por la fuerza a la empresa que los desarrolla, Ochs Earth,	In addition, we will forcibly seize Ochs Earth, the company that developed them,	False	False			
+dcf27410fc	617	616	615	0:11:08.120000	0:11:11.770000	dcf27410fc.mp3	dcf27410fc.webp	企業行政法による 強制執行を行います	que actuó bajo la autoridad de las leyes administrativas.	under the authority provided by business administrative laws.	False	False			
+7042e4eb3f	619,622	618,621	620	0:11:11.940000	0:11:15.480000	7042e4eb3f.mp3	7042e4eb3f.webp	そんな...　うちを切り捨てるつもりか	Es ridículo. ¿Nos usan para dar ejemplo?	No way... -Are they planning to cut us off?	False	False			
+911aa50b0d	624	623	625	0:11:15.960000	0:11:17.670000	911aa50b0d.mp3	911aa50b0d.webp	入港予定の船は?	¿Vendrá alguna nave?	Any ships scheduled to enter port?	False	False			
+333ac4819e	626,629	628,630	627,631	0:11:17.695000	0:11:22.010000	333ac4819e.mp3	333ac4819e.webp	輸送船が1隻　止めろ 入港させるな	Una de transporte. -Deténganla. ¡Que no entre!	There's one transport ship. -Stop it. Don't let it enter the port!	False	False			
+18cd377c70	635,637	634	636	0:11:35.240000	0:11:39.440000	18cd377c70.mp3	18cd377c70.webp	そしてモビルスーツ開発の⸺　秩序と倫理を守るため⸺	Para proteger el orden y la ética del desarrollo de los Mobile Suits,	And to maintain order and ethics in the development of mobile suits,	False	False			
+415e0c82bb	639	638	640	0:11:39.550000	0:11:44.200000	415e0c82bb.mp3	415e0c82bb.webp	我々は監査組織 カテドラルの設立も決定しました	decidimos crear una organización auditora, Cathedral.	we will establish an auditing organization named Cathedra.	False	False			
+70330fbe81	641,644,647	643,646	642,645	0:11:45.848000	0:11:52.020000	70330fbe81.mp3	70330fbe81.webp	ご紹介します　カテドラル統括代表　デリング・レンブランです	Les presentaré al supervisor jefe de Cathedral. Delling Rembran.	Allow me to introduce... the supervising representative of Cathedra, Delling Rembran.	False	False			
+2741ecabcf	649	648	650	0:11:53.150000	0:11:56.420000	2741ecabcf.mp3	2741ecabcf.webp	最初から俺たちを 受け入れるつもりはなかったんだ!	¡La adquisición fue una farsa!	They never planned to accept us!	False	False			
+93e60dbf32	652	651	653	0:11:56.690000	0:11:59.800000	93e60dbf32.mp3	93e60dbf32.webp	やつらは経済じゃなく 暴力で...	El dinero daba igual. Querían usar la fuer...	They aren't dealing with us financially, but by using violence-	False	False			
+a96d0dc4ec	654,658	655,657	656	0:12:00.196000	0:12:03.282000	a96d0dc4ec.mp3	a96d0dc4ec.webp	は... ヤマオカ　クソ!	¡Yamaoka! ¡Maldición!	Yamaoka... Damn it!	False	False			
+b9e4e144e9	660	659	661	0:12:04.370000	0:12:06.830000	b9e4e144e9.mp3	b9e4e144e9.webp	スペーシアンの狭量が...	Malditos Spacians que no piensan...	Spacians are so narrow-minded...	False	False			
+6b630a5aa2	664	662	663	0:12:09.410000	0:12:11.600000	6b630a5aa2.mp3	6b630a5aa2.webp	エルノラ? エリィ?	¿Elnora? ¿Eri?	Elnora? Eri?	False	False			
+4860bd42de	667	665	666	0:12:12.870000	0:12:15.690000	4860bd42de.mp3	4860bd42de.webp	本部よりドミニコス隊各機へ通達	Cuartel general a las unidades Dominicus.	Headquarters to all Dominicus units.	False	False			
+7c4bdaf026	670	669	668	0:12:15.730000	0:12:19.210000	7c4bdaf026.mp3	7c4bdaf026.webp	フォールクヴァング及び 周辺宙域を速やかに封鎖	Bloqueen de inmediato las inmediaciones de Folkvangr.	You are to seal off Folkvangr and its surrounding space at once.	False	False			
+871dbd1ba8	671	673	672	0:12:20.091000	0:12:22.220000	871dbd1ba8.mp3	871dbd1ba8.webp	シャトル1隻 逃がしてはならん	Que no escape ni una sola lanzadera.	Don't let a single shuttle get away.	False	False			
+a3bde80f99	677,678	675,679	676	0:12:34.390000	0:12:36.810000	a3bde80f99.mp3	a3bde80f99.webp	ナイラ?　ウェンディ 逃げて	¿Nyla? Wendy, huye.	Nyla? -Run, Wendy.	False	False			
+7fd7080314	682	680	681	0:12:37.100000	0:12:38.943000	7fd7080314.mp3	7fd7080314.webp	早く! あ...	¡Ahora!	Hurry up!	False	False			
+a2e22a0fc6	684	683	685	0:12:39.770000	0:12:41.260000	a2e22a0fc6.mp3	a2e22a0fc6.webp	ナイラ!	¡Nyla!	Nyla!	False	False			
+7914defb52	686,689	687	688	0:12:41.195000	0:12:44.380000	7914defb52.mp3	7914defb52.webp	警報?　エルノラ!	¿La alarma? -¡Elnora!	The alarm? -Elnora!	False	False			
+d538facbbf	691	690	692	0:12:45.040000	0:12:47.140000	d538facbbf.mp3	d538facbbf.webp	評議会が一線を越えてきた	El Consejo cruzó la línea.	The council has crossed the line.	False	False			
+65bde5401f	693,696	694	695	0:12:47.118000	0:12:49.328000	65bde5401f.mp3	65bde5401f.webp	エリィがいないの　エリィが?	No encuentro a Eri. -¿Desapareció?	I can't find Eri. -Eri's missing?	False	False			
+a3699c6abc	699,702	698,701	700	0:12:51.020000	0:12:54.310000	a3699c6abc.mp3	a3699c6abc.webp	君はエリィを頼む　僕はルブリスで出る	Ve a buscar a Eri. Yo saldré con el Lfrith.	You take care of Eri. I'm going out in the Lfrith.	False	False			
+5cb8372f1c	705,706	704	703	0:12:54.560000	0:12:57.610000	5cb8372f1c.mp3	5cb8372f1c.webp	危険すぎる　敵が来てからじゃ遅すぎる	Es muy peligroso. -Será el fin si viene el enemigo.	It's too dangerous! -It'll be too late by the time they arrive!	False	False			
+48651d6b15	708	707	709	0:12:58.020000	0:13:01.550000	48651d6b15.mp3	48651d6b15.webp	君たちの作った GUNDアームを信じろよ	Confía en los GUND-ARM que crearon.	Believe in the GUND-ARM you made.	False	False			
+9925f0909e	711	710	712	0:13:02.920000	0:13:04.802000	9925f0909e.mp3	9925f0909e.webp	マネージャーが出るんですか?	¿Saldrá, director?	You're going yourself, manager?	False	False			
+9393fee106	714	713	715	0:13:05.090000	0:13:07.200000	9393fee106.mp3	9393fee106.webp	ウェンディと連絡が取れない	No localizo a Wendy.	I can't make contact with Wendy.	False	False			
+3c133faf95	718	716	717	0:13:07.390000	0:13:10.100000	3c133faf95.mp3	3c133faf95.webp	僕が足止めしているあいだに 退路を確保してくれ	Los ralentizaré. Consigan una ruta de huida.	Establish an escape route while I'm holding them back!	False	False			
+845ea16bcb	721	719	720	0:13:10.510000	0:13:12.790000	845ea16bcb.mp3	845ea16bcb.webp	本社の救援は どうなんです?	¿Llegarán refuerzos del cuartel?	What about reinforcements from headquarters?	False	False			
+86bdd405b1	723	722	724	0:13:12.640000	0:13:14.370000	86bdd405b1.mp3	86bdd405b1.webp	期待はできないな	No te hagas ilusiones.	We shouldn't get our hopes up.	False	False			
+1845361207	726	725	727	0:13:17.580000	0:13:19.960000	1845361207.mp3	1845361207.webp	LF01 射出!	¡LF-01, despegue!	LF-01, launching!	False	False			
+2988c4d9d1	729	728	730	0:13:28.070000	0:13:30.990000	2988c4d9d1.mp3	2988c4d9d1.webp	GUNDフォーマット パーメットスコア 2!	¡GUND Format Permet puntuación dos!	GUND Format Permet score, two!	False	False			
+9bc4ca7d07	732	731	733	0:13:35.070000	0:13:38.110000	9bc4ca7d07.mp3	9bc4ca7d07.webp	識別照合 目標モビルスーツと一致	La identificación indica un Mobile Suit.	Checking identification. Matched with target mobile suit.	False	False			
+7e81edfdf1	734	736	735	0:13:38.210000	0:13:40.940000	7e81edfdf1.mp3	7e81edfdf1.webp	了解 行動を開始する	Entendido. Iniciando misión.	Roger that. Initiating action.	False	False			
+2143c4d0e1	738	737	739	0:13:43.960000	0:13:47.240000	2143c4d0e1.mp3	2143c4d0e1.webp	速い これがガンダムか	¡Qué rápido! ¡Ha de ser un Gundam!	So fast! So that's a Gundam?	False	False			
+f1dcd73541	742	740	741	0:13:57.820000	0:13:59.880000	f1dcd73541.mp3	f1dcd73541.webp	パーメットスコア 3!	¡Permet puntuación tres!	Permet score, three!	False	False			
+3988d12dc2	744	743	745	0:14:02.610000	0:14:04.690000	3988d12dc2.mp3	3988d12dc2.webp	よけた!? バカな!	¿Lo esquivó? ¡Es imposible!	He dodged it? Impossible!	False	False			
+bc2b3a8fe3	749	747	748	0:14:11.390000	0:14:14.390000	bc2b3a8fe3.mp3	bc2b3a8fe3.webp	久しぶりだな この感じ	Hace mucho que no sentía esto.	It's been a while since I felt like this.	False	False			
+03a9fb0bca	751	750	752	0:14:14.780000	0:14:16.980000	03a9fb0bca.mp3	03a9fb0bca.webp	やつらは妙なスウォーム兵器を使う	El objetivo usa armas de enjambre.	The opponents are using unfamiliar swarm weapons.	False	False			
+166c10468c	755	754	753	0:14:17.020000	0:14:19.560000	166c10468c.mp3	166c10468c.webp	1対1で行くな 数...	No vayas solo y...	Do not engage one-on-one. With numbers-	False	False			
+c6b8b295c3	759	758	757	0:14:24.570000	0:14:26.320000	c6b8b295c3.mp3	c6b8b295c3.webp	ウェンディ 君か!	Wendy, ¿eres tú?	Is that you, Wendy?	False	False			
+cd13086bb6	762	760	761	0:14:26.700000	0:14:29.410000	cd13086bb6.mp3	cd13086bb6.webp	ナイラの敵を取ってやるんだ	¡Debo vengar a Nyla!	I have to avenge Nyla.	False	False			
+b456706ac0	764	763	765	0:14:29.810000	0:14:31.200000	b456706ac0.mp3	b456706ac0.webp	そうだな	Ya veo.	I see.	False	False			
+8f2d2c4c6f	767	766	768	0:14:31.680000	0:14:33.450000	8f2d2c4c6f.mp3	8f2d2c4c6f.webp	敵を引きつける!	Yo distraeré al enemigo.	I'm going to lure the enemy away.	False	False			
+eb83885ffd	771	770	769	0:14:34.870000	0:14:38.610000	eb83885ffd.mp3	eb83885ffd.webp	左舷 進行方向 ガンダムタイプ 2機目を確認	Segundo Mobile Suit de tipo Gundam ubicado a babor.	Second Gundam-type mobile suit detected to port side in travel direction.	False	False			
+0b9e6482cd	774	773,776	772,775	0:14:38.660000	0:14:42.340000	0b9e6482cd.mp3	0b9e6482cd.webp	情報どおりだな 警戒を怠るな	Coincide con nuestra información. Estén muy atentos.	That matches our information. Remain on guard.	False	False			
+8fda5a0eb1	779	777,780	778	0:14:42.380000	0:14:45.150000	8fda5a0eb1.mp3	8fda5a0eb1.webp	ケナンジ ベギルベウを出せ	Kenanji. Sal con el Beguir-Beu.	Kenanji, deploy Beguir-Beu.	False	False			
+4bd2324eec	782	781	783	0:14:46.400000	0:14:47.760000	4bd2324eec.mp3	4bd2324eec.webp	了解	Entendido.	Roger.	False	False			
+7c5db6d94a	785,787	784,789	786,788	0:14:51.530000	0:14:58.040000	7c5db6d94a.mp3	7c5db6d94a.webp	私は これまで⸺　数多の戦場を経験し 1つの結論を得ました	Gracias a mi experiencia en innumerables combates, llegué a una conclusión.	Throughout my years of experience on countless battlefields, I've come to one conclusion.	False	False			
+e1793f832b	792	790	791	0:14:58.970000	0:15:03.670000	e1793f832b.mp3	e1793f832b.webp	兵器とは 人を殺すためだけに 存在するべきだと	Las armas solo existen para matar a otros.	Weapons should only exist to kill people.	False	False			
+2c33bdc9ff	794	793	795	0:15:04.170000	0:15:06.240000	2c33bdc9ff.mp3	2c33bdc9ff.webp	一点の言い訳もなく⸺	No tienen ninguna excusa.	There should be no excuses for this.	False	False			
+5bf123ce85	798	796	797	0:15:06.730000	0:15:09.950000	5bf123ce85.mp3	5bf123ce85.webp	純粋に殺すための 道具を手にすることで⸺	El mero hecho de sostener una herramienta para matar	Once someone holds in their hands a tool meant purely for killing,	False	False			
+0866efee2b	801	799	800	0:15:10.210000	0:15:12.680000	0866efee2b.mp3	0866efee2b.webp	人は罪を背負うのです	es un pecado en sí mismo.	they have to bear the sin that comes with it.	False	False			
+22496fa4cf	804,805	802	803	0:15:13.480000	0:15:18.060000	22496fa4cf.mp3	22496fa4cf.webp	しかし ヴァナディースと オックス・アースの⸺　モビルスーツは違う!	Pero los Mobile Suits de Vanadis y Ochs Earth van más allá.	But the mobile suits of Vanadis and Ochs Earth are different!	False	False			
+697870bc23	807	806	808	0:15:18.490000	0:15:22.480000	697870bc23.mp3	697870bc23.webp	相手の命だけでなく 乗り手の命すら奪う!	Le arrebatan la vida al piloto y al adversario.	Not only do they take the lives of their opponents, but of their operators as well.	False	False			
+85e788b2b6	810	809	811	0:15:23.940000	0:15:27.900000	85e788b2b6.mp3	85e788b2b6.webp	これは道具ではなく もはや呪いです	No son herramientas, son una maldición para todos.	This is not a tool. It is a curse!	False	False			
+c5bc8c31e7	812,816	813,815	814	0:15:30.489000	0:15:35.119000	c5bc8c31e7.mp3	c5bc8c31e7.webp	ハアハアハアハア... ウェンディ!　それ以上のスコアは危険だ! あ...	¡Wendy! ¡No subas más la puntuación!	Wendy! It's too dangerous to raise the score further!	False	False			
+c6d6fa8af9	818	817	819	0:15:35.080000	0:15:37.200000	c6d6fa8af9.mp3	c6d6fa8af9.webp	命を奪った罰は⸺	El castigo por arrebatar una vida	The punishment for taking a life	False	False			
+40a6464b58	821	822	820	0:15:37.270000	0:15:40.980000	40a6464b58.mp3	40a6464b58.webp	機械ではなく人によって 課されなければならない	debe aplicarlo un humano, no una máquina.	should be imposed upon us by humans, and not machines.	False	False			
+9c55617b2a	823	825	824	0:15:41	0:15:44.250000	9c55617b2a.mp3	9c55617b2a.webp	ナイラ 敵は取るから!	¡Nyla, te vengaré!	Nyla... I'll avenge your death!	False	False			
+66ab592e8a	828	827	826	0:15:44.310000	0:15:47.690000	66ab592e8a.mp3	66ab592e8a.webp	人と人が命を奪い合うことこそ⸺	A la gente debe matarla la gente.	People must kill or be killed by people.	False	False			
+7a8e95d663	829,832	830	831	0:15:48.132000	0:15:53.970000	7a8e95d663.mp3	7a8e95d663.webp	戦争という 愚かしい行為における⸺　最低限の作法であるべきです!	Al menos debemos permitir esa dignidad en esa estupidez llamada guerra.	I believe that's the minimum courtesy in the foolish act of war.	False	False			
+838a76dfa9	834	833	835	0:15:54.140000	0:15:55.660000	838a76dfa9.mp3	838a76dfa9.webp	離れろ ウェンディ!	¡Regresa, Wendy!	Get back, Wendy!	False	False			
+5230c6f72b	837	836	838	0:15:55.570000	0:15:57.790000	5230c6f72b.mp3	5230c6f72b.webp	ただの特化型じゃない!	Esa unidad es impresionante.	That's no ordinary custom type!	False	False			
+02d6b54df4	840	839	841	0:16:00.540000	0:16:02.670000	02d6b54df4.mp3	02d6b54df4.webp	動かない なんで!	¿Por qué no puedo moverme?	I can't move. Why?	False	False			
+777cd8fa63	843	842	844	0:16:02.640000	0:16:06	777cd8fa63.mp3	777cd8fa63.webp	GUNDフォーマットの リンク 制圧完了	Enlace anulado con el GUND Format.	GUND Format link suppressed.	False	False			
+849775ca56	846	845	847	0:16:06.420000	0:16:09.380000	849775ca56.mp3	849775ca56.webp	これでガンダムも終わりだな	Comienza el fin de los Gundams.	This is the end of the Gundams.	False	False			
+8be83f1740	850	848	849	0:16:09.280000	0:16:10.590000	8be83f1740.mp3	8be83f1740.webp	ナイラ...	Nyla.	Nyla...	False	False			
+9e1e0d81d2	852	851	853	0:16:14.700000	0:16:16.410000	9e1e0d81d2.mp3	9e1e0d81d2.webp	ウェンディ!	¡Wendy!	Wendy!	False	False			
+ea2c8dc4db	856	854	855	0:16:17.470000	0:16:19.520000	ea2c8dc4db.mp3	ea2c8dc4db.webp	自ら引き金を引き⸺	Debemos tirar del gatillo nosotros	When we pull the trigger ourselves,	False	False			
+2e3dca7507	858	857	859	0:16:19.690000	0:16:22.370000	2e3dca7507.mp3	2e3dca7507.webp	奪った命の尊さと⸺	para comprender el valor de la vida que arrebatamos	we bear the burden of the life we're taking	False	False			
+97b6e02972	861	862	860	0:16:22.440000	0:16:25.020000	97b6e02972.mp3	97b6e02972.webp	あがないきれない罪を背負う	y el peso de nuestro pecado imperdonable.	and of a sin we can never atone for.	False	False			
+38078e241d	865	863	864	0:16:25.800000	0:16:28.960000	38078e241d.mp3	38078e241d.webp	戦争とは 人殺しとは!	¡No olvidemos lo que significa librar una guerra	In war, or any form of murder...	False	False			
+588ac8db53	867	866	868	0:16:29.480000	0:16:31.460000	588ac8db53.mp3	588ac8db53.webp	そうでなければならない!	y matar a seres humanos!	That's how it has to be.	False	False			
+4b24d0831d	871	870	872	0:16:37.680000	0:16:39.660000	4b24d0831d.mp3	4b24d0831d.webp	カルド・ナボ博士	Doctora Cardo Nabo.	Dr. Cardo Nabo.	False	False			
+3e29e0cce3	875	873	874	0:16:39.930000	0:16:42.710000	3e29e0cce3.mp3	3e29e0cce3.webp	あなたには ここで死んでいただく	Aquí termina tu vida.	You are going to die here.	False	False			
+59615f212f	877	876	878	0:16:44.030000	0:16:47.650000	59615f212f.mp3	59615f212f.webp	地球という ゆりかごで生まれた人類が⸺	La humanidad, nacida en la cuna de la Tierra,	Humanity was born in the cradle of Earth.	False	False			
+7722221ab1	881	880	879	0:16:47.790000	0:16:52.170000	7722221ab1.mp3	7722221ab1.webp	宇宙へ出るには この体は脆弱すぎる	es demasiado frágil para aventurarse en el espacio.	Our bodies are far too fragile for us to venture into space.	False	False			
+62503d71df	884	882	883	0:16:52.620000	0:16:55.090000	62503d71df.mp3	62503d71df.webp	赤子が服を着るように⸺	Al igual que vestimos a un recién nacido,	Just as an infant has to put on clothes,	False	False			
+e078bcfb9c	886	885	887	0:16:55.760000	0:17:01.040000	e078bcfb9c.mp3	e078bcfb9c.webp	私たちはGUNDをまとうことで 初めて宇宙に出ていける	solo llevando el GUND podemos sobrevivir en el espacio.	humanity must don the GUND to truly go out into space.	False	False			
+715ae17346	890	888	889	0:17:01.660000	0:17:04.840000	715ae17346.mp3	715ae17346.webp	生贄を要する技術が 詭弁だな	Es una excusa para una tecnología que pide sacrificios.	That's just an excuse for a technology that requires sacrificial victims.	False	False			
+899ec7d2c9	892	891	893	0:17:04.830000	0:17:06.919000	899ec7d2c9.mp3	899ec7d2c9.webp	分かってないね ん...	No entienden nada.	You don't understand.	False	False			
+c66e44d36b	896	894	895	0:17:07.220000	0:17:09.255000	c66e44d36b.mp3	c66e44d36b.webp	お前たちが奪うのは⸺	¡Cuando se hagan con el GUND,	What all of you are taking away...	False	False			
+67f05fdd8f	898	897	899	0:17:09.470000	0:17:12.883000	67f05fdd8f.mp3	67f05fdd8f.webp	GUNDが救うだろう未来だぞ!	acabarán con su propio futuro!	is the future that the GUND will save!	False	False			
+289d610d10	904	903	905	0:17:26.360000	0:17:28.023000	289d610d10.mp3	289d610d10.webp	エリィ! あ...	¡Eri!	Eri!	False	False			
+d48c58b10f	908,910	906,909,911	907	0:17:28.540000	0:17:34.613000	d48c58b10f.mp3	d48c58b10f.webp	ママ!　ママ ママ! ママー! ママー!	¡Mamá! ¡Mamá! ¡Mamá!	Mommy! Mommy!	False	False			
+ab2d21d584	914	912	913	0:17:35.280000	0:17:36.657000	ab2d21d584.mp3	ab2d21d584.webp	ママー!	¡Mamá!	Mommy!	False	False			
+32c982354a	917	916	915,918	0:17:36.590000	0:17:40.100000	32c982354a.mp3	32c982354a.webp	もう大丈夫 大丈夫だから	Tranquila. Ya pasó todo.	It's okay now. It'll be all right.	False	False			
+37f08fa5b7	920	921	919	0:17:44.730000	0:17:46.870000	37f08fa5b7.mp3	37f08fa5b7.webp	本部より 各ユニットへ	Cuartel a todas las unidades.	Headquarters to all units.	False	False			
+67ac925be4	923,925	922	924	0:17:47.040000	0:17:51.172000	67ac925be4.mp3	67ac925be4.webp	カルド・ナボ 及び主要メンバーの 生命無力化に成功　あ...	Neutralizamos a Cardo Nabo y todos los miembros clave.	We've successfully neutralized the lives of Cardo Nabo and all key members.	False	False			
+b2fb637d77	926	928	927	0:17:51.255000	0:17:54.090000	b2fb637d77.mp3	b2fb637d77.webp	フロントの爆破準備後 撤退せよ	Retírsense cuando estén listos para detonar el frente.	Retreat as soon as preparations to blow up the front are complete.	False	False			
+1cf5a53dc6	931	930	929	0:17:54.240000	0:17:55.470000	1cf5a53dc6.mp3	1cf5a53dc6.webp	先生...	Doctora...	Dr. Cardo... -I repeat.	False	False			
+7e08350ca5	934	933	932	0:17:55.490000	0:17:57.970000	7e08350ca5.mp3	7e08350ca5.webp	どうして 先生	¿Por qué tuviste que morir?	Headquarters to all units. -Why did you have to die...	False	False			
+32eb98317d	936	937	938	0:17:59.305000	0:18:01.410000	32eb98317d.mp3	32eb98317d.webp	うう... ママ	¿Mamá?	Cardo Nabo and all key members. -Mommy.	False	False			
+0f919c2827	940		939	0:18:01.790000	0:18:04.250000	0f919c2827.mp3	0f919c2827.webp	あ...		Retreat as soon as preparations to blow up the front are complete.	False	False			
+dff453960f	941	942	943	0:18:08.731000	0:18:12.500000	dff453960f.mp3	dff453960f.webp	は... レイヤー33からの コールバック...	¿Hay respuesta de la Capa 33?	A callback from layer 33?	False	False			
+6dc19e0658	945	944	946	0:18:12.760000	0:18:15.321000	6dc19e0658.mp3	6dc19e0658.webp	一体 誰の認証バイタルで... はっ...	¿Con qué signos vitales se autentificó?	With whose authentication vitals...?	False	False			
+f8aec2a88f	948	947	949	0:18:15.530000	0:18:16.800000	f8aec2a88f.mp3	f8aec2a88f.webp	ママ	Mamá.	Mommy...	False	False			
+9b4f488b1d	951	950	952	0:18:18.360000	0:18:20.660000	9b4f488b1d.mp3	9b4f488b1d.webp	この子 起きたの?	¿Se despertó?	Did she wake up?	False	False			
+6772d20144	956	955	957	0:18:24.680000	0:18:27.600000	6772d20144.mp3	6772d20144.webp	フォールクヴァング内に 強力な電磁波	Ondas electromagnéticas detectadas en Folkvangr.	Strong electromagnetic waves detected from within Folkvangr.	False	False			
+a1710a1de5	959	958	960	0:18:27.900000	0:18:30.270000	a1710a1de5.mp3	a1710a1de5.webp	未登録のパーメット識別コードです	Es una ID Permet desconocida.	It's an unregistered Permet identification code.	False	False			
+6c645c2b21	963	962	961	0:18:30.310000	0:18:31.503000	6c645c2b21.mp3	6c645c2b21.webp	もう1機いただと?	¿Había otro más?	They have another machine?	False	False			
+8ee5d31884	964	966	965,967	0:18:51.982000	0:18:55.590000	8ee5d31884.mp3	8ee5d31884.webp	ひとつ ふたつ みっつ!	¡Uno, dos, tres!	One, two, three!	False	False			
+35d2b76cd3	971	970	969	0:19:15.730000	0:19:18.342000	35d2b76cd3.mp3	35d2b76cd3.webp	ママ ママ あ...	¡Mamá!	Mommy, Mommy!	False	False			
+cc0cf422c0	974	972	973	0:19:19.410000	0:19:21.820000	cc0cf422c0.mp3	cc0cf422c0.webp	ロウソクみたいでキレイだね	¡Qué bonito, son como las velas!	They look just like candles! Isn't it pretty?	False	False			
+bab900b7a3	976	975	977	0:19:23.150000	0:19:25.266000	bab900b7a3.mp3	bab900b7a3.webp	そうね	Es verdad.	You're right...	False	False			
+22319f00ee	979	980	978	0:19:35.340000	0:19:37.670000	22319f00ee.mp3	22319f00ee.webp	なかなかやる だが...	Eres hábil, pero...	Not bad. However...	False	False			
+c2d41b5aad	984	982	983	0:19:43.700000	0:19:46.140000	c2d41b5aad.mp3	c2d41b5aad.webp	しょせんは ガンダム... ぐあ!	¡No eres más que un Gundam!	This is all a Gundam can-	False	False			
+9b227a26ae	987	986	988	0:19:51.790000	0:19:53.730000	9b227a26ae.mp3	9b227a26ae.webp	エルノラ 君か?	Elnora, ¿eres tú?	Is that you, Elnora?	False	False			
+dfe9f0bbda	991	989	990	0:19:54.110000	0:19:56.110000	dfe9f0bbda.mp3	dfe9f0bbda.webp	ナディム パパ!	¿Nadim? -¡Papá!	Nadim! -Daddy!	False	False			
+b96fb101bd	993	992	994,995	0:19:55.920000	0:19:58.760000	b96fb101bd.mp3	b96fb101bd.webp	この! 放せ ガンダム!	¡Maldición! ¡Suéltame, Gundam!	Damn you... Let go of me, damn Gundam!	False	False			
+23bc8a52e3	998	997	996	0:19:58.740000	0:20:00.760000	23bc8a52e3.mp3	23bc8a52e3.webp	エルノラ 君は逃げろ	Elnora, tienes que escapar.	You have to run, Elnora.	False	False			
+44b6da0b41	1000,1002	1001	999,1003	0:20:00.740000	0:20:04.360000	44b6da0b41.mp3	44b6da0b41.webp	バカ言わないで 私も...　逃げるのは君だけじゃない!	¡No digas tonterías! Voy a... -¡No escaparás sola!	Don't be ridiculous! I'm coming- You're not the only one escaping here!	False	False			
+0ba877e555	1005,1008	1007,1009	1006,1010	0:20:05.723000	0:20:10.500000	0ba877e555.mp3	0ba877e555.webp	生きてくれ　君とエリクトと みんなのために!	Sobrevive, por favor. ¡Por tu bien, por el de Ericht, por el de todos!	Live. Both you and Ericht. For everyone's sake!	False	False			
+74700ff4db	1012	1014	1013	0:20:18.902000	0:20:21.610000	74700ff4db.mp3	74700ff4db.webp	ナディム 愛してる	Te quiero, Nadim.	I love you, Nadim.	False	False			
+4ac0bf781e	1017	1016	1015	0:20:26.260000	0:20:28.912000	4ac0bf781e.mp3	4ac0bf781e.webp	僕もだ 愛してる	Yo también te quiero, Elnora.	I love you too.	False	False			
+99668bc12f	1019	1018	1020	0:20:30.590000	0:20:32.690000	99668bc12f.mp3	99668bc12f.webp	パーメットスコア 4!	¡Permet puntuación cuatro!	Permet score, four!	False	False			
+aea38bc512	1026	1024	1025	0:20:46.980000	0:20:49.160000	aea38bc512.mp3	aea38bc512.webp	パパ ただいまー おおー	¡Papá, regresé!	Daddy, I'm home!	False	False			
+ff864669ba	1027	1028	1029	0:20:49.016000	0:20:50.870000	ff864669ba.mp3	ff864669ba.webp	ああっ おかえり	Bienvenida.	Welcome back.	False	False			
+05c2355f10	1032	1030	1031	0:20:50.860000	0:20:53.620000	05c2355f10.mp3	05c2355f10.webp	パパ お誕生日って何?	Papá, ¿qué es un cumpleaños?	What's a birthday, Daddy?	False	False			
+eff0b6a0a2	1034	1035	1033	0:20:53.670000	0:20:56.540000	eff0b6a0a2.mp3	eff0b6a0a2.webp	エリィが生まれた日を お祝いするんだよ	Es cuando se festeja el día que naciste, Eri.	It's when we celebrate the day you were born, Eri.	False	False			
+851fa854c9	1038	1037	1036	0:20:56.590000	0:20:58.840000	851fa854c9.mp3	851fa854c9.webp	お祝いって何するの?	¿Y cómo se festeja?	And what do we do to celebrate?	False	False			
+48326150d9	1039	1040	1041	0:20:58.817000	0:21:00.510000	48326150d9.mp3	48326150d9.webp	そうだなー	Pues...	Well...	False	False			
+4276f8b6c6	1042,1045	1043	1044	0:21:03.739000	0:21:08.577000	4276f8b6c6.mp3	4276f8b6c6.webp	ハッピーバースデー...　トゥーユー... うう...	Cumpleaños feliz.	Happy birthday to you	False	False			
+d98db4b64f	1046,1049,1052,1053	1047,1050,1054	1048,1051,1055	0:21:10.037000	0:21:19.110000	d98db4b64f.mp3	d98db4b64f.webp	ハッピーバースデー... パパ!　パパだ! トゥーユー...　この回線を切れ　できません 発信現場はガンダムと推測	Cumpleaños... -¡Es papá! -...feliz. -Corten este canal. -No podemos. Creemos que es el Gundam. -Te deseamos...	Happy birthday to you -Daddy! It's Daddy! -Cut off the communication. -I can't. -The source appears to be the Gundam. -Happy birthday	False	False			
+eae93c1f1d	1057	1056	1058	0:21:19.120000	0:21:22.420000	eae93c1f1d.mp3	eae93c1f1d.webp	ディア エリクト... どういうことだ	...Ericht. -¿Qué está pasando?	What's going on? -dear Ericht	False	False			
+24185a6052	1061	1059	1060	0:21:32.160000	0:21:37.650000	24185a6052.mp3	24185a6052.webp	ハッピーバースデー トゥーユ	Cumpleaños feliz.	Happy birthday to you	False	False			
+876f6f73aa	1063	1062	1064	0:21:42.780000	0:21:46.490000	876f6f73aa.mp3	876f6f73aa.webp	そして 我らカテドラルは⸺	Y por lo tanto, nosotros, Cathedral,	And our Cathedra...	False	False			
+1731f969c6	1067	1065	1066	0:21:47.150000	0:21:49.100000	1731f969c6.mp3	1731f969c6.webp	すべてのガンダムを⸺	por la presente	shall deny	False	False			

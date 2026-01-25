@@ -2,51 +2,52 @@
 
 Split an input video onto separate audio segments with images.
 
-
 ## Setup
 
-Create and activate a new Python environment:
-
-```
-python3 -m venv .venv && source .venv/bin/activate
+```bash
+uv sync
 ```
 
-Install dependencies:
-```
-pip3 install -r requirements.txt
-```
+## Usage
 
-(Optional) Install dev dependencies:
-```
-pip3 install -r requirements-dev.txt
+```bash
+uv run media-sub-splitter <input_folder> <output_folder> [OPTIONS]
 ```
 
-## Use
+**Examples:**
 
-Run with:
+```bash
+# Basic usage with DeepL translation
+uv run media-sub-splitter ./anime ./output -t YOUR_DEEPL_TOKEN
+
+# Dry run to check subtitles without generating segments
+uv run media-sub-splitter ./anime ./output --dry-run
+
+# Parallel processing with verbose output
+uv run media-sub-splitter ./anime ./output -p -v
 ```
-python3 -m media_sub_splitter -t <DEEPL_TOKEN> <input_folder> <output_folder>
-```
 
-Run the `--help` command for more information
-
-
-The DeepL token can also be set as an Environment Variable or on a `.env` file (see
-`.env.example`)
-
+**Options:**
+- `-t, --token TOKEN`: DeepL API token for translations
+- `-v, --verbose`: Add extra debug information
+- `-d, --dry-run`: Parse subtitles without generating segments
+- `-x, --x`: Remove extra punctuation symbols like ・
+- `-p, --parallel`: Generate segments in parallel
 
 ## Tests
 
-The application uses snapshot tests to make sure that the generated subtitles stay
-consistent between updates.
-
-To run the tests:
-
-```
-pytest
+```bash
+uv run pytest
 ```
 
-To regenerate snapshots after a change:
-```
-pytest --snapshot-update
+## Linting
+
+This project uses [Ruff](https://docs.astral.sh/ruff/) for linting and formatting.
+
+```bash
+# Check for issues
+uv run ruff check .
+
+# Auto-fix issues and format code
+uv run ruff check --fix . && uv run ruff format .
 ```
