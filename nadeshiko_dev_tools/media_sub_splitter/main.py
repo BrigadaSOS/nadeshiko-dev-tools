@@ -17,24 +17,24 @@ from guessit import guessit
 from langdetect import detect
 from rich.console import Console
 
-from media_sub_splitter.utils.anilist import CachedAnilist
-from media_sub_splitter.utils.cli import command_args
-from media_sub_splitter.utils.config import (
+from nadeshiko_dev_tools.common.anilist import CachedAnilist
+from nadeshiko_dev_tools.common.config import (
     ProcessingConfig,
     load_subtitle_config,
     save_subtitle_config,
 )
-from media_sub_splitter.utils.display_utils import (
-    display_file_details,
-    display_folder_mappings,
-)
-from media_sub_splitter.utils.ffmpeg_utils import probe_files
-from media_sub_splitter.utils.file_utils import (
+from nadeshiko_dev_tools.common.file_utils import (
     discover_input_folders,
     save_info_json,
     write_data_json,
 )
-from media_sub_splitter.utils.prompts import (
+from nadeshiko_dev_tools.media_sub_splitter.cli import command_args
+from nadeshiko_dev_tools.media_sub_splitter.utils.display_utils import (
+    display_file_details,
+    display_folder_mappings,
+)
+from nadeshiko_dev_tools.media_sub_splitter.utils.ffmpeg_utils import probe_files
+from nadeshiko_dev_tools.media_sub_splitter.utils.prompts import (
     confirm_processing,
     map_folder_to_anilist,
     restore_terminal,
@@ -42,11 +42,11 @@ from media_sub_splitter.utils.prompts import (
     select_subtitle_tracks,
     setup_signal_handlers,
 )
-from media_sub_splitter.utils.subtitle_utils import (
+from nadeshiko_dev_tools.media_sub_splitter.utils.subtitle_utils import (
     SUPPORTED_LANGUAGES,
     load_subtitle_file,
 )
-from media_sub_splitter.utils.text_utils import (
+from nadeshiko_dev_tools.media_sub_splitter.utils.text_utils import (
     extract_anime_title_for_guessit,
     join_sentences_to_segment,
     process_subtitle_line,
@@ -82,6 +82,16 @@ def main():
 
     try:
         args = command_args()
+        # Parse episodes if provided
+        episodes_filter = None
+        if args.episodes:
+            try:
+                episodes_filter = {int(e.strip()) for e in args.episodes.split(",")}
+                console.print(f"[cyan]Filtering to episodes: {sorted(episodes_filter)}[/cyan]")
+            except ValueError:
+                console.print("[red]Invalid episodes format. Use comma-separated numbers like '1,3,5'[/red]")
+                return
+
         config = ProcessingConfig(
             input_folder=args.input,
             output_folder=args.output,
@@ -90,6 +100,8 @@ def main():
             dryrun=args.dryrun,
             extra_punctuation=args.extra_punctuation,
             parallel=args.parallel,
+            episodes=episodes_filter,
+            sync_external_subs=False if args.no_sync else None,
         )
 
         # 1. Discover folders with .mkv files
@@ -161,7 +173,8 @@ def main():
         # Confirm and process
         total_files = sum(len(m["files"]) for m in folder_mappings.values())
         if confirm_processing(total_files, len(folder_mappings)):
-            process_episodes(config, folder_mappings, audio_config=audio_config)
+            episode_stats = process_episodes(config, folder_mappings, audio_config=audio_config)
+            display_episode_summary_report(episode_stats)
 
     except KeyboardInterrupt:
         restore_terminal()
@@ -183,8 +196,12 @@ def process_episodes(
     folder_mappings: dict,
     subtitles_dict_remembered: dict | None = None,
     audio_config: dict | None = None,
-):
-    """Process episodes in folder mappings."""
+) -> dict:
+    """Process episodes in folder mappings.
+
+    Returns:
+        dict: Episode statistics with format {folder_name: {episode_number: segment_count}}
+    """
     load_dotenv()
     logger.setLevel(logging.DEBUG if config.verbose else logging.INFO)
 
@@ -204,11 +221,15 @@ def process_episodes(
     if audio_config is None:
         audio_config = {}
 
+    # Track episode statistics
+    episode_stats = {}
+
     # Process each folder
     pool = Pool(config.pool_size)
 
     for folder_name, mapping in folder_mappings.items():
         console.print(f"\n[cyan]Processing folder: {folder_name}[/cyan]")
+        episode_stats[folder_name] = {}
 
         # Create output folder for this media
         anime_data = mapping["anime"]
@@ -223,7 +244,31 @@ def process_episodes(
         # Process each file in the folder
         for filename in mapping["files"]:
             filepath = os.path.join(mapping["path"], filename)
-            pool, subtitles_dict_remembered = extract_segments_from_episode(
+
+            # Filter by episode number if specified
+            if config.episodes:
+                # Extract episode number from filename using guessit
+                from nadeshiko_dev_tools.media_sub_splitter.utils.text_utils import (
+                    extract_anime_title_for_guessit,
+                )
+
+                guessit_query = extract_anime_title_for_guessit(filepath)
+                try:
+                    from guessit import guessit
+
+                    episode_info = guessit(guessit_query)
+                    episode_number = episode_info.get("episode", 1)
+
+                    if episode_number not in config.episodes:
+                        logger.info(f"Skipping episode {episode_number} (not in filter)")
+                        continue
+                except Exception as e:
+                    logger.warning(f"Could not determine episode number for {filepath}: {e}")
+                    if config.episodes:
+                        # If we can't determine the episode and a filter is set, skip it
+                        continue
+
+            pool, subtitles_dict_remembered, segment_count = extract_segments_from_episode(
                 pool,
                 filepath,
                 anime_folder_fullpath,
@@ -236,10 +281,24 @@ def process_episodes(
                 audio_config,  # audio_config
             )
 
+            # Track segment count for this episode
+            if segment_count is not None:
+                # Extract episode number for stats
+                from nadeshiko_dev_tools.media_sub_splitter.utils.text_utils import (
+                    extract_anime_title_for_guessit,
+                )
+                from guessit import guessit
+
+                guessit_query = extract_anime_title_for_guessit(filepath)
+                episode_info = guessit(guessit_query)
+                episode_number = episode_info.get("episode", 1)
+                episode_stats[folder_name][episode_number] = segment_count
+
     pool.close()
     pool.join()
 
     console.print("[green]Processing complete![/green]")
+    return episode_stats
 
 
 def extract_segments_from_episode(
@@ -253,8 +312,12 @@ def extract_segments_from_episode(
     hash_salt: str,
     folder_path: str,
     audio_config: dict,
-):
-    """Extract segments from a single episode file."""
+) -> tuple:
+    """Extract segments from a single episode file.
+
+    Returns:
+        tuple: (pool, subtitles_dict_remembered, segment_count or None)
+    """
     try:
         logger.info(f"Anime: {anime_data.title.romaji}")
 
@@ -273,10 +336,11 @@ def extract_segments_from_episode(
             subtitles_dict_remembered,
             folder_path,
             audio_config,
+            config,
         )
 
         # Process episode into segments
-        process_episode_segments(
+        segment_count = process_episode_segments(
             pool,
             main_mkv,
             anime_folder_fullpath,
@@ -291,10 +355,11 @@ def extract_segments_from_episode(
             audio_index,
         )
 
+        return pool, subtitles_dict_remembered, segment_count
+
     except Exception:
         logger.error("Error processing episode. Skipping...", exc_info=True)
-
-    return pool, subtitles_dict_remembered
+        return pool, subtitles_dict_remembered, None
 
 
 def discover_episode_subtitles(
@@ -303,10 +368,12 @@ def discover_episode_subtitles(
     subtitles_dict_remembered: dict,
     folder_path: str,
     audio_config: dict,
+    config,
 ) -> tuple:
     """Discover and match subtitles for an episode file."""
-    from media_sub_splitter.utils.file_utils import discover_matching_mkv_files
-    from media_sub_splitter.utils.prompts import (
+    from nadeshiko_dev_tools.common.file_utils import discover_matching_mkv_files
+    from nadeshiko_dev_tools.media_sub_splitter.utils.prompts import (
+        _get_config_key,
         select_mkv_sources_and_tracks,
         select_subtitle_streams,
     )
@@ -421,8 +488,6 @@ def discover_episode_subtitles(
         file_probe = ffmpeg.probe(episode_filepath)
 
         # Try to use folder audio_config if available
-        from media_sub_splitter.utils.prompts import _get_config_key
-
         config_key = _get_config_key(folder_name, folder_path)
         if audio_config and config_key in audio_config:
             audio_index = audio_config[config_key].get("index")
@@ -557,6 +622,10 @@ def discover_episode_subtitles(
     if "sync_external_subs" not in locals():
         sync_external_subs = True
 
+    # Override with config if explicitly set (e.g., --no-sync flag)
+    if config.sync_external_subs is not None:
+        sync_external_subs = config.sync_external_subs
+
     return (
         episode_number,
         episode_number_pretty,
@@ -581,8 +650,12 @@ def process_episode_segments(
     hash_salt: str,
     sync_external_subs: bool,
     audio_index: int | None = None,
-):
-    """Process episode into segments using discovered subtitles."""
+) -> int | None:
+    """Process episode into segments using discovered subtitles.
+
+    Returns:
+        int: Number of segments generated, or None if processing in parallel
+    """
     logger.info("Start file segmentation...")
 
     # Get video duration for metadata
@@ -616,8 +689,9 @@ def process_episode_segments(
             ),
             error_callback=lambda e: logger.error(f"[red][E{episode_number}] Error: {e}[/red]"),
         )
+        return None  # Can't track segment count in parallel mode
     else:
-        split_video_by_subtitles(
+        segment_count = split_video_by_subtitles(
             translator,
             main_mkv_filepath,
             matching_subtitles,
@@ -631,6 +705,7 @@ def process_episode_segments(
             audio_index,
         )
         logger.info(f"[green][E{episode_number}] Completed processing[/green]")
+        return segment_count
 
 
 def split_video_by_subtitles(
@@ -642,11 +717,15 @@ def split_video_by_subtitles(
     anime_data,
     episode_number,
     duration_ms,
-    hash_salt: str,
-    sync_external_subs: bool,
+    hash_salt: str = "",
+    sync_external_subs: bool = True,
     audio_index: int | None = None,
-):
-    """Split a video file into segments based on subtitles."""
+) -> int:
+    """Split a video file into segments based on subtitles.
+
+    Returns:
+        int: Number of segments generated
+    """
     logger.info(f"[cyan][E{episode_number}] Starting segmentation...[/cyan]")
 
     # Sync external subtitles with internal reference if requested
@@ -874,6 +953,8 @@ def split_video_by_subtitles(
                 f"[red]  - Segment #{failed['index']} at {start_td} ({failed['reason']})[/red]"
             )
 
+    return len(segments_data)
+
 
 def generate_segment_hash(
     anilist_id: int, episode_number: int, subtitle_id: int, subs_jp_ids: list, salt: str
@@ -1086,6 +1167,7 @@ def generate_segment(
         video_length_delta = end_time_delta - start_time_delta
 
         try:
+            # Web-optimized: baseline profile, level 3.0, fastdecode tune for browser compatibility
             result = subprocess.run(
                 [
                     "ffmpeg",
@@ -1093,7 +1175,7 @@ def generate_segment(
                     "-loop",
                     "1",
                     "-framerate",
-                    "1",
+                    "24",
                     "-i",
                     screenshot_path,
                     "-i",
@@ -1102,14 +1184,22 @@ def generate_segment(
                     "scale=1280:720,setsar=1",
                     "-c:v",
                     "libx264",
+                    "-profile:v",
+                    "baseline",
+                    "-level",
+                    "3.0",
+                    "-preset",
+                    "faster",
                     "-tune",
-                    "stillimage",
+                    "fastdecode",
                     "-crf",
-                    "40",
+                    "35",
                     "-pix_fmt",
                     "yuv420p",
                     "-c:a",
                     "aac",
+                    "-aac_coder",
+                    "twoloop",
                     "-b:a",
                     "96k",
                     "-movflags",
@@ -1159,3 +1249,63 @@ def generate_segment(
 
     logs.append("[green]Segment saved![/green]")
     return logs, segment_dict, None
+
+
+# ----------------------------------------------------------------------------
+# Summary Report Functions
+# ----------------------------------------------------------------------------
+
+
+def display_episode_summary_report(episode_stats: dict) -> None:
+    """Display a summary report of episode processing, flagging episodes with low segment counts.
+
+    Args:
+        episode_stats: Dict mapping {folder_name: {episode_number: segment_count}}
+    """
+    if not episode_stats:
+        return
+
+    console.print("\n[green bold]=== Episode Processing Summary ===[/green bold]")
+
+    for folder_name, episodes in episode_stats.items():
+        if not episodes:
+            continue
+
+        # Sort episodes by number
+        sorted_episodes = sorted(episodes.items())
+        episode_numbers = [ep for ep, _ in sorted_episodes]
+        segment_counts = [count for _, count in sorted_episodes]
+
+        # Calculate statistics
+        avg_segments = sum(segment_counts) / len(segment_counts)
+        min_segments = min(segment_counts)
+        max_segments = max(segment_counts)
+
+        console.print(f"\n[cyan bold]Folder: {folder_name}[/cyan bold]")
+        console.print(f"  Episodes processed: {len(sorted_episodes)}")
+        console.print(f"  Average segments: {avg_segments:.1f}")
+        console.print(f"  Min segments: {min_segments}")
+        console.print(f"  Max segments: {max_segments}")
+
+        # Find episodes with significantly low segment counts (difference > 400)
+        flagged_episodes = []
+        for ep_num, count in sorted_episodes:
+            if avg_segments - count > 400:
+                flagged_episodes.append((ep_num, count, avg_segments - count))
+
+        # Display individual episode counts
+        console.print(f"\n  [bold]Episode segment counts:[/bold]")
+        for ep_num, count in sorted_episodes:
+            is_low = avg_segments - count > 400
+            color = "red" if is_low else "green"
+            console.print(f"    Episode {ep_num}: [{color}]{count}[/{color}]")
+
+        # Display warning for low segment episodes
+        if flagged_episodes:
+            console.print(f"\n  [red bold]⚠ Warning: Episodes with abnormally low segment counts:[/red bold]")
+            console.print("  [red]These episodes may have had issues during processing.[/red]")
+            for ep_num, count, diff in flagged_episodes:
+                console.print(f"    [red]Episode {ep_num}: {count} segments ({diff:.0f} below average)[/red]")
+            console.print(f"\n  [yellow]Tip: Use -e {','.join(str(e) for e, _, _ in flagged_episodes)} to reprocess specific episodes[/yellow]")
+
+    console.print("\n[green bold]=== Summary Complete ===[/green bold]\n")

@@ -3,7 +3,7 @@ from datetime import timedelta
 
 import ffmpeg
 
-from media_sub_splitter.utils.text_utils import extract_anime_title_for_guessit
+from nadeshiko_dev_tools.media_sub_splitter.utils.text_utils import extract_anime_title_for_guessit
 
 from .display_utils import console
 

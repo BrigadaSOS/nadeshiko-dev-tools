@@ -2,8 +2,8 @@ import os
 
 from guessit import guessit
 
-from media_sub_splitter.main import MatchingSubtitle
-from media_sub_splitter.utils.subtitle_utils import load_subtitle_file
+from nadeshiko_dev_tools.media_sub_splitter.main import MatchingSubtitle
+from nadeshiko_dev_tools.media_sub_splitter.utils.subtitle_utils import load_subtitle_file
 
 
 def read_input_subtitles(anime_folder_path):

@@ -8,7 +8,7 @@ import sys
 import questionary
 from rich.console import Console
 
-from media_sub_splitter.utils.text_utils import extract_anime_title_for_guessit
+from nadeshiko_dev_tools.media_sub_splitter.utils.text_utils import extract_anime_title_for_guessit
 
 console = Console()
 logger = logging.getLogger(__name__)
@@ -515,7 +515,7 @@ def select_mkv_sources_and_tracks(
 
     if not remembered:
         # Check config file for persisted selections
-        from media_sub_splitter.utils.config import get_multi_mkv_selection
+        from nadeshiko_dev_tools.common.config import get_multi_mkv_selection
 
         remembered = get_multi_mkv_selection(folder_name)
         if remembered:
@@ -690,7 +690,7 @@ def select_mkv_sources_and_tracks(
             "subtitle_file_indices": subtitle_file_indices,
         }
         # Also persist to config file for cross-run persistence
-        from media_sub_splitter.utils.config import save_multi_mkv_selection
+        from nadeshiko_dev_tools.common.config import save_multi_mkv_selection
 
         save_multi_mkv_selection(
             folder_name, main_mkv_index, audio_index, subtitle_file_indices

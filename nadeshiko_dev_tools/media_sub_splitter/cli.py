@@ -16,6 +16,12 @@ Examples:
 
   Process episodes in parallel with verbose output:
     %(prog)s ./input ./output -p -v
+
+  Reprocess only specific episodes:
+    %(prog)s ./input ./output -e 1,3,5
+
+  Skip subtitle sync with ffsubsync:
+    %(prog)s ./input ./output --no-sync
     """,
     )
     parser.add_argument(
@@ -68,5 +74,20 @@ Examples:
         action=argparse.BooleanOptionalAction,
         default=False,
         help="Generate segments for episodes in parallel",
+    )
+    parser.add_argument(
+        "-e",
+        "--episodes",
+        dest="episodes",
+        type=str,
+        help="Comma-separated list of episode numbers to process (e.g., '1,3,5'). "
+        "If not provided, all episodes will be processed.",
+    )
+    parser.add_argument(
+        "--no-sync",
+        dest="no_sync",
+        action="store_true",
+        default=False,
+        help="Skip syncing external subtitles with internal track using ffsubsync",
     )
     return parser.parse_args()

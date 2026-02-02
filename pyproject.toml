@@ -2,11 +2,14 @@
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
+[tool.hatch.metadata]
+allow-direct-references = true
+
 [project]
-name = "media-sub-splitter"
+name = "nadeshiko-dev-tools"
 version = "0.1.0"
-description = "Split video files into audio segments with images and subtitles"
-requires-python = ">=3.10"
+description = "CLI utilities for anime media processing and segment generation"
+requires-python = ">=3.11"
 dependencies = [
     "babelfish>=0.6.1",
     "boto3>=1.35.0",
@@ -23,11 +26,12 @@ dependencies = [
     "questionary>=2.1.1",
     "requests>=2.32.5",
     "rich>=14.3.1",
+    "nadeshiko-sdk>=0.1.0",
 ]
 
 [project.scripts]
-media-sub-splitter = "media_sub_splitter.__main__:main"
-nadeshiko-upload = "media_sub_splitter.uploader_cli:main"
+media-sub-splitter = "nadeshiko_dev_tools.media_sub_splitter.__main__:main"
+assets-uploader = "nadeshiko_dev_tools.assets_uploader.__main__:main"
 
 [dependency-groups]
 dev = [
@@ -38,7 +42,7 @@ dev = [
 
 [tool.ruff]
 line-length = 100
-target-version = "py310"
+target-version = "py311"
 
 [tool.ruff.lint]
 select = ["E", "F", "W", "I", "N", "UP", "B", "C4", "SIM"]
