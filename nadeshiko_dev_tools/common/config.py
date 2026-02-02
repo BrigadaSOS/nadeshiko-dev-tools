@@ -12,6 +12,7 @@ CONFIG_FILE = ".media-sub-splitter.json"
 KEY_AUDIO = "audio"
 KEY_SUBTITLES = "subtitles"
 KEY_MULTI_MKV = "multi_mkv"
+KEY_UPLOADER = "uploader"
 
 
 @dataclass
@@ -24,6 +25,8 @@ class ProcessingConfig:
     extra_punctuation: bool = False
     parallel: bool = False
     pool_size: int = 6
+    episodes: set[int] | None = None  # None means all episodes
+    sync_external_subs: bool | None = None  # None means prompt user
 
 
 def load_subtitle_config() -> dict:

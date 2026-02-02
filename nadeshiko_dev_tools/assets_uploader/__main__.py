@@ -4,7 +4,7 @@ import sys
 
 from rich.console import Console
 
-from media_sub_splitter.utils.uploader import upload_all
+from nadeshiko_dev_tools.assets_uploader.uploader import upload_all
 
 console = Console()
 
@@ -18,37 +18,26 @@ def main() -> None:
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-  # Update backend only (default - no R2 upload)
-  %(prog)s /path/to/output
+  # Dry run against dev (default behavior)
+  %(prog)s /path/to/output/12345 --dev
 
-  # Upload files to R2 as well
-  %(prog)s /path/to/output --upload-r2
-
-  # Upload to production (requires confirmation)
-  %(prog)s /path/to/output --prod
-
-  # Upload specific media by ID
-  %(prog)s /path/to/output --media-id 12345
-
-  # Upload specific episode
-  %(prog)s /path/to/output --media-id 12345 --episode 1
-
-  # Dry run (no actual uploads)
-  %(prog)s /path/to/output --dry-run
+  # Actually upload to dev
+  %(prog)s /path/to/output/12345 --dev --apply
 
   # Dry run against production
-  %(prog)s /path/to/output --prod --dry-run
+  %(prog)s /path/to/output/12345 --prod
+
+  # Upload to production with R2 files
+  %(prog)s /path/to/output/12345 --prod --apply --upload-r2
+
+  # Upload specific episode
+  %(prog)s /path/to/output/12345 --dev --episode 1 --apply
         """,
     )
 
     parser.add_argument(
-        "output",
-        help="Path to media-sub-splitter output directory",
-    )
-    parser.add_argument(
-        "--media-id",
-        metavar="ID",
-        help="Only upload specific media by folder name (AniList ID)",
+        "media_folder",
+        help="Path to media ID folder (e.g., /path/to/output/12345)",
     )
     parser.add_argument(
         "--episode",
@@ -56,32 +45,46 @@ Examples:
         type=int,
         help="Only upload specific episode number",
     )
-    parser.add_argument(
+
+    env_group = parser.add_mutually_exclusive_group(required=True)
+    env_group.add_argument(
+        "--dev",
+        action="store_true",
+        help="Target local/dev environment",
+    )
+    env_group.add_argument(
         "--prod",
         action="store_true",
-        help="Upload to production (default is local)",
+        help="Target production environment",
     )
+
     parser.add_argument(
-        "--dry-run",
+        "--apply",
         action="store_true",
-        help="Show what would be uploaded without actually uploading",
+        help="Actually perform the upload (default is dry-run)",
     )
     parser.add_argument(
         "--upload-r2",
         action="store_true",
         help="Upload files to R2 (default is to only update the backend)",
     )
+    parser.add_argument(
+        "--update-info",
+        action="store_true",
+        help="Only update media/character/list info (skip episodes and segments)",
+    )
 
     args = parser.parse_args()
 
     try:
         upload_all(
-            output_path=args.output,
-            media_id=args.media_id,
+            output_path=args.media_folder,
+            media_id=None,
             episode=args.episode,
             env="prod" if args.prod else "local",
-            dry_run=args.dry_run,
+            dry_run=not args.apply,
             upload_r2=args.upload_r2,
+            update_info_only=args.update_info,
         )
     except KeyboardInterrupt:
         console.print("\n[yellow]Upload cancelled by user[/yellow]")
