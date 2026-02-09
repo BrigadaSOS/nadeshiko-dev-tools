@@ -84,7 +84,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	289	291	290	0:07:11.450000	0:07:14.210000	76fdc65e90.mp3	76fdc65e90.webp	そうなのかな...	No sé...	Is that what it is?	False	False		suletta	
 	294	293	292	0:07:14.210000	0:07:16.450000	2814372f73.mp3	2814372f73.webp	お母さん うれしいな	Estoy muy contenta.	You've made your mother happy.	False	False		prospera	
 	298	297	296	0:07:17.480000	0:07:20.980000	42d3b15ba1.mp3	42d3b15ba1.webp	教えたでしょ 進めば2つって	Ya te lo dije: "Si avanzas, ganas dos cosas".	Isn't this what I taught you? Move forward, gain two.	False	False		prospera	
-	300		299	0:07:21.460000	0:07:22.377000	7e4198d194.mp3	7e4198d194.webp	うん		Right.	False	False			
 	303	302	301	0:07:22.400000	0:07:23.760000	3c4ae539a0.mp3	3c4ae539a0.webp	いってらっしゃい	Pásala bien.	Go have fun.	False	False		prospera	
 	306	305	304	0:07:24.110000	0:07:26.460000	2f7da07474.mp3	2f7da07474.webp	ありがとう お母さん	Gracias, mamá.	Thanks, Mom.	False	False		suletta	
 	308	309	307	0:07:27.280000	0:07:29	3cfbef4227.mp3	3cfbef4227.webp	ご息女ですか?	¿Era su hija?	Was that your daughter?	False	False		godoy	
@@ -148,7 +147,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	507	506	505	0:11:13.610000	0:11:15.610000	1c2d7f67a5.mp3	1c2d7f67a5.webp	分かりました	De acuerdo.	You got it!	False	False		suletta	
 	510	508	509	0:11:22.800000	0:11:24.910000	0906577190.mp3	0906577190.webp	操縦上手だね	Lo haces muy bien.	Impressive piloting skills.	False	False		elan	
 	513,515	512	511,514	0:11:24.910000	0:11:28.970000	f4fc86ff0c.mp3	f4fc86ff0c.webp	いえ そんな...　いつから この機体に?	No es la gran cosa. -¿Cuánto hace que eres su piloto?	Not at all. I just... How long with this machine?	False	False		suletta/elan	
-	517		516	0:11:28.970000	0:11:30.041000	ac25ecca86.mp3	ac25ecca86.webp	え?		What?	False	False			
 	520	519	518	0:11:30.040000	0:11:33.003000	b74397ddbc.mp3	b74397ddbc.webp	君のこと もっと聞かせてほしい	Quiero saber más de ti.	I'd like to know more about you.	False	False		elan	
 	523	521	522,524	0:11:35.020000	0:11:39.260000	be9a9de43a.mp3	be9a9de43a.webp	小さいころから ずっと... です	Desde siempre. Desde que era una niña.	I've always been with her. Since I was a child.	False	False		suletta	
 	527	526	525	0:11:39.260000	0:11:40.730000	25500f952e.mp3	25500f952e.webp	ずっと?	¿Desde siempre?	Always?	False	False		elan	
@@ -162,7 +160,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	556	557	555	0:12:14.640000	0:12:16.110000	78bd5fcb25.mp3	78bd5fcb25.webp	お願いがあるんだけど	Quiero pedirte algo.	Can you do me a favor?	False	False		elan	
 	559	560	558	0:12:16.110000	0:12:19.140000	e49992b307.mp3	e49992b307.webp	ん... は... はい	¿Sí?	Huh? Sure...	False	False		suletta	
 	563	562	561	0:12:19.140000	0:12:22.220000	12dcd821a4.mp3	12dcd821a4.webp	エアリアルに 1人で乗ってみたいんだ	Quiero montar en el Aerial yo solo.	I'd like to pilot Aerial by myself.	False	False		elan	
-	565		564	0:12:22.220000	0:12:23.180000	d9a592f8d9.mp3	d9a592f8d9.webp	え?		What?	False	False			
 	568	567	566	0:12:23.180000	0:12:25.760000	25c6e40faf.mp3	25c6e40faf.webp	君の家族に乱暴はしないよ	No me portaré mal con tu familia.	I won't be rough with one of your family.	False	False		elan	
 	571	570	569	0:12:26.050000	0:12:27.480000	1156b529b2.mp3	1156b529b2.webp	だから...	Por favor.	So...	False	False		elan	
 	575,577	574	573,576	0:12:33.970000	0:12:38.690000	5a16a94eab.mp3	5a16a94eab.webp	誕生日...　聞かれたくなかったのかな	¿No querría decirme cuándo es su cumpleaños?	Maybe he did this... to avoid talking about his birthday.	False	False		suletta	
@@ -188,7 +185,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	651	650	649,652	0:14:24.920000	0:14:27.928000	c22453783c.mp3	c22453783c.webp	エラン 貴様 こいつに... あ...	Elan, ¿qué has...?	Elan! You bastard, what did...	False	False		guel	
 	656,658	655	654,657	0:14:31.540000	0:14:35.330000	bb3088e493.mp3	bb3088e493.webp	こいつに何をした　返答次第では...	¿Qué le hiciste? Dependiendo de lo que...	what did you do to her? Depending on your answer...	False	False		guel	
 	659	661	660	0:14:35.268000	0:14:36.770000	da21e050da.mp3	da21e050da.webp	決闘でもする?	¿Nos batimos en duelo?	You'll ask for a duel?	False	False		elan	
-	663		662	0:14:36.770000	0:14:37.729000	dfb5191dda.mp3	dfb5191dda.webp	ん?		What?	False	False			
 	666,669,671	664,667	665,668,670	0:14:37.700000	0:14:44.790000	e15e602f41.mp3	e15e602f41.webp	ちょうどいい グエル・ジェターク　君に決闘を⸺　申し込む	Eres oportuno. Guel Jetark, te reto a un duelo.	Perfect timing, Guel Jeturk. I challenge you... to a duel.	False	False		elan	
 	674	673	672,675	0:14:48.210000	0:14:52.240000	a72ac7b08e.mp3	a72ac7b08e.webp	双方 魂の代償をリーブラに	Pongan el precio de sus almas en las balanzas de Libra.	Both parties, deposit your souls on Libra's scales.	False	False		shaddiq	
 	677	678	676	0:14:52.240000	0:14:55.990000	e4614322cc.mp3	e4614322cc.webp	決闘者はグエル・ジェタークと エラン・ケレス	Los duelistas son Guel Jetark y Elan Ceres.	The duelists are Guel Jeturk and Elan Ceres.	False	False		shaddiq	
@@ -200,7 +196,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	696	695	694	0:15:05.170000	0:15:09.550000	9a16f494b0.mp3	9a16f494b0.webp	久しぶりっすね 御三家同士の決闘なんて	Hace tiempo que no veía un duelo entre las grandes casas.	It's been a while since we've seen a duel among the three branches.	False	False		seseria	
 	699,701	698	697,700	0:15:09.550000	0:15:13.970000	b83e540384.mp3	b83e540384.webp	グエル・ジェターク　君は この決闘に何を賭ける	Guel Jetark, ¿qué apostarás en este duelo?	Guel Jeturk. What is your stake in this duel?	False	False		shaddiq	
 	704	703	702	0:15:13.970000	0:15:17.440000	516ad09637.mp3	516ad09637.webp	こいつがスレッタ・マーキュリーに 近づかないことだ	Que él no vuelva a acercarse a Suletta Mercury.	That this jerk stays away from Suletta Mercury.	False	False		guel	
-	706		705	0:15:17.440000	0:15:18.311000	53498d2cb4.mp3	53498d2cb4.webp	へえー		I see.	False	False			
 	708	709	707	0:15:18.310000	0:15:22.230000	d385453279.mp3	d385453279.webp	そ... そんなの余計なお世話... です	¡Eso no es cosa tuya!	H-Hey, that's... none of your business!	False	False		suletta	
 	711	712	710	0:15:22.230000	0:15:23.984000	7079a60e15.mp3	7079a60e15.webp	お前 分かってるのか?	¿Eres consciente?	Don't you get it?	False	False		guel	
 	715	714	713	0:15:23.980000	0:15:26.860000	63cb1c7413.mp3	63cb1c7413.webp	こいつは敵だ 御三家なんだぞ	Es tu enemigo. Es de las tres casas.	This guy is your enemy. He's from the three branches!	False	False		guel	
@@ -236,7 +231,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	824	823	822	0:17:06.890000	0:17:10.800000	b176ce6c68.mp3	b176ce6c68.webp	グエル先輩は とっくに了承済みっすよー	Guel lo aceptó hace rato.	We already gave Mr. Guel authorization.	False	False		seseria	
 	828	827	826	0:17:11.380000	0:17:13.050000	59f70ba8af.mp3	59f70ba8af.webp	悪いね ラウダ	Lo siento, Lauda.	Forgive me, Lauda.	False	False		shaddiq	
 	831	830	829	0:17:13.050000	0:17:16.090000	3913cb737f.mp3	3913cb737f.webp	俺も この決闘 見たいんだ	Yo también quiero ver este duelo.	I too want to see this duel.	False	False		shaddiq	
-	833		832	0:17:26.230000	0:17:27.232000	c3c7538c2e.mp3	c3c7538c2e.webp	あ?		What?	False	False			
 	836	835	834	0:17:27.230000	0:17:28.800000	ac1775f953.mp3	ac1775f953.webp	黒いザウォート?	¿Un Zowort negro?	A black Zowort?	False	False		seseria	
 	838,841	839	837,840	0:17:28.730000	0:17:31.900000	1ba45ac571.mp3	1ba45ac571.webp	違いますね　あれは...	No. Eso es...	I don't think so. That one is...	False	False		rouji	
 	844,846	843	842,845	0:17:32.860000	0:17:38.460000	799fab5328.mp3	799fab5328.webp	KP002 エラン・ケレス　ファラクト 出る	KP-002, Elan Ceres. Pharact, en marcha.	KP002, Elan Ceres. Pharact, going out.	False	False		elan	
@@ -255,10 +249,8 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	893	894	892	0:18:39.930000	0:18:43.050000	fbd03725db.mp3	fbd03725db.webp	静電気帯びた砂が あんなに舞っちゃってさ	Esparció la arena con electricidad estática.	Look at all the clouds of sand charged with static electricity!	False	False		martin	
 	897	896	895	0:18:43.300000	0:18:44.680000	e1b3e03e79.mp3	e1b3e03e79.webp	レゴリス...	Regolito.	Regolith...	False	False		elan	
 	903	901	902	0:18:51.600000	0:18:54.480000	2620879509.mp3	2620879509.webp	ファラクトのテスト 手伝ってもらう	Me ayudarás con la prueba del Pharact.	You'll be my assistant in testing the Pharact.	False	False		elan	
-	905		904	0:18:55.280000	0:18:56.030000	82e2c2f135.mp3	82e2c2f135.webp	は...		What?	False	False			
 	908	907	906	0:19:00.530000	0:19:01.910000	e5ae05a49f.mp3	e5ae05a49f.webp	ガンダム?	¿Un Gundam?	A Gundam?	False	False		rouji	
 	911	910	909,912	0:19:02.530000	0:19:05.470000	ee23c0bb8b.mp3	ee23c0bb8b.webp	パーメットスコア 3	Permet puntuación tres.	Permet score... three.	False	False		elan	
-	914		913	0:19:15.170000	0:19:16.300000	b5ae94d41b.mp3	b5ae94d41b.webp	チイッ		What the...	False	False			
 	916	917	915	0:19:22.140000	0:19:23.800000	d3da0ca5ac.mp3	d3da0ca5ac.webp	ダ... ダメージ!?	¡Está dañado!	D-Damage!	False	False		guel	
 	920	919	918	0:19:27.470000	0:19:28.730000	02b7585ac7.mp3	02b7585ac7.webp	違う... あ...	¿No?	No, it's not that.	False	False		guel	
 	922	923	921,924	0:19:37.610000	0:19:40.365000	960d349f11.mp3	960d349f11.webp	機能が戻った これは...	¿Recuperé las funciones? ¿Qué...?	Functions are restored? That looks like...	False	False		guel	

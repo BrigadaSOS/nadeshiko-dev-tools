@@ -23,15 +23,9 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	90,92	89	91	0:01:37.630000	0:01:42.620000	ce9b08fa9b.mp3	ce9b08fa9b.webp	あああー!　みんなを満足させられるような プランが思いつかない	¡No se me ocurre ningún plan que les guste a todas!	I can't think of a plan that'll satisfy everyone!	False	False		hitori	Hitori
 	96	97	94	0:01:42.620000	0:01:45.788000	42d4990fd6.mp3	42d4990fd6.webp	いや でも やっぱり ここは思い切って	¡No! ¡Debo armarme de valor!	But I just have to work up the courage!	False	False		hitori	Hitori
 	99	100	98	0:01:45.750000	0:01:47.790000	cb421716c1.mp3	cb421716c1.webp	まずは 虹夏ちゃんに...	Primero llamaré a Nijika.	I'll start with Nijika-chan!	False	False		hitori	Hitori
-	107	109		0:01:53.379000	0:01:56.080000	053f746567.mp3	053f746567.webp	まっ まあ 今日は もう遅いから	Bueno, hoy ya es tarde.		False	False		hitori	
 	111	112	110	0:01:56.080000	0:01:57.967000	a9b6ef0584.mp3	a9b6ef0584.webp	ひとりちゃーん ご飯よー	¡A comer, Hitori!	Hitori-chan! Time to eat!	False	False		michiyo	Michiyo
 	114	115	113	0:01:58.760000	0:02:02.013000	178efab30c.mp3	178efab30c.webp	まっ まあ まだ夏休みはあるんだし	Aún quedan días de vacaciones.	A-Anyway, there's a lot of summer break left!	False	False		hitori	Hitori
 	118	117	116	0:02:02.380000	0:02:05.840000	e9288acef8.mp3	e9288acef8.webp	きっと そのうち 誰かが誘ってくれるよね	De seguro alguien propondrá algo algún día.	I'm sure one of them will make the offer sooner or later.	False	False		hitori	Hitori
-	120		119	0:02:05.760000	0:02:07.018000	a02c442bbf.mp3	a02c442bbf.webp	イエーイ!		Yay!	False	False			Kita/Kita's Friend A
-	125		124	0:02:09	0:02:11.314000	2e245a5e4f.mp3	2e245a5e4f.webp	一般相対性理論は		The general theory of relativity	False	False			Man N
-	130,132		127	0:02:11.260000	0:02:15.820000	40bb88a700.mp3	40bb88a700.webp	強い重力が働くと　時間が遅れる とされています		states that the passage of time slows in the presence of a powerful gravity well.	False	False			Man N
-	144		142	0:02:25	0:02:28.498000	e66f3271d5.mp3	e66f3271d5.webp	極めて高密度で強い重力のため		Their extreme density and high gravitational potential	False	False			Man N
-	146		145	0:02:28.460000	0:02:33.294000	b48d2769b7.mp3	b48d2769b7.webp	物質だけでなく 光さえも 脱出することができない天体です		mean that not only matter, but even light, becomes trapped forever in their pull.	False	False			Man N
 	150	151	148	0:02:34.160000	0:02:36.965000	6c7627644a.mp3	6c7627644a.webp	ひとりちゃーん 入るわよー	Voy a entrar. -Cerca de los agujeros negros...	The gravitational field causes time to slow so much that it nearly stops...	False	False		michiyo/hombre	Man N
 	152	154	153	0:02:37.048000	0:02:40.551000	40e6fc5767.mp3	40e6fc5767.webp	いい天気だから お布団 干そうと思って	Hace buen tiempo, así que tenderé los futones.	I thought I'd air out the futons while the weather's nice.	False	False		michiyo	Michiyo
 	156	157	155	0:02:40.550000	0:02:42.971000	705585af7a.mp3	705585af7a.webp	いつまでも ダラダラしてちゃダメよ	Deja de holgazanear.	Don't lie around all day, all right?	False	False		michiyo	Michiyo
@@ -110,7 +104,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	457	458	456	0:08:22.060000	0:08:24.700000	f97ca35834.mp3	f97ca35834.webp	なんか 追い打ち かけちゃいましたけど	La empeoré sin querer.	I think I made it worse somehow.	False	False		kita	Kita
 	462	461	460	0:08:26.060000	0:08:28.950000	1f624ebc84.mp3	1f624ebc84.webp	よし! また暴走する前に急ごう	Rápido, antes de que le dé otro ataque.	Okay! Let's take her out while she's docile!	False	False		nijika	Nijika
 	464,467	465	463,466	0:08:28.950000	0:08:32.403000	7bf229b726.mp3	7bf229b726.webp	ラジャ!　喜多ちゃん! ぼっちちゃんのこと よろしくね	Recibido. -Tú te encargas de ella, Kita.	Roger! Kita-chan, you carry Bocchi-chan!	False	False		ryo/nijika	Nijika,Ryo
-	469		468	0:08:32.390000	0:08:33.070000	a94d3d86eb.mp3	a94d3d86eb.webp	えっ?		What?!	False	False			Kita
 	472,473	471	470,474	0:08:33	0:08:36.640000	1802e7e25a.mp3	1802e7e25a.webp	よーし じゃあ 江の島へ レッツゴー!　ゴー	¡Vamos a Enoshima! -¡Vamos!	Okay! Let's get going to Enoshima! Yeah!	False	False		nijika/ryo	Nijika,Ryo
 	477	476	475	0:08:38.630000	0:08:41.829000	42ff94d38d.mp3	42ff94d38d.webp	後藤さん あと少しで 夏の思い出 できるからね!	Pronto forjaremos recuerdos de verano, Goto.	Gotoh-san! We'll be making those summer memories soon!	False	False		kita	Kita
 	479	480	478	0:08:41.790000	0:08:44.165000	d9fdde84c7.mp3	d9fdde84c7.webp	もう少しの辛抱だから!	Aguanta un poco más.	Just hang in there a little longer!	False	False		kita	Kita
@@ -126,9 +119,7 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	522,525	523	521,524	0:09:14.560000	0:09:18.741000	ff1ac16dfd.mp3	ff1ac16dfd.webp	そっか　下北沢高校って 進学校ですもんね	Claro, muchos de la preparatoria Shimo-Kitazawa van a la universidad.	Really? That's right. Shimo-Kitazawa High is a prep school, isn't it?	False	False		kita	Kita
 	527	528	526	0:09:18.700000	0:09:21.243000	25500f952e.mp3	25500f952e.webp	じゃあ 2人とも頭いいんですね!	Así que son muy listas.	You two must be really smart!	False	False		kita	Kita
 	530	531	529,532	0:09:21.200000	0:09:25.930000	9af21e809e.mp3	9af21e809e.webp	いやー 別に あたしは普通だし リョウは... ね?	No. Yo soy del montón y Ryo...	I'm pretty average, myself... And Ryo is... yeah.	False	False		nijika	Nijika
-	534		533	0:09:25.930000	0:09:26.791000	9e8ef2c9d9.mp3	9e8ef2c9d9.webp	えっ?		Eh?	False	False			Kita
 	536	537	535	0:09:26.770000	0:09:29.480000	f816a5e307.mp3	f816a5e307.webp	この前のテスト 全部 赤点だったよね?	Reprobó todos los últimos exámenes.	You bombed your last round of tests, right?	False	False		nijika	Nijika
-	539		540	0:09:29.543000	0:09:30.670000	e0d3efe71b.mp3	e0d3efe71b.webp	うん えっ?		Eh?	False	False			Kita
 	543,545	542	541,544	0:09:31.040000	0:09:35.257000	4e9904728f.mp3	4e9904728f.webp	あたしと同じ高校選んだ理由　家から近いからだもんね?	Solo eligió esa prepa porque está cerca de su casa.	She picked the school for the same reason I did: because it was close to home!	False	False		nijika	Nijika
 	547	548	546	0:09:35.200000	0:09:36.380000	669cfdcf83.mp3	669cfdcf83.webp	そう	Sí.	Yep.	False	False		ryo	Ryo
 	551	550	549	0:09:36.700000	0:09:40.388000	9dbf2b341d.mp3	9dbf2b341d.webp	でも それじゃあ どうやって受験 合格したんです?	¿Y cómo aprobaste los exámenes de ingreso?	But then how did you pass the entrance exam?	False	False		kita	Kita
@@ -171,7 +162,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	680	681	679	0:11:43.710000	0:11:45.850000	c44d10d24f.mp3	c44d10d24f.webp	絵に描いたようなウェイ系だった	Eran estereotipos andantes.	Archetypal beach bros.	False	False		ryo	Ryo
 	683	684	682	0:11:45.850000	0:11:48.600000	62948bf265.mp3	62948bf265.webp	あれを相手にするのは 分が悪すぎる!	No podemos tratar con ellos.	They're too powerful for us to handle!	False	False		nijika	Nijika
 	686	687	685	0:11:48.560000	0:11:51.143000	192015ed9b.mp3	192015ed9b.webp	急いで海から離れましょう!	Alejémonos de la playa.	Let's get away from the beach, ASAP!	False	False		kita	Kita
-	689	690		0:11:52.228000	0:11:53.604000	f470f04b0a.mp3	f470f04b0a.webp	まいどあり	Gracias.		False	False		dependiente	
 	693	694	692	0:11:54.790000	0:11:56.815000	ebe04e33b1.mp3	ebe04e33b1.webp	はい これ 後藤さんの	Para ti, Goto.	Here, for you, Gotoh-san.	False	False		kita	Kita
 	696	697	695	0:11:56.800000	0:11:58.650000	9a16f494b0.mp3	9a16f494b0.webp	あ... どうも	Gracias.	Th-Thanks...	False	False		hitori	Hitori
 	702	700	701	0:11:58.990000	0:12:00.152000	8e9615f8f8.mp3	8e9615f8f8.webp	これは?	¿Qué es?	What is this?	False	False		hitori	Hitori
@@ -256,7 +246,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	981	982	976	0:15:57.930000	0:16:00.726000	ed74118765.mp3	ed74118765.webp	ちょっと 何ボーッとしてんの?	Oye, estás en las nubes.	Hey. Aren't you listening?	False	False		miitan	Miitan
 	984,987	985	983,986	0:16:00.680000	0:16:04.950000	0248ed00a8.mp3	0248ed00a8.webp	あっ ごめん　みーたん きれいだから 見とれちゃって	Perdón, es que me distrae tu belleza.	Oh, sorry. You're just so pretty I forgot everything else!	False	False		takkun	Takkun
 	989	990	988	0:16:04.950000	0:16:06.732000	8ee41ad757.mp3	8ee41ad757.webp	もう バカ	Ay, qué bobo eres.	You silly!	False	False		miitan	Miitan
-	992	993		0:16:06.815000	0:16:08.660000	a5e7e9769d.mp3	a5e7e9769d.webp	みーたん たっくん	Miitan. -Takkun.		False	False		takkun/miitan	
 	998	999	997,1001	0:16:08.610000	0:16:11.737000	040aef8492.mp3	040aef8492.webp	展望台! 展望台 行きましょ!	¡El mirador! ¡Vamos al mirador!	The observation deck! Let's go to the observation deck!	False	False		kita	Kita
 	1003	1005	1004	0:16:14.573000	0:16:17.326000	c86a50091b.mp3	c86a50091b.webp	うわー 見てください!	¡Miren!	Look at that!	False	False		kita	Kita
 	1007,1010	1008	1006,1009	0:16:17.290000	0:16:22.710000	06cd98dd01.mp3	06cd98dd01.webp	展望台からの眺めは 更に絶景ですね!　目に焼き付けとかないと	La vista desde aquí es sublime. Tienen que grabársela en la retina.	The view from the observation deck is even more fabulous! We've really got to drink it all in!	False	False		kita	Kita
@@ -336,7 +325,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	1265,1269	1267	1266,1268	0:20:26.325000	0:20:30.260000	aaa3911c14.mp3	aaa3911c14.webp	後藤さん どこ行きたい?　毎日 思い出 作りましょうね!	¿Adónde quieres ir? ¡Forjaremos recuerdos todos los días!	Where do you want to go, Gotoh-san? Let's make memories together every single day!	False	False		kita	Kita
 	1271	1272	1270	0:20:30.210000	0:20:32.640000	d76c1e8e69.mp3	d76c1e8e69.webp	そっ そんな毎日は 外出したくない!	Tampoco quiero salir a diario.	I d-don't wanna go outside every day!	False	False		hitori	Hitori
 	1274	1275	1273	0:20:32.590000	0:20:34.583000	06627088d6.mp3	06627088d6.webp	か... 考えておきます	Lo pensaré.	I'll th-think about it...	False	False		hitori	Hitori
-	1277		1276	0:20:34.560000	0:20:35.375000	74c4cb974a.mp3	74c4cb974a.webp	うん!		Sure!	False	False			Kita
 	1278	1280	1279	0:20:36.251000	0:20:39.129000	fd1165091f.mp3	fd1165091f.webp	あっ 後藤さんも 眠かったら起こすけど	Si quieres dormir, yo te despierto.	You can rest if you want, Gotoh-san. I'll wake you up.	False	False		kita	Kita
 	1281	1283	1282	0:20:39.212000	0:20:43.150000	6f1dc41a66.mp3	6f1dc41a66.webp	あ... いや 行きの電車で ずっと意識なかったので	No. Como estaba inconsciente al venir,	A-Actually, I spent the whole train ride up here unconscious,	False	False		hitori	Hitori
 	1285	1286	1284	0:20:43.150000	0:20:44.920000	20c5e59307.mp3	20c5e59307.webp	割と目は さえてて	estoy bastante despierta.	so I'm pretty alert now.	False	False		hitori	Hitori

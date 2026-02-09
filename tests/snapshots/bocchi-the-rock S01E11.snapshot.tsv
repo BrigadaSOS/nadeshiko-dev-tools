@@ -86,9 +86,7 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	380,383	381	379	0:06:47.260000	0:06:49.630000	47c802de42.mp3	47c802de42.webp	これ ぼっちちゃんじゃない?　なんか...	¿No eres tú, Bocchi? -Vaya...	Is that Bocchi-chan?!	False	False		nijika/hitori	Nijika
 	385	386	384,387	0:06:49.630000	0:06:52.110000	e1da0b4a3a.mp3	e1da0b4a3a.webp	いっくよー ほいっ!	Aquí voy.	Here we go... Gotcha!	False	False		nijika	Nijika
 	393	394	391	0:06:53.010000	0:06:55.240000	3e9f80f10d.mp3	3e9f80f10d.webp	おめでとうございまーす	¡Felicidades!	Congratulations!	False	False		extra E	Shuka Mob E
-	395		396	0:06:55.135000	0:06:55.890000	980bfdaef8.mp3	980bfdaef8.webp	イエイ!		Yeah!	False	False			Nijika
 	399,402	400	397,401,403	0:06:56.330000	0:07:00.840000	286d7e6fed.mp3	286d7e6fed.webp	みんなで回る文化祭も　悪くないかも 私のために ありがとう	Ver el festival en grupo no está tan mal.	Nice work, Senpai! Easy-peasy! Thanks for winning that for me.	False	False		hitori	Kita,Nijika,Ryo
-	405	406		0:07:00.849000	0:07:02.650000	428dc66095.mp3	428dc66095.webp	いや リョウのじゃないから これ	No lo gané para ti, Ryo.		False	False		nijika	
 	408	409	407	0:07:03.300000	0:07:04.650000	13b9430b9d.mp3	13b9430b9d.webp	それに...	Además...	And...	False	False		hitori	Hitori
 	411	412	410	0:07:04.650000	0:07:07.280000	5ced0c009b.mp3	5ced0c009b.webp	つ... 次は どこ行きます?	¿Adónde vamos ahora?	Wh-Where to next?	False	False		hitori	Hitori
 	414,416	415	413,417	0:07:07.270000	0:07:11.060000	3ad2f0bd09.mp3	3ad2f0bd09.webp	おお いいねえ　このまま 全出し物 コンプリートだー!	¡Así se habla! ¡Veámoslo todo!	Good enthusiasm! Let's keep going until we do the full circuit!	False	False		nijika	Nijika
@@ -129,8 +127,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	561	563	562	0:09:15.358000	0:09:17.030000	46e3cf9e47.mp3	46e3cf9e47.webp	えっ リョ... リョウさん?	¿Ryo?	R-Ryo-san?	False	False		hitori	Hitori
 	564	566	565	0:09:17.068000	0:09:19.680000	fbfd64ad7d.mp3	fbfd64ad7d.webp	MVは ぼっちを水着にしよう	Harás un videoclip en traje de baño.	We'll have you in a swimsuit in the video.	False	False		ryo	Ryo
 	571	572	570	0:09:20.440000	0:09:23.460000	1156b529b2.mp3	1156b529b2.webp	今のバンドは 動画サイトの再生数こそ正義	Hoy en día, las visualizaciones lo son todo.	For modern bands, it's views that do the talking!	False	False		ryo	Ryo
-	573	575		0:09:23.116000	0:09:25.880000	20f7137f55.mp3	20f7137f55.webp	再生数稼ぎには多少の犠牲も必要	Y ganarlas requiere sacrificios.		False	False		ryo	
-	579	581		0:09:25.827000	0:09:27.040000	d66ce3c28f.mp3	d66ce3c28f.webp	むむむむ...	No, no, no.		False	False		hitori	
 	583	584	582	0:09:27.670000	0:09:30.580000	dc582314cb.mp3	dc582314cb.webp	それかガムテープ巻いて 海の上で弾かせよう	Podemos ponerte en el mar con cinta adhesiva.	We'll wrap you in black tape and have you play on the ocean!	False	False		ryo	Ryo
 	586	587	585	0:09:30.580000	0:09:33.260000	b391cf3cd3.mp3	b391cf3cd3.webp	ぼっちちゃんで お金もうけしようとしないで!	¡No intentes hacerte rica a costa suya!	Stop using Bocchi-chan as a cash cow!	False	False		nijika	Nijika
 	588	589	590	0:09:34.377000	0:09:37.130000	3d36515e1f.mp3	3d36515e1f.webp	あっ な... 何か頼んでください	Pidan algo, por favor.	P-Please just order!	False	False		hitori	Hitori
@@ -161,7 +157,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	698	700	699,701	0:11:04.634000	0:11:07.600000	c2c9866e70.mp3	c2c9866e70.webp	みらくるー きゅん!	¡Miracle Kyun!	Miracle... Squee!	False	False		kita	Kita
 	703	704	702	0:11:08.500000	0:11:10.139000	c21cb2ed83.mp3	c21cb2ed83.webp	オムライスさん	¡Omurice!	If you please, omurice...	False	False		kita	Kita
 	706,710	707,711	705	0:11:11.200000	0:11:16.530000	704c0cf10b.mp3	704c0cf10b.webp	おいしくなーれ!　キターン!	¡Que sepa rico! ¡Radiante!	Become delicious!	False	False		,kita	Kita
-	712	713		0:11:17.438000	0:11:18.773000	9996be73a7.mp3	9996be73a7.webp	キターン	Radiante.		False	False		kita	
 	715	716	714	0:11:21.080000	0:11:24.340000	63cb1c7413.mp3	63cb1c7413.webp	ケチャップの程よい酸味と ソースの甘さが溶け合い	La acidez del kétchup y el dulzor de la salsa	The acidity of the ketchup and sweetness of the sauce blend together,	False	False		nijika	Nijika
 	718	719	717	0:11:24.320000	0:11:27.070000	ac03c3ac54.mp3	ac03c3ac54.webp	温かな家庭を感じる味に 変わった!	hacen que sepa a comida casera.	giving it the soul-warming feel of home cooking!	False	False		nijika	Nijika
 	721	722	720	0:11:27.070000	0:11:28.324000	0725e70fe9.mp3	0725e70fe9.webp	まろやか!	Qué suave.	Smooth!	False	False		ryo	Ryo
@@ -191,12 +186,10 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	806	807	805	0:12:44.490000	0:12:46.030000	2a2600f05c.mp3	2a2600f05c.webp	すぁーせーん!	¡Disculpen!	'Scuse me!	False	False		apocalipsis A	PA Man A
 	808	810	809	0:12:46.068000	0:12:49.080000	fbceab4378.mp3	fbceab4378.webp	水 お代わり お願いしゃーす	Otro vaso de agua, por favor.	Could I have s'more water?	False	False		apocalipsis A	PA Man A
 	812	813	811	0:12:49.070000	0:12:51.700000	20c12c7c72.mp3	20c12c7c72.webp	あっ リョウ先輩 あっち お願いします	Encárgate de ellos, Ryo.	Ryo-senpai, you take care of them!	False	False		kita	Kita
-	815		814	0:12:52.200000	0:12:52.950000	d1ec9f3adb.mp3	d1ec9f3adb.webp	ああ?		Heh.	False	False			Ryo
 	816	818	817	0:12:53.534000	0:12:56.287000	d534603cc3.mp3	d534603cc3.webp	ドリンク? 自分で取りに来て	¿Quieren bebidas? Vengan por ellas.	You want it? Come get it.	False	False		ryo	Ryo
 	820	821	819	0:12:56.280000	0:12:58.560000	f365afab44.mp3	f365afab44.webp	すすすす... すいません!	¡Lo sentimos!	F-F-Forgive us for our arrogance!	False	False		apocalipsis B/A	PA Man A/B
 	823,826	824	822,825	0:12:58.480000	0:13:01.840000	4d541e5f4f.mp3	4d541e5f4f.webp	ここはライブハウスじゃないです!　でも すてき!	¡Esto no es un club! Pero estás perfecta.	This isn't the club! Still hot, though!	False	False		kita	Kita
 	828	829	827	0:13:02.400000	0:13:05.890000	59f70ba8af.mp3	59f70ba8af.webp	リョ... リョウさんも よく分からないすごさがある	Ryo también es increíble a su manera.	R-Ryo has her own inexplicable power, too...	False	False		hitori	Hitori
-	831		832	0:13:05.630000	0:13:06.680000	3913cb737f.mp3	3913cb737f.webp	フン ウッス!		Y-Y-Yeah!	False	False			PA Man B
 	834,837	835	833,836	0:13:06.680000	0:13:11.010000	f597d34c0e.mp3	f597d34c0e.webp	おーい!　団体のお客さん連れてきたよー	¡Chicas, traje a un grupo!	Hey! I brought a group!	False	False		nijika	Nijika
 	840	839	838	0:13:10.960000	0:13:12.220000	1f6427e182.mp3	1f6427e182.webp	えっ ヤバ!	¡Cielos!	Uh-oh!	False	False		compañera B	Classmate B
 	841	843	842,844	0:13:12.261000	0:13:16.110000	1a30b74682.mp3	1a30b74682.webp	おかえりなさいませ こちらへ どうぞ	Bienvenidas. Pasen por aquí.	Welcome home! Come right this way!	False	False		kita	Kita
@@ -214,7 +207,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	884	885	883	0:13:52.560000	0:13:55.140000	e5e2cdeb2d.mp3	e5e2cdeb2d.webp	それで ギャランティのほうは?	¿Y los billetes?	And what about our fee?	False	False		ryo	Ryo
 	888	889	887	0:13:55.980000	0:13:59.980000	d1761c6b7d.mp3	d1761c6b7d.webp	まさか タダで 人を使おうってわけじゃ...	¿Esperaban que trabajáramos gratis?	Don't tell me you expected us to work for free...	False	False		ryo	Ryo
 	891	892	890,893	0:13:59.740000	0:14:02.940000	b2fe419614.mp3	b2fe419614.webp	ほーら 練習しに行くよ!	Ven, vamos a ensayar.	C'mon! We gotta go practice!	False	False		nijika	Nijika
-	894		895	0:14:02.478000	0:14:04.650000	2a156c2542.mp3	2a156c2542.webp	ぐわー		Waaaagh...	False	False			Ryo
 	897	898	896	0:14:04.650000	0:14:07.340000	e1b3e03e79.mp3	e1b3e03e79.webp	あっ その前に ちょっといいですか?	¿Podemos hacer algo antes?	But first, could we do one thing?	False	False		kita	Kita
 	901	902	900	0:14:12.800000	0:14:16.650000	d0a8590370.mp3	d0a8590370.webp	帰る前に ライブする所 みんなで見ておきたくて	Quería que viéramos el sitio donde tocaremos.	I wanted to get a look at our venue before we left!	False	False		kita	Kita
 	904	905	903	0:14:16.650000	0:14:19.920000	011c7e7a3d.mp3	011c7e7a3d.webp	おー きれいな体育館だね	Es un gimnasio muy bonito.	Wow, what a pretty gym!	False	False		nijika	Nijika
@@ -252,7 +244,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	1021	1022	1020	0:16:04.470000	0:16:05.520000	1be0c245a0.mp3	1be0c245a0.webp	安心して	Descuida.	Don't worry.	False	False		ryo	Ryo
 	1023	1024	1025	0:16:05.476000	0:16:08.780000	e43f16b78b.mp3	e43f16b78b.webp	むっ それ慰めてんの? けなしてんの?	¿Intentas consolarme o insultarme?	Is that a reassurance or a diss?!	False	False		nijika	Nijika
 	1026	1028	1027	0:16:08.688000	0:16:10.070000	a78f1e62b2.mp3	a78f1e62b2.webp	解散の危機!	¡Nos vamos a separar!	Break-up imminent!	False	False		hitori	Hitori
-	1030		1029	0:16:10.070000	0:16:10.860000	eef082828c.mp3	eef082828c.webp	はい		Now, now!	False	False			Kita
 	1033	1031	1032	0:16:10.490000	0:16:12.400000	56acf47256.mp3	56acf47256.webp	ケンカは なしです	Nada de peleas.	No fighting!	False	False		kita	Kita
 	1035	1036	1034	0:16:12.340000	0:16:14.360000	c27d08fb28.mp3	c27d08fb28.webp	最後の練習 頑張りましょ	Este será el último ensayo.	Let's finish our practice!	False	False		kita	Kita
 	1038	1039	1037	0:16:14.360000	0:16:16.700000	d67b43cb0f.mp3	d67b43cb0f.webp	ごめんごめん 頑張ろ	Perdón. Empecemos.	Right, sorry. Let's do it!	False	False		nijika	Nijika
@@ -315,9 +306,7 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	1277	1278	1276	0:19:56.430000	0:19:57.917000	74c4cb974a.mp3	74c4cb974a.webp	あっ はい	Sí.	R-Right.	False	False		hitori	Hitori
 	1279	1281	1280	0:19:58.417000	0:20:01.830000	e1923d738f.mp3	e1923d738f.webp	じゃあ 頑張ろ! 楽しも!	¡Esforcémonos y divirtámonos!	Now, let's play hard and have fun!	False	False		nijika	Nijika
 	1283	1284	1282	0:20:01.830000	0:20:03.260000	95e9a42fe6.mp3	95e9a42fe6.webp	せーの!	Uno, dos y...	One, two...	False	False		nijika	Nijika
-	1286		1285	0:20:03.680000	0:20:05.799000	6733abe9e9.mp3	6733abe9e9.webp	おーっ!		Yeah!	False	False			Nijika
 	1289	1291	1290	0:20:16.435000	0:20:20.356000	f182e4b37a.mp3	f182e4b37a.webp	続いてのバンドは 結束バンドの皆さんです!	La siguiente banda es Kessoku Band.	Our next band is Kessoku Band!	False	False		organizadora festival	CF Staff
-	1294		1295	0:20:27.363000	0:20:29.620000	9b8c5893a3.mp3	9b8c5893a3.webp	きゃー 喜多ちゃーん!		Kita-chan!	False	False			Audience
 	1296	1297,1301	1300	0:20:29.156000	0:20:33.160000	65995c0fc5.mp3	65995c0fc5.webp	せーの 喜多ちゃーん!	¡Kita! ¡Kita!	Kita-chan!	False	False		público	Audience
 	1303	1304	1302	0:20:33.160000	0:20:35.920000	c0a98cbc32.mp3	c0a98cbc32.webp	喜多ちゃーん!	¡Kita!	Kita-chan!	False	False		público	Audience
 	1306	1307	1305	0:20:36.460000	0:20:37.998000	7a23ba841f.mp3	7a23ba841f.webp	はーい	¡Hola!	Hi!	False	False		kita	Kita

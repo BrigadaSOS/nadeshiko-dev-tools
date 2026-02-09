@@ -145,7 +145,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	482	481	480	0:09:06.060000	0:09:08.190000	7e91d80541.mp3	7e91d80541.webp	一緒に捨てといてよ	Tira eso con lo demás.	Throw that out with the rest.	False	False			
 	484	485	483	0:09:08.190000	0:09:10.900000	cca6716517.mp3	cca6716517.webp	おい! ふざけんなスペーシアン!	¡Oye, ten más modales, Spacian!	Hey! Learn some manners, Spacian!	False	False			
 	488	487	486	0:09:10.900000	0:09:12.480000	e776d34fd1.mp3	e776d34fd1.webp	行こう チュチュ な...	Vámonos, Chuchu.	Let's go, Chuchu.	False	False			
-	490		489	0:09:12.950000	0:09:14.420000	5657a66d73.mp3	5657a66d73.webp	え...		What?	False	False			
 	493	491	492	0:09:14.340000	0:09:15.570000	2c1629d546.mp3	2c1629d546.webp	マルタンも	Martin, tú también.	Martin, too.	False	False			
 	496	495	494	0:09:16.290000	0:09:18.560000	f57285ca6e.mp3	f57285ca6e.webp	ちょ... ちょっと ニカ姉!	¡Espera, Nika!	Hey wait, Nika!	False	False			
 	497	499	498	0:09:19.036000	0:09:21.310000	de24f01b1d.mp3	de24f01b1d.webp	あ... 今 片づけますから	Lo recogeré enseguida.	I'll clean up right away.	False	False			
@@ -240,7 +239,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	814	813	812	0:15:24.660000	0:15:26.230000	fe86052015.mp3	fe86052015.webp	どういたしまして	De nada.	You're welcome.	False	False			
 	816,818	817	815	0:15:26.660000	0:15:30.100000	e08584ea0c.mp3	e08584ea0c.webp	その...　どうして...	¿Y por qué haces esto?	Why would you...	False	False			
 	820	821	819	0:15:30.100000	0:15:31.980000	f365afab44.mp3	f365afab44.webp	君に興味があったから	Me interesas.	You interest me.	False	False			
-	823		822	0:15:31.880000	0:15:32.910000	5cf79eac4e.mp3	5cf79eac4e.webp	え?		Huh?	False	False			
 	826	824	825	0:15:33.540000	0:15:35.550000	77d74fa058.mp3	77d74fa058.webp	スレッタ・マーキュリー	Suletta Mercury...	Suletta Mercury...	False	False			
 	829	828	827	0:15:35.900000	0:15:38.760000	0b8c00e8fb.mp3	0b8c00e8fb.webp	君のことを もっと知りたい	Quiero saber más sobre ti.	I'd like to learn more about you.	False	False			
 	833	832	831	0:15:44.870000	0:15:48.210000	c3c7538c2e.mp3	c3c7538c2e.webp	これより 審問会を始めます	Que comience la investigación.	We will now begin the inquiry.	False	False			

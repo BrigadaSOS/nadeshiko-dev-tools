@@ -2,7 +2,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	2	1	0	0:00:01.709000	0:00:04.441000	d8ba37fd6c.mp3	d8ba37fd6c.webp	この決闘 絶対勝って	Tienes que ganar este duelo	You have to win this duel,	False	False			
 	5	4	3	0:00:04.880000	0:00:08.910000	98844ec85a.mp3	98844ec85a.webp	あんたの退学と 私の結婚がかかってるんだから	para que a ti no te echen y a mí no me fuercen a casarme.	so you won't be expelled and I won't be forced to marry.	False	False			
 	8	6	7	0:00:09.820000	0:00:11.780000	e3817cfdce.mp3	e3817cfdce.webp	嫌... です	No quiero.	I don't want to.	False	False			
-	10		9	0:00:11.780000	0:00:12.700000	4615859307.mp3	4615859307.webp	はあ?		What?	False	False			
 	13	12	11	0:00:12.700000	0:00:15.270000	1a22fcfcc1.mp3	1a22fcfcc1.webp	一緒に戦う流れでしょ!	¡Tenemos que luchar las dos juntas!	It only makes sense for us to fight together now!	False	False			
 	16	14	15	0:00:15.170000	0:00:16.243000	4f5fb67c03.mp3	4f5fb67c03.webp	リストが...	Mi lista...	My list...	False	False			
 	20,21	19	18	0:00:17.290000	0:00:22.370000	4f06b1af2f.mp3	4f06b1af2f.webp	学校に来たら⸺　やりたいことリスト... です	Hice una lista de las cosas que quería hacer al venir a la escuela.	I made a list of things I wanted to do when I went to school.	False	False			
@@ -125,7 +124,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	438	440	439	0:08:32.114000	0:08:34.280000	d0e63aa62f.mp3	d0e63aa62f.webp	1対1の個人戦を採用	Con el código de uno contra uno.	The one-on-one code will apply.	False	False			
 	443,446	442	441,444	0:08:34.280000	0:08:36.660000	f9eb8317e3.mp3	f9eb8317e3.webp	異論はないか?　ああ はい	¿Hay objeciones? -No.	Any objections? None.	False	False			
 	448,451	447	449,450	0:08:37.240000	0:08:41.160000	e99feaf2f0.mp3	e99feaf2f0.webp	スレッタ・マーキュリー　君は この決闘に何を賭ける?	Suletta Mercury, ¿qué pones en juego en este duelo?	Suletta Mercury, what is your stake in this duel?	False	False			
-	452	453		0:08:41.290000	0:08:42.910000	5f5856c9ba.mp3	5f5856c9ba.webp	えっと...	Pues...		False	False			
 	455	456	454	0:08:42.910000	0:08:46.620000	c756d2995e.mp3	c756d2995e.webp	決闘には それぞれ 何かを賭けることになっている	Los duelos requieren que todos se jueguen algo.	Our duels require you each to place something on the line.	False	False			
 	458	459	457	0:08:46.620000	0:08:49.420000	b565c80bd9.mp3	b565c80bd9.webp	金 謝罪 女	Dinero, una disculpa, mujeres...	Money, an apology, a woman...	False	False			
 	462	461	460	0:08:49.420000	0:08:51.990000	1f624ebc84.mp3	1f624ebc84.webp	女を賭けるのは お前だけだ	Eres el único que se apostaría una mujer.	You're the only one who'd bet women.	False	False			
@@ -232,7 +230,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	810	809	808	0:15:21.310000	0:15:23.310000	8d23fa724d.mp3	8d23fa724d.webp	消えちゃった	Se disipó.	It dissipated.	False	False			
 	812	813	811	0:15:23.940000	0:15:25.690000	20c12c7c72.mp3	20c12c7c72.webp	これ 水?	¿Es agua?	Is this water?	False	False			
 	816	815	814	0:15:25.690000	0:15:28.060000	d534603cc3.mp3	d534603cc3.webp	排熱処理か	¿El sistema de gestión de calor? -Eso es.	Is it the heat management system?	False	False			
-	818		817	0:15:27.570000	0:15:28.321000	8c2fb1a650.mp3	8c2fb1a650.webp	はい		Yes.	False	False			
 	822	821	819,820	0:15:28.320000	0:15:30.230000	41928a8a59.mp3	41928a8a59.webp	あの量の水散布	Como se está dispersando tanta agua,	Abnormal heat detected within front. With that much water being dispersed...	False	False			
 	824	825	823,826	0:15:30.220000	0:15:33.280000	b176ce6c68.mp3	b176ce6c68.webp	ビーム兵器の減衰は さけられませんね	las armas de rayos resultarán afectadas.	beam weapons will inevitably be degraded. Emergency water cooling in progress.	False	False			
 	830	829	828,831	0:15:35.450000	0:15:39.750000	fd008636ee.mp3	fd008636ee.webp	見ろ! 俺の言ったとおりにして正解だろ	¡Mira! ¡Mi plan era el adecuado!	Take a good look! My plan was right on the money!	False	False			
@@ -314,7 +311,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	1105	1104	1103	0:20:56.520000	0:21:01.550000	e81790c31b.mp3	e81790c31b.webp	じゃ... じゃあエアリアルも ミオリネさんもセーフ	Entonces... ¿El Aerial y tú están a salvo?	Then Aerial and you are both... safe?	False	False			
 	1108	1107	1106,1109	0:21:01.550000	0:21:05.360000	93fb6ab60c.mp3	93fb6ab60c.webp	そう! ざまあみろ クソ親父!	¡Eso es! ¡Toma eso! ¡Papá, eres idiota!	That's right! Take that, you louse of a father!	False	False			
 	1111	1113	1112	0:21:07.160000	0:21:11.130000	9dbd95d79b.mp3	9dbd95d79b.webp	よよよよ... よかったね ミ... ミオミオ!	Qué buena noticia, ¿verdad, Mio-Mio?	G-Good news, right, Mio-Mio?	False	False			
-	1115		1114	0:21:11.130000	0:21:11.831000	3d3d347381.mp3	3d3d347381.webp	はあ?		Excuse me?	False	False			
 	1118,1119	1117	1116,1120	0:21:11.830000	0:21:14.730000	04863bca85.mp3	04863bca85.webp	ごめんなさい!　なんなの ミオミオって	¡Perdona! -¿Quién diablos es Mio-Mio?	I'm sorry! What the heck is "Mio-Mio"?	False	False			
 	1122,1124	1123	1121	0:21:14.690000	0:21:21.340000	231aa710e1.mp3	231aa710e1.webp	友達... あだ名で呼ぶの...　リストの結構上のほう... だったから...	Como llamar a una amiga por su apodo estaba al principio de mi lista...	Calling a friend by a nickname was near the top of my list, so...	False	False			
 	1127	1125	1126	0:21:21.130000	0:21:23	a64236e4f1.mp3	a64236e4f1.webp	かわいくないですか...	Es lindo, ¿verdad?	It's cute, isn't it?	False	False			
@@ -328,4 +324,3 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	1155	1156	1154	0:22:07.220000	0:22:09.040000	725a9b2a20.mp3	725a9b2a20.webp	スレッタ・マーキュリー	Suletta Mercury...	Suletta Mercury...	False	False			
 	1159	1158	1157	0:22:11.890000	0:22:13.290000	5c915f0dfc.mp3	5c915f0dfc.webp	俺と⸺	¿Quieres...	Will you...	False	False			
 	1162	1161	1160	0:22:14.390000	0:22:16.270000	93da636bae.mp3	93da636bae.webp	結婚してくれ	casarte conmigo?	marry me?	False	False			
-	1164		1163	0:22:20.730000	0:22:21.692000	9a60e195b5.mp3	9a60e195b5.webp	え?		What?	False	False			

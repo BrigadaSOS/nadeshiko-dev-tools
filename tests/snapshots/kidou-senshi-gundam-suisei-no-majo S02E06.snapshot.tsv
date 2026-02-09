@@ -48,7 +48,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	212	213	211	0:04:58.890000	0:05:02.420000	9d2d6bbefb.mp3	9d2d6bbefb.webp	っていうか あなた 今 どこにいるのよ?	¿Dónde estás tú ahora?	Sure, but where are you, anyway?	False	False		miorine	Miorine
 	214	216	215,217	0:05:02.385000	0:05:04.490000	1ffd0976ee.mp3	1ffd0976ee.webp	「グラスレー社」です。はあ!?	En Grassley.	At Grassley. What?!	False	False		prospera	Miorine,Prospera
 	218,222	220	219,221	0:05:04.487000	0:05:10.560000	f95a6f3a7e.mp3	f95a6f3a7e.webp	是非とも お話ししたいって　熱烈に誘われちゃいまして。あっ...	Me invitaron con muchas ganas para tener una charla.	They were eager to chat. And they insisted on inviting me...	False	False		prospera	Prospera
-	223		224	0:05:10.560000	0:05:12.829000	b9c02ff477.mp3	b9c02ff477.webp	はあー!?		Whaaaa?!	False	False			Miorine
 	225	226	227	0:05:15.164000	0:05:17.867000	97294e56d4.mp3	97294e56d4.webp	ウィンストン博士。あっ。	Profesora Winston.	Dr. Winston...	False	False		godoy	Godoy
 	229,233	228,232	230,231	0:05:17.750000	0:05:23.390000	0b8b30179a.mp3	0b8b30179a.webp	進捗は? プログラムの調整は　もう少し 時間を下さい。	¿Algún progreso? Necesito más tiempo para ajustar el programa.	Any progress? Please give me a little more time to adjust the programming.	False	False		belmeria,godoy	Belmeria,Godoy
 	234	236	235	0:05:23.373000	0:05:26.743000	d83ba1b7e5.mp3	d83ba1b7e5.webp	並列分散の応用は あなたの専門だ。	Te especializas en el PDP aplicado.	Applying parallel distribution is your specialty.	False	False		godoy	Godoy
@@ -159,7 +158,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	617	619	618	0:11:36.846000	0:11:39.215000	973b7aa4eb.mp3	973b7aa4eb.webp	よくも そこまでペラペラと。	¿Cómo puedes hablar tanto?	You sure know how to run your mouth.	False	False		norea	Norea
 	620,625,629	622,624,626,628,632	621,623,627,630,631	0:11:39.215000	0:11:49.325000	f611ddc911.mp3	f611ddc911.webp	もう 隠す必要ないだろう。そういう君は?　教えてよ ガンダムに乗る理由。ない。ほんとに? ないって言ってます。	Ya no necesito ocultar nada. ¿Qué contigo? ¿Qué te lleva a subir en un Gundam? -Nada. -¿De verdad? Dije que nada.	There's no use hiding it now. What about you? Is there any reason for you to pilot a Gundam? None. Really? I said I have none.	False	False		elan 5,norea,norea/elan 5	Elan (Clone 5),Norea
 	633,637	634,638	635,636	0:11:51.193000	0:11:56.900000	272b15e2ea.mp3	272b15e2ea.webp	そっか。空っぽだから　「アーシアンのため」なんて 理由 作っちゃってるわけだ。	Comprendo, como estás vacía, te inventas que luchas por los Earthians.	I see. You're hollow inside, so you tell yourself it's for the Earthians' sake.	False	False		elan 5	Elan (Clone 5)
-	639		640	0:11:56.866000	0:11:58.901000	b0d2526b09.mp3	b0d2526b09.webp	んっ! おっと。		Whoopsie!	False	False			Elan (Clone 5)
 	642	644	643	0:12:02.238000	0:12:05.710000	611c671f28.mp3	611c671f28.webp	あなたたちスペーシアンは 全員 殺す。	Los mataré a todos, Spacians.	I want to kill every last one of you Spacians.	False	False		norea	Norea
 	645	646	647	0:12:05.374000	0:12:07.977000	c9d9ba1901.mp3	c9d9ba1901.webp	それ以外に理由が必要ですか?	¿Es que necesito más motivos?	What other reason do I need?	False	False		norea	Norea
 	649	650	648	0:12:07.950000	0:12:10.630000	f46d1762d5.mp3	f46d1762d5.webp	ほんとは ガンダムに 乗りたくないんじゃないの?	En realidad no quieres montar en uno.	You don't really want to pilot a Gundam either, do you?	False	False		elan 5	Elan (Clone 5)
@@ -177,7 +175,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	690	691	689	0:12:49.300000	0:12:52.354000	3880cdcfeb.mp3	3880cdcfeb.webp	シャディクが動くことは 想定できた。	Imaginaba que Shaddiq movería ficha.	I expected Shaddiq would make a bold move,	False	False		miorine	Miorine
 	692,697	694,696	693,695	0:12:52.354000	0:12:58.260000	38ce343448.mp3	38ce343448.webp	でも 「ペイル」と組むなんて...ヒントになるか　分かりませんけど...ピッ	Pero aliarse con Peil... No sé si esto será de ayuda o no.	but not that he'd team up with Peil. I wonder if this will give you any hints, but...	False	False		miorine,prospera	Miorine,Prospera
 	698	699	700	0:12:58.260000	0:13:01.760000	c2c9866e70.mp3	c2c9866e70.webp	当初は デモによる 抗議活動と見られていましたが	Anteriormente las manifestaciones se consideraban protestas,	Though these initially looked like protests by demonstrators,	False	False		noticias	News Report
-	701,704		702	0:13:01.297000	0:13:06.300000	97533bf2a9.mp3	97533bf2a9.webp	アーシアン側の武装集団が　「ベネリット」関連施設を襲撃。		armed Earthian groups have begun attacking Benerit Group facilities.	False	False			News Report
 	711,715	712,714	709,713,717	0:13:08.590000	0:13:14.110000	e9a994918b.mp3	e9a994918b.webp	暴動? 一連のテロに関する　企業統治の欠如を 責めるものです。	¿Una revuelta? Culpan a la falta de liderazgo relacionada con los atentados.	Riots? They're protesting the lack of corporate governance regarding this terrorism.	False	False		miorine,prospera	Miorine,Prospera
 	719	722	720	0:13:14.110000	0:13:16.612000	f3fae1a29a.mp3	f3fae1a29a.webp	犯人捜索の名目で	Las autoridades actuaron injustamente	It was enforcing unfair security measures	False	False		prospera	Prospera
 	724	725	723	0:13:16.560000	0:13:20.182000	4f79d92db0.mp3	4f79d92db0.webp	不当な治安活動を 強いていましたから。	con la excusa de encontrar a los culpables.	in the name of criminal investigation.	False	False		prospera	Prospera
@@ -216,8 +213,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	841	843	842	0:15:16.265000	0:15:19.990000	1a30b74682.mp3	1a30b74682.webp	僕は 寮長として 仲間を守りたかった。	Como líder de la residencia, quería protegernos.	As head of the House, I wanted to protect everyone!	False	False		martin	Martin
 	844	845	846	0:15:19.668000	0:15:21.670000	f0af32dd6b.mp3	f0af32dd6b.webp	何も おかしくない。	¡Es lo normal!	I've done nothing wrong!	False	False		martin	Martin
 	849	847	848	0:15:21.640000	0:15:24.130000	398911c78d.mp3	398911c78d.webp	僕のしたこと 正しいですよね?	Hice lo correcto, ¿verdad?	I did the right thing, didn't I?	False	False		martin	Martin
-	850		851	0:15:23.672000	0:15:25.641000	89ea7de611.mp3	89ea7de611.webp	ブッブー! えっ?		Huh?	False	False			Martin
-	852		853	0:15:27.676000	0:15:30.212000	afa978635f.mp3	afa978635f.webp	うわっ ぶおっ ほひぃー!		Whoa!	False	False			Martin
 	854	856	855,857	0:15:30.212000	0:15:34.350000	1d58c2db36.mp3	1d58c2db36.webp	あんた とんだ裏切り野郎だねぇ。	Eres un auténtico traidor.	You... You're a double-crossing little rat, aren't you?	False	False		secelia	Secelia
 	858	859	860	0:15:35.651000	0:15:39.160000	f70fec1860.mp3	f70fec1860.webp	ご自身で判断なさいとは 進言しましたが...	Le dije que tomara sus propias decisiones, pero...	I believe I advised you to use your own judgment.	False	False		rajan	Rajan
 	861	863	862	0:15:39.088000	0:15:41.870000	7d847b6eee.mp3	7d847b6eee.webp	もう決めたの。文句ある?	Ya está decidido. ¿Algún problema?	And we've decided. Got a problem with that?	False	False		miorine	Miorine

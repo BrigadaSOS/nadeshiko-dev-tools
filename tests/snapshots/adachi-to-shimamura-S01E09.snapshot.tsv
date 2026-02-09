@@ -10,7 +10,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	32	34	33	0:00:33.830000	0:00:35.950000	7d53e9253f.mp3	7d53e9253f.webp	なぜですか?	¿Por qué?	Why, though?	False	False			
 	35	37	36	0:00:36.930000	0:00:39.620000	7793c1f8a5.mp3	7793c1f8a5.webp	バレンタインはそういうものだし	Porque así funciona San Valentín.	Because that's how Valentine's works.	False	False			
 	38	40	39	0:00:39.600000	0:00:41.160000	d954f77cb1.mp3	d954f77cb1.webp	そうなのですか	Ya veo.	Oh, I see.	False	False			
-	42	43		0:00:41.170000	0:00:42.800000	75d838ea8e.mp3	75d838ea8e.webp	多分ねー	¡Yo también lo veo!		False	False			
 	46	45	44	0:00:43.100000	0:00:47.450000	5942ebf37e.mp3	5942ebf37e.webp	ではー次に会うときには用意しておきましょう	¡Te haré chocolate para la próxima vez que nos veamos!	In that case, I shall prepare some for you the next time we meet!	False	False			
 	49	48	47	0:00:47.080000	0:00:48.360000	faa371c645.mp3	faa371c645.webp	やったー!	¡Yupi!	Yipee!	False	False			
 	52	51	50	0:00:49.340000	0:00:51.380000	f2745639bc.mp3	f2745639bc.webp	寝られなかった	No he pegado ojo.	I couldn't sleep.	False	False			
@@ -65,7 +64,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	254,256	253,257	255	0:06:38.370000	0:06:42.130000	af6916b777.mp3	af6916b777.webp	4番線より豊橋行きが発車します　急げ 安達!	Tren hacia Toyohashi en la vía cuatro. ¡Deprisa, Adachi!	Hurry, Adachi!	False	False			
 	258	260	259	0:06:42	0:06:44.940000	970d710e01.mp3	970d710e01.webp	閉まる扉にお気をつけください	Tengan cuidado con las puertas que se cierran.	Please be careful of the closing doors.	False	False			
 	263	262	261	0:06:49.490000	0:06:53.530000	01863277d6.mp3	01863277d6.webp	間に合ったね ギリギリだったけど	Lo hemos conseguido por los pelos.	We made it... Though just barely.	False	False			
-	265		264	0:06:53.530000	0:06:54.780000	a1188e3ce5.mp3	a1188e3ce5.webp	うーん		Hm...	False	False			
 	268	267	266	0:06:55.790000	0:06:59.960000	9f373dccfe.mp3	9f373dccfe.webp	あっ席空いてるね 1つだけ	Ah, ahí hay un sitio libre. Pero solo uno.	Oh, there's an open seat. Just one.	False	False			
 	271,272	270	269	0:07:02.580000	0:07:06.050000	a2da6ce0e2.mp3	a2da6ce0e2.webp	あっ 安達 座ったら?　えっ?	¿Qué tal si te sientas, Adachi?	Why don't you take it, Adachi?	False	False			
 	275	274	273	0:07:06.050000	0:07:08.840000	86b1c45072.mp3	86b1c45072.webp	いい しまむらに譲る	No, siéntate tú.	No, you can have it, Shimamura.	False	False			
@@ -73,7 +71,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	281	280	279	0:07:12.010000	0:07:14.430000	0ff5212bcc.mp3	0ff5212bcc.webp	授業中 寝ていたし	En clase te estabas quedado sopa.	You were sleeping during class.	False	False			
 	282	284	283	0:07:14.130000	0:07:17.850000	f5c8cd36b8.mp3	f5c8cd36b8.webp	えっ あの それは...	¿Eh? Es porque...	Huh? That's because...	False	False			
 	287	286	285	0:07:17.850000	0:07:20.780000	ee5ceda974.mp3	ee5ceda974.webp	あー 本当に寝てたんだ	Así que te estabas quedando dormida.	Oh, so you really were asleep.	False	False			
-	289		288	0:07:20.770000	0:07:22.060000	76fdc65e90.mp3	76fdc65e90.webp	えっ?		Huh?	False	False			
 	291	292	290	0:07:22.060000	0:07:26.070000	927f9a67bc.mp3	927f9a67bc.webp	じゃ... じゃあ座らせてもらう	Bueno, me sentaré.	O-Okay, I guess I'll take it.	False	False			
 	295	293	294	0:07:27.480000	0:07:28.610000	ff8a9f7cf3.mp3	ff8a9f7cf3.webp	あのさ	Oye...	Say...	False	False			
 	297	299	298	0:07:29.390000	0:07:33.660000	92e985e22e.mp3	92e985e22e.webp	私 ひょっとして面白い顔してる?	¿Tengo la cara rara?	Does... my face look weird?	False	False			
@@ -115,7 +112,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	419,420	418	417	0:09:51.880000	0:09:58.010000	7407a94d98.mp3	7407a94d98.webp	今日のしまむらはなぜか笑いっぱなしで　こっちは その度に大変だ	Shimamura está muy sonriente y eso me inquieta.	Shimamura seems to be all smiles today, which is throwing me off.	False	False			
 	423	422	421	0:09:58.010000	0:09:59.680000	bc44ab834d.mp3	bc44ab834d.webp	その笑顔を見ると	Cada vez que le veo sonreír	Every time I see her smile,	False	False			
 	426	425	424	0:09:59.680000	0:10:04.560000	2c727924e9.mp3	2c727924e9.webp	頬がだらしなく緩むのを抑えないといけないから	tengo que esforzarme para evitar poner cara de tonta.	I have to stop my cheek muscles from relaxing into a dumb expression.	False	False			
-	428		427	0:10:04.560000	0:10:05.930000	5b5094bf61.mp3	5b5094bf61.webp	えっ?		Huh?	False	False			
 	431	430	429	0:10:05.930000	0:10:08.560000	ed4d05f33b.mp3	ed4d05f33b.webp	じゃあ 種明かしするけどさ	Bueno, es la hora de la gran revelación.	So here's the big reveal.	False	False			
 	434	433	432	0:10:12.230000	0:10:15.940000	6712ec1cb1.mp3	6712ec1cb1.webp	はい これバレンタインのチョコ	Toma, tu chocolate de San Valentín.	Here you go. Your Valentine's chocolate.	False	False			
 	437	436	435	0:10:17.650000	0:10:21.780000	fa5ec3ccb0.mp3	fa5ec3ccb0.webp	私も昨日ここで買ってきたんだよね	En realidad lo compré ayer aquí.	I actually bought some from here yesterday.	False	False			
@@ -127,7 +123,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	460	459	458	0:10:41.640000	0:10:42.970000	e1fde1f756.mp3	e1fde1f756.webp	チョコレート	Chocolate.	Yup, chocolate.	False	False			
 	461,464	463	462	0:10:42.870000	0:10:45.850000	4603fce826.mp3	4603fce826.webp	へえ　しまちゃん 彼氏いるの?	¿Eh? ¿Tienes novio, Shima?	Ah... Do you have a boyfriend, Shima?	False	False			
 	465	467,469	466,468	0:10:45.780000	0:10:50.730000	9bf6c6b6e2.mp3	9bf6c6b6e2.webp	いないよ 友達に渡すのを買いに行くだけ	No. Solo quiero dárselo a una amiga.	Nope. I'm just getting some to give to a friend.	False	False			
-	471		470	0:10:50.730000	0:10:52.310000	446653b756.mp3	446653b756.webp	ふーん		Huh...?	False	False			
 	474	473	472	0:10:53.360000	0:10:54.650000	33d3dacd63.mp3	33d3dacd63.webp	うん	Sí.	Yup.	False	False			
 	477	476	475	0:10:56.150000	0:10:57.990000	42ff94d38d.mp3	42ff94d38d.webp	じゃあ 行こうか	Bueno, en marcha.	Well, let's go.	False	False			
 	481,483	482,485	480,484	0:10:59.450000	0:11:07.870000	61c10ddf95.mp3	61c10ddf95.webp	まもなく 4番線より豊橋行きが発車いたします　閉まる扉にお気をつけください	El tren con destino a Toyohashi efectuará su salida por la vía cuatro. Tengan cuidado con las puertas que se cierran.	The train bound for Toyohashi is about to depart from lane four. Please be careful of the closing doors.	False	False			
@@ -147,7 +142,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	531	529	530	0:12:03.740000	0:12:07.600000	e31c157614.mp3	e31c157614.webp	まあね どうしようかと思ってるんだ	Sí, he estado pensando en qué hacer.	Yeah... I've been trying to decide what to do with it.	False	False			
 	535	534	533	0:12:10.770000	0:12:13.850000	386dfcebcd.mp3	386dfcebcd.webp	そういえばさ しまちゃん	Por cierto, Shima,	By the way, Shima...	False	False			
 	539	538	537	0:12:13.850000	0:12:17.860000	e0d3efe71b.mp3	e0d3efe71b.webp	小さいとき 私のこと何て呼んでた?	¿cómo me llamabas cuando éramos pequeñas?	What did you call me when we were little?	False	False			
-	541		540	0:12:17.860000	0:12:19.820000	d6df897f52.mp3	d6df897f52.webp	えっ?		Huh?	False	False			
 	542,545	544	543	0:12:19.680000	0:12:26.370000	2bd3c183a8.mp3	2bd3c183a8.webp	待ってー しまちゃーん　しまちゃーん	¡Espera, Shima, Shima!	Wait, Shima! Shima!	False	False			
 	548	547	546	0:12:36.500000	0:12:40.670000	6db2c26f18.mp3	6db2c26f18.webp	さあ 忘れちゃった	La verdad es que no me acuerdo.	Honestly, I don't remember.	False	False			
 	552	551	550	0:12:42.670000	0:12:44.510000	3e3d1a8e4c.mp3	3e3d1a8e4c.webp	そっか	Ya veo.	I see.	False	False			
@@ -180,7 +174,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	639	638	640	0:14:28.840000	0:14:31.530000	b0d2526b09.mp3	b0d2526b09.webp	うん おいしい!	Qué rico.	Wow, it's good.	False	False			
 	643	642	641	0:14:31.530000	0:14:33.700000	700bca5a49.mp3	700bca5a49.webp	本当に そう思ってる?	¿De verdad lo piensas?	Do you really think that?	False	False			
 	646	645	644	0:14:33.700000	0:14:36.750000	013c28ece2.mp3	013c28ece2.webp	えっ あっ うん	¿Eh? Ah, sí.	Huh? Uh... Yeah.	False	False			
-	647		648	0:14:36.540000	0:14:38.420000	a9eb714bd7.mp3	a9eb714bd7.webp	ふーん		Huh...?	False	False			
 	652	651	650	0:14:50.510000	0:14:53.220000	c30e5cdc82.mp3	c30e5cdc82.webp	よし 思っていそう	Vale, creo que dices la verdad.	Okay, I guess you're telling the truth.	False	False			
 	655	654	653	0:14:57.520000	0:15:00.650000	56c1a87432.mp3	56c1a87432.webp	また疑われる方法ってあるかな	¿Habrá forma de que vuelva a dudar de mí?	Is there a way to make her doubt me again?	False	False			
 	658	657	656	0:15:04.020000	0:15:07.440000	04fccad6fb.mp3	04fccad6fb.webp	し... しまむらも1個食べてみる?	¿Quieres uno, Shimamura?	D-Do you want one, Shimamura?	False	False			
@@ -196,7 +189,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	692	691	690	0:16:00	0:16:02.290000	2281465588.mp3	2281465588.webp	6時になったら始まるはず	Debería empezar a las seis.	It should start around 6 PM...	False	False			
 	695	694	693	0:16:02.290000	0:16:03.460000	fb68770890.mp3	fb68770890.webp	何が?	¿El qué?	What will?	False	False			
 	701	700	699	0:16:04.860000	0:16:07.400000	1ec38a9c89.mp3	1ec38a9c89.webp	始まったよ 行こう! 安達	¡Está empezando! Vamos, Adachi.	It's starting! Let's go, Adachi!	False	False			
-	703		702	0:16:07.400000	0:16:09.570000	c21cb2ed83.mp3	c21cb2ed83.webp	えっ えっ?		H-Huh?	False	False			
 	708	706	707	0:16:12.240000	0:16:14.590000	d385453279.mp3	d385453279.webp	えっと これは?	¿Qué es esto?	Um... What is this?	False	False			
 	718	716	717	0:16:42.770000	0:16:44.040000	ac03c3ac54.mp3	ac03c3ac54.webp	しまちゃん?	¿Shima?	Shima?	False	False			
 	721	720,723	719,722	0:16:44.040000	0:16:48.210000	0725e70fe9.mp3	0725e70fe9.webp	あっ ごめん じゃあ 帰る?	Ah, perdona. ¿Nos vamos?	Oh, sorry. Should we head home?	False	False			
@@ -215,7 +207,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	769	767	768	0:17:39.700000	0:17:42.890000	e55b0c901e.mp3	e55b0c901e.webp	はっきりしないものがある	Algo incompleto.	Something incomplete.	False	False			
 	772	771	770	0:17:42.890000	0:17:46.270000	d6836a649a.mp3	d6836a649a.webp	そういうとき どうすればいいか	¿Qué se hace en momentos así?	What are you supposed to do at times like this?	False	False			
 	775	773	774	0:17:46.210000	0:17:50.650000	452c75b88d.mp3	452c75b88d.webp	小さいとき私のこと 何て呼んでた?	¿Cómo me llamabas cuando éramos pequeñas?	What did you call me when we were little?	False	False			
-	777		776	0:17:50.650000	0:17:54.190000	6029d84f05.mp3	6029d84f05.webp	うーん むむむむむ		Hm... Hrm...	False	False			
 	780	779	778	0:17:57.660000	0:18:00.160000	5517aaa24e.mp3	5517aaa24e.webp	たるちゃーん	¡Taru!	Taru!	False	False			
 	783	782	781	0:18:07.170000	0:18:11.460000	a89b110bc9.mp3	a89b110bc9.webp	たるちゃーんって言ってんだろうがよー!	¡Te llamaba Taru!	Dang it! Listen to me, Taru!	False	False			
 	786	785	784	0:18:13	0:18:15.170000	93b5e01393.mp3	93b5e01393.webp	またなー	¡Adiós!	See ya!	False	False			
@@ -242,7 +233,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	867	869	868	0:19:46.910000	0:19:50.560000	8a6a4d28fc.mp3	8a6a4d28fc.webp	あ... うん そんな感じ	Sí, algo así.	Uh... Yeah, something like that.	False	False			
 	872	871	870	0:19:51.810000	0:19:53.360000	6606f66e90.mp3	6606f66e90.webp	ハハ... わーい	Guay...	Yay...	False	False			
 	873	875	874	0:19:53.350000	0:19:56.940000	cb511b5114.mp3	cb511b5114.webp	でも 安達と見てちょうどいい内容だったかも	Ha estado genial verlo contigo.	But I think it was perfect to see this with you.	False	False			
-	877		876	0:19:56.940000	0:19:58.490000	2f7ffe0175.mp3	2f7ffe0175.webp	えっ?		Huh?	False	False			
 	879,882	880	878	0:19:58.490000	0:20:03.660000	10b7d10326.mp3	10b7d10326.webp	キャンペーンに応募するときにね　パッと 安達の顔が浮かんだから	Cuando lo envié, se me vino a la mente tu cara.	When I was entering this thing, your face popped into my head.	False	False			
 	885	883	884	0:20:03.510000	0:20:06.370000	2869262752.mp3	2869262752.webp	それっぽいメッセージにしてみた	Intenté reflejar eso en el mensaje.	So I tried to reflect that into my message.	False	False			
 	886	888	887	0:20:11.870000	0:20:16.420000	4fa4fd37c8.mp3	4fa4fd37c8.webp	うん?どう... した?	¿Qué... ocurre?	What's... wrong?	False	False			
@@ -252,7 +242,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	902	903	901	0:20:45.490000	0:20:49.450000	b4fbae8cca.mp3	b4fbae8cca.webp	無言でいきなり抱きつくの禁止ね!	Ningún abrazo más sin avisar, ¿queda claro?	Yeah, no more surprise glomps, okay?	False	False			
 	906	905	904	0:20:49.450000	0:20:52.040000	44fe3bf6fb.mp3	44fe3bf6fb.webp	は... はい	Vale.	O-Okay...	False	False			
 	909	908	907	0:20:52.040000	0:20:54.790000	cc9594b516.mp3	cc9594b516.webp	えっ いいの?	Entonces, ¿puedo dártelos?	Huh? I can then?	False	False			
-	911		910	0:20:54.790000	0:20:55.920000	ee23c0bb8b.mp3	ee23c0bb8b.webp	えっ?		Huh?	False	False			
 	912	914	913	0:20:55.890000	0:21:00.670000	c466480f9f.mp3	c466480f9f.webp	えっと 許可を取ればあの こう... とか	Si te pido permiso antes, ¿está bien?	So... If I ask you first, it's okay, to uh, do this?	False	False			
 	917	916	915	0:21:00.670000	0:21:03.590000	dd73d8439e.mp3	dd73d8439e.webp	えっ 抱きつきたいの?	¿Por? ¿Quieres abrazarme ahora?	Huh? You want to hug me?	False	False			
 	920	921	919	0:21:08.100000	0:21:11.310000	02b7585ac7.mp3	02b7585ac7.webp	あー 何で?	¿Por qué?	Uh... why?	False	False			

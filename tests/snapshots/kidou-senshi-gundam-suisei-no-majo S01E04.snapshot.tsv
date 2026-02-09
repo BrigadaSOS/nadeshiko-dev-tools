@@ -5,10 +5,7 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	12	10	11	0:00:12.740000	0:00:16.080000	dbd4d0d42a.mp3	dbd4d0d42a.webp	やりたいことリスト 全然 埋まってない!	¡Aún me quedan muchas cosas en la lista!	There's still so much left on my wish list!	False	False		suletta	
 	17	16	15	0:00:31.170000	0:00:32.970000	a35148fc43.mp3	a35148fc43.webp	スレッタ・マーキュリー	Suletta Mercury...	Suletta Mercury...	False	False		guel	
 	19,22	20	18,21	0:00:32.970000	0:00:37.050000	9cb4f3b7c3.mp3	9cb4f3b7c3.webp	俺と⸺　結婚してくれ	¿quieres casarte conmigo?	Will you... marry me?	False	False		guel	
-	23		24,25	0:00:37.566000	0:00:39.151000	2a5f000027.mp3	2a5f000027.webp	え? はあ?		What? Huh?	False	False			
-	28		26	0:00:39.100000	0:00:40.694000	0174a58df7.mp3	0174a58df7.webp	ええー!?		What?	False	False			
 	29	30	31	0:00:40.778000	0:00:43.322000	af09749f4e.mp3	af09749f4e.webp	アハハ これはいいな	Qué gracioso.	Now this is entertaining.	False	False		shaddiq	
-	33		32	0:00:43.310000	0:00:44.690000	c8b4c640b3.mp3	c8b4c640b3.webp	な...		What are you...	False	False			
 	35	34	36	0:00:44.580000	0:00:46.742000	7793c1f8a5.mp3	7793c1f8a5.webp	にいさん なにバカなことを!	¿Qué tonterías estás diciendo?	Brother, what nonsense is this?	False	False		lauda	
 	38,40	39	37	0:00:46.730000	0:00:50.940000	1740e4efee.mp3	1740e4efee.webp	け... けけけけ... け...　結婚て...	¿Casarme contigo?	M-M-Marry you?	False	False		suletta	
 	41	43	42	0:00:51.205000	0:00:53.666000	6973cb54c7.mp3	6973cb54c7.webp	は... 待て 今のは違う...	Espera, no...	Wait, not like that!	False	False		guel	
@@ -36,7 +33,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	133,135	132	131,134,136	0:03:48.490000	0:03:54.880000	58dc6a4d2a.mp3	58dc6a4d2a.webp	自覚持ちなさい　あんたは決闘のホルダーで 私の花婿なんだから	Sé consciente de que eres una Holder y mi prometida.	You should realize who you are now. You're the reigning Holder and my bridegroom.	False	False		miorine	
 	140	138	139,141	0:03:55.780000	0:03:57.558000	b4fdb18820.mp3	b4fdb18820.webp	マーキュリーさん はい	¡Mercury! -¿Sí?	Ms. Mercury! Yes?	False	False		chica A/suletta	
 	143	144	142	0:03:57.540000	0:03:59.480000	682554e8c7.mp3	682554e8c7.webp	グエル先輩のこと どうするの?	¿Qué harás respecto a Guel?	What are your intentions with Mr. Guel?	False	False		chica A	
-	146		145	0:03:59.460000	0:04:00.390000	b48d2769b7.mp3	b48d2769b7.webp	え?		What?	False	False			
 	148	147	149	0:04:00.180000	0:04:02.100000	99ab648043.mp3	99ab648043.webp	なんでプロポーズ断ったの?	¿Por qué lo rechazaste?	Why did you turn down his proposal?	False	False		chica B	
 	152	151	150	0:04:02.100000	0:04:03.640000	40e6fc5767.mp3	40e6fc5767.webp	いつから そんな関係に?	¿Desde cuándo te corteja?	How long have you two been involved?	False	False		chica C	
 	156,159	155,158	153,154,157,160,161	0:04:03.640000	0:04:07.890000	20f71e4646.mp3	20f71e4646.webp	玉の輿だよ? もったいないって　ねえー その...	Es adinerado. -Este... Deberías aprovecharlo. ¿Verdad?	Well... You could get into a rich family! It's such a waste! Yes! Well...	False	False		chica B/suletta,chica C	
@@ -45,9 +41,7 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	170	171	168,169	0:04:11.520000	0:04:13.210000	bf6cb24e8d.mp3	bf6cb24e8d.webp	すみません!	¡Perdón!	Excuse us! We're so sorry!	False	False		chicas	
 	173	174,176	172,175	0:04:13.210000	0:04:16.660000	98b812f370.mp3	98b812f370.webp	先日の決闘の件だが... いい... 嫌です!	Respecto a nuestro duelo... ¡No quiero!	About our duel... I-I-I said no!	False	False		guel,suletta	
 	177	179	178	0:04:16.618000	0:04:18.340000	38170f3915.mp3	38170f3915.webp	真に受けてんじゃねえぞ	No lo decía en serio.	Don't be so gullible.	False	False		guel	
-	181		180	0:04:18.750000	0:04:19.330000	e943ac1307.mp3	e943ac1307.webp	え?		Huh?	False	False			
 	184	183	182	0:04:19.320000	0:04:23.820000	62ad287a1d.mp3	62ad287a1d.webp	くしゃくしゃ頭の田舎者に 俺が惚れると思ったか	¿Crees que me enamoraría de una pueblerina despeinada?	Did you really think I'd fall for some tousle-haired country bumpkin?	False	False		guel	
-	186		185	0:04:23.820000	0:04:25.460000	5ca582d3e3.mp3	5ca582d3e3.webp	え? ええ?		Wh-What?	False	False			
 	188	187	189	0:04:25.360000	0:04:27.120000	29df460017.mp3	29df460017.webp	そんなこと言いにきたの?	¿Eso viniste a decir?	Did you come here just to say that?	False	False		miorine	
 	190	191	192	0:04:27.463000	0:04:30.670000	891ba86fbc.mp3	891ba86fbc.webp	フン 見てろ 水星女	Ya verás, mercuriana.	Just you wait, Mercurian wench.	False	False		guel	
 	196,199	194,197	195,198,200	0:04:33.080000	0:04:41.050000	ef37353e77.mp3	ef37353e77.webp	ミオリネ・レンブラン 先日の無礼な態度 及び⸺　温室を壊したことについて ここに謝罪する	Miorine Rembran, me disculpo por mi actitud y por destrozar tu invernadero.	Miorine Rembran, for my boorish behavior the other day and for damaging your greenhouse, I hereby apologize.	False	False		guel	
@@ -88,7 +82,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	324	323	322	0:06:52.060000	0:06:54.220000	46dd3b1c4d.mp3	46dd3b1c4d.webp	3歩先 右に15度	15 a la derecha en tres pasos.	Three steps ahead, 15 degrees to the right.	False	False		nuno	
 	326	327	325	0:06:54.220000	0:06:55.430000	c8d7162ab0.mp3	c8d7162ab0.webp	了解!	Recibido.	Roger!	False	False		chuchu	
 	330	329	328	0:06:57.430000	0:06:58.989000	958775b6d9.mp3	958775b6d9.webp	余裕ー	Qué fácil.	This is easy!	False	False		chuchu	
-	332		331	0:07:00.750000	0:07:01.492000	b59c14cea8.mp3	b59c14cea8.webp	うわっ...		What the...	False	False			
 	335	334	333	0:07:03.520000	0:07:04.820000	2c23b8516a.mp3	2c23b8516a.webp	どうした チュチュ	¿Qué sucede?	What's wrong, Chuchu?	False	False		nuno	
 	337	338	336	0:07:04.750000	0:07:07.130000	75b462a36a.mp3	75b462a36a.webp	モニターが いきなり真っ暗に...	El monitor se puso negro.	My monitor suddenly went black!	False	False		chuchu	
 	341	340	339	0:07:07.130000	0:07:08.490000	93c9fa656b.mp3	93c9fa656b.webp	まずい 止まれ!	Oh, no. ¡Para!	Not good! Halt there!	False	False		nuno	
@@ -138,7 +131,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	490	491	489	0:09:42.730000	0:09:44.940000	5657a66d73.mp3	5657a66d73.webp	こっちのしゃべらないのが ティル	El que no habla es Till.	This quiet guy is Till.	False	False		aliya	
 	494	493	492	0:09:44.940000	0:09:46.480000	9925b484ac.mp3	9925b484ac.webp	さっき しゃべった	Antes hablé.	I spoke just now.	False	False		till	
 	497	496	495	0:09:46.480000	0:09:48.990000	de24f01b1d.mp3	de24f01b1d.webp	オジェロ ヌーノ あんたたちも	Ojelo, Nuno, preséntense.	Ojelo, Nuno. You guys too.	False	False		nika	
-	499		498	0:09:48.990000	0:09:50.280000	377280b907.mp3	377280b907.webp	えー		What?	False	False			
 	502	500	501	0:09:50.260000	0:09:51.650000	866df4c281.mp3	866df4c281.webp	でもなー	Pero...	But I...	False	False		nuno	
 	506	505	504	0:09:53.380000	0:09:56.700000	baa3b33e9b.mp3	baa3b33e9b.webp	なんで ここに スペーシアンがいんだよ!	¿Qué hace aquí una Spacian?	What the heck is a Spacian doing here?	False	False		chuchu	
 	508	507	509	0:09:56.960000	0:09:58.340000	6b08f5e92b.mp3	6b08f5e92b.webp	あらー チュチュ!	¡Chuchu! -Oh, oh.	Chuchu!	False	False		martin/nuno	
@@ -170,7 +162,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	606	608	607	0:11:22.377000	0:11:23.962000	96668bf37e.mp3	96668bf37e.webp	僕は君に興味ないよ	Tú no me interesas.	I couldn't be less interested.	False	False		elan	
 	610,612	611	609	0:11:23.950000	0:11:28.120000	cbb64aef0e.mp3	cbb64aef0e.webp	なっ...　こっちだってマネキン王子に 興味ないわよ!	Tú a mí tampoco, príncipe maniquí.	Oh yeah?! I wouldn't care for a dummy prince like you, either!	False	False		miorine	
 	613	615	614	0:11:28.049000	0:11:30.250000	a927b67e06.mp3	a927b67e06.webp	な... なんてこと言うんですか!	¿Cómo puedes decirle eso?	H-How could you say that?	False	False		suletta	
-	617		616	0:11:30.250000	0:11:30.860000	973b7aa4eb.mp3	973b7aa4eb.webp	は?		What?	False	False			
 	620	618	619	0:11:30.800000	0:11:34.210000	937afdae59.mp3	937afdae59.webp	エランさんは... 寮に... 誘ってくれて...	Elan me invitó a ir a su residencia.	Mr. Elan invited me to his House.	False	False		suletta	
 	622	623	621	0:11:34.210000	0:11:38.477000	f114b28e04.mp3	f114b28e04.webp	や... 優しくて... 親切で... スゴく...	Es muy bueno y amable, y...	H-He's gentle, kind and very...	False	False		suletta	
 	625	626	624	0:11:38.460000	0:11:40.090000	4a736c157d.mp3	4a736c157d.webp	なんの話?	¿De qué hablas?	What are you talking about?	False	False		miorine	
@@ -212,7 +203,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	757	756	755	0:13:54.380000	0:13:56.740000	8b88325ebd.mp3	8b88325ebd.webp	スペーシアンに イジメられてねえか?	¿Te dan muchos problemas los Spacians?	Have those Spacians given you any trouble?	False	False		hombre D	
 	760	759	758	0:13:56.960000	0:13:59.050000	5ff424c82d.mp3	5ff424c82d.webp	全然 余裕	Para nada.	Nothing I can't handle.	False	False		chuchu	
 	763,764	762	761	0:13:59.050000	0:14:03.850000	739f0450ee.mp3	739f0450ee.webp	昨日もさ ゴチャゴチャ 言ってきたやつら⸺　まとめてボコしてやったつーの	Ayer mismo le di una lección a unos que estaban murmurando cosas.	Just yesterday, I fought off a gang of them who tried to mouth off.	False	False		chuchu	
-	766		765	0:14:03.850000	0:14:05.140000	94f5bc089e.mp3	94f5bc089e.webp	おおー		Oh, really?	False	False			
 	769	768	767	0:14:05.140000	0:14:06.740000	e55b0c901e.mp3	e55b0c901e.webp	さすがチュチュ	Esa es nuestra Chuchu.	That's our Chuchu!	False	False		hombre B	
 	771	772	770	0:14:06.740000	0:14:09.360000	1f5f95989f.mp3	1f5f95989f.webp	それよりさ ニュース見たけど...	Vi las noticias.	But let's talk about what I saw in the news.	False	False		chuchu	
 	774	775	773	0:14:09.360000	0:14:11.690000	7a690d1961.mp3	7a690d1961.webp	こっちのことは気にするな	No te preocupes por nosotros.	Don't worry about us.	False	False		líder	
@@ -233,7 +223,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	824	823	822	0:15:12.270000	0:15:14.940000	b176ce6c68.mp3	b176ce6c68.webp	頼んだぞ 待ってるって	Me dijeron que me esperarían.	They said they were counting on me and waiting.	False	False		suletta	
 	827	826	825	0:15:14.940000	0:15:17.890000	d4866f1949.mp3	d4866f1949.webp	お守りもくれて 寄せ書きも...	Incluso me dieron amuletos y mensajes.	They even gave me good luck charms and messages.	False	False		suletta	
 	830	828	829	0:15:18.460000	0:15:19.740000	fd008636ee.mp3	fd008636ee.webp	重た...	Es una carga.	What a drag!	False	False		miorine	
-	832		831	0:15:19.730000	0:15:21.010000	df34f47032.mp3	df34f47032.webp	あ...		Huh?	False	False			
 	835	834	833	0:15:21.010000	0:15:23.570000	99b221cf2b.mp3	99b221cf2b.webp	なんで あんたが 背負わなきゃならないの?	¿Por qué tienes que hacerlo sola?	Why do you have to carry that burden?	False	False		miorine	
 	837	838	836	0:15:23.570000	0:15:25.578000	09782b660f.mp3	09782b660f.webp	自分のためだけに 生きればいいじゃん	Vive por ti misma y ya.	You should live for yourself.	False	False		miorine	
 	841	840	839	0:15:27.410000	0:15:30.520000	1a30b74682.mp3	1a30b74682.webp	私がやりたくてやってるから	Lo hago porque quiero.	But this is what I want to do.	False	False		suletta	
@@ -262,7 +251,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	933	932	934	0:17:06.220000	0:17:08.740000	4a845eeff5.mp3	4a845eeff5.webp	ちょっと なんで止まるのよ!	¿Por qué te paras?	Hey! Why did you halt?	False	False		miorine	
 	937,938	936	935	0:17:08.740000	0:17:13.120000	7140435ddb.mp3	7140435ddb.webp	それが...　メインサイトが 真っ暗になっちゃいまして	Lo veo todo negro de repente.	For some reason, the main sight has gone pitch black!	False	False		suletta	
 	941	940	939	0:17:13.120000	0:17:14.187000	7c10a8884c.mp3	7c10a8884c.webp	真っ暗?	¿Negro?	Pitch black?	False	False		miorine	
-	944		942	0:17:14.600000	0:17:15.897000	6d0a2162a8.mp3	6d0a2162a8.webp	イエーイ		Yay!	False	False			
 	947	946	945	0:17:16.600000	0:17:18.180000	50766e0179.mp3	50766e0179.webp	あいつら...	Esas tipas...	Those girls...	False	False		chuchu	
 	950	949	948	0:17:18.180000	0:17:20.750000	3d8908022d.mp3	3d8908022d.webp	教官 機体トラブルです	Hay problemas con la unidad.	Sir, we're experiencing machine trouble.	False	False		miorine	
 	952	953	951	0:17:20.750000	0:17:22.520000	264d7cbbf7.mp3	264d7cbbf7.webp	試験の中断をお願いします	Pause la prueba, por favor.	Please suspend the exam.	False	False		miorine	
@@ -291,7 +279,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	1043	1042	1041	0:18:50.810000	0:18:52.650000	aa0942782d.mp3	aa0942782d.webp	でも タイムは縮まってる!	Cada vez va más rápido.	We're improving our time, though!	False	False		miorine	
 	1045	1046	1044	0:18:52.640000	0:18:55.490000	df1f0c474c.mp3	df1f0c474c.webp	そのまま直進! ぶつかるまで走って!	Sigue recto. Corre hasta chocar.	Keep going, straight ahead until you hit it!	False	False		miorine	
 	1048	1049	1047	0:18:55.490000	0:18:56.940000	a75a5d96d3.mp3	a75a5d96d3.webp	あなたも手伝って!	¡Ayúdanos!	You help, too!	False	False		miorine	
-	1051		1050	0:18:56.940000	0:18:57.707000	a3452d2546.mp3	a3452d2546.webp	え!?		What?	False	False			
 	1054,1056	1053	1052,1055	0:19:05.580000	0:19:08.509000	485bae3c5f.mp3	485bae3c5f.webp	兵装を換えるよ!　立って 右腕上げて	Cambiamos. Levántate y eleva el brazo derecho.	Get ready to exchange weapons. Stand up and raise your right arm.	False	False		miorine	
 	1058,1061	1059	1057,1060	0:19:13.790000	0:19:18.200000	ad5d8e731b.mp3	ad5d8e731b.webp	照準システム リンク確認　自動修正 問題なし!	Sistema de puntería enlazado. Corrección automática activa.	Link with targeting system confirmed. Auto correction, all green.	False	False		miorine	
 	1063	1064	1062	0:19:18.200000	0:19:19.340000	69f712c8e4.mp3	69f712c8e4.webp	行って!	¡Ve!	Go!	False	False		miorine	
@@ -331,9 +318,7 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	1196	1195	1194	0:21:34.690000	0:21:36.560000	e3d7b0acdf.mp3	e3d7b0acdf.webp	てめえのせいだかんな	Es culpa tuya.	This is your fault, you know.	False	False		chuchu	
 	1197	1199	1198	0:21:36.741000	0:21:38.618000	25bf2dc4cb.mp3	25bf2dc4cb.webp	す... すみません	Lo siento.	I-I'm sorry.	False	False		suletta	
 	1200	1202	1201	0:21:39.160000	0:21:43.720000	f1db198979.mp3	f1db198979.webp	んんー でも 久しぶりに スッキリしたー	Hace tiempo que no me sentía tan aliviada.	Still, that felt pretty good!	False	False		nika	
-	1204		1203	0:21:43.640000	0:21:44.540000	1368564670.mp3	1368564670.webp	え?		What?	False	False			
 	1207	1206	1205,1208	0:21:44.930000	0:21:48.440000	dad2654c5d.mp3	dad2654c5d.webp	ねえ スレッタさん よかったら地球寮に来ない?	Suletta, ¿quieres venir a la residencia Terrícola?	Hey, Ms. Suletta! Would you like to join Earth House?	False	False		nika	
-	1210		1209	0:21:48.370000	0:21:49.087000	e99e036f82.mp3	e99e036f82.webp	え?		Huh?	False	False			
 	1211	1213	1212,1214	0:21:49.587000	0:21:52.170000	4af0c34c9a.mp3	4af0c34c9a.webp	ニ... ニカ ニカ姉!	¿Nika? -¡Nika!	Nika! Nika, that's...	False	False		nuno/chuchu	
 	1217,1218	1216	1215,1219	0:21:52.170000	0:21:57.053000	a71c75c467.mp3	a71c75c467.webp	で... でででででで...　で... でも... おお... はあ!? あ...	Pero...	B-B-But... What?!	False	False		suletta	
 	1225	1224	1223,1226	0:22:02.930000	0:22:06.900000	4f1c5a9ba6.mp3	4f1c5a9ba6.webp	あーしは1年だけど 寮じゃ先輩だかんね	Voy en primero, pero en la residencia estoy por encima de ti.	Well, I may be a first-year student. But in House terms, I'll be your senior.	False	False		chuchu	

@@ -110,7 +110,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	377	379	378	0:07:38.602000	0:07:41.270000	b28e655fdf.mp3	b28e655fdf.webp	フン シャディクとの決闘か	¿El duelo contra Shaddiq?	About the duel with Shaddiq?	False	False		guel	
 	380	382	381	0:07:41.438000	0:07:43.190000	090814aab7.mp3	090814aab7.webp	あ... なんで...	¿Cómo lo sabes?	How did you know?	False	False		suletta	
 	384	385	383	0:07:43.100000	0:07:46.110000	d6c6f5aafa.mp3	d6c6f5aafa.webp	この学園はウワサ話が好きだからな	Esta escuela adora los rumores.	This school loves to gossip.	False	False		guel	
-	387		386	0:07:46.110000	0:07:48.570000	be2ee1eab7.mp3	be2ee1eab7.webp	ああ... あ...		Oh, um...	False	False			
 	390	389	388	0:07:48.910000	0:07:50.530000	52b26570bd.mp3	52b26570bd.webp	あ... あの...	Oye...	E-Excuse me!	False	False		suletta	
 	392	393	391	0:07:50.530000	0:07:51.610000	8ed5a5774e.mp3	8ed5a5774e.webp	なんだ	¿Qué?	What?	False	False		guel	
 	396	395	394	0:07:51.610000	0:07:54.800000	00f4769847.mp3	00f4769847.webp	決闘 手伝ってください	Ayúdanos en el duelo, por favor.	P-Please... help us with the duel!	False	False		suletta	
@@ -134,10 +133,8 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	464	463	462	0:09:12.240000	0:09:14.406000	6036e339b3.mp3	6036e339b3.webp	私を飾りとしか見ていない	Solo me ves como un adorno.	You only see me as an ornament.	False	False		miorine	
 	466	467	465,468	0:09:14.400000	0:09:16.280000	2dccf8a83c.mp3	2dccf8a83c.webp	違う 入るな!	No... -No entres.	That's not true! Stay out!	False	False		shaddiq/miorine	
 	471	470	469	0:09:17.040000	0:09:19.320000	446653b756.mp3	446653b756.webp	あんたは信用できない	No puedo confiar en ti.	I can't trust you.	False	False		miorine	
-	473		472	0:09:27.590000	0:09:29.040000	59331835b3.mp3	59331835b3.webp	あ...		Huh?	False	False			
 	475	476	474	0:09:29.040000	0:09:33.420000	fbdaa71f98.mp3	fbdaa71f98.webp	そっち ミオリネさんの 温室です... よね?	Por ahí está el invernadero de Miorine, ¿no?	are you coming from Ms. Miorine's greenhouse?	False	False		suletta	
 	479	478	477	0:09:35.060000	0:09:37.180000	d9fdde84c7.mp3	d9fdde84c7.webp	花嫁の暴走を止めてやれ	Detén la locura de tu esposa.	Talk some sense into your bride.	False	False		shaddiq	
-	481		480	0:09:37.180000	0:09:38.513000	0231e3595d.mp3	0231e3595d.webp	え?		What?	False	False			
 	484,485	483	482	0:09:38.980000	0:09:42.760000	9bf22a81f5.mp3	9bf22a81f5.webp	今 ミオリネを守れるのは⸺　花婿の君だけだ	Como su prometida, eres la única que puede detenerla.	The only one who can protect Miorine now is you, her groom.	False	False		shaddiq	
 	488	487	486	0:09:43.440000	0:09:45.940000	e776d34fd1.mp3	e776d34fd1.webp	勝ち目のない決闘なんてさせるな	No dejes que haga un duelo inútil.	Don't let her fight a battle she can't win.	False	False		shaddiq	
 	491	490	489	0:09:47.560000	0:09:50.230000	b5c18ab25d.mp3	b5c18ab25d.webp	花婿... なら...	Una buena esposa...	If I'm her groom...	False	False		suletta	
@@ -204,7 +201,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	706	707	705	0:13:28.200000	0:13:30.245000	53498d2cb4.mp3	53498d2cb4.webp	チュチュは後方から みんなのサポート	Chuchu, cúbrelos desde atrás.	Chuchu, support everyone from the rear!	False	False		miorine	
 	709,711	710	708,712	0:13:30.240000	0:13:33.220000	0ad385734a.mp3	0ad385734a.webp	わーってんよ!　はあ!?	¡Ya lo sé!	Yeah, yeah. I get it! What?!	False	False		chuchu	
 	715	714	713	0:13:34.750000	0:13:36.740000	63cb1c7413.mp3	63cb1c7413.webp	まずは 露払いだ	Nos abriré camino.	First, take out the sidekick.	False	False		shaddiq	
-	718	717		0:13:44.840000	0:13:47.053000	ac03c3ac54.mp3	ac03c3ac54.webp	固めた! レネ エナオ メイジー!	¡Se detuvieron! ¡Renee, Henao, Maisie!		False	False		sabina	
 	723	720	721	0:13:47.300000	0:13:48.320000	08d0abc124.mp3	08d0abc124.webp	コピー!	Recibido.	Copy that!	False	False		renee/heneo/maisie	
 	726	725	724	0:13:50.680000	0:13:52.220000	cb426588bc.mp3	cb426588bc.webp	抜かれた? う...	¿Nos sobrepasan?	They got past me?	False	False		suletta	
 	728	729	727	0:13:53.770000	0:13:55.640000	767bf505b4.mp3	767bf505b4.webp	怒らないでくださいね	No se enojen.	Don't be mad at me, okay?	False	False		ireesha	
@@ -216,10 +212,8 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	750	749	748	0:14:15.540000	0:14:19.740000	1a7c5ff40f.mp3	1a7c5ff40f.webp	人の男に手え出した落とし前 きっちりつけさせてやる!	Pagarás por meterte con mi chico.	I'll show you what happens when you lay hands on another girl's man!	False	False		renee	
 	752	753	751	0:14:19.650000	0:14:21.500000	46c612019d.mp3	46c612019d.webp	うう... なんのことですか!?	¿A qué te refieres?	Wh-What are you talking about?!	False	False		lilique	
 	756	755	754,757	0:14:21.470000	0:14:25.260000	e46257c81e.mp3	e46257c81e.webp	ジョン・ヴァン・シモンズ! 私のキープ君 12号!	Jon van Simmons, el número 12 de mi lista de novios suplentes.	John Van Simmons! Number 12 on my list of backup boyfriends!	False	False		renee	
-	759		758	0:14:25.160000	0:14:26.370000	3c77d14aed.mp3	3c77d14aed.webp	うーん...		Umm...	False	False			
 	762	761	760	0:14:26.370000	0:14:29.180000	f431b2d384.mp3	f431b2d384.webp	あ... ランチのお誘いなら 断りましたよ?	Lo rechacé cuando me invitó a comer.	Oh, if you mean the lunch invitation, I said no.	False	False		lilique	
 	764	765	763	0:14:29.180000	0:14:32.641000	6a825ec333.mp3	6a825ec333.webp	私の男に恥かかせてんじゃねえ!	¡No humilles a mi chico!	Where do you get off embarrassing my man?!	False	False		renee	
-	767		766	0:14:32.640000	0:14:34.630000	81ce4bfc13.mp3	81ce4bfc13.webp	えええー		What?!	False	False			
 	770	769	768	0:14:35.600000	0:14:36.730000	404a7dcc8b.mp3	404a7dcc8b.webp	あっぶな...	Será...	That was close!	False	False		renee	
 	773	771	772	0:14:37.120000	0:14:38.250000	0d728e27cb.mp3	0d728e27cb.webp	ティル先輩!	¡Till!	Mr. Till!	False	False		lilique	
 	774	776	775	0:14:38.188000	0:14:39.850000	7a690d1961.mp3	7a690d1961.webp	リリッケ 逃げて!	¡Vete, Lilique!	Lilique, run!	False	False		till	
@@ -235,7 +229,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	808	807	806	0:15:11.180000	0:15:12.340000	fbceab4378.mp3	fbceab4378.webp	父さん...	¿Papá?	Dad?	False	False		guel	
 	810	809	811	0:15:12.940000	0:15:14.480000	8d23fa724d.mp3	8d23fa724d.webp	父さん 俺は...	Papá, yo...	Dad! I...	False	False		guel	
 	813	814	812,815	0:15:14.360000	0:15:18.270000	f9c69463ac.mp3	f9c69463ac.webp	グエル お前の退学準備ができた	Ya lo preparé todo para que dejes la escuela.	Guel... I've made arrangements for your withdrawal.	False	False		vim	
-	817		816	0:15:18.270000	0:15:19.390000	cad077a728.mp3	cad077a728.webp	え?		Huh?	False	False			
 	820	819	818	0:15:19.390000	0:15:22.120000	f365afab44.mp3	f365afab44.webp	うちの子会社に ポジションを用意した	Tienes un puesto en una de nuestras empresas.	A position awaits you at one of our subsidiaries.	False	False		vim	
 	822	823	821	0:15:22.090000	0:15:24.340000	41928a8a59.mp3	41928a8a59.webp	そこで俺の仕事を学べ	Allí aprenderás a hacer mi trabajo.	You'll learn how I do business from there.	False	False		vim	
 	824	826	825	0:15:24.234000	0:15:26.610000	b176ce6c68.mp3	b176ce6c68.webp	待ってください! 決闘は...	¡Espera! ¿Y los duelos?	Wait a minute, please! What about the duels?	False	False		guel	
@@ -261,7 +254,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	896,897	895	894	0:16:54.780000	0:17:00.330000	ad4ac1f5c8.mp3	ad4ac1f5c8.webp	君を守る力も⸺　助ける視野も持ち合わせていない	no puede ni protegerte ni ayudarte.	she doesn't have the power to protect you. Or the vision to support you.	False	False		shaddiq	
 	899	900	898	0:17:00.330000	0:17:04.020000	bbb55c6e12.mp3	bbb55c6e12.webp	君にすがるだけの ただの子供だ	Es una niña que se aferra a ti. Solo eso.	She's just clinging to you like a mere child.	False	False		shaddiq	
 	902,906	903	901,904	0:17:04.710000	0:17:07.630000	1317d666ce.mp3	1317d666ce.webp	追い込んだ 墜とすぞ　了解!	Está rodeada. La haré caer. -¡Recibido!	I've cornered her. Take her down! Roger!	False	False		shaddiq	
-	908		907	0:17:17.720000	0:17:18.640000	e5ae05a49f.mp3	e5ae05a49f.webp	え...		Huh?	False	False			
 	911	910	909	0:17:18.640000	0:17:19.766000	ee23c0bb8b.mp3	ee23c0bb8b.webp	スレッタ!?	¿Suletta?	Suletta?!	False	False		nika	
 	913	914	912	0:17:19.760000	0:17:21.280000	8e6900ae72.mp3	8e6900ae72.webp	アンチドート...	¿Antidote?	Antidote?	False	False		belmeria	
 	916,919	917	915,918	0:17:21.210000	0:17:26.190000	055bca9745.mp3	055bca9745.webp	対GUNDフォーマット用の 対抗手段てやつ?　まだ持ってたんだ	¿Aún tenían una forma de enfrentarse al GUND Format?	Anti-GUND Format protection...? Who knew they still had it?	False	False		elan	
@@ -304,7 +296,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	1053	1052	1051	0:19:59.890000	0:20:02.300000	f6c6c49588.mp3	f6c6c49588.webp	ここまでだ スレッタ・マーキュリー	Se acabó, Suletta Mercury.	End of the line, Suletta Mercury.	False	False		shaddiq	
 	1056	1055	1054	0:20:02.300000	0:20:06	673906abdc.mp3	673906abdc.webp	ミオリネの隣に立つのは 俺だ!	¡Seré yo el que camine junto a Miorine!	I'm the one who will stand at Miorine's side!	False	False		shaddiq	
 	1059	1058	1057	0:20:06.720000	0:20:07.976000	c8d5bba948.mp3	c8d5bba948.webp	今!	¡Ahora!	Now!	False	False		till	
-	1061		1060	0:20:19.820000	0:20:20.905000	67c8eae32e.mp3	67c8eae32e.webp	は...		Huh?	False	False			
 	1064	1063	1062	0:20:28.710000	0:20:29.914000	81b857c3e4.mp3	81b857c3e4.webp	みんな...	Chicos...	Everyone!	False	False		suletta	
 	1067,1069	1066	1065,1068	0:20:30.580000	0:20:34.900000	f4bb7d3d44.mp3	f4bb7d3d44.webp	地球寮 なめんなっつったろ　バーカ	Te dije que no subestimaras a la residencia de la Tierra, idiota.	I told you not to underestimate Earth House. Dumbass.	False	False		chuchu	
 	1072	1071	1070	0:20:39.470000	0:20:42.385000	24c2640d94.mp3	24c2640d94.webp	最後は 自分で決着をつけると思ったわ	Sabía que irías a dar el golpe final tú mismo.	I thought you'd try to finish the battle with your own hands.	False	False		miorine	

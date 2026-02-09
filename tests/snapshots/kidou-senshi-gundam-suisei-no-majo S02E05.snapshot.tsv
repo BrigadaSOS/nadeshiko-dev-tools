@@ -103,7 +103,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	418,422,425	420,424	419,421,423,427	0:09:16.983000	0:09:25.658000	a6790da2e4.mp3	a6790da2e4.webp	ん? スレッタ。ミオリネさん!? ああっ... これは　違くて その...決めたわ 誕生日に欲しいもの。	Suletta. -¡Miorine! -No es lo que crees... -Ya sé qué quiero por mi cumpleaños.	Suletta! Ms. Miorine! Th-This is, uh... not what it- what I want for my birthday.	False	False		miorine/suletta,suletta/miorine	
 	428	430	429	0:09:25.658000	0:09:28.361000	5b5094bf61.mp3	5b5094bf61.webp	グエルと決闘しなさい。	Bátete en duelo con Guel.	A duel between you and Guel.	False	False		miorine	
 	432	433	431	0:09:27.870000	0:09:31.130000	3362ae4ad6.mp3	3362ae4ad6.webp	勝利を私にちょうだい。	Regálame la victoria.	Give me the gift of victory.	False	False		miorine	
-	434		435	0:09:31.130000	0:09:33.132000	6712ec1cb1.mp3	6712ec1cb1.webp	えっ!? はっ?		What?!	False	False			
 	439	438	437,440	0:09:32.880000	0:09:36.969000	529b1052fe.mp3	529b1052fe.webp	どういうことだ? 説明しろ ミオリネ。	¿Qué quieres decir? Explícate, Miorine.	What's the big idea? Explain yourself, Miorine!	False	False		guel	
 	442	443	441,444	0:09:36.780000	0:09:40.406000	969ad58fe5.mp3	969ad58fe5.webp	俺は もう 決闘はしない。	No me batiré más en duelo.	I... am finished with dueling.	False	False		guel	
 	447	446	445	0:09:40.270000	0:09:43.042000	1f94d339d3.mp3	1f94d339d3.webp	提案があるの。ん?	Tengo una propuesta.	I have a proposal.	False	False		miorine	
@@ -194,8 +193,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	769	770	768	0:15:09.190000	0:15:11.804000	e55b0c901e.mp3	e55b0c901e.webp	いや 彼の目的は おそらく...	No creas. Su objetivo ha de ser...	No, his objective must be...	False	False		sabina	
 	772	773	771	0:15:11.680000	0:15:13.973000	d6836a649a.mp3	d6836a649a.webp	「ジェターク社」の再建。	Restaurar la empresa Jeturk.	The restoration of the Jeturk company.	False	False		henao	
 	775	776	774	0:15:13.800000	0:15:16.850000	452c75b88d.mp3	452c75b88d.webp	君の筋立てか? ミオリネ。	¿Fue idea tuya, Miorine?	Is this your doing, Miorine?	False	False		shaddiq	
-	777		778	0:15:18.377000	0:15:20.379000	6029d84f05.mp3	6029d84f05.webp	周囲にオブジェクトなし。		No objects in vicinity!	False	False			
-	782		780	0:15:20.290000	0:15:22.580000	285dfb128b.mp3	285dfb128b.webp	MSコンテナ ロック解除。		Unlocking MS containers!	False	False			
 	784	786	785	0:15:25.551000	0:15:29.288000	d09210c9f2.mp3	d09210c9f2.webp	KP001 グエル・ジェターク。	KP-001, Guel Jeturk.	KP001, Guel Jeturk...	False	False		guel	
 	787	789	788	0:15:29.288000	0:15:32.291000	5bfaee94ed.mp3	5bfaee94ed.webp	LP041 スレッタ・マーキュリー。	LP-041, Suletta Mercury.	LP041, Suletta Mercury...	False	False		suletta	
 	791	790	792,793	0:15:32.160000	0:15:34.660000	511e8ed192.mp3	511e8ed192.webp	ダリルバルデ。エアリアル。	Darilbalde. -Aerial.	Darilbalde... Aerial...	False	False		guel/suletta	

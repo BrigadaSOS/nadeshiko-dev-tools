@@ -82,9 +82,7 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	336	338	337	0:07:11.858000	0:07:15.200000	f7550b2991.mp3	f7550b2991.webp	だから 決闘 私が勝ちます。	Por eso ganaré yo.	So I have no choice... but to win.	False	False		suletta	Suletta
 	353	354	352	0:07:31.630000	0:07:35.014000	ce6178cace.mp3	ce6178cace.webp	どういう...♬ー	¿Qué?	What do you mean...?	False	False		suletta	Suletta
 	355	357	356	0:07:35.014000	0:07:37.383000	9fa887f540.mp3	9fa887f540.webp	こちら 決闘委員会。	Aquí el Comité de Duelos.	This is the Dueling Committee.	False	False		secelia	Secelia
-	360	359		0:07:37.380000	0:07:40.954000	d905f1158c.mp3	d905f1158c.webp	ランブルリングに参加する生徒...決闘 楽しみにしてるね。	Los participantes de...		False	False		secelia	
 	364,369	365,367	366	0:07:40.954000	0:07:44.991000	19cff4dd4a.mp3	19cff4dd4a.webp	あっ 待って。あははっ。決闘には 宣誓が...ランブルリングに	¡Espera! Hay un juramento...	Wait! The dueling vow!	False	False		suletta	Suletta
-	371	370		0:07:44.740000	0:07:47.026000	5997826b4b.mp3	5997826b4b.webp	参加する生徒は...	Los participantes del Rumble Ring...		False	False		secelia	
 	372	373	374	0:07:47.026000	0:07:50.880000	253fdd0f40.mp3	253fdd0f40.webp	これより オープンキャンパス特別イベント	Da inicio el evento especial de puertas abiertas,	We will now begin our Open Campus special event,	False	False		secelia	Secelia
 	375	376	377	0:07:50.797000	0:07:53.466000	11bb005b1d.mp3	11bb005b1d.webp	ランブルリングを開催しまーす。	¡el Rumble Ring!	the Rumble Ring!	False	False		secelia	Secelia
 	379	380,382	378,381	0:07:53.420000	0:07:58.171000	ba00ed7226.mp3	ba00ed7226.webp	ルールはバトルロイヤル方式。制限時間は30分。	Es un battle royale. Durará media hora.	The format will be a battle royal-style duel. The time limit is 30 minutes.	False	False		secelia	Secelia
@@ -123,7 +121,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	505	506	504	0:10:10.870000	0:10:14.440000	9c3f8268be.mp3	9c3f8268be.webp	なぁに? ベル 話って。	¿De qué querías hablar, Bel?	What did you want to discuss, Bel?	False	False		prospera	Prospera
 	507	508	509	0:10:14.440000	0:10:16.610000	1c2d7f67a5.mp3	1c2d7f67a5.webp	ソフィさん どこに...	¿Dónde está Sophie?	Where did Ms. Sophie...	False	False		suletta	Suletta
 	510	512,514	511,513,515	0:10:16.442000	0:10:20.146000	0906577190.mp3	0906577190.webp	スレッタ 模擬戦 始まるよ。は... はい。	Comenzará el combate, Suletta. ¡Sí!	Suletta! The mock battle's starting. R-Right!	False	False		suletta,till	Suletta,Till
-	516	518		0:10:20.146000	0:10:23.180000	31ad388f26.mp3	31ad388f26.webp	ランブルリング スタート。	¡Que inicie el Rumble Ring!		False	False		sarius	
 	520,523	522,526	521,524,525	0:10:26.119000	0:10:30.490000	837d7c04f8.mp3	837d7c04f8.webp	ホルダーを倒すまでは共闘だ!　おう。裏切んなよ。	Colaboremos hasta que caiga la Holder. -¡Claro! No nos traicionen.	Fight together until the Holder falls! Right! No double-crossing!	False	False		piloto 1/pilotos 2 y 3,piloto 3	Pilot 1,Pilot 2 & 3,Pilot 3
 	528	530	529	0:10:35.295000	0:10:37.780000	b34fe8fc4b.mp3	b34fe8fc4b.webp	バシュン バシュン バシュン! エランさん?	¿Elan?	Mr. Elan?	False	False		suletta	Suletta
 	532	533	531	0:10:37.670000	0:10:40.233000	2ec0e07b41.mp3	2ec0e07b41.webp	悪い虫は 僕が払ってあげる。	Yo me desharé de los se que te acerquen.	I'll exterminate these pesky insects for you.	False	False		elan 5	Elan (Clone 5)
@@ -166,7 +163,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	700	701	699	0:14:05.110000	0:14:08.608000	775716f333.mp3	775716f333.webp	スペーシアンは みんな 死ね!	¡Que mueran todos los Spacians!	All you Spacians... are going to die!	False	False		norea	Norea
 	705,710	707,709	708,711	0:14:26.192000	0:14:30.830000	1512f2d4dc.mp3	1512f2d4dc.webp	いやー! スレッタ チュチュ 逃げろ!　すぐにだ!	¡No! ¡Suletta, Chuchu, huyan ahora mismo!	Suletta! Chuchu! Run! Now!	False	False		aliya,lilique	Aliya
 	715	717	716	0:14:32.832000	0:14:35.150000	63cb1c7413.mp3	63cb1c7413.webp	残り時間 少ない。始めるよ。	No tenemos mucho tiempo. Empecemos.	We don't have much time. Let's move.	False	False		norea	Norea
-	725		724	0:14:40	0:14:42.230000	f05a0f80a5.mp3	f05a0f80a5.webp	パーメットスコア3。		Permet score three.	False	False			Norea
 	726	728	727	0:14:56.956000	0:14:58.958000	cb426588bc.mp3	cb426588bc.webp	増援?	¿Refuerzos?	Reinforcements?	False	False		rouji	Rouji
 	739	740	738	0:15:16.850000	0:15:20.479000	c7153e4c47.mp3	c7153e4c47.webp	生体反応がない? 無人機か。	¿No hay signos de vida? Son drones.	No lifeform readings. Unmanned machines?	False	False		elan 5	Elan (Clone 5)
 	741	742	743	0:15:20.479000	0:15:22.848000	5b2f2f5d4b.mp3	5b2f2f5d4b.webp	聞いてないんだけど そんなの。	No sabía nada de esto.	No one told me about those things!	False	False		elan 5	Elan (Clone 5)
@@ -198,7 +194,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	869	870	868,871	0:17:43.660000	0:17:47.040000	7434583756.mp3	7434583756.webp	作戦終了。撤収するよ ソフィ。ザザザッ...	Operación completada. Nos retiramos, Sophie.	The operation is over. Let's get out of here, Sophie.	False	False		norea	Norea
 	872	873	874	0:17:46.992000	0:17:49.261000	6606f66e90.mp3	6606f66e90.webp	ちっ。もうー。	Maldición...	Damn it...	False	False		norea	Norea
 	876	877	875	0:17:50.710000	0:17:52.832000	c5cd1cba90.mp3	c5cd1cba90.webp	下がった? なんで?	¿Se retiran? ¿Por qué?	She backed off? Why?	False	False		elan 5	Elan (Clone 5)
-	879		880	0:17:56.368000	0:17:58.337000	3ceb48d1f9.mp3	3ceb48d1f9.webp	へえー。		I see...	False	False			Elan (Clone 5)
 	894	896	895	0:18:13.819000	0:18:16.530000	2a156c2542.mp3	2a156c2542.webp	エアリアルは 人殺しの道具じゃありません!	¡El Aerial no es una máquina de matar!	Aerial is not a tool of murder!	False	False		suletta	Suletta
 	904	905	906,907	0:18:24.930000	0:18:28.160000	011c7e7a3d.mp3	011c7e7a3d.webp	エアリアルは お母さんが... お母さんが...	Mamá... El Aerial lo hizo mi mamá.	A-Aerial was built by my mom to... By my mom to...	False	False		suletta	Suletta
 	910	909	908	0:18:29.280000	0:18:31.537000	280a6dc723.mp3	280a6dc723.webp	なんのために...	¿Para qué?	To do what?	False	False		suletta	Suletta
@@ -238,7 +233,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	1072	1070	1071	0:21:59.200000	0:22:01.947000	24c2640d94.mp3	24c2640d94.webp	ニカ・ナナウラは どこだ?	¿Dónde está Nika Nanaura?	Where is Nika Nanaura?	False	False		guardia	Security Force (Male)
 	1076	1074	1075	0:22:01.880000	0:22:05.417000	52bd18b4ce.mp3	52bd18b4ce.webp	テロ等準備罪の容疑で拘束する。	Está detenida bajo sospecha de terrorismo.	She's being arrested as a terrorist!	False	False		guardia	Security Force (Male)
 	1079	1078	1077	0:22:05.370000	0:22:08.420000	aa821c952c.mp3	aa821c952c.webp	君たち地球寮の生徒にも 同行を求める。	Los de la residencia terrícola deben acompañarnos.	You Earth House students are coming too.	False	False		guardia	Security Force (Male)
-	1081		1080	0:22:08.220000	0:22:10.389000	e5cb381a79.mp3	e5cb381a79.webp	えっ?		What?	False	False			Aliya
 	1083	1084	1082	0:22:12.340000	0:22:15.527000	8cb65c442c.mp3	8cb65c442c.webp	ソフィさんは 間違ってるはずなのに...	Sophie se equivocaba, ¿no?	What Ms. Sophie said must be wrong.	False	False		suletta	Suletta
 	1086,1088	1087	1085	0:22:15.430000	0:22:20.990000	f3cd0956e5.mp3	f3cd0956e5.webp	ガンダムは　人を助けるモビルスーツに なるはずなのに...	Los Gundam son Mobile Suits hechos para ayudarnos, ¿no?	Gundams are supposed to be mobile suits that save lives.	False	False		suletta	Suletta
 	1091	1089	1090	0:22:24.800000	0:22:27.239000	1c204b64aa.mp3	1c204b64aa.webp	そうだよね。	Es verdad.	That's right.	False	False		suletta	Suletta

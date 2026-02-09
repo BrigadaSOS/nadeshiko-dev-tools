@@ -23,7 +23,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	68	67	66	0:02:39.200000	0:02:41.820000	e1731e520c.mp3	e1731e520c.webp	降りるところを間違えたようです	pero se ve que he aterrizado en el sitio erróneo.	but it appears that I have landed in the wrong location.	False	False			
 	71	70	69	0:02:41.820000	0:02:43.830000	85d31b1a2d.mp3	85d31b1a2d.webp	じゃあ しまむら	Venga, Shimamura.	Alrighty, Shimamura.	False	False			
 	75	74	73	0:02:43.830000	0:02:48.620000	1627500a48.mp3	1627500a48.webp	そいつと じっくり対話して未知のコミュニケーションを楽しんでくれたまえ	Ve y disfruta hablando de lo desconocido con ella.	You go ahead and enjoy talking about the unknown with them.	False	False			
-	77		76	0:02:48.500000	0:02:49.450000	1beb63ae57.mp3	1beb63ae57.webp	はあ?		What?!	False	False			
 	80	79	78	0:02:49.330000	0:02:52.420000	be07e25a53.mp3	be07e25a53.webp	おっと あっちに魚影を感じる	¡Presiento que hay peces por allí!	Aha! I sense some fishies over there!	False	False			
 	83	81	82	0:02:52.210000	0:02:53.290000	c44688cf84.mp3	c44688cf84.webp	ちょっと	¡Oye!	Hey!	False	False			
 	87,88	86	85	0:02:55.500000	0:02:59.800000	a48207aa00.mp3	a48207aa00.webp	日野め　私を釣りに誘ったのは...	Maldita seas, Hino. Me has invitado para esto...	Curse you, Hino. So the real reason you invited me fishing was...	False	False			
@@ -50,10 +49,8 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	152	151	150	0:04:06.450000	0:04:09.730000	40e6fc5767.mp3	40e6fc5767.webp	連絡取れるならすぐ会えそうなものだけど	Si podéis poneros en contacto, podréis encontraros...	If you're able to contact each other, you can probably find each other...	False	False			
 	155	153	154	0:04:09.600000	0:04:12.080000	8165f42b6d.mp3	8165f42b6d.webp	そうもいかない事情がありまして!	¡Hay una razón que lo impide!	And there is a reason that we cannot!	False	False			
 	159	158	157	0:04:13.190000	0:04:15.480000	a020a20a4a.mp3	a020a20a4a.webp	そ... そうなんだ	Ya veo.	I-I see.	False	False			
-	161		160	0:04:15.500000	0:04:16.540000	81bcbc8c93.mp3	81bcbc8c93.webp	ストン		Plop.	False	False			
 	164	163	162	0:04:19.380000	0:04:22.670000	70708e6b7d.mp3	70708e6b7d.webp	なかなか釣れないもんだね	No pica nada.	I can't seem to get a bite.	False	False			
 	167	165	166	0:04:22.650000	0:04:26.050000	95a5d0e73d.mp3	95a5d0e73d.webp	まず そう思うことが大事なのです	Es importante que te des cuenta de eso primero...	It's important that you realize that first...	False	False			
-	169		168	0:04:26.050000	0:04:27.140000	fb8ffb2c6c.mp3	fb8ffb2c6c.webp	はあ...		Uh-huh...	False	False			
 	172	171	170	0:04:27.140000	0:04:30.100000	5e5902a14a.mp3	5e5902a14a.webp	なかなか釣れない うまくいかない	No pica nada. Las cosas no van según lo previsto.	You can't seem to get a bite. Things aren't going as planned.	False	False			
 	175	174	173	0:04:30.100000	0:04:34.390000	d2711c1a2b.mp3	d2711c1a2b.webp	それはすなわち何かを始めているということ	Básicamente, significa que algo ha empezado.	But that basically means that you've started something.	False	False			
 	178	177	176	0:04:41.190000	0:04:42.860000	17c2f66818.mp3	17c2f66818.webp	やってみただけかい!	¿Por qué lo has hecho?	You just felt like doing that?	False	False			
@@ -116,7 +113,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	360	359	358	0:08:00.140000	0:08:02.640000	d905f1158c.mp3	d905f1158c.webp	いやいや 安達の方じゃない?	Seguro que te miraban a ti.	No, I'm pretty sure you did.	False	False			
 	363	362	361	0:08:02.640000	0:08:05.610000	00f0faddbb.mp3	00f0faddbb.webp	ううん しまむらだった	No, era a ti.	No, it was you.	False	False			
 	366	365	364	0:08:05.610000	0:08:08.020000	d1e6659e68.mp3	d1e6659e68.webp	やっぱり美人だからかな	Seguramente sea porque eres muy guapa.	It's probably because you're so pretty.	False	False			
-	368		367	0:08:08.020000	0:08:09.690000	a46f715984.mp3	a46f715984.webp	はあ?		Huh?	False	False			
 	371	370	369	0:08:09.690000	0:08:11.240000	5997826b4b.mp3	5997826b4b.webp	どうしたの?	¿Qué ocurre?	What's wrong?	False	False			
 	374	373	372	0:08:11.240000	0:08:15.240000	06e16683d8.mp3	06e16683d8.webp	美人なんて言われるのこれが初めてなもので	Es la primera vez que alguien me dice que soy guapa...	Well, this is the first time anyone's ever called me pretty, so...	False	False			
 	377	376	375	0:08:15.240000	0:08:19.660000	b28e655fdf.mp3	b28e655fdf.webp	そう? 彼氏とかには...	¿En serio? ¿Tu novio no te lo dice?	Really? Your boy... friend doesn't call you that?	False	False			
@@ -153,10 +149,8 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	477	476	475	0:10:56.740000	0:10:59.360000	42ff94d38d.mp3	42ff94d38d.webp	いや いいよ 行こう	No, venga, vamos.	No, it's fine. Let's go.	False	False			
 	480	479	478	0:10:59.360000	0:11:01.530000	e0aa16fabf.mp3	e0aa16fabf.webp	安達って意外と甘えたがり?	¿Te gusta que te mimen, Adachi?	Do you like being coddled, Adachi?	False	False			
 	483	482	481	0:11:01.450000	0:11:03.850000	cee8229b74.mp3	cee8229b74.webp	そんなことない...	No...	No...	False	False			
-	487	486		0:11:04.110000	0:11:05.510000	0a2c75832c.mp3	0a2c75832c.webp	何か意外だ	Qué sorpresa...		False	False			
 	490	489	488	0:11:05.910000	0:11:09.210000	5657a66d73.mp3	5657a66d73.webp	私にとっては 別に	Bueno, yo no...	Well, I'm not...	False	False			
 	493	492	491	0:11:09.210000	0:11:12.040000	2c1629d546.mp3	2c1629d546.webp	意外でも ないけど	estoy tan sorprendida...	...that surprised...	False	False			
-	495		494	0:11:12.040000	0:11:15.710000	3684dede58.mp3	3684dede58.webp	うん?		Shukoh... Shukoh...	False	False			
 	499	498	497	0:11:20.720000	0:11:22.140000	377280b907.mp3	377280b907.webp	こんにちは	Hola.	Hello.	False	False			
 	502	501	500	0:11:22.140000	0:11:24.600000	866df4c281.mp3	866df4c281.webp	あ... ああ うん	Ah, hola.	Oh, uh, hey...	False	False			
 	503	505	504	0:11:24.540000	0:11:27.470000	ab6d8a1005.mp3	ab6d8a1005.webp	見かけたので声をかけてみました	Te he visto y he pensado en saludarte.	I saw you here, so I thought I would say hi.	False	False			
@@ -219,7 +213,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	713	712,715	711,714	0:15:49.190000	0:15:56.620000	f424acd5aa.mp3	f424acd5aa.webp	実際のところしまむらが私をどれくらい友達だと考えているかはずっと気になっている	La verdad es que me pregunto hasta qué punto me considera su amiga.	To be quite honest, I've been wondering how much of a friend Shimamura actually sees me as.	False	False			
 	718,719	717	716	0:15:56.620000	0:16:03.810000	b42b85071d.mp3	b42b85071d.webp	他の友達と何も変わらないのか　それとも少しは意識してくれているのか	¿Soy como el resto de sus amigas o siente algo más por mí?	Am I just like her other friends? Or does she have other feelings for me?	False	False			
 	724	723	722	0:16:06.380000	0:16:08.870000	4f79d92db0.mp3	4f79d92db0.webp	いらっしゃいま... あっ!	Bienve...	Welcom-	False	False			
-	726		725	0:16:10.010000	0:16:11.260000	cb426588bc.mp3	cb426588bc.webp	えっ?		Huh?	False	False			
 	730	729	728	0:16:22.560000	0:16:25.110000	2c44947094.mp3	2c44947094.webp	だから恥ずかしいって言った	Te dije que me daba vergüenza.	I told you it was embarrassing.	False	False			
 	733	732	731	0:16:25.110000	0:16:27.020000	a43d635f75.mp3	a43d635f75.webp	いいじゃん 似合ってるよ	Tranquila, te queda bien.	It's fine. It suits you.	False	False			
 	736	735	734	0:16:27.020000	0:16:29.730000	220bab7396.mp3	220bab7396.webp	ふーん 友達かあ	¿Ah, es una amiga?	Ah, a friend.	False	False			
@@ -274,7 +267,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	906	905	904	0:19:29.120000	0:19:31.500000	44fe3bf6fb.mp3	44fe3bf6fb.webp	その辺 座ってー	Siéntate donde quieras.	You can sit wherever.	False	False			
 	911	910	909	0:19:34.920000	0:19:36.510000	ee23c0bb8b.mp3	ee23c0bb8b.webp	ふう... で どうしようかね	Bueno, ¿qué hacemos?	So, what should we do?	False	False			
 	916	915	914	0:19:48.310000	0:19:50.560000	d3da0ca5ac.mp3	d3da0ca5ac.webp	あの しまむら	Oye, Shimamura.	Say, Shimamura...	False	False			
-	918		917	0:19:50.560000	0:19:51.440000	28128fcefd.mp3	28128fcefd.webp	うん?		Hm?	False	False			
 	921	920	919	0:19:51.440000	0:19:54.690000	2f8e5243c9.mp3	2f8e5243c9.webp	言うな 言うな 言うな	No lo digas, no lo digas, no lo digas...	Don't say it, don't say it, don't say it...	False	False			
 	924	923	922	0:19:54.690000	0:19:57.420000	5d1d5cea31.mp3	5d1d5cea31.webp	あの 座ってもいいかな	¿Te importa si me siento...?	Um, do you mind if I sit...?	False	False			
 	928	927	926	0:19:58.990000	0:20:02.910000	076182c236.mp3	076182c236.webp	しまむらの足の 間とか	¿Entre tus piernas?	Like... Between your legs...	False	False			

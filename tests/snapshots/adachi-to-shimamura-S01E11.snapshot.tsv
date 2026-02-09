@@ -53,12 +53,10 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	176	177	178	0:06:39.640000	0:06:42.730000	353edec3e4.mp3	353edec3e4.webp	いらっしゃーい	Venga.	Come, now.	False	False			
 	179	181	180	0:06:42.310000	0:06:46.070000	3bd284a1a0.mp3	3bd284a1a0.webp	えっと 易者さんですか?	¿Eres adivina?	Um... Are you a fortuneteller?	False	False			
 	182	183	184	0:06:45.980000	0:06:50.110000	1cc88b34b7.mp3	1cc88b34b7.webp	そうですね エキシャーマンといったところですか	Más bien, yo doy la fortuna.	Yes, or perhaps, a fortunegiver.	False	False			
-	185		186	0:06:49.750000	0:06:51.750000	b31dedd05f.mp3	b31dedd05f.webp	はあ		Right...	False	False			
 	189	187	188	0:06:51.640000	0:06:54.780000	44def6daa3.mp3	44def6daa3.webp	何でも占いますよ 例えば	Te diré todo lo que necesites saber, como por ejemplo	I'll tell you anything you need to know. Even...	False	False			
 	190	192	191	0:06:54.590000	0:06:57.870000	891ba86fbc.mp3	891ba86fbc.webp	その涙の流れる行き先も	la razón por la que lloras.	...the reason behind those tears.	False	False			
 	193	195,197	194,196	0:06:58.660000	0:07:02.420000	f54340ee2d.mp3	f54340ee2d.webp	ずばり 恋わずらいですね	En resumen... ¡Tienes problemas en el amor!	Simply put... You must be having romance troubles!	False	False			
 	198	201	199,200	0:07:02.260000	0:07:05.050000	c962e3bd68.mp3	c962e3bd68.webp	えっ えっ!? 1000円	Son mil yenes.	Huh? What?! That'll be 1,000 yen.	False	False			
-	202		203	0:07:04.600000	0:07:06.600000	30c5a4a66d.mp3	30c5a4a66d.webp	えっ?		Huh?	False	False			
 	204	206	205	0:07:08.940000	0:07:12.260000	71ad851494.mp3	71ad851494.webp	じゃあ 1000... えっ!	Vale, toma...	Okay, here's-	False	False			
 	207	209	208	0:07:12.010000	0:07:14.440000	5814a3ccaf.mp3	5814a3ccaf.webp	どうも	Gracias.	Thanks kindly.	False	False			
 	210	212	211	0:07:14.440000	0:07:18.310000	afb47110c5.mp3	afb47110c5.webp	さて 一つだけ伺います	Bueno, quiero preguntarte una cosa.	Now, then. Let me just ask you one thing.	False	False			
@@ -154,11 +152,9 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	530	532,534	531,533	0:14:10.280000	0:14:13.770000	9af21e809e.mp3	9af21e809e.webp	どこで買ったの?欲しいの?	¿Dónde lo has comprado? ¿Quieres uno?	Where did you buy it? Did you want one?	False	False			
 	535	537	536	0:14:13.350000	0:14:16.770000	386dfcebcd.mp3	386dfcebcd.webp	うん 私もつけようかなって	Sí, estaba pensando en pillarme uno...	Yeah, I was thinking of getting one, too...	False	False			
 	538	540	539	0:14:16.620000	0:14:19.770000	4d13489d99.mp3	4d13489d99.webp	お揃い だねえ...	Así lo tendríamos a juego.	Then we'd be matching...	False	False			
-	541		542	0:14:19.460000	0:14:21.900000	d6df897f52.mp3	d6df897f52.webp	ふーん		Huh...?	False	False			
 	543,546	545	544	0:14:21.790000	0:14:26.900000	b37b0df655.mp3	b37b0df655.webp	安達が買ったら　樽見と私とで お揃いになるわけか	Si Adachi compra uno, iría a juego con Taru y conmigo.	So if Adachi got one, she'd be matching with me and Tarumi.	False	False			
 	547	549	548,550	0:14:26.630000	0:14:30.950000	669cfdcf83.mp3	669cfdcf83.webp	ならないな 多分 えっ?	No creo...	I don't really think so... Huh?	False	False			
 	553	552	551	0:14:30.950000	0:14:33.700000	5fb47b992d.mp3	5fb47b992d.webp	あっ に... 握っていい?	Ah, ¿puedo cogerte de la mano?	U-Um, can I hold your hand?	False	False			
-	554		555	0:14:33.470000	0:14:36	58d39c6832.mp3	58d39c6832.webp	えっ? ああ		Huh? Oh...	False	False			
 	556	558	557	0:14:35.980000	0:14:38.480000	78bd5fcb25.mp3	78bd5fcb25.webp	はい どうぞ	Venga.	Here you go.	False	False			
 	559	561	560	0:14:39.480000	0:14:43.920000	e49992b307.mp3	e49992b307.webp	何で みんな 私と手をつなぎたがるんだろう	¿Por qué todo el mundo tiene tantas ganas de cogerme la mano?	Why does everyone want to hold my hand so badly?	False	False			
 	562	564	563	0:14:43.550000	0:14:48.430000	2de611cf97.mp3	2de611cf97.webp	私がどこかへ行ってしまうとでも思われているのかな	¿Creen que me voy a ir a alguna parte?	Do they all think I'm going to wander off somewhere?	False	False			
@@ -227,7 +223,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	783	785	784	0:19:14.650000	0:19:16.740000	a89b110bc9.mp3	a89b110bc9.webp	それで?	¿Qué pasa?	What's up?	False	False			
 	786	788,790	787,789	0:19:16.660000	0:19:21.700000	93b5e01393.mp3	93b5e01393.webp	何か話でもあるのかなと いや 別に...	Supongo que querrías hablar de algo. No, no especialmente...	I figured you wanted to talk about something. No, not really...	False	False			
 	791	793	792	0:19:21.490000	0:19:25.490000	511e8ed192.mp3	511e8ed192.webp	ただ しまむらと最近 電話していないから	Hace mucho que no te llamaba.	I just hadn't called you for a while...	False	False			
-	794		795	0:19:25.330000	0:19:27.450000	676f71717f.mp3	676f71717f.webp	ふーん		Huh...?	False	False			
 	796	798	797	0:19:27.330000	0:19:29.840000	04ea60a63d.mp3	04ea60a63d.webp	安達は 友達欲しいと思わないの?	¿No quieres hacer nuevos amigos?	You don't want to make any friends, Adachi?	False	False			
 	800	801	799	0:19:29.830000	0:19:32.580000	b66ff2c5f3.mp3	b66ff2c5f3.webp	えっ うん	¿Eh? No.	Huh? No.	False	False			
 	802	804	803	0:19:32.340000	0:19:35.250000	6d09439053.mp3	6d09439053.webp	別に興味はない	No me interesan.	I'm not really interested.	False	False			

@@ -41,10 +41,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	186	187	185	0:02:50.520000	0:02:53.383000	5ca582d3e3.mp3	5ca582d3e3.webp	ライブ楽しみにしててー	¡Esperen el concierto con ansias!	You just wait for that concert!	False	False		hitori	Hitori
 	190	189	188	0:02:54.410000	0:02:57.804000	891ba86fbc.mp3	891ba86fbc.webp	あのとき 見栄なんか張るんじゃなかった	No debería haber fanfarroneado.	I shouldn't have bragged like that.	False	False		hitori	Hitori
 	192	193	191	0:02:57.800000	0:03:00.974000	686212d425.mp3	686212d425.webp	どうしよう... 誰かに3枚売らないと	¿Qué hago? Tengo que vender tres.	What do I do? If I don't find buyers for three more tickets...	False	False		hitori	Hitori
-	197,198	196		0:03:02.160000	0:03:06.938000	1566dc3615.mp3	1566dc3615.webp	地元で配ろうと思って　バンドの宣伝フライヤー 作ってみたけど	Hasta preparé panfletos para repartir, pero...		False	False		hitori	
-	204,206	205,207		0:03:07.021000	0:03:13.486000	a514fe46e0.mp3	a514fe46e0.webp	こういうのは 手書き手作り感があったほうが　好感持たれやすいって ネットで書いてあった気がするよ	Si los haces a mano, serán más encantadores. O eso dicen en Internet.		False	False		hitori,hombre guitarra	
-	209	210		0:03:13.987000	0:03:15.405000	84a9c41bc1.mp3	84a9c41bc1.webp	よく考えたら	Pensándolo mejor,		False	False		hitori	
-	212	213		0:03:15.488000	0:03:18.700000	9d2d6bbefb.mp3	9d2d6bbefb.webp	コミュ症だから ビラ配るとか無理だった	¿cómo voy a repartir panfletos sin saber comunicarme?		False	False		hitori	
 	215	217	216	0:03:23.663000	0:03:27.709000	463342951b.mp3	463342951b.webp	ああ 打つ手がなさすぎて どうしよう	No sé qué hacer.	I feel so powerless.	False	False		hitori	Hitori
 	219	220	218	0:03:27.760000	0:03:30.160000	90662189a6.mp3	90662189a6.webp	怖くて ここから動けない	Me asusta tanto que no puedo moverme.	I'm too scared to even move.	False	False		hitori	Hitori
 	226,227	225	224	0:03:34	0:03:37.540000	70a0b03a28.mp3	70a0b03a28.webp	お友達 来てくれるみたいです　よかったー	¡Van a venir unas amigas! Menos mal.	Looks like lots of my friends are coming! Thank goodness!	False	False		kita	Kita
@@ -58,7 +54,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	261	262	260	0:03:59.670000	0:04:01.451000	fff0e24b1c.mp3	fff0e24b1c.webp	バイバイ ぼっち	Adiós, Bocchi.	Bye-bye, Bocchi.	False	False		ryo	Ryo
 	264,267	265	263,266	0:04:01.420000	0:04:05.720000	09a3bb6d20.mp3	09a3bb6d20.webp	せんぱーい　私の広くて深い人脈をたどって	Usé todos mis contactos	Senpai! I searched through my extensive connections	False	False		kita	Kita
 	269	270	268	0:04:05.720000	0:04:09.208000	33f8fd7913.mp3	33f8fd7913.webp	すてきで陽気なギタリストを 探してきましたー	para traer a una guitarrista alegre y sociable.	and found us an amazing and totally extroverted guitarist!	False	False		kita	Kita
-	271,275	272		0:04:09.292000	0:04:13.129000	85243a4189.mp3	85243a4189.webp	イエーイ!　ロッキュー!	Yeah! Rock you!		False	False		guitarrista imaginaria	
 	276	278	277	0:04:13.212000	0:04:16.299000	fcea2f6e77.mp3	fcea2f6e77.webp	ウェーイ ロッキュー!	Yeah! Rock you!	Yeah! Rock you!	False	False		kessoku band	Kita/Nijika/Ryo
 	280,283	282	281	0:04:19.093000	0:04:23.681000	f463fede7a.mp3	f463fede7a.webp	ああ なんで私 お母さんに あんな強がりを!　うう...	¿Por qué no fui sincera con mamá?	Why couldn't I just accept my mom's help?!	False	False		hitori	Hitori
 	286	288	287	0:04:28.519000	0:04:31.240000	a137f9a9f2.mp3	a137f9a9f2.webp	あっ えっ ひ... 人が倒れて	Alguien se cayó.	A p-person's collapsed.	False	False		hitori	Hitori
@@ -126,7 +121,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	545	546	544	0:09:32.210000	0:09:34.450000	f2672ed663.mp3	f2672ed663.webp	私はベース弾いてるんだ	Yo toco el bajo.	I play bass.	False	False		kikuri	Kikuri
 	548	549	547	0:09:34.450000	0:09:38.180000	6db2c26f18.mp3	6db2c26f18.webp	お酒とベースは 私の命より大事なものだから	El sake y el bajo me importan más que mi vida.	Booze and the bass are worth more to me than my life,	False	False		kikuri	Kikuri
 	551	552	550	0:09:38.180000	0:09:40.600000	9dbf2b341d.mp3	9dbf2b341d.webp	毎日 肌身離さず持ってるの	Por eso siempre los llevo conmigo.	so I always keep them close by.	False	False		kikuri	Kikuri
-	554		553	0:09:40.600000	0:09:42.416000	58d39c6832.mp3	58d39c6832.webp	あ... えっ...		So, uh...	False	False			Hitori
 	556	557	555	0:09:43.450000	0:09:45.544000	78bd5fcb25.mp3	78bd5fcb25.webp	ベースは どちらに?	¿Y dónde está el bajo?	Where's your bass?	False	False		hitori	Hitori
 	561	562	560	0:09:50.580000	0:09:52.676000	46e3cf9e47.mp3	46e3cf9e47.webp	居酒屋に置きっぱなしだ	Se me quedó en el bar.	I left it at the pub.	False	False		kikuri	Kikuri
 	564	565	563	0:09:52.650000	0:09:54.887000	fbfd64ad7d.mp3	fbfd64ad7d.webp	取りに行くよ ひとりちゃん!	¡Vamos a buscarlo!	Let's go grab it, Hitori-chan!	False	False		kikuri	Kikuri
@@ -166,7 +160,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	749	750	748	0:11:32.300000	0:11:34.960000	d71b8b3d3b.mp3	d71b8b3d3b.webp	あー まだピンと来ないか	Aún no lo entiendes, ¿eh?	Doesn't ring true, huh?	False	False		kikuri	Kikuri
 	752,755	753	751,754	0:11:34.960000	0:11:38.680000	6a1418da72.mp3	6a1418da72.webp	まあ ひとりちゃんも 大人になったら分かるよ　い... いやー	Cuando crezcas, me entenderás. -No sé...	You'll understand when you're older, Hitori-chan. A-Actually...	False	False		kikuri	Hitori,Kikuri
 	757,760	758	756	0:11:38.680000	0:11:41.360000	6695dc0ab2.mp3	6695dc0ab2.webp	大人になっても分かりたくない　絶対 お酒ハマるタイプだよ	No quiero entenderlo de mayor.	I'd really rather I didn't!	False	False		hitori	Hitori
-	762	763		0:11:41.410000	0:11:43.996000	f431b2d384.mp3	f431b2d384.webp	うん 絶対そう 顔見れば分かる!	Sí. Te lo veo en la cara.		False	False		kikuri	
 	765	767	766	0:11:44.705000	0:11:47.760000	97126716ce.mp3	97126716ce.webp	どんなだろ お酒に溺れる私	¿Cómo sería yo si me aficionara a la bebida?	I wonder what I'd look like drunk...	False	False		hitori	Hitori
 	777,780	779	778	0:11:58.135000	0:12:02.056000	95a0128161.mp3	95a0128161.webp	お母さん 最近 ついに　ハロワ行けって言わなくなったな	Mamá dejó de decirme que busque trabajo.	Mom's stopped bugging me to go to the employment agency.	False	False		hitori	Hitori
 	783	782	781	0:12:02.480000	0:12:05.476000	a89b110bc9.mp3	a89b110bc9.webp	きっと 孫のお世話で忙しいんだな	Debe estar ocupada cuidando de los nietos.	Bet she's too busy with her grandkids.	False	False		hitori	Hitori
@@ -182,7 +175,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	821	822	820	0:12:42.760000	0:12:44.682000	52704e3fc2.mp3	52704e3fc2.webp	そういうの 嫌いじゃないよ	Me gusta la gente como tú.	That's okay. I kinda like it.	False	False		kikuri	Kikuri
 	825	824	823	0:12:44.640000	0:12:46.990000	22fb2135bd.mp3	22fb2135bd.webp	そういや ひとりちゃんは 何してたの?	Por cierto, ¿qué estabas haciendo?	By the way, what were ya doing?	False	False		kikuri	Kikuri
 	827	828	826	0:12:46.990000	0:12:48.602000	d4866f1949.mp3	d4866f1949.webp	あっ 私は...	Yo...	A-Actually...	False	False		hitori	Hitori
-	832		830	0:12:48.580000	0:12:50.670000	df34f47032.mp3	df34f47032.webp	かくかく しかじか まるまる うまうま		Lorem ipsum, yada yada, etc etc, blah blah blah...	False	False			Hitori
 	834,844	837	833,845	0:12:50.670000	0:12:55.109000	3f829867a1.mp3	3f829867a1.webp	うっ なるほど　ひとりちゃんは 悲劇の少女だったわけか	Ya veo. Eres la protagonista de una tragedia.	Ah, I see! I never knew you lived such a tragic life!	False	False		kikuri	Kikuri
 	857	858	856	0:12:55.520000	0:12:57.778000	3f37290d5c.mp3	3f37290d5c.webp	す... すごく同情してくれてる	Se compadece de mí.	Sh-She's really sympathetic!	False	False		hitori	Hitori
 	860	861	859	0:12:57.720000	0:12:59.760000	f142c33ae3.mp3	f142c33ae3.webp	チケット売るの大変だよね	Vender entradas es muy duro.	Selling tickets is so hard.	False	False		kikuri	Kikuri
@@ -296,7 +288,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	1281	1282	1280	0:19:26.350000	0:19:28.260000	6f1dc41a66.mp3	6f1dc41a66.webp	な... なんで泣いてるんですか?	¿Por qué lloras?	Wh-Why are you crying?	False	False		hitori	Hitori
 	1284	1285	1283,1286	0:19:28.250000	0:19:32.130000	6df5519706.mp3	6df5519706.webp	ごめんごめん すぐ 幸せスパイラル キメるから	Perdón. Enseguida funcionará la espiral de felicidad.	Sorry, sorry! I'll be back in my happiness spiral soon...	False	False		kikuri	Kikuri
 	1288	1289	1287	0:19:32.100000	0:19:34.967000	276933c072.mp3	276933c072.webp	ぜ... 絶対それ 体に悪いですよ	Eso no es bueno para la salud.	Th-That can't possibly be good for you.	False	False		hitori	Hitori
-	1290	1292		0:19:35.050000	0:19:38.800000	0e3b061d52.mp3	0e3b061d52.webp	すみませーん ここでのライブは やめてください	Disculpen, pero no pueden tocar aquí.		False	False		policía	
 	1293	1296	1295	0:19:38.845000	0:19:40.639000	0b110b6605.mp3	0b110b6605.webp	えっ? 警察! ごめんなさーい	¿Un policía? -Perdón.	I-It's the fuzz!	False	False		hitori/kikuri	Hitori
 	1297	1299	1298	0:19:40.722000	0:19:42.641000	6688b8e47f.mp3	6688b8e47f.webp	補導される?	¡Me van a arrestar!	Are they gonna take me away?!	False	False		hitori	Hitori
 	1301	1302	1300	0:19:42.630000	0:19:44.520000	fb10ff1c01.mp3	fb10ff1c01.webp	されない されない	Claro que no.	Of course not!	False	False		kikuri	Kikuri

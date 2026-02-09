@@ -61,7 +61,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	216	215	214	0:05:31.280000	0:05:34.540000	45eb863fe4.mp3	45eb863fe4.webp	家! しまむらの家!	¡En casa! En tu casa.	At home! At your house!	False	False			
 	219	218	217	0:05:34.540000	0:05:36.710000	90662189a6.mp3	90662189a6.webp	とかじゃダメ?	¿Te parece bien?	Would that be okay?	False	False			
 	222	221	220	0:05:36.710000	0:05:39.250000	ce32b64fb2.mp3	ce32b64fb2.webp	ええー ほこりっぽいよ?	¿Qué? Pero si está llena de polvo.	What? It's really dusty, though.	False	False			
-	224		223	0:05:39.250000	0:05:40.170000	50b0451c4e.mp3	50b0451c4e.webp	えっ?		Wha-?	False	False			
 	227	226	225	0:05:40.170000	0:05:41.710000	43f90055b9.mp3	43f90055b9.webp	安達の部屋は?	¿Qué tal en tu cuarto?	What about your room, Adachi?	False	False			
 	230	229	228	0:05:41.710000	0:05:43.460000	10967171ac.mp3	10967171ac.webp	私の部屋?	¿Mi cuarto?	My room?	False	False			
 	233	232	231	0:05:46.050000	0:05:47.850000	41624113cc.mp3	41624113cc.webp	ウチは ちょっと...	No sé...	I don't know about my place...	False	False			
@@ -140,7 +139,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	479	478	477	0:11:11.290000	0:11:14	d9fdde84c7.mp3	d9fdde84c7.webp	はい 寒いでしょ	Toma, hace frío.	Here. It's cold.	False	False			
 	482	481	480	0:11:14	0:11:16.550000	7e91d80541.mp3	7e91d80541.webp	あ... ありがと	Gracias.	Th-Thanks...	False	False			
 	485	484	483	0:11:18.880000	0:11:20.840000	4ae3143265.mp3	4ae3143265.webp	ねえ しまむら	Oye, Shimamura.	Hey, Shimamura...	False	False			
-	487		486	0:11:20.840000	0:11:22.430000	0a2c75832c.mp3	0a2c75832c.webp	うーん?		Hm?	False	False			
 	489	490	488	0:11:22.430000	0:11:25.510000	e8e7de8183.mp3	e8e7de8183.webp	しまむらって えっと...	Shimamura...	So, Shimamura... Um...	False	False			
 	493	492	491	0:11:27.310000	0:11:28.770000	2c1629d546.mp3	2c1629d546.webp	クリ...	Qué...	Chri...	False	False			
 	496	495	494	0:11:30.230000	0:11:33.400000	f57285ca6e.mp3	f57285ca6e.webp	クリスマスとか どうしてる?	¿Qué sueles hacer en Navidad?	What do you usually do on Christmas?!	False	False			
@@ -223,7 +221,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	751,752	750	749	0:16:47.170000	0:16:51.970000	3ca7604df0.mp3	3ca7604df0.webp	何で 体育会系気取り?　で どうしたの?	¿Por qué suenas como un tío? ¿Qué pasa?	Why are you trying to sound like a jock? So, what's up?	False	False			
 	755,756	754	753	0:16:51.970000	0:16:57.100000	417e1caaca.mp3	417e1caaca.webp	っていうか 朝早くない?　あれ? 何時くらいに来たの?	¿No es un poco temprano? ¿A qué hora has llegado?	It's a bit early, isn't it? Actually, when did you get here?	False	False			
 	759,760,761	758	757	0:16:57.100000	0:17:03.100000	0e6b226a5d.mp3	0e6b226a5d.webp	用事は ちょっとあって　朝は普通かなと思うし　今 来たところ	Es que tenía que pasarme por un sitio, así que he venido.	I had to stop by somewhere... This is pretty normal, and I just got here.	False	False			
-	763		762	0:17:06.860000	0:17:08.310000	0fac97788e.mp3	0fac97788e.webp	ふむ		Hm.	False	False			
 	766	765	764	0:17:13.530000	0:17:15.450000	94f5bc089e.mp3	94f5bc089e.webp	冷たいね	Estarás congelada.	You're freezing.	False	False			
 	769	768	767	0:17:15.450000	0:17:17.710000	e55b0c901e.mp3	e55b0c901e.webp	寒いし 中で話そう	Hace frío. Hablemos dentro.	It's cold, so let's talk inside.	False	False			
 	773	771	772	0:17:19.010000	0:17:21.450000	0d728e27cb.mp3	0d728e27cb.webp	い... いただきます	Gracias.	Th-Thank you.	False	False			
@@ -303,7 +300,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	1023	1022	1021	0:22:14.680000	0:22:19.690000	e43f16b78b.mp3	e43f16b78b.webp	まあ どうせ 家にいてもサンタクロースは来てくれないから	De todas formas, si me quedaba en casa, Papá Noel no iba a venir.	I mean, it's not like Santa's coming by, even if I waited at home.	False	False			
 	1030	1029	1028	0:23:53.070000	0:23:55.240000	eef082828c.mp3	eef082828c.webp	あだしまペディア こたつ	Adashimapedia: Kotatsu.	Adashimapedia: Kotatsu.	False	False			
 	1031	1033	1032	0:23:55.070000	0:23:57.370000	7aeb1a162a.mp3	7aeb1a162a.webp	こたつは 人をダメにするねえ	Los kotatsu lo estropean todo.	Kotatsu tables just ruin everyone.	False	False			
-	1035	1034		0:23:57.440000	0:23:58.740000	c27d08fb28.mp3	c27d08fb28.webp	ホントにねえ	¿Verdad?		False	False			
 	1037,1040	1038	1036,1039	0:23:58.620000	0:24:01.770000	d5ff990878.mp3	d5ff990878.webp	お茶入れてー　やだー 出たくないー	Tráeme té. -No voy a salir de aquí.	Get me some tea. Nope. I'm not leaving this warmth.	False	False			
 	1043,1046	1042,1045	1041,1044	0:24:01.460000	0:24:04.250000	86c7c24249.mp3	86c7c24249.webp	予告してー　やだー	Tú habla. No, estoy muy a gusto.	Do the preview. Nope, too cozy.	False	False			
 	1049	1047	1048	0:24:04.220000	0:24:05.400000	d108420595.mp3	d108420595.webp	まっ いっか	Da igual.	Well, whatever.	False	False			

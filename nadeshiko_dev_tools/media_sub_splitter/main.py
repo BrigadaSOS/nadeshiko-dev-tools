@@ -145,6 +145,11 @@ def main():
             )
             return
 
+        folder_mappings = filter_folder_mappings_by_episodes(folder_mappings, config.episodes)
+        if not folder_mappings:
+            console.print("[yellow]No files matched the selected episode filter.[/yellow]")
+            return
+
         display_folder_mappings(folder_mappings)
 
         # Load existing config
@@ -172,8 +177,8 @@ def main():
             console.print("\n[green]Configuration saved![/green]")
 
         # Confirm and process
-        total_files = sum(len(m["files"]) for m in folder_mappings.values())
-        if confirm_processing(total_files, len(folder_mappings)):
+        total_episodes = len({(d["folder_name"], d["episode"]) for d in all_file_details})
+        if confirm_processing(total_episodes, len(folder_mappings)):
             episode_stats = process_episodes(config, folder_mappings, audio_config=audio_config)
             display_episode_summary_report(episode_stats)
 
@@ -190,6 +195,54 @@ def main():
 # ----------------------------------------------------------------------------
 # Processing Functions
 # ----------------------------------------------------------------------------
+
+
+def filter_folder_mappings_by_episodes(
+    folder_mappings: dict,
+    selected_episodes: set[int] | None,
+) -> dict:
+    """Filter folder mappings by selected episode numbers."""
+    if not selected_episodes:
+        return folder_mappings
+
+    unmatched_episodes = set(selected_episodes)
+    filtered_mappings = {}
+
+    for folder_name, mapping in folder_mappings.items():
+        matched_files = []
+
+        for filename in mapping["files"]:
+            filepath = os.path.join(mapping["path"], filename)
+            guessit_query = extract_anime_title_for_guessit(filepath)
+
+            try:
+                episode_info = guessit(guessit_query)
+                episode_number = episode_info.get("episode")
+            except Exception as e:
+                logger.warning(f"Could not determine episode number for {filepath}: {e}")
+                continue
+
+            if episode_number is None:
+                logger.warning(f"Could not determine episode number for {filepath}")
+                continue
+
+            if episode_number in selected_episodes:
+                matched_files.append(filename)
+                unmatched_episodes.discard(episode_number)
+
+        if matched_files:
+            filtered_mappings[folder_name] = {
+                **mapping,
+                "files": matched_files,
+            }
+
+    if unmatched_episodes:
+        console.print(
+            "[yellow]No matching files found for episode(s): "
+            f"{', '.join(str(ep) for ep in sorted(unmatched_episodes))}[/yellow]"
+        )
+
+    return filtered_mappings
 
 
 def process_episodes(
@@ -709,6 +762,50 @@ def process_episode_segments(
         return segment_count
 
 
+def _compute_overlap_score(sub_a, sub_b, sample_size: int = 50) -> tuple[float, float]:
+    """Measure alignment between two subtitle tracks.
+
+    Samples lines from sub_a, finds closest-in-time match in sub_b, and computes:
+      - overlap_ratio: fraction of sampled lines that overlap with a sub_b line
+      - mean_offset_ms: average absolute start-time offset for overlapping pairs
+
+    Returns:
+        (overlap_ratio, mean_offset_ms)  — both 0.0 when either track is empty.
+    """
+    lines_a = [e for e in sub_a if e.type == "Dialogue"]
+    lines_b = [e for e in sub_b if e.type == "Dialogue"]
+
+    if not lines_a or not lines_b:
+        return 0.0, 0.0
+
+    # Sample evenly across the track
+    step = max(1, len(lines_a) // sample_size)
+    sampled = lines_a[::step][:sample_size]
+
+    overlaps = 0
+    offsets = []
+
+    for a_line in sampled:
+        a_start, a_end = a_line.start, a_line.end
+        best_offset = None
+
+        for b_line in lines_b:
+            b_start, b_end = b_line.start, b_line.end
+            # Check temporal overlap
+            if a_start < b_end and b_start < a_end:
+                offset = abs(a_start - b_start)
+                if best_offset is None or offset < best_offset:
+                    best_offset = offset
+
+        if best_offset is not None:
+            overlaps += 1
+            offsets.append(best_offset)
+
+    overlap_ratio = overlaps / len(sampled) if sampled else 0.0
+    mean_offset = sum(offsets) / len(offsets) if offsets else 0.0
+    return overlap_ratio, mean_offset
+
+
 def split_video_by_subtitles(
     translator,
     video_file,
@@ -741,11 +838,33 @@ def split_video_by_subtitles(
         if internal_ref:
             for lang, sub in subtitles.items():
                 if sub.origin == "external":
+                    # Compute pre-sync alignment score
+                    pre_overlap, pre_offset = _compute_overlap_score(
+                        sub.data, internal_ref.data
+                    )
+                    logger.info(
+                        f"[E{episode_number}] Pre-sync {lang}: "
+                        f"overlap={pre_overlap:.1%}, mean_offset={pre_offset:.0f}ms"
+                    )
+
+                    # Skip ffsubsync if already well-aligned
+                    if pre_overlap >= 0.5 and pre_offset < 3000:
+                        logger.info(
+                            f"[E{episode_number}] {lang} subs already well-aligned "
+                            f"(overlap={pre_overlap:.1%}, offset={pre_offset:.0f}ms), "
+                            f"skipping ffsubsync"
+                        )
+                        continue
+
                     try:
-                        # Create output filepath for synced subtitle
-                        synced_filepath = sub.filepath.replace(
-                            os.path.basename(sub.filepath),
-                            f"synced_{os.path.basename(sub.filepath)}",
+                        # Create output filepath for synced subtitle in output tmp dir
+                        tmp_output_folder = os.path.join(
+                            os.path.dirname(episode_folder_output_path), "tmp"
+                        )
+                        os.makedirs(tmp_output_folder, exist_ok=True)
+                        synced_filepath = os.path.join(
+                            tmp_output_folder,
+                            f"synced_{lang}_{os.path.basename(sub.filepath)}",
                         )
 
                         # Run ffsubsync
@@ -762,12 +881,33 @@ def split_video_by_subtitles(
                             capture_output=True,
                         )
 
-                        # Load synced subtitle and update
+                        # Load synced subtitle and check post-sync quality
                         synced_data = load_subtitle_file(synced_filepath)
-                        subtitles[lang] = MatchingSubtitle(
-                            origin="external", filepath=synced_filepath, data=synced_data
+                        post_overlap, post_offset = _compute_overlap_score(
+                            synced_data, internal_ref.data
                         )
-                        logger.info(f"Synced {lang} subtitles against internal reference")
+                        logger.info(
+                            f"[E{episode_number}] Post-sync {lang}: "
+                            f"overlap={post_overlap:.1%}, mean_offset={post_offset:.0f}ms"
+                        )
+
+                        # Fall back to original if sync degraded alignment
+                        overlap_dropped = pre_overlap - post_overlap > 0.10
+                        offset_increased = post_offset - pre_offset > 2000
+                        if overlap_dropped or offset_increased:
+                            logger.warning(
+                                f"[E{episode_number}] ffsubsync degraded {lang} alignment "
+                                f"(overlap {pre_overlap:.1%}->{post_overlap:.1%}, "
+                                f"offset {pre_offset:.0f}ms->{post_offset:.0f}ms). "
+                                f"Falling back to original subs."
+                            )
+                        else:
+                            subtitles[lang] = MatchingSubtitle(
+                                origin="external", filepath=synced_filepath, data=synced_data
+                            )
+                            logger.info(
+                                f"Synced {lang} subtitles against internal reference"
+                            )
                     except (subprocess.CalledProcessError, Exception) as e:
                         logger.warning(f"Failed to sync {lang} subtitles: {e}")
         else:
@@ -812,6 +952,13 @@ def split_video_by_subtitles(
             duplicates_set.add(line_hashkey)
         else:
             sorted_lines.remove(line)
+
+    # Diagnostic: per-language line counts after filtering
+    lang_counts = {}
+    for line in sorted_lines:
+        lang_counts[line["language"]] = lang_counts.get(line["language"], 0) + 1
+    lang_summary = ", ".join(f"{lang}={count}" for lang, count in sorted(lang_counts.items()))
+    logger.info(f"[E{episode_number}] Lines after filtering: {lang_summary}")
 
     segments_data = []
     ignored_segments = []
@@ -953,9 +1100,26 @@ def split_video_by_subtitles(
     if failed_segments:
         logger.error(f"[red][E{episode_number}] {len(failed_segments)} segment(s) failed:[/red]")
         for failed in failed_segments:
-            start_td = timedelta(milliseconds=failed["start"])
+            start_td = timedelta(milliseconds=failed["start_ms"])
             logger.error(
-                f"[red]  - Segment #{failed['index']} at {start_td} ({failed['reason']})[/red]"
+                f"[red]  - Segment #{failed['segment_index']} "
+                f"at {start_td} ({failed['reason']})[/red]"
+            )
+
+    # Diagnostic: segment ratio summary
+    total_segments = len(segments_data) + len(ignored_segments) + len(failed_segments)
+    if total_segments > 0:
+        valid_pct = len(segments_data) / total_segments * 100
+        logger.info(
+            f"[E{episode_number}] Segment summary: "
+            f"{len(segments_data)} valid, {len(ignored_segments)} ignored, "
+            f"{len(failed_segments)} failed "
+            f"(total={total_segments}, valid={valid_pct:.0f}%)"
+        )
+        if valid_pct < 30:
+            logger.warning(
+                f"[yellow][E{episode_number}] Low valid segment ratio ({valid_pct:.0f}%)! "
+                f"This may indicate sync or filter problems.[/yellow]"
             )
 
     return len(segments_data)

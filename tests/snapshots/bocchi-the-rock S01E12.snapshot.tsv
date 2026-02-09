@@ -1,27 +1,4 @@
 ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREENSHOT	CONTENT	CONTENT_TRANSLATION_SPANISH	CONTENT_TRANSLATION_ENGLISH	CONTENT_SPANISH_MT	CONTENT_ENGLISH_MT	ACTOR_JA	ACTOR_ES	ACTOR_EN
-	6		7	0:00:22.670000	0:00:25.500000	cd8dcf976a.mp3	cd8dcf976a.webp	ぜんぶ天気のせいでいいよ		We can blame it all on the weather	False	False			Kita
-	9		11	0:00:25.340000	0:00:28.040000	e46dbc0fc4.mp3	e46dbc0fc4.webp	この気まずさも倦怠感も		All this awkwardness and exhaustion	False	False			Kita
-	12		14	0:00:27.968000	0:00:32.260000	dbd4d0d42a.mp3	dbd4d0d42a.webp	太陽は隠れながら知らんぷり		The sun hides away, pretending not to see	False	False			Kita
-	16		15	0:00:32.840000	0:00:35.840000	4f5fb67c03.mp3	4f5fb67c03.webp	ガタゴト揺れる満員電車		A packed train clatters along the track	False	False			Kita
-	18		20	0:00:35.726000	0:00:38.220000	79b0ee817a.mp3	79b0ee817a.webp	すれ違うのは準急列車		It brushes past a local express	False	False			Kita
-	22		21	0:00:38.220000	0:00:43.390000	3474eefa98.mp3	3474eefa98.webp	輪郭のない雲の 表情を探してみる		I'm gonna search for feelings in a shapeless cloud	False	False			Kita
-	25		24	0:00:43.390000	0:00:46.350000	19b666f162.mp3	19b666f162.webp	「作者の気持ちを答えなさい」		The test asks, "How was the author feeling here?"	False	False			Kita
-	27		29	0:00:46.236000	0:00:48.770000	9c8fb9c279.mp3	9c8fb9c279.webp	いったいなにが 正解なんだい?		What could the right answer possibly be?	False	False			Kita
-	32		31	0:00:49.320000	0:00:53.780000	7d53e9253f.mp3	7d53e9253f.webp	予定調和の シナリオ踏み抜いて		Breaking through the script of pre-established harmony	False	False			Kita
-	34		33	0:00:53.780000	0:00:59.080000	27b98d1f17.mp3	27b98d1f17.webp	青い春なんてもんは		Everyone talks about the "springtime of life"	False	False			Kita
-	37		36	0:00:59.080000	0:01:04.210000	f5e7bae588.mp3	f5e7bae588.webp	僕には似合わないんだ		And I'm just not cut out for that	False	False			Kita
-	39		38	0:01:04.210000	0:01:09.590000	b6f8256d6e.mp3	b6f8256d6e.webp	それでも知ってるから 一度しかない瞬間は		Yet I know that this moment, which will never come again,	False	False			Kita
-	42		41	0:01:09.590000	0:01:14.760000	75d838ea8e.mp3	75d838ea8e.webp	儚さを孕んでる		is rich with evanescence	False	False			Kita
-	45		44	0:01:14.760000	0:01:17.680000	5c163b27c4.mp3	5c163b27c4.webp	絶対忘れてやらないよ		I will never forget, ever	False	False			Kita
-	47		49	0:01:17.559000	0:01:20.350000	817b9930e8.mp3	817b9930e8.webp	いつか死ぬまで何回だって		So many times before I die someday...	False	False			Kita
-	51		52	0:01:20.312000	0:01:25.270000	ae36d38e65.mp3	ae36d38e65.webp	こんなこともあったって 笑ってやんのさ		I'll laugh thinking about what it was like	False	False			Kita
-	56		55	0:01:35.610000	0:01:40.950000	b308bb0ece.mp3	b308bb0ece.webp	風においてかれそうで		I feel like the wind's leaving me behind	False	False			Kita
-	60		58	0:01:40.950000	0:01:46.080000	cd676672b4.mp3	cd676672b4.webp	必死に喰らいついてる		So I'm desperately clinging on	False	False			Kita
-	63		61,65	0:01:46.080000	0:01:51.340000	1d369340d2.mp3	1d369340d2.webp	いつもの鐘の音も 窓際に積んだ埃も		That familiar sound of the bell That dust piled up on the window sill	False	False			Kita
-	68		67	0:01:51.340000	0:01:56.670000	e1731e520c.mp3	e1731e520c.webp	教室の匂いだって		Even the smell of the classroom	False	False			Kita
-	71		70	0:01:56.670000	0:01:59.340000	85d31b1a2d.mp3	85d31b1a2d.webp	絶対忘れてやらないよ		I will never forget, ever	False	False			Kita
-	74		75	0:01:59.268000	0:02:01.760000	5719b133db.mp3	5719b133db.webp	いつか死ぬまで何回だって		So many times before I die someday...	False	False			Kita
-	77		76	0:02:01.760000	0:02:07.390000	1beb63ae57.mp3	1beb63ae57.webp	こんなこともあったって 笑ってやんのさ		I'll laugh thinking about what it was like	False	False			Kita
 	87	85	86	0:02:26.950000	0:02:28.870000	0c10f513bc.mp3	0c10f513bc.webp	ありがとうございました!	¡Muchas gracias!	Thank you!	False	False		kita	Kita
 	90	89	88	0:02:28.870000	0:02:31.430000	0f7e5cc2e1.mp3	0f7e5cc2e1.webp	1曲目"忘れてやらない"でした	Acabamos de tocar "No lo olvidaré".	That was our first song, "I Will Never Forget!"	False	False		kita	Kita
 	93	91	92	0:02:33.340000	0:02:35.300000	e75fed293a.mp3	e75fed293a.webp	意外と盛り上がった	Les gustó bastante.	I can't believe how enthusiastic they are.	False	False		hitori	Hitori
@@ -42,31 +19,23 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	159	158	157	0:03:28.430000	0:03:30.770000	a020a20a4a.mp3	a020a20a4a.webp	それじゃ 次の曲 いこっか	¿Vamos por la siguiente?	Anyway, let's move on to the next song!	False	False		nijika	Nijika
 	162	161	160	0:03:30.770000	0:03:31.950000	3cff69468a.mp3	3cff69468a.webp	はい!	Sí.	Right!	False	False		kita	Kita
 	165,169	164	163,168	0:03:32.480000	0:03:37.070000	13a7121d34.mp3	13a7121d34.webp	それでは聴いてください　2曲目で"星座になれたら"	Nuestra segunda canción es "Ojalá fuéramos una constelación".	Please lend us your ears! Our next song is "To Become a Constellation..."!	False	False		kita	Kita
-	172		174	0:04:05.018000	0:04:08.438000	5e5902a14a.mp3	5e5902a14a.webp	もうすぐ時計は6時		The time's almost six	False	False			Kita
-	176		177	0:04:08.939000	0:04:11.930000	353edec3e4.mp3	353edec3e4.webp	もうそこに一番星		The evening star's already out there	False	False			Kita
-	180		178	0:04:12.310000	0:04:14.440000	7af8645d0a.mp3	7af8645d0a.webp	影を踏んで		Walking home, stepping on shadows	False	False			Kita
-	181		182	0:04:14.319000	0:04:20.367000	e943ac1307.mp3	e943ac1307.webp	夜に紛れたくなる帰り道		I'm hoping to blend into the night	False	False			Kita
-	183,188,191	185,189,193	184,186,187,190,192	0:04:21.410000	0:04:30.200000	06da0b6266.mp3	06da0b6266.webp	やっぱり おかしい　昨日まで なんともなかったのに　1・2弦のチューニングが 異常に合わない	Algo pasa. Ayer estaba totalmente afinada, pero hoy la primera cuerda no suena bien.	Yeah, something's not right. Lucky you, lucky you It's been fine this whole time, Must be nice to have everyone love you but now I can't get the E string in tune...	False	False		hitori	Hitori,Kita
-	196		194	0:04:30.200000	0:04:37.630000	34c946dee2.mp3	34c946dee2.webp	「いいや 僕は ずっと一人きりさ」		"No, I've always been alone."	False	False			Kita
-	199		198	0:04:37.630000	0:04:41.630000	c1ba360de6.mp3	c1ba360de6.webp	君と集まって 星座になれたら		If only I could become a constellation with you...	False	False			Kita
-	202,204,207,211,215	205,208,212,216	201,203,206,209,210,213,214	0:04:41.630000	0:04:53.480000	39fb2a0af4.mp3	39fb2a0af4.webp	星降る夜...　1弦が!　マズい! せめて 2弦のチューニングだけでも...　あっ ペグが故障してる!　あれじゃ 2弦も使いものにならない	¡La cuerda se...! Oh, no. Tengo que afinar al menos la segunda. ¿La clavija no funciona? Así tampoco podrá usar la segunda.	On a night of falling stars, I make that moment's wish The E string! Not good... But if I can at least get the B string in tune... A sparkling, twinkling, trembling signal up high The peg's broken! She can't use the B string now.	False	False		hitori,kikuri	Hitori,Kikuri,Kita
-	217,223,227,229,231,235,237	220,222,228,233	218,219,221,224,225,226,230,232,234,236	0:04:53.358000	0:05:11.080000	f3006adf67.mp3	f3006adf67.webp	これじゃ ソロ 無理だぞ　どうしよう... もうすぐソロが来る　せっかくの文化祭ライブが　私の機材トラブルで台なしに　どうしよう どうしよう...　どうしよう どうしよう どうしよう!　僕がどんなに 眩しくても	No puede hacer un solo. ¿Qué hago? Ya casi llegamos a mi solo. Voy a estropear el concierto por problemas técnicos. ¿Qué hago? ¿Qué hago?	She won't be able to do her solo. If only I could become a constellation with you... What'll I do? My solo's coming up... The kind that people point to in the sky If our big culture festival performance fails because I had equipment trouble... Don't let these lines that link us come undone What do I do? What do I do, what do I do, what do I do, what do I do?! No matter how brightly I shine	False	False		hitori,kikuri	Hitori,Kikuri,Kita
+	183	185	184	0:04:21.410000	0:04:23.400000	a47b1e4903.mp3	a47b1e4903.webp	やっぱり おかしい	Algo pasa.	Yeah, something's not right.	False	False		hitori	Hitori
+	188	189	187	0:04:24.660000	0:04:27.240000	29df460017.mp3	29df460017.webp	昨日まで なんともなかったのに	Ayer estaba totalmente afinada,	It's been fine this whole time,	False	False		hitori	Hitori
+	191	193	192	0:04:27.207000	0:04:29.700000	2ae8c055e4.mp3	2ae8c055e4.webp	1・2弦のチューニングが 異常に合わない	pero hoy la primera cuerda no suena bien.	but now I can't get the E string in tune...	False	False		hitori	Hitori
+	204	205	203	0:04:42.670000	0:04:44.349000	71ad851494.mp3	71ad851494.webp	1弦が!	¡La cuerda se...!	The E string!	False	False		hitori	Hitori
+	207	208	206,209	0:04:44.380000	0:04:48.010000	5814a3ccaf.mp3	5814a3ccaf.webp	マズい! せめて 2弦のチューニングだけでも...	Oh, no. Tengo que afinar al menos la segunda.	Not good... But if I can at least get the B string in tune...	False	False		hitori	Hitori
+	211	212	213	0:04:48.061000	0:04:50.510000	8a020a05f2.mp3	8a020a05f2.webp	あっ ペグが故障してる!	¿La clavija no funciona?	The peg's broken!	False	False		hitori	Hitori
+	215	216	214	0:04:50.510000	0:04:53.480000	463342951b.mp3	463342951b.webp	あれじゃ 2弦も使いものにならない	Así tampoco podrá usar la segunda.	She can't use the B string now.	False	False		kikuri	Kikuri
+	217	220	218	0:04:53.358000	0:04:55.020000	93a96c422b.mp3	93a96c422b.webp	これじゃ ソロ 無理だぞ	No puede hacer un solo.	She won't be able to do her solo.	False	False		kikuri	Kikuri
+	223	222	221,224	0:04:55.600000	0:04:58.650000	b9c02ff477.mp3	b9c02ff477.webp	どうしよう... もうすぐソロが来る	¿Qué hago? Ya casi llegamos a mi solo.	What'll I do? My solo's coming up...	False	False		hitori	Hitori
+	227,229	228	226	0:04:58.650000	0:05:03.690000	e90ea9cb78.mp3	e90ea9cb78.webp	せっかくの文化祭ライブが　私の機材トラブルで台なしに	Voy a estropear el concierto por problemas técnicos.	If our big culture festival performance fails because I had equipment trouble...	False	False		hitori	Hitori
+	231,235	233	232,234	0:05:03.660000	0:05:06.660000	854afbfc4d.mp3	854afbfc4d.webp	どうしよう どうしよう...　どうしよう どうしよう どうしよう!	¿Qué hago? ¿Qué hago?	What do I do? What do I do, what do I do, what do I do, what do I do?!	False	False		hitori	Hitori
 	240	241	239,242	0:05:14.500000	0:05:18.130000	1362b7c6da.mp3	1362b7c6da.webp	喜多さん... 打ち合わせしてないのにアドリブ!	¿Kita está improvisando?	Kita-san... She's ad-libbing completely on the fly!	False	False		hitori	Hitori
 	244,247	243	245,246	0:05:18.960000	0:05:24.380000	29d2648348.mp3	29d2648348.webp	みんなに見せてよ　本当は後藤さんは すごく かっこいいんだってところを	Enséñales lo genial que eres en realidad, Goto.	I'm going to make sure everyone can see... how amazingly cool Gotoh-san really is!	False	False		kita	Kita
 	250	251	249	0:05:28.890000	0:05:30.890000	c35d71806e.mp3	c35d71806e.webp	あのギター 何やってんだ?	¿Qué hace con la guitarra?	What's their guitarist doing?	False	False		chico A	Boy Student A
 	252	254	253	0:05:30.771000	0:05:33.020000	e192e7f801.mp3	e192e7f801.webp	よく分かんねえけど スゲえ!	No sé, pero es genial.	Dunno, but it's pretty awesome!	False	False		chico B	Boy Student B
 	256	257	255	0:05:33.020000	0:05:36.890000	b7ec928843.mp3	b7ec928843.webp	この土壇場でボトルネック奏法とか 普通やるか?	¿A quién se le ocurre tocar con slide?	Who whips out the bottleneck playing at a time like this?	False	False		seika	Seika
 	259	260	258	0:05:36.890000	0:05:40.650000	b4152213d9.mp3	b4152213d9.webp	あれならチューニング ズレてても関係ないもんね	Así da igual que no esté afinada.	Now it won't matter if she's a little out of tune!	False	False		kikuri	Kikuri
-	262		261	0:05:40.650000	0:05:46.150000	b3cc53856f.mp3	b3cc53856f.webp	遥か彼方 僕らは出会ってしまった		We met each other, so far away	False	False			Kikuri
-	266		264	0:05:48.570000	0:05:54.080000	2e10cc36c2.mp3	2e10cc36c2.webp	カルマだから 何度も出会ってしまうよ		And because it's our karma, we'll meet again and again	False	False			Kikuri
-	269		267	0:05:55.790000	0:05:59.170000	33f8fd7913.mp3	33f8fd7913.webp	雲の隙間で		In the gaps between the clouds	False	False			Kikuri
-	270		271	0:06:00.634000	0:06:04.670000	d7e4bb3bef.mp3	d7e4bb3bef.webp	君と集まって 星座になれたら		If only I could become a constellation with you...	False	False			Kikuri
-	273		274	0:06:04.554000	0:06:08.800000	df3ab20225.mp3	df3ab20225.webp	夜広げて 描こう絵空事		As night falls, I dream that unlikely dream	False	False			Kikuri
-	278		276,279	0:06:09.470000	0:06:16.350000	09277f3372.mp3	09277f3372.webp	暗闇を照らすような 満月じゃなくても		Not quite a full moon But still lighting up the dark	False	False			Kikuri
-	282		280	0:06:16.350000	0:06:20.230000	f5c8cd36b8.mp3	f5c8cd36b8.webp	だから集まって 星座になりたい		I want to become a constellation with you	False	False			Kikuri
-	284		283	0:06:20.230000	0:06:24.530000	a345b33455.mp3	a345b33455.webp	色とりどりの光 放つような		The kind that puts out many-colored light	False	False			Kikuri
-	288		286	0:06:24.980000	0:06:28.900000	8c0f924b55.mp3	8c0f924b55.webp	つないだ線 解かないよ		I won't let these lines that link us come undone	False	False			Kikuri
-	290		289	0:06:28.900000	0:06:34.160000	64a88c1cbf.mp3	64a88c1cbf.webp	君がどんなに 眩しくても		No matter how brightly you shine	False	False			Kikuri
 	294,297	295	296	0:07:17.377000	0:07:23.800000	d7b056b5cb.mp3	d7b056b5cb.webp	ああー えっと...　ホントは続けて 最後の曲 いくところなんですけど	En realidad pensábamos pasar a la siguiente canción enseguida,	Well... I wasn't going to say anything before our last song,	False	False		nijika	Nijika
 	300	299	298	0:07:24.790000	0:07:26.887000	7e4198d194.mp3	7e4198d194.webp	これだけ言わせてください!	pero déjenme decirles esto.	but please let me say one thing!	False	False		nijika	Nijika
 	303	302	301	0:07:27.630000	0:07:30.670000	3c4ae539a0.mp3	3c4ae539a0.webp	今日は本当に ありがとー!	¡Muchísimas gracias!	Thanks so much for having us today!	False	False		nijika	Nijika
@@ -192,25 +161,17 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	788	789,791	787,790	0:15:26.820000	0:15:31.110000	60552c2f02.mp3	60552c2f02.webp	通販サイトもいいけど 実際に触ってみて選ぶのがいいよ	Comprar en línea está bien, pero elegirlos tocándolos también.	Ordering online is fine and all, but you really oughta handle a guitar before you buy it!	False	False		nijika	Nijika
 	793	794	792	0:15:31.030000	0:15:32.360000	f2e91fd688.mp3	f2e91fd688.webp	あっ はい	Sí...	R-Right...	False	False		hitori	Hitori
 	796,798	797,799	795	0:15:32.990000	0:15:37.290000	2045acfd7a.mp3	2045acfd7a.webp	楽器屋って店員さん怖そうだし　もし話しかけられたりしたら...	Los vendedores me dan miedo. ¿Qué hago si me dicen algo?	Music store owners are scary, and if one were to start talking to me...	False	False		hitori	Hitori
-	801		800	0:15:37.290000	0:15:40.250000	d04d26c759.mp3	d04d26c759.webp	お前 このギター選ぶとか なかなかのセンスじゃん?		You like that guitar? You got good taste, dearie.	False	False			Daydream Manager
-	805		804,807,808	0:15:40.750000	0:15:45	1c4b229191.mp3	1c4b229191.webp	洋楽とか聴く? ああ 聴かない? 殺すぞ!		You like Western music? Wait, you don't?! Time to die!	False	False			Daydream Manager
 	810,814	811	812,813	0:15:46.594000	0:15:50.300000	646611cb73.mp3	646611cb73.webp	イ... イヤホンつけて ノッてるふりしてれば　話しかけてこないはず	Si me pongo audífonos, seguro que no me hablan.	If I put on headphones like I'm listening to music, maybe no one will talk to me!	False	False		hitori	Hitori
-	816,818		815	0:15:53.090000	0:15:56.640000	e08584ea0c.mp3	e08584ea0c.webp	て... 店長　すごいヘドバン少女が 来店してきました!		M-Manager! A major headbanger has entered the store!	False	False			Employee
-	820		819	0:15:56.640000	0:15:58.560000	f365afab44.mp3	f365afab44.webp	コアなメタルファンに違いない!		Must be a hardcore metal fan!	False	False			Manager
-	822,825,826		823	0:15:58.606000	0:16:02.810000	29dd53c748.mp3	29dd53c748.webp	ハア ハア... お客様!　メタル志向のギターを お探しなら2階の...　あっ えっ?		Ma'am! The heavy metal guitars are on the second floor!	False	False			Employee
 	827	828	829	0:16:04.028000	0:16:06.610000	d4866f1949.mp3	d4866f1949.webp	あっ このストラップ かわいい!	¡Qué correa tan bonita!	What a cute strap!	False	False		kita	Kita
 	830	832	831	0:16:06.572000	0:16:09.400000	fd008636ee.mp3	fd008636ee.webp	この色とか喜多ちゃんの ギターに似合うんじゃない?	Este color va bien con el de tu guitarra.	This color would look great with your guitar, Kita-chan!	False	False		nijika	Nijika
 	833	835	834	0:16:10.743000	0:16:14.360000	c3c7538c2e.mp3	c3c7538c2e.webp	わあー ピックって こんなに種類あるんですね	No sabía que había tantos tipos de púas.	Look at all the kinds of picks!	False	False		kita	Kita
 	837,840	838	836,839	0:16:14.360000	0:16:17.490000	809a715b67.mp3	809a715b67.webp	イヤリングに加工しちゃおうかな　いいんじゃない?	Podría hacerme unos pendientes. -Suena bien.	Maybe I'll turn some into earrings! What a great idea!	False	False		kita	Kita,Nijika
-	845		844	0:16:18.160000	0:16:20.410000	2065287534.mp3	2065287534.webp	このあと ハンドメイドショップ行きません?		Can we stop by a hobby shop after this?	False	False			Kita
 	847,850	851	846	0:16:20.410000	0:16:24.424000	43588ea0a2.mp3	43588ea0a2.webp	あっ あと さっき調べたら お客様ー!　近くに いい感じのカフェも...	Hay una cafetería cerca...	Plus, I checked in advance and found out there's a nice café nearby!	False	False		kita	Kita
 	854	853	852	0:16:24.920000	0:16:26.210000	1d58c2db36.mp3	1d58c2db36.webp	楽器 見ろや	Miren los instrumentos.	Look at the damn instruments.	False	False		ryo	Ryo
 	856	857	855,858	0:16:29.210000	0:16:32.550000	6bd58f6859.mp3	6bd58f6859.webp	すみません このベースって 試奏できたりしますか?	Disculpe, ¿puedo probar este bajo?	Excuse me. Can I try out this bass?	False	False		ryo	Ryo
-	860		859	0:16:32.550000	0:16:34.058000	f142c33ae3.mp3	f142c33ae3.webp	大丈夫ですよ		Go ahead.	False	False			Employee
 	863	864	862	0:16:34.550000	0:16:36.850000	146a13b31b.mp3	146a13b31b.webp	先輩 また買うんですか?	¿Vas a comprarte otro?	You're buying another, Senpai?	False	False		kita	Kita
 	866,869	867	865,868	0:16:36.850000	0:16:40.356000	903d722bb7.mp3	903d722bb7.webp	別に　ちょっと気になるから 軽く弾きたいだけ	No, pero quiero probarlo.	No. I just like how it looks, so I'd like to play it a bit.	False	False		ryo	Ryo
 	871	872	870	0:16:41.060000	0:16:43.230000	3fdc727f8c.mp3	3fdc727f8c.webp	あっ スラップしていいですか?	¿Puedo tocar slap?	Ah, is slapping okay?	False	False		ryo	Ryo
-	874		873	0:16:43.230000	0:16:44.480000	c7d50790f6.mp3	c7d50790f6.webp	はい いいですよ		Yes, that's fine.	False	False			Employee
 	877	878	876,879	0:16:45.060000	0:16:47.230000	2f7ffe0175.mp3	2f7ffe0175.webp	あっ! こいつ まさか! これなんですけど	Este. -¿No será que...?	Like this. Is she going to do that?	False	False		ryo/nijika	Nijika,Ryo
 	883	885	884	0:16:53.786000	0:16:56.110000	d4f857cceb.mp3	d4f857cceb.webp	おおー まあ すごい...	Increíble.	Amazing.	False	False		ryo	Ryo
 	887	888	886	0:16:56.110000	0:16:59.080000	a733d9e819.mp3	a733d9e819.webp	て... 適当に弾いた... だけだけど	Me contuve un poco.	I didn't even go that hard.	False	False		ryo	Ryo
@@ -228,36 +189,20 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	928	929	927	0:17:34.780000	0:17:37.280000	076182c236.mp3	076182c236.webp	そうか さみしかったのか	Ya veo. ¿Te sientes excluida?	I see. Were you feeling lonely?	False	False		ryo	Ryo
 	931,934	932	930,933	0:17:37.200000	0:17:40.580000	46cb164ef6.mp3	46cb164ef6.webp	今度はドラム専門店 行こうね!　アキバにあるから	Otro día vayamos a una tienda de baterías. En Akiba hay.	Let's hit up a drum shop next time! There's one in Akiba.	False	False		nijika	Nijika
 	936	937	935	0:17:40.580000	0:17:42.200000	e59ebd1cc0.mp3	e59ebd1cc0.webp	これ かっこいい...	Está genial.	This one's cool...	False	False		hitori	Hitori
-	939,941		938	0:17:42.200000	0:17:44.420000	142cd60f13.mp3	142cd60f13.webp	YAMAHAさん いいですよねー　あひいー!		Yamaha's pretty great, huh?	False	False			Manager
-	943		942	0:17:44.410000	0:17:46.330000	5cb9abd4b0.mp3	5cb9abd4b0.webp	それ 特注仕様なんですよ		That one's custom-made, too.	False	False			Manager
-	945		946	0:17:46.380000	0:17:49.920000	400a971452.mp3	400a971452.webp	手ごろな価格ですけど すごくいいギターですよ		It's a really great guitar, especially for the price!	False	False			Manager
-	949		948	0:17:49.920000	0:17:52	4595c9138b.mp3	4595c9138b.webp	あ... よかったら 試奏なされますか?		Would you like to try it out?	False	False			Manager
 	951	953	952	0:17:51.969000	0:17:53.300000	922adb7b2c.mp3	922adb7b2c.webp	あっ いや えっと...	No, yo...	Um... Um...	False	False		hitori	Hitori
-	954,957		955	0:17:53.346000	0:17:58.180000	36007777e8.mp3	36007777e8.webp	初めてのギターなら　シールドとミニアンプも そろえたほうがいいですよ		If it's your first guitar, you might want shielding and a mini amp!	False	False			Manager
-	959		958	0:17:58.180000	0:17:59.260000	640a3e1c6e.mp3	640a3e1c6e.webp	あっ うっ...		I...	False	False			Hitori
 	962,965	963	961,964	0:18:01.260000	0:18:03.930000	8ed5307ef3.mp3	8ed5307ef3.webp	買います...　ぼっちちゃん もう持ってるでしょ	Me los llevo. -Ya tienes, Bocchi.	I'll take the lot. You already have that stuff, Bocchi-chan!	False	False		hitori/nijika	Hitori,Nijika
-	967		966	0:18:03.930000	0:18:07.100000	a3b8d573ff.mp3	a3b8d573ff.webp	あっ 経験者の方でしたか! 失礼しました		Oh, you already play? I'm so sorry!	False	False			Manager
 	970	971	969	0:18:07.100000	0:18:09.770000	c1056d5b7f.mp3	c1056d5b7f.webp	あっ いえいえ 大丈夫ですよ	No pasa nada.	Hey, that's okay.	False	False		kita	Kita
 	973	974	972	0:18:09.770000	0:18:12.610000	3c8d478cf7.mp3	3c8d478cf7.webp	この子のギターが 最近 壊れちゃって	Se le rompió la guitarra	Her guitar broke recently,	False	False		kita	Kita
 	976	977	975	0:18:12.610000	0:18:15.360000	216db7affd.mp3	216db7affd.webp	今日は代替機を探しに来たんです	y hoy venía a buscar una nueva.	so she's looking for a replacement.	False	False		kita	Kita
 	978	980	979	0:18:15.326000	0:18:17.161000	900673ba6e.mp3	900673ba6e.webp	ね? ひとりちゃん	¿Verdad, Hitori?	Right, Hitori-chan?	False	False		kita	Kita
-	983,985		982	0:18:18.950000	0:18:23.370000	ef4b776b9f.mp3	ef4b776b9f.webp	今どき 学生さんでも　何本も持ってる方 いらっしゃいますからね		Lots of people have multiples nowadays. Even students!	False	False			Manager
 	987	988	986	0:18:23.370000	0:18:25.450000	0cc5132e9b.mp3	0cc5132e9b.webp	そうなんですねー	¿Ah, sí?	Oh, really?	False	False		kita	Kita
 	990	991	989	0:18:25.450000	0:18:28.130000	2e819b3616.mp3	2e819b3616.webp	このギター 気に入った? ひとりちゃん	¿Te gusta esta, Hitori?	You like this guitar, Hitori-chan?	False	False		kita	Kita
-	994		993	0:18:28.960000	0:18:30.967000	1465656ebc.mp3	1465656ebc.webp	うん うん...		Right. Right.	False	False			Kita
 	996	997	995	0:18:31.420000	0:18:33.250000	12bed8d3cb.mp3	12bed8d3cb.webp	このギターにするそうです	Dice que quiere esa.	She'll take this guitar, please!	False	False		kita	Kita
 	999	1000	998	0:18:33.250000	0:18:34.840000	b9d63dba9f.mp3	b9d63dba9f.webp	ね? ひとりちゃん	¿Verdad, Hitori?	Right, Hitori-chan?	False	False		kita	Kita
-	1002		1001	0:18:34.800000	0:18:36.630000	3e489094e9.mp3	3e489094e9.webp	ありがとうございます!		Thank you so much!	False	False			Manager
 	1005	1006	1004	0:18:36.630000	0:18:39.141000	be626cb681.mp3	be626cb681.webp	ぼっち 腹話術の人形みたい	Bocchi parece el muñeco de un ventrílocuo.	Bocchi's like a ventriloquist dummy.	False	False		ryo	Ryo
 	1008	1009	1007	0:18:38.970000	0:18:41.477000	6dca40987f.mp3	6dca40987f.webp	最近 成長したと思ったけど	Pensaba que había mejorado,	I thought she'd matured a lot lately,	False	False		nijika	Nijika
 	1011	1012	1010	0:18:41.430000	0:18:43.260000	ec002e542f.mp3	ec002e542f.webp	こういうとこ まだまだだな	pero aún le falta mucho.	But I guess she still has some ways to go.	False	False		nijika	Nijika
-	1015		1013	0:18:43.810000	0:18:45.060000	55d8084e3d.mp3	55d8084e3d.webp	よかったー		I'm so glad.	False	False			Manager
-	1017		1016	0:18:45.560000	0:18:48.980000	65b060ed96.mp3	65b060ed96.webp	このギター 私が検品して メンテナンスもしてたんです		I've been doing checks and maintenance on this guitar myself.	False	False			Manager
-	1021		1020	0:18:49.940000	0:18:53.860000	1be0c245a0.mp3	1be0c245a0.webp	すごく作りが良くて 私も お気に入りで		It's really well made. I like it a lot.	False	False			Manager
-	1024		1023	0:18:53.860000	0:18:57.952000	bbedd8c7e8.mp3	bbedd8c7e8.webp	このギターも お客様に選ばれて うれしいと思いますよ		I'm sure the guitar's happy that it's going with you, too.	False	False			Manager
-	1028		1026	0:18:59.110000	0:19:01.372000	fdeea0f4ae.mp3	fdeea0f4ae.webp	お買い上げ ありがとうございました!		Thank you for coming!	False	False			Manager
 	1031	1032	1030	0:19:03.120000	0:19:04.450000	7aeb1a162a.mp3	7aeb1a162a.webp	ありがとうございました!	¡Muchas gracias!	Th-Thank you for having me!	False	False		hitori	Hitori
-	1034		1033,1036	0:19:04.450000	0:19:06.910000	709f812091.mp3	709f812091.webp	お客様? ギター忘れてますよ!		M-Ma'am?! You forgot your guitar!	False	False			Manager
 	1037	1039	1038	0:19:06.878000	0:19:09.080000	88200db733.mp3	88200db733.webp	どんだけ帰りたかったの	¿Tantas ganas tenía de irse?	How desperate was she to get out of here?	False	False		nijika	Nijika
 	1041,1044	1042	1040,1043	0:19:10.120000	0:19:14.340000	2c59f67933.mp3	2c59f67933.webp	はい　店長さん"また お店に 遊びに来てください"って	Toma. La vendedora dijo que espera que volvamos.	Here! The manager wants you to come by again some time.	False	False		nijika	Nijika
 	1045	1047	1046	0:19:14.385000	0:19:17.010000	df1f0c474c.mp3	df1f0c474c.webp	あっ はい すみません	Sí. Lo siento.	R-Right. Sorry...	False	False		hitori	Hitori

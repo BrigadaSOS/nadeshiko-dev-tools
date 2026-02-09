@@ -17,7 +17,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	51	50	49	0:00:38.300000	0:00:39.620000	ae36d38e65.mp3	ae36d38e65.webp	ミオリネさん	Miorine.	Ms. Miorine?	False	False		nika	
 	53	54	52	0:00:39.590000	0:00:41.860000	be62676238.mp3	be62676238.webp	あんで お姫さままでいんだよ	¿Qué haces acá, princesa?	What'd you bring the Princess here for?	False	False		chuchu	
 	56	57	55	0:00:41.800000	0:00:44.010000	b308bb0ece.mp3	b308bb0ece.webp	ここ 会社にするから	Estableceré la empresa aquí.	I'm setting up the company here.	False	False		miorine	
-	59		58	0:00:44.010000	0:00:44.657000	6a598e4c16.mp3	6a598e4c16.webp	え?		What?	False	False			
 	62	61	60	0:00:44.640000	0:00:49.140000	00b2d9f95f.mp3	00b2d9f95f.webp	株式会社GUND-ARMは 私と皆さんで経営します	Nosotros armaremos la S. p. A GUND-ARM.	GUND-ARM, Inc. will be run by me and everyone here.	False	False		miorine	
 	64	65	63	0:00:49.060000	0:00:50.580000	827e07d262.mp3	827e07d262.webp	以上 よろしく	Eso es todo.	That's it. You're welcome.	False	False		miorine	
 	67	69	66,68	0:00:50.570000	0:00:52.498000	be2f9fe3b9.mp3	be2f9fe3b9.webp	は? はあー!?	¿Perdón?	Huh? Say what?!	False	False		chuchu	
@@ -31,7 +30,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	101	100	99	0:02:47.980000	0:02:51.492000	5e30db3648.mp3	5e30db3648.webp	あんのクソスペーシアンがー!	¡Maldita sea esa Spacian!	That Spacian turd!	False	False		chuchu	
 	104	103	102	0:02:51.480000	0:02:53.452000	5fdc40dc11.mp3	5fdc40dc11.webp	チュチュ 授業中	Estamos en clase, Chuchu.	Chuchu, class is in session.	False	False		nika	
 	107,109	106	105,108	0:02:53.440000	0:02:56.850000	c9d3b7eccc.mp3	c9d3b7eccc.webp	ニカ姉は いいんかよ!　あいつの言いなりで!	¿A ti no te molesta estar a su servicio?	Are you okay with this, Nika?! Why do we need to obey her?!	False	False		chuchu	
-	110		111	0:02:56.705000	0:02:57.720000	57e194bd34.mp3	57e194bd34.webp	んん?		Huh?	False	False			
 	114	113	112	0:02:57.720000	0:03:00.310000	178efab30c.mp3	178efab30c.webp	まあ エアリアルにも触れるし	Podré manipular el Aerial.	Well, if it means I get to work on Aerial...	False	False		nika	
 	116	117	115	0:03:00.310000	0:03:02.220000	7a2381ca9c.mp3	7a2381ca9c.webp	それに会社がうまくいけば⸺	Y si la empresa funciona,	And if the company is successful,	False	False		nika	
 	119	120	118	0:03:02.190000	0:03:05.780000	033db86c58.mp3	033db86c58.webp	アーシアンでも活躍できるって 証明になるでしょ?	demostraremos que los Earthians somos capaces de todo.	it's a chance to prove that Earthians can do as well as Spacians.	False	False		nika	
@@ -87,7 +85,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	305,307	304	303,306	0:05:55.160000	0:06:00.790000	1a3ba9134a.mp3	1a3ba9134a.webp	みんなに教えてあげて　ガンダムは みんなのそばにいて いいものだって	Muéstrenle al mundo que los Gundams pueden estar con nosotros.	Be sure to tell everyone. It's safe to have Gundams by their side.	False	False		prospera	
 	309	310	308	0:06:00.790000	0:06:02	a079ff9f7e.mp3	a079ff9f7e.webp	うん!	¡Sí!	Right!	False	False		suletta	
 	313,314	311	312	0:06:03.400000	0:06:07.271000	722708823f.mp3	722708823f.webp	あんたさ⸺　あの母親に もっと 聞くことあったんじゃないの?	¿No tenías más preguntas para tu madre?	Anyway... Wasn't there something more important to ask your mother?	False	False		miorine	
-	316		315	0:06:07.260000	0:06:08.355000	089234c0a0.mp3	089234c0a0.webp	え?		Huh?	False	False			
 	319	318	317	0:06:08.250000	0:06:12.410000	12ac90c68f.mp3	12ac90c68f.webp	どうしてエアリアルに乗っても あんたは平気なのかとか	Como por qué puedes montar en el Aerial.	Like why you're able to pilot Aerial without suffering any harm.	False	False		miorine	
 	322	321,324	320,323	0:06:12.410000	0:06:15.960000	c2b7394819.mp3	c2b7394819.webp	ガンダムだって分かったんだし 怖くないの?	Ahora sabes que es un Gundam. ¿No te asusta?	Now you know she's a Gundam... aren't you scared?	False	False		miorine	
 	326	327	325	0:06:15.930000	0:06:19.408000	c8d7162ab0.mp3	c8d7162ab0.webp	全然 エアリアルは ずっと一緒の家族ですから	No, el Aerial es mi familia. Siempre estuvo ahí.	Not at all! Aerial and I have always been family!	False	False		suletta	
@@ -113,9 +110,7 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	399	398	396,397	0:07:08.430000	0:07:10.740000	34e668cd9b.mp3	34e668cd9b.webp	じゃあね 水星ちゃん	Adiós, mercuriana.	...enter a docking course. Bye now, Mercurian Miss.	False	False		shaddiq	
 	400,403,408,411,414	404,407	401,402,405,406,409,410,412,413	0:07:11.126000	0:07:20.552000	3fe03ff157.mp3	3fe03ff157.webp	ほほう...　あ... 私 分かっちゃいました　シャディクさん　ミオリネさんのことが...　す... すすすー 好...	Ya lo entiendo. Miorine, Shaddiq está ena... ena...	Uh... I... Please be seated and fasten your... I-I think I get it. It's you, Ms. Miorine! We will now enter... ...a docking course. Shaddiq is... Please fasten your seatbelts. in l-l-l-love with...	False	False		suletta	
 	416	417	415	0:07:20.540000	0:07:22.140000	82397b3ce0.mp3	82397b3ce0.webp	そんなわけないでしょ	Claro que no.	Don't kid yourself.	False	False		miorine	
-	419		418	0:07:21.990000	0:07:23.560000	14fe8c9c7c.mp3	14fe8c9c7c.webp	えー?		What?	False	False			
 	421	420	422,423	0:07:23.440000	0:07:27.140000	3bfc70b70b.mp3	3bfc70b70b.webp	あいつ グラスレーの施設で育った 孤児なの	Es un huérfano criado en una institución de Grassley.	It's just that he... was raised in an orphanage run by the Grassley family.	False	False		miorine	
-	425		424	0:07:27.040000	0:07:28.010000	c4d5c24c35.mp3	c4d5c24c35.webp	あ...		What?	False	False			
 	428	427	426	0:07:28.350000	0:07:30.920000	5b5094bf61.mp3	5b5094bf61.webp	やれることは なんでもやるやつよ	Hará lo que sea necesario.	That guy will do whatever it takes.	False	False		miorine	
 	430	431	429	0:07:30.920000	0:07:32.940000	bb7fa2fbe0.mp3	bb7fa2fbe0.webp	あんたも気をつけなさい	Ten cuidado.	Don't let your guard down.	False	False		miorine	
 	434	433	432	0:07:32.940000	0:07:34.250000	6712ec1cb1.mp3	6712ec1cb1.webp	はい	Bien.	Right...	False	False		suletta	
@@ -152,7 +147,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	543	542	541	0:09:04.740000	0:09:06.325000	fe37d0c127.mp3	fe37d0c127.webp	そうねえ	Pues...	Right...	False	False		miorine	
 	546	545	544	0:09:06.660000	0:09:09.850000	aee251e157.mp3	aee251e157.webp	普通に考えたら 兵器として売るのが妥当かな	Lo más apropiado sería venderlos como armas.	Normally, selling them as weapons would seem the most reasonable plan.	False	False		miorine	
 	549	550	548	0:09:10.400000	0:09:13.140000	22f29b54bd.mp3	22f29b54bd.webp	まあ それが自然だよな	Es lo lógico.	Yeah, that would be the natural thing to do.	False	False		nuno	
-	552		551	0:09:13.870000	0:09:14.708000	3e3d1a8e4c.mp3	3e3d1a8e4c.webp	ん?		Huh?	False	False			
 	555	554	553	0:09:16.290000	0:09:19.030000	d88a1fcce2.mp3	d88a1fcce2.webp	なんだよ 儲かるだろ	¿Qué ocurre? Nos daría dinero.	What? It would make money, wouldn't it?	False	False		nuno	
 	558	556	557	0:09:19.940000	0:09:22.230000	610302b82c.mp3	610302b82c.webp	君は戦争孤児じゃないのか?	¿Tú no eres huérfano de guerra?	You're a war orphan, aren't you?	False	False		aliya	
 	561	560	559	0:09:22.230000	0:09:25.040000	46e3cf9e47.mp3	46e3cf9e47.webp	そんなやつ地球じゃごまんといるよ	La Tierra está llena de ellos.	There are tons of kids like me on Earth.	False	False		nuno	
@@ -169,7 +163,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	596	595	594	0:09:49.640000	0:09:51.244000	88f0e4e501.mp3	88f0e4e501.webp	金は好きだけどよ	Me gusta el dinero,	I love money, for sure.	False	False		ojelo	
 	599	598	597	0:09:51.580000	0:09:54.940000	17cda89c9d.mp3	17cda89c9d.webp	人殺しの道具で稼ぐ気なんて 起きねえよ	pero no quiero hacerme rico con armas que matan.	Even so, I don't feel like profiting off killing machines.	False	False		ojelo	
 	600	601	602	0:09:55.082000	0:09:58.360000	91d1952ff4.mp3	91d1952ff4.webp	ああ なんだかんだ お坊ちゃんだわ お前	Parece que solo eres un niño malcriado.	At the end of the day, you're just another spoiled kid.	False	False		nuno	
-	604		603	0:09:58.360000	0:09:59.480000	4beca2e5b2.mp3	4beca2e5b2.webp	ああ?		Oh, yeah?!	False	False			
 	607,609	606	605,608	0:09:59.480000	0:10:02.600000	bea7fbe873.mp3	bea7fbe873.webp	み... 皆さん!　ケンカ ダメです!	No peleen, por favor.	E-Everyone! We can't fight like this!	False	False		suletta	
 	611	612	610	0:10:02.570000	0:10:04.299000	e564c96d6c.mp3	e564c96d6c.webp	そうだよ 落ち着いて	Exacto. Cálmense.	She's right. Calm down.	False	False		nika	
 	614	615	613,616	0:10:04.290000	0:10:06.200000	fc20084546.mp3	fc20084546.webp	ニカ姉は? え?	¿Y tú, Nika?	What about you, Nika? Huh?	False	False		chuchu	
@@ -177,7 +170,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	624	623	622	0:10:11.840000	0:10:13.460000	224555c6ee.mp3	224555c6ee.webp	私は...	Yo...	I...	False	False		nika	
 	627	626	625	0:10:16.350000	0:10:17.646000	81333850ab.mp3	81333850ab.webp	決めるのは...	Decide...	The one who decides...	False	False		till	
 	630	629	628	0:10:18.770000	0:10:20.732000	94f8b8cc78.mp3	94f8b8cc78.webp	決めるのは社長だと思う	Decide la presidenta.	should be the president.	False	False		till	
-	632		631	0:10:22.040000	0:10:22.859000	c487df83e1.mp3	c487df83e1.webp	え?		What?	False	False			
 	635	634	633	0:10:23.230000	0:10:24.640000	909ac6755f.mp3	909ac6755f.webp	ミオリネさん	Miorine.	Ms. Miorine...	False	False		suletta	
 	637	638	636	0:10:24.590000	0:10:26.900000	76c5fd31c0.mp3	76c5fd31c0.webp	別に兵器でいいでしょ	¿Y qué si son armas?	Who cares if we sell weapons?	False	False		miorine	
 	640	641	639	0:10:26.840000	0:10:29.160000	2e16ad4e33.mp3	2e16ad4e33.webp	文句あるなら 出てってもらうだけだし	Si tienen quejas, pueden irse.	If you don't like it, you're free to go.	False	False		miorine	
@@ -209,7 +201,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	735	734	733	0:12:01.120000	0:12:02.320000	3921fb38ef.mp3	3921fb38ef.webp	シャワーもある	Tenemos duchas.	You can shower there.	False	False		shaddiq	
 	738	736	737	0:12:02.720000	0:12:06.463000	ccf3d7bbf6.mp3	ccf3d7bbf6.webp	俺との決闘をさけてたヘタレに 媚びるつもりはない	No le pediré ayuda a un cobarde que me negaba un duelo.	I won't lick the boots of a wimp who was afraid to duel me.	False	False		guel	
 	741	740	739	0:12:07.120000	0:12:11.080000	5b2f2f5d4b.mp3	5b2f2f5d4b.webp	さけてたのは お前になら 任せられると思ったからだよ	Lo esquivaba porque pensaba que podías encargarte tú.	I only avoided it because I thought I could leave it to you.	False	False		shaddiq	
-	743		742	0:12:11.080000	0:12:12.540000	baae0f29cb.mp3	baae0f29cb.webp	ああ?		What?	False	False			
 	746	745	744	0:12:12.540000	0:12:14.790000	402cb6ed29.mp3	402cb6ed29.webp	気が変わったら連絡してくれ	Avísame si cambias de idea.	Call me if you change your mind.	False	False		shaddiq	
 	749	748	747,750	0:12:15.340000	0:12:18.475000	d71b8b3d3b.mp3	d71b8b3d3b.webp	俺は お前のこと 結構 気に入ってるんだ	Me agradas bastante.	I happen to be... quite fond of you.	False	False		shaddiq	
 	753	752	751	0:12:22.510000	0:12:25.120000	e00e79bfe9.mp3	e00e79bfe9.webp	憐れまれてたまるかよ!	¡No quiero su compasión!	I don't need anyone's pity!	False	False		guel	
@@ -276,7 +267,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	964,966	963	962,965	0:16:07.050000	0:16:11.930000	6dcb31a2e8.mp3	6dcb31a2e8.webp	義父さんたちよりも いい未来を描けると思ってるよ　ミオリネ	podríamos crear un futuro mejor que nuestros padres, Miorine.	I believe we can bring about a better future than our fathers. Miorine.	False	False		shaddiq	
 	968	967	969	0:16:14.080000	0:16:16.940000	98b54a1409.mp3	98b54a1409.webp	そこ 編集点 丸分かりじゃん	Los cortes son demasiado obvios.	There. You can clearly see where it's been edited.	False	False		chuchu	
 	973	972	971	0:16:17.660000	0:16:19.820000	3c8d478cf7.mp3	3c8d478cf7.webp	先輩 ここ間違ってます	Esto está mal.	Mr. Martin, there are mistakes here.	False	False		lilique	
-	974		975	0:16:19.799000	0:16:20.925000	e3de57b69b.mp3	e3de57b69b.webp	ほんぎー!		Aw, man...	False	False			
 	977	978	976,979	0:16:20.910000	0:16:24.780000	dadef193d5.mp3	dadef193d5.webp	2人共 いい加減 仲直りしなよ	Hagan las paces de una vez.	Come on, you two! Hurry up and bury the hatchet!	False	False		nika	
 	981	982	980,983	0:16:24.780000	0:16:27.766000	ed74118765.mp3	ed74118765.webp	姫さんは? もう2週間たつぜ	¿Y la princesa? Ya pasaron dos semanas.	And where's the Princess, huh? The two weeks are up.	False	False		ojelo	
 	985	986	984	0:16:27.750000	0:16:30.769000	d4b0da5a2a.mp3	d4b0da5a2a.webp	めんどくさくなって 地球に飛んだんじゃないの?	De seguro se hartó y estará en la Tierra.	I'll bet she got fed up and ran away to Earth.	False	False		nuno	
@@ -347,7 +337,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	1228	1226	1227	0:20:59.640000	0:21:03.220000	5a0cda17aa.mp3	5a0cda17aa.webp	やりたいことリスト... 部活みたいで	La lista de cosas por hacer. Es como ser de un equipo.	It's like joining a club, just like my wish list.	False	False		suletta	
 	1231	1230	1229	0:21:04.490000	0:21:07.520000	a4efff166a.mp3	a4efff166a.webp	バーカ 遊びじゃないって	Esto no es un juego, tonta.	Idiot. This isn't for amusement.	False	False		miorine	
 	1235	1233	1234	0:21:11.720000	0:21:13.120000	86a93e725f.mp3	86a93e725f.webp	止めて!	¡Para!	Stop here!	False	False		miorine	
-	1236		1237	0:21:12.842000	0:21:14.240000	ae2a0d7ac6.mp3	ae2a0d7ac6.webp	え... ええ!?		Huh?	False	False			
 	1240	1239	1238	0:21:16.590000	0:21:18.200000	2916ab59cd.mp3	2916ab59cd.webp	ミオリネさん!?	¿Miorine?	Ms. Miorine?	False	False		suletta	
 	1241	1243	1242	0:21:18.264000	0:21:21.480000	2d0fe23c79.mp3	2d0fe23c79.webp	は... 何よ これ...	¿Qué es esto?	What the hell is this?!	False	False		miorine	
 	1245	1244	1246	0:21:22.320000	0:21:24.680000	80bbba9128.mp3	80bbba9128.webp	指示どおり規則を追加した	Añadí la regla que pediste.	As directed, I've added new regulations.	False	False		sabina	

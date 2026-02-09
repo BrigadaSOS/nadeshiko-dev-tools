@@ -28,7 +28,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	90,93	91	89,92	0:01:16.550000	0:01:21.118000	93a7b05ada.mp3	93a7b05ada.webp	おばあちゃんは まだ実在してるからいいよ　いや よくないけど	Al menos su abuela existe. Pero sigue estando mal.	I mean, at least her grandma really exists. That's a heckuva low bar.	False	False		nijika	Nijika
 	96	97	95	0:01:21.060000	0:01:25.331000	42d4990fd6.mp3	42d4990fd6.webp	この前なんて クラスの子に 放課後 遊ぼうって誘われたとき...	Cuando unas de la clase la invitaron a salir...	Once, when some classmates invited her to hang out with them...	False	False		nijika	Nijika
 	100,103	99	98	0:01:25.280000	0:01:28.700000	d362e86930.mp3	d362e86930.webp	ごめん　愛犬のぺスが 手術することになって	Lo siento, tienen que operar a mi perrita Peth.	Sorry, my dog Pe'z has to have surgery.	False	False		ryo	Ryo
-	105		104	0:01:28.600000	0:01:29.627000	4b88ee3b71.mp3	4b88ee3b71.webp	えっ!		What?!	False	False			Mob F/K
 	107	108	106	0:01:29.560000	0:01:32.680000	053f746567.mp3	053f746567.webp	って! 犬なんて 一度も飼ったことないのに	Y ella nunca ha tenido ningún perro.	So she said, but she's never even had a dog.	False	False		nijika	Nijika
 	110	111	109	0:01:32.680000	0:01:34.048000	57e194bd34.mp3	57e194bd34.webp	飼ってないんですか?	¿Ah, no?	She hasn't?	False	False		kita	Kita
 	113	114	112	0:01:33.980000	0:01:35.299000	4a76a5689a.mp3	4a76a5689a.webp	そうだよ	No.	She hasn't!	False	False		nijika	Nijika
@@ -131,7 +130,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	519	518	517	0:08:45.890000	0:08:49.420000	82f3ef3c52.mp3	82f3ef3c52.webp	その格好で 真面目な顔するのやめてー	No pongas cara seria con esa pinta.	C'mon, take that stuff off before you try to look serious!	False	False		nijika	Nijika
 	521	522	520	0:08:50.070000	0:08:52.160000	09b46afb4c.mp3	09b46afb4c.webp	えっ ホントに遊びに来てる?	¿De verdad vinieron?	What? They really came?	False	False		naoki (padre)	Naoki
 	524	525	523	0:08:52.160000	0:08:53.528000	f51dd06dbb.mp3	f51dd06dbb.webp	ホントのホントに?	¿De veras?	Really? For real?	False	False		michiyo	Michiyo
-	526		527	0:08:53.612000	0:08:54.740000	5aaf155d03.mp3	5aaf155d03.webp	ワン うん		Yeah!	False	False			Futari
 	530	528	529	0:08:54.300000	0:08:56.830000	9af21e809e.mp3	9af21e809e.webp	お姉ちゃんの妄想じゃなくて?	Sí. -¿No es la imaginación de tu hermana?	These friends aren't just the imaginary kind?	False	False		futari/michiyo	Michiyo
 	531	532	533	0:08:56.907000	0:08:58.700000	e31c157614.mp3	e31c157614.webp	ワンワン うんうん	No.	Yeah, yeah!	False	False		futari	Futari
 	536	537	538	0:09:01.703000	0:09:03.560000	f816a5e307.mp3	f816a5e307.webp	フフッ 出来ました!	Terminé.	All done!	False	False		kita	Kita
@@ -150,15 +148,10 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	605	606	604	0:09:43.920000	0:09:46.748000	5830bba7bb.mp3	5830bba7bb.webp	存在価値を奪われる 忌まわしき祭典!	y te despojan de todo tu valor.	and even their right to exist is stripped away.	False	False		hitori	Hitori
 	608	609	607	0:09:46.690000	0:09:49.060000	f958ee8a90.mp3	f958ee8a90.webp	授業内だけでなく放課後も	Y no solo durante las clases.	Not only during school hours, but afterward too,	False	False		hitori	Hitori
 	611	612	610	0:09:49.060000	0:09:53.296000	e564c96d6c.mp3	e564c96d6c.webp	横断幕制作や応援練習に 駆り出される強制労働!	Te fuerzan a hacer pancartas y demás después de clases.	they are forced to perform slave labor, creating banners and practicing cheers!	False	False		hitori	Hitori
-	614	615		0:09:53.797000	0:09:56.383000	fc20084546.mp3	fc20084546.webp	ひとりは みんなのために!	Uno para todos.		False	False		compañeros clase	
-	616	617		0:09:56.466000	0:09:58.468000	674eb6042d.mp3	674eb6042d.webp	みんなは ひとりのために!	Todos para uno.		False	False		compañeros clase	
-	623	622		0:09:59.160000	0:10:01.179000	e8792cadc8.mp3	e8792cadc8.webp	ひとりは みんなのために!	Uno para todos.		False	False		compañeros clase	
 	625,627	626	624	0:10:01.170000	0:10:06.643000	99b9449b04.mp3	99b9449b04.webp	約1か月　体育祭のためだけに生きることを 強いられる拷問行為!	La tortura de que te obliguen a vivir por el festival durante un mes.	An entire month's torturous existence living for naught but the sports festival!	False	False		hitori	Hitori
-	633	634		0:10:06.726000	0:10:08.687000	503da05a26.mp3	503da05a26.webp	みんなは ひとりのために!	Todos para uno.		False	False		compañeros clase	
 	641	640	639	0:10:10.360000	0:10:12.899000	08b50326dd.mp3	08b50326dd.webp	後藤さん 溶けちゃいましたね	Goto se derrite.	Looks like Gotoh-san melted.	False	False		kita	Kita
 	644	643	642	0:10:12.880000	0:10:15.193000	7fd2c4dfb1.mp3	7fd2c4dfb1.webp	今日 暑いからねー	Es que hace calor.	It sure is hot today!	False	False		nijika	Nijika
 	651,653	650,652	649	0:10:25.230000	0:10:31.001000	4ce7bab0b6.mp3	4ce7bab0b6.webp	体育祭...　このイベントの真に怖いところは!	El festival deportivo. Y lo más aterrador del evento es...	But the true terror lurking behind every sports festival...	False	False		hitori	Hitori
-	654,656	655		0:10:31.084000	0:10:35.213000	b9ee8ff1d2.mp3	b9ee8ff1d2.webp	NO 協調性 NO ライフ!　NO 協調性 NO ライフ...	No cooperation, no life.		False	False		compañeros clase	
 	659	660	658	0:10:37.310000	0:10:41.344000	da21e050da.mp3	da21e050da.webp	今日の ぼっちタイム CMまたぐぐらい長いね	Hoy sus delirios duraron lo mismo que una pausa publicitaria.	Wow, this week's Bocchi Time lasted through the whole commercial break!	False	False		nijika	Nijika
 	662	663	661	0:10:41.280000	0:10:43.472000	86559290b5.mp3	86559290b5.webp	私 なんかしちゃいました?	¿Hice algo malo?	Did I do something wrong?	False	False		kita	Kita
 	665	666	664	0:10:43.470000	0:10:46.349000	04671e1e7d.mp3	04671e1e7d.webp	まったく 罪な女だね 喜多ちゃんは	Eres una criminal, Kita.	You've really put your foot in it now, Kita-chan!	False	False		nijika	Nijika
@@ -349,7 +342,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	1378,1380	1377	1376,1379	0:21:23.690000	0:21:27.240000	778ac80dd2.mp3	778ac80dd2.webp	そうだね 念には念を　ですね	Sí. Mejor ser precavidas. -Sí.	Yeah, sure! Better safe than sorry, right? Totally!	False	False		nijika	Kita,Nijika
 	1383	1381	1382	0:21:27.180000	0:21:29.117000	cc0e4ebbeb.mp3	cc0e4ebbeb.webp	あたし 道具持ってくるよ	Traeré los materiales.	I'll bring in what we need to make them.	False	False		nijika	Nijika
 	1384	1386	1385	0:21:29.200000	0:21:31.035000	d2aaa3f9ff.mp3	d2aaa3f9ff.webp	は... はい!	Bien.	O-Okay!	False	False		hitori	Hitori
-	1389	1388		0:21:31.100000	0:21:32.880000	cdc45227b5.mp3	cdc45227b5.webp	てるてる坊主作るの小学生ぶり...	Hace mucho que no hago uno.		False	False		kita	
 	1391,1394	1392,1395	1390	0:21:32.840000	0:21:38	0eed182bb2.mp3	0eed182bb2.webp	私がネガティブだから　良くない方向に考えちゃうけど	Yo soy pesimista, por eso siempre pienso lo peor.	I'm used to being negative, so I always assume the worst, but...	False	False		hitori	Hitori
 	1399	1398	1397	0:21:38.810000	0:21:40.400000	e1bf859fcb.mp3	e1bf859fcb.webp	ぼっちちゃん 大丈夫?	¿Estás bien, Bocchi?	You okay, Bocchi-chan?	False	False		nijika	Nijika
 	1404	1405	1401	0:21:41.020000	0:21:43.089000	ef1bd33e57.mp3	ef1bd33e57.webp	ははは... はい!	¡Sí!	Y-Y-Y-Y-Yes!	False	False		hitori	Hitori

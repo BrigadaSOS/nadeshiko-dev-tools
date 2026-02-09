@@ -1,10 +1,7 @@
 ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREENSHOT	CONTENT	CONTENT_TRANSLATION_SPANISH	CONTENT_TRANSLATION_ENGLISH	CONTENT_SPANISH_MT	CONTENT_ENGLISH_MT	ACTOR_JA	ACTOR_ES	ACTOR_EN
 	2	0	1	0:00:02.939000	0:00:04.670000	d8ba37fd6c.mp3	d8ba37fd6c.webp	はい 右に!	Venga, derecha.	Okay, go right.	False	False			
-	4		3	0:00:04.500000	0:00:08.290000	2157bc38d5.mp3	2157bc38d5.webp	もふもふもふ もーふもふー		Fluffy, fluffy, fluffy, fluffy, fluffy...	False	False			
 	7	6	5	0:00:08.290000	0:00:09.890000	a71d98cecd.mp3	a71d98cecd.webp	次は左ー	Ahora izquierda.	Now, left.	False	False			
-	9		8	0:00:09.880000	0:00:13.880000	e46dbc0fc4.mp3	e46dbc0fc4.webp	ふもふもふも ふもふもー		Yffulf, yffulf, yffulf, yffulf, yffulf...	False	False			
 	12	11	10	0:00:13.880000	0:00:16.920000	dbd4d0d42a.mp3	dbd4d0d42a.webp	次は右ー 行くよー はい!	Ahora otra vez derecha. ¿Lista? Venga.	Okay, now back to the right. Ready? Go!	False	False			
-	14		13	0:00:16.850000	0:00:21.040000	dd2db7641d.mp3	dd2db7641d.webp	もふもふー もふもふーもーふもふー		Fluffy, fluffy, fluffy, fluffy, fluffy...	False	False			
 	17	16	15	0:00:20.850000	0:00:22.770000	a35148fc43.mp3	a35148fc43.webp	次は左ー!	Ahora izquierda.	Then, left.	False	False			
 	20	19	18	0:00:24.730000	0:00:30.530000	8bac2bb0af.mp3	8bac2bb0af.webp	マフラーはあったかいのですが首がチクチクしますな	Las bufandas son cálidas, pero hacen que me pique el cuello.	Scarfs are warm, but they feel so prickly on my neck.	False	False			
 	23	22,25	21,24	0:00:34.610000	0:00:40.410000	2a5f000027.mp3	2a5f000027.webp	今度からもふもふ運動のときマフラーは外しましょう	La próxima vez que hagamos esto, lo haremos sin bufandas.	Next time we do these fluffy exercises, let's not do them with the scarves.	False	False			
@@ -57,7 +54,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	201	200	199	0:05:32.660000	0:05:34.370000	dd7ee03fc1.mp3	dd7ee03fc1.webp	そうなんだ	Vaya.	I see.	False	False			
 	204	202	203	0:05:34.310000	0:05:36.120000	71ad851494.mp3	71ad851494.webp	そうなんですよ	Así es.	Ayup.	False	False			
 	207	206	205	0:05:40.710000	0:05:44.670000	5814a3ccaf.mp3	5814a3ccaf.webp	かたくするか やわらかくするかどっちがいいの?	¿Prefieres que los tenga más duros o más blanditos?	Would you prefer me to make them harder or softer?	False	False			
-	209		208	0:05:44.670000	0:05:45.590000	84a9c41bc1.mp3	84a9c41bc1.webp	えっ?		What?	False	False			
 	212,213	211	210	0:05:45.590000	0:05:49.800000	a434df4b3b.mp3	a434df4b3b.webp	太もも　しまむらはどっちがいいかなって	Mis muslos. ¿Cómo los prefieres?	My thighs. Which would you prefer?	False	False			
 	216	215	214	0:05:50.970000	0:05:52.760000	45eb863fe4.mp3	45eb863fe4.webp	うーん そのままがいいんじゃない?	Como los tienes ahora.	I think they're fine just the way they are.	False	False			
 	219	218	217	0:05:52.760000	0:05:55.020000	90662189a6.mp3	90662189a6.webp	太らないようにする!	¡Intentaré no engordar!	I'll do my best not to gain weight!	False	False			
@@ -125,7 +121,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	417,418	416	415	0:11:08.160000	0:11:13.290000	161f54dbdc.mp3	161f54dbdc.webp	ここは ハワイじゃないし　冬休みも1カ月前に終わったんですけど	No estamos en Hawái y las vacaciones terminaron hace un mes.	This isn't Hawaii and winter break ended a month ago.	False	False			
 	421,422	420	419	0:11:13.290000	0:11:17.170000	4ade1e4549.mp3	4ade1e4549.webp	ちなみに用はない　じゃあなー	No necesitaba nada, así que adiós.	I didn't actually need anything. Bye!	False	False			
 	425	424	423	0:11:17.170000	0:11:18.670000	c4d5c24c35.mp3	c4d5c24c35.webp	投げとるかね?	¿Lo está lanzando?	Is she throwing that thing around?	False	False			
-	427		426	0:11:18.670000	0:11:19.920000	c93d4ef371.mp3	c93d4ef371.webp	はっ?		Huh?	False	False			
 	430,431	429	428	0:11:19.920000	0:11:23.740000	87f8766296.mp3	87f8766296.webp	はっ? って　これよ これ ブーメラン	¿A qué te crees que me refiero? Al bumerán.	What else would I be talking about? You know, the boomerang.	False	False			
 	434,435	433	432	0:11:23.430000	0:11:29.560000	dc08e69b09.mp3	dc08e69b09.webp	あっ うん　投げてるんじゃない? 妹が	Sí, creo que mi hermana pequeña lo está lanzando.	Oh... Yeah, I'm sure, uh, my little sister is throwing it around.	False	False			
 	438	437	436	0:11:29.560000	0:11:32.440000	d0e63aa62f.mp3	d0e63aa62f.webp	上達したら勝負しようって言っておいて	Dile que le reto cuando mejore.	Tell her I challenge her to a duel once she gets better.	False	False			
@@ -135,7 +130,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	451	450	449	0:11:46.160000	0:11:48.080000	3dd2079a1c.mp3	3dd2079a1c.webp	こ... こんち	Hola.	H-Hey.	False	False			
 	454,455	453	452	0:11:48.080000	0:11:50.620000	61ccbd8def.mp3	61ccbd8def.webp	えっと あの...　うん?	Esto...	Um, uh...	False	False			
 	458	457	456	0:11:50.620000	0:11:52.500000	b565c80bd9.mp3	b565c80bd9.webp	今日 暇?	¿Hoy estás libre?	Are you free today?	False	False			
-	460		459	0:11:52.500000	0:11:54.130000	e1fde1f756.mp3	e1fde1f756.webp	うん?		Hm?	False	False			
 	463	462	461	0:11:54.130000	0:11:57.250000	f5e7f25854.mp3	f5e7f25854.webp	遠出的な... 違う	Vayamos a un lugar lejano... No, espera.	Let's go somewhere far away... Wait, no.	False	False			
 	466	465,468	464,467	0:11:57.250000	0:12:01.930000	2dccf8a83c.mp3	2dccf8a83c.webp	寄り道的なものをしないかな?というか	Me preguntaba si querías salir después del insti... o algo.	I was wondering if you wanted to stop by someplace after school... ...or something.	False	False			
 	471	470	469	0:12:01.930000	0:12:03.930000	446653b756.mp3	446653b756.webp	どこか行こうってこと?	¿Tienes algún sitio en mente?	Did you want to go somewhere?	False	False			
@@ -180,7 +174,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	605,606	601	604	0:15:05	0:15:09.450000	1c77480665.mp3	1c77480665.webp	えっと ここでどう?　テイクアウトして ベンチで	¿Qué te parece aquí? Nos los podemos llevar y comer en un banco.	What about here? We can get takeout and eat on the bench.	False	False			
 	609	608	607	0:15:11.320000	0:15:12.490000	00c49a8445.mp3	00c49a8445.webp	安達?	¿Adachi?	Adachi?	False	False			
 	612	611	610	0:15:12.490000	0:15:15.120000	7384375961.mp3	7384375961.webp	あっ うん いいと思う	Sí, me parece bien.	Yeah, uh, that's great.	False	False			
-	614		613	0:15:15.120000	0:15:16.200000	fc20084546.mp3	fc20084546.webp	えっ?		Huh?	False	False			
 	621	620	619	0:15:30.340000	0:15:33.430000	6ad764569e.mp3	6ad764569e.webp	ちょっと持ち上げてみていい?	¿Te importa si levanto algo?	Do you mind if I try lifting?	False	False			
 	624	623	622	0:15:33.430000	0:15:35.220000	224555c6ee.mp3	224555c6ee.webp	何を?	¿Levantar qué?	Lifting what?	False	False			
 	627	626	625	0:15:35.220000	0:15:36.600000	81333850ab.mp3	81333850ab.webp	日野を	A ti.	You.	False	False			
@@ -211,7 +204,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	719	718	717	0:17:54.780000	0:17:56.110000	f3fae1a29a.mp3	f3fae1a29a.webp	ない ですけど	No.	I do not.	False	False			
 	722	721	720	0:17:56.110000	0:18:01.030000	801653b968.mp3	801653b968.webp	な... ないなら14日に遊ぼうという	Entonces, ¿te apetece que salgamos ese día?	I-If you don't, could we hang out on the 14th, maybe?	False	False			
 	725	724	723	0:18:02.620000	0:18:09.010000	f05a0f80a5.mp3	f05a0f80a5.webp	えーっと チョコが欲しいのかあげたいのか どっちなのかな?	¿Quieres chocolate o quieres darme chocolate?	Um... Do you want chocolate or do you want to give me chocolate?	False	False			
-	727		726	0:18:08.830000	0:18:09.960000	fe9747ab65.mp3	fe9747ab65.webp	えっ!?		Huh?!	False	False			
 	730	729	728	0:18:09.960000	0:18:14.920000	2c44947094.mp3	2c44947094.webp	あの その... えっとー	Yo... no...	I, uh... Um...	False	False			
 	733,736,737	731,735	732,734	0:18:14.780000	0:18:21.510000	a26393dc1e.mp3	a26393dc1e.webp	くれ... あっ ううん　どっちも　で こう 交換的な!	Dame. Bueno, da igual. Vamos a dárnoslo mutuamente.	Gimme. N-No, I mean, either. Or rather, let's exchange!	False	False			
 	740	739	738	0:18:24.180000	0:18:26.600000	f763d534c5.mp3	f763d534c5.webp	友チョコかあ	Chocolate por amistad.	Ah, friendship chocolate.	False	False			

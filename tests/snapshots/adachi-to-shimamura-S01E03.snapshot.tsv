@@ -9,7 +9,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	26	25	24	0:00:54.720000	0:00:59.550000	5e2193ec94.mp3	5e2193ec94.webp	安達は 何か言おうとして喉に詰まっている感じだった	Parecía como si quisiera decir algo, pero no podía.	It looked like Adachi was trying to say something but couldn't get it out.	False	False			
 	29	28	27	0:00:59.550000	0:01:03.100000	af09749f4e.mp3	af09749f4e.webp	安達の言いづらそうなことそれは...	¿Qué será lo que le cuesta tanto decir?	Something that Adachi would have a hard time saying... Is it...?	False	False			
 	33	32	30	0:01:04.430000	0:01:06.560000	c8b4c640b3.mp3	c8b4c640b3.webp	うーん いや まさかね	No, no es eso.	Nah, it couldn't be.	False	False			
-	35		34	0:01:06.560000	0:01:08.980000	7793c1f8a5.mp3	7793c1f8a5.webp	いないなー! うん		Swoosh!	False	False			
 	38	37	36	0:01:08.980000	0:01:10.470000	d954f77cb1.mp3	d954f77cb1.webp	よーし	¡Yupi!	Okay!	False	False			
 	41	40	39	0:01:11.650000	0:01:14.190000	6973cb54c7.mp3	6973cb54c7.webp	姉ちゃん ゲームしよ!	Vamos a jugar a algo.	Sis, let's play some games!	False	False			
 	44	43	42	0:01:14.190000	0:01:15.990000	6e0598c38c.mp3	6e0598c38c.webp	えっ 今?	¿Ahora?	Wait, right now?	False	False			
@@ -72,7 +71,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	256	255	254	0:06:26.840000	0:06:29.380000	b7ec928843.mp3	b7ec928843.webp	おや 分かりませんか?	¿No me reconoces?	Oh? Can you not tell?	False	False			
 	259	258	257	0:06:29.380000	0:06:31.230000	b4152213d9.mp3	b4152213d9.webp	いや あの...	No, a ver...	Yeah, uh...	False	False			
 	262	260	261	0:06:30.990000	0:06:32.280000	b3cc53856f.mp3	b3cc53856f.webp	お待ちを	Espera.	A moment, please.	False	False			
-	264		263	0:06:32.140000	0:06:33.170000	4c469993f7.mp3	4c469993f7.webp	はあ?		Huh?	False	False			
 	272	271	270	0:06:46.940000	0:06:49.580000	c85db541ee.mp3	c85db541ee.webp	中身だったのね	Así que así eras.	So that's what you look like on the inside.	False	False			
 	275	273	274	0:06:49.530000	0:06:53.320000	86b1c45072.mp3	86b1c45072.webp	これがなくても声で分かってほしいものですね	Esperaba que me reconocieras la voz antes de tener que hacer esto.	I was hoping you'd recognize my voice, rather than me resorting to this.	False	False			
 	278	277	276	0:06:53.320000	0:06:58.080000	09277f3372.mp3	09277f3372.webp	顔ができたので 一度お目にかけておこうと思いまして	Como ya tengo la cara completa, pensé en ir a buscarte.	My face is complete now, so I thought I'd come find you.	False	False			
@@ -109,7 +107,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	389	388	387	0:09:00.450000	0:09:03.170000	a6d947b7dd.mp3	a6d947b7dd.webp	恐らくまた会うことになるでしょう	Nos volveremos a ver.	We will probably meet again.	False	False			
 	392	390	391	0:09:03.100000	0:09:07.460000	8ed5a5774e.mp3	8ed5a5774e.webp	では 次回もしくしーく よろしーく	¡Hasta la próxima, amiga!	Until next time, bye-bye, butterfly!	False	False			
 	395	394	393	0:09:10.800000	0:09:12.920000	980bfdaef8.mp3	980bfdaef8.webp	はーい	Ya voy.	Coming.	False	False			
-	397		396	0:09:16.260000	0:09:17.260000	ba6e2f49dc.mp3	ba6e2f49dc.webp	えっ!?		Huh?	False	False			
 	400	399	398	0:09:18.260000	0:09:19.450000	69a97d3b52.mp3	69a97d3b52.webp	よっ	Hola.	Yo.	False	False			
 	405	404	403	0:09:30.070000	0:09:31.480000	428dc66095.mp3	428dc66095.webp	あっ ちょっと15分待って	Dame 15 minutos.	Give me 15 minutes.	False	False			
 	408	407	406	0:09:31.480000	0:09:34.610000	13b9430b9d.mp3	13b9430b9d.webp	結構長い	¿Qué? Es bastante tiempo.	Huh? That's a bit long.	False	False			
@@ -133,7 +130,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	468	467	466	0:10:38.380000	0:10:40.940000	fe4e1e7a1b.mp3	fe4e1e7a1b.webp	カバンがないから行けなーいって	¿Es porque no tenías la mochila?	Because you didn't have your school bag?	False	False			
 	471	470	469	0:10:40.930000	0:10:43.810000	446653b756.mp3	446653b756.webp	ね... 眠たかっただけ	Estaba cansada.	I-I was just tired.	False	False			
 	474	473	472	0:10:43.810000	0:10:48.690000	33d3dacd63.mp3	33d3dacd63.webp	でも しまむらのせい... もちょっとあるけど	Pero también es culpa tuya...	But it is... sorta your fault, too...	False	False			
-	476		475	0:10:48.690000	0:10:49.600000	9e0a0e6045.mp3	9e0a0e6045.webp	えっ?		Huh?	False	False			
 	479	478	477	0:10:50.730000	0:10:53.520000	d9fdde84c7.mp3	d9fdde84c7.webp	どんなの送ったの? メッセージ	¿Qué me has escrito en los mensaje?	What did you message me?	False	False			
 	482	481	480	0:10:53.520000	0:10:57.070000	7e91d80541.mp3	7e91d80541.webp	それは...げんきー? とか	Nada, solo preguntaba por ti.	Oh, just like, "You good?"	False	False			
 	485	484	483	0:10:57.070000	0:10:59.740000	4ae3143265.mp3	4ae3143265.webp	じゃあ げんきー	Pues ya ves, estoy bien...	Then, yeah, I'm good...	False	False			
@@ -267,11 +263,9 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	911	910	909	0:19:26.040000	0:19:27.750000	ee23c0bb8b.mp3	ee23c0bb8b.webp	お姉ちゃん	Hermana...	Big Sis...	False	False			
 	914	913	912	0:19:30.080000	0:19:32.630000	b5ae94d41b.mp3	b5ae94d41b.webp	な... 何だい 妹	¿Qué ocurre, hermanita?	Wh-What is it, little one?	False	False			
 	917	916	915	0:19:35.750000	0:19:37.840000	dd73d8439e.mp3	dd73d8439e.webp	しまむら 後ろ...	Shimamura, detrás de ti.	Shimamura, behind you.	False	False			
-	919		918	0:19:38.840000	0:19:41.130000	367e4ec804.mp3	367e4ec804.webp	えーっ!?		What?!	False	False			
 	922	921	920	0:19:42.680000	0:19:44.420000	960d349f11.mp3	960d349f11.webp	せーの	Una, dos...	Ready, and...	False	False			
 	925	924	923	0:19:44.220000	0:19:46.070000	f119424de4.mp3	f119424de4.webp	こらこら 何してんの!	Oye, ¿qué te crees que haces?	Hey, wait! What do you think you're doing?!	False	False			
 	928,929	927	926	0:19:46.060000	0:19:50.300000	dff5c1397e.mp3	dff5c1397e.webp	見ていて分かりました　遠いから難しいのです	He descubierto que es difícil porque los bolos están muy lejos.	I figured it out. It's only difficult because the pins are so far away.	False	False			
-	931		930	0:19:50.140000	0:19:51.310000	c3718e2ee2.mp3	c3718e2ee2.webp	はあ?		Wha...?	False	False			
 	934	933	932	0:19:51.310000	0:19:53.940000	c742d0dde8.mp3	c742d0dde8.webp	ここからなら 簡単です	Desde aquí es más fácil.	It's easier from here.	False	False			
 	935	937	936	0:19:54.410000	0:19:56.610000	7d93ae4676.mp3	7d93ae4676.webp	はあ 賢いねー	Qué lista eres.	Wow, you're so smart.	False	False			
 	940	939	938	0:19:56.360000	0:20:01.070000	b3c762c2c2.mp3	b3c762c2c2.webp	ところで これは 勝つと何か よいことがあるんですか?	Por cierto, ¿cuál es el premio si gano?	By the way, what's the prize if I win this?	False	False			
@@ -280,7 +274,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	952	951	950	0:20:17.630000	0:20:18.880000	264d7cbbf7.mp3	264d7cbbf7.webp	好き...	¿Me gustas?	Like?	False	False			
 	955,956	954	953	0:20:18.880000	0:20:22.570000	4796e1d40e.mp3	4796e1d40e.webp	あっ そう　どうもしちゃおうか	¿Ah, sí? Supongo que gracias.	Oh, really? Thanks, I guess.	False	False			
 	959	958,961	957,960	0:20:22.300000	0:20:27.060000	640a3e1c6e.mp3	640a3e1c6e.webp	じゃあ 私と勝負しようか	En ese caso... ¿Quieres que nos enfrentemos?	In that case... Want to go up against me?	False	False			
-	963		962	0:20:27.060000	0:20:27.970000	e363ac25e5.mp3	e363ac25e5.webp	はあ?		Huh?!	False	False			
 	967	966	965	0:20:29.220000	0:20:33.270000	a3b8d573ff.mp3	a3b8d573ff.webp	プロボウリングラーの私に勝つつもりですか?	¿Crees que tienes posibilidades contra una profesional como yo?	You think you have a chance against me, a pro bowlinger?	False	False			
 	970	969	968	0:20:33.270000	0:20:36.190000	c1056d5b7f.mp3	c1056d5b7f.webp	もちろん 勝つつもりだけど	Por supuesto. Pienso ganar.	Of course, I'm going to win.	False	False			
 	973	972	971	0:20:36.190000	0:20:37.690000	3c8d478cf7.mp3	3c8d478cf7.webp	私が勝ったら	Y cuando gane...	And when I win...	False	False			
@@ -308,7 +301,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	1053	1052	1051	0:22:16.980000	0:22:22.110000	f6c6c49588.mp3	f6c6c49588.webp	うまくいかなくて たくさん傷つけても うらまないで	Si las cosas no van bien y acabo haciéndote daño, por favor, no me odies.	If things don't go well and I end up hurting you a lot, please don't hate me...	False	False			
 	1058	1057	1056	0:23:52.490000	0:23:54.930000	75cd9671c6.mp3	75cd9671c6.webp	あだしまペディア ボウリング	Adashimapedia: ¡Bolos!	Adashimapedia: Bowling!	False	False			
 	1061	1060	1059	0:23:54.780000	0:23:56.550000	67c8eae32e.mp3	67c8eae32e.webp	よっしゃー ストライク!	¡Toma, un strike!	Woo-hoo, I got a strike!	False	False			
-	1063		1062	0:23:56.490000	0:23:57.720000	69f712c8e4.mp3	69f712c8e4.webp	イエーイ!		Yeah!	False	False			
 	1066	1065	1064	0:23:57.540000	0:23:59.690000	dc9a3c3cdc.mp3	dc9a3c3cdc.webp	ハイタッチするのおかしくないか	¿Por qué lo celebramos?	Wait, why are we high-fiving?	False	False			
 	1069	1068	1067	0:23:59.410000	0:24:00.810000	28767de48b.mp3	28767de48b.webp	勝負してるんだしね	Estamos compitiendo.	Especially since we're playing against each other.	False	False			
 	1072	1071	1070	0:24:00.710000	0:24:02.400000	24c2640d94.mp3	24c2640d94.webp	よっしゃー ストライク!	¡Toma, un strike!	Woo-hoo, I got a strike!	False	False			

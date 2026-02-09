@@ -42,7 +42,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	183,186	184	185,187	0:04:10.934000	0:04:17.607000	7212e5d713.mp3	7212e5d713.webp	だけど あのときは 本当の本当に　みんなを守る いちばんの方法だって... うっ。	Pero en aquel momento era el mejor método para proteger...	But even so, at that moment, I really, truly thought it was the best way to protect every-	False	False		martin	Martin
 	190	188	189	0:04:17.560000	0:04:19.942000	891ba86fbc.mp3	891ba86fbc.webp	だったら そう言えばいいじゃん。	Pues díselo.	Just say that, then.	False	False		secelia	Secelia
 	192,194	193	191	0:04:19.650000	0:04:24.681000	a6ff872586.mp3	a6ff872586.webp	弱者が いっちょ前に 意地 張ってんの　うざいんですけど。	No seas terco, debilucho. Me das dolor de cabeza.	It's annoying to see an underdog being so stubborn.	False	False		secelia	Secelia
-	196		197	0:04:28.718000	0:04:33.040000	34c946dee2.mp3	34c946dee2.webp	ううっ... うぅー うっ...		Episode 19	False	False			Caption
 	200,203,207,209	202,204,208	199,201,205,206	0:04:33.600000	0:04:44.334000	93bdd12ab9.mp3	93bdd12ab9.webp	地球圏外からお越しのお客様は　地球圏生物保護条約による　バイオセキュリティーチェックを 行うため　セクションにお進みください。	Los visitantes de fuera de la Tierra han de pasar un control de bioseguridad según los acuerdos. Procedan a la sección adecuada.	Quinharbor To all passengers from outside the Earth Sphere... As per the Earth Sphere Biological Protection Act, please proceed to the section for a bio-security check.	False	False		anuncio 2	Caption,Lobby Announcement A
 	210	212	211	0:04:44.334000	0:04:48.037000	afb47110c5.mp3	afb47110c5.webp	生物保護リストに該当するものを 持ち込む場合は	En caso de que porten algo protegido,	If you are carrying anything on the biological protection list,	False	False		anuncio 2	Lobby Announcement A
 	215	214	213	0:04:47.640000	0:04:51.180000	463342951b.mp3	463342951b.webp	係員に その旨を申請してください。	avisen al personal y rellenen la petición.	please notify the relevant staff.	False	False		anuncio 2	Lobby Announcement A
@@ -103,10 +102,7 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	428	429	427	0:08:55.840000	0:08:59.030000	5b5094bf61.mp3	5b5094bf61.webp	「株式会社ガンダム」との 合同事業だとかで...	Dijeron que era una empresa conjunta con GUND-ARM.	It's some kind of joint venture with GUND-ARM, Inc.	False	False		mecánico jeturk	Jeturk Company Mechanic
 	430	431	432	0:08:58.854000	0:09:00.856000	bb7fa2fbe0.mp3	bb7fa2fbe0.webp	ミオリネが?	¿Fue Miorine?	With Miorine?	False	False		lauda	Lauda
 	433,438	434	435,437	0:09:00.856000	0:09:07.430000	64c335d55a.mp3	64c335d55a.webp	死ね 死ね 死ね 死ね 死ね...　死ね 死ね 死ね 死ね 死ね...	Mueran.	Die, die, die, die... Die, die, die, die...	False	False		norea	Norea
-	440,442	441		0:09:11.834000	0:09:17.106000	0cb347ff42.mp3	0cb347ff42.webp	死ね 死ね 死ね 死ね 死ね...　死ね 死ね 死ね 死ね 死ね...	Mueran.		False	False		norea	
 	444	445	443	0:09:16.950000	0:09:19.609000	a8f1ec23d3.mp3	a8f1ec23d3.webp	ちょっと拝借。死ね 死ね 死ね...	A ver...	Let's take a peek.	False	False		elan 5	Elan (Clone 5)
-	447		446	0:09:19.580000	0:09:21.577000	1f94d339d3.mp3	1f94d339d3.webp	うわー。		My, my...	False	False			Elan (Clone 5)
-	449		448	0:09:26.210000	0:09:28.217000	1431d4e7f6.mp3	1431d4e7f6.webp	へえー。はっ...		Well...	False	False			Elan (Clone 5)
 	452	451	450	0:09:28	0:09:30.586000	5f5856c9ba.mp3	5f5856c9ba.webp	触るな! んんっ!	¡No lo toques!	Don't touch that!	False	False		elan 5	Norea
 	455	454	453,456	0:09:30.430000	0:09:33.422000	c756d2995e.mp3	c756d2995e.webp	返せ! ごめんって! あっ!	Perdona. -¡Regrésamelo!	Give it back! Whoa, hey!	False	False		elan 5/norea	Elan (Clone 5),Norea
 	460,461	459,462	458,463	0:09:35.090000	0:09:40.700000	594be6b6fd.mp3	594be6b6fd.webp	殺す スペーシアンは!　お前も お前も みんな死ね!	¡Los mataré, Spacians! ¡A ti! ¡Y a ti! ¡Mueran todos!	I'll kill them all! Spacians... and you! I want you... everyone to die!	False	False		norea	Norea
@@ -117,7 +113,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	486,489	488	487,490	0:10:03.452000	0:10:08.858000	fe710515e6.mp3	fe710515e6.webp	うぅ... 死ぬのは　怖いよ...	Temo a la muerte.	I'm afraid... to die.	False	False		norea	Norea
 	493	491	492	0:10:10.280000	0:10:13.295000	2c1629d546.mp3	2c1629d546.webp	何なんですか? 今の。	¿Qué le ocurrió?	What the heck just happened?	False	False		nika	Nika
 	495,498	496	494,497	0:10:13.240000	0:10:18.734000	9fb00d6589.mp3	9fb00d6589.webp	君には分からないよ　絶対。	Tú nunca lo entenderías.	You'll never understand. Never...	False	False		elan 5	Elan (Clone 5)
-	500	501		0:10:18.734000	0:10:22.638000	48cf7bea92.mp3	48cf7bea92.webp	️ ♬ ガンダム ガンダム	GUND-ARM.		False	False		gundarm	
 	502,506	503,507	504,505,508	0:10:22.638000	0:10:29.011000	23b7455506.mp3	23b7455506.webp	️ ♬ 希望の光 代表　再開のお時間です。ええ。	La luz de la esperanza. -Es hora de regresar. -GUND-ARM... -Sí.	Madam President... It's time to resume. Right...	False	False		gundarm/escolta miorine A,gundarm/miorine	Miorine,Miorine Bodyguard A
 	509	511	510	0:10:29.011000	0:10:31.013000	bd74f50365.mp3	bd74f50365.webp	行きましょう。	Vamos.	Let's go.	False	False		miorine	Miorine
 	512,517,520	514,516,519	513,515,518	0:10:31.013000	0:10:41.057000	d41a0c9501.mp3	d41a0c9501.webp	義肢? 私が代表を務める会社で扱う　医療装具です。設計 開発したのは　アスティカシア学園に通う アーシアンの生徒たち。	¿Prótesis? Es equipo médico con el que trata mi empresa. Lo desarrollaron estudiantes Earthians de Asticassia.	Prosthetic limbs? This is medical equipment handled by the company I'm running. It was designed and developed by Earthian students at the Asticassia School.	False	False		miorine,negociador 5	Miorine,Negotiator C 5
@@ -178,7 +173,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	732	733	731	0:14:52.450000	0:14:55.010000	86df9ed46c.mp3	86df9ed46c.webp	俺には あれくらいのことしか...	Era lo único que podía hacer.	It was the only thing I could do for her.	False	False		guel	Guel
 	736,738	734	735,737	0:14:54.740000	0:14:59.815000	71605dc6b1.mp3	71605dc6b1.webp	おい ガキ フォルドの仲間も　ここにいるのか? ううん。	¿Los de Fold están acá, mocoso?	Hey, kid! Are any of your Fold buddies still here?	False	False		kenanji	Kenanji
 	747	748	746,749	0:15:06.420000	0:15:08.760000	9fcf3bbb94.mp3	9fcf3bbb94.webp	もういいでしょう。戻りますよ。	Ya es suficiente. Regresemos.	Never mind. Let's go back.	False	False		kenanji	Kenanji
-	757		758	0:15:13.295000	0:15:15.764000	8b88325ebd.mp3	8b88325ebd.webp	拾ってくれる学校あるんだろ? 学校?		School?	False	False			Guel
 	760	761	759	0:15:15.740000	0:15:17.766000	5ff424c82d.mp3	5ff424c82d.webp	若社長。俺も入れてくんない?	Presidente. -¡Inscríbeme!	Young Mr. President, we-	False	False		guel/kenanji	Kenanji
 	763	764	765	0:15:17.766000	0:15:22.104000	0fac97788e.mp3	0fac97788e.webp	あっ...おそらく アカデミーのことでしょうな。	Imagino que se refiere a Asticassia.	He probably means the Academy.	False	False		kenanji	Kenanji
 	768	767	766	0:15:22.040000	0:15:25.290000	b585e9aa5a.mp3	b585e9aa5a.webp	「グラスレー」の 育成プログラム... ですか?	¿El programa de educación de Grassley?	Grassley's child-rearing program?	False	False		kenanji	Guel
@@ -210,7 +204,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	881	882	880	0:17:13.510000	0:17:16.418000	4768f6dcfd.mp3	4768f6dcfd.webp	急きょ そういうことになりまして	Surgió algo urgente.	There's been a sudden change of plans.	False	False		kenanji	Kenanji
 	885,888	884,887	883,886,889	0:17:16.360000	0:17:22.257000	b3a1f9fbae.mp3	b3a1f9fbae.webp	お先に失礼しますよ。承知しました。では。	Nos marchamos primero. Entendido. Adiós.	We'll be taking our leave. Understood. Goodbye.	False	False		kenanji,prospera	Kenanji,Prospera
 	890	892	891,893	0:17:22.257000	0:17:24.726000	f74a38f78a.mp3	f74a38f78a.webp	始めましょう エリィ。	Empecemos, Eri.	Let us begin... Eri...	False	False		prospera	Prospera
-	895		896	0:17:37.639000	0:17:39.708000	51a851a9a1.mp3	51a851a9a1.webp	ん?		Huh?	False	False			Mobile Craft Pilot A
 	897	898	899	0:17:39.708000	0:17:42.478000	e1b3e03e79.mp3	e1b3e03e79.webp	おい ちょっと待ってくれ!	¡Momento!	Hey, wait a minute!	False	False		piloto A	Mobile Craft Pilot A
 	904	903	902	0:17:46.620000	0:17:49.130000	011c7e7a3d.mp3	011c7e7a3d.webp	何してる!? 指示は出してないぞ!	¿Qué haces? ¡No di la orden!	What are you doing? I haven't issued any orders!	False	False		mani F	Demonstrator F
 	905	907	906	0:17:48.817000	0:17:51.186000	82e2c2f135.mp3	82e2c2f135.webp	違う 俺じゃない!	¡No fui yo!	You're wrong! It's not me!	False	False		piloto A	Mobile Craft Pilot A
@@ -248,7 +241,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	1050	1049	1048,1051	0:20:47.630000	0:20:52.401000	000d93c882.mp3	000d93c882.webp	簡単に懐柔されたものですね ウィンストン博士。	No les costó mucho persuadirte, profesora Winston.	It was a cinch for them to win you over, wasn't it... Dr. Winston?	False	False		godoy	Godoy
 	1052,1056	1054,1057	1053,1055,1058	0:20:52.401000	0:20:57.730000	d9e04c1bca.mp3	d9e04c1bca.webp	んっ! フェン!　お願い 彼女を! どけ!	¡Feng! -¡Llévatela! ¡Apártate!	Feng! Please! Take her! Move!	False	False		godoy,guston/feng	Feng,Godoy,Guston
 	1063,1066	1064,1068	1069	0:21:12.187000	0:21:17.880000	19773a991d.mp3	19773a991d.webp	️ 現在は 市内東部での戦闘が　激化しており 「ベネリット」...スペーシアン!	El conflicto en la zona este ha escalado. Spacians...	Spacians...	False	False		norea,noticias	Norea
-	1070	1072		0:21:17.592000	0:21:20.395000	5ddbde8f3f.mp3	5ddbde8f3f.webp	️スペーシアン組織の...くっ!	La organización de los Spacians...		False	False		noticias	
 	1074	1075	1076	0:21:20.395000	0:21:24.733000	ec7dfd4588.mp3	ec7dfd4588.webp	はははっ。俺の言ったとおりになったけど	Ocurrió lo que yo dije.	It turned out just like I said.	False	False		elan 0	Elan (Original)
 	1078	1079	1077	0:21:24.690000	0:21:28.470000	a29866811d.mp3	a29866811d.webp	どうするの? これ。️道路封鎖を行い...	¿Qué haremos?	So what happens now?	False	False		elan 0	Elan (Original)
 	1080	1082	1081	0:21:28.470000	0:21:32.370000	890298a290.mp3	890298a290.webp	船を呼んだわ。モビルスーツとサビーナたちも。	Pedí una nave, los Mobile Suits y a Sabina y demás.	I called for a ship, as well as mobile suits and Sabina's team.	False	False		henao	Henao

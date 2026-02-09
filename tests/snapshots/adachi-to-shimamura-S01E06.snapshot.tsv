@@ -117,7 +117,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	424,425	423	422	0:10:04.350000	0:10:09.850000	fd11dd939c.mp3	fd11dd939c.webp	しまむらという言葉の響きだけで　今年の冬は乗り切れそうだった	Solo el sonido de su nombre era suficiente para soportar este invierno.	Just the sound of her name was enough to get me through this winter.	False	False			
 	428	427	426	0:10:10.810000	0:10:12.400000	5b5094bf61.mp3	5b5094bf61.webp	ねえねえねえ!	Oye, oye, oye.	Hey, hey, hey.	False	False			
 	431	430	429	0:10:12.400000	0:10:14.530000	ed4d05f33b.mp3	ed4d05f33b.webp	ヤチーって ホントに宇宙人?	Yachi, ¿de verdad eres un alien?	Are you really an alien, Yachi?	False	False			
-	433		432	0:10:14.400000	0:10:16.320000	03bd0a3d09.mp3	03bd0a3d09.webp	チッチッチッ		Tsk, tsk, tsk.	False	False			
 	436	435	434	0:10:16.320000	0:10:19.740000	47ef479fc7.mp3	47ef479fc7.webp	ホントも何もウソついたことありません	Por supuesto que sí, yo nunca miento.	But of course. I have never told a lie.	False	False			
 	439	438	437	0:10:19.740000	0:10:22.640000	529b1052fe.mp3	529b1052fe.webp	証拠見せて 宇宙人の証拠!	Entonces demuéstramelo.	Then show me proof! Proof that you're an alien.	False	False			
 	441	443	440,442	0:10:22.580000	0:10:27	7c28e6cbc4.mp3	7c28e6cbc4.webp	チッチッチッ 見せるのは協定違反なので できません	Si te lo demostrara, estaría violando mi contrato.	Tsk, tsk, tsk. I would be violating my agreement if I showed you, so I cannot.	False	False			
@@ -137,7 +136,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	499	498	497	0:11:46.870000	0:11:48.120000	377280b907.mp3	377280b907.webp	好き?	¿Me gusta?	Like...?	False	False			
 	502	501	500	0:11:53.580000	0:11:56.710000	866df4c281.mp3	866df4c281.webp	とにかく あたたかいものだ	Lo que sea es algo cálido.	Whatever it is, it's warm and fuzzy.	False	False			
 	505	504	503	0:11:56.710000	0:12:00.760000	9c3f8268be.mp3	9c3f8268be.webp	私の胸に流れるあたたかい液体だ	Es un líquido cálido que recorre mi pecho.	It's a warm liquid that flows through my chest.	False	False			
-	509		508	0:12:15	0:12:16.010000	bd74f50365.mp3	bd74f50365.webp	えっ?		Huh?	False	False			
 	512	510	511	0:12:16.920000	0:12:19.820000	f278d82554.mp3	f278d82554.webp	どういう 「おー」?	¿A qué viene ese palabro?	What's this "Cool" supposed to mean?	False	False			
 	515	514	513	0:12:19.820000	0:12:23.060000	a7b68dae8c.mp3	a7b68dae8c.webp	えいえいおー? おーっと?	¿Se refiere a "qué guay" o quiere que me tranquilice?	Like, "Coolio"? Maybe she meant, "Chill out"?	False	False			
 	518	517	516	0:12:23.030000	0:12:25.450000	e1f25630d0.mp3	e1f25630d0.webp	ふーん そーおー?	¿O será algo del frío?	Or, "Cool beans"?	False	False			

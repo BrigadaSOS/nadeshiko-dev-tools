@@ -381,10 +381,10 @@ def select_subtitle_streams(
     return selected_indices, subtitles_dict_remembered, sync_external_subs
 
 
-def confirm_processing(total_files: int, folder_count: int) -> bool:
+def confirm_processing(total_episodes: int, folder_count: int) -> bool:
     """Prompt user to confirm processing."""
     console.print(
-        f"[cyan]Ready to process {total_files} episode(s) across {folder_count} folder(s)[/cyan]"
+        f"[cyan]Ready to process {total_episodes} episode(s) across {folder_count} folder(s)[/cyan]"
     )
     confirmed = questionary.confirm(
         "Do you want to continue?",

@@ -33,7 +33,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	119	121	120	0:03:55.960000	0:03:58.940000	033db86c58.mp3	033db86c58.webp	安達の名前って 桜なんだ?	¿Te llamas Sakura?	So your first name is Sakura?	False	False			
 	122	124,126	123,125	0:03:58.900000	0:04:01.740000	53746440a9.mp3	53746440a9.webp	うん 前にも聞いたかな?	Sí. ¿Te lo había preguntado ya?	Yeah. Did I ever ask you that before?	False	False			
 	127	129	128	0:04:01.730000	0:04:04.570000	7a6b80f1af.mp3	7a6b80f1af.webp	えっ... あっ 多分	¿Eh? Puede.	Huh? Um, I think so.	False	False			
-	131		132	0:04:06.640000	0:04:09.580000	c6ef5e19a6.mp3	c6ef5e19a6.webp	へえー		Huh...?	False	False			
 	133	135	134,136	0:04:09.580000	0:04:12.250000	468a56ab52.mp3	468a56ab52.webp	桜ちゃん えっ!?	Sakura.	Sakura. Huh?!	False	False			
 	137	139	138	0:04:12.079000	0:04:14.579000	242a97c183.mp3	242a97c183.webp	それとも 桜さん?	¿O prefieres que te llame "señorita"?	Or do you prefer Miss Sakura?	False	False			
 	143	142,145	141,144	0:04:17.380000	0:04:20.920000	682554e8c7.mp3	682554e8c7.webp	どうした? 安達 えっと...	¿Qué pasa, Adachi? Bueno...	What's wrong, Adachi? Um...	False	False			
@@ -46,7 +45,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	173	172	171	0:04:52.950000	0:04:55.890000	98b812f370.mp3	98b812f370.webp	そ... そっちか プッ...	Ah, a eso te referías.	O-Oh, that's what you meant.	False	False			
 	174	176	175	0:04:55.890000	0:04:58.890000	c38e1fd42d.mp3	c38e1fd42d.webp	アハハハハ...し... しまむら?	¿Shimamura?	Sh-Shimamura?	False	False			
 	178	179	177	0:04:58.880000	0:05:02.730000	17c2f66818.mp3	17c2f66818.webp	安達って時々 犬っぽい顔になるね	A veces pareces un perrito.	You look so much like a puppy sometimes.	False	False			
-	181		180	0:05:02.710000	0:05:04.730000	e943ac1307.mp3	e943ac1307.webp	ふぇ?		Huh?	False	False			
 	184	183	182	0:05:04.260000	0:05:07.070000	62ad287a1d.mp3	62ad287a1d.webp	ワン	Guau.	Woof.	False	False			
 	185	187,188	186,189	0:05:07.070000	0:05:10.430000	b31dedd05f.mp3	b31dedd05f.webp	いや 全然 そう?	Ni de coña. ¿Estás segura?	I do not. Are you sure?	False	False			
 	190	192	191	0:05:10.140000	0:05:13.570000	891ba86fbc.mp3	891ba86fbc.webp	じ... 自転車取ってくる	Voy a por mi bici.	I-I'll go get my bike.	False	False			
@@ -87,7 +85,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	323	322	321	0:07:45.750000	0:07:48.530000	2fe47eee78.mp3	2fe47eee78.webp	じゃあ こっち来て しまむらさん	Por aquí, Shimamura.	Come this way, Shimamura.	False	False			
 	325	326	324	0:07:48.420000	0:07:51.230000	415448ce1e.mp3	415448ce1e.webp	あっ うん	Vale.	Uh, okay.	False	False			
 	327,330	328	329	0:07:53.870000	0:08:00.210000	11d61838b3.mp3	11d61838b3.webp	あっ 私 お弁当じゃないから　買ってくるね	Ah, hoy no he traído comida, así que voy a comprar algo.	Oh, I didn't bring my lunch, so I'm going to go buy something.	False	False			
-	332		331	0:08:00.180000	0:08:02.310000	b59c14cea8.mp3	b59c14cea8.webp	えっ? えっ...		Huh?	False	False			
 	334	336	335	0:08:07.110000	0:08:09.880000	e3659d2820.mp3	e3659d2820.webp	安達...	Adachi...	Adachi...	False	False			
 	337	339	338	0:08:09.880000	0:08:11.990000	75b462a36a.mp3	75b462a36a.webp	みんな 前から仲いいの?	¿Lleváis siendo amigas mucho?	So have you guys been friends for a while?	False	False			
 	340	342	341	0:08:11.950000	0:08:14.990000	8972b53c9a.mp3	8972b53c9a.webp	ううん 2年生になってから	No, solo llevamos un año juntas.	Nah, just since this year.	False	False			
@@ -182,9 +179,7 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	674	673,676	672,675	0:15:07.990000	0:15:12.300000	a72ac7b08e.mp3	a72ac7b08e.webp	私が早く来すぎただけ よかった	No, es que yo he llegado muy temprano. Qué alivio.	Nah, I just came too early. Thank goodness.	False	False			
 	677,680	679	678	0:15:12.300000	0:15:17.240000	e614619bf0.mp3	e614619bf0.webp	じゃあ その...　やるぞ	Bueno, vamos.	Well, so, uh... Let's do this.	False	False			
 	683	682	681	0:15:17.120000	0:15:19.340000	62948bf265.mp3	62948bf265.webp	はい?	¿Qué?	What?	False	False			
-	684		685	0:15:20.310000	0:15:22.570000	573f53da70.mp3	573f53da70.webp	い...		Er...	False	False			
 	688	687	686	0:15:22.380000	0:15:26.460000	99eb23e8c8.mp3	99eb23e8c8.webp	やっほーい しーまちゃーん!	¡Yuju, Shima!	Woo-hoo! Shima!	False	False			
-	689		690	0:15:26.410000	0:15:28.410000	f470f04b0a.mp3	f470f04b0a.webp	お... おお		Y-Yeah...	False	False			
 	693	692	691	0:15:29.260000	0:15:31.750000	ebe04e33b1.mp3	ebe04e33b1.webp	じゃ 行こうか	¡Venga, vamos!	Well, let's go!	False	False			
 	694	696	695	0:15:31.750000	0:15:34.420000	f12569839e.mp3	f12569839e.webp	あっ どこ行くの?	¿A dónde vamos?	Oh... Where are we going?	False	False			
 	699	698	697	0:15:34.260000	0:15:37.120000	6ed11f1f46.mp3	6ed11f1f46.webp	まだ秘密	Es un secreto.	It's still a secret.	False	False			
@@ -202,7 +197,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	743	742	741	0:16:41.540000	0:16:44.620000	baae0f29cb.mp3	baae0f29cb.webp	顔 疲れるよ 絶対	¿No es agotador para tu cara?	Isn't this exhausting for your face?	False	False			
 	745,747	744	746	0:16:44.520000	0:16:51.200000	81788959a3.mp3	81788959a3.webp	いや こういうのがさ 大事なんだよ　大事... じゃないかな	Pero creo que estas cosas son muy importante... quizás.	But I think stuff like this is important... Maybe.	False	False			
 	750	749	748	0:16:50.920000	0:16:54.180000	1a7c5ff40f.mp3	1a7c5ff40f.webp	しまちゃん 最近は 真面目なんだって?	Bueno, me han contado que ahora eres más responsable.	So I hear you've been responsible lately?	False	False			
-	751		752	0:16:53.700000	0:16:55.700000	734e335060.mp3	734e335060.webp	えっ?		Huh?	False	False			
 	755	754	753	0:16:55.430000	0:16:59.770000	d6b6916494.mp3	d6b6916494.webp	しまちゃんのお母さん たまに ウチの母親と電話してるんだ	Tu madre llama a la mía a veces.	Your mom calls my mom sometimes.	False	False			
 	757	758	756	0:16:59.760000	0:17:02.540000	8b88325ebd.mp3	8b88325ebd.webp	そこ経由で 聞いた	Por eso lo sé.	That's where I heard that.	False	False			
 	761	760,763	759,762	0:17:02.350000	0:17:07.380000	382033502a.mp3	382033502a.webp	といっても ホント たまーにで 穴あきがひどくてさ	Aunque hablan muy de vez en cuando. Se pasan mucho sin hablar.	They only talk to each other super rarely, though. They go so long without speaking.	False	False			

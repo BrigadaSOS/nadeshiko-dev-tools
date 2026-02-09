@@ -96,7 +96,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	337	338	336	0:08:57.390000	0:08:58.980000	75b462a36a.mp3	75b462a36a.webp	おっしゃー!	¡Sí!	Okay!	False	False			
 	340	339	341,342	0:09:01.520000	0:09:04.210000	8972b53c9a.mp3	8972b53c9a.webp	どうして! なんで邪魔するの!?	¿Por qué sigues molestando?	Why? Why do you interfere?	False	False			
 	344	345	343	0:09:04.670000	0:09:07.137000	6fcb64ff83.mp3	6fcb64ff83.webp	データストームのおかげで 願いが叶うのに!	¡La tormenta cumplirá nuestro deseo!	The data storm can make our wishes come true!	False	False			
-	346		347	0:09:07.220000	0:09:09.306000	5567aefed1.mp3	5567aefed1.webp	ハアハア... は?		Huh?	False	False			
 	350	348	349	0:09:10.620000	0:09:11.808000	f1c75f88c7.mp3	f1c75f88c7.webp	原因は?	¿Cuál es la causa?	What caused it?	False	False			
 	352	353	351	0:09:11.780000	0:09:14.610000	df662f2107.mp3	df662f2107.webp	データ干渉が発生しています	Hay una intervención de datos.	Data interference is occurring.	False	False			
 	355	356	354	0:09:14.610000	0:09:17.410000	9fa887f540.mp3	9fa887f540.webp	データストームの情報密度が低下中	Disminuye a densidad de información.	The data storm's information density is degrading.	False	False			
@@ -170,7 +169,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	608	607	606	0:14:49.730000	0:14:52.620000	f958ee8a90.mp3	f958ee8a90.webp	いちいち嫌味だねえ	Hablas mucho.	Always rubbing it in...	False	False			
 	611	610	609	0:15:00.120000	0:15:01.157000	e564c96d6c.mp3	e564c96d6c.webp	ここです	Es aquí.	In here.	False	False			
 	614	613	612	0:15:07.710000	0:15:09.749000	fc20084546.mp3	fc20084546.webp	早く停止させてくれよ	Detenlo de una buena vez.	Hurry up and shut it down.	False	False			
-	616		615	0:15:09.610000	0:15:10.500000	674eb6042d.mp3	674eb6042d.webp	分かってる		I know, okay?	False	False			
 	622	621	620	0:15:13.960000	0:15:15.088000	f114b28e04.mp3	f114b28e04.webp	代わります	Déjame.	Let me try.	False	False			
 	625	626	624	0:15:17.180000	0:15:18.830000	4a736c157d.mp3	4a736c157d.webp	どうして...	¿Por qué...?	Why?	False	False			
 	628,631	629	627,630	0:15:19.180000	0:15:23.400000	fadca7b454.mp3	fadca7b454.webp	緊急停止コードなら⸺　変更させてもらったわ	Cambié los códigos de detención de emergencia.	If that's the emergency shutdown code, I took the liberty of changing it.	False	False			
@@ -210,7 +208,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	752	751	750	0:18:21.650000	0:18:23.193000	46c612019d.mp3	46c612019d.webp	通信つながった!	Tenemos conexión.	We have a signal!	False	False			
 	755	754	753	0:18:23.160000	0:18:25.361000	d6b6916494.mp3	d6b6916494.webp	パーメットリンク 接続確認	Enlace Permet confirmado.	Permet link established.	False	False			
 	758	757	756	0:18:25.830000	0:18:27.730000	e9a72c6939.mp3	e9a72c6939.webp	コール 開始してください	Inicien el llamamiento.	Commence calling.	False	False			
-	760		759	0:18:27.640000	0:18:28.531000	5ff424c82d.mp3	5ff424c82d.webp	了解		Roger.	False	False			
 	763	761	762	0:18:28.040000	0:18:31.730000	0fac97788e.mp3	0fac97788e.webp	クワイエット・ゼロの 内部システムに侵入する	Recibido. Entrando en el sistema de Quiet Zero.	Now infiltrating Quiet Zero's internal systems.	False	False			
 	766	765	764	0:18:40.760000	0:18:41.961000	94f5bc089e.mp3	94f5bc089e.webp	お母さん!	¡Mamá!	Mom!	False	False			
 	769	768	767	0:18:41.930000	0:18:43.990000	e55b0c901e.mp3	e55b0c901e.webp	すべてセキュリティに回せ!	Úsenlo todo en seguridad.	Route everything to security!	False	False			

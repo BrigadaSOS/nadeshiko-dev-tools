@@ -73,7 +73,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	239	240	238	0:05:28.130000	0:05:30.060000	49f4957536.mp3	49f4957536.webp	ほかの寮から借りるのは?	¿Y tomarla prestada?	Can we borrow one from another House?	False	False		lilique	
 	243	242	241	0:05:30.040000	0:05:33.620000	a695f5ec7f.mp3	a695f5ec7f.webp	スペーシアンが あーしらに 貸してくれるわけないっしょ	¿Crees que los Spacians nos la prestarán?	Fat chance getting Spacians to loan one to us Earthians.	False	False		chuchu	
 	246	244	245	0:05:34.260000	0:05:35.646000	d3029cab63.mp3	d3029cab63.webp	じゃあ 作ろっか	¿Y si la construimos?	How about we make one, then?	False	False		nika	
-	248		247	0:05:35.640000	0:05:37.500000	09bf511a09.mp3	09bf511a09.webp	えー え...		Huh?	False	False			
 	251	250	249	0:05:38.980000	0:05:42.260000	2a59f41190.mp3	2a59f41190.webp	オールクリアー そのまま下へー	Todo en orden. Que bajen.	All clear! Bring it on down!	False	False		ojelo	
 	254	252	253	0:05:44.420000	0:05:47.240000	79844b2739.mp3	79844b2739.webp	じゃあ 推進系から確認しよっか	Empecemos por lo que sea de propulsión.	Shall we start by inspecting the propulsion system?	False	False		nika	
 	256	257	255	0:05:47.240000	0:05:49.680000	b7ec928843.mp3	b7ec928843.webp	これ 動くんですか?	¿Esto sirve?	Will this thing work?	False	False		suletta	
@@ -138,7 +137,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	461	462	460	0:09:28.120000	0:09:30.430000	1f4d2aba79.mp3	1f4d2aba79.webp	おお... なんだ?	Pero ¿qué...?	Whoa! What the heck is that?	False	False		dorm pale D	
 	465	464	463,466	0:09:32.800000	0:09:35.690000	9bf6c6b6e2.mp3	9bf6c6b6e2.webp	ご... ごめんなさい お邪魔します	Siento molestar.	M-My apologies! Sorry to be a bother!	False	False		suletta	
 	467,471	469	468,470,472	0:09:35.636000	0:09:40.265000	866b236fa1.mp3	866b236fa1.webp	おい 水星女! あ...　何しに来た! 決闘は今日じゃないぞ!	¿A qué viniste, mercuriana? El duelo no es hoy.	Hey, Mercurian girl! What are you doing here? The duel isn't today!	False	False		dorm pale A	
-	474		473	0:09:40.260000	0:09:41.220000	33d3dacd63.mp3	33d3dacd63.webp	うおっ...		Whoa!	False	False			
 	476	475	477,478	0:09:41.120000	0:09:43.280000	9e0a0e6045.mp3	9e0a0e6045.webp	あの エランさんいますか?	¿Está Elan?	Um... Is Mr. Elan there?	False	False		suletta	
 	480	481	479	0:09:43.260000	0:09:46.870000	e0aa16fabf.mp3	e0aa16fabf.webp	LP041 スレッタ・マーキュリーです	Soy LP-041, Suletta Mercury.	This is LP041, Suletta Mercury.	False	False		suletta	
 	484	483	482,485	0:09:47.180000	0:09:50.660000	cca6716517.mp3	cca6716517.webp	エランさんに話があって来ました	Vine para hablar con él.	I came... to talk to Mr. Elan.	False	False		suletta	
@@ -147,7 +145,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	494	495	493	0:09:55.310000	0:09:57.730000	9925b484ac.mp3	9925b484ac.webp	俺たちとだって まともにしゃべらない	Ni siquiera habla con nosotros.	He hardly talks to us, his housemates.	False	False		dorm pale B	
 	497,499	498	496	0:09:57.730000	0:10:03.320000	31933b210a.mp3	31933b210a.webp	あのファラクトとかいう 機体のことも⸺　ペイル寮の生徒には 知らされていないんだ	Los de la residencia Pale no sabemos nada del Pharact.	Nobody at Peil House knows a thing about that "Pharact" machine, either!	False	False		dorm pale B	
 	502,504	501	500,503	0:10:03.320000	0:10:06.720000	90f951f6c6.mp3	90f951f6c6.webp	お願いします　どうしても話したいんです	Por favor, tengo que hablar con él.	Please. I really would like to talk to him.	False	False		suletta	
-	508		507	0:10:14.560000	0:10:17.260000	6b08f5e92b.mp3	6b08f5e92b.webp	あ... あー あー		Testing... testing...	False	False			
 	511	510	509,512	0:10:17.870000	0:10:21.360000	4d19db23fd.mp3	4d19db23fd.webp	エランさん 聞こえてますか? スレッタです	¿Me oyes, Elan? Soy Suletta.	Mr. Elan, can you hear me? It's Suletta!	False	False		suletta	
 	515,517	514	513,516	0:10:22.100000	0:10:25.602000	8ee5c774a3.mp3	8ee5c774a3.webp	エランさん　どうして あんたこと言ったんですか?	¿Por qué dijiste algo así?	Mr. Elan! Why did you say that to me?	False	False		suletta	
 	520	519	518	0:10:25.940000	0:10:28.190000	b74397ddbc.mp3	b74397ddbc.webp	どうして決闘するんですか?	¿Por qué nos batimos en duelo?	Why do we have to duel?	False	False		suletta	
@@ -159,7 +156,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	541	540	539	0:10:50.460000	0:10:54.840000	d6df897f52.mp3	d6df897f52.webp	ハッピーバースデートゥーユ	Cumpleaños feliz.	Happy birthday to you.	False	False		suletta	
 	544	543	542	0:10:55.290000	0:11:00.840000	5ab4e65395.mp3	5ab4e65395.webp	ハッピーバースデー ハッピーバースデ	Feliz, feliz cumpleaños.	Happy birthday, happy birthday...	False	False		suletta	
 	547	546	545	0:11:01.330000	0:11:05.610000	669cfdcf83.mp3	669cfdcf83.webp	ハッピーバースデートゥーユ	Cumpleaños feliz.	Happy birthday to you.	False	False		suletta	
-	548		549	0:11:05.559000	0:11:08.730000	6db2c26f18.mp3	6db2c26f18.webp	あ...		CALL FROM ELAN	False	False			
 	552	551	550	0:11:08.730000	0:11:10.350000	3e3d1a8e4c.mp3	3e3d1a8e4c.webp	帰ってくれ	Vete.	Go home.	False	False		elan	
 	555	554	553	0:11:11.070000	0:11:13.850000	d88a1fcce2.mp3	d88a1fcce2.webp	僕に誕生日はないって言ったはずだ	Ya te dije que no tenía cumpleaños.	I told you, I don't have a birthday.	False	False		elan	
 	558	556	557	0:11:14.320000	0:11:15.900000	610302b82c.mp3	610302b82c.webp	だから... です	Por eso mismo.	That's why.	False	False		suletta	
@@ -182,8 +178,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	619	618	617	0:12:19.950000	0:12:22.590000	91d42174a7.mp3	91d42174a7.webp	有効排気速度 問題なし	Velocidad de expulsión correcta.	No problems with effective exhaust velocity.	False	False		suletta	
 	622	621	620	0:12:22.590000	0:12:23.680000	f114b28e04.mp3	f114b28e04.webp	スレッタ	Suletta,	Suletta,	False	False		nika	
 	624	623	625	0:12:24.540000	0:12:28.220000	224555c6ee.mp3	224555c6ee.webp	進行方向前方にペイル寮の学園艦	la residencia Pale está en esa dirección.	Peil House's academic vessel is ahead on your course.	False	False		nika	
-	628		626	0:12:28.220000	0:12:31.060000	906fb9196a.mp3	906fb9196a.webp	星間物質を含む 脅威オブジェクトなし		No hazardous objects including interplanetary matter.	False	False			
-	630		629,632	0:12:31.760000	0:12:35.140000	94f8b8cc78.mp3	94f8b8cc78.webp	射出準備完了 権限をパイロットに		Ready to launch. Transferring authorization to pilot.	False	False			
 	636,638	635	634,637	0:12:35.140000	0:12:39.980000	63222cd420.mp3	63222cd420.webp	KP002 エラン・ケレス　ファラクト 出る	KP-002, Elan Ceres. Pharact, en marcha.	KP002, Elan Ceres... Pharact, launching.	False	False		elan	
 	641,644	640,642	639,643,645	0:12:44.350000	0:12:50.470000	4aab80881e.mp3	4aab80881e.webp	ようこそ 歓迎するよ　ジェターク寮 新寮長 ラウダ・ニール	Bienvenido, líder de la residencia Jeturk, Lauda Neill.	Welcome. Nice to meet you. Jeturk House's new leader, Lauda Neill.	False	False		shaddiq	
 	648,650	647	646,649	0:12:50.470000	0:12:54.750000	fbb5241249.mp3	fbb5241249.webp	挨拶は不要です　さっさと決闘を始めてください	No necesito saludos formales. Que comience el duelo.	We can skip the formalities. Please just start the duel.	False	False		lauda	
@@ -267,7 +261,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	934	933	935,936	0:18:39.200000	0:18:40.930000	c742d0dde8.mp3	c742d0dde8.webp	やったー!	¡Lo logró!	Yes! She did it!	False	False		martin/lilique	
 	939	938	937	0:18:41.550000	0:18:43.266000	0e1583d2c3.mp3	0e1583d2c3.webp	記録できた? さっきの	¿Grabaste lo de antes?	Did you get a record of that?	False	False		rouji	
 	942,943	941	940	0:18:43.260000	0:18:47.030000	1d0dfef433.mp3	1d0dfef433.webp	パーメットデコーディング情報　記録完了	Datos de decodificación Permet grabados.	Permet decoding data, recording complete.	False	False		haro	
-	945		944	0:18:48.090000	0:18:49.820000	400a971452.mp3	400a971452.webp	ふいー		Phew...	False	False			
 	948	947	946	0:18:49.820000	0:18:53.520000	3496be6118.mp3	3496be6118.webp	ありがとう お疲れさま エアリアル	Gracias. Buen trabajo, Aerial.	Thank you. Good work, Aerial.	False	False		suletta	
 	951	950	949	0:18:54.470000	0:18:59.040000	922adb7b2c.mp3	922adb7b2c.webp	今日は いつもより 声聞こえた気がする	Hoy siento que te escuché más que de costumbre.	I feel like I could hear your voice more than ever today.	False	False		suletta	
 	955	954	953	0:19:03.070000	0:19:05.580000	e1f4863f1d.mp3	e1f4863f1d.webp	エラン... さん?	¿Elan?	Mr. Elan...	False	False		suletta	
@@ -282,7 +275,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	991	990	989	0:20:00.790000	0:20:03.550000	02cc102453.mp3	02cc102453.webp	けど そうじゃなかった	Pero me equivocaba.	But... it wasn't true.	False	False		elan	
 	994	993	992	0:20:04.080000	0:20:05.990000	1465656ebc.mp3	1465656ebc.webp	そうじゃなかったんだ	Me equivocaba.	It wasn't true!	False	False		elan	
 	996	997	995	0:20:06.500000	0:20:09.080000	12bed8d3cb.mp3	12bed8d3cb.webp	そんなの おかしいです	No es normal que digas eso.	You've got it all wrong.	False	False		suletta	
-	999		998	0:20:09.070000	0:20:10.270000	b9d63dba9f.mp3	b9d63dba9f.webp	え?		Huh?	False	False			
 	1002,1003	1001	1000	0:20:10.200000	0:20:14.940000	fc53c13253.mp3	fc53c13253.webp	誕生日を祝ってくれる人 います　私もいます	Sí que hay gente para celebrar tu cumpleaños. Yo incluida.	There are people who will celebrate your birthday. I'm one of them.	False	False		suletta	
 	1006,1007	1005	1004	0:20:15.300000	0:20:19.737000	07862bbf3e.mp3	07862bbf3e.webp	エランさんに 何もないなんてこと⸺　絶対にないです!	Te aseguro que no es verdad que no tengas nada.	It's absolutely wrong to say you have nothing, Mr. Elan!	False	False		suletta	
 	1010,1013	1011,1012	1009	0:20:22.270000	0:20:26.710000	76ad58d720.mp3	76ad58d720.webp	そうだね　おかしいね	Tienes razón. No es normal.	That's true. I've had it wrong.	False	False		elan	

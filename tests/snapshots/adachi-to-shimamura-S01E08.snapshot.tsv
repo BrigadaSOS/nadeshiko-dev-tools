@@ -7,7 +7,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	19	18	17	0:00:28.440000	0:00:30.360000	246a0a1412.mp3	246a0a1412.webp	《しまむら...》	Shimamura...	Shimamura...	False	False			
 	23	22	21	0:00:37.360000	0:00:40.350000	2a5f000027.mp3	2a5f000027.webp	何はともあれ好みとか聞かないと	De todas formas, tengo que preguntarle qué le gusta.	Anyway, I need to ask her what she likes.	False	False			
 	27	26	25	0:00:41.770000	0:00:44.120000	9c8fb9c279.mp3	9c8fb9c279.webp	絶対に後悔しないように	Tengo que evitar arrepentirme de nada.	I need to make sure I don't regret anything.	False	False			
-	28	29		0:00:43.880000	0:00:46.350000	0174a58df7.mp3	0174a58df7.webp	次は恋愛星座占いコーナーです	...estabais esperando: ¡el horóscopo!		False	False			
 	32	31	30	0:00:47.920000	0:00:50.960000	7d53e9253f.mp3	7d53e9253f.webp	シャーマン田岡のー	Soy la chamana Taoka.	This is Shaman Taoka's...	False	False			
 	35	34	33	0:00:53.090000	0:00:56.890000	7793c1f8a5.mp3	7793c1f8a5.webp	恋愛星座占いだー!	¡Y este es mi horóscopo del amor!	...Romance horoscopes!	False	False			
 	40	39	38	0:01:00.310000	0:01:05.060000	b3326f7ced.mp3	b3326f7ced.webp	今日も 君のあなたの恋愛運を占ってみせよう	Hoy estoy aquí para deciros la suerte que tendréis en el amor.	I'm here to tell you all about your romance luck again today!	False	False			
@@ -72,7 +71,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	254	253	252	0:07:45.540000	0:07:47.210000	79844b2739.mp3	79844b2739.webp	おはよう	Buenas...	Morning...	False	False			
 	255	257	256	0:07:47.670000	0:07:50.140000	33f58b7c1f.mp3	33f58b7c1f.webp	うん? 何か用事あり?	¿Querías algo?	Did you need something?	False	False			
 	260,261	258	259	0:07:50.070000	0:07:56.010000	b62b7dd4ee.mp3	b62b7dd4ee.webp	あ... いや　その...ちょっと太陽のことで	No, es que... solo quería hablar del sol...	No, I just, um... wanted to talk about the sun...	False	False			
-	263		262	0:07:56.010000	0:07:58.100000	01863277d6.mp3	01863277d6.webp	はっ?		Huh?	False	False			
 	266	265	264	0:07:58.100000	0:08:00.020000	2e10cc36c2.mp3	2e10cc36c2.webp	そこじゃない 感謝	¡No! Venía a darle las gracias.	No, not that part! You wanted to show gratitude.	False	False			
 	269	268	267	0:08:00.020000	0:08:03.850000	33f8fd7913.mp3	33f8fd7913.webp	ええと 感謝 感謝は	Gracias, gracias... ¿Cómo se las doy?	Um... Gratitude, gratitude, how do I show gratitude?	False	False			
 	272	271	270	0:08:03.850000	0:08:06.190000	c85db541ee.mp3	c85db541ee.webp	あ... ありがとう	Gracias...	Th-Thank you...	False	False			
@@ -104,7 +102,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	366	365	364	0:10:16.530000	0:10:19.530000	d1e6659e68.mp3	d1e6659e68.webp	うーんと 悪くないかも	Bueno, no está mal.	Hm... I guess I don't mind that.	False	False			
 	369,370	368,372	367,371	0:10:27.750000	0:10:32.460000	dfe1a3cf63.mp3	dfe1a3cf63.webp	おおっ すげえ髪　えっ 驚くのそこ?	Vaya, qué pelazo. ¿Eso es lo que te sorprende?	Wow, look at that hair. That's what shocks you?	False	False			
 	375	374	373	0:10:36.550000	0:10:39.530000	11bb005b1d.mp3	11bb005b1d.webp	しまむらさん映画を見に行きましょう	Shimamura, vamos a ver una peli.	Shimamura, let's go see a movie.	False	False			
-	377		376	0:10:39.380000	0:10:40.480000	b28e655fdf.mp3	b28e655fdf.webp	えー		What?	False	False			
 	380	378	379	0:10:40.170000	0:10:41.220000	090814aab7.mp3	090814aab7.webp	いが!	Vamos.	Let's go!	False	False			
 	383,384	382	381	0:10:41.220000	0:10:44.720000	caf761f493.mp3	caf761f493.webp	2人で行ったら?　姉ちゃんは勉強とか	¿Por qué no vais vosotras? Yo tengo que estudiar.	Why don't you two go? I've gotta study.	False	False			
 	387,388	386	385	0:10:44.720000	0:10:50.270000	461fc2cf74.mp3	461fc2cf74.webp	ついて行ってやりなさい　ついでにお昼ご飯 食べさせてきて	Ve con ellas y asegúrate de que comen algo.	Go with them. And make sure they get some lunch.	False	False			
@@ -221,7 +218,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	770	769	768	0:18:27.560000	0:18:31.440000	404a7dcc8b.mp3	404a7dcc8b.webp	そうだけど えっと しまむらは?	Sí, pero ¿dónde está Shimamura?	Yeah... So, where's Shimamura?	False	False			
 	772	773	771	0:18:31.440000	0:18:33.690000	d6836a649a.mp3	d6836a649a.webp	えっ 何?	¿Qué?	Wait, what?	False	False			
 	776	775	774	0:18:35.190000	0:18:37.070000	c56b728e59.mp3	c56b728e59.webp	お昼寝をしていますは	Está echándose una siesta.	She's taking a nap.	False	False			
-	778		777	0:18:37.070000	0:18:37.990000	a5b483743d.mp3	a5b483743d.webp	あっ?		Huh?!	False	False			
 	781	780	779	0:18:37.990000	0:18:40.280000	01cf2be518.mp3	01cf2be518.webp	だから しーですよ しーっ	Así que baja la voz.	So make sure you shh! Shh!	False	False			
 	786	785	784	0:18:41.530000	0:18:43.790000	93b5e01393.mp3	93b5e01393.webp	そうだ ちょうどいいです	Por cierto, justo a tiempo.	Oh, perfect timing.	False	False			
 	789	788	787	0:18:43.790000	0:18:49	07ca1d541d.mp3	07ca1d541d.webp	私は そろそろ晩ご飯の確保に行かなければいけないのです	Tengo que ir a por la cena.	I must go procure dinner soon.	False	False			

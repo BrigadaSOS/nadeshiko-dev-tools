@@ -7,7 +7,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	22	24	23	0:00:51.350000	0:00:54.720000	3474eefa98.mp3	3474eefa98.webp	何となく 行動を共にすることが多くなった	y acabamos pasando un montón de tiempo juntas.	and ended up spending a lot of time together.	False	False			
 	27	26	25	0:00:55.840000	0:00:59.100000	9c8fb9c279.mp3	9c8fb9c279.webp	次 私のサーブでいい?	¿Te importa si saco ahora?	Do you mind if I serve next?	False	False			
 	28	30	29	0:00:59.030000	0:01:00.530000	0174a58df7.mp3	0174a58df7.webp	いいけど	¿Estás segura?	Sure?	False	False			
-	32		31	0:01:01.560000	0:01:02.600000	7d53e9253f.mp3	7d53e9253f.webp	えっ?		Huh?	False	False			
 	37	36	35	0:01:07.150000	0:01:10.400000	f5e7bae588.mp3	f5e7bae588.webp	昨日ネットで調べてきたサーブ	Aprendí a hacer ese servicio por internet.	I found out how to do that serve online.	False	False			
 	40	39	38	0:01:10.400000	0:01:14.740000	b3326f7ced.mp3	b3326f7ced.webp	ラケットなんかないからしゃもじで練習したんだけどね	Como no tengo paleta en casa, practiqué con una de cocina.	But I didn't have a racket at home, so I practiced with a rice paddle.	False	False			
 	43	42	41	0:01:14.740000	0:01:18.370000	2d521a0ae2.mp3	2d521a0ae2.webp	汚い 素人相手に変化球使うなんて	No es justo usar una bola curva contra una principiante.	No fair using curveballs on amateurs like me.	False	False			
@@ -59,7 +58,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	191	190	189	0:06:05.860000	0:06:08.610000	2ae8c055e4.mp3	2ae8c055e4.webp	《あっ 安達だった?》	¿Te llamabas Adachi?	A-Adachi, was it?	False	False			
 	193	194	192	0:06:10.030000	0:06:12.200000	f54340ee2d.mp3	f54340ee2d.webp	《そう だけど》	Así es.	Yeah?	False	False			
 	197	196	195	0:06:12.200000	0:06:14.790000	f4b0b9db3c.mp3	f4b0b9db3c.webp	《えっと 同じクラス》	Estamos en la misma clase.	Um, we're in the same class.	False	False			
-	199		198	0:06:14.790000	0:06:17.290000	c1ba360de6.mp3	c1ba360de6.webp	《あっ うん》		Oh, right.	False	False			
 	202	201	200	0:06:17.290000	0:06:19.710000	30c5a4a66d.mp3	30c5a4a66d.webp	《あだ名はひらがなで しまむら》	Soy Shimamura, escrito en hiragana.	My nickname's Shimamura, but in hiragana.	False	False			
 	205	204	203	0:06:20.630000	0:06:21.790000	2932b52caf.mp3	2932b52caf.webp	《しまむら》	Shimamura...	Shimamura...	False	False			
 	208	207	206	0:06:24.380000	0:06:26.210000	ae78a9fb96.mp3	ae78a9fb96.webp	《ここの常連なの?》	¿Vienes mucho por aquí?	Do you come here often?	False	False			
@@ -67,7 +65,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	214	213	212	0:06:29.550000	0:06:31.300000	1ffd0976ee.mp3	1ffd0976ee.webp	《似たようなもの》	Más o menos igual.	Pretty much the same.	False	False			
 	217	216	215	0:06:38.310000	0:06:40.190000	93a96c422b.mp3	93a96c422b.webp	《うるさいねえ》	Hacen mucho ruido.	They're so loud.	False	False			
 	220	219	218	0:06:40.190000	0:06:41.460000	367c08784e.mp3	367c08784e.webp	《ホント》	¿A que sí?	Right?	False	False			
-	224		223	0:06:53.990000	0:06:55.160000	50b0451c4e.mp3	50b0451c4e.webp	《あっ!》		Oh.	False	False			
 	227	226	225	0:07:01.460000	0:07:02.750000	43f90055b9.mp3	43f90055b9.webp	《触れるの?》	¿Te gusta tocarlas?	Are you able to touch them?	False	False			
 	230	229	228	0:07:02.750000	0:07:04.790000	10967171ac.mp3	10967171ac.webp	《セミなら何とか》	A las cigarras, sí.	Cicadas aren't too bad.	False	False			
 	233	232	231	0:07:10.130000	0:07:12.220000	41624113cc.mp3	41624113cc.webp	《止まれるかな?》	¿Se quedará quieta?	Think it'll stay on?	False	False			
@@ -197,7 +194,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	659	658	657	0:16:22.770000	0:16:24.730000	da21e050da.mp3	da21e050da.webp	変な一日だった	Qué día tan extraño.	What a weird day.	False	False			
 	662	661	660	0:16:39.490000	0:16:42.620000	86559290b5.mp3	86559290b5.webp	ほら2階で音してるじゃん	¿Lo ves? Te dije que los ruidos vienen de arriba.	See? I told you there were noises coming from upstairs.	False	False			
 	665	664	663	0:16:44.420000	0:16:47.790000	04671e1e7d.mp3	04671e1e7d.webp	へえーやっぱ卓球してたんだ	¿Qué? Sabía que estabas jugando al tenis de mesa.	Huh? I guess you really were playing table tennis.	False	False			
-	667		666	0:16:47.790000	0:16:49.340000	26dbc38d71.mp3	26dbc38d71.webp	うげっ...		Gack.	False	False			
 	670	669	668	0:16:49.340000	0:16:52.420000	ba9316d4b9.mp3	ba9316d4b9.webp	うげっとはなんだ友人に向かって	¿Así reaccionas con tus amigas?	Did you really say, "Gack" to your friend?	False	False			
 	671	673	672	0:16:56.530000	0:16:59.680000	7dc4d01791.mp3	7dc4d01791.webp	ぬぬっ しまむらー	Shimamura...	Shimamura...	False	False			
 	675	676	674	0:17:04.270000	0:17:05.710000	1ed8a71868.mp3	1ed8a71868.webp	安達	Adachi...	Adachi...	False	False			
@@ -278,7 +274,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	920	919	918	0:23:27.650000	0:23:29.900000	02b7585ac7.mp3	02b7585ac7.webp	釣れますかな?	¿No pica nada?	Anything biting?	False	False			
 	924	922	923	0:23:40.100000	0:23:43.320000	5d1d5cea31.mp3	5d1d5cea31.webp	場違いにも程がある真っ白さ	El traje era tan blanco que combinaba con su extraña presencia.	The spacesuit was so white that it just compounded their awkward presence.	False	False			
 	927	926	925	0:23:43.980000	0:23:48.610000	169ea27dd0.mp3	169ea27dd0.webp	そこに立っていたのは 小さな宇宙飛行士だった	De repente se plantó ante mí un pequeño astronauta.	Suddenly, a small astronaut stood before me.	False	False			
-	932	933		0:23:52.490000	0:23:54.760000	5fe59e7782.mp3	5fe59e7782.webp	あだしまペディア ピンポン	Adashimapedia: Ping-Pong.		False	False			
 	936	934	935	0:23:54.490000	0:23:56.630000	e59ebd1cc0.mp3	e59ebd1cc0.webp	卓球とピンポンの違いを述べよ	Diferencias con el tenis de mesa.	Explain the difference between table tennis and ping-pong.	False	False			
 	939	938	937	0:23:56.310000	0:23:58.980000	0e1583d2c3.mp3	0e1583d2c3.webp	本気でやるのが卓球 遊びでやるのがピンポン!	El tenis de mesa es serio, no por diversión.	When you're playing seriously, it's table tennis. Ping-pong is just for fun.	False	False			
 	942,943	941	940,944	0:23:58.680000	0:24:00.930000	1d0dfef433.mp3	1d0dfef433.webp	本気のピンポンは?　もはや 卓球だろ	¿Y el ping-pong serio? -Es tenis de mesa.	But what about when you play ping-pong seriously? Then it's table tennis.	False	False			

@@ -59,7 +59,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	243	245	244	0:05:35.208000	0:05:37.210000	a695f5ec7f.mp3	a695f5ec7f.webp	いや 分かるけど 見たら。	Eso ya lo veo.	I can tell that by looking at them, but...	False	False		chica A	Student B
 	248,250	247	246,249	0:05:37.150000	0:05:42.448000	1dc3ca4fbc.mp3	1dc3ca4fbc.webp	どうぞ そのまま かぶりついてください　ガブッて。あっ...	Dale una mordida. Ñam.	Please, just take a bite. Bite in!	False	False		suletta	Suletta
 	252	254,256	253,255	0:05:45.017000	0:05:48.688000	e192e7f801.mp3	e192e7f801.webp	あっ おいしい。えっ うそ。	Está rico. ¿De verdad?	Y-Yummy... Huh? Seriously?	False	False		chica A,chica B	Student A,Student B
-	257		258	0:05:48.688000	0:05:50.800000	04409a445d.mp3	04409a445d.webp	あむっ。おいしい!		It's good!	False	False			Student B
 	259	260	261,262	0:05:50.690000	0:05:52.692000	b4152213d9.mp3	b4152213d9.webp	でしょ? うん!	¿A que sí?	Right? Yeah!	False	False		chica A	Student A,Student B
 	265	264	263	0:05:52.280000	0:05:56.562000	a1188e3ce5.mp3	a1188e3ce5.webp	ママの言うとおり 早く帰ればよかった。	Debería haberme ido antes, como decía mamá.	I should've listened to my mom... and gone home sooner.	False	False		chica C	Girl Student 1
 	268	266	267	0:05:56.460000	0:05:58.698000	9f373dccfe.mp3	9f373dccfe.webp	おらっ。あっ。	Tomen.	Here.	False	False		chuchu	Chuchu
@@ -103,7 +102,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	411	410	409	0:08:19.890000	0:08:24.143000	5ced0c009b.mp3	5ced0c009b.webp	フロント間の政治問題を調停する 行政機構だよ。	Media en los problemas políticos de los frentes.	An administrative body that mediates political problems among the fronts.	False	False		till	Till
 	414	413	412	0:08:24.080000	0:08:27.213000	2b4e2c780b.mp3	2b4e2c780b.webp	そのお役人様が なんの用だよ?	¿Y qué quiere un oficial de nosotros?	What does a bureaucrat like you want with us?	False	False		chuchu	Chuchu
 	417	416	415	0:08:27.050000	0:08:31.150000	dd5e2a5aa4.mp3	dd5e2a5aa4.webp	君に頼みたいことがある。あっ...	Vine a pedirte un favor.	There's something we'd like to ask of you.	False	False		guston	Guston
-	421	420		0:08:35.780000	0:08:40.493000	3bfc70b70b.mp3	3bfc70b70b.webp	学園フロントでの 一般生徒を巻き込んだ戦闘行為	Maniobras ofensivas involucrando a civiles en la escuela		False	False		nugen	
 	426	425	424	0:08:40.330000	0:08:43.162000	2c727924e9.mp3	2c727924e9.webp	「グラスレー社」のCEOの誘拐	y el secuestro del presidente de Grassley.	The abduction of Grassley's CEO...	False	False		nugen	Nugen
 	429	428	427	0:08:42.880000	0:08:46.300000	3547d3ea85.mp3	3547d3ea85.webp	これらは 全て 企業内部の犯行でした。	Todo ello eran delitos internos.	These were all crimes committed within the Group.	False	False		nugen	Nugen
 	430,433	432,434	431	0:08:46.165000	0:08:52.340000	f130758242.mp3	f130758242.webp	そして 地球では　反スペーシアン運動を 武力で鎮圧したことにより	Por si fuera poco, en la Tierra sofocaron con violencia una revuelta anti-Spacian.	And the armed suppression of anti-Spacian demonstrations on Earth	False	False		golneri	Golneri
@@ -117,7 +115,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	463	464	462	0:09:30.610000	0:09:32.960000	f5e7f25854.mp3	f5e7f25854.webp	全会一致により	Con mayoría absoluta	By the unanimous consent of all members,	False	False		portavoz unión	Chairman
 	465	467	466	0:09:32.878000	0:09:37.249000	9bf6c6b6e2.mp3	9bf6c6b6e2.webp	議会連合憲章 第7条に基づき	y en base al artículo 7 de la Carta de la Unión del Congreso,	and under the authority of Article 7 of the League Charter,	False	False		portavoz unión	Chairman
 	470,471	469	468,472	0:09:37.120000	0:09:42.690000	70814633d9.mp3	70814633d9.webp	「ベネリット」グループへの 強制介入を　議決する。	declaro la intervención forzosa de Benerit Group.	the forcible intervention against the Benerit Group... is hereby approved.	False	False		portavoz unión	Chairman
-	478,479		476	0:09:46.040000	0:09:50.229000	d8e50c535e.mp3	d8e50c535e.webp	共同声明では 「ベネリット」グループの一連の騒動に　連合が関与し...ピッ		the League will act to resolve the unrest within the Benerit Group...	False	False			News
 	482	481	480	0:09:49.730000	0:09:53.065000	7e91d80541.mp3	7e91d80541.webp	ここにきて 「ペイル」の離反とは。	Los de Peil desertaron.	Peil chose now to jump ship...	False	False		rajan	Rajan
 	485	484	483	0:09:52.730000	0:09:55.768000	4ae3143265.mp3	4ae3143265.webp	プロスペラ・マーキュリーの 足取りは つかめないのか?	¿Aún no encontraron a Prospera Mercury?	Haven't you been able to track down Prospera Mercury yet?	False	False		guel	Guel
 	488	487	486	0:09:55.590000	0:09:58.170000	e776d34fd1.mp3	e776d34fd1.webp	「シン・セー」の端末も 洗いましたが	Revisé el terminal de Shin Sei,	We searched Shin Sei's terminals,	False	False		kenanji	Kenanji
@@ -196,7 +193,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	767	766	765	0:15:29.440000	0:15:31.537000	81ce4bfc13.mp3	81ce4bfc13.webp	勝手すぎます。	Eres muy egoísta.	You're too selfish.	False	False		nika	Nika
 	770	769	768	0:15:31.340000	0:15:34.540000	404a7dcc8b.mp3	404a7dcc8b.webp	スレッタ 乗っちゃダメだよ。	No puedes subir, Suletta.	Suletta, you can't pilot that thing!	False	False		nika	Nika
 	773	772	771	0:15:34.400000	0:15:37.540000	0d728e27cb.mp3	0d728e27cb.webp	どうして 今まで気付かなかったんだろう。	¿Cómo no me di cuenta?	Why didn't I realize until now?	False	False		suletta	Suletta
-	774		775	0:15:37.176000	0:15:39.178000	7a690d1961.mp3	7a690d1961.webp	えっ?		Huh?	False	False			Nika
 	778	777	776	0:15:38.850000	0:15:42.181000	a5b483743d.mp3	a5b483743d.webp	私が ガンダムの呪いを 受けなかったのは	No me afectaba la maldición de los Gundams	I've never been under the Gundam's curse...	False	False		suletta	Suletta
 	781	780,782	779,783	0:15:42.020000	0:15:47.186000	01cf2be518.mp3	01cf2be518.webp	エリクトが引き受けてくれていたから なんです きっと。	porque Ericht la absorbía por mí. Seguro.	because Ericht was taking it on herself. It must be...	False	False		suletta	Suletta
 	784,787	786	785	0:15:47.186000	0:15:52.257000	79a1ce453b.mp3	79a1ce453b.webp	エリクトだけが　データストームと 完全に同調できたの。	Ericht es la única que puede aclimatarse a ella por completo.	Only Ericht... was able to fully synchronize with the data storm.	False	False		belmeria	Belmeria
@@ -226,14 +222,12 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	902	903	901	0:18:48.540000	0:18:50.535000	b4fbae8cca.mp3	b4fbae8cca.webp	ダメです。機動力が違...	Es demasiado ágil.	No use! They're too maneuv-	False	False		piloto unión B	Assembly League Pilot B
 	906	905	904	0:18:52.390000	0:18:55.507000	44fe3bf6fb.mp3	44fe3bf6fb.webp	クワイエット・ゼロ 各エレメントから多層コール。	Recibiendo llamadas multicapas de todos los elementos.	Quiet Zero receiving multi-layer calls from all elements.	False	False		hombre A	Staff A
 	909	908	907	0:18:55.320000	0:18:57.843000	cc9594b516.mp3	cc9594b516.webp	データストームの空間化 開始。	Expandiendo la tormenta de datos.	Beginning creation of data storm space.	False	False		hombre B	Staff B
-	918		920	0:19:20.299000	0:19:23.268000	28128fcefd.mp3	28128fcefd.webp	オーバーライドされています。なんだと?		What?	False	False			Chairman
 	923	922	921,924	0:19:23.010000	0:19:26.772000	a70be54c49.mp3	a70be54c49.webp	ちくしょう。動け! 動けよ!	¡Maldita sea! ¡Muévete, por favor!	Come on! Move, damn it! Move!	False	False		piloto unión C	Assembly League Pilot C
 	926	928	927	0:19:45.924000	0:19:49.895000	e6aa9840b9.mp3	e6aa9840b9.webp	この 魔女がー!	¡Maldita bruja!	You damned witches!	False	False		capitán	Chairman
 	931,932	930	929	0:19:52.240000	0:19:59.104000	1b32d64ec3.mp3	1b32d64ec3.webp	議会連合の全艦艇 および モビルスーツのシステム　オーバーライド完了。	Sistemas de la flota y los Mobile Suits de la Unión anulados.	Override of all Assembly League vessel and mobile suit systems complete.	False	False		hombre A	Staff A
 	933,937	935	934,936	0:19:59.104000	0:20:03.208000	d8427cbb79.mp3	d8427cbb79.webp	お疲れさま。ありがとう エリィ。	Buen trabajo. Gracias, Eri.	Well done. Thank you, Eri.	False	False		prospera	Prospera
 	938,942	940	939,941	0:20:04.776000	0:20:10.182000	d7eeb51d7d.mp3	d7eeb51d7d.webp	ようやく始まるわ　あなたのための世界が。	Por fin comienza este nuevo mundo para ti.	It's finally begun. The world I'm creating for you!	False	False		prospera	Prospera
 	945,947	944	943,946	0:20:14.680000	0:20:19.725000	b188a92774.mp3	b188a92774.webp	議会連合の艦隊が　こんな簡単に...	Acabó con la flota de la Unión sin ningún esfuerzo.	The Assembly League fleet... that easily...	False	False		guel	Guel
-	950	949		0:20:19.640000	0:20:22.627000	3d8908022d.mp3	3d8908022d.webp	ラグランジュ4全域に 緊急事態を通達。	Emergencia en el área Lagrange 4.		False	False		rajan	
 	954	953	952	0:20:22.420000	0:20:25.830000	64bed6fa2a.mp3	64bed6fa2a.webp	また 人が...この宙域から退避させろ。	De nuevo murió gente.	Not again... More lives...	False	False		miorine	Miorine
 	955	957	958	0:20:25.630000	0:20:28.633000	e1f4863f1d.mp3	e1f4863f1d.webp	至急 手配します。私...	Yo...	I...	False	False		miorine	Miorine
 	961	960	959	0:20:28.580000	0:20:30.802000	42f1a2cdad.mp3	42f1a2cdad.webp	艦隊が全滅!?	¿Eliminó a la flota?	The entire fleet was destroyed?	False	False		guston	Guston

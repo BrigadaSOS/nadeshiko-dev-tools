@@ -25,7 +25,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	155	157	156	0:03:21.827000	0:03:23.470000	8165f42b6d.mp3	8165f42b6d.webp	身も蓋もない! あっ	Al fin lo reconoces.	She just admitted it!	False	False		Hitori	Hitori
 	158	160	159	0:03:23.495000	0:03:26.650000	1a032c9989.mp3	1a032c9989.webp	そんなときのために こんなものを	Por eso traje esto.	I brought this for just such an occasion.	False	False		Ryo	Ryo
 	166	167	165	0:03:26.650000	0:03:27.980000	4a8ea6f408.mp3	4a8ea6f408.webp	いいねー	¡Bien pensado!	Nice one!	False	False		Nijika	Nijika
-	169,171		168	0:03:27.980000	0:03:30.980000	b0a2d319cb.mp3	b0a2d319cb.webp	なんか ヤバそうなもの　混ざってるけど...		I don't think I like the looks of this...	False	False			Hitori
 	172,177	173,176	174,175	0:03:31.003000	0:03:34.910000	50506239fc.mp3	50506239fc.webp	はい 何が出るかな　何が出るかな	Ahí va. ¿Qué saldrá? ¿Qué saldrá?	There! What'll she roll? What'll she roll?	False	False		Nijika	Nijika
 	179	180	178	0:03:34.910000	0:03:37.384000	3bd284a1a0.mp3	3bd284a1a0.webp	デデデンデン デデデン デンデン	Tan-tan-tan-tan-tan...	Dun-dun-dun-dun-dun...	False	False		Ryo	Ryo
 	184	185,187	183,186	0:03:37.850000	0:03:41.380000	62ad287a1d.mp3	62ad287a1d.webp	学校の話! 略してガコバナー	¡Hablar de la escuela! ¡Abreviado: HDE!	Talk about school! TAS for short!	False	False		Nijika	Nijika
@@ -38,8 +37,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	213	215	214	0:03:58.239000	0:04:00.210000	72eec35820.mp3	72eec35820.webp	家 ここら辺じゃないの?	¿No vives por aquí?	Shouldn't you live around here too?	False	False		Nijika	Nijika
 	216	218	217	0:04:00.199000	0:04:03.910000	45eb863fe4.mp3	45eb863fe4.webp	あっ いや 県外で片道2時間です	No, yo vivo en otra prefectura. Viajo dos horas al día.	No, I live out-of-prefecture. Two-hour commute each way.	False	False		Hitori	Hitori
 	220	221	219,222	0:04:03.910000	0:04:05.430000	367c08784e.mp3	367c08784e.webp	えっ なんで? 2時間	¿Dos horas? -¿Por qué?	Two hours?! Why?	False	False		Ryo	Nijika,Ryo
-	224,226	225		0:04:05.955000	0:04:09.840000	429a1b3b0c.mp3	429a1b3b0c.webp	高校は 誰も自分の過去を　知らない所に 行きたくて...	Quería ir a una prepa donde nadie conociera mi pasado.		False	False		Hitori	
-	227	229		0:04:09.833000	0:04:11.600000	43f90055b9.mp3	43f90055b9.webp	はい ガコバナ終了ー	¡Cambio de tema!		False	False		Nijika	
 	231,235	232,234,237	230,233,236	0:04:11.600000	0:04:20.520000	854afbfc4d.mp3	854afbfc4d.webp	す... すみません 高校でも基本 一人なもので　その 楽しい浮かれた お話ひとつも 提供で... できなくて	Lo siento... Como estoy sola la mayoría del tiempo en la prepa, no tengo ninguna anécdota graciosa que contar...	S-Sorry... I spend most of my time at school alone, so I don't have any f-fun stories to contribute...	False	False		Hitori	Hitori
 	239	240	238	0:04:20.520000	0:04:21.637000	49f4957536.mp3	49f4957536.webp	大丈夫 大丈夫	Tranquila.	Hey, it's okay!	False	False		Nijika	Nijika
 	242	243	241	0:04:21.610000	0:04:24.150000	44b8f9f037.mp3	44b8f9f037.webp	リョ... リョウもね そんな友達いないし	Ryo tampoco tiene muchos amigos.	Ryo doesn't have many friends either.	False	False		Nijika	Nijika
@@ -139,8 +136,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	648	650,652	649,651	0:09:25.190000	0:09:28.040000	9b9430d776.mp3	9b9430d776.webp	働きたくない! だって...	No quiero trabajar. Porque...	I don't wanna work! Because...	False	False		Hitori	Hitori
 	654,657,659	656	655	0:09:28.068000	0:09:33.550000	d29bd15749.mp3	d29bd15749.webp	うっ... あっ... いらっしゃいませ　あたあたた...　絶対 こうなって...	Bienvenida... ¿Le caliento...? -Me pondría así...	W-Welcome... Sh-Should I warm... up?	False	False		Hitori	Hitori
 	662,665,667	664	663	0:09:33.573000	0:09:38.930000	16a50e8686.mp3	16a50e8686.webp	うっ... あっ... いらっしゃいませ　あたあたた...　こうなって...	Bienvenida... ¿Le caliento...? -Y entonces...	W-Welcome... Sh-Should I warm... up?	False	False		Hitori	Hitori
-	672	673		0:09:39.496000	0:09:42.190000	3df1add434.mp3	3df1add434.webp	"お客様に 不快感を与えたで賞"で	Por ahuyentar a los clientes, la condenamos a...		False	False		Prosecutor	
-	675	676		0:09:42.249000	0:09:43.770000	1ed8a71868.mp3	1ed8a71868.webp	死刑を求刑する!	¡Pena de muerte!		False	False		Prosecutor	
 	677	679,681	678,680	0:09:43.792000	0:09:47.460000	e4614322cc.mp3	e4614322cc.webp	えー それでは判決 死刑	Sentencia decidida. Muere.	Okay, here comes the ruling... Death!	False	False		Judge	Judge
 	684	685	683	0:09:47.690000	0:09:50.190000	573f53da70.mp3	573f53da70.webp	こうなるに決まってる!	¡Y será mi fin!	And then that!	False	False		Hitori	Hitori
 	687	686,690	688,689	0:09:50.520000	0:09:52.770000	a29fce4afb.mp3	a29fce4afb.webp	...ちゃん ぼっちちゃん	Bocchi. Bocchi.	...cchi-chan. Bocchi-chan.	False	False		Nijika	Nijika
@@ -258,7 +253,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	1131	1132	1126	0:16:06.900000	0:16:10.428000	c18e911a4e.mp3	c18e911a4e.webp	私 成長してる?	¿Esto es... crecimiento personal?	Is this... personal growth?!	False	False		Hitori	Hitori
 	1133	1135	1134	0:16:10.929000	0:16:14.820000	fb8aab869f.mp3	fb8aab869f.webp	あっ いつの間にか お客さん入ってきたねー	Ya están llegando los clientes.	Hey, customers already!	False	False		Nijika	Nijika
 	1141	1142	1136	0:16:14.820000	0:16:17.280000	878ba4811e.mp3	878ba4811e.webp	ぼっちちゃん 今から忙しくなるよ	Vamos a estar muy ocupadas.	We're about to be busy, Bocchi-chan!	False	False		Nijika	Nijika
-	1144		1143	0:16:17.280000	0:16:18.311000	a22d84eea9.mp3	a22d84eea9.webp	え?		What?	False	False			Hitori
 	1146	1147	1145	0:16:19.330000	0:16:22.040000	b0dc2a235d.mp3	b0dc2a235d.webp	えっ? いきなり接客開始?	¿Atenderé a los clientes?	Wait... Customer service already?!	False	False		Hitori	Hitori
 	1149	1150	1148	0:16:22.040000	0:16:23.650000	2a8d875d74.mp3	2a8d875d74.webp	なんて言えばいいの?	¿Qué digo?	What do I say?!	False	False		Hitori	Hitori
 	1151	1153	1152	0:16:23.441000	0:16:26.290000	66acb31264.mp3	66acb31264.webp	本日は お日柄も良く ご来店いただき...	"Gracias por su prepotencia"...	"Thank you for your royal parentage..."	False	False		Hitori	Hitori
@@ -280,7 +274,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	1211	1212	1210	0:17:08.790000	0:17:11.740000	4af0c34c9a.mp3	4af0c34c9a.webp	えー どうも! アレキサンディズムです	Hola. Somos Alexandhythm.	Hey, there! We're Alexandism!	False	False		Tsuyoshi	Tsuyoshi
 	1216	1217	1215	0:17:12.720000	0:17:15.493000	5381af7d4a.mp3	5381af7d4a.webp	あのバンド 結構いいんだよねー	Son bastante buenos.	They're pretty good, y'know?	False	False		Nijika	Nijika
 	1219	1221,1224	1220,1223	0:17:16.494000	0:17:20.760000	c1d78a6aea.mp3	c1d78a6aea.webp	力抜いて大丈夫 ライブ始まったら暇になるから	Tranquila, ya puedes relajarte. Descansaremos durante la presentación.	It's a good time to relax. Once the performances start, we'll have time to kill.	False	False		Nijika	Nijika
-	1226		1227	0:17:20.623000	0:17:21.400000	50f42c67cf.mp3	50f42c67cf.webp	あ...		Right...	False	False			hitori
 	1229,1231	1230,1234	1228,1232,1235	0:17:21.400000	0:17:24.600000	6e73b4642b.mp3	6e73b4642b.webp	お疲れ　お疲れー あれ 受付は?	Buen trabajo. -Gracias. ¿Ya no vendes más entradas?	Good work. Good work! Don't you have to sell tickets?	False	False		Nijika,Ryo	Nijika,Ryo
 	1237	1238	1236	0:17:24.600000	0:17:26.880000	d7751f62dd.mp3	d7751f62dd.webp	店長が代わってくれた	La gerente me está sustituyendo.	Manager stepped in for me.	False	False		Ryo	Ryo
 	1242,1245	1243	1240,1244	0:17:26.880000	0:17:31.020000	9d898abe5e.mp3	9d898abe5e.webp	今日のバンドは どれも人気あるし　勉強になるから見とけって	Como las bandas de hoy son famosas, me pidió que aprendiera de ellas.	All of today's bands are really popular, so she told me to watch and learn.	False	False		Ryo	Ryo
@@ -339,7 +332,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	1472	1473	1471	0:21:08.240000	0:21:10.520000	96d9ad4058.mp3	96d9ad4058.webp	なんとか1日乗り切った!	¡Sobreviví un día!	I made it through an entire day somehow!	False	False		Hitori	Hitori
 	1475	1476	1474	0:21:10.480000	0:21:13.410000	a1c8dcfd08.mp3	a1c8dcfd08.webp	バイト 意外と やっていけそうな気がする	Este trabajo no es tan duro como pensaba.	This work thing isn't as hard as I thought it would be!	False	False		Hitori	Hitori
 	1477	1479	1478	0:21:13.022000	0:21:15.460000	e28aee584b.mp3	e28aee584b.webp	あ... 明日も頑張るぞー フフッ	¡Mañana volveré a esforzarme!	I'll do my best again tomorrow!	False	False		Hitori	Hitori
-	1483		1484	0:21:17.485000	0:21:18.569000	f299d7e37f.mp3	f299d7e37f.webp	ん?		Eh?	False	False			Hitori
 	1486	1487	1485	0:21:19.610000	0:21:21.864000	caf2d71947.mp3	caf2d71947.webp	ぼっち 頑張ってたね	Bocchi se esforzó, ¿verdad?	Bocchi worked hard, huh?	False	False		Ryo	Ryo
 	1489	1490	1488	0:21:22.350000	0:21:23.380000	65440ea734.mp3	65440ea734.webp	そだねー	Sí.	Yeah.	False	False		Nijika	Nijika
 	1491	1493	1492	0:21:23.408000	0:21:27.120000	6a61fa8088.mp3	6a61fa8088.webp	それに"また明日" って言ってくれたねー	Y hasta nos dijo "hasta mañana".	And she managed to say "see you tomorrow!"	False	False		Nijika	Nijika

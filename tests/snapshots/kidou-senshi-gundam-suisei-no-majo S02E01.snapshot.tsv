@@ -1,5 +1,4 @@
 ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREENSHOT	CONTENT	CONTENT_TRANSLATION_SPANISH	CONTENT_TRANSLATION_ENGLISH	CONTENT_SPANISH_MT	CONTENT_ENGLISH_MT	ACTOR_JA	ACTOR_ES	ACTOR_EN
-	4	3		0:00:03.319000	0:00:06.484000	2157bc38d5.mp3	2157bc38d5.webp	これより 決闘を執り行う。	Se producirá un duelo.		False	False		elan 5	
 	6	7	5	0:00:06.430000	0:00:09.354000	cd8dcf976a.mp3	cd8dcf976a.webp	決闘方法は連戦方式。	Serán batallas consecutivas.	The format will be serial battle.	False	False		elan 5	Elan (Clone 5)
 	9	10	8	0:00:09.030000	0:00:13.158000	e46dbc0fc4.mp3	e46dbc0fc4.webp	ホルダーとの対戦に 挑戦者が勝った場合は	En caso de que el retador venza a la Holder,	If any of the challengers should defeat the Holder,	False	False		elan 5	Elan (Clone 5)
 	12	13	11	0:00:12.990000	0:00:16.828000	dbd4d0d42a.mp3	dbd4d0d42a.webp	その者が 次の挑戦者と決闘を行い	este se enfrentará al siguiente contendiente.	that victor shall continue battling subsequent challengers	False	False		elan 5	Elan (Clone 5)
@@ -24,7 +23,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	103	102	101	0:01:45.740000	0:01:48.887000	b750aad9a3.mp3	b750aad9a3.webp	両者 向顔。	Pónganse cara a cara.	Both parties, face off.	False	False		elan 5	Elan (Clone 5)
 	105	106	104	0:01:48.710000	0:01:52.290000	4b88ee3b71.mp3	4b88ee3b71.webp	勝敗は モビルスーツの 性能のみで決まらず。	La victoria no se decide solo gracias al Mobile Suit.	Victory is never decided by mobile suit performance, alone.	False	False		suletta	Suletta
 	108	109	107	0:01:52.170000	0:01:55.093000	471a18774b.mp3	471a18774b.webp	操縦者の技量のみで決まらず。	Ni tampoco a la pericia del piloto.	Nor by the skill of the pilot, alone.	False	False		piloto 1	Pilot 1
-	112		110	0:01:55.050000	0:01:57.630000	a362123379.mp3	a362123379.webp	ただ 結果のみが真実。		The result itself is the only truth.	False	False			Suletta
 	116	118	117	0:01:57.629000	0:01:59.597000	7a2381ca9c.mp3	7a2381ca9c.webp	決心 解放。	Fix Release.	Fix release.	False	False		elan 5	Elan (Clone 5)
 	121	122	120	0:02:10.480000	0:02:14.078000	2978fdc56e.mp3	2978fdc56e.webp	花嫁は頂くぜ 水星の!	¡Me quedaré con la novia, mercuriana!	Your bride will be mine, Mercurian wench!	False	False		piloto 1	Pilot 1
 	123	125	124	0:02:14.078000	0:02:16.150000	5f444d3c48.mp3	5f444d3c48.webp	ダダダダッ! エアリアル!	¡Aerial!	Aerial!	False	False		suletta	Suletta
@@ -35,13 +33,10 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	145	146	147	0:02:41.306000	0:02:43.308000	6c7a6751d0.mp3	6c7a6751d0.webp	はい。第2戦。	Sí. -Segundo combate.	Second battle.	False	False		suletta/elan 5	Elan (Clone 5)
 	151	153	152	0:02:54.319000	0:02:56.570000	ab5c841a3b.mp3	ab5c841a3b.webp	見た目が変わったって...	¿Y qué si cambia su aspecto?	To hell with your new look!	False	False		piloto 2 chica	Pilot 2 (Female Student)
 	154	156	155	0:02:59.123000	0:03:01.125000	cc6510eedb.mp3	cc6510eedb.webp	みんな!	¡Chicos!	Everyone!	False	False		suletta	Suletta
-	158		159	0:03:05.296000	0:03:07.930000	1a032c9989.mp3	1a032c9989.webp	うっ...おおー。		Look at that.	False	False			Male Students
 	161	160,163	162	0:03:07.820000	0:03:10.160000	81bcbc8c93.mp3	81bcbc8c93.webp	すっげぇ。粘れよ。	Increíble. Aguanta un poco.	Can't they put up a fight?	False	False		estudiantes	Male Students
-	164	168		0:03:09.901000	0:03:11.870000	70708e6b7d.mp3	70708e6b7d.webp	第3戦。	Tercer combate.		False	False		elan 5	
 	173	174	172	0:03:16.120000	0:03:18.610000	98b812f370.mp3	98b812f370.webp	一撃くらいは! ビシュー!	¡Le daré al menos una vez!	I'll at least score one hit!	False	False		piloto 3 chica	Pilot 3 (Female Student)
 	175,179	177,181	176,178,180	0:03:22.080000	0:03:27.452000	ed55dd9159.mp3	ed55dd9159.webp	ああー もう!　水星女一人に! しかたないっしょ。	La mercuriana está sola, y aun así... Es comprensible.	Damn it! Why does only the Mercurian... It can't be helped.	False	False		felsi,secelia	Felsi,Secelia
 	183	184	182	0:03:27.180000	0:03:31.330000	a47b1e4903.mp3	a47b1e4903.webp	最強の御三家 潰した ホルダー様だし。	Es la Holder que venció a las tres grandes familias.	After all, she's Mistress Holder who crushed the three top branches.	False	False		secelia	Secelia
-	186	187		0:03:32.290000	0:03:36	5ca582d3e3.mp3	5ca582d3e3.webp	だが 勝機を見いだすなら この連戦はチャンスだ。	Su única oportunidad de ganar es en estos combates.		False	False		sabina	
 	192	191	190	0:03:36.770000	0:03:40.164000	686212d425.mp3	686212d425.webp	ホルダーの決闘義務だっけ? ロウジ君。	¿Es por la obligación de duelo del Holder, Rouji?	Take advantage of the Holder's dueling obligation, right, Rouji?	False	False		renee	Renee
 	194	195	193,196	0:03:40.120000	0:03:42.166000	9788016ded.mp3	9788016ded.webp	ちょっと。ハロ。	Oye. -Haro.	Watch it, you! Haro...	False	False		secelia/rouji	Rouji,Secelia
 	197	199	198	0:03:42.166000	0:03:45.069000	f4b0b9db3c.mp3	f4b0b9db3c.webp	ホルダーは 挑戦者がいる場合	Si hay un contendiente,	As long as there are challengers,	False	False		haro	Rouji's Haro
@@ -49,7 +44,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	204	205	203	0:03:49.490000	0:03:51.609000	71ad851494.mp3	71ad851494.webp	エアリアルの改修中	Al ir a tomar a Aerial,	While the Aerial was being rebuilt,	False	False		haro	Rouji's Haro
 	207	208	206	0:03:51.500000	0:03:55.480000	5814a3ccaf.mp3	5814a3ccaf.webp	特例の適用で延期された決闘は 5回。	se pospusieron excepcionalmente cinco duelos.	five duels were postponed by special exception.	False	False		haro	Rouji's Haro
 	209	211	210	0:03:55.480000	0:03:57.649000	84a9c41bc1.mp3	84a9c41bc1.webp	あと1機! いいかげんに!	¡Resta uno!	One to go!	False	False		chuchu	Chuchu
-	216	218		0:03:57.649000	0:04:00.340000	45eb863fe4.mp3	45eb863fe4.webp	有利なのは 挑戦者のはずなんですけど...	Los contendientes deberían tener la ventaja.		False	False		rouji	
 	222,225	221,224	220,223,226	0:04:02.050000	0:04:08.059000	b347b45fb0.mp3	b347b45fb0.webp	約束したんです。ミオリネさんの誕生日まで 私　負けません!	Hice una promesa. No perderé hasta el cumpleaños de Miorine.	I made a promise. Until the day of Ms. Miorine's birthday... I won't lose!	False	False		suletta	Suletta
 	228,230	229	227	0:04:09.670000	0:04:14.966000	935136a4e1.mp3	935136a4e1.webp	改修されたエアリアルに 勝る機体は　今の「ベネリット」グループに ありませんね。	El Benerit Group no tiene ninguna unidad que supere al Aerial actual.	The rebuilt Aerial now surpasses any other machine in the Benerit Group.	False	False		rouji	Rouji
 	231	233	232	0:04:17.602000	0:04:21.005000	24881e20a3.mp3	24881e20a3.webp	ううー! 不気味なモビルスーツだ。	Es un Mobile Suit inquietante.	That mobile suit creeps me out.	False	False		sabina	Sabina
@@ -81,7 +75,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	347,348	346	345	0:07:19.430000	0:07:24.355000	c8c0d4678e.mp3	c8c0d4678e.webp	あいつ ミオリネ 助けるために　プラントの外 出たんだよな。	Salió fuera de la planta para ayudar a Miorine, ¿no?	She went outside the plant to help Miorine, didn't she?	False	False		ojelo	Ojelo
 	350	351	349	0:07:24.240000	0:07:26.357000	f1c75f88c7.mp3	f1c75f88c7.webp	ビビんだろ 普通。	Debería haberse asustado.	Most people would freak out.	False	False		ojelo	Ojelo
 	352	354	353	0:07:26.357000	0:07:29.360000	df662f2107.mp3	df662f2107.webp	会社も 営業 止められてるし。	Además nos prohibieron trabajar.	Company business is suspended, too.	False	False		nuno	Nuno
-	356	357		0:07:29.360000	0:07:33.898000	f669cce3de.mp3	f669cce3de.webp	いつ帰って来んのかね うちの社長は。	¿Cuándo regresará nuestra presidenta?		False	False		nuno	
 	362	363	361	0:07:33.880000	0:07:37.468000	37db263cba.mp3	37db263cba.webp	脊髄の回復は長期戦になります。	Restaurar la médula es una batalla a largo plazo.	Recovery from a spinal injury is a long-term struggle.	False	False		médico	Attending Doctor (Male)
 	365	366	364	0:07:37.180000	0:07:41.072000	68201abd3a.mp3	68201abd3a.webp	ミオリネお嬢様も 少し お休みください。	Váyase a descansar, señorita Miorine.	You'll need rest too, Mistress Miorine.	False	False		médico	Attending Doctor (Male)
 	369	367	368	0:07:41.040000	0:07:43.040000	54a0b13ce6.mp3	54a0b13ce6.webp	ありがとう。	Gracias.	Thanks.	False	False		miorine	Miorine
@@ -189,7 +182,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	764	765	763	0:14:43.650000	0:14:47.350000	6a825ec333.mp3	6a825ec333.webp	そうすれば みんなに ばれずに 済むかもしれませんよ。	Así quizás nadie descubra quién eres.	That way, I guess none of us will be exposed.	False	False		norea	Norea
 	769,773	770	771,772	0:15:34.044000	0:15:38.440000	c3065a37c0.mp3	c3065a37c0.webp	スレッタ・マーキュリー　今日こそ 僕とデートしてもらうよ。	Suletta Mercury, hoy sí debemos tener una cita.	Suletta Mercury! Today's the day you finally go out with me.	False	False		elan 5	Elan (Clone 5)
 	775	776	774,777	0:15:38.360000	0:15:40.850000	452c75b88d.mp3	452c75b88d.webp	あっ えっと 今日は...	Es que hoy...	Oh, um... Today is...	False	False		suletta	Suletta
-	782		783	0:15:42.553000	0:15:44.822000	285dfb128b.mp3	285dfb128b.webp	あっち? 次 あれやってみたい。		Huh?	False	False			Suletta
 	787	788,790	786,789	0:15:44.790000	0:15:47.950000	5bfaee94ed.mp3	5bfaee94ed.webp	お姉ちゃん つきあいます。攻め方を変えるか。	Te acompaño. Cambiaré de táctica.	Big Sis is coming! Better change my approach...	False	False		elan 5,suletta	Elan (Clone 5),Suletta
 	793	794	792	0:15:49.470000	0:15:52.596000	f2e91fd688.mp3	f2e91fd688.webp	すみません よそ見してました。	Lo siento, no miraba por dónde iba.	Sorry, I should watch where I'm going.	False	False		norea	Norea
 	795	796	797	0:15:52.596000	0:15:55.360000	16f6251eaa.mp3	16f6251eaa.webp	あの子と一緒に 見学しなくていいの?	¿No irás a explorar con la otra chica?	Shouldn't you be touring with your friend?	False	False		elan 5	Elan (Clone 5)
@@ -200,7 +192,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	811	813	812	0:16:08.078000	0:16:10.047000	322268cb38.mp3	322268cb38.webp	楽しげな笑顔。	Sonrisas joviales.	Cheerful, smiling faces...	False	False		norea	Norea
 	816	815	814	0:16:11.450000	0:16:13.450000	d534603cc3.mp3	d534603cc3.webp	ヘドが出る。	Me da náuseas.	It makes me sick.	False	False		norea	Norea
 	819	818	817	0:16:15.330000	0:16:17.588000	bceca15165.mp3	bceca15165.webp	気が合いそうだな。	Parece que congeniamos.	Sounds like we'll get along well.	False	False		elan 5	Elan (Clone 5)
-	820		821	0:16:17.588000	0:16:19.556000	f365afab44.mp3	f365afab44.webp	ん?		Huh?	False	False			Elan (Clone 5)
 	824	823	822	0:16:24.210000	0:16:26.530000	b176ce6c68.mp3	b176ce6c68.webp	連絡役なんて...	¿Por qué hago de intermediaria?	Some "go-between" I am...	False	False		nika	Nika
 	826	827	825	0:16:31.340000	0:16:35.439000	77d74fa058.mp3	77d74fa058.webp	プラント・クエタで 君は 僕らを助けてくれた。	En la Planta Quetta nos salvaste.	At Plant Quetta, you saved us all from harm.	False	False		martin	Martin
 	828,834	830,831	829,832,833	0:16:35.439000	0:16:41.779000	019225dabd.mp3	019225dabd.webp	マルタン。でも　僕には 寮長として みんなを守る責任がある。	Martin. Pero como líder del dormitorio es mi deber protegernos.	Martin... Even so... As head of the House, I'm responsible for everyone's safety.	False	False		martin,nika	Martin,Nika
@@ -263,7 +254,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	1055	1056	1057	0:20:37.281000	0:20:40.300000	a1d2b4117c.mp3	a1d2b4117c.webp	ル... ルールに従ってください!	sigan las normas de la escuela.	then please follow the school rules!	False	False		suletta	Suletta
 	1058	1060	1059	0:20:40.284000	0:20:43.620000	75cd9671c6.mp3	75cd9671c6.webp	スレッタ...あはははっ!	Suletta...	Suletta...	False	False		nika	Nika
 	1067,1072	1069,1071	1068,1070	0:20:50.360000	0:20:55.632000	0558c14736.mp3	0558c14736.webp	違います。ガンダムは　医療で人を救うモビルスーツに なるんです。	¡No! Los Gundams son Mobile Suits que salvarán a la gente.	That's not true! Gundams will be used to save lives through medicine!	False	False		suletta	Suletta
-	1076		1077	0:20:59.670000	0:21:04.441000	52bd18b4ce.mp3	52bd18b4ce.webp	ソフィ。やろうよ 私たちの決闘。		Sophie...	False	False			Norea
 	1108,1112	1110	1109,1111	0:22:46.109000	0:22:51.010000	fed93370ff.mp3	fed93370ff.webp	お互い...はっ!　自由になれないのは つらいわね。	Es duro que se restrinja nuestra libertad, ¿eh?	We both hate... being confined here, don't we?	False	False		prospera	Prospera
 	1113	1115	1114,1116	0:22:50.981000	0:22:53.960000	fd04da3a61.mp3	fd04da3a61.webp	あんた 何考えてんのよ。	¿En qué estabas pensando?	You... What were you thinking?	False	False		miorine	Miorine
 	1117	1118	1119	0:22:53.850000	0:22:56.186000	eba427b8fb.mp3	eba427b8fb.webp	自分の娘に あんなことを...	Obligar a tu hija a algo así...	Making your daughter do something like that...	False	False		miorine	Miorine

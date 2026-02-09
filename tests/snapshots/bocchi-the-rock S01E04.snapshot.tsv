@@ -10,7 +10,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	37	38	36	0:00:42.580000	0:00:44.129000	f5e7bae588.mp3	f5e7bae588.webp	あっ えっと... イエイ!	Este... ¡Yay!	Oh, um... Yeah!	False	False		kita	Kita
 	41	39	40	0:00:44.450000	0:00:46.381000	6973cb54c7.mp3	6973cb54c7.webp	だから... あっ	Por eso...	So...	False	False		kita	Kita
 	43	44	42	0:00:47.070000	0:00:48.800000	2d521a0ae2.mp3	2d521a0ae2.webp	もっと頑張らないとね	tendré que esforzarme más.	I guess I'd better work harder!	False	False		kita	Kita
-	46		45	0:00:48.520000	0:00:49.342000	5942ebf37e.mp3	5942ebf37e.webp	キターン!		Kit-aura!	False	False			Kita
 	49	50	48	0:00:51.030000	0:00:52.720000	faa371c645.mp3	faa371c645.webp	目が! え?	¡Mis ojos!	My eyes!	False	False		hitori	Hitori
 	53	51	52	0:00:52.420000	0:00:53.429000	be62676238.mp3	be62676238.webp	い... いえ	No, nada.	N-Nothing.	False	False		hitori	Hitori
 	55	56	54	0:00:53.400000	0:00:56.766000	88e66fcd61.mp3	88e66fcd61.webp	爽やか向上心パワー まぶしすぎる!	Su deseo de mejorar es cegador.	Her eager self-improvement power is too bright to look directly at!	False	False		hitori	Hitori
@@ -70,7 +69,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	298,301	300	299	0:04:59.634000	0:05:04.222000	5e4aab4645.mp3	5e4aab4645.webp	ぼっちちゃんには オリジナルソングの作詞という　重要任務があるから	Ella tiene la misión de escribir la letra de nuestra canción.	She has a more important job: writing lyrics for our original song!	False	False		nijika	
 	305,307	304	303,306	0:05:06.320000	0:05:10.186000	1a3ba9134a.mp3	1a3ba9134a.webp	前に決めたじゃん　リョウが作曲 ぼっちちゃんが作詞って	Ya lo decidimos. Ryo la compondrá. Tú escribirás la letra.	We settled on it before, remember? Ryo would write the music, and you'd write the lyrics!	False	False		nijika	
 	309,312,314	310	308,311	0:05:10.160000	0:05:16.234000	8391bfaed7.mp3	8391bfaed7.webp	歌詞に禁句が多いなら ぼっちちゃんが書けばいいよ　書けばいいよ　書けばいいよ...	Y tú la letra para así no incluir tus palabras tabú.	If you've got off-limits words, Bocchi-chan, you should write the lyrics! write the lyrics!	False	False		nijika	Nijika
-	316		315	0:05:15.770000	0:05:16.984000	089234c0a0.mp3	089234c0a0.webp	あ...		write the lyrics!	False	False			Nijika
 	317	319	318	0:05:17.527000	0:05:20.240000	763c94d180.mp3	763c94d180.webp	えーっ! リョウ先輩の曲 楽しみです	Me muero por oír tu canción.	Wow! I can't wait to hear your song, Ryo-senpai.	False	False		kita	Kita
 	320	322	321	0:05:20.238000	0:05:21.960000	9a12754e58.mp3	9a12754e58.webp	もう作ってたりするんですか?	¿Ya la tienes hecha?	Have you written it already?	False	False		kita	Kita
 	324	325	323,326	0:05:21.960000	0:05:24.540000	46dd3b1c4d.mp3	46dd3b1c4d.webp	ううん イメージ湧いたら そのうち	No. La haré cuando me llegue la inspiración.	No. I'll do it once I get inspiration.	False	False		ryo	Ryo
@@ -86,7 +84,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	363,365	364	366	0:05:54.981000	0:05:58.650000	2745498195.mp3	2745498195.webp	な...　何も思いつかない...	No se me ocurre nada.	I couldn't think of anything!	False	False		hitori	Hitori
 	383,386	384	370	0:05:59.790000	0:06:03.970000	9dfefc0b50.mp3	9dfefc0b50.webp	歌詞は1行も書けてないのに　サインは完成してしまった	No he escrito ni una línea, pero ya tengo mi autógrafo.	I failed to write a single lyric, but I've perfected my signature...	False	False		hitori	Hitori
 	389,392	390	388	0:06:03.970000	0:06:07.660000	0976163465.mp3	0976163465.webp	こ... こんなこと してる場合じゃないのに!　わーい ワンワン	¡No tengo tiempo para esto!	Why can't I get my priorities in order?!	False	False		hitori	Hitori
-	395	394		0:06:07.560000	0:06:08.661000	980bfdaef8.mp3	980bfdaef8.webp	ふたりー	¡Futari!		False	False		michiyo	
 	397	398	396	0:06:08.630000	0:06:12.100000	ba6e2f49dc.mp3	ba6e2f49dc.webp	昨日も現実逃避して 動画 5時間も編集してしまったし	Y ayer estuve editando videos para huir de la realidad.	I already spent five hours yesterday editing video to escape reality.	False	False		hitori	Hitori
 	399,403	400,404	401,402	0:06:12.039000	0:06:15.230000	7c8aac38f8.mp3	7c8aac38f8.webp	よし　ああー 私のバカ ゾウリムシー!	Bien. ¡Soy una tonta! ¡Un paramecio!	Done. I'm so stupid! I'm a paramecium!	False	False		hitori	Hitori
 	405,409	407	406,408	0:06:15.209000	0:06:17.753000	cee1d0992f.mp3	cee1d0992f.webp	ねえ 何書いてるの? ワン　あっ ちょ...	¿Qué estás escribiendo? -¡No!	Whatcha writin'? No!	False	False		futari	Futari,Hitori
@@ -125,7 +122,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	573	574	572	0:08:35.740000	0:08:38.311000	20f7137f55.mp3	20f7137f55.webp	じゃあ 今日 集まったのは...	¿Y por qué nos reunimos?	Then why did you call us here?	False	False		hitori	Hitori
 	576,579	577	575,578	0:08:38.750000	0:08:42.857000	1c94316ef1.mp3	1c94316ef1.webp	この前 思いつかなかったけど まだあったんだよ　バンドらしいこと	El otro día no se me ocurrió, pero hay otra cosa típica de una banda.	I didn't think of it until now, but there's one other really band-like thing we can do!	False	False		nijika	Nijika
 	581	583	582	0:08:45.359000	0:08:47.153000	60f75d1105.mp3	60f75d1105.webp	アー写を撮ろう!	¡Nuestra FdA!	Take ProPhos!	False	False		nijika	Nijika
-	585	584		0:08:48.200000	0:08:49.530000	52507e1862.mp3	52507e1862.webp	ア... ?	¿Efedeá?		False	False		hitori	
 	588	587	586	0:08:49.480000	0:08:51.324000	3d36515e1f.mp3	3d36515e1f.webp	アーティスト写真だって	"Foto de artista".	Promotional photos, she means.	False	False		kita	Kita
 	590	592	591	0:08:52.450000	0:08:56.537000	34f9a76821.mp3	34f9a76821.webp	今ある結束バンドのアー写には ぼっちちゃん 写ってないしね	En la que tenemos ahora no apareces tú, Bocchi.	Since Bocchi-chan isn't in Kessoku Band's current ProPho.	False	False		nijika	Nijika
 	594	595	593	0:08:56.500000	0:08:58.080000	77ea537aac.mp3	77ea537aac.webp	い... 今ある?	¿Hay una?	C-Current?	False	False		hitori	Hitori
@@ -171,7 +167,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	741	742	740	0:11:17.790000	0:11:20.931000	5b2f2f5d4b.mp3	5b2f2f5d4b.webp	喜多ちゃん リョウに 振り回され過ぎないようにね	No dejes que Ryo te vuelva loca, Kita.	Kita-chan, don't let Ryo jerk you around.	False	False		nijika	Nijika
 	744	745	743	0:11:20.900000	0:11:24.143000	020887a308.mp3	020887a308.webp	その場のノリで話してること 9割だから	El 90 % de las veces se deja llevar.	Ninety percent of the things she says are more or less just for vibes.	False	False		nijika	Nijika
 	746	748	747	0:11:24.643000	0:11:27.810000	402cb6ed29.mp3	402cb6ed29.webp	でも 先輩になら むしろ振り回されたい	Por ella enloquecería con gusto.	But Senpai can jerk me around any time she wants!	False	False		kita	Kita
-	752		751	0:11:31.240000	0:11:32.443000	46c612019d.mp3	46c612019d.webp	うおっ		Um?	False	False			Nijika
 	753	755	754	0:11:32.526000	0:11:34.612000	e00e79bfe9.mp3	e00e79bfe9.webp	あっ なんだ ぼっちちゃんか	Ah, eras tú, Bocchi.	Oh, it's just Bocchi-chan.	False	False		nijika	Nijika
 	757,760	758	756,759	0:11:34.560000	0:11:39.867000	6695dc0ab2.mp3	6695dc0ab2.webp	あっ あの...　あっちに た... 多分ですけど 良さげな感じの壁が...	Creo que allí hay una pared que podría servirnos.	U-Um... I-I thought I saw a n-nice-looking wall over there...	False	False		hitori	Hitori
 	762	763	761	0:11:39.840000	0:11:41.680000	f431b2d384.mp3	f431b2d384.webp	おお でかした!	¡Bien hecho!	Hey, great work!	False	False		nijika	Nijika
@@ -192,7 +187,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	817	818	819	0:12:29.917000	0:12:33.330000	cad077a728.mp3	cad077a728.webp	おおー さっすがSNS担当大臣	Propio de la ministra de las redes.	That's our Minister of Social Media!	False	False		nijika	Nijika
 	823	824	822	0:12:34.600000	0:12:36.799000	5cf79eac4e.mp3	5cf79eac4e.webp	ぼっちちゃんが瀕死状態に!	¡Bocchi está estirando la pata!	Bocchi-chan's dying!	False	False		nijika	Nijika
 	826	827	825	0:12:36.770000	0:12:39.677000	77d74fa058.mp3	77d74fa058.webp	後藤さん どうしたの? 死なないで!	¿Qué te pasa? ¡No te mueras, Goto!	What's wrong, Gotoh-san? Stay with us!	False	False		kita	Kita
-	830	828		0:12:39.360000	0:12:40.594000	fd008636ee.mp3	fd008636ee.webp	いやだ すごいピクピク...	Cómo tiembla.		False	False		kita	
 	832	833	831	0:12:40.380000	0:12:44.070000	df34f47032.mp3	df34f47032.webp	友達と写真なんて 一度も撮ったことない	Nunca me he tomado una foto con un amigo.	I've never taken pictures with friends before.	False	False		hitori	Hitori
 	837	836	835	0:12:44.560000	0:12:46.851000	09782b660f.mp3	09782b660f.webp	だって 友達いなかったから	Porque no tenía amigos.	Since... I never had friends before.	False	False		hitori	Hitori
 	839	840	838,841	0:12:47.240000	0:12:51.939000	acef4d8e66.mp3	acef4d8e66.webp	家族以外と撮った写真は クラスの集合写真くらい	Aparte de las familiares, las únicas que tengo son de la clase.	The only pictures I've taken that weren't with family were class pictures.	False	False		hitori	Hitori
@@ -230,7 +224,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	954	955	953	0:14:39.340000	0:14:40.800000	64bed6fa2a.mp3	64bed6fa2a.webp	何が"つまり"なんだろう?	¿Cómo llegó a eso?	Where is she getting that from?	False	False		hitori	Hitori
 	957	958	956	0:14:40.800000	0:14:42.925000	470fbac83f.mp3	470fbac83f.webp	全然 意味分かんないんだけど...	No le veo el sentido,	I'm not sure I followed your logic there...	False	False		nijika	Nijika
 	960	961	959	0:14:42.900000	0:14:44.843000	de4aaff0d3.mp3	de4aaff0d3.webp	とりあえず やってみよう!	pero vamos a intentarlo.	But let's give it a try!	False	False		nijika	Nijika
-	964	965		0:14:46.345000	0:14:47.805000	329fdc67ba.mp3	329fdc67ba.webp	5 4...	Cinco, cuatro...		False	False		nijika	
 	967,970	968	966	0:14:47.740000	0:14:51.016000	50d564cf15.mp3	50d564cf15.webp	ジャ... ジャンプとか 記憶にないくらいしてない!　あっ わわっ	Ni recuerdo la última vez que salté.	I c-can't even remember the last time I jumped!	False	False		hitori	Hitori
 	974	973	972	0:14:51.640000	0:14:53.602000	e3de57b69b.mp3	e3de57b69b.webp	あっ ぼっちのパンツが	Los calzones de Bocchi.	Oh, I see Bocchi's undies.	False	False		ryo	Ryo
 	976	977	975	0:14:53.580000	0:14:56.146000	216db7affd.mp3	216db7affd.webp	とんでもない写真 撮れちゃったなー	¡Es una foto sensacional!	Wow, that's one hell of a picture!	False	False		nijika	Nijika
@@ -264,7 +257,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	1071	1072	1070	0:16:14.180000	0:16:17.560000	12c4c36d23.mp3	12c4c36d23.webp	い... 一旦 誰かに見せて 様子を見よう	Primero se la enseñaré solo a una.	M-Maybe I should show it to someone and see how they react.	False	False		hitori	Hitori
 	1075,1077	1074	1073,1076	0:16:17.560000	0:16:21.910000	e29e237690.mp3	e29e237690.webp	リョウさんかな　リョウさん 気とか使わなそうだし	¿A Ryo? No creo que ella se contenga.	Ryo-san, maybe. I don't think Ryo-san would ever humor me.	False	False		hitori	Hitori
 	1089	1090	1091	0:16:24.276000	0:16:26.170000	608c6a5ec2.mp3	608c6a5ec2.webp	あっ もう既読 付いた	Ya lo leyó.	She already read it!	False	False		hitori	Hitori
-	1095		1096	0:16:29.948000	0:16:30.491000	bbf25f9b1f.mp3	bbf25f9b1f.webp	わっ!		Huh?	False	False			Hitori
 	1097	1099	1098	0:16:30.574000	0:16:32.826000	41d5f9ff3c.mp3	41d5f9ff3c.webp	お... おしゃれカフェ	¡Es una cafetería de moda!	A t-trendy café!	False	False		hitori	Hitori
 	1104	1106	1105	0:16:34.661000	0:16:37.998000	59e4422757.mp3	59e4422757.webp	が... 外食なんて 一度も一人でしたことない	Nunca había salido a comer sola.	I've never been to a real restaurant by myself.	False	False		hitori	Hitori
 	1109	1108	1107	0:16:37.980000	0:16:41.335000	a29fd1d56b.mp3	a29fd1d56b.webp	コンビニだって それなりに 気合い入れないと 入れないのに	Y hasta me preparo emocionalmente para entrar a un minisúper.	I can't even enter a convenience store without psyching myself up in advance.	False	False		hitori	Hitori
@@ -285,7 +277,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	1160	1161	1159	0:17:24.230000	0:17:26.296000	bce3e52c20.mp3	bce3e52c20.webp	って なるかもしれないし!	¡Podría pasar algo así!	That could be the result!	False	False		hitori	Hitori
 	1165	1164	1163,1166	0:17:39.380000	0:17:41.895000	b4d41fff82.mp3	b4d41fff82.webp	早く歌詞 見せて あっ はい	Enséñame la letra. -Ah, sí.	Just show me the lyrics. Oh, right.	False	False		ryo	Hitori,Ryo
 	1168	1169,1171	1167,1170	0:17:41.870000	0:17:45.190000	738ddd300f.mp3	738ddd300f.webp	お願いします うむ 拝読いたす	Aquí tienes. Voy a leerla.	Thank you. No problem. Let's see.	False	False		hitori,ryo	Hitori,Ryo
-	1173		1172	0:17:45.160000	0:17:46.900000	e6aa0e3464.mp3	e6aa0e3464.webp	おっ おおーっ!		Oh, ohh!	False	False			Ryo
 	1175	1176	1174	0:17:46.860000	0:17:48.610000	f0363393d4.mp3	f0363393d4.webp	珍しく うろたえてる?	Es raro verla alterada.	She's unusually flustered!	False	False		hitori	Hitori
 	1178	1179	1177	0:17:48.580000	0:17:50.320000	31c61b5913.mp3	31c61b5913.webp	これでいいんだ?	¿Estás satisfecha?	This is good.	False	False		ryo	Ryo
 	1182	1183	1181	0:17:51.240000	0:17:54.366000	2d871eb1ef.mp3	2d871eb1ef.webp	ううー よくはないけど バンドのことを考えると...	No mucho, pero si pienso en la banda...	I'm not sure I agree, but for the band's sake...	False	False		hitori	Hitori
@@ -334,7 +325,6 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	1349	1351	1350	0:20:50.792000	0:20:53.750000	d49b0d56a4.mp3	d49b0d56a4.webp	後藤さん 目のクマ 大丈夫?	Vaya ojeras. ¿Estás bien?	Gotoh-san, are you all right? You look tired.	False	False		kita	Kita
 	1354	1352	1353	0:20:53.690000	0:20:54.713000	d02ec1afab.mp3	d02ec1afab.webp	あっ はい	Sí.	I'm fine.	False	False		hitori	Hitori
 	1356	1357	1355,1358	0:20:54.690000	0:20:59.968000	ddaef5acd5.mp3	ddaef5acd5.webp	ここのところ作詞に夢中になって その... 寝るの忘れたりして	Es que estaba obsesionada con la letra y me olvidaba de dormir.	I've just been so focused on the lyrics, I c-completely forgot to sleep...	False	False		hitori	Hitori
-	1360		1359	0:20:59.940000	0:21:01.720000	1806fe4523.mp3	1806fe4523.webp	おおー		Wow!	False	False			Nijika
 	1363	1362	1361,1364	0:21:01.660000	0:21:05.432000	56e9adf16c.mp3	56e9adf16c.webp	どれどれ ぼっちちゃんの力作 拝見しましょー	A ver... Veamos la obra de Bocchi.	Let's have a look! I can't wait to see the fruits of your labors!	False	False		nijika	Nijika
 	1367	1366	1365	0:21:07.410000	0:21:10.062000	babaf0f681.mp3	babaf0f681.webp	あの く... 暗すぎるかも	Puede que sea muy oscura.	It m-might be... too much of a downer.	False	False		hitori	Hitori
 	1368	1370	1369	0:21:10.145000	0:21:12.010000	284c17ee8b.mp3	284c17ee8b.webp	確かに暗いね	Lo es.	It certainly is a downer.	False	False		ryo	Ryo

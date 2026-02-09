@@ -16,7 +16,10 @@ def process_subtitle_line(line, config):
     if line.name and re.search(r"sign|[_\-\s]?ed|op[_\-\s]?", line.name.lower()):
         return ""
 
-    if line.style and re.search(r"top|sign|tipo tv|block|alt|cart", line.style.lower()):
+    if line.style and re.search(
+        r"top|sign|tipo tv|block|alt|cart|lyric|song|\btitle\b|\bep\b|\bnext\b",
+        line.style.lower(),
+    ):
         return ""
 
     if re.search(r"pos\(.*?\)|move\(.*?\)", line.text):
