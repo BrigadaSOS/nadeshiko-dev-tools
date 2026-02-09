@@ -97,67 +97,96 @@ class Config:
     r2_secret_access_key: str
     r2_bucket: str
     r2_public_url: str
+    target: str = "local"
     is_prod: bool = False
 
     @classmethod
     def from_env(cls, env: str = "local") -> "Config":
-        is_prod = env == "prod"
+        if env not in ("local", "dev", "prod"):
+            raise ValueError(f"Invalid environment: {env}")
 
-        if is_prod:
-            # Prod requires separate env vars with explicit PROD suffix
+        def _first_set(*names: str, default: str = "") -> str:
+            for name in names:
+                value = os.getenv(name)
+                if value:
+                    return value
+            return default
+
+        if env == "local":
             return cls(
-                nadeshiko_api_key=os.getenv("NADESHIKO_PROD_API_KEY", ""),
-                nadeshiko_base_url=os.getenv(
-                    "NADESHIKO_PROD_BASE_URL", "https://api.nadeshiko.co"
-                ),
-                r2_account_id=os.getenv("R2_PROD_ACCOUNT_ID", ""),
-                r2_access_key_id=os.getenv("R2_PROD_ACCESS_KEY_ID", ""),
-                r2_secret_access_key=os.getenv("R2_PROD_SECRET_ACCESS_KEY", ""),
-                r2_bucket=os.getenv("R2_PROD_BUCKET", "nadeshiko-segments"),
-                r2_public_url=os.getenv("R2_PROD_PUBLIC_URL", ""),
-                is_prod=True,
-            )
-        else:
-            # Local is the default
-            return cls(
-                nadeshiko_api_key=os.getenv("NADESHIKO_API_KEY", ""),
-                nadeshiko_base_url=os.getenv(
-                    "NADESHIKO_BASE_URL", "http://localhost:5000"
+                nadeshiko_api_key=_first_set("NADESHIKO_LOCAL_API_KEY", "NADESHIKO_API_KEY"),
+                nadeshiko_base_url=_first_set(
+                    "NADESHIKO_LOCAL_BASE_URL",
+                    "NADESHIKO_BASE_URL",
+                    default="http://localhost:5000",
                 ),
                 r2_account_id=os.getenv("R2_ACCOUNT_ID", ""),
                 r2_access_key_id=os.getenv("R2_ACCESS_KEY_ID", ""),
                 r2_secret_access_key=os.getenv("R2_SECRET_ACCESS_KEY", ""),
                 r2_bucket=os.getenv("R2_BUCKET", "nadeshiko-segments"),
                 r2_public_url=os.getenv("R2_PUBLIC_URL", ""),
+                target="local",
                 is_prod=False,
             )
 
-    def validate(self, upload_r2: bool = False) -> bool:
+        if env == "dev":
+            return cls(
+                nadeshiko_api_key=_first_set("NADESHIKO_DEV_API_KEY", "NADESHIKO_API_KEY"),
+                nadeshiko_base_url=_first_set(
+                    "NADESHIKO_DEV_BASE_URL",
+                    default="https://api-dev.nadeshiko.co",
+                ),
+                r2_account_id=os.getenv("R2_ACCOUNT_ID", ""),
+                r2_access_key_id=os.getenv("R2_ACCESS_KEY_ID", ""),
+                r2_secret_access_key=os.getenv("R2_SECRET_ACCESS_KEY", ""),
+                r2_bucket=os.getenv("R2_BUCKET", "nadeshiko-segments"),
+                r2_public_url=os.getenv("R2_PUBLIC_URL", ""),
+                target="dev",
+                is_prod=False,
+            )
+
+        return cls(
+            nadeshiko_api_key=os.getenv("NADESHIKO_PROD_API_KEY", ""),
+            nadeshiko_base_url=os.getenv("NADESHIKO_PROD_BASE_URL", "https://api.nadeshiko.co"),
+            r2_account_id=os.getenv("R2_ACCOUNT_ID", ""),
+            r2_access_key_id=os.getenv("R2_ACCESS_KEY_ID", ""),
+            r2_secret_access_key=os.getenv("R2_SECRET_ACCESS_KEY", ""),
+            r2_bucket=os.getenv("R2_BUCKET", "nadeshiko-segments"),
+            r2_public_url=os.getenv("R2_PUBLIC_URL", ""),
+            target="prod",
+            is_prod=True,
+        )
+
+    def validate(self, storage_target: str = "local", upload_r2: bool = False) -> bool:
         """Check that required config is present.
 
         Args:
+            storage_target: Where media files should be served from ("local" or "r2").
             upload_r2: Whether files will be uploaded to R2. If False, R2 credentials are optional.
         """
-        prefix = "PROD_" if self.is_prod else ""
-
         missing = []
         if not self.nadeshiko_api_key:
-            missing.append(f"NADESHIKO_{prefix}API_KEY")
+            if self.target == "local":
+                missing.append("NADESHIKO_LOCAL_API_KEY (or NADESHIKO_API_KEY)")
+            elif self.target == "dev":
+                missing.append("NADESHIKO_DEV_API_KEY (or NADESHIKO_API_KEY)")
+            else:
+                missing.append("NADESHIKO_PROD_API_KEY")
 
-        # R2 credentials are required if:
-        # 1. We're uploading to R2 (upload_r2=True), OR
-        # 2. We're in prod environment (always use R2)
-        needs_r2 = upload_r2 or self.is_prod
+        # R2 credentials are required only when files are uploaded to R2.
+        needs_r2 = upload_r2
 
         if needs_r2:
+            if not self.r2_public_url:
+                missing.append("R2_PUBLIC_URL")
             if not self.r2_account_id:
-                missing.append(f"R2_{prefix}ACCOUNT_ID")
+                missing.append("R2_ACCOUNT_ID")
             if not self.r2_access_key_id:
-                missing.append(f"R2_{prefix}ACCESS_KEY_ID")
+                missing.append("R2_ACCESS_KEY_ID")
             if not self.r2_secret_access_key:
-                missing.append(f"R2_{prefix}SECRET_ACCESS_KEY")
+                missing.append("R2_SECRET_ACCESS_KEY")
             if not self.r2_bucket:
-                missing.append(f"R2_{prefix}BUCKET")
+                missing.append("R2_BUCKET")
 
         if missing:
             console.print(f"[red]Missing required env vars: {', '.join(missing)}[/red]")
@@ -170,6 +199,11 @@ class Config:
             console.print(
                 "\n[bold red on white] TARGET: PRODUCTION [/bold red on white]\n"
                 "[bold red] This will upload to PRODUCTION! [/bold red]"
+            )
+        elif self.target == "dev":
+            console.print(
+                "\n[bold cyan] TARGET: DEV [/bold cyan]\n"
+                f"[dim] API: {self.nadeshiko_base_url}[/dim]"
             )
         else:
             console.print(
@@ -365,13 +399,21 @@ class NadeshikoUploader:
     # Maximum content length for segments (characters)
     MAX_CONTENT_LENGTH = 500
 
-    def __init__(self, config: Config, dry_run: bool = False, upload_r2: bool = False, update_info_only: bool = False):
+    def __init__(
+        self,
+        config: Config,
+        dry_run: bool = False,
+        storage_target: str = "local",
+        upload_r2: bool = False,
+        update_info_only: bool = False,
+    ):
         self.config = config
         self.dry_run = dry_run
+        self.storage_target = storage_target
         self.upload_r2 = upload_r2
         self.update_info_only = update_info_only
         # Only initialize R2Uploader when we'll actually use it
-        self.r2 = R2Uploader(config) if (upload_r2 or config.is_prod) else None
+        self.r2 = R2Uploader(config) if upload_r2 else None
 
         self.api_client = Nadeshiko(
             token=config.nadeshiko_api_key,
@@ -596,7 +638,11 @@ class NadeshikoUploader:
         console.print(f"[cyan]Updating media info: {existing_media.id}[/cyan]")
 
         # Determine storage backend
-        storage = MediaUpdateRequestStorage.R2 if self.config.is_prod else MediaUpdateRequestStorage.LOCAL
+        storage = (
+            MediaUpdateRequestStorage.R2
+            if self.storage_target == "r2"
+            else MediaUpdateRequestStorage.LOCAL
+        )
 
         # Check for cover/banner files and upload if needed
         for ext in [".jpg", ".jpeg", ".png", ".webp"]:
@@ -767,7 +813,7 @@ class NadeshikoUploader:
             if self._is_auth_error(result):
                 console.print(
                     "[red]Authentication failed while listing media. "
-                    "Check NADESHIKO_API_KEY/NADESHIKO_PROD_API_KEY.[/red]"
+                    "Check your API key for the selected target (local/dev/prod).[/red]"
                 )
             else:
                 console.print("\n[red]Failed to list media:[/red]")
@@ -790,7 +836,11 @@ class NadeshikoUploader:
             return media_id if media_id is not None else existing_media.id
 
         # Determine storage backend
-        storage = MediaCreateRequestStorage.R2 if self.config.is_prod else MediaCreateRequestStorage.LOCAL
+        storage = (
+            MediaCreateRequestStorage.R2
+            if self.storage_target == "r2"
+            else MediaCreateRequestStorage.LOCAL
+        )
 
         # Upload cover/banner to R2 if they exist locally
         for ext in [".jpg", ".jpeg", ".png", ".webp"]:
@@ -924,7 +974,7 @@ class NadeshikoUploader:
             if self._is_auth_error(result):
                 console.print(
                     "[red]Authentication failed while checking episodes. "
-                    "Check NADESHIKO_API_KEY/NADESHIKO_PROD_API_KEY.[/red]"
+                    "Check your API key for the selected target (local/dev/prod).[/red]"
                 )
                 return False
             if status != 404:
@@ -972,7 +1022,11 @@ class NadeshikoUploader:
         segment_uuid = str(uuid.uuid5(uuid.NAMESPACE_URL, segment.segment_hash))
 
         # Determine storage backend
-        storage = SegmentCreateRequestStorage.R2 if self.config.is_prod else SegmentCreateRequestStorage.LOCAL
+        storage = (
+            SegmentCreateRequestStorage.R2
+            if self.storage_target == "r2"
+            else SegmentCreateRequestStorage.LOCAL
+        )
 
         request = SegmentCreateRequest(
             uuid=segment_uuid,
@@ -1126,29 +1180,27 @@ class NadeshikoUploader:
             if not filepath.exists():
                 continue
 
-            if self.upload_r2:
-                if self.dry_run:
-                    url = f"{self.r2.public_url}/media/{media_id}/{episode_number}/{filename}"
-                    file_urls[file_type] = url
-                    uploaded_files.append(f"{filename} (dry-run)")
-                elif self.r2.file_exists(media_id, episode_number, filename):
-                    url = f"{self.r2.public_url}/media/{media_id}/{episode_number}/{filename}"
-                    file_urls[file_type] = url
-                    skipped_files.append(filename)
-                else:
-                    url = self.r2.upload_file(filepath, media_id, episode_number)
-                    if url:
-                        file_urls[file_type] = url
-                        uploaded_files.append(filename)
+            if self.storage_target == "r2":
+                r2_url = f"{self.config.r2_public_url}/media/{media_id}/{episode_number}/{filename}"
+                if self.upload_r2:
+                    if self.dry_run:
+                        file_urls[file_type] = r2_url
+                        uploaded_files.append(f"{filename} (dry-run)")
+                    elif self.r2.file_exists(media_id, episode_number, filename):
+                        file_urls[file_type] = r2_url
+                        skipped_files.append(filename)
                     else:
-                        uploaded_files.append(f"{filename} (FAILED)")
-            else:
-                # For local storage, use local-style URLs
-                if self.config.is_prod:
-                    url = f"{self.config.r2_public_url}/media/{media_id}/{episode_number}/{filename}"
+                        url = self.r2.upload_file(filepath, media_id, episode_number)
+                        if url:
+                            file_urls[file_type] = url
+                            uploaded_files.append(filename)
+                        else:
+                            uploaded_files.append(f"{filename} (FAILED)")
                 else:
-                    url = f"/assets/{media_id}/{episode_number}/{filename}"
-                file_urls[file_type] = url
+                    # Storage points at R2, but upload was not requested.
+                    file_urls[file_type] = r2_url
+            else:
+                file_urls[file_type] = f"/assets/{media_id}/{episode_number}/{filename}"
 
         # Map file types for API
         mapped_urls = {}
@@ -1358,9 +1410,11 @@ def _collect_upload_info(
     }
 
 
-def _display_upload_summary(info: dict, is_prod: bool, upload_r2: bool = False) -> None:
+def _display_upload_summary(
+    info: dict, target: str, storage_target: str, upload_r2: bool = False
+) -> None:
     """Display a summary of what will be uploaded."""
-    color = "red" if is_prod else "cyan"
+    color = "red" if target == "prod" else ("cyan" if target == "dev" else "green")
 
     console.print(f"\n[bold {color}]{'='*60}[/bold {color}]")
     console.print(f"[bold {color}]UPLOAD SUMMARY[/bold {color}]")
@@ -1369,12 +1423,16 @@ def _display_upload_summary(info: dict, is_prod: bool, upload_r2: bool = False) 
     console.print(f"\n[bold]Media:[/bold] {info['total_media']}")
     console.print(f"[bold]Episodes:[/bold] {info['total_episodes']}")
     console.print(f"[bold]Segments:[/bold] {info['total_segments']}")
+    console.print(f"[bold]API target:[/bold] {target}")
+    console.print(f"[bold]Storage target:[/bold] {storage_target}")
 
-    if upload_r2:
+    if storage_target == "r2" and upload_r2:
         console.print(f"[bold]Files to upload:[/bold] {info['total_files']}")
         console.print(f"[bold]Total size:[/bold] {_format_size(info['total_size'])}")
+    elif storage_target == "r2":
+        console.print("[dim]R2 upload: [bold]SKIPPED[/bold] (--upload-r2 not specified)[/dim]")
     else:
-        console.print("[dim]Files to R2: [bold]SKIPPED[/bold] (--upload-r2 not specified)[/dim]")
+        console.print("[dim]Files to R2: [bold]N/A[/bold] (storage target is local)[/dim]")
 
     for media in info["media_details"]:
         console.print(f"\n[cyan]▸ {media['title']} (ID: {media['id']})[/cyan]")
@@ -1393,6 +1451,7 @@ def upload_all(
     media_id: str | None = None,
     episode: int | None = None,
     env: str = "local",
+    storage_target: str = "local",
     dry_run: bool = True,
     upload_r2: bool = False,
     update_info_only: bool = False,
@@ -1403,9 +1462,10 @@ def upload_all(
         output_path: Path to media folder (e.g., /path/to/output/12345)
         media_id: Ignored (kept for backwards compatibility). Use output_path directly.
         episode: Optional episode number to filter upload
-        env: Environment to upload to (local or prod). Default is local.
+        env: API environment to upload to (local, dev, or prod). Default is local.
+        storage_target: Storage target for files ("local" or "r2").
         dry_run: Show what would be uploaded without actually uploading. Default is True.
-        upload_r2: Upload files to R2 (default is to only update the backend)
+        upload_r2: Actually upload files to R2. Only used when storage_target="r2".
         update_info_only: Only update media info (skip episodes and segments)
     """
     media_folder = Path(output_path).resolve()
@@ -1421,13 +1481,23 @@ def upload_all(
         )
         return
 
-    if env not in ("local", "prod"):
-        console.print(f"[red]Invalid environment: {env}. Must be 'local' or 'prod'[/red]")
+    if env not in ("local", "dev", "prod"):
+        console.print(f"[red]Invalid environment: {env}. Must be 'local', 'dev', or 'prod'[/red]")
+        return
+
+    if storage_target not in ("local", "r2"):
+        console.print(f"[red]Invalid storage target: {storage_target}. Must be 'local' or 'r2'[/red]")
+        return
+
+    if storage_target == "local" and upload_r2:
+        console.print(
+            "[red]Invalid combination: --upload-r2 requires --storage r2.[/red]"
+        )
         return
 
     # Load config
     config = Config.from_env(env=env)
-    if not config.validate(upload_r2=upload_r2):
+    if not config.validate(storage_target=storage_target, upload_r2=upload_r2):
         return
 
     # Display target
@@ -1442,14 +1512,14 @@ def upload_all(
 
     # Collect and display upload info
     # Only initialize R2Uploader when we'll actually use it
-    r2 = R2Uploader(config) if (upload_r2 or config.is_prod) else None
+    r2 = R2Uploader(config) if upload_r2 else None
     upload_info = _collect_upload_info([media_folder], episode, r2, upload_r2)
 
-    if upload_info["total_files"] == 0 and not dry_run and upload_r2:
+    if upload_info["total_files"] == 0 and not dry_run and storage_target == "r2" and upload_r2:
         console.print("[yellow]All files already uploaded. Nothing to do.[/yellow]")
         return
 
-    _display_upload_summary(upload_info, config.is_prod, upload_r2)
+    _display_upload_summary(upload_info, config.target, storage_target, upload_r2)
 
     # Safety check for prod
     if config.is_prod and not dry_run:
@@ -1460,7 +1530,13 @@ def upload_all(
             console.print("[yellow]Upload cancelled.[/yellow]")
             return
 
-    uploader = NadeshikoUploader(config, dry_run=dry_run, upload_r2=upload_r2, update_info_only=update_info_only)
+    uploader = NadeshikoUploader(
+        config,
+        dry_run=dry_run,
+        storage_target=storage_target,
+        upload_r2=upload_r2,
+        update_info_only=update_info_only,
+    )
 
     # Upload the media
     if uploader.upload_media(media_folder, episode_filter=episode):

@@ -53,30 +53,32 @@ Common options:
 ### `assets-uploader`
 
 ```bash
-uv run assets-uploader <media_folder> (--dev | --prod) [OPTIONS]
+uv run assets-uploader <media_folder> [OPTIONS]
 ```
 
 Examples:
 
 ```bash
-# Dry run against local/dev (default mode is dry-run)
-uv run assets-uploader ./output/12345 --dev
+# Dry run against local API + local storage (default mode is dry-run)
+uv run assets-uploader ./output/12345 --target local --storage local
 
-# Apply upload to local/dev
-uv run assets-uploader ./output/12345 --dev --apply
+# Apply upload to dev API + local storage
+uv run assets-uploader ./output/12345 --target dev --storage local --apply
 
-# Production upload with R2 files
-uv run assets-uploader ./output/12345 --prod --apply --upload-r2
+# Production upload with R2 storage and actual file upload
+uv run assets-uploader ./output/12345 --target prod --storage r2 --apply --upload-r2
 
 # Upload only one episode
-uv run assets-uploader ./output/12345 --dev --episode 1 --apply
+uv run assets-uploader ./output/12345 --target dev --storage local --episode 1 --apply
 ```
 
 Common options:
 
+- `--target {local,dev,prod}`: API target environment.
+- `--storage {local,r2}`: Storage backend to use in API metadata.
 - `--episode N`: Upload a single episode number.
 - `--apply`: Execute changes (without this, runs in dry-run mode).
-- `--upload-r2`: Upload files to R2 storage.
+- `--upload-r2` (alias: `--upload-to-r2`): Actually upload files to R2 (only valid with `--storage r2`).
 - `--update-info`: Update media metadata only.
 
 ## Tests

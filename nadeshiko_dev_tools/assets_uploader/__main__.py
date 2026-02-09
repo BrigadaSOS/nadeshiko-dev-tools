@@ -14,24 +14,21 @@ def main() -> None:
     import argparse
 
     parser = argparse.ArgumentParser(
-        description="Upload media segments to Nadeshiko API (and optionally R2)",
+        description="Upload media segments to Nadeshiko API with configurable storage target",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-  # Dry run against dev (default behavior)
-  %(prog)s /path/to/output/12345 --dev
+  # Dry run to local API with local storage
+  %(prog)s /path/to/output/12345 --target local --storage local
 
-  # Actually upload to dev
-  %(prog)s /path/to/output/12345 --dev --apply
+  # Dry run to dev API with R2 storage references (no upload)
+  %(prog)s /path/to/output/12345 --target dev --storage r2
 
-  # Dry run against production
-  %(prog)s /path/to/output/12345 --prod
-
-  # Upload to production with R2 files
-  %(prog)s /path/to/output/12345 --prod --apply --upload-r2
+  # Upload to R2 and apply changes on prod API
+  %(prog)s /path/to/output/12345 --target prod --storage r2 --apply --upload-r2
 
   # Upload specific episode
-  %(prog)s /path/to/output/12345 --dev --episode 1 --apply
+  %(prog)s /path/to/output/12345 --target dev --storage local --episode 1 --apply
         """,
     )
 
@@ -46,16 +43,17 @@ Examples:
         help="Only upload specific episode number",
     )
 
-    env_group = parser.add_mutually_exclusive_group(required=True)
-    env_group.add_argument(
-        "--dev",
-        action="store_true",
-        help="Target local/dev environment",
+    parser.add_argument(
+        "--target",
+        choices=["local", "dev", "prod"],
+        default="local",
+        help="API target environment",
     )
-    env_group.add_argument(
-        "--prod",
-        action="store_true",
-        help="Target production environment",
+    parser.add_argument(
+        "--storage",
+        choices=["local", "r2"],
+        default="local",
+        help="Storage target for media file URLs",
     )
 
     parser.add_argument(
@@ -65,8 +63,10 @@ Examples:
     )
     parser.add_argument(
         "--upload-r2",
+        "--upload-to-r2",
+        dest="upload_r2",
         action="store_true",
-        help="Upload files to R2 (default is to only update the backend)",
+        help="Actually upload files to R2 (requires --storage r2)",
     )
     parser.add_argument(
         "--update-info",
@@ -75,13 +75,13 @@ Examples:
     )
 
     args = parser.parse_args()
-
     try:
         upload_all(
             output_path=args.media_folder,
             media_id=None,
             episode=args.episode,
-            env="prod" if args.prod else "local",
+            env=args.target,
+            storage_target=args.storage,
             dry_run=not args.apply,
             upload_r2=args.upload_r2,
             update_info_only=args.update_info,
