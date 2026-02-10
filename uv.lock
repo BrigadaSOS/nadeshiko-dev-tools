@@ -415,6 +415,7 @@ dependencies = [
     { name = "guessit" },
     { name = "jaconvv2" },
     { name = "langdetect" },
+    { name = "nadeshiko-internal-sdk" },
     { name = "nadeshiko-sdk" },
     { name = "pysubs2" },
     { name = "python-anilist" },
@@ -442,7 +443,8 @@ requires-dist = [
     { name = "guessit", specifier = ">=3.8.0" },
     { name = "jaconvv2", specifier = ">=0.4" },
     { name = "langdetect", specifier = ">=1.0.9" },
-    { name = "nadeshiko-sdk", specifier = ">=0.1.0" },
+    { name = "nadeshiko-internal-sdk", editable = "../nadeshiko-sdk-python/sdk-internal" },
+    { name = "nadeshiko-sdk", editable = "../nadeshiko-sdk-python/sdk" },
     { name = "pysubs2", specifier = ">=1.8.0" },
     { name = "python-anilist", specifier = ">=1.0.9" },
     { name = "python-dateutil", specifier = ">=2.9.0.post0" },
@@ -460,17 +462,37 @@ dev = [
 ]
 
 [[package]]
-name = "nadeshiko-sdk"
+name = "nadeshiko-internal-sdk"
 version = "0.1.0"
-source = { registry = "https://pypi.org/simple" }
+source = { editable = "../nadeshiko-sdk-python/sdk-internal" }
 dependencies = [
     { name = "attrs" },
     { name = "httpx" },
     { name = "python-dateutil" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/5d/a6/b487c87d8f6abbf9a3193c42f038adae5dab623b83ef294f7f8390d7cc05/nadeshiko_sdk-0.1.0.tar.gz", hash = "sha256:8fbe13b1fcdb10592d89cd9e0cd3a923e4268f5c9b24cf20a2cc89b48c355a6e", size = 72570 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/02/f8/c2b0d9f69047606230808b1601b319961de9c23b0a003fe56bed5f515b31/nadeshiko_sdk-0.1.0-py3-none-any.whl", hash = "sha256:0cda07f08cbca5ba7bf3e0918aabd10bd5ccd43f90131fc5692c15384c748a56", size = 161460 },
+
+[package.metadata]
+requires-dist = [
+    { name = "attrs", specifier = ">=23.0" },
+    { name = "httpx", specifier = ">=0.27.0" },
+    { name = "python-dateutil", specifier = ">=2.8.0" },
+]
+
+[[package]]
+name = "nadeshiko-sdk"
+version = "0.1.0"
+source = { editable = "../nadeshiko-sdk-python/sdk" }
+dependencies = [
+    { name = "attrs" },
+    { name = "httpx" },
+    { name = "python-dateutil" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "attrs", specifier = ">=23.0" },
+    { name = "httpx", specifier = ">=0.27.0" },
+    { name = "python-dateutil", specifier = ">=2.8.0" },
 ]
 
 [[package]]

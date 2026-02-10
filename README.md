@@ -75,6 +75,7 @@ uv run assets-uploader ./output/12345 --target dev --storage local --episode 1 -
 Common options:
 
 - `--target {local,dev,prod}`: API target environment.
+- Use `--target dev` (not `--dev`).
 - `--storage {local,r2}`: Storage backend to use in API metadata.
 - `--episode N`: Upload a single episode number.
 - `--apply`: Execute changes (without this, runs in dry-run mode).

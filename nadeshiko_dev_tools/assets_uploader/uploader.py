@@ -18,6 +18,7 @@ from datetime import timedelta
 from pathlib import Path
 
 import boto3
+from botocore.config import Config as BotoConfig
 from botocore.exceptions import ClientError
 from dotenv import load_dotenv
 from rich.console import Console
@@ -229,7 +230,7 @@ class SegmentData:
     actor_ja: str | None
     actor_es: str | None
     actor_en: str | None
-    files: dict[str, str]  # audio, screenshot, preview, video filenames
+    files: dict[str, str]  # audio, screenshot, video filenames
     subtitles: dict  # ja, es, en subtitle details
 
 
@@ -281,6 +282,7 @@ class R2Uploader:
             endpoint_url=self.endpoint,
             aws_access_key_id=config.r2_access_key_id,
             aws_secret_access_key=config.r2_secret_access_key,
+            config=BotoConfig(max_pool_connections=50),
         )
 
     def get_r2_key(self, media_id: int, episode_number: int, filename: str) -> str:
@@ -318,6 +320,19 @@ class R2Uploader:
             return True
         except ClientError:
             return False
+
+    def list_existing_files(self, media_id: int, episode_number: int) -> set[str]:
+        """List all existing filenames in an episode's R2 prefix in a single call."""
+        prefix = f"media/{media_id}/{episode_number}/"
+        existing: set[str] = set()
+        try:
+            paginator = self.s3_client.get_paginator("list_objects_v2")
+            for page in paginator.paginate(Bucket=self.bucket, Prefix=prefix):
+                for obj in page.get("Contents", []):
+                    existing.add(obj["Key"].split("/")[-1])
+        except ClientError as e:
+            console.print(f"[yellow]Warning: could not list R2 prefix {prefix}: {e}[/yellow]")
+        return existing
 
     def get_media_r2_key(self, media_id: int, filename: str) -> str:
         """Generate R2 object key for a media-level file (cover/banner)."""
@@ -1142,7 +1157,61 @@ class NadeshikoUploader:
 
         return True
 
-    def _process_segment(
+    def _upload_segment_files(
+        self,
+        media_id: int,
+        episode_number: int,
+        segment: SegmentData,
+        episode_folder: Path,
+        existing_files: set[str],
+    ) -> tuple[str, list[str], list[str]]:
+        """Upload R2 files for a single segment. Returns (segment_hash, uploaded, skipped)."""
+        uploaded: list[str] = []
+        skipped: list[str] = []
+
+        for file_type, filename in segment.files.items():
+            if not filename:
+                continue
+            filepath = episode_folder / filename
+            if not filepath.exists():
+                continue
+
+            if filename in existing_files:
+                skipped.append(filename)
+            else:
+                url = self.r2.upload_file(filepath, media_id, episode_number)
+                if url:
+                    uploaded.append(filename)
+                else:
+                    uploaded.append(f"{filename} (FAILED)")
+
+        return segment.segment_hash, uploaded, skipped
+
+    def _build_segment_file_urls(
+        self,
+        media_id: int,
+        episode_number: int,
+        segment: SegmentData,
+        episode_folder: Path,
+    ) -> dict[str, str]:
+        """Build file URL mapping for a segment (no network calls)."""
+        file_urls: dict[str, str] = {}
+        for file_type, filename in segment.files.items():
+            if not filename:
+                continue
+            filepath = episode_folder / filename
+            if not filepath.exists():
+                continue
+
+            if self.storage_target == "r2":
+                file_urls[file_type] = (
+                    f"{self.config.r2_public_url}/media/{media_id}/{episode_number}/{filename}"
+                )
+            else:
+                file_urls[file_type] = f"/assets/{media_id}/{episode_number}/{filename}"
+        return file_urls
+
+    def _create_segment_api(
         self,
         media_id: int,
         episode_number: int,
@@ -1151,10 +1220,9 @@ class NadeshikoUploader:
         segment_index: int,
         total_segments: int,
     ) -> bool:
-        """Process a single segment: upload files and create segment. Returns success status."""
+        """Create a segment via API. Returns success status."""
         content_preview = segment.content_ja[:30] + "..." if len(segment.content_ja) > 30 else segment.content_ja
 
-        # Check if segment should be skipped
         should_skip, skip_reason = self._should_skip_segment(segment)
         if should_skip:
             with self._stats_lock:
@@ -1166,43 +1234,10 @@ class NadeshikoUploader:
                     self.stats["skipped_too_long"] += 1
                 self.stats["total"] += 1
             self._print(f"  [{segment_index}/{total_segments}] {content_preview} - [dim]SKIPPED: {skip_reason}[/dim]")
-            return True  # Return True so skipped segments don't count as failures
+            return True
 
-        file_urls: dict[str, str] = {}
-        uploaded_files: list[str] = []
-        skipped_files: list[str] = []
+        file_urls = self._build_segment_file_urls(media_id, episode_number, segment, episode_folder)
 
-        # Upload files for this segment
-        for file_type, filename in segment.files.items():
-            if not filename:
-                continue
-            filepath = episode_folder / filename
-            if not filepath.exists():
-                continue
-
-            if self.storage_target == "r2":
-                r2_url = f"{self.config.r2_public_url}/media/{media_id}/{episode_number}/{filename}"
-                if self.upload_r2:
-                    if self.dry_run:
-                        file_urls[file_type] = r2_url
-                        uploaded_files.append(f"{filename} (dry-run)")
-                    elif self.r2.file_exists(media_id, episode_number, filename):
-                        file_urls[file_type] = r2_url
-                        skipped_files.append(filename)
-                    else:
-                        url = self.r2.upload_file(filepath, media_id, episode_number)
-                        if url:
-                            file_urls[file_type] = url
-                            uploaded_files.append(filename)
-                        else:
-                            uploaded_files.append(f"{filename} (FAILED)")
-                else:
-                    # Storage points at R2, but upload was not requested.
-                    file_urls[file_type] = r2_url
-            else:
-                file_urls[file_type] = f"/assets/{media_id}/{episode_number}/{filename}"
-
-        # Map file types for API
         mapped_urls = {}
         if file_urls:
             if "screenshot" in file_urls:
@@ -1210,10 +1245,8 @@ class NadeshikoUploader:
             if "audio" in file_urls:
                 mapped_urls["audio_url"] = file_urls["audio"]
 
-        # Create segment
         success = self._create_segment(media_id, episode_number, segment, mapped_urls or None)
 
-        # Update statistics
         with self._stats_lock:
             self.stats["total"] += 1
             if success:
@@ -1221,42 +1254,99 @@ class NadeshikoUploader:
             else:
                 self.stats["failed"] += 1
 
-        # Log result
         status = "[green]OK[/green]" if success else "[red]FAILED[/red]"
-        files_info = ""
-        if uploaded_files:
-            files_info += f" | uploaded: {', '.join(uploaded_files)}"
-        if skipped_files:
-            files_info += f" | skipped: {', '.join(skipped_files)}"
-
-        self._print(f"  [{segment_index}/{total_segments}] {content_preview} - {status}{files_info}")
+        self._print(f"  [{segment_index}/{total_segments}] {content_preview} - {status}")
 
         return success
 
-    def upload_episode(self, media_id: int, episode_folder: Path, max_workers: int = 8) -> bool:
-        """Upload a single episode, processing segments in parallel."""
+    def upload_episode(
+        self,
+        media_id: int,
+        episode_folder: Path,
+        max_r2_workers: int = 30,
+        max_api_workers: int = 8,
+    ) -> bool:
+        """Upload a single episode using two-phase parallel processing.
+
+        Phase 1: Upload all files to R2 with high concurrency.
+        Phase 2: Create all segments via API (rate-limited).
+        """
         console.print(f"\n[cyan]Processing episode: {episode_folder.name}[/cyan]")
 
-        # Load episode data
         episode_data = self._load_episode_data(episode_folder)
         if not episode_data:
             return False
 
-        # Get or create episode
         if not self._get_or_create_episode(media_id, episode_data):
             return False
 
         total = len(episode_data.segments)
-        console.print(f"[green]Processing {total} segments (max {max_workers} parallel)...[/green]")
+        episode_number = episode_data.number
+
+        # --- Phase 1: R2 file uploads (high concurrency, no rate limiting) ---
+        if self.upload_r2 and self.r2 and not self.dry_run:
+            console.print(f"[cyan]Phase 1: Uploading files to R2 ({max_r2_workers} workers)...[/cyan]")
+
+            # Batch existence check — one list call replaces hundreds of head_object calls
+            existing_files = self.r2.list_existing_files(media_id, episode_number)
+            console.print(f"[dim]  Found {len(existing_files)} files already in R2[/dim]")
+
+            # Collect segments that need file uploads
+            segments_needing_upload = [
+                seg for seg in episode_data.segments
+                if not self._should_skip_segment(seg)[0]
+                and any(
+                    (episode_folder / fn).exists() and fn not in existing_files
+                    for fn in seg.files.values()
+                    if fn
+                )
+            ]
+
+            if segments_needing_upload:
+                total_r2_uploaded = 0
+                total_r2_skipped = 0
+
+                with ThreadPoolExecutor(max_workers=max_r2_workers) as upload_pool:
+                    futures = {
+                        upload_pool.submit(
+                            self._upload_segment_files,
+                            media_id,
+                            episode_number,
+                            segment,
+                            episode_folder,
+                            existing_files,
+                        ): segment
+                        for segment in segments_needing_upload
+                    }
+
+                    for future in as_completed(futures):
+                        try:
+                            seg_hash, uploaded, skipped = future.result()
+                            total_r2_uploaded += len([f for f in uploaded if "(FAILED)" not in f])
+                            total_r2_skipped += len(skipped)
+                        except Exception as e:
+                            segment = futures[future]
+                            self._print(f"[red]  R2 upload error for {segment.segment_hash}: {e}[/red]")
+
+                console.print(
+                    f"[green]  R2 done: {total_r2_uploaded} uploaded, {total_r2_skipped} already existed[/green]"
+                )
+            else:
+                console.print("[dim]  All files already in R2, skipping upload phase[/dim]")
+        elif self.upload_r2 and self.dry_run:
+            console.print("[cyan]Phase 1: [DRY RUN] Would upload files to R2[/cyan]")
+
+        # --- Phase 2: API segment creation (rate-limited) ---
+        console.print(f"[cyan]Phase 2: Creating {total} segments via API ({max_api_workers} workers)...[/cyan]")
 
         success_count = 0
 
-        with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        with ThreadPoolExecutor(max_workers=max_api_workers) as api_pool:
             futures = {
-                executor.submit(
-                    self._process_segment,
+                api_pool.submit(
+                    self._create_segment_api,
                     media_id,
-                    episode_data.number,
+                    episode_number,
                     segment,
                     episode_folder,
                     i,
@@ -1273,7 +1363,7 @@ class NadeshikoUploader:
                     segment = futures[future]
                     self._print(f"[red]  Segment {segment.segment_hash} - error: {e}[/red]")
 
-        console.print(f"[green]Completed episode {episode_data.number}: {success_count}/{total} segments[/green]")
+        console.print(f"[green]Completed episode {episode_number}: {success_count}/{total} segments[/green]")
 
         # Print detailed statistics
         s = self.stats

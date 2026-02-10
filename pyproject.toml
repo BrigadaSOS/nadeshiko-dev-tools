@@ -27,11 +27,14 @@ dependencies = [
     "requests>=2.32.5",
     "rich>=14.3.1",
     "nadeshiko-sdk>=0.1.0",
+    "nadeshiko-internal-sdk",
 ]
 
 [project.scripts]
 media-sub-splitter = "nadeshiko_dev_tools.media_sub_splitter.__main__:main"
 assets-uploader = "nadeshiko_dev_tools.assets_uploader.__main__:main"
+format-migrator = "nadeshiko_dev_tools.migrator.__main__:main"
+post-upload = "nadeshiko_dev_tools.post_upload:main"
 
 [dependency-groups]
 dev = [
@@ -52,3 +55,7 @@ unfixable = []
 [tool.ruff.format]
 quote-style = "double"
 indent-style = "space"
+
+[tool.uv.sources]
+nadeshiko-sdk = { path = "../nadeshiko-sdk-python/sdk", editable = true }
+nadeshiko-internal-sdk = { path = "../nadeshiko-sdk-python/sdk-internal", editable = true }

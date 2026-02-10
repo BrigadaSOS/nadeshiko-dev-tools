@@ -1254,7 +1254,6 @@ def generate_segment(
 
     audio_filename = f"{segment_hash}.mp3"
     screenshot_filename = f"{segment_hash}.webp"
-    screenshot_preview_filename = f"{segment_hash}p.webp"
     video_filename = f"{segment_hash}.mp4"
 
     if video_file and not config.dryrun:
@@ -1304,39 +1303,8 @@ def generate_segment(
 
         try:
             screenshot_path = os.path.join(output_path, screenshot_filename)
-            screenshot_preview_path = os.path.join(output_path, screenshot_preview_filename)
             screenshot_time = (start_time_seconds + end_time_seconds) / 2
 
-            # Generate main screenshot
-            result = subprocess.run(
-                [
-                    "ffmpeg",
-                    "-y",
-                    "-ss",
-                    str(screenshot_time),
-                    "-i",
-                    video_file,
-                    "-vframes",
-                    "1",
-                    "-vf",
-                    "scale='min(1920,iw)':'min(1080,ih)'",
-                    "-c:v",
-                    "libwebp",
-                    "-quality",
-                    "85",
-                    "-method",
-                    "6",
-                    screenshot_path,
-                ],
-                stdout=subprocess.PIPE,
-                stderr=subprocess.STDOUT,
-                text=True,
-            )
-            if result.returncode != 0:
-                logger.error(f"[red]ffmpeg screenshot failed: {result.stdout}[/red]")
-                raise RuntimeError(f"ffmpeg screenshot failed with code {result.returncode}")
-
-            # Generate preview screenshot
             result = subprocess.run(
                 [
                     "ffmpeg",
@@ -1355,18 +1323,17 @@ def generate_segment(
                     "85",
                     "-method",
                     "6",
-                    screenshot_preview_path,
+                    screenshot_path,
                 ],
                 stdout=subprocess.PIPE,
                 stderr=subprocess.STDOUT,
                 text=True,
             )
             if result.returncode != 0:
-                logger.error(f"[red]ffmpeg preview screenshot failed: {result.stdout}[/red]")
-                raise RuntimeError(f"ffmpeg preview failed: code {result.returncode}")
+                logger.error(f"[red]ffmpeg screenshot failed: {result.stdout}[/red]")
+                raise RuntimeError(f"ffmpeg screenshot failed with code {result.returncode}")
 
             logs.append(f"> Saved screenshot in {screenshot_path}")
-            logs.append(f"> Saved preview in {screenshot_preview_path}")
 
         except Exception as err:
             logger.error(f"[red]Error creating screenshot '{screenshot_filename}': {err}[/red]")
@@ -1446,7 +1413,6 @@ def generate_segment(
         "files": {
             "audio": audio_filename,
             "screenshot": screenshot_filename,
-            "preview": screenshot_preview_filename,
             "video": video_filename,
         },
         "subtitles": {
