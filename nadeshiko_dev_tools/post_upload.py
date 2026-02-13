@@ -9,8 +9,6 @@ from rich.console import Console
 
 console = Console()
 
-DEFAULT_DST = Path("/mnt/storage/nade-processed")
-
 
 def move_processed(folder: Path, dst: Path, dry_run: bool = True) -> None:
     """Move a single anime folder to the processed archive."""
@@ -41,13 +39,13 @@ def main() -> None:
     parser.add_argument(
         "media_folder",
         type=Path,
-        help="Path to the media folder to move (e.g., /mnt/storage/nade-toprocess/12345)",
+        help="Path to the media folder to move",
     )
     parser.add_argument(
         "--dst",
         type=Path,
-        default=DEFAULT_DST,
-        help=f"Destination directory (default: {DEFAULT_DST})",
+        required=True,
+        help="Destination archive directory",
     )
     parser.add_argument(
         "--apply",

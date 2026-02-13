@@ -68,6 +68,71 @@ logger.setLevel(logging.INFO)
 MatchingSubtitle = namedtuple("MatchingSubtitle", ["origin", "data", "filepath"])
 MAX_SEGMENT_CONTENT_LENGTH = 500
 
+# Lazy-loaded content rating tagger (loaded once per session)
+_tagger_instance = None
+_tagger_loaded = False
+
+
+def _get_tagger():
+    """Get or lazily initialize the WD Tagger for content rating."""
+    global _tagger_instance, _tagger_loaded
+    if not _tagger_loaded:
+        _tagger_loaded = True
+        try:
+            from nadeshiko_dev_tools.nsfw_tagger.classifier import WDTagger
+            _tagger_instance = WDTagger()
+            logger.info("[green]Content rating tagger loaded.[/green]")
+        except ImportError:
+            logger.info("[dim]Content rating tagger not available (nsfw dependencies not installed).[/dim]")
+        except Exception as e:
+            logger.warning(f"[yellow]Failed to load content rating tagger: {e}[/yellow]")
+    return _tagger_instance
+
+
+# Lazy-loaded Japanese tokenizers (loaded once per session)
+_sudachi_tokenizer = None
+_sudachi_loaded = False
+_unidic_tokenizer = None
+_unidic_loaded = False
+
+
+def _get_sudachi_tokenizer():
+    """Get or lazily initialize the Sudachi tokenizer."""
+    global _sudachi_tokenizer, _sudachi_loaded
+    if not _sudachi_loaded:
+        _sudachi_loaded = True
+        try:
+            from nadeshiko_dev_tools.tokenizer.tokenizer import JapaneseTokenizer
+            _sudachi_tokenizer = JapaneseTokenizer()
+            logger.info("[green]Sudachi tokenizer loaded.[/green]")
+        except ImportError:
+            logger.info(
+                "[dim]Sudachi tokenizer not available"
+                " (tokenizer dependencies not installed).[/dim]"
+            )
+        except Exception as e:
+            logger.warning(f"[yellow]Failed to load Sudachi tokenizer: {e}[/yellow]")
+    return _sudachi_tokenizer
+
+
+def _get_unidic_tokenizer():
+    """Get or lazily initialize the UniDic tokenizer."""
+    global _unidic_tokenizer, _unidic_loaded
+    if not _unidic_loaded:
+        _unidic_loaded = True
+        try:
+            from nadeshiko_dev_tools.tokenizer.tokenizer import UnidicTokenizer
+            _unidic_tokenizer = UnidicTokenizer()
+            logger.info("[green]UniDic tokenizer loaded.[/green]")
+        except ImportError:
+            logger.info(
+                "[dim]UniDic tokenizer not available"
+                " (unidic dependencies not installed).[/dim]"
+            )
+        except Exception as e:
+            logger.warning(f"[yellow]Failed to load UniDic tokenizer: {e}[/yellow]")
+    return _unidic_tokenizer
+
 
 def main():
     """Main entry point for the media-sub-splitter CLI.
@@ -963,7 +1028,6 @@ def split_video_by_subtitles(
     segments_data = []
     ignored_segments = []
     failed_segments = []
-    segment_index = 0
 
     segment_start = sorted_lines[0]["start"] - 1
     segment_end = sorted_lines[0]["end"] + 1
@@ -982,7 +1046,8 @@ def split_video_by_subtitles(
             if "ja" in segment_sentences and (
                 "en" in segment_sentences or "es" in segment_sentences
             ):
-                segment_index += 1
+                # Use first Japanese subtitle ID as segment_index
+                segment_index = segment_sentences["ja"][0]["sub_id"]
                 segment_logs, segment_dict, failure_reason = generate_segment(
                     segment_index,
                     episode_number,
@@ -1015,7 +1080,8 @@ def split_video_by_subtitles(
 
             else:
                 if "ja" in segment_sentences:
-                    segment_index += 1
+                    # Use first Japanese subtitle ID as segment_index
+                    segment_index = segment_sentences["ja"][0]["sub_id"]
                     sentence_ja, actor_ja, subs_jp = join_sentences_to_segment(
                         segment_sentences["ja"], "ja"
                     )
@@ -1255,6 +1321,8 @@ def generate_segment(
     audio_filename = f"{segment_hash}.mp3"
     screenshot_filename = f"{segment_hash}.webp"
     video_filename = f"{segment_hash}.mp4"
+    content_rating = "SAFE"
+    content_analysis = None
 
     if video_file and not config.dryrun:
         try:
@@ -1316,7 +1384,7 @@ def generate_segment(
                     "-vframes",
                     "1",
                     "-vf",
-                    "scale=960:540",
+                    "scale=960:540:force_original_aspect_ratio=decrease,pad=960:540:(ow-iw)/2:(oh-ih)/2:black",
                     "-c:v",
                     "libwebp",
                     "-quality",
@@ -1334,6 +1402,21 @@ def generate_segment(
                 raise RuntimeError(f"ffmpeg screenshot failed with code {result.returncode}")
 
             logs.append(f"> Saved screenshot in {screenshot_path}")
+
+            # Classify content rating
+            try:
+                tagger = _get_tagger()
+                if tagger is not None:
+                    cr_result = tagger.classify(screenshot_path)
+                    content_rating = cr_result.content_rating
+                    content_analysis = {"scores": cr_result.rating_scores, "tags": cr_result.tags}
+                else:
+                    content_rating = "SAFE"
+                    content_analysis = None
+            except Exception as cr_err:
+                logger.warning(f"[yellow]Content rating failed for {screenshot_filename}: {cr_err}[/yellow]")
+                content_rating = "SAFE"
+                content_analysis = None
 
         except Exception as err:
             logger.error(f"[red]Error creating screenshot '{screenshot_filename}': {err}[/red]")
@@ -1357,7 +1440,7 @@ def generate_segment(
                     "-i",
                     audio_path,
                     "-vf",
-                    "scale=1280:720,setsar=1",
+                    "scale=1280:720:force_original_aspect_ratio=decrease,pad=1280:720:(ow-iw)/2:(oh-ih)/2:black,setsar=1",
                     "-c:v",
                     "libx264",
                     "-profile:v",
@@ -1396,6 +1479,25 @@ def generate_segment(
             logger.error(f"[red]Error creating video '{video_filename}': {err}[/red]")
             return logs, None, "video"
 
+    # Tokenize Japanese text
+    pos_analysis = None
+    if sentence_japanese:
+        pos_analysis = {}
+        try:
+            sudachi = _get_sudachi_tokenizer()
+            if sudachi is not None:
+                pos_analysis["sudachi"] = sudachi.tokenize(sentence_japanese)
+        except Exception as e:
+            logger.warning(f"[yellow]Sudachi tokenization failed: {e}[/yellow]")
+        try:
+            unidic = _get_unidic_tokenizer()
+            if unidic is not None:
+                pos_analysis["unidic"] = unidic.tokenize(sentence_japanese)
+        except Exception as e:
+            logger.warning(f"[yellow]UniDic tokenization failed: {e}[/yellow]")
+        if not pos_analysis:
+            pos_analysis = None
+
     segment_dict = {
         "segment_hash": segment_hash,
         "segment_index": segment_index,
@@ -1420,6 +1522,9 @@ def generate_segment(
             "es": subs_es,
             "en": subs_en,
         },
+        "content_rating": content_rating,
+        "content_analysis": content_analysis,
+        "pos_analysis": pos_analysis,
     }
 
     logs.append("[green]Segment saved![/green]")

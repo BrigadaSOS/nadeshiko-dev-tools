@@ -73,6 +73,13 @@ query ($id: Int) {
           image {
             medium
           }
+          gender
+          age
+          dateOfBirth {
+            year
+            month
+            day
+          }
         }
         voiceActors(language: JAPANESE) {
           id
@@ -83,6 +90,14 @@ query ($id: Int) {
           image {
             medium
           }
+          gender
+          age
+          dateOfBirth {
+            year
+            month
+            day
+          }
+          homeTown
         }
       }
     }

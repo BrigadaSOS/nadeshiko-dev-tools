@@ -2,7 +2,7 @@
 """Remove a media folder from R2 storage.
 
 Usage:
-    python scripts/remove_media_r2.py MEDIA_ID [--dry-run] [--env ENV]
+    python scripts/remove_media_r2.py MEDIA_ID [--dry-run]
 
 Removes all files under media/{MEDIA_ID}/ from R2.
 """
@@ -17,61 +17,46 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-R2_ENDPOINT_TEMPLATE = "https://{account_id}.r2.cloudflarestorage.com"
 
-
-def get_r2_config(env: str) -> tuple[str, str, str, str]:
-    """Get R2 credentials for the specified environment.
+def get_r2_config() -> tuple[str, str, str, str]:
+    """Get R2 credentials from environment variables.
 
     Returns:
         tuple of (endpoint, access_key_id, secret_access_key, bucket)
     """
-    env = env.lower()
-
-    if env == "prod":
-        account_id = os.environ.get("R2_PROD_ACCOUNT_ID", os.environ.get("R2_ACCOUNT_ID"))
-        access_key_id = os.environ.get("R2_PROD_ACCESS_KEY_ID", os.environ.get("R2_ACCESS_KEY_ID"))
-        secret_access_key = os.environ.get("R2_PROD_SECRET_ACCESS_KEY", os.environ.get("R2_SECRET_ACCESS_KEY"))
-        bucket = os.environ.get("R2_PROD_BUCKET", os.environ.get("R2_BUCKET", "nadeshiko-production"))
-    elif env == "dev":
-        account_id = os.environ.get("R2_DEV_ACCOUNT_ID", os.environ.get("R2_ACCOUNT_ID"))
-        access_key_id = os.environ.get("R2_DEV_ACCESS_KEY_ID", os.environ.get("R2_ACCESS_KEY_ID"))
-        secret_access_key = os.environ.get("R2_DEV_SECRET_ACCESS_KEY", os.environ.get("R2_SECRET_ACCESS_KEY"))
-        bucket = os.environ.get("R2_DEV_BUCKET", os.environ.get("R2_BUCKET", "nadeshiko-dev"))
-    else:  # local
-        account_id = os.environ.get("R2_ACCOUNT_ID")
-        access_key_id = os.environ.get("R2_ACCESS_KEY_ID")
-        secret_access_key = os.environ.get("R2_SECRET_ACCESS_KEY")
-        bucket = os.environ.get("R2_BUCKET", "nadeshiko-dev")
+    account_id = os.environ.get("R2_ACCOUNT_ID")
+    access_key_id = os.environ.get("R2_ACCESS_KEY_ID")
+    secret_access_key = os.environ.get("R2_SECRET_ACCESS_KEY")
+    bucket = os.environ.get("R2_BUCKET", "nadeshiko-production")
 
     missing = []
     if not account_id:
-        missing.append("R2_ACCOUNT_ID (or R2_{ENV}_ACCOUNT_ID)")
+        missing.append("R2_ACCOUNT_ID")
     if not access_key_id:
-        missing.append("R2_ACCESS_KEY_ID (or R2_{ENV}_ACCESS_KEY_ID)")
+        missing.append("R2_ACCESS_KEY_ID")
     if not secret_access_key:
-        missing.append("R2_SECRET_ACCESS_KEY (or R2_{ENV}_SECRET_ACCESS_KEY)")
+        missing.append("R2_SECRET_ACCESS_KEY")
 
     if missing:
         print(f"Error: Missing R2 credentials: {', '.join(missing)}", file=sys.stderr)
         sys.exit(1)
 
-    endpoint = R2_ENDPOINT_TEMPLATE.format(account_id=account_id)
+    endpoint = f"https://{account_id}.r2.cloudflarestorage.com"
     return endpoint, access_key_id, secret_access_key, bucket
 
 
-def remove_media_folder(media_id: str, env: str, dry_run: bool) -> int:
-    """Remove all files under media/{media_id}/ from R2.
+def remove_media_folder(storage_path: str, dry_run: bool) -> int:
+    """Remove all files under a storage path from R2.
 
     Args:
-        media_id: The media ID to remove
-        env: Environment to use (local, dev, prod)
+        storage_path: The storage path or media ID to remove.
+            Accepts either a full path like "media/21459" or just an ID like "21459".
         dry_run: If True, print actions without executing
 
     Returns:
         Number of objects deleted (or that would be deleted)
     """
-    endpoint, access_key_id, secret_access_key, bucket = get_r2_config(env)
+    endpoint, access_key_id, secret_access_key, bucket = get_r2_config()
 
     s3 = boto3.client(
         "s3",
@@ -81,7 +66,9 @@ def remove_media_folder(media_id: str, env: str, dry_run: bool) -> int:
         config=BotoConfig(max_pool_connections=50),
     )
 
-    prefix = f"media/{media_id}/"
+    if not storage_path.startswith("media/"):
+        storage_path = f"media/{storage_path}"
+    prefix = f"{storage_path}/"
 
     # List and count objects first
     print(f"Listing objects in {bucket}/{prefix}...")
@@ -130,12 +117,9 @@ def main():
     parser = argparse.ArgumentParser(
         description="Remove a media folder from R2 storage"
     )
-    parser.add_argument("media_id", help="Media ID to remove (e.g., '7674')")
     parser.add_argument(
-        "--env",
-        choices=["local", "dev", "prod"],
-        default="prod",
-        help="R2 environment to use (default: prod)",
+        "media_id",
+        help="Media ID or storage path to remove (e.g., '7674' or 'media/7674')",
     )
     parser.add_argument(
         "--dry-run",
@@ -154,7 +138,7 @@ def main():
     if args.yes:
         input = lambda x: "y"  # noqa: E731 (type: ignore)
 
-    remove_media_folder(args.media_id, args.env, args.dry_run)
+    remove_media_folder(args.media_id, args.dry_run)
 
 
 if __name__ == "__main__":

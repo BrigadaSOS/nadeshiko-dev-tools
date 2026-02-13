@@ -4,7 +4,6 @@ import csv
 import json
 import logging
 import os
-import re
 import shutil
 import subprocess
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -14,35 +13,13 @@ from rich.console import Console
 
 from nadeshiko_dev_tools.common.anilist import CachedAnilist
 from nadeshiko_dev_tools.common.file_utils import save_info_json, write_data_json
+from nadeshiko_dev_tools.common.timestamps import parse_timestamp_to_ms
 from nadeshiko_dev_tools.media_sub_splitter.main import generate_segment_hash
 
 console = Console()
 logger = logging.getLogger(__name__)
 
 MAX_SEGMENT_CONTENT_LENGTH = 500
-
-
-# ---------------------------------------------------------------------------
-# Timestamp parsing
-# ---------------------------------------------------------------------------
-
-
-def parse_timestamp_to_ms(timestamp: str) -> int:
-    """Convert 'H:MM:SS.ffffff' or 'H:MM:SS' timestamp to integer milliseconds."""
-    match = re.match(r"(\d+):(\d+):(\d+)(?:\.(\d+))?", timestamp.strip())
-    if not match:
-        raise ValueError(f"Invalid timestamp format: {timestamp}")
-    hours, minutes, seconds, frac = match.groups()
-    frac = frac or "0"
-    # Normalize fractional part to microseconds (6 digits)
-    frac = frac.ljust(6, "0")[:6]
-    total_ms = (
-        int(hours) * 3600000
-        + int(minutes) * 60000
-        + int(seconds) * 1000
-        + int(frac) // 1000
-    )
-    return total_ms
 
 
 # ---------------------------------------------------------------------------
@@ -169,7 +146,7 @@ def generate_screenshot(input_path: str, output_webp: str) -> bool:
                 "-i",
                 input_path,
                 "-vf",
-                "scale=960:540",
+                "scale=960:540:force_original_aspect_ratio=decrease,pad=960:540:(ow-iw)/2:(oh-ih)/2:black",
                 "-c:v",
                 "libwebp",
                 "-quality",
@@ -210,7 +187,7 @@ def generate_video_from_screenshot_and_audio(
                 "-i",
                 audio_path,
                 "-vf",
-                "scale=1280:720,setsar=1",
+                "scale=1280:720:force_original_aspect_ratio=decrease,pad=1280:720:(ow-iw)/2:(oh-ih)/2:black,setsar=1",
                 "-c:v",
                 "libx264",
                 "-profile:v",
@@ -288,7 +265,7 @@ def migrate_episode(
             future = pool.submit(
                 _process_single_segment,
                 old_seg,
-                idx + 1,
+                old_seg["id"],  # Use original v5 ID as segment_index
                 anilist_id,
                 episode_number,
                 old_episode_path,

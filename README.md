@@ -6,6 +6,8 @@
 
 - `media-sub-splitter`: Split anime episodes into subtitle-aligned media segments.
 - `assets-uploader`: Upload generated media metadata and assets to Nadeshiko environments.
+- `nsfw-tagger`: Classify segment screenshots for content rating (SAFE/SUGGESTIVE/QUESTIONABLE/EXPLICIT) and gore detection.
+- `pitch-extractor`: Extract F0 pitch contours from audio segments with optional Demucs vocal separation.
 
 ## Setup
 
@@ -81,6 +83,79 @@ Common options:
 - `--apply`: Execute changes (without this, runs in dry-run mode).
 - `--upload-r2` (alias: `--upload-to-r2`): Actually upload files to R2 (only valid with `--storage r2`).
 - `--update-info`: Update media metadata only.
+
+### `nsfw-tagger`
+
+Classifies anime segment screenshots using WaifuDiffusion Tagger v3 (Danbooru tag predictor). Maps Danbooru ratings to content ratings and detects gore via content tags. Requires GPU dependencies for reasonable performance.
+
+```bash
+# Install GPU dependencies (requires CUDA)
+uv pip install onnxruntime-gpu --extra-index-url https://aiinfra.pkgs.visualstudio.com/PublicPackages/_packaging/onnxruntime-cuda-13/pypi/simple/
+
+# Or CPU-only (much slower)
+uv sync --extra nsfw
+```
+
+```bash
+# Classify all images in the processed archive
+uv run nsfw-tagger classify
+
+# Classify specific anime by AniList ID
+uv run nsfw-tagger classify --media 100077 154587
+
+# Resume interrupted classification (default behavior, skips already-done media)
+uv run nsfw-tagger classify
+
+# Force reclassify media that already have results
+uv run nsfw-tagger classify --media 100077 --no-resume
+
+# Review results for a specific anime
+uv run nsfw-tagger review --media 100077
+
+# Review overall summary
+uv run nsfw-tagger review
+
+# Export SQL update file for database migration
+uv run nsfw-tagger export
+
+# Export SQL for specific media only
+uv run nsfw-tagger export --media 100077
+```
+
+Results are stored in `<archive>/_nsfw_results/` as per-media JSON files. The `export` command generates a SQL file that can be applied to the database to update `content_rating` and `content_analysis` columns.
+
+Content rating mapping: `general` -> SAFE, `sensitive` -> SUGGESTIVE, `questionable` -> QUESTIONABLE, `explicit` -> EXPLICIT. Gore is detected separately via Danbooru violence tags (blood, gore, guro, etc.) and stored as a boolean flag.
+
+### `pitch-extractor`
+
+Extracts F0 pitch contours from audio segments using Parselmouth (Praat). Optionally separates vocals from BGM using Demucs before extraction for cleaner results.
+
+```bash
+# Install dependencies
+uv sync --extra pitch
+```
+
+```bash
+# Extract pitch contours for all media (with Demucs vocal separation)
+uv run pitch-extractor extract
+
+# Extract for specific anime
+uv run pitch-extractor extract --media 100077 154587
+
+# Extract without vocal separation (faster, less accurate)
+uv run pitch-extractor extract --no-separation
+
+# Save isolated vocals for debugging
+uv run pitch-extractor extract --media 100077 --save-vocals
+
+# Show extraction coverage statistics
+uv run pitch-extractor stats
+
+# Stats for specific media
+uv run pitch-extractor stats --media 100077
+```
+
+Results are stored as `_pitch.json` files per episode in the archive directory.
 
 ## Tests
 

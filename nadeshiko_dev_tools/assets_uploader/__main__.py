@@ -73,8 +73,35 @@ Examples:
         action="store_true",
         help="Only update media/character/list info (skip episodes and segments)",
     )
+    parser.add_argument(
+        "--yes", "-y",
+        action="store_true",
+        help="Skip confirmation prompt for production uploads",
+    )
+    parser.add_argument(
+        "--reset-history",
+        action="store_true",
+        help="Delete upload history for this environment and reprocess everything",
+    )
 
     args = parser.parse_args()
+
+    if args.reset_history:
+        from pathlib import Path
+
+        from nadeshiko_dev_tools.assets_uploader.uploader import UploadHistory
+
+        root = Path(args.media_folder).resolve().parent
+        history = UploadHistory(root, args.target)
+        if history.path.exists():
+            history.path.unlink()
+            console.print(
+                f"[green]Deleted {history.path.name}[/green]"
+            )
+        else:
+            console.print("[dim]No history file to delete.[/dim]")
+        return
+
     try:
         upload_all(
             output_path=args.media_folder,
@@ -85,13 +112,14 @@ Examples:
             dry_run=not args.apply,
             upload_r2=args.upload_r2,
             update_info_only=args.update_info,
+            skip_confirm=args.yes,
         )
     except KeyboardInterrupt:
         console.print("\n[yellow]Upload cancelled by user[/yellow]")
         sys.exit(130)
     except Exception as e:
         console.print(f"[red]Error: {e}[/red]")
-        raise
+        sys.exit(1)
 
 
 if __name__ == "__main__":
