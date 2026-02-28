@@ -484,38 +484,75 @@ def _build_ignored_segment(
 
 def migrate_season(
     season_dir: str,
-    anilist_id: int,
+    media_id: int,
     output_dir: str,
     config: dict,
+    tmdb_season: int | None = None,
 ) -> dict:
-    """Migrate a single season, fetching fresh AniList data.
+    """Migrate a single season, fetching metadata from the configured source.
+
+    Args:
+        tmdb_season: TMDB season number (1-based). When set, fetches season-specific
+            data (episode count, dates) from TMDB's /tv/{id}/season/{n} endpoint.
 
     Returns dict with keys: anilist_id, episodes, total_segments, total_ignored, total_failed
     """
-    anilist = CachedAnilist()
+    source = config.get("source", "anilist")
 
-    try:
-        anime_data = anilist.get_anime_with_id(anilist_id)
-    except Exception as e:
-        console.print(f"  [red]Failed to fetch AniList data for ID {anilist_id}: {e}[/red]")
-        return {
-            "anilist_id": anilist_id,
-            "episodes": 0,
-            "total_segments": 0,
-            "total_ignored": 0,
-            "total_failed": 0,
-        }
+    if source == "tmdb":
+        from nadeshiko_dev_tools.common.tmdb import CachedTmdb
+
+        client = CachedTmdb()
+        try:
+            anime_data = client.get_media_with_id(media_id, tmdb_season=tmdb_season)
+        except Exception as e:
+            console.print(f"  [red]Failed to fetch TMDB data for ID {media_id}: {e}[/red]")
+            return {
+                "anilist_id": media_id,
+                "episodes": 0,
+                "total_segments": 0,
+                "total_ignored": 0,
+                "total_failed": 0,
+            }
+        source_label = "TMDB"
+        category = "JDRAMA"
+    else:
+        anilist = CachedAnilist()
+        try:
+            anime_data = anilist.get_anime_with_id(media_id)
+        except Exception as e:
+            console.print(f"  [red]Failed to fetch AniList data for ID {media_id}: {e}[/red]")
+            return {
+                "anilist_id": media_id,
+                "episodes": 0,
+                "total_segments": 0,
+                "total_ignored": 0,
+                "total_failed": 0,
+            }
+        source_label = "AniList"
+        category = "ANIME"
 
     romaji = getattr(anime_data.title, "romaji", "Unknown")
-    console.print(f"  [green]Fetched AniList data: {romaji} (ID: {anilist_id})[/green]")
+    season_suffix = f" (Season {tmdb_season})" if tmdb_season else ""
+    console.print(
+        f"  [green]Fetched {source_label} data: {romaji}{season_suffix} (ID: {media_id})[/green]"
+    )
 
-    # Create output directory: {output_dir}/{anilist_id}/
-    season_output_dir = os.path.join(output_dir, str(anilist_id))
+    # Output folder: {media_id} for first season, {media_id}_{n} for subsequent seasons
+    folder_name = (
+        f"{media_id}_{tmdb_season}" if tmdb_season and tmdb_season > 1 else str(media_id)
+    )
+
+    season_output_dir = os.path.join(output_dir, folder_name)
     os.makedirs(season_output_dir, exist_ok=True)
 
     # Save _info.json (also downloads cover/banner and generates hash_salt)
     info_json_path = os.path.join(season_output_dir, "_info.json")
-    hash_salt = save_info_json(info_json_path, anime_data, str(anilist_id))
+    hash_salt = save_info_json(
+        info_json_path, anime_data, folder_name,
+        media_source=source, category=category,
+        tmdb_season=tmdb_season,
+    )
 
     # Discover episode directories (E01, E02, ...)
     episode_dirs = sorted(
@@ -550,7 +587,7 @@ def migrate_season(
         episodes_processed += 1
 
     return {
-        "anilist_id": anilist_id,
+        "anilist_id": media_id,
         "anime_data": anime_data,
         "episodes": episodes_processed,
         "total_segments": total_segments,
@@ -565,11 +602,14 @@ def migrate_season(
 
 
 def migrate_anime(input_dir: str, output_dir: str, config: dict) -> None:
-    """Migrate an entire anime directory from v5 to v6.
+    """Migrate an entire media directory from v5 to v6.
 
-    Discovers seasons, interactively prompts for AniList IDs,
+    Discovers seasons, interactively prompts for IDs (AniList or TMDB),
     and migrates each season as a separate v6 media entry.
     """
+    source = config.get("source", "anilist")
+    source_label = "TMDB" if source == "tmdb" else "AniList"
+
     # Load old info.json
     info_json_path = os.path.join(input_dir, "info.json")
     if not os.path.exists(info_json_path):
@@ -579,11 +619,12 @@ def migrate_anime(input_dir: str, output_dir: str, config: dict) -> None:
     with open(info_json_path, encoding="utf-8") as f:
         old_info = json.load(f)
 
-    base_anilist_id = old_info.get("id")
+    base_id = old_info.get("id")
     anime_name = old_info.get("romaji_name") or old_info.get("english_name") or "Unknown"
 
     console.print(f"\n[bold cyan]Migrating: {anime_name}[/bold cyan]")
-    console.print(f"  Base AniList ID: {base_anilist_id}")
+    console.print(f"  Source: {source_label}")
+    console.print(f"  Base ID: {base_id}")
 
     # Discover seasons
     season_dirs = sorted(
@@ -597,29 +638,35 @@ def migrate_anime(input_dir: str, output_dir: str, config: dict) -> None:
 
     console.print(f"  Found {len(season_dirs)} season(s): {', '.join(season_dirs)}")
 
-    # Interactively map each season to an AniList ID
-    season_id_map: dict[str, int] = {}
-    anilist = CachedAnilist()
+    # Interactively map each season to an ID (and optionally a TMDB season number)
+    # Each entry: (media_id, tmdb_season_number_or_None)
+    season_id_map: dict[str, tuple[int, int | None]] = {}
     prev_anime_data = None
+
+    # Only use AniList sequel detection when source is anilist
+    anilist = CachedAnilist() if source == "anilist" else None
 
     for season_dir_name in season_dirs:
         season_number = int(season_dir_name[1:])
 
         if season_number == 1:
-            default_id = base_anilist_id
-        else:
+            default_id = base_id
+        elif source == "anilist":
             # Try to find sequel from previous season's AniList data
             sequel_id = find_sequel_anilist_id(prev_anime_data) if prev_anime_data else None
-            default_id = sequel_id or base_anilist_id
+            default_id = sequel_id or base_id
+        else:
+            # TMDB: default to same ID (multi-season shows share one TMDB ID)
+            default_id = base_id
 
-        # Prompt user for the AniList ID (or auto-accept default)
+        # Prompt user for the ID (or auto-accept default)
         console.print(f"\n  [bold]{season_dir_name}[/bold]:")
         if config.get("auto_id") and default_id:
             chosen_id = default_id
-            console.print(f"  Auto-selected AniList ID: {chosen_id}")
+            console.print(f"  Auto-selected {source_label} ID: {chosen_id}")
         else:
             answer = questionary.text(
-                f"  AniList ID for {season_dir_name}?",
+                f"  {source_label} ID for {season_dir_name}?",
                 default=str(default_id) if default_id else "",
             ).ask()
 
@@ -635,21 +682,69 @@ def migrate_anime(input_dir: str, output_dir: str, config: dict) -> None:
                 )
                 continue
 
-        season_id_map[season_dir_name] = chosen_id
+        # For TMDB multi-season shows, prompt for the TMDB season number
+        tmdb_season_num = None
+        if source == "tmdb":
+            default_tmdb_season = str(season_number)
+            if config.get("auto_id"):
+                tmdb_season_num = season_number
+                console.print(f"  Auto-selected TMDB season: {tmdb_season_num}")
+            else:
+                season_answer = questionary.text(
+                    f"  TMDB season number for {season_dir_name}? (empty = none/movie)",
+                    default=default_tmdb_season,
+                ).ask()
 
-        # Fetch AniList data to use for sequel lookup in next iteration
-        try:
-            prev_anime_data = anilist.get_anime_with_id(chosen_id)
-            romaji = getattr(prev_anime_data.title, "romaji", "Unknown")
-            console.print(f"  → {romaji} (ID: {chosen_id})")
-        except Exception as e:
-            console.print(f"  [yellow]Could not fetch AniList data for {chosen_id}: {e}[/yellow]")
-            prev_anime_data = None
+                if season_answer is None:
+                    console.print("[yellow]Cancelled by user[/yellow]")
+                    return
+
+                season_answer = season_answer.strip()
+                if season_answer:
+                    try:
+                        tmdb_season_num = int(season_answer)
+                    except ValueError:
+                        console.print(
+                            f"[yellow]Invalid season number: {season_answer}, "
+                            f"skipping season-specific fetch[/yellow]"
+                        )
+
+        season_id_map[season_dir_name] = (chosen_id, tmdb_season_num)
+
+        # Fetch data to use for sequel lookup in next iteration (AniList only)
+        if source == "anilist" and anilist:
+            try:
+                prev_anime_data = anilist.get_anime_with_id(chosen_id)
+                romaji = getattr(prev_anime_data.title, "romaji", "Unknown")
+                console.print(f"  → {romaji} (ID: {chosen_id})")
+            except Exception as e:
+                console.print(
+                    f"  [yellow]Could not fetch {source_label} data"
+                    f" for {chosen_id}: {e}[/yellow]"
+                )
+                prev_anime_data = None
+        elif source == "tmdb":
+            from nadeshiko_dev_tools.common.tmdb import CachedTmdb
+
+            try:
+                tmdb = CachedTmdb()
+                media_data = tmdb.get_media_with_id(
+                    chosen_id, tmdb_season=tmdb_season_num,
+                )
+                romaji = getattr(media_data.title, "romaji", "Unknown")
+                season_suffix = f" (Season {tmdb_season_num})" if tmdb_season_num else ""
+                console.print(f"  → {romaji}{season_suffix} (ID: {chosen_id})")
+            except Exception as e:
+                console.print(
+                    f"  [yellow]Could not fetch {source_label} data"
+                    f" for {chosen_id}: {e}[/yellow]"
+                )
 
     # Confirm before proceeding
     console.print("\n[bold]Migration plan:[/bold]")
-    for season_name, aid in season_id_map.items():
-        console.print(f"  {season_name} → AniList ID {aid}")
+    for season_name, (aid, tmdb_sn) in season_id_map.items():
+        suffix = f" season {tmdb_sn}" if tmdb_sn else ""
+        console.print(f"  {season_name} → {source_label} ID {aid}{suffix}")
 
     if config.get("dry_run"):
         console.print("\n[yellow]Dry run mode — showing what would be done[/yellow]")
@@ -666,13 +761,17 @@ def migrate_anime(input_dir: str, output_dir: str, config: dict) -> None:
 
     # Migrate each season
     all_stats = []
-    for season_dir_name, anilist_id in season_id_map.items():
+    for season_dir_name, (media_id, tmdb_sn) in season_id_map.items():
         season_path = os.path.join(input_dir, season_dir_name)
+        suffix = f" season {tmdb_sn}" if tmdb_sn else ""
         console.print(
-            f"\n[bold cyan]--- {season_dir_name} (AniList ID: {anilist_id}) ---[/bold cyan]"
+            f"\n[bold cyan]--- {season_dir_name} "
+            f"({source_label} ID: {media_id}{suffix}) ---[/bold cyan]"
         )
 
-        stats = migrate_season(season_path, anilist_id, output_dir, config)
+        stats = migrate_season(
+            season_path, media_id, output_dir, config, tmdb_season=tmdb_sn,
+        )
         all_stats.append(stats)
 
     # Print summary
@@ -703,13 +802,18 @@ def migrate_anime(input_dir: str, output_dir: str, config: dict) -> None:
     # --- Verification: compare origin segment counts vs migration results ---
     console.print("\n[bold cyan]=== Verification ===[/bold cyan]")
     all_ok = True
-    for season_dir_name, anilist_id in season_id_map.items():
+    for season_dir_name, (media_id, tmdb_sn) in season_id_map.items():
         season_path = os.path.join(input_dir, season_dir_name)
         episode_dirs = sorted(
             [d for d in os.listdir(season_path) if d.startswith("E") and d[1:].isdigit()],
             key=lambda d: int(d[1:]),
         )
         episodes_filter = config.get("episodes")
+
+        # Match the output folder naming convention
+        folder_name = (
+            f"{media_id}_{tmdb_sn}" if tmdb_sn and tmdb_sn > 1 else str(media_id)
+        )
 
         for episode_dir_name in episode_dirs:
             episode_number = int(episode_dir_name[1:])
@@ -724,11 +828,11 @@ def migrate_anime(input_dir: str, output_dir: str, config: dict) -> None:
 
             # Read _data.json from output
             data_json_path = os.path.join(
-                output_dir, str(anilist_id), str(episode_number), "_data.json"
+                output_dir, folder_name, str(episode_number), "_data.json"
             )
             if not os.path.exists(data_json_path):
                 console.print(
-                    f"  [red]MISSING: {anilist_id}/E{episode_number} — "
+                    f"  [red]MISSING: {folder_name}/E{episode_number} — "
                     f"no _data.json (origin had {origin_count} segments)[/red]"
                 )
                 all_ok = False
@@ -743,14 +847,14 @@ def migrate_anime(input_dir: str, output_dir: str, config: dict) -> None:
 
             if accounted != origin_count:
                 console.print(
-                    f"  [red]MISMATCH: {anilist_id}/E{episode_number} — "
+                    f"  [red]MISMATCH: {folder_name}/E{episode_number} — "
                     f"origin={origin_count}, migrated={migrated}, "
                     f"ignored={ignored}, accounted={accounted}[/red]"
                 )
                 all_ok = False
             else:
                 console.print(
-                    f"  [green]OK: {anilist_id}/E{episode_number} — "
+                    f"  [green]OK: {folder_name}/E{episode_number} — "
                     f"{origin_count} origin → {migrated} migrated + {ignored} ignored[/green]"
                 )
 

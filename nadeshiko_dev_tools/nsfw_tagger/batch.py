@@ -25,7 +25,7 @@ console = Console()
 
 RESULTS_DIR_NAME = "_nsfw_results"
 RESULTS_FILE = "results.json"
-DEFAULT_BATCH_SIZE = 16
+DEFAULT_BATCH_SIZE = 128
 OOM_PATTERNS = (
     "failed to allocate memory",
     "bfcarena::allocaterawinternal",

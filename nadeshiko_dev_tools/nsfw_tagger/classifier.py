@@ -5,9 +5,6 @@ outputs ratings (general/sensitive/questionable/explicit) and content tags.
 Maps Danbooru ratings to backend content ratings (SAFE/SUGGESTIVE/QUESTIONABLE/EXPLICIT).
 """
 
-import ctypes
-import os
-from ctypes.util import find_library
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -62,31 +59,21 @@ class WDTagger:
         self.rating_indexes = list(np.where(df["category"] == 9)[0])
         self.general_indexes = list(np.where(df["category"] == 0)[0])
 
-        require_gpu = os.getenv("NSFW_TAGGER_REQUIRE_GPU", "").strip().lower() in {
-            "1", "true", "yes", "on",
-        }
-        cuda_ready = self._can_use_cuda_provider()
-
-        if require_gpu and not cuda_ready:
+        if "CUDAExecutionProvider" not in rt.get_available_providers():
             raise RuntimeError(
-                "NSFW_TAGGER_REQUIRE_GPU is set, but CUDAExecutionProvider is unavailable. "
-                "Install the CUDA-matching onnxruntime-gpu wheel and CUDA user-space libs."
+                "CUDAExecutionProvider is not available. "
+                "Install onnxruntime-gpu and CUDA user-space libs."
             )
 
         # Favor conservative arena growth to reduce VRAM spikes on large batches.
-        providers: list[str | tuple[str, dict[str, str]]]
-        if cuda_ready:
-            providers = [
-                (
-                    "CUDAExecutionProvider",
-                    {
-                        "arena_extend_strategy": "kSameAsRequested",
-                    },
-                ),
-                "CPUExecutionProvider",
-            ]
-        else:
-            providers = ["CPUExecutionProvider"]
+        providers: list[str | tuple[str, dict[str, str]]] = [
+            (
+                "CUDAExecutionProvider",
+                {
+                    "arena_extend_strategy": "kSameAsRequested",
+                },
+            ),
+        ]
 
         session_options = rt.SessionOptions()
         session_options.enable_mem_pattern = False
@@ -97,47 +84,15 @@ class WDTagger:
             providers=providers,
         )
 
-        if require_gpu and "CUDAExecutionProvider" not in self.model.get_providers():
+        if "CUDAExecutionProvider" not in self.model.get_providers():
             raise RuntimeError(
-                "NSFW_TAGGER_REQUIRE_GPU is set, but ONNX Runtime did not "
-                "activate CUDAExecutionProvider."
+                "ONNX Runtime did not activate CUDAExecutionProvider. "
+                "Check CUDA installation and LD_LIBRARY_PATH."
             )
 
         _, self.target_size, _, _ = self.model.get_inputs()[0].shape
         self.input_name = self.model.get_inputs()[0].name
         self.output_name = self.model.get_outputs()[0].name
-
-    @staticmethod
-    def _can_use_cuda_provider() -> bool:
-        """Return True if CUDA provider is available and runtime deps are loadable.
-
-        This avoids noisy ORT startup errors on machines where onnxruntime-gpu is
-        installed but CUDA user-space libs (e.g., libcublasLt.so.12) are missing.
-        """
-        if os.getenv("NSFW_TAGGER_FORCE_CPU", "").strip().lower() in {"1", "true", "yes", "on"}:
-            return False
-
-        if "CUDAExecutionProvider" not in rt.get_available_providers():
-            return False
-
-        # Linux preflight: ORT will log an error if this shared object exists but
-        # its transitive CUDA deps are missing. Probe it directly and fall back cleanly.
-        cuda_provider_so = (
-            Path(rt.__file__).resolve().parent / "capi" / "libonnxruntime_providers_cuda.so"
-        )
-        if cuda_provider_so.exists():
-            mode = os.RTLD_NOW if hasattr(os, "RTLD_NOW") else None
-            try:
-                if mode is None:
-                    ctypes.CDLL(str(cuda_provider_so))
-                else:
-                    ctypes.CDLL(str(cuda_provider_so), mode=mode)
-            except OSError:
-                return False
-        elif find_library("cublasLt") is None:
-            return False
-
-        return True
 
     def _prepare_image(self, image_path: str | Path) -> np.ndarray:
         """Load and preprocess image for the tagger. Returns (1, H, W, 3) array."""

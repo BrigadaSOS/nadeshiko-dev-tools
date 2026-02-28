@@ -352,6 +352,9 @@ class MediaInfo:
     studio: str | None = None
     season_name: str | None = None
     season_year: int | None = None
+    media_source: str = "anilist"  # "anilist" or "tmdb"
+    category: str = "ANIME"  # "ANIME" or "JDRAMA"
+    tmdb_season: int | None = None  # TMDB season number (1-based) for multi-season shows
 
 
 class R2Uploader:
@@ -366,6 +369,7 @@ class R2Uploader:
         self.s3_client = boto3.client(
             "s3",
             endpoint_url=self.endpoint,
+            region_name="auto",
             aws_access_key_id=config.r2_access_key_id,
             aws_secret_access_key=config.r2_secret_access_key,
             config=BotoConfig(max_pool_connections=50),
@@ -462,47 +466,6 @@ MAX_BODY_BYTES = 9 * 1024 * 1024  # Margin below 10 MB API limit
 _RATE_LIMIT_WAIT_SECONDS = 60  # Fixed 1 minute wait for rate limits
 
 
-class UploadHistory:
-    """Tracks which media/episodes have been successfully uploaded per environment.
-
-    History is stored as a JSON file at {root_dir}/_upload_history_{env}.json.
-    Structure: { "<media_id>": { "episodes": [1, 2, 3], "completed": false } }
-    A media is "completed" when all its episodes have been uploaded successfully.
-    """
-
-    def __init__(self, root_dir: Path, env: str):
-        self.path = root_dir / f"_upload_history_{env}.json"
-        self._data: dict[str, dict] = {}
-        self._load()
-
-    def _load(self) -> None:
-        if self.path.exists():
-            with open(self.path) as f:
-                self._data = json.load(f)
-
-    def _save(self) -> None:
-        with open(self.path, "w") as f:
-            json.dump(self._data, f, indent=2, sort_keys=True)
-
-    def is_media_complete(self, media_id: str) -> bool:
-        return self._data.get(media_id, {}).get("completed", False)
-
-    def is_episode_done(self, media_id: str, episode: int) -> bool:
-        return episode in self._data.get(media_id, {}).get("episodes", [])
-
-    def mark_episode_done(self, media_id: str, episode: int) -> None:
-        entry = self._data.setdefault(media_id, {"episodes": [], "completed": False})
-        if episode not in entry["episodes"]:
-            entry["episodes"].append(episode)
-            entry["episodes"].sort()
-        self._save()
-
-    def mark_media_complete(self, media_id: str) -> None:
-        entry = self._data.setdefault(media_id, {"episodes": [], "completed": False})
-        entry["completed"] = True
-        self._save()
-
-
 class NadeshikoUploader:
     """Handles uploading to Nadeshiko API and R2."""
 
@@ -516,7 +479,6 @@ class NadeshikoUploader:
         storage_target: str = "local",
         upload_r2: bool = False,
         update_info_only: bool = False,
-        history: UploadHistory | None = None,
     ):
         _validate_sdk_contract()
         self.config = config
@@ -524,7 +486,6 @@ class NadeshikoUploader:
         self.storage_target = storage_target
         self.upload_r2 = upload_r2
         self.update_info_only = update_info_only
-        self.history = history
         # Only initialize R2Uploader when we'll actually use it
         self.r2 = R2Uploader(config) if upload_r2 else None
 
@@ -671,10 +632,38 @@ class NadeshikoUploader:
         """
         return None
 
+    @staticmethod
+    def _build_external_ids(media_info: MediaInfo) -> ExternalId:
+        """Build ExternalId from media_info, keyed by media_source.
+
+        For TMDB multi-season shows, appends ``_<season>`` so each season
+        is treated as a distinct media (e.g. ``"46198_1"``, ``"46198_2"``).
+        """
+        id_str = str(media_info.anilist_id)
+        if media_info.media_source == "tmdb":
+            if media_info.tmdb_season is not None:
+                id_str = f"{id_str}_{media_info.tmdb_season}"
+            return ExternalId(tmdb=id_str)
+        return ExternalId(anilist=id_str)
+
     def _print(self, *args, **kwargs) -> None:
         """Thread-safe console print."""
         with self._console_lock:
             console.print(*args, **kwargs)
+
+    @staticmethod
+    def _build_storage_base_path(media_info: MediaInfo) -> str:
+        """Build R2 storage base path from media source and ID.
+
+        Anime (anilist): media/{anilist_id}
+        J-drama (tmdb):  media/mv/{tmdb_id}  or  media/mv/{tmdb_id}_{season}
+        """
+        if media_info.media_source == "tmdb":
+            base = f"media/mv/{media_info.anilist_id}"
+            if media_info.tmdb_season is not None:
+                base = f"{base}_{media_info.tmdb_season}"
+            return base
+        return f"media/{media_info.anilist_id}"
 
     def _upload_media_images(self, media_folder: Path, storage_base_path: str) -> None:
         """Upload cover and banner images to R2 if they exist locally."""
@@ -696,13 +685,13 @@ class NadeshikoUploader:
     def _update_media_info(
         self, existing_media, media_info: MediaInfo,
         media_folder: Path, storage_base_path: str = "",
-    ) -> int | None:
+    ) -> str | None:
         """Update existing media with storage backend and other info."""
         if self.dry_run:
-            console.print(f"[cyan][DRY RUN] Would update media: {existing_media.id}[/cyan]")
-            return existing_media.id
+            console.print(f"[cyan][DRY RUN] Would update media: {existing_media.public_id}[/cyan]")
+            return existing_media.public_id
 
-        console.print(f"[cyan]Updating media info: {existing_media.id}[/cyan]")
+        console.print(f"[cyan]Updating media info: {existing_media.public_id}[/cyan]")
 
         storage = (
             MediaUpdateRequestStorage.R2
@@ -718,7 +707,7 @@ class NadeshikoUploader:
         # Build update request with only fields that are set
         request = MediaUpdateRequest()
         request.storage = storage
-        request.external_ids = ExternalId(anilist=str(media_info.anilist_id))
+        request.external_ids = self._build_external_ids(media_info)
         if start_date is not UNSET:
             request.start_date = start_date
         if end_date is not UNSET:
@@ -740,19 +729,19 @@ class NadeshikoUploader:
             request.storage_base_path = storage_base_path
 
         update_result = update_media.sync(
-            client=self.api_client, id=existing_media.id, body=request
+            client=self.api_client, id=existing_media.public_id, body=request
         )
 
         if update_result and not self._is_api_error(update_result):
-            console.print(f"[green]Updated media: {existing_media.id}[/green]")
-            return existing_media.id
+            console.print(f"[green]Updated media: {existing_media.public_id}[/green]")
+            return existing_media.public_id
 
         if self._is_api_error(update_result):
             console.print("\n[red]Failed to update media:[/red]")
             self._print_api_error(update_result)
         else:
             console.print("[red]Failed to update media: Unknown error[/red]")
-        return existing_media.id  # Return ID anyway if update failed
+        return existing_media.public_id  # Return ID anyway if update failed
 
     def _load_media_info(self, media_folder: Path) -> MediaInfo | None:
         """Load _info.json from a media folder."""
@@ -782,6 +771,9 @@ class NadeshikoUploader:
             studio=data.get("studio"),
             season_name=data.get("season", {}).get("name"),
             season_year=data.get("season", {}).get("year"),
+            media_source=data.get("media_source", "anilist"),
+            category=data.get("category", "ANIME"),
+            tmdb_season=data.get("tmdb_season"),
         )
 
     @staticmethod
@@ -869,13 +861,19 @@ class NadeshikoUploader:
             ignored_segments=data.get("ignored_segments", []),
         )
 
-    def _get_or_create_media(self, media_info: MediaInfo, media_folder: Path) -> int | None:
-        """Get existing media or create new one. Returns media ID."""
+    def _get_or_create_media(
+        self, media_info: MediaInfo, media_folder: Path,
+    ) -> tuple[str, str] | None:
+        """Get existing media or create new one.
+
+        Returns (public_id, storage_base_path) or None on failure.
+        """
         if self.dry_run or not self.api_client:
             console.print(
                 f"[cyan][DRY RUN] Would get/create media: {media_info.romaji_name}[/cyan]"
             )
-            return media_info.anilist_id
+            storage_base_path = self._build_storage_base_path(media_info)
+            return str(media_info.anilist_id), storage_base_path
 
         # Try to find existing media by anilist_id - use search endpoint
         try:
@@ -896,25 +894,31 @@ class NadeshikoUploader:
             return None
 
         existing_media = None
+        source_key = media_info.media_source  # "anilist" or "tmdb"
         if result and not self._is_api_error(result):
-            # Search through results for matching anilist_id via external_ids
+            # Search through results for matching external ID
             media_items = result.media
             for media in media_items:
                 ext_ids = getattr(media, "external_ids", UNSET)
-                anilist_id = getattr(ext_ids, "anilist", None) if ext_ids is not UNSET else None
-                if str(anilist_id) == str(media_info.anilist_id):
-                    console.print(f"[green]Found existing media: {media.id}[/green]")
+                if ext_ids is UNSET or ext_ids is None:
+                    continue
+                ext_id_val = getattr(ext_ids, source_key, None)
+                if str(ext_id_val) == str(media_info.anilist_id):
+                    console.print(f"[green]Found existing media: {media.public_id}[/green]")
                     existing_media = media
                     break
+
+        storage_base_path = self._build_storage_base_path(media_info)
 
         # If media exists, always sync media info (including characters).
         # `--update-info` only controls whether episodes/segments are skipped later.
         if existing_media:
             media_id = self._update_media_info(
                 existing_media, media_info, media_folder,
-                storage_base_path=f"media/{media_info.anilist_id}",
+                storage_base_path=storage_base_path,
             )
-            return media_id if media_id is not None else existing_media.id
+            public_id = media_id if media_id is not None else existing_media.public_id
+            return public_id, storage_base_path
 
         # Determine storage backend
         storage = (
@@ -922,9 +926,6 @@ class NadeshikoUploader:
             if self.storage_target == "r2"
             else MediaCreateRequestStorage.LOCAL
         )
-
-        storage_base_path = f"media/{media_info.anilist_id}"
-        self._upload_media_images(media_folder, storage_base_path)
 
         if not _find_image_file(media_folder, "cover"):
             console.print(
@@ -938,18 +939,37 @@ class NadeshikoUploader:
             start_date = dt.date(1970, 1, 1)
         end_date = _parse_iso_date(media_info.end_date)
 
+        # Derive season from start_date if missing
+        if not media_info.season_name and media_info.start_date:
+            month = int(media_info.start_date.split("-")[1])
+            media_info.season_name = (
+                "WINTER" if month <= 3
+                else "SPRING" if month <= 6
+                else "SUMMER" if month <= 9
+                else "FALL"
+            )
+        if media_info.season_year is None and media_info.start_date:
+            media_info.season_year = int(
+                media_info.start_date.split("-")[0]
+            )
+
         # Validate required fields
-        if not media_info.studio:
-            console.print("[red]Error: studio is required but not found in _info.json[/red]")
-            return None
         if not media_info.season_name:
-            console.print("[red]Error: season.name is required but not found in _info.json[/red]")
+            console.print(
+                "[red]Error: season_name could not be determined"
+                " (no season or start_date in _info.json)[/red]"
+            )
             return None
         if media_info.season_year is None:
-            console.print("[red]Error: season.year is required but not found in _info.json[/red]")
+            console.print(
+                "[red]Error: season_year could not be determined"
+                " (no season or start_date in _info.json)[/red]"
+            )
             return None
 
         character_inputs = self._build_character_inputs(media_info)
+
+        self._upload_media_images(media_folder, storage_base_path)
 
         # Create new media
         request = MediaCreateRequest(
@@ -959,27 +979,41 @@ class NadeshikoUploader:
             airing_format=media_info.airing_format,
             airing_status=media_info.airing_status,
             genres=media_info.genres,
-            category=MediaCreateRequestCategory.ANIME,
+            category=(
+                MediaCreateRequestCategory.JDRAMA
+                if media_info.category == "JDRAMA"
+                else MediaCreateRequestCategory.ANIME
+            ),
             version=media_info.version,
-            studio=media_info.studio,
+            studio=media_info.studio if media_info.studio else UNSET,
             season_name=media_info.season_name,
             season_year=media_info.season_year,
             hash_salt=media_info.hash_salt,
             storage=storage,
             start_date=start_date,
             end_date=end_date,
-            external_ids=ExternalId(anilist=str(media_info.anilist_id)),
+            external_ids=self._build_external_ids(media_info),
             characters=character_inputs if character_inputs is not None else UNSET,
             storage_base_path=storage_base_path,
         )
 
+        create_result = self._do_create_media(request, character_inputs)
+        if not create_result:
+            return None
+
+        console.print(
+            f"[green]Created new media: {create_result.public_id}[/green]"
+        )
+        return create_result.public_id, storage_base_path
+
+    def _do_create_media(self, request, character_inputs):
+        """Send create media request, retrying without characters on 409."""
         create_result = create_media.sync(client=self.api_client, body=request)
 
         if create_result and not self._is_api_error(create_result):
-            console.print(f"[green]Created new media: {create_result.id}[/green]")
-            return create_result.id
+            return create_result
 
-        # On 409 (e.g. duplicate seiyuu), retry without characters — backend should upsert seiyuu
+        # On 409 (e.g. duplicate seiyuu), retry without characters
         if isinstance(create_result, Error409) and character_inputs:
             console.print(
                 "[yellow]Warning: media creation returned 409 (possibly duplicate seiyuu). "
@@ -994,7 +1028,7 @@ class NadeshikoUploader:
                 genres=request.genres,
                 category=request.category,
                 version=request.version,
-                studio=request.studio,
+                studio=request.studio if request.studio else UNSET,
                 season_name=request.season_name,
                 season_year=request.season_year,
                 hash_salt=request.hash_salt,
@@ -1006,8 +1040,7 @@ class NadeshikoUploader:
             )
             create_result = create_media.sync(client=self.api_client, body=retry_request)
             if create_result and not self._is_api_error(create_result):
-                console.print(f"[green]Created new media (without characters): {create_result.id}[/green]")
-                return create_result.id
+                return create_result
 
         if self._is_api_error(create_result):
             console.print("\n[red]Failed to create media:[/red]")
@@ -1018,7 +1051,7 @@ class NadeshikoUploader:
             console.print(f"[dim]Result: {create_result}[/dim]")
         return None
 
-    def _get_or_create_episode(self, media_id: int, episode_data: EpisodeData) -> bool:
+    def _get_or_create_episode(self, media_id: str, episode_data: EpisodeData) -> bool:
         """Get existing episode or create new one."""
         if self.dry_run or not self.api_client:
             console.print(
@@ -1155,7 +1188,7 @@ class NadeshikoUploader:
 
     def _create_segments_batch(
         self,
-        media_id: int,
+        media_id: str,
         episode_number: int,
         requests: list[SegmentCreateRequest],
         max_retries: int = 3,
@@ -1261,11 +1294,6 @@ class NadeshikoUploader:
         """
         media_id_str = media_folder.name
 
-        # Check upload history — skip fully completed media
-        if self.history and not self.dry_run and self.history.is_media_complete(media_id_str):
-            console.print(f"\n[dim]Skipping {media_id_str} (already completed)[/dim]")
-            return True
-
         console.print(f"\n[bold cyan]Processing: {media_id_str}[/bold cyan]")
 
         # Load media info
@@ -1274,11 +1302,11 @@ class NadeshikoUploader:
             return False
 
         # Get or create media
-        media_id = self._get_or_create_media(media_info, media_folder)
-        if not media_id:
+        result = self._get_or_create_media(media_info, media_folder)
+        if not result:
             return False
 
-        storage_base_path = f"media/{media_info.anilist_id}"
+        media_id, storage_base_path = result
 
         # Skip episodes if update_info_only is True
         if self.update_info_only:
@@ -1297,7 +1325,6 @@ class NadeshikoUploader:
         )
 
         has_errors = False
-        all_episodes_ok = True
         for episode_folder in episode_folders:
             try:
                 episode_number = int(episode_folder.name)
@@ -1308,17 +1335,6 @@ class NadeshikoUploader:
                 continue
 
             if episode_filter and episode_number != episode_filter:
-                continue
-
-            # Check upload history — skip already-uploaded episodes
-            if (
-                self.history
-                and not self.dry_run
-                and self.history.is_episode_done(media_id_str, episode_number)
-            ):
-                console.print(
-                    f"\n[dim]Skipping episode {episode_number} (already uploaded)[/dim]"
-                )
                 continue
 
             try:
@@ -1334,13 +1350,6 @@ class NadeshikoUploader:
 
             if not ep_ok:
                 has_errors = True
-                all_episodes_ok = False
-            elif self.history and not self.dry_run:
-                self.history.mark_episode_done(media_id_str, episode_number)
-
-        # Mark media as fully complete if all episodes succeeded and no filter was used
-        if self.history and not self.dry_run and all_episodes_ok and not episode_filter:
-            self.history.mark_media_complete(media_id_str)
 
         return not has_errors
 
@@ -1376,7 +1385,7 @@ class NadeshikoUploader:
 
     def upload_episode(
         self,
-        media_id: int,
+        media_id: str,
         episode_folder: Path,
         max_r2_workers: int = 30,
         storage_base_path: str = "",
@@ -1783,18 +1792,12 @@ def upload_all(
             console.print("[yellow]Upload cancelled.[/yellow]")
             return
 
-    # Initialize upload history (persisted per-env alongside media folders)
-    history = None
-    if not dry_run:
-        history = UploadHistory(media_folder.parent, env)
-
     uploader = NadeshikoUploader(
         config,
         dry_run=dry_run,
         storage_target=storage_target,
         upload_r2=upload_r2,
         update_info_only=update_info_only,
-        history=history,
     )
 
     # Upload the media

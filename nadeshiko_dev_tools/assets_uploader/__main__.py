@@ -78,29 +78,7 @@ Examples:
         action="store_true",
         help="Skip confirmation prompt for production uploads",
     )
-    parser.add_argument(
-        "--reset-history",
-        action="store_true",
-        help="Delete upload history for this environment and reprocess everything",
-    )
-
     args = parser.parse_args()
-
-    if args.reset_history:
-        from pathlib import Path
-
-        from nadeshiko_dev_tools.assets_uploader.uploader import UploadHistory
-
-        root = Path(args.media_folder).resolve().parent
-        history = UploadHistory(root, args.target)
-        if history.path.exists():
-            history.path.unlink()
-            console.print(
-                f"[green]Deleted {history.path.name}[/green]"
-            )
-        else:
-            console.print("[dim]No history file to delete.[/dim]")
-        return
 
     try:
         upload_all(

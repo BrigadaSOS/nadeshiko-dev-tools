@@ -3,7 +3,10 @@
 import argparse
 import sys
 
+from dotenv import load_dotenv
 from rich.console import Console
+
+load_dotenv()
 
 from nadeshiko_dev_tools.migrator.migrator import migrate_anime
 
@@ -27,6 +30,9 @@ Examples:
 
   # Skip video generation (faster, audio + screenshots only)
   %(prog)s /path/to/old/bungou-stray-dogs /path/to/output --skip-video
+
+  # Migrate a jdrama using TMDB as metadata source
+  %(prog)s /path/to/old/alice-in-borderland /path/to/output --source tmdb
         """,
     )
 
@@ -63,7 +69,13 @@ Examples:
     parser.add_argument(
         "--auto-id",
         action="store_true",
-        help="Auto-accept default AniList IDs (sequel detection) without prompting",
+        help="Auto-accept default IDs (sequel detection) without prompting",
+    )
+    parser.add_argument(
+        "--source",
+        choices=["anilist", "tmdb"],
+        default="anilist",
+        help="Metadata source for ID lookup (default: anilist)",
     )
     parser.add_argument(
         "-y",
@@ -91,6 +103,7 @@ Examples:
         "workers": args.workers,
         "auto_id": args.auto_id,
         "yes": args.yes,
+        "source": args.source,
     }
 
     try:

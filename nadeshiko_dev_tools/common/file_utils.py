@@ -106,8 +106,23 @@ def _format_fuzzy_date(date_obj) -> str | None:
     return None
 
 
-def save_info_json(info_json_path: str, anime_data, anime_folder_name: str) -> str:
-    """Save _info.json for an anime folder.
+def save_info_json(
+    info_json_path: str,
+    anime_data,
+    anime_folder_name: str,
+    media_source: str = "anilist",
+    category: str = "ANIME",
+    tmdb_season: int | None = None,
+) -> str:
+    """Save _info.json for an anime/media folder.
+
+    Args:
+        info_json_path: Path to the _info.json file.
+        anime_data: Data object (AnimeData or TmdbMediaData) with media metadata.
+        anime_folder_name: Name of the media folder.
+        media_source: Metadata source ("anilist" or "tmdb").
+        category: Media category ("ANIME" or "JDRAMA").
+        tmdb_season: TMDB season number (1-based), stored in _info.json when set.
 
     Returns:
         str: The hash salt for this media.
@@ -137,6 +152,8 @@ def save_info_json(info_json_path: str, anime_data, anime_folder_name: str) -> s
     info_json = {
         "id": anime_data.id,
         "anilist_id": anime_data.id,
+        "media_source": media_source,
+        "category": category,
         "version": "6",
         "japanese_name": getattr(anime_data.title, "native", None),
         "english_name": getattr(anime_data.title, "english", None),
@@ -148,6 +165,9 @@ def save_info_json(info_json_path: str, anime_data, anime_folder_name: str) -> s
         "episodes": anime_data.episodes,
         "hash_salt": hash_salt,
     }
+
+    if tmdb_season is not None:
+        info_json["tmdb_season"] = tmdb_season
 
     # Add start_date and end_date from AniList
     if hasattr(anime_data, "start_date") and anime_data.start_date:
