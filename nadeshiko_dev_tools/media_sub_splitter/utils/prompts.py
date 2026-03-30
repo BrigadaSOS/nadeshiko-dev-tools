@@ -536,9 +536,7 @@ def select_mkv_sources_and_tracks(
         subtitle_selections = {}
         for i, source in enumerate(matching_mkv_sources):
             if i in remembered.get("subtitle_file_indices", []):
-                subtitle_selections[source.filepath] = [
-                    s["index"] for s in source.subtitle_streams
-                ]
+                subtitle_selections[source.filepath] = [s["index"] for s in source.subtitle_streams]
 
         return main_mkv, audio_index, subtitle_selections, remembered_selections
     else:
@@ -676,9 +674,7 @@ def select_mkv_sources_and_tracks(
         )
         # Find indices of files selected for subtitle extraction
         subtitle_file_indices = [
-            i
-            for i, s in enumerate(matching_mkv_sources)
-            if s.filepath in subtitle_selections
+            i for i, s in enumerate(matching_mkv_sources) if s.filepath in subtitle_selections
         ]
 
         # Store by folder_name so it applies to all episodes in this folder
@@ -692,9 +688,7 @@ def select_mkv_sources_and_tracks(
         # Also persist to config file for cross-run persistence
         from nadeshiko_dev_tools.common.config import save_multi_mkv_selection
 
-        save_multi_mkv_selection(
-            folder_name, main_mkv_index, audio_index, subtitle_file_indices
-        )
+        save_multi_mkv_selection(folder_name, main_mkv_index, audio_index, subtitle_file_indices)
         logger.info(f"Saved multi-MKV selection for folder '{folder_name}'")
 
     return main_mkv, audio_index, subtitle_selections, remembered_selections

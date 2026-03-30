@@ -45,7 +45,7 @@ def get_r2_config() -> tuple[str, str, str, str]:
     return endpoint, access_key_id, secret_access_key, bucket
 
 
-def remove_media_folder(storage_path: str, dry_run: bool) -> int:
+def remove_media_folder(storage_path: str, dry_run: bool, skip_confirm: bool = False) -> int:
     """Remove all files under a storage path from R2.
 
     Args:
@@ -92,10 +92,11 @@ def remove_media_folder(storage_path: str, dry_run: bool) -> int:
         return len(all_objects)
 
     # Confirm deletion
-    response = input(f"\nDelete {len(all_objects)} objects? [y/N] ")
-    if response.lower() != "y":
-        print("Aborted")
-        return 0
+    if not skip_confirm:
+        response = input(f"\nDelete {len(all_objects)} objects? [y/N] ")
+        if response.lower() != "y":
+            print("Aborted")
+            return 0
 
     # Delete in batches (R2/S3 supports up to 1000 keys per delete_objects call)
     total_deleted = 0
@@ -114,9 +115,7 @@ def remove_media_folder(storage_path: str, dry_run: bool) -> int:
 
 
 def main():
-    parser = argparse.ArgumentParser(
-        description="Remove a media folder from R2 storage"
-    )
+    parser = argparse.ArgumentParser(description="Remove a media folder from R2 storage")
     parser.add_argument(
         "media_id",
         help="Media ID or storage path to remove (e.g., '7674' or 'media/7674')",
@@ -134,11 +133,7 @@ def main():
     )
     args = parser.parse_args()
 
-    # Monkey-patch to skip confirmation if -y is set
-    if args.yes:
-        input = lambda x: "y"  # noqa: E731 (type: ignore)
-
-    remove_media_folder(args.media_id, args.dry_run)
+    remove_media_folder(args.media_id, args.dry_run, skip_confirm=args.yes)
 
 
 if __name__ == "__main__":

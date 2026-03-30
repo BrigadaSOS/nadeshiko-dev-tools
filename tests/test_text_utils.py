@@ -4,7 +4,6 @@ from dataclasses import dataclass
 
 import pytest
 
-from nadeshiko_dev_tools.common.config import ProcessingConfig
 from nadeshiko_dev_tools.media_sub_splitter.utils.text_utils import process_subtitle_line
 
 
@@ -118,6 +117,7 @@ def test_regular_actor_name_passes():
 
 # --- Type filter ---
 
+
 def test_comment_type_filtered():
     line = FakeLine(type="Comment")
     result = process_subtitle_line(line, FakeConfig())
@@ -125,6 +125,7 @@ def test_comment_type_filtered():
 
 
 # --- Positioning filter ---
+
 
 def test_pos_tag_filtered():
     line = FakeLine(text=r"{\pos(320,50)}Some sign text", plaintext="Some sign text")

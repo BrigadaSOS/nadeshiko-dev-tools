@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+echo "Running ruff format..."
+uv run ruff format .
+
+echo "Running ruff check --fix..."
+uv run ruff check --fix .
+
+if ! git diff --quiet; then
+    echo ""
+    echo "Ruff made fixes. Please review and commit the changes before pushing:"
+    git diff --stat
+    exit 1
+fi
+
+echo "Lint passed."

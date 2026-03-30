@@ -20,9 +20,25 @@ TAG_THRESHOLD = 0.25
 
 # Tags where underscores should NOT be replaced with spaces
 KAOMOJIS = {
-    "0_0", "(o)_(o)", "+_+", "+_-", "._.", "<o>_<o>", "<|>_<|>",
-    "=_=", ">_<", "3_3", "6_9", ">_o", "@_@", "^_^", "o_o",
-    "u_u", "x_x", "|_|", "||_||",
+    "0_0",
+    "(o)_(o)",
+    "+_+",
+    "+_-",
+    "._.",
+    "<o>_<o>",
+    "<|>_<|>",
+    "=_=",
+    ">_<",
+    "3_3",
+    "6_9",
+    ">_o",
+    "@_@",
+    "^_^",
+    "o_o",
+    "u_u",
+    "x_x",
+    "|_|",
+    "||_||",
 }
 
 # Danbooru rating -> backend content rating (uppercase to match backend enum)
@@ -52,9 +68,9 @@ class WDTagger:
         model_path = hf_hub_download(model_repo, "model.onnx")
 
         df = pd.read_csv(csv_path)
-        self.tag_names = df["name"].apply(
-            lambda x: x.replace("_", " ") if x not in KAOMOJIS else x
-        ).tolist()
+        self.tag_names = (
+            df["name"].apply(lambda x: x.replace("_", " ") if x not in KAOMOJIS else x).tolist()
+        )
 
         self.rating_indexes = list(np.where(df["category"] == 9)[0])
         self.general_indexes = list(np.where(df["category"] == 0)[0])

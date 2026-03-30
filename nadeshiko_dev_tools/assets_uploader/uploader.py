@@ -42,7 +42,6 @@ from nadeshiko_internal.api.media import (  # noqa: E402
 from nadeshiko_internal.models import (  # noqa: E402
     CharacterInput,
     CharacterInputRole,
-    CharacterInputSeiyuu,
     ContentRating,
     CreateSegmentsBatchResponse201,
     EpisodeCreateRequest,
@@ -103,6 +102,7 @@ def _validate_sdk_contract() -> None:
 
 class SegmentResult(Enum):
     """Result status for segment creation."""
+
     OK = "OK"
     DUPLICATE = "DUPLICATE"
     SKIPPED = "SKIPPED"
@@ -218,7 +218,8 @@ class Config:
             "local": {
                 "nadeshiko_api_key": _first_set("NADESHIKO_LOCAL_API_KEY", "NADESHIKO_API_KEY"),
                 "nadeshiko_base_url": _first_set(
-                    "NADESHIKO_LOCAL_BASE_URL", "NADESHIKO_BASE_URL",
+                    "NADESHIKO_LOCAL_BASE_URL",
+                    "NADESHIKO_BASE_URL",
                     default="http://localhost:5000",
                 ),
                 "is_prod": False,
@@ -226,7 +227,8 @@ class Config:
             "dev": {
                 "nadeshiko_api_key": _first_set("NADESHIKO_DEV_API_KEY", "NADESHIKO_API_KEY"),
                 "nadeshiko_base_url": _first_set(
-                    "NADESHIKO_DEV_BASE_URL", default="https://api-dev.nadeshiko.co",
+                    "NADESHIKO_DEV_BASE_URL",
+                    default="https://api-dev.nadeshiko.co",
                 ),
                 "is_prod": False,
             },
@@ -393,6 +395,7 @@ class R2Uploader:
         try:
             callback = None
             if progress and task_id:
+
                 def callback(bytes_transferred):
                     progress.update(task_id, advance=bytes_transferred)
 
@@ -683,8 +686,11 @@ class NadeshikoUploader:
                 )
 
     def _update_media_info(
-        self, existing_media, media_info: MediaInfo,
-        media_folder: Path, storage_base_path: str = "",
+        self,
+        existing_media,
+        media_info: MediaInfo,
+        media_folder: Path,
+        storage_base_path: str = "",
     ) -> str | None:
         """Update existing media with storage backend and other info."""
         if self.dry_run:
@@ -821,7 +827,8 @@ class NadeshikoUploader:
                 content_analysis = s.get("content_analysis")
             if not content_analysis:
                 console.print(
-                    f"[red]Missing content_analysis for segment {seg_hash} in {episode_folder}[/red]"
+                    f"[red]Missing content_analysis for segment {seg_hash}"
+                    f" in {episode_folder}[/red]"
                 )
                 return None
 
@@ -832,26 +839,28 @@ class NadeshikoUploader:
                 )
                 return None
 
-            segments.append(SegmentData(
-                segment_hash=seg_hash,
-                segment_index=s.get("segment_index", 0),
-                start_ms=s.get("start_ms", 0),
-                end_ms=s.get("end_ms", 0),
-                duration_ms=s.get("duration_ms", 0),
-                content_ja=s.get("content_ja", ""),
-                content_es=s.get("content_es"),
-                content_en=s.get("content_en"),
-                is_mt_es=s.get("is_mt_es", False),
-                is_mt_en=s.get("is_mt_en", False),
-                actor_ja=s.get("actor_ja"),
-                actor_es=s.get("actor_es"),
-                actor_en=s.get("actor_en"),
-                files=s.get("files", {}),
-                subtitles=s.get("subtitles", {}),
-                content_rating=content_rating,
-                content_analysis=content_analysis,
-                pos_analysis=pos_analysis,
-            ))
+            segments.append(
+                SegmentData(
+                    segment_hash=seg_hash,
+                    segment_index=s.get("segment_index", 0),
+                    start_ms=s.get("start_ms", 0),
+                    end_ms=s.get("end_ms", 0),
+                    duration_ms=s.get("duration_ms", 0),
+                    content_ja=s.get("content_ja", ""),
+                    content_es=s.get("content_es"),
+                    content_en=s.get("content_en"),
+                    is_mt_es=s.get("is_mt_es", False),
+                    is_mt_en=s.get("is_mt_en", False),
+                    actor_ja=s.get("actor_ja"),
+                    actor_es=s.get("actor_es"),
+                    actor_en=s.get("actor_en"),
+                    files=s.get("files", {}),
+                    subtitles=s.get("subtitles", {}),
+                    content_rating=content_rating,
+                    content_analysis=content_analysis,
+                    pos_analysis=pos_analysis,
+                )
+            )
 
         return EpisodeData(
             number=metadata.get("number", 0),
@@ -862,7 +871,9 @@ class NadeshikoUploader:
         )
 
     def _get_or_create_media(
-        self, media_info: MediaInfo, media_folder: Path,
+        self,
+        media_info: MediaInfo,
+        media_folder: Path,
     ) -> tuple[str, str] | None:
         """Get existing media or create new one.
 
@@ -914,7 +925,9 @@ class NadeshikoUploader:
         # `--update-info` only controls whether episodes/segments are skipped later.
         if existing_media:
             media_id = self._update_media_info(
-                existing_media, media_info, media_folder,
+                existing_media,
+                media_info,
+                media_folder,
                 storage_base_path=storage_base_path,
             )
             public_id = media_id if media_id is not None else existing_media.public_id
@@ -943,15 +956,16 @@ class NadeshikoUploader:
         if not media_info.season_name and media_info.start_date:
             month = int(media_info.start_date.split("-")[1])
             media_info.season_name = (
-                "WINTER" if month <= 3
-                else "SPRING" if month <= 6
-                else "SUMMER" if month <= 9
+                "WINTER"
+                if month <= 3
+                else "SPRING"
+                if month <= 6
+                else "SUMMER"
+                if month <= 9
                 else "FALL"
             )
         if media_info.season_year is None and media_info.start_date:
-            media_info.season_year = int(
-                media_info.start_date.split("-")[0]
-            )
+            media_info.season_year = int(media_info.start_date.split("-")[0])
 
         # Validate required fields
         if not media_info.season_name:
@@ -1001,9 +1015,7 @@ class NadeshikoUploader:
         if not create_result:
             return None
 
-        console.print(
-            f"[green]Created new media: {create_result.public_id}[/green]"
-        )
+        console.print(f"[green]Created new media: {create_result.public_id}[/green]")
         return create_result.public_id, storage_base_path
 
     def _do_create_media(self, request, character_inputs):
@@ -1090,9 +1102,7 @@ class NadeshikoUploader:
 
         # Create new episode
         request = EpisodeCreateRequest(episode_number=episode_data.number)
-        create_result = create_episode.sync(
-            client=self.api_client, media_id=media_id, body=request
-        )
+        create_result = create_episode.sync(client=self.api_client, media_id=media_id, body=request)
 
         if create_result and not self._is_api_error(create_result):
             console.print(f"[green]Created new episode: E{episode_data.number}[/green]")
@@ -1162,7 +1172,8 @@ class NadeshikoUploader:
         return per_segment * len(requests) + 100
 
     def _chunk_requests(
-        self, requests: list[SegmentCreateRequest],
+        self,
+        requests: list[SegmentCreateRequest],
     ) -> list[list[SegmentCreateRequest]]:
         """Split requests into chunks respecting both count and body-size limits."""
         chunks: list[list[SegmentCreateRequest]] = []
@@ -1209,8 +1220,7 @@ class NadeshikoUploader:
         for chunk_idx, chunk in enumerate(chunks, 1):
             if len(chunks) > 1:
                 console.print(
-                    f"[dim]  Batch {chunk_idx}/{len(chunks)}"
-                    f" ({len(chunk)} segments)...[/dim]"
+                    f"[dim]  Batch {chunk_idx}/{len(chunks)} ({len(chunk)} segments)...[/dim]"
                 )
 
             body = SegmentBatchCreateRequest(segments=chunk)
@@ -1250,9 +1260,7 @@ class NadeshikoUploader:
                     if attempt < max_retries - 1:
                         time.sleep(wait)
                         continue
-                    console.print(
-                        f"[red]Max retries reached for batch {chunk_idx}[/red]"
-                    )
+                    console.print(f"[red]Max retries reached for batch {chunk_idx}[/red]")
 
                 # Non-retryable API error
                 if self._is_api_error(result):
@@ -1269,8 +1277,10 @@ class NadeshikoUploader:
                         total_failed += len(chunk)
                         return total_created, total_skipped, total_failed
                 else:
-                    key = "unknown_error_none_result" if result is None else (
-                        f"unknown_{type(result).__name__}"
+                    key = (
+                        "unknown_error_none_result"
+                        if result is None
+                        else (f"unknown_{type(result).__name__}")
                     )
                     self.stats["errors_by_status"][key] = (
                         self.stats["errors_by_status"].get(key, 0) + 1
@@ -1317,7 +1327,10 @@ class NadeshikoUploader:
         if nsfw_lookup:
             console.print(f"[dim]Loaded NSFW lookup: {len(nsfw_lookup)} segments[/dim]")
         else:
-            console.print("[yellow]No _nsfw_results/results.json found — content_rating must be in _data.json[/yellow]")
+            console.print(
+                "[yellow]No _nsfw_results/results.json found"
+                " — content_rating must be in _data.json[/yellow]"
+            )
 
         # Process each episode folder
         episode_folders = sorted(
@@ -1339,13 +1352,13 @@ class NadeshikoUploader:
 
             try:
                 ep_ok = self.upload_episode(
-                    media_id, episode_folder, storage_base_path=storage_base_path,
+                    media_id,
+                    episode_folder,
+                    storage_base_path=storage_base_path,
                     nsfw_lookup=nsfw_lookup,
                 )
             except Exception as e:
-                console.print(
-                    f"[red]Episode {episode_number} failed with error: {e}[/red]"
-                )
+                console.print(f"[red]Episode {episode_number} failed with error: {e}[/red]")
                 ep_ok = False
 
             if not ep_ok:
@@ -1433,7 +1446,8 @@ class NadeshikoUploader:
 
             # Collect segments that need file uploads
             segments_needing_upload = [
-                seg for seg in episode_data.segments
+                seg
+                for seg in episode_data.segments
                 if not self._should_skip_segment(seg)[0]
                 and any(
                     (episode_folder / fn).exists() and fn not in existing_files
@@ -1514,7 +1528,9 @@ class NadeshikoUploader:
             self.stats["uploaded"] = valid_count
         elif api_requests:
             created, duped, failed = self._create_segments_batch(
-                media_id, episode_number, api_requests,
+                media_id,
+                episode_number,
+                api_requests,
             )
             self.stats["uploaded"] = created
             self.stats["duplicated"] = duped
@@ -1675,9 +1691,9 @@ def _display_upload_summary(
     """Display a summary of what will be uploaded."""
     color = "red" if target == "prod" else ("cyan" if target == "dev" else "green")
 
-    console.print(f"\n[bold {color}]{'='*60}[/bold {color}]")
+    console.print(f"\n[bold {color}]{'=' * 60}[/bold {color}]")
     console.print(f"[bold {color}]UPLOAD SUMMARY[/bold {color}]")
-    console.print(f"[bold {color}]{'='*60}[/bold {color}]")
+    console.print(f"[bold {color}]{'=' * 60}[/bold {color}]")
 
     console.print(f"\n[bold]Media:[/bold] {info['total_media']}")
     console.print(f"[bold]Episodes:[/bold] {info['total_episodes']}")
@@ -1702,7 +1718,7 @@ def _display_upload_summary(
                 f"{ep['files']} files, {size_str}"
             )
 
-    console.print(f"\n[bold {color}]{'='*60}[/bold {color}]\n")
+    console.print(f"\n[bold {color}]{'=' * 60}[/bold {color}]\n")
 
 
 def upload_all(
@@ -1736,9 +1752,7 @@ def upload_all(
 
     # Verify it's a valid media folder (has _info.json)
     if not (media_folder / "_info.json").exists():
-        console.print(
-            f"[red]Invalid media folder (missing _info.json): {media_folder}[/red]"
-        )
+        console.print(f"[red]Invalid media folder (missing _info.json): {media_folder}[/red]")
         return
 
     if env not in ("local", "dev", "prod"):
@@ -1752,9 +1766,7 @@ def upload_all(
         return
 
     if storage_target == "local" and upload_r2:
-        console.print(
-            "[red]Invalid combination: --upload-r2 requires --storage r2.[/red]"
-        )
+        console.print("[red]Invalid combination: --upload-r2 requires --storage r2.[/red]")
         return
 
     # Load config
@@ -1785,9 +1797,7 @@ def upload_all(
 
     # Safety check for prod
     if config.is_prod and not dry_run and not skip_confirm:
-        console.print(
-            "[bold red] Type 'yes' to confirm upload to PRODUCTION: [/bold red]", end=""
-        )
+        console.print("[bold red] Type 'yes' to confirm upload to PRODUCTION: [/bold red]", end="")
         if input() != "yes":
             console.print("[yellow]Upload cancelled.[/yellow]")
             return

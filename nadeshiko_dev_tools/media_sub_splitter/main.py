@@ -79,6 +79,7 @@ def _get_tagger():
     if not _tagger_loaded:
         _tagger_loaded = True
         from nadeshiko_dev_tools.nsfw_tagger.classifier import WDTagger
+
         _tagger_instance = WDTagger()
         logger.info("[green]Content rating tagger loaded.[/green]")
     return _tagger_instance
@@ -97,6 +98,7 @@ def _get_sudachi_tokenizer():
     if not _sudachi_loaded:
         _sudachi_loaded = True
         from nadeshiko_dev_tools.tokenizer.tokenizer import JapaneseTokenizer
+
         _sudachi_tokenizer = JapaneseTokenizer()
         logger.info("[green]Sudachi tokenizer loaded.[/green]")
     return _sudachi_tokenizer
@@ -108,6 +110,7 @@ def _get_unidic_tokenizer():
     if not _unidic_loaded:
         _unidic_loaded = True
         from nadeshiko_dev_tools.tokenizer.tokenizer import UnidicTokenizer
+
         _unidic_tokenizer = UnidicTokenizer()
         logger.info("[green]UniDic tokenizer loaded.[/green]")
     return _unidic_tokenizer
@@ -134,7 +137,9 @@ def main():
                 episodes_filter = {int(e.strip()) for e in args.episodes.split(",")}
                 console.print(f"[cyan]Filtering to episodes: {sorted(episodes_filter)}[/cyan]")
             except ValueError:
-                console.print("[red]Invalid episodes format. Use comma-separated numbers like '1,3,5'[/red]")
+                console.print(
+                    "[red]Invalid episodes format. Use comma-separated numbers like '1,3,5'[/red]"
+                )
                 return
 
         config = ProcessingConfig(
@@ -382,10 +387,11 @@ def process_episodes(
             # Track segment count for this episode
             if segment_count is not None:
                 # Extract episode number for stats
+                from guessit import guessit
+
                 from nadeshiko_dev_tools.media_sub_splitter.utils.text_utils import (
                     extract_anime_title_for_guessit,
                 )
-                from guessit import guessit
 
                 guessit_query = extract_anime_title_for_guessit(filepath)
                 episode_info = guessit(guessit_query)
@@ -883,9 +889,7 @@ def split_video_by_subtitles(
             for lang, sub in subtitles.items():
                 if sub.origin == "external":
                     # Compute pre-sync alignment score
-                    pre_overlap, pre_offset = _compute_overlap_score(
-                        sub.data, internal_ref.data
-                    )
+                    pre_overlap, pre_offset = _compute_overlap_score(sub.data, internal_ref.data)
                     logger.info(
                         f"[E{episode_number}] Pre-sync {lang}: "
                         f"overlap={pre_overlap:.1%}, mean_offset={pre_offset:.0f}ms"
@@ -949,9 +953,7 @@ def split_video_by_subtitles(
                             subtitles[lang] = MatchingSubtitle(
                                 origin="external", filepath=synced_filepath, data=synced_data
                             )
-                            logger.info(
-                                f"Synced {lang} subtitles against internal reference"
-                            )
+                            logger.info(f"Synced {lang} subtitles against internal reference")
                     except (subprocess.CalledProcessError, Exception) as e:
                         logger.warning(f"Failed to sync {lang} subtitles: {e}")
         else:
@@ -1291,9 +1293,7 @@ def generate_segment(
         return logs, build_ignored_segment(reason), "ignored"
 
     if len(sentence_japanese) > MAX_SEGMENT_CONTENT_LENGTH:
-        reason = (
-            f"content too long ({len(sentence_japanese)} > {MAX_SEGMENT_CONTENT_LENGTH})"
-        )
+        reason = f"content too long ({len(sentence_japanese)} > {MAX_SEGMENT_CONTENT_LENGTH})"
         logs.append(f"[yellow]Skipping segment: {reason}[/yellow]")
         return logs, build_ignored_segment(reason), "ignored"
 
@@ -1393,7 +1393,9 @@ def generate_segment(
                     content_rating = "SAFE"
                     content_analysis = None
             except Exception as cr_err:
-                logger.warning(f"[yellow]Content rating failed for {screenshot_filename}: {cr_err}[/yellow]")
+                logger.warning(
+                    f"[yellow]Content rating failed for {screenshot_filename}: {cr_err}[/yellow]"
+                )
                 content_rating = "SAFE"
                 content_analysis = None
 
@@ -1402,7 +1404,6 @@ def generate_segment(
             return logs, None, "screenshot"
 
         video_path = os.path.join(output_path, video_filename)
-        video_length_delta = end_time_delta - start_time_delta
 
         try:
             # Web-optimized: baseline profile, level 3.0, fastdecode tune for browser compatibility
@@ -1521,7 +1522,6 @@ def display_episode_summary_report(episode_stats: dict) -> None:
 
         # Sort episodes by number
         sorted_episodes = sorted(episodes.items())
-        episode_numbers = [ep for ep, _ in sorted_episodes]
         segment_counts = [count for _, count in sorted_episodes]
 
         # Calculate statistics
@@ -1542,7 +1542,7 @@ def display_episode_summary_report(episode_stats: dict) -> None:
                 flagged_episodes.append((ep_num, count, avg_segments - count))
 
         # Display individual episode counts
-        console.print(f"\n  [bold]Episode segment counts:[/bold]")
+        console.print("\n  [bold]Episode segment counts:[/bold]")
         for ep_num, count in sorted_episodes:
             is_low = avg_segments - count > 400
             color = "red" if is_low else "green"
@@ -1550,10 +1550,17 @@ def display_episode_summary_report(episode_stats: dict) -> None:
 
         # Display warning for low segment episodes
         if flagged_episodes:
-            console.print(f"\n  [red bold]⚠ Warning: Episodes with abnormally low segment counts:[/red bold]")
+            console.print(
+                "\n  [red bold]⚠ Warning: Episodes with abnormally low segment counts:[/red bold]"
+            )
             console.print("  [red]These episodes may have had issues during processing.[/red]")
             for ep_num, count, diff in flagged_episodes:
-                console.print(f"    [red]Episode {ep_num}: {count} segments ({diff:.0f} below average)[/red]")
-            console.print(f"\n  [yellow]Tip: Use -e {','.join(str(e) for e, _, _ in flagged_episodes)} to reprocess specific episodes[/yellow]")
+                console.print(
+                    f"    [red]Episode {ep_num}: {count} segments ({diff:.0f} below average)[/red]"
+                )
+            ep_list = ",".join(str(e) for e, _, _ in flagged_episodes)
+            console.print(
+                f"\n  [yellow]Tip: Use -e {ep_list} to reprocess specific episodes[/yellow]"
+            )
 
     console.print("\n[green bold]=== Summary Complete ===[/green bold]\n")

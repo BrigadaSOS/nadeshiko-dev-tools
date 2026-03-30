@@ -1,5 +1,4 @@
 import re
-import string
 
 import jaconvV2
 
@@ -99,10 +98,4 @@ def extract_anime_title_for_guessit(episode_filepath):
         r"\[.*?\]|1080p|720p|BDRip|Dual\s?Audio|x?26[4|5]-?|HEVC|10\sbits|EMBER",
         "",
         " ".join(episode_filepath.split("/")[-2:]),
-    )
-
-
-def map_anime_title_to_media_folder(anime_title):
-    return "-".join(
-        anime_title.lower().translate(str.maketrans("", "", string.punctuation)).split()
     )

@@ -12,10 +12,5 @@ def parse_timestamp_to_ms(timestamp: str) -> int:
     frac = frac or "0"
     # Normalize fractional part to microseconds (6 digits)
     frac = frac.ljust(6, "0")[:6]
-    total_ms = (
-        int(hours) * 3600000
-        + int(minutes) * 60000
-        + int(seconds) * 1000
-        + int(frac) // 1000
-    )
+    total_ms = int(hours) * 3600000 + int(minutes) * 60000 + int(seconds) * 1000 + int(frac) // 1000
     return total_ms

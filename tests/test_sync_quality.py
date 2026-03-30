@@ -2,8 +2,6 @@
 
 from dataclasses import dataclass
 
-import pytest
-
 from nadeshiko_dev_tools.media_sub_splitter.main import _compute_overlap_score
 
 

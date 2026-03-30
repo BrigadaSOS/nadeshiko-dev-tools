@@ -74,7 +74,8 @@ Examples:
         help="Only update media/character/list info (skip episodes and segments)",
     )
     parser.add_argument(
-        "--yes", "-y",
+        "--yes",
+        "-y",
         action="store_true",
         help="Skip confirmation prompt for production uploads",
     )

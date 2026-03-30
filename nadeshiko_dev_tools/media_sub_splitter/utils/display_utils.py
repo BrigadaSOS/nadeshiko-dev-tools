@@ -9,6 +9,7 @@ def display_file_details(all_file_details: list) -> None:
 
     # Group files by (folder, episode) - keep seasons separate
     from collections import defaultdict
+
     grouped = defaultdict(list)
     for details in all_file_details:
         key = (details["folder_name"], details["episode"])
@@ -29,9 +30,7 @@ def display_file_details(all_file_details: list) -> None:
             subtitle_info = ""
             if details["subtitle_count"] > 0:
                 langs = ", ".join(details["subtitle_langs"])
-                subtitle_info = (
-                    f"[dim]|[/dim] Subtitles: {details['subtitle_count']} ({langs})"
-                )
+                subtitle_info = f"[dim]|[/dim] Subtitles: {details['subtitle_count']} ({langs})"
             else:
                 subtitle_info = "[dim]|[/dim] [yellow]No subtitles[/yellow]"
 

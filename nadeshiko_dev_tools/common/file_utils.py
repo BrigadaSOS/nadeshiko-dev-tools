@@ -160,7 +160,9 @@ def save_info_json(
         "romaji_name": anime_data.title.romaji,
         "airing_format": str(anime_data.format) if anime_data.format else None,
         "airing_status": str(anime_data.status) if anime_data.status else None,
-        "source": str(anime_data.source) if hasattr(anime_data, "source") and anime_data.source else None,
+        "source": str(anime_data.source)
+        if hasattr(anime_data, "source") and anime_data.source
+        else None,
         "genres": anime_data.genres or [],
         "episodes": anime_data.episodes,
         "hash_salt": hash_salt,
@@ -205,24 +207,32 @@ def save_info_json(
 
     # Add relations (related anime)
     if hasattr(anime_data, "relations") and anime_data.relations:
-        info_json["relations"] = [
-            {
-                "relationType": str(rel.relationType) if hasattr(rel, "relationType") else None,
-                "relationTitleId": rel.node.id,
-                "relationTitleEnglish": getattr(rel.node.title, "english", None),
-                "relationTitleNative": getattr(rel.node.title, "native", None),
-                "relationTitleRomaji": getattr(rel.node.title, "romaji", None),
-                "relationTitleType": str(rel.node.type) if hasattr(rel.node, "type") else None,
-            }
-            for rel in anime_data.relations.edges
-        ] if hasattr(anime_data.relations, "edges") else []
+        info_json["relations"] = (
+            [
+                {
+                    "relationType": str(rel.relationType) if hasattr(rel, "relationType") else None,
+                    "relationTitleId": rel.node.id,
+                    "relationTitleEnglish": getattr(rel.node.title, "english", None),
+                    "relationTitleNative": getattr(rel.node.title, "native", None),
+                    "relationTitleRomaji": getattr(rel.node.title, "romaji", None),
+                    "relationTitleType": str(rel.node.type) if hasattr(rel.node, "type") else None,
+                }
+                for rel in anime_data.relations.edges
+            ]
+            if hasattr(anime_data.relations, "edges")
+            else []
+        )
 
     # Add streaming episodes (legal streaming links)
     if hasattr(anime_data, "streaming_episodes") and anime_data.streaming_episodes:
-        info_json["streaming_episodes"] = [
-            {"title": ep.title, "url": ep.url, "site": ep.site}
-            for ep in anime_data.streaming_episodes
-        ] if hasattr(anime_data.streaming_episodes, "__iter__") else []
+        info_json["streaming_episodes"] = (
+            [
+                {"title": ep.title, "url": ep.url, "site": ep.site}
+                for ep in anime_data.streaming_episodes
+            ]
+            if hasattr(anime_data.streaming_episodes, "__iter__")
+            else []
+        )
 
     # Add characters (main characters and voice actors) - flattened structure
     if hasattr(anime_data, "characters") and anime_data.characters:
@@ -231,9 +241,15 @@ def save_info_json(
             for char in anime_data.characters.edges:
                 char_data = {
                     "characterId": char.node.id if hasattr(char, "node") else None,
-                    "characterNameEnglish": getattr(char.node.name, "full", None) if hasattr(char, "node") and hasattr(char.node, "name") else None,
-                    "characterNameJapanese": getattr(char.node.name, "native", None) if hasattr(char, "node") and hasattr(char.node, "name") else None,
-                    "characterImageUrl": getattr(char.node.image, "medium", None) if hasattr(char, "node") and hasattr(char.node, "image") else None,
+                    "characterNameEnglish": getattr(char.node.name, "full", None)
+                    if hasattr(char, "node") and hasattr(char.node, "name")
+                    else None,
+                    "characterNameJapanese": getattr(char.node.name, "native", None)
+                    if hasattr(char, "node") and hasattr(char.node, "name")
+                    else None,
+                    "characterImageUrl": getattr(char.node.image, "medium", None)
+                    if hasattr(char, "node") and hasattr(char.node, "image")
+                    else None,
                     "characterRole": str(char.role) if hasattr(char, "role") else None,
                 }
 
@@ -241,9 +257,15 @@ def save_info_json(
                 if hasattr(char, "voiceActors") and char.voiceActors:
                     va = char.voiceActors[0]
                     char_data["seiyuuId"] = va.id if hasattr(va, "id") else None
-                    char_data["seiyuuNameEnglish"] = getattr(va.name, "full", None) if hasattr(va, "name") else None
-                    char_data["seiyuuNameJapanese"] = getattr(va.name, "native", None) if hasattr(va, "name") else None
-                    char_data["seiyuuImageUrl"] = getattr(va.image, "medium", None) if hasattr(va, "image") else None
+                    char_data["seiyuuNameEnglish"] = (
+                        getattr(va.name, "full", None) if hasattr(va, "name") else None
+                    )
+                    char_data["seiyuuNameJapanese"] = (
+                        getattr(va.name, "native", None) if hasattr(va, "name") else None
+                    )
+                    char_data["seiyuuImageUrl"] = (
+                        getattr(va.image, "medium", None) if hasattr(va, "image") else None
+                    )
                 else:
                     char_data["seiyuuId"] = None
                     char_data["seiyuuNameEnglish"] = None
