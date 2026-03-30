@@ -1,161 +1,122 @@
 # Nadeshiko Dev Tools
 
-`nadeshiko-dev-tools` is a collection of CLI utilities for Nadeshiko media workflows.
+CLI utilities for Nadeshiko media workflows. The typical flow is:
 
-## Included Tools
-
-- `media-sub-splitter`: Split anime episodes into subtitle-aligned media segments.
-- `assets-uploader`: Upload generated media metadata and assets to Nadeshiko environments.
-- `nsfw-tagger`: Classify segment screenshots for content rating (SAFE/SUGGESTIVE/QUESTIONABLE/EXPLICIT) and gore detection.
-- `pitch-extractor`: Extract F0 pitch contours from audio segments with optional Demucs vocal separation.
+1. **Split** anime episodes into segments with `media-sub-splitter`
+2. **Upload** the generated segments to Nadeshiko with `assets-uploader`
 
 ## Setup
 
 ```bash
 uv sync
+uv run python -m unidic download
 cp .env.example .env
 ```
 
 Configure the values in `.env` before running upload workflows.
 
-## Tool Usage
+---
 
-### `media-sub-splitter`
+## Step 1 — Split: `media-sub-splitter`
 
-```bash
+Takes a folder of `.mkv` files and subtitle files, maps them to AniList media, and generates audio/video/screenshot segments with multi-language subtitles.
+
+```
 uv run media-sub-splitter <input_folder> <output_folder> [OPTIONS]
 ```
 
-Examples:
+The input folder should contain one subfolder per anime, each with `.mkv` episode files. The tool will interactively prompt you to confirm AniList mappings and select audio/subtitle tracks on first run — these choices are saved to a config file and reused on subsequent runs.
+
+### Examples
 
 ```bash
-# Basic usage with DeepL translation
-uv run media-sub-splitter ./anime ./output -t YOUR_DEEPL_TOKEN
+# Standard run — translate subtitles with DeepL
+uv run media-sub-splitter ./input ./output -t YOUR_DEEPL_TOKEN
 
-# Dry run without generating segments
-uv run media-sub-splitter ./anime ./output --dry-run
+# Dry run — parse subtitles and validate everything without writing any files
+uv run media-sub-splitter ./input ./output --dry-run
 
-# Process selected episodes in parallel with verbose logs
-uv run media-sub-splitter ./anime ./output -e 1,3,5 --parallel --verbose
+# Process specific episodes only
+uv run media-sub-splitter ./input ./output -e 1,3,5 -t YOUR_DEEPL_TOKEN
 
-# Skip ffsubsync subtitle sync
-uv run media-sub-splitter ./anime ./output --no-sync
+# Process all episodes in parallel (faster on multi-core machines)
+uv run media-sub-splitter ./input ./output -p -t YOUR_DEEPL_TOKEN
+
+# Skip ffsubsync subtitle sync (useful when subtitles are already aligned)
+uv run media-sub-splitter ./input ./output --no-sync -t YOUR_DEEPL_TOKEN
+
+# Verbose output for debugging
+uv run media-sub-splitter ./input ./output -v -t YOUR_DEEPL_TOKEN
+
+# Reprocess specific episodes in parallel with verbose output
+uv run media-sub-splitter ./input ./output -e 2,4 -p -v -t YOUR_DEEPL_TOKEN
 ```
 
-Common options:
+### Options
 
-- `-t, --token TOKEN`: DeepL token for subtitle translation.
-- `-v, --verbose`: Enable debug output.
-- `-d, --dry-run`: Parse subtitles only, without writing segments.
-- `-x, --x`: Remove extra punctuation symbols like `・`.
-- `-p, --parallel`: Process episodes in parallel.
-- `-e, --episodes`: Comma-separated episode list (example: `1,3,5`).
-- `--no-sync`: Skip subtitle syncing with `ffsubsync`.
+| Flag | Description |
+|------|-------------|
+| `-t, --token TOKEN` | DeepL token for subtitle translation. Without it, only subtitles from existing files are used. |
+| `-d, --dry-run` | Parse and validate subtitles without writing any segment files. |
+| `-e, --episodes 1,3,5` | Process only the specified episode numbers. |
+| `-p, --parallel` | Process episodes in parallel. |
+| `-v, --verbose` | Print extra debug information. |
+| `--no-sync` | Skip syncing external subtitles with the internal track via ffsubsync. |
+| `-x` | Strip extra punctuation symbols like `・` (may reduce fidelity). |
 
-### `assets-uploader`
+---
 
-```bash
+## Step 2 — Upload: `assets-uploader`
+
+Uploads the generated segments (metadata + media files) to the Nadeshiko API. Always defaults to dry-run — pass `--apply` to actually write anything.
+
+```
 uv run assets-uploader <media_folder> [OPTIONS]
 ```
 
-Examples:
+The `<media_folder>` is the AniList ID folder inside your output directory (e.g. `./output/12345`).
+
+### Examples
 
 ```bash
-# Dry run against local API + local storage (default mode is dry-run)
+# Dry run against local API — inspect what would be uploaded
 uv run assets-uploader ./output/12345 --target local --storage local
 
-# Apply upload to dev API + local storage
-uv run assets-uploader ./output/12345 --target dev --storage local --apply
+# Apply to local API with local storage
+uv run assets-uploader ./output/12345 --target local --storage local --apply
 
-# Production upload with R2 storage and actual file upload
+# Dry run against dev API with R2 storage references (no files uploaded yet)
+uv run assets-uploader ./output/12345 --target dev --storage r2
+
+# Apply to dev API + upload files to R2
+uv run assets-uploader ./output/12345 --target dev --storage r2 --apply --upload-r2
+
+# Full production upload — apply to prod API + upload files to R2
 uv run assets-uploader ./output/12345 --target prod --storage r2 --apply --upload-r2
 
-# Upload only one episode
-uv run assets-uploader ./output/12345 --target dev --storage local --episode 1 --apply
+# Upload a single episode only
+uv run assets-uploader ./output/12345 --target prod --storage r2 --episode 3 --apply --upload-r2
+
+# Update media/character info only, skip episodes and segments
+uv run assets-uploader ./output/12345 --target prod --storage r2 --update-info --apply
+
+# Skip the production confirmation prompt
+uv run assets-uploader ./output/12345 --target prod --storage r2 --apply --upload-r2 -y
 ```
 
-Common options:
+### Options
 
-- `--target {local,dev,prod}`: API target environment.
-- Use `--target dev` (not `--dev`).
-- `--storage {local,r2}`: Storage backend to use in API metadata.
-- `--episode N`: Upload a single episode number.
-- `--apply`: Execute changes (without this, runs in dry-run mode).
-- `--upload-r2` (alias: `--upload-to-r2`): Actually upload files to R2 (only valid with `--storage r2`).
-- `--update-info`: Update media metadata only.
+| Flag | Description |
+|------|-------------|
+| `--target {local,dev,prod}` | API environment to upload to. Defaults to `local`. |
+| `--storage {local,r2}` | Storage backend for media file URLs. |
+| `--apply` | Actually perform the upload. Without this, runs as dry-run. |
+| `--upload-r2` | Upload media files to R2 (requires `--storage r2`). |
+| `--episode N` | Upload only a specific episode number. |
+| `--update-info` | Update media/character/list info only, skipping episodes and segments. |
+| `-y, --yes` | Skip the confirmation prompt for production uploads. |
 
-### `nsfw-tagger`
-
-Classifies anime segment screenshots using WaifuDiffusion Tagger v3 (Danbooru tag predictor). Maps Danbooru ratings to content ratings and detects gore via content tags. Requires GPU dependencies for reasonable performance.
-
-```bash
-# Install GPU dependencies (requires CUDA)
-uv pip install onnxruntime-gpu --extra-index-url https://aiinfra.pkgs.visualstudio.com/PublicPackages/_packaging/onnxruntime-cuda-13/pypi/simple/
-
-# Or CPU-only (much slower)
-uv sync --extra nsfw
-```
-
-```bash
-# Classify all images in the processed archive
-uv run nsfw-tagger classify
-
-# Classify specific anime by AniList ID
-uv run nsfw-tagger classify --media 100077 154587
-
-# Resume interrupted classification (default behavior, skips already-done media)
-uv run nsfw-tagger classify
-
-# Force reclassify media that already have results
-uv run nsfw-tagger classify --media 100077 --no-resume
-
-# Review results for a specific anime
-uv run nsfw-tagger review --media 100077
-
-# Review overall summary
-uv run nsfw-tagger review
-
-# Export SQL update file for database migration
-uv run nsfw-tagger export
-
-# Export SQL for specific media only
-uv run nsfw-tagger export --media 100077
-```
-
-Results are stored in `<archive>/_nsfw_results/` as per-media JSON files. The `export` command generates a SQL file that can be applied to the database to update `content_rating` and `content_analysis` columns.
-
-Content rating mapping: `general` -> SAFE, `sensitive` -> SUGGESTIVE, `questionable` -> QUESTIONABLE, `explicit` -> EXPLICIT. Gore is detected separately via Danbooru violence tags (blood, gore, guro, etc.) and stored as a boolean flag.
-
-### `pitch-extractor`
-
-Extracts F0 pitch contours from audio segments using Parselmouth (Praat). Optionally separates vocals from BGM using Demucs before extraction for cleaner results.
-
-```bash
-# Install dependencies
-uv sync --extra pitch
-```
-
-```bash
-# Extract pitch contours for all media (with Demucs vocal separation)
-uv run pitch-extractor extract
-
-# Extract for specific anime
-uv run pitch-extractor extract --media 100077 154587
-
-# Extract without vocal separation (faster, less accurate)
-uv run pitch-extractor extract --no-separation
-
-# Save isolated vocals for debugging
-uv run pitch-extractor extract --media 100077 --save-vocals
-
-# Show extraction coverage statistics
-uv run pitch-extractor stats
-
-# Stats for specific media
-uv run pitch-extractor stats --media 100077
-```
-
-Results are stored as `_pitch.json` files per episode in the archive directory.
+---
 
 ## Tests
 
@@ -166,6 +127,5 @@ uv run pytest
 ## Linting
 
 ```bash
-uv run ruff check .
 uv run ruff check --fix . && uv run ruff format .
 ```

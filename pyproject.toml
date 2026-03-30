@@ -27,35 +27,11 @@ dependencies = [
     "requests>=2.32.5",
     "rich>=14.3.1",
     "nadeshiko-internal-sdk>=1.5.0.dev1773067636",
-    "praat-parselmouth>=0.4.4",
-]
-
-[project.optional-dependencies]
-nsfw = [
     "onnxruntime>=1.17.0",
     "numpy>=1.24.0",
     "pandas>=2.0.0",
     "Pillow>=10.0.0",
     "huggingface-hub>=0.20.0",
-]
-nsfw-gpu = [
-    "onnxruntime-gpu>=1.17.0",
-    "numpy>=1.24.0",
-    "pandas>=2.0.0",
-    "Pillow>=10.0.0",
-    "huggingface-hub>=0.20.0",
-]
-pitch = [
-    "praat-parselmouth>=0.4.4",
-    "demucs>=4.0.0",
-    "torch>=2.0.0",
-]
-mora = [
-    "sudachipy>=0.6.8",
-    "sudachidict-full>=20240109",
-    "pyopenjtalk>=0.3.0",
-]
-tokenizer = [
     "sudachipy>=0.6.8",
     "sudachidict-full>=20240109",
     "fugashi>=1.3.0",
@@ -65,12 +41,6 @@ tokenizer = [
 [project.scripts]
 media-sub-splitter = "nadeshiko_dev_tools.media_sub_splitter.__main__:main"
 assets-uploader = "nadeshiko_dev_tools.assets_uploader.__main__:main"
-format-migrator = "nadeshiko_dev_tools.migrator.__main__:main"
-post-upload = "nadeshiko_dev_tools.post_upload:main"
-nsfw-tagger = "nadeshiko_dev_tools.nsfw_tagger.__main__:main"
-pitch-extractor = "nadeshiko_dev_tools.pitch_extractor.__main__:main"
-mora-aligner = "nadeshiko_dev_tools.mora_aligner.__main__:main"
-tokenizer = "nadeshiko_dev_tools.tokenizer.__main__:main"
 
 [dependency-groups]
 dev = [

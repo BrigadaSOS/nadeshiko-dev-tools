@@ -78,14 +78,9 @@ def _get_tagger():
     global _tagger_instance, _tagger_loaded
     if not _tagger_loaded:
         _tagger_loaded = True
-        try:
-            from nadeshiko_dev_tools.nsfw_tagger.classifier import WDTagger
-            _tagger_instance = WDTagger()
-            logger.info("[green]Content rating tagger loaded.[/green]")
-        except ImportError:
-            logger.info("[dim]Content rating tagger not available (nsfw dependencies not installed).[/dim]")
-        except Exception as e:
-            logger.warning(f"[yellow]Failed to load content rating tagger: {e}[/yellow]")
+        from nadeshiko_dev_tools.nsfw_tagger.classifier import WDTagger
+        _tagger_instance = WDTagger()
+        logger.info("[green]Content rating tagger loaded.[/green]")
     return _tagger_instance
 
 
@@ -101,17 +96,9 @@ def _get_sudachi_tokenizer():
     global _sudachi_tokenizer, _sudachi_loaded
     if not _sudachi_loaded:
         _sudachi_loaded = True
-        try:
-            from nadeshiko_dev_tools.tokenizer.tokenizer import JapaneseTokenizer
-            _sudachi_tokenizer = JapaneseTokenizer()
-            logger.info("[green]Sudachi tokenizer loaded.[/green]")
-        except ImportError:
-            logger.info(
-                "[dim]Sudachi tokenizer not available"
-                " (tokenizer dependencies not installed).[/dim]"
-            )
-        except Exception as e:
-            logger.warning(f"[yellow]Failed to load Sudachi tokenizer: {e}[/yellow]")
+        from nadeshiko_dev_tools.tokenizer.tokenizer import JapaneseTokenizer
+        _sudachi_tokenizer = JapaneseTokenizer()
+        logger.info("[green]Sudachi tokenizer loaded.[/green]")
     return _sudachi_tokenizer
 
 
@@ -120,17 +107,9 @@ def _get_unidic_tokenizer():
     global _unidic_tokenizer, _unidic_loaded
     if not _unidic_loaded:
         _unidic_loaded = True
-        try:
-            from nadeshiko_dev_tools.tokenizer.tokenizer import UnidicTokenizer
-            _unidic_tokenizer = UnidicTokenizer()
-            logger.info("[green]UniDic tokenizer loaded.[/green]")
-        except ImportError:
-            logger.info(
-                "[dim]UniDic tokenizer not available"
-                " (unidic dependencies not installed).[/dim]"
-            )
-        except Exception as e:
-            logger.warning(f"[yellow]Failed to load UniDic tokenizer: {e}[/yellow]")
+        from nadeshiko_dev_tools.tokenizer.tokenizer import UnidicTokenizer
+        _unidic_tokenizer = UnidicTokenizer()
+        logger.info("[green]UniDic tokenizer loaded.[/green]")
     return _unidic_tokenizer
 
 
@@ -1482,21 +1461,10 @@ def generate_segment(
     # Tokenize Japanese text
     pos_analysis = None
     if sentence_japanese:
-        pos_analysis = {}
-        try:
-            sudachi = _get_sudachi_tokenizer()
-            if sudachi is not None:
-                pos_analysis["sudachi"] = sudachi.tokenize(sentence_japanese)
-        except Exception as e:
-            logger.warning(f"[yellow]Sudachi tokenization failed: {e}[/yellow]")
-        try:
-            unidic = _get_unidic_tokenizer()
-            if unidic is not None:
-                pos_analysis["unidic"] = unidic.tokenize(sentence_japanese)
-        except Exception as e:
-            logger.warning(f"[yellow]UniDic tokenization failed: {e}[/yellow]")
-        if not pos_analysis:
-            pos_analysis = None
+        pos_analysis = {
+            "sudachi": _get_sudachi_tokenizer().tokenize(sentence_japanese),
+            "unidic": _get_unidic_tokenizer().tokenize(sentence_japanese),
+        }
 
     segment_dict = {
         "segment_hash": segment_hash,
