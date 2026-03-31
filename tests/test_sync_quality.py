@@ -2,7 +2,7 @@
 
 from dataclasses import dataclass
 
-from nadeshiko_dev_tools.media_sub_splitter.main import _compute_overlap_score
+from nadeshiko_dev_tools.segment_extractor.splitter import _compute_overlap_score
 
 
 @dataclass

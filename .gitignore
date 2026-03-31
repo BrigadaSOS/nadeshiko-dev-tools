@@ -50,3 +50,4 @@ dmypy.json
 # Logs
 *.log
 output/
+.playwright-mcp/

@@ -21,13 +21,16 @@ dependencies = [
     "langdetect>=1.0.9",
     "pysubs2>=1.8.0",
     "python-anilist>=1.0.9",
-    "python-dateutil>=2.9.0.post0",
     "python-dotenv>=1.2.1",
-    "questionary>=2.1.1",
     "requests>=2.32.5",
     "rich>=14.3.1",
     "nadeshiko-internal-sdk>=1.5.0.dev1773067636",
-    "onnxruntime>=1.17.0",
+    "onnxruntime-gpu>=1.17.0",
+    "nvidia-cuda-runtime-cu12",
+    "nvidia-cublas-cu12",
+    "nvidia-cufft-cu12",
+    "nvidia-cudnn-cu12",
+    "nvidia-cuda-nvrtc-cu12",
     "numpy>=1.24.0",
     "pandas>=2.0.0",
     "Pillow>=10.0.0",
@@ -39,8 +42,13 @@ dependencies = [
 ]
 
 [project.scripts]
-media-sub-splitter = "nadeshiko_dev_tools.media_sub_splitter.__main__:main"
+process-media = "nadeshiko_dev_tools.segment_extractor.cli:main"
+tokenize-media = "nadeshiko_dev_tools.tokenizer.cli:main"
+tag-media = "nadeshiko_dev_tools.nsfw_tagger.cli:main"
+quality-check = "nadeshiko_dev_tools.common.quality_check:main"
 assets-uploader = "nadeshiko_dev_tools.assets_uploader.__main__:main"
+delete-media = "nadeshiko_dev_tools.delete_media:main"
+notify-discord = "nadeshiko_dev_tools.notify_discord:main"
 
 [dependency-groups]
 dev = [

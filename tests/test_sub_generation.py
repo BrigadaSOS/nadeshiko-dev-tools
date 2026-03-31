@@ -7,7 +7,7 @@ from pathlib import Path
 import pytest
 
 from nadeshiko_dev_tools.common.config import ProcessingConfig
-from nadeshiko_dev_tools.media_sub_splitter.main import split_video_by_subtitles
+from nadeshiko_dev_tools.segment_extractor.splitter import split_video_by_subtitles
 
 from .conftest import read_subtitles_from_folders
 

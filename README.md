@@ -1,131 +1,64 @@
 # Nadeshiko Dev Tools
 
-CLI utilities for Nadeshiko media workflows. The typical flow is:
-
-1. **Split** anime episodes into segments with `media-sub-splitter`
-2. **Upload** the generated segments to Nadeshiko with `assets-uploader`
+CLI tools for processing anime into language-learning segments for Nadeshiko.
 
 ## Setup
 
 ```bash
 uv sync
 uv run python -m unidic download
-cp .env.example .env
+cp .env.example .env   # configure API keys, R2 credentials, etc.
 ```
 
-Configure the values in `.env` before running upload workflows.
+## Pipeline
 
----
-
-## Step 1 — Split: `media-sub-splitter`
-
-Takes a folder of `.mkv` files and subtitle files, maps them to AniList media, and generates audio/video/screenshot segments with multi-language subtitles.
-
-```
-uv run media-sub-splitter <input_folder> <output_folder> [OPTIONS]
-```
-
-The input folder should contain one subfolder per anime, each with `.mkv` episode files. The tool will interactively prompt you to confirm AniList mappings and select audio/subtitle tracks on first run — these choices are saved to a config file and reused on subsequent runs.
-
-### Examples
+Each step is a separate command. Run them in order, checking output between steps:
 
 ```bash
-# Standard run — translate subtitles with DeepL
-uv run media-sub-splitter ./input ./output -t YOUR_DEEPL_TOKEN
+# 1. Extract segments from MKVs (extracts ep1 first for validation, then rest)
+uv run process-media --anilist-id 21804 --input ./mkv-folder --output ./output \
+  --subtitle-indices 2,4 --parallel
 
-# Dry run — parse subtitles and validate everything without writing any files
-uv run media-sub-splitter ./input ./output --dry-run
+# 2. Tokenize (Sudachi + UniDic POS analysis)
+uv run tokenize-media ./output/21804
 
-# Process specific episodes only
-uv run media-sub-splitter ./input ./output -e 1,3,5 -t YOUR_DEEPL_TOKEN
+# 3. Tag (NSFW content classification, requires GPU)
+uv run tag-media ./output/21804
 
-# Process all episodes in parallel (faster on multi-core machines)
-uv run media-sub-splitter ./input ./output -p -t YOUR_DEEPL_TOKEN
+# 4. Upload to dev
+uv run assets-uploader ./output/21804 --target dev --storage r2 --upload-r2 --apply
 
-# Skip ffsubsync subtitle sync (useful when subtitles are already aligned)
-uv run media-sub-splitter ./input ./output --no-sync -t YOUR_DEEPL_TOKEN
-
-# Verbose output for debugging
-uv run media-sub-splitter ./input ./output -v -t YOUR_DEEPL_TOKEN
-
-# Reprocess specific episodes in parallel with verbose output
-uv run media-sub-splitter ./input ./output -e 2,4 -p -v -t YOUR_DEEPL_TOKEN
+# 5. Upload to prod + notify
+uv run assets-uploader ./output/21804 --target prod --storage r2 --apply --yes
+uv run notify-discord 21804
 ```
 
-### Options
+Each processing command (1-3) runs QC on its output and exits non-zero on failure.
 
-| Flag | Description |
-|------|-------------|
-| `-t, --token TOKEN` | DeepL token for subtitle translation. Without it, only subtitles from existing files are used. |
-| `-d, --dry-run` | Parse and validate subtitles without writing any segment files. |
-| `-e, --episodes 1,3,5` | Process only the specified episode numbers. |
-| `-p, --parallel` | Process episodes in parallel. |
-| `-v, --verbose` | Print extra debug information. |
-| `--no-sync` | Skip syncing external subtitles with the internal track via ffsubsync. |
-| `-x` | Strip extra punctuation symbols like `・` (may reduce fidelity). |
+## CLI Reference
 
----
+| Command | Purpose |
+|---------|---------|
+| `process-media` | Extract segments from MKV files |
+| `tokenize-media` | Batch Sudachi + UniDic tokenization |
+| `tag-media` | Batch NSFW tagger (GPU) |
+| `quality-check` | Standalone QC (ad-hoc) |
+| `assets-uploader` | Upload to Nadeshiko API + R2 |
+| `delete-media` | Remove media from API + R2 |
+| `notify-discord` | Post Discord notification |
 
-## Step 2 — Upload: `assets-uploader`
+Run any command with `--help` for full options.
 
-Uploads the generated segments (metadata + media files) to the Nadeshiko API. Always defaults to dry-run — pass `--apply` to actually write anything.
-
-```
-uv run assets-uploader <media_folder> [OPTIONS]
-```
-
-The `<media_folder>` is the AniList ID folder inside your output directory (e.g. `./output/12345`).
-
-### Examples
+## Other Tools
 
 ```bash
-# Dry run against local API — inspect what would be uploaded
-uv run assets-uploader ./output/12345 --target local --storage local
-
-# Apply to local API with local storage
-uv run assets-uploader ./output/12345 --target local --storage local --apply
-
-# Dry run against dev API with R2 storage references (no files uploaded yet)
-uv run assets-uploader ./output/12345 --target dev --storage r2
-
-# Apply to dev API + upload files to R2
-uv run assets-uploader ./output/12345 --target dev --storage r2 --apply --upload-r2
-
-# Full production upload — apply to prod API + upload files to R2
-uv run assets-uploader ./output/12345 --target prod --storage r2 --apply --upload-r2
-
-# Upload a single episode only
-uv run assets-uploader ./output/12345 --target prod --storage r2 --episode 3 --apply --upload-r2
-
-# Update media/character info only, skip episodes and segments
-uv run assets-uploader ./output/12345 --target prod --storage r2 --update-info --apply
-
-# Skip the production confirmation prompt
-uv run assets-uploader ./output/12345 --target prod --storage r2 --apply --upload-r2 -y
+# Find JP subtitles on jimaku.cc / kitsunekko
+uv run python scripts/find_jp_subs.py --anilist-id 21804
 ```
-
-### Options
-
-| Flag | Description |
-|------|-------------|
-| `--target {local,dev,prod}` | API environment to upload to. Defaults to `local`. |
-| `--storage {local,r2}` | Storage backend for media file URLs. |
-| `--apply` | Actually perform the upload. Without this, runs as dry-run. |
-| `--upload-r2` | Upload media files to R2 (requires `--storage r2`). |
-| `--episode N` | Upload only a specific episode number. |
-| `--update-info` | Update media/character/list info only, skipping episodes and segments. |
-| `-y, --yes` | Skip the confirmation prompt for production uploads. |
-
----
 
 ## Tests
 
 ```bash
 uv run pytest
-```
-
-## Linting
-
-```bash
 uv run ruff check --fix . && uv run ruff format .
 ```

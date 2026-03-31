@@ -8,7 +8,7 @@ emoji = re.compile(
 )
 
 
-def process_subtitle_line(line, config):
+def process_subtitle_line(line):
     if line.type != "Dialogue":
         return ""
 
@@ -24,12 +24,18 @@ def process_subtitle_line(line, config):
     if re.search(r"pos\(.*?\)|move\(.*?\)", line.text):
         return ""
 
+    # Filter ASS lines that are positioned signs: non-default alignment + ALL CAPS text
+    # {\an8} is used for both signs and top-positioned narration, so only filter if
+    # the plaintext is entirely uppercase (sign/title text, not dialogue)
+    if re.search(r"\{\\an[1345679]\}", line.text):
+        return ""
+    if re.search(r"\{\\an8\}", line.text):
+        plaintext = line.plaintext.strip()
+        if plaintext and plaintext == plaintext.upper() and re.search(r"[A-Z]", plaintext):
+            return ""
+
     processed_sentence = jaconvV2.normalize(line.plaintext, "NFKC")
     processed_sentence = re.sub("\r?\n|\t", " ", processed_sentence)
-
-    if hasattr(config, "extra_punctuation") and config.extra_punctuation:
-        processed_sentence = processed_sentence.replace("・", " ")
-
     processed_sentence = remove_nested_parenthesis(processed_sentence)
 
     special_chars = r"⚟|⚞|<|>|=|●|→|ー?♪ー?|\u202a|\u202c|➡|&lrm;"
@@ -90,12 +96,4 @@ def join_sentences_to_segment(sentences, ln):
         re.sub(rf"{'|'.join(remove_redundant_symbols)}", "", joined_sentence),
         actor_sentence,
         subs_details,
-    )
-
-
-def extract_anime_title_for_guessit(episode_filepath):
-    return re.sub(
-        r"\[.*?\]|1080p|720p|BDRip|Dual\s?Audio|x?26[4|5]-?|HEVC|10\sbits|EMBER",
-        "",
-        " ".join(episode_filepath.split("/")[-2:]),
     )
