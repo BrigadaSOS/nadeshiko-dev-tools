@@ -66,8 +66,10 @@ def batch_tokenizer(media_folder: str, episodes: list[int] | None = None):
             console.print(f"  E{ep_num}: Already tokenized ({len(segments)} segments)")
             continue
 
-        with open(data_path, "w") as f:
+        tmp_path = data_path + ".tmp"
+        with open(tmp_path, "w") as f:
             json.dump(data, f, ensure_ascii=False)
+        os.replace(tmp_path, data_path)
 
         console.print(f"  E{ep_num}: Tokenized {tokenized}/{len(segments)} segments")
 

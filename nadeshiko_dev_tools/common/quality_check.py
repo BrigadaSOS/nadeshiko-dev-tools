@@ -39,11 +39,33 @@ def parse_args():
     return parser.parse_args()
 
 
+class EpisodeStats:
+    """Statistics for a single episode."""
+
+    def __init__(self, episode_num: int):
+        self.episode_num = episode_num
+        self.valid_segments = 0
+        self.ignored_segments = 0
+        self.no_match_segments = 0
+
+    def summary(self) -> str:
+        """Return formatted episode summary line."""
+        total = self.valid_segments + self.ignored_segments
+        pct_valid = (self.valid_segments / total * 100) if total > 0 else 0
+        return (
+            f"E{self.episode_num}: "
+            f"{self.valid_segments} valid ({pct_valid:.0f}%), "
+            f"{self.ignored_segments} skipped, "
+            f"{self.no_match_segments} no-match"
+        )
+
+
 class QualityReport:
     def __init__(self):
         self.errors = []
         self.warnings = []
         self.info = []
+        self.episode_stats: dict[int, EpisodeStats] = {}
 
     def error(self, msg):
         self.errors.append(msg)
@@ -57,33 +79,62 @@ class QualityReport:
         self.info.append(msg)
         print(f"  ✅ {msg}")
 
+    def get_episode_stats(self, episode_num: int) -> EpisodeStats:
+        """Get or create stats for an episode."""
+        if episode_num not in self.episode_stats:
+            self.episode_stats[episode_num] = EpisodeStats(episode_num)
+        return self.episode_stats[episode_num]
+
     def summary(self):
-        print(f"\n{'='*60}")
+        print(f"\n{'=' * 60}")
         print("QUALITY CHECK SUMMARY")
-        print(f"{'='*60}")
+        print(f"{'=' * 60}")
         print(f"  Errors:   {len(self.errors)}")
         print(f"  Warnings: {len(self.warnings)}")
         print(f"  Passed:   {len(self.info)}")
+        if self.episode_stats:
+            print(f"\n{'=' * 60}")
+            print("EPISODE BREAKDOWN")
+            for ep_num in sorted(self.episode_stats.keys()):
+                stats = self.episode_stats[ep_num]
+                print(f"  {stats.summary()}")
         if self.errors:
-            print(f"\n{'='*60}")
+            print(f"\n{'=' * 60}")
             print("ERRORS:")
             for e in self.errors:
                 print(f"  ❌ {e}")
         if self.warnings:
-            print(f"\n{'='*60}")
+            print(f"\n{'=' * 60}")
             print("WARNINGS:")
             for w in self.warnings:
                 print(f"  ⚠️  {w}")
+
+        # Clear verdict for automation
+        print(f"\n{'=' * 60}")
+        if len(self.errors) == 0:
+            print("RESULT: PASS")
+        else:
+            print("RESULT: FAIL")
         return len(self.errors) == 0
 
 
 def check_episode_segments(
-    episode_folder: str, episode_num: int, report: QualityReport, sample_size: int
+    episode_folder: str,
+    episode_num: int,
+    report: QualityReport,
+    sample_size: int,
 ):
     """Check segment counts, content, media files, translations."""
     data_path = os.path.join(episode_folder, "_data.json")
     if not os.path.exists(data_path):
-        report.error(f"E{episode_num}: _data.json missing")
+        orphan_mp4s = len([f for f in os.listdir(episode_folder) if f.endswith(".mp4")])
+        if orphan_mp4s > 0:
+            report.error(
+                f"E{episode_num}: _data.json missing but {orphan_mp4s} mp4 files exist "
+                f"— episode must be re-extracted (tokenize/tag cannot run without _data.json)"
+            )
+        else:
+            report.error(f"E{episode_num}: _data.json missing")
         return
 
     with open(data_path) as f:
@@ -93,26 +144,49 @@ def check_episode_segments(
     ignored = data.get("ignored_segments", [])
     metadata = data.get("metadata", {})
 
-    # Segment count and ignored ratio
     seg_count = len(segments)
     ign_count = len(ignored)
+    no_match_count = sum(1 for ig in ignored if "no en/es subtitle match" in ig.get("reason", ""))
     total = seg_count + ign_count
+
+    stats = report.get_episode_stats(episode_num)
+    stats.valid_segments = seg_count
+    stats.ignored_segments = ign_count
+    stats.no_match_segments = no_match_count
+
+    pct_valid = (seg_count / total * 100) if total > 0 else 0
+
     if seg_count == 0:
         report.error(f"E{episode_num}: 0 segments generated")
     elif seg_count < 100:
         report.warn(f"E{episode_num}: Only {seg_count} segments (unusually low)")
+    elif pct_valid < 90:
+        report.warn(
+            f"E{episode_num}: {seg_count} valid ({pct_valid:.0f}%), "
+            f"{ign_count} skipped, {no_match_count} no-match — LOW RATIO, RECHECK NEEDED"
+        )
     else:
-        report.ok(f"E{episode_num}: {seg_count} segments, {ign_count} ignored")
+        report.ok(
+            f"E{episode_num}: {seg_count} valid ({pct_valid:.0f}%), "
+            f"{ign_count} skipped, {no_match_count} no-match"
+        )
 
-    # Ignored segment ratio
+    # Ignored segment analysis
+    total = seg_count + ign_count
     if total > 0 and ign_count > 0:
-        ign_ratio = ign_count / total
         from collections import Counter
 
         reasons = Counter(ig.get("reason", "unknown") for ig in ignored)
         no_match = sum(v for k, v in reasons.items() if "no" in k and "match" in k)
         over_joined = sum(v for k, v in reasons.items() if "too many" in k)
+        ign_ratio = ign_count / total
 
+        # Show skip breakdown if concerning
+        if ign_count > 20 or ign_ratio > 0.1:
+            report.info.append(f"E{episode_num}: Skip reasons — {dict(reasons)}")
+            print(f"    Skip breakdown: {dict(reasons)}")
+
+        # Flag high ignore ratios
         if ign_ratio > 0.5:
             report.error(
                 f"E{episode_num}: {ign_ratio:.0%} segments ignored ({ign_count}/{total}) "
@@ -122,6 +196,19 @@ def check_episode_segments(
             report.warn(
                 f"E{episode_num}: {ign_ratio:.0%} segments ignored ({ign_count}/{total}) "
                 f"— no_match={no_match}, over_joined={over_joined}"
+            )
+
+        # Check for early-episode no-match pattern (indicates subtitle sync issue)
+        early_nomatch = [
+            ig
+            for ig in ignored
+            if "no en/es subtitle match" in ig.get("reason", "")
+            and ig.get("start_ms", 9999999) < 120000  # Within first 2 minutes
+        ]
+        if early_nomatch and pct_valid < 95:
+            report.warn(
+                f"E{episode_num}: {len(early_nomatch)} 'no-match' segments in first 2min "
+                f"— likely subtitle source mismatch (wrong subtitle files for this episode)"
             )
 
     # Metadata check
@@ -135,6 +222,22 @@ def check_episode_segments(
     else:
         duration_min = duration_ms / 60000
         report.ok(f"E{episode_num}: Duration {duration_min:.1f} min")
+
+    # File integrity: verify every segment in _data.json has matching files on disk
+    expected_hashes = {seg.get("segment_hash") for seg in segments if seg.get("segment_hash")}
+    actual_mp4s = {f[:-4] for f in os.listdir(episode_folder) if f.endswith(".mp4")}
+    missing_from_disk = expected_hashes - actual_mp4s
+    orphan_on_disk = actual_mp4s - expected_hashes
+
+    if missing_from_disk:
+        report.error(
+            f"E{episode_num}: {len(missing_from_disk)}/{len(expected_hashes)} segments in "
+            f"_data.json have NO media files on disk — extraction was interrupted"
+        )
+    if orphan_on_disk:
+        report.warn(
+            f"E{episode_num}: {len(orphan_on_disk)} orphan mp4 files on disk not in _data.json"
+        )
 
     # Per-segment checks
     missing_files = 0
@@ -176,7 +279,7 @@ def check_episode_segments(
 
     if missing_files > 0:
         report.error(f"E{episode_num}: {missing_files} missing media files")
-    else:
+    elif not missing_from_disk:
         report.ok(f"E{episode_num}: All media files present")
 
     if zero_size_files > 0:
@@ -197,13 +300,11 @@ def check_episode_segments(
         min_dur = min(duration_stats)
         report.ok(
             f"E{episode_num}: Duration stats — "
-            f"avg={avg_dur/1000:.1f}s, min={min_dur/1000:.1f}s, max={max_dur/1000:.1f}s"
+            f"avg={avg_dur / 1000:.1f}s, min={min_dur / 1000:.1f}s, max={max_dur / 1000:.1f}s"
         )
 
     if mt_es_count > 0 or mt_en_count > 0:
-        report.warn(
-            f"E{episode_num}: Machine-translated — ES: {mt_es_count}, EN: {mt_en_count}"
-        )
+        report.warn(f"E{episode_num}: Machine-translated — ES: {mt_es_count}, EN: {mt_en_count}")
     else:
         report.ok(f"E{episode_num}: No machine translations (all from subs)")
 
@@ -285,9 +386,7 @@ def check_episode_tagger(episode_folder: str, episode_num: int, report: QualityR
             missing_content_analysis += 1
 
     if missing_content_rating > 0:
-        report.error(
-            f"E{episode_num}: {missing_content_rating}/{seg_count} missing content_rating"
-        )
+        report.error(f"E{episode_num}: {missing_content_rating}/{seg_count} missing content_rating")
     else:
         rating_summary = ", ".join(f"{k}: {v}" for k, v in sorted(content_ratings.items()))
         report.ok(f"E{episode_num}: Content ratings — {rating_summary}")
@@ -302,9 +401,9 @@ def check_episode_tagger(episode_folder: str, episode_num: int, report: QualityR
 
 def deep_analysis(media_folder: str, episode_dirs: list, report: QualityReport):
     """Deep analysis: over-joined segments, translation ratio mismatches."""
-    print(f"\n{'='*60}")
+    print(f"\n{'=' * 60}")
     print("DEEP ANALYSIS")
-    print(f"{'='*60}")
+    print(f"{'=' * 60}")
 
     all_joined = []
     all_ratio = []
@@ -388,7 +487,7 @@ def run_qc(
 
     print(f"Quality check: {media_folder}")
     print(f"  Checks: {', '.join(sorted(checks))}")
-    print(f"{'='*60}")
+    print(f"{'=' * 60}")
 
     # Check info.json
     info_path = os.path.join(media_folder, "_info.json")

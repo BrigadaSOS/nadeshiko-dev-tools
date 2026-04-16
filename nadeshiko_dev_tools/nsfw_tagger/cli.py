@@ -82,8 +82,10 @@ def batch_tagger(media_folder: str, episodes: list[int] | None = None):
                     "tags": result.tags,
                 }
 
-        with open(data_path, "w") as f:
+        tmp_path = data_path + ".tmp"
+        with open(tmp_path, "w") as f:
             json.dump(data, f, ensure_ascii=False)
+        os.replace(tmp_path, data_path)
 
         console.print(f"  E{ep_num}: Done — tagged {len(to_tag)} segments")
 

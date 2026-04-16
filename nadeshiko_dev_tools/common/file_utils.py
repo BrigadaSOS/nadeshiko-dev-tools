@@ -27,7 +27,7 @@ def download_and_save_image(url: str, output_dir: str, prefix: str) -> str:
     filepath = os.path.join(output_dir, filename)
 
     if scale_filter:
-        subprocess.call(
+        subprocess.run(
             [
                 "ffmpeg",
                 "-y",
@@ -45,13 +45,13 @@ def download_and_save_image(url: str, output_dir: str, prefix: str) -> str:
             ],
             stdout=subprocess.PIPE,
             stderr=subprocess.STDOUT,
+            check=True,
         )
         os.remove(temp_filepath)
     else:
         os.rename(temp_filepath, filepath)
 
     return filename
-
 
 
 def _format_fuzzy_date(date_obj) -> str | None:
@@ -74,16 +74,15 @@ def _format_fuzzy_date(date_obj) -> str | None:
 
 
 def save_info_json(
-    info_json_path: str,
+    anime_folder: str,
     anime_data,
-    anime_folder_name: str,
 ) -> str:
     """Save _info.json for an anime folder.
 
     Returns:
         str: The hash salt for this media.
     """
-    info_json_path = os.path.join(os.path.dirname(info_json_path), "_info.json")
+    info_json_path = os.path.join(anime_folder, "_info.json")
 
     if os.path.exists(info_json_path):
         logger.info(f"_info.json already exists at {info_json_path}, skipping creation")
@@ -98,7 +97,7 @@ def save_info_json(
 
     logger.info(f"Creating _info.json at {info_json_path}")
 
-    anime_folder_fullpath = os.path.dirname(info_json_path)
+    anime_folder_fullpath = anime_folder
 
     # Generate a unique salt for this media
     import secrets
@@ -274,9 +273,9 @@ def write_data_json(
     }
 
     data_json_path = os.path.join(output_path, "_data.json")
-    with open(data_json_path, "w", encoding="utf-8") as f:
+    tmp_path = data_json_path + ".tmp"
+    with open(tmp_path, "w", encoding="utf-8") as f:
         json.dump(data_json, f, ensure_ascii=False, indent=2)
+    os.replace(tmp_path, data_json_path)
 
     logger.debug(f"[E{episode_number}] Created _data.json at {data_json_path}")
-
-

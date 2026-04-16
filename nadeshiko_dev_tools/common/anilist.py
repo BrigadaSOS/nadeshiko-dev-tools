@@ -164,7 +164,6 @@ class NestedObject:
 class CachedAnilist:
     def __init__(self):
         self.client = Client()
-        self.cached_results = {}
         self.id_cache = {}
         self.graphql_url = "https://graphql.anilist.co"
 

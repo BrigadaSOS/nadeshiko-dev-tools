@@ -60,7 +60,9 @@ def get_api_client(target: str) -> Nadeshiko:
         },
         "dev": {
             "api_key": _first_set("NADESHIKO_DEV_API_KEY", "NADESHIKO_API_KEY"),
-            "base_url": _first_set("NADESHIKO_DEV_BASE_URL", default="https://api-dev.nadeshiko.co"),
+            "base_url": _first_set(
+                "NADESHIKO_DEV_BASE_URL", default="https://api-dev.nadeshiko.co"
+            ),
         },
         "prod": {
             "api_key": os.getenv("NADESHIKO_PROD_API_KEY", ""),
@@ -165,7 +167,8 @@ def remove_from_r2(storage_path: str, dry_run: bool, skip_confirm: bool = False)
     bucket = os.environ.get("R2_BUCKET", "nadeshiko-production")
 
     missing = [
-        v for v in ["R2_ACCOUNT_ID", "R2_ACCESS_KEY_ID", "R2_SECRET_ACCESS_KEY"]
+        v
+        for v in ["R2_ACCOUNT_ID", "R2_ACCESS_KEY_ID", "R2_SECRET_ACCESS_KEY"]
         if not os.environ.get(v)
     ]
     if missing:
@@ -228,9 +231,7 @@ def remove_from_r2(storage_path: str, dry_run: bool, skip_confirm: bool = False)
 
 
 def main():
-    parser = argparse.ArgumentParser(
-        description="Remove media from Nadeshiko API and R2 storage"
-    )
+    parser = argparse.ArgumentParser(description="Remove media from Nadeshiko API and R2 storage")
     parser.add_argument("media_id", help="Media/AniList ID to remove (e.g., '20812')")
     parser.add_argument(
         "--target", required=True, choices=["local", "dev", "prod"], help="Target environment"

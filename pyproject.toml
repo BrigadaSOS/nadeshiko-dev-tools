@@ -48,6 +48,7 @@ tag-media = "nadeshiko_dev_tools.nsfw_tagger.cli:main"
 quality-check = "nadeshiko_dev_tools.common.quality_check:main"
 assets-uploader = "nadeshiko_dev_tools.assets_uploader.__main__:main"
 delete-media = "nadeshiko_dev_tools.delete_media:main"
+validate-r2 = "nadeshiko_dev_tools.validate_r2:main"
 notify-discord = "nadeshiko_dev_tools.notify_discord:main"
 
 [dependency-groups]

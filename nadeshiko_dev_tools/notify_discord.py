@@ -23,12 +23,13 @@ load_dotenv()
 
 def get_anilist_info(anilist_id: int) -> dict:
     """Fetch anime details from AniList GraphQL API."""
+    query = (
+        f"{{ Media(id: {anilist_id}) {{ title {{ romaji english native }}"
+        f" episodes coverImage {{ large }} }} }}"
+    )
     resp = requests.post(
         "https://graphql.anilist.co",
-        json={
-            "query": "{ Media(id: %d) { title { romaji english native } episodes coverImage { large } } }"
-            % anilist_id
-        },
+        json={"query": query},
         headers={"Content-Type": "application/json"},
     )
     resp.raise_for_status()
@@ -100,7 +101,7 @@ def compute_stats_api(public_id: str, target: str) -> tuple[int, int, float]:
     # Get total segment count and episode count from media
     result = list_media.sync(client=client)
     media = None
-    for m in (result.media if result and hasattr(result, "media") else []):
+    for m in result.media if result and hasattr(result, "media") else []:
         if m.public_id == public_id:
             media = m
             break
@@ -157,10 +158,22 @@ def send_webhook(
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Send Discord notification for new Nadeshiko anime")
+    parser = argparse.ArgumentParser(
+        description="Send Discord notification for new Nadeshiko anime"
+    )
     parser.add_argument("anilist_id", type=int, help="AniList media ID")
-    parser.add_argument("output_folder", nargs="?", default=None, help="Processed output folder (optional — stats fetched from API if omitted)")
-    parser.add_argument("--target", default="prod", choices=["dev", "prod"], help="API target (default: prod)")
+    parser.add_argument(
+        "output_folder",
+        nargs="?",
+        default=None,
+        help="Processed output folder (stats fetched from API if omitted)",
+    )
+    parser.add_argument(
+        "--target",
+        default="prod",
+        choices=["dev", "prod"],
+        help="API target (default: prod)",
+    )
     parser.add_argument("--dry-run", action="store_true", help="Print embed without sending")
     args = parser.parse_args()
 
@@ -183,7 +196,7 @@ def main():
         print(f"Computing stats from {args.output_folder}...")
         episodes, segments, hours = compute_stats_local(args.output_folder)
     else:
-        print(f"Fetching stats from Nadeshiko API...")
+        print("Fetching stats from Nadeshiko API...")
         episodes, segments, hours = compute_stats_api(public_id, args.target)
 
     print(f"\n  Title: {title.get('english') or title['romaji']}")

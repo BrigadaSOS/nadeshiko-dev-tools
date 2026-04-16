@@ -110,7 +110,6 @@ class SegmentResult(Enum):
 
 
 # R2 S3-compatible endpoint
-# R2 S3-compatible endpoint
 R2_ENDPOINT_TEMPLATE = "https://{account_id}.r2.cloudflarestorage.com"
 
 # Pattern to detect raw R2 URLs that need to be replaced with CDN URLs
@@ -1723,7 +1722,6 @@ def _display_upload_summary(
 
 def upload_all(
     output_path: str,
-    media_id: str | None = None,
     episode: int | None = None,
     env: str = "local",
     storage_target: str = "local",
@@ -1736,7 +1734,6 @@ def upload_all(
 
     Args:
         output_path: Path to media folder (e.g., /path/to/output/12345)
-        media_id: Ignored (kept for backwards compatibility). Use output_path directly.
         episode: Optional episode number to filter upload
         env: API environment to upload to (local, dev, or prod). Default is local.
         storage_target: Storage target for files ("local" or "r2").

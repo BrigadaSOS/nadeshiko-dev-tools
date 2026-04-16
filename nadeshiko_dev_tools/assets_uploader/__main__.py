@@ -84,7 +84,6 @@ Examples:
     try:
         upload_all(
             output_path=args.media_folder,
-            media_id=None,
             episode=args.episode,
             env=args.target,
             storage_target=args.storage,
