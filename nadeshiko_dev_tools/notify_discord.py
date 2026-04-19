@@ -38,8 +38,7 @@ def get_anilist_info(anilist_id: int) -> dict:
 
 def get_nadeshiko_public_id(anilist_id: int, target: str) -> str | None:
     """Find the Nadeshiko publicId for a given AniList ID."""
-    from nadeshiko_internal import Nadeshiko
-    from nadeshiko_internal.api.media import list_media
+    from nadeshiko_internal import Nadeshiko, NadeshikoError
     from nadeshiko_internal.types import UNSET
 
     env_keys = {
@@ -52,17 +51,18 @@ def get_nadeshiko_public_id(anilist_id: int, target: str) -> str | None:
         print(f"Warning: {key_var} not set", file=sys.stderr)
         return None
 
-    client = Nadeshiko(token=api_key, base_url=base_url)
-    result = list_media.sync(client=client)
-    if not result or not hasattr(result, "media"):
-        return None
-
-    for media in result.media:
-        ext_ids = getattr(media, "external_ids", UNSET)
-        if ext_ids is UNSET or ext_ids is None:
-            continue
-        if str(getattr(ext_ids, "anilist", "")) == str(anilist_id):
-            return media.public_id
+    client = Nadeshiko(
+        api_key=api_key, base_url=base_url, headers={"User-Agent": "NadeshikoDevTools/1.0"}
+    )
+    try:
+        for media in client.iter_list_media():
+            ext_ids = getattr(media, "external_ids", UNSET)
+            if ext_ids is UNSET or ext_ids is None:
+                continue
+            if str(getattr(ext_ids, "anilist", "")) == str(anilist_id):
+                return media.public_id
+    except NadeshikoError as e:
+        print(f"Error listing media: {e.detail}", file=sys.stderr)
     return None
 
 
@@ -88,29 +88,34 @@ def compute_stats_local(output_folder: str) -> tuple[int, int, float]:
 
 def compute_stats_api(public_id: str, target: str) -> tuple[int, int, float]:
     """Fetch episode/segment stats from the Nadeshiko API."""
-    from nadeshiko_internal import Nadeshiko
-    from nadeshiko_internal.api.media import list_media
+    from nadeshiko_internal import Nadeshiko, NadeshikoError
 
     env_keys = {
         "dev": ("NADESHIKO_DEV_API_KEY", "https://api-dev.nadeshiko.co"),
         "prod": ("NADESHIKO_PROD_API_KEY", "https://api.nadeshiko.co"),
     }
     key_var, base_url = env_keys.get(target, env_keys["prod"])
-    client = Nadeshiko(token=os.getenv(key_var), base_url=base_url)
+    client = Nadeshiko(
+        api_key=os.getenv(key_var),
+        base_url=base_url,
+        headers={"User-Agent": "NadeshikoDevTools/1.0"},
+    )
 
     # Get total segment count and episode count from media
-    result = list_media.sync(client=client)
-    media = None
-    for m in result.media if result and hasattr(result, "media") else []:
-        if m.public_id == public_id:
-            media = m
-            break
+    found_media = None
+    try:
+        for m in client.iter_list_media():
+            if m.public_id == public_id:
+                found_media = m
+                break
+    except NadeshikoError:
+        pass
 
-    if not media:
+    if not found_media:
         return 0, 0, 0.0
 
-    episode_count = getattr(media, "episode_count", 0) or 0
-    segment_count = getattr(media, "segment_count", 0) or 0
+    episode_count = getattr(found_media, "episode_count", 0) or 0
+    segment_count = getattr(found_media, "segment_count", 0) or 0
 
     # Estimate duration: ~3s per segment is typical
     estimated_hours = (segment_count * 3) / 3600

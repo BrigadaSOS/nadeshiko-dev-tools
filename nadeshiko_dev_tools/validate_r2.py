@@ -26,19 +26,8 @@ from rich.table import Table
 
 load_dotenv()
 
-from nadeshiko_internal import Nadeshiko  # noqa: E402
-from nadeshiko_internal.api.media import list_media  # noqa: E402
-from nadeshiko_internal.models import (  # noqa: E402
-    Error400,
-    Error401,
-    Error403,
-    Error404,
-    Error409,
-    Error429,
-    Error500,
-)
+from nadeshiko_internal import Nadeshiko, NadeshikoError  # noqa: E402
 
-API_ERROR_TYPES = (Error400, Error401, Error403, Error404, Error409, Error429, Error500)
 EXPECTED_EXTENSIONS = {"mp3", "mp4", "webp"}
 
 console = Console()
@@ -64,7 +53,11 @@ def get_api_client(target: str) -> Nadeshiko:
     if not cfg or not cfg["api_key"]:
         console.print(f"[red]Error: No API key for target '{target}'[/red]")
         sys.exit(1)
-    return Nadeshiko(token=cfg["api_key"], base_url=cfg["base_url"])
+    return Nadeshiko(
+        api_key=cfg["api_key"],
+        base_url=cfg["base_url"],
+        headers={"User-Agent": "NadeshikoDevTools/1.0"},
+    )
 
 
 def get_r2_client():
@@ -122,18 +115,15 @@ def parse_r2_objects(objects: list[dict], base_prefix: str) -> dict[int, dict[st
 
 def get_api_episodes(client: Nadeshiko, media_public_id: str) -> dict[int, int]:
     """Get {episode_number: segment_count} from the API."""
-    from nadeshiko_internal.api.media import list_episodes
-
-    result = list_episodes.sync(media_id=media_public_id, client=client)
-    if isinstance(result, API_ERROR_TYPES) or not result:
-        return {}
-
     episodes = {}
-    for ep in getattr(result, "episodes", []) or []:
-        ep_num = getattr(ep, "episode_number", None)
-        seg_count = getattr(ep, "segment_count", 0) or 0
-        if ep_num is not None:
-            episodes[ep_num] = seg_count
+    try:
+        for ep in client.iter_list_episodes(media_public_id=media_public_id):
+            ep_num = getattr(ep, "episode_number", None)
+            seg_count = getattr(ep, "segment_count", 0) or 0
+            if ep_num is not None:
+                episodes[ep_num] = seg_count
+    except NadeshikoError:
+        pass
     return episodes
 
 
@@ -141,37 +131,33 @@ def find_media_info(client: Nadeshiko, anilist_id: str | None) -> list[dict]:
     """Get all media or a specific one by AniList ID."""
     from nadeshiko_internal.types import UNSET
 
-    result = list_media.sync(client=client)
-    if isinstance(result, API_ERROR_TYPES) or not result:
-        console.print("[red]Error listing media[/red]")
-        return []
-
-    media_items = getattr(result, "media", []) or []
     found = []
-    for media in media_items:
-        ext_ids = getattr(media, "external_ids", UNSET)
-        al_id = None
-        if ext_ids is not UNSET and ext_ids is not None:
-            al_id = str(getattr(ext_ids, "anilist", ""))
+    try:
+        for media in client.iter_list_media():
+            ext_ids = getattr(media, "external_ids", UNSET)
+            al_id = None
+            if ext_ids is not UNSET and ext_ids is not None:
+                al_id = str(getattr(ext_ids, "anilist", ""))
 
-        if anilist_id and al_id != str(anilist_id):
-            continue
+            if anilist_id and al_id != str(anilist_id):
+                continue
 
-        found.append(
-            {
-                "public_id": getattr(media, "public_id", None),
-                "title": getattr(media, "title", "?"),
-                "storage_base_path": getattr(media, "storage_base_path", None),
-                "anilist_id": al_id,
-            }
-        )
+            found.append(
+                {
+                    "public_id": getattr(media, "public_id", None),
+                    "title": getattr(media, "title", "?"),
+                    "storage_base_path": getattr(media, "storage_base_path", None),
+                    "anilist_id": al_id,
+                }
+            )
+    except NadeshikoError as e:
+        console.print(f"[red]Error listing media: {e.detail}[/red]")
 
     return found
 
 
 def validate_media(client: Nadeshiko, s3, bucket: str, media: dict) -> dict:
     """Validate a single media. Returns summary dict."""
-    public_id = media["public_id"]
     storage_path = media["storage_base_path"] or f"media/{media['anilist_id']}"
     prefix = f"{storage_path}/"
 
@@ -180,7 +166,7 @@ def validate_media(client: Nadeshiko, s3, bucket: str, media: dict) -> dict:
     r2_episodes = parse_r2_objects(r2_objects, prefix)
 
     # Get API episode counts
-    api_episodes = get_api_episodes(client, public_id)
+    api_episodes = get_api_episodes(client, media["public_id"])
 
     issues = []
     total_missing_files = 0

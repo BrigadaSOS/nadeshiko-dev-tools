@@ -47,7 +47,9 @@ MIN_OVERLAP_TO_MERGE_MS = 500
 # line and the group's time range. Different subtitle sources (BD vs fansub vs
 # streaming) often have timing offsets of 100-500ms. Without tolerance, lines
 # that start slightly after the group ends are lost.
-MATCH_TOLERANCE_MS = 500
+# Increased from 500ms to 1000ms to handle multi-line subtitle grouping mismatches
+# where EN combines lines that are split in JA with small gaps.
+MATCH_TOLERANCE_MS = 1000
 
 _OP_ED_KEYWORDS = {"opening", "ending", "op", "ed"}
 
@@ -512,7 +514,10 @@ def split_video_by_subtitles(
 
             # Multiple matches — assign to best, or merge if genuinely spanning
             matches.sort(key=lambda x: -x[1])
-            significant = [(i, ov) for i, ov in matches if ov / line_dur > 0.4]
+            # Lowered threshold from 0.4 to 0.15 to handle cases where EN/ES
+            # combines multiple short JA lines. A 7.5s EN line spanning three
+            # 2s JA lines gives ~25% overlap each - still significant for merging.
+            significant = [(i, ov) for i, ov in matches if ov / line_dur > 0.15]
 
             if len(significant) > 1:
                 # Merge into the lowest-indexed group, pop higher indices descending

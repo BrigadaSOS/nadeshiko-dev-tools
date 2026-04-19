@@ -14,7 +14,6 @@ import threading
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass
-from datetime import timedelta
 from enum import Enum
 from pathlib import Path
 
@@ -30,31 +29,13 @@ load_dotenv(override=True)
 console = Console()
 
 # Nadeshiko SDK imports — must come after load_dotenv()
-from nadeshiko_internal import Nadeshiko  # noqa: E402
-from nadeshiko_internal.api.media import (  # noqa: E402
-    create_episode,
-    create_media,
-    create_segments_batch,
-    get_episode,
-    list_media,
-    update_media,
-)
+from nadeshiko_internal import Nadeshiko, NadeshikoError  # noqa: E402
 from nadeshiko_internal.models import (  # noqa: E402
-    CharacterInput,
-    CharacterInputRole,
+    Category,
     ContentRating,
-    CreateSegmentsBatchResponse201,
     EpisodeCreateRequest,
-    Error400,
-    Error401,
-    Error403,
-    Error404,
-    Error409,
-    Error429,
-    Error500,
     ExternalId,
     MediaCreateRequest,
-    MediaCreateRequestCategory,
     MediaCreateRequestStorage,
     MediaListResponse,
     MediaUpdateRequest,
@@ -68,9 +49,6 @@ from nadeshiko_internal.models import (  # noqa: E402
 )
 from nadeshiko_internal.types import UNSET  # noqa: E402
 
-# All SDK error types for isinstance checks
-API_ERROR_TYPES = (Error400, Error401, Error403, Error404, Error409, Error429, Error500)
-
 
 def _validate_sdk_contract() -> None:
     """Fail fast when an older SDK shape is installed."""
@@ -78,11 +56,7 @@ def _validate_sdk_contract() -> None:
         "MediaListResponse": (MediaListResponse, {"media", "pagination"}),
         "SegmentCreateRequest": (
             SegmentCreateRequest,
-            {"start_time_ms", "end_time_ms", "content_rating", "rating_analysis", "pos_analysis"},
-        ),
-        "SegmentBatchCreateRequest": (
-            SegmentBatchCreateRequest,
-            {"segments"},
+            {"start_time_ms", "end_time_ms", "content_rating"},
         ),
     }
     missing: dict[str, list[str]] = {}
@@ -95,7 +69,7 @@ def _validate_sdk_contract() -> None:
     if missing:
         details = ", ".join(f"{name}: {fields}" for name, fields in missing.items())
         raise RuntimeError(
-            "Unsupported nadeshiko-internal-sdk contract; expected 1.4.3+ fields. "
+            "Unsupported nadeshiko-internal-sdk contract; expected 2.1.0+ fields. "
             f"Missing: {details}"
         )
 
@@ -111,37 +85,6 @@ class SegmentResult(Enum):
 
 # R2 S3-compatible endpoint
 R2_ENDPOINT_TEMPLATE = "https://{account_id}.r2.cloudflarestorage.com"
-
-# Pattern to detect raw R2 URLs that need to be replaced with CDN URLs
-RAW_R2_PATTERN = "https://{account_id}.r2.cloudflarestorage.com"
-
-
-def normalize_r2_url(url: str, r2_public_url: str) -> str:
-    """Convert raw R2 URL to CDN URL if needed.
-
-    Args:
-        url: The URL to normalize (may be raw R2 or already CDN)
-        r2_public_url: The CDN base URL (e.g., https://cdn.nadeshiko.co)
-
-    Returns:
-        The normalized URL using the CDN domain
-    """
-    if not url:
-        return url
-
-    # If URL is already using the CDN domain, return as-is
-    if url.startswith(r2_public_url):
-        return url
-
-    # If URL is a raw R2 URL, extract the path and prepend CDN domain
-    if ".r2.cloudflarestorage.com/" in url:
-        # Extract path after the bucket/domain
-        parts = url.split("/media/", 1)
-        if len(parts) == 2:
-            return f"{r2_public_url}/media/{parts[1]}"
-
-    return url
-
 
 IMAGE_EXTENSIONS = (".jpg", ".jpeg", ".png", ".webp")
 
@@ -166,15 +109,6 @@ def _find_image_file(folder: Path, prefix: str) -> Path | None:
         path = folder / f"{prefix}{ext}"
         if path.exists():
             return path
-    return None
-
-
-def _find_japanese_stream(audio_streams: list[dict]) -> dict | None:
-    """Find a Japanese audio stream from a list of audio stream dicts."""
-    for stream in audio_streams:
-        lang = stream.get("tags", {}).get("language", "").lower()
-        if lang in ("jpn", "ja", "japanese"):
-            return stream
     return None
 
 
@@ -462,9 +396,6 @@ class R2Uploader:
         return f"{self.public_url}/{key}"
 
 
-# Batch segment creation constants
-BATCH_SIZE = 900  # Margin below 1000 API limit
-MAX_BODY_BYTES = 9 * 1024 * 1024  # Margin below 10 MB API limit
 _RATE_LIMIT_WAIT_SECONDS = 60  # Fixed 1 minute wait for rate limits
 
 
@@ -492,10 +423,10 @@ class NadeshikoUploader:
         self.r2 = R2Uploader(config) if upload_r2 else None
 
         self.api_client = Nadeshiko(
-            token=config.nadeshiko_api_key,
+            api_key=config.nadeshiko_api_key,
             base_url=config.nadeshiko_base_url,
+            headers={"User-Agent": "NadeshikoDevTools/1.0"},
         )
-        self.ErrorTypes = API_ERROR_TYPES
         self._console_lock = threading.Lock()
         self.stats = {
             "total": 0,
@@ -513,61 +444,6 @@ class NadeshikoUploader:
             console.print(
                 "[cyan]Running in DRY-RUN mode. Use --apply to perform actual uploads.[/cyan]"
             )
-
-    def _ms_to_hmsff(self, milliseconds: int) -> str:
-        """Convert milliseconds to H:MM:SS.ffffff format."""
-        td = timedelta(milliseconds=milliseconds)
-        total_seconds = td.total_seconds()
-        hours = int(total_seconds // 3600)
-        minutes = int((total_seconds % 3600) // 60)
-        seconds = total_seconds % 60
-        return f"{hours}:{minutes:02d}:{seconds:06f}"
-
-    def _get_error_attr(self, error: object, attr_name: str):
-        """Safely read SDK error attributes that may raise KeyError."""
-        try:
-            val = getattr(error, attr_name)
-            # Typed status enums (e.g. Error400Status) → unwrap to int
-            if attr_name == "status" and hasattr(val, "value"):
-                return val.value
-            return val
-        except (KeyError, AttributeError):
-            return None
-
-    def _is_api_error(self, value: object) -> bool:
-        """Check whether a response is an SDK error (public or internal)."""
-        return isinstance(value, self.ErrorTypes)
-
-    def _is_auth_error(self, error: object) -> bool:
-        """Check for authentication errors returned by the API."""
-        return isinstance(error, Error401)
-
-    def _print_api_error(self, error: object) -> None:
-        """Print standard API error details."""
-        for attr_name in ["detail", "status", "code", "title", "errors"]:
-            value = self._get_error_attr(error, attr_name)
-            if value:
-                self._print(f"  [red]{attr_name.capitalize()}:[/red] {value}")
-
-    def _is_rate_limit_error(self, error: object) -> bool:
-        """Check if an error is a 429 rate limit error."""
-        return isinstance(error, Error429)
-
-    def _is_constraint_error(self, error: object) -> bool:
-        """Check if an error is a payload validation error for a specific segment.
-
-        Only HTTP 400 is considered skippable. Other 4xx values (forbidden/not found)
-        usually indicate auth or upstream consistency issues that should fail loudly.
-        """
-        return isinstance(error, Error400)
-
-    def _get_retry_after_seconds(self, error: object) -> int:
-        """Get the retry-after seconds from a rate limit error.
-
-        We use a fixed 60-second wait for all rate limit errors to keep
-        things simple and reliable.
-        """
-        return _RATE_LIMIT_WAIT_SECONDS
 
     def _should_skip_segment(self, segment: SegmentData) -> tuple[bool, str]:
         """Check if a segment should be skipped and return (skip, reason)."""
@@ -592,47 +468,11 @@ class NadeshikoUploader:
 
         return False, ""
 
-    def _segment_content_rating(self, segment: SegmentData):
-        """Convert text content rating to SDK enum, or UNSET when unknown."""
+    def _segment_content_rating(self, segment: SegmentData) -> ContentRating:
+        """Return the ContentRating literal for a segment."""
         rating = (segment.content_rating or "").strip().upper()
-        if not rating:
-            return UNSET
-        try:
-            return ContentRating(rating)
-        except ValueError:
-            return UNSET
-
-    def _coerce_int(self, value: object) -> int | None:
-        """Coerce values from _info.json into an integer ID."""
-        if isinstance(value, bool):
-            return None
-        if isinstance(value, int):
-            return value
-        if isinstance(value, str):
-            stripped = value.strip()
-            if stripped and stripped.isdigit():
-                return int(stripped)
-        return None
-
-    def _parse_character_role(self, value: object) -> CharacterInputRole:
-        """Parse AniList role values from _info.json into SDK enum values."""
-        if isinstance(value, CharacterInputRole):
-            return value
-        role_text = str(value or "").upper()
-        for role in CharacterInputRole:
-            if role.value in role_text:
-                return role
-        return CharacterInputRole.SUPPORTING
-
-    def _build_character_inputs(self, media_info: MediaInfo) -> list[CharacterInput] | None:
-        """Build SDK CharacterInput objects from _info.json character records.
-
-        Returns None when characters were absent in _info.json so we don't
-        accidentally overwrite server-side character data.
-
-        Currently disabled - character upload is temporarily disabled.
-        """
-        return None
+        valid = {"EXPLICIT", "QUESTIONABLE", "SAFE", "SUGGESTIVE"}
+        return rating if rating in valid else "SAFE"
 
     @staticmethod
     def _build_external_ids(media_info: MediaInfo) -> ExternalId:
@@ -645,8 +485,8 @@ class NadeshikoUploader:
         if media_info.media_source == "tmdb":
             if media_info.tmdb_season is not None:
                 id_str = f"{id_str}_{media_info.tmdb_season}"
-            return ExternalId(tmdb=id_str)
-        return ExternalId(anilist=id_str)
+            return ExternalId(anilist=None, imdb=None, tvdb=None, tmdb=id_str)
+        return ExternalId(anilist=id_str, imdb=None, tvdb=None, tmdb=None)
 
     def _print(self, *args, **kwargs) -> None:
         """Thread-safe console print."""
@@ -699,9 +539,9 @@ class NadeshikoUploader:
         console.print(f"[cyan]Updating media info: {existing_media.public_id}[/cyan]")
 
         storage = (
-            MediaUpdateRequestStorage.R2
+            "R2"
             if self.storage_target == "r2"
-            else MediaUpdateRequestStorage.LOCAL
+            else "LOCAL"
         )
 
         self._upload_media_images(media_folder, storage_base_path)
@@ -727,25 +567,16 @@ class NadeshikoUploader:
             request.hash_salt = media_info.hash_salt
         if media_info.version:
             request.version = media_info.version
-        character_inputs = self._build_character_inputs(media_info)
-        if character_inputs is not None:
-            request.characters = character_inputs
         if storage_base_path:
             request.storage_base_path = storage_base_path
 
-        update_result = update_media.sync(
-            client=self.api_client, id=existing_media.public_id, body=request
-        )
-
-        if update_result and not self._is_api_error(update_result):
+        try:
+            self.api_client.update_media(
+                media_public_id=existing_media.public_id, body=request
+            )
             console.print(f"[green]Updated media: {existing_media.public_id}[/green]")
-            return existing_media.public_id
-
-        if self._is_api_error(update_result):
-            console.print("\n[red]Failed to update media:[/red]")
-            self._print_api_error(update_result)
-        else:
-            console.print("[red]Failed to update media: Unknown error[/red]")
+        except NadeshikoError as e:
+            console.print(f"\n[red]Failed to update media: {e.detail}[/red]")
         return existing_media.public_id  # Return ID anyway if update failed
 
     def _load_media_info(self, media_folder: Path) -> MediaInfo | None:
@@ -876,7 +707,7 @@ class NadeshikoUploader:
     ) -> tuple[str, str] | None:
         """Get existing media or create new one.
 
-        Returns (public_id, storage_base_path) or None on failure.
+        Returns (media_public_id, storage_base_path) or None on failure.
         """
         if self.dry_run or not self.api_client:
             console.print(
@@ -885,30 +716,10 @@ class NadeshikoUploader:
             storage_base_path = self._build_storage_base_path(media_info)
             return str(media_info.anilist_id), storage_base_path
 
-        # Try to find existing media by anilist_id - use search endpoint
-        try:
-            result = list_media.sync(client=self.api_client)
-        except Exception as e:
-            console.print(f"[red]Failed to list media: {type(e).__name__}: {e}[/red]")
-            return None
-
-        if self._is_api_error(result):
-            if self._is_auth_error(result):
-                console.print(
-                    "[red]Authentication failed while listing media. "
-                    "Check your API key for the selected target (local/dev/prod).[/red]"
-                )
-            else:
-                console.print("\n[red]Failed to list media:[/red]")
-                self._print_api_error(result)
-            return None
-
         existing_media = None
         source_key = media_info.media_source  # "anilist" or "tmdb"
-        if result and not self._is_api_error(result):
-            # Search through results for matching external ID
-            media_items = result.media
-            for media in media_items:
+        try:
+            for media in self.api_client.iter_list_media():
                 ext_ids = getattr(media, "external_ids", UNSET)
                 if ext_ids is UNSET or ext_ids is None:
                     continue
@@ -917,26 +728,34 @@ class NadeshikoUploader:
                     console.print(f"[green]Found existing media: {media.public_id}[/green]")
                     existing_media = media
                     break
+        except NadeshikoError as e:
+            if e.status == 401:
+                console.print(
+                    "[red]Authentication failed while listing media. "
+                    "Check your API key for the selected target (local/dev/prod).[/red]"
+                )
+            else:
+                console.print(f"\n[red]Failed to list media: {e.detail}[/red]")
+            return None
 
         storage_base_path = self._build_storage_base_path(media_info)
 
         # If media exists, always sync media info (including characters).
         # `--update-info` only controls whether episodes/segments are skipped later.
         if existing_media:
-            media_id = self._update_media_info(
+            media_public_id = self._update_media_info(
                 existing_media,
                 media_info,
                 media_folder,
                 storage_base_path=storage_base_path,
             )
-            public_id = media_id if media_id is not None else existing_media.public_id
-            return public_id, storage_base_path
+            return media_public_id or existing_media.public_id, storage_base_path
 
         # Determine storage backend
         storage = (
-            MediaCreateRequestStorage.R2
+            "R2"
             if self.storage_target == "r2"
-            else MediaCreateRequestStorage.LOCAL
+            else "LOCAL"
         )
 
         if not _find_image_file(media_folder, "cover"):
@@ -980,8 +799,6 @@ class NadeshikoUploader:
             )
             return None
 
-        character_inputs = self._build_character_inputs(media_info)
-
         self._upload_media_images(media_folder, storage_base_path)
 
         # Create new media
@@ -993,9 +810,9 @@ class NadeshikoUploader:
             airing_status=media_info.airing_status,
             genres=media_info.genres,
             category=(
-                MediaCreateRequestCategory.JDRAMA
+                "JDRAMA"
                 if media_info.category == "JDRAMA"
-                else MediaCreateRequestCategory.ANIME
+                else "ANIME"
             ),
             version=media_info.version,
             studio=media_info.studio if media_info.studio else UNSET,
@@ -1006,63 +823,25 @@ class NadeshikoUploader:
             start_date=start_date,
             end_date=end_date,
             external_ids=self._build_external_ids(media_info),
-            characters=character_inputs if character_inputs is not None else UNSET,
             storage_base_path=storage_base_path,
         )
 
-        create_result = self._do_create_media(request, character_inputs)
+        create_result = self._do_create_media(request)
         if not create_result:
             return None
 
         console.print(f"[green]Created new media: {create_result.public_id}[/green]")
         return create_result.public_id, storage_base_path
 
-    def _do_create_media(self, request, character_inputs):
-        """Send create media request, retrying without characters on 409."""
-        create_result = create_media.sync(client=self.api_client, body=request)
+    def _do_create_media(self, request):
+        """Send create media request."""
+        try:
+            return self.api_client.create_media(body=request)
+        except NadeshikoError as e:
+            console.print(f"\n[red]Failed to create media: {e.detail}[/red]")
+            return None
 
-        if create_result and not self._is_api_error(create_result):
-            return create_result
-
-        # On 409 (e.g. duplicate seiyuu), retry without characters
-        if isinstance(create_result, Error409) and character_inputs:
-            console.print(
-                "[yellow]Warning: media creation returned 409 (possibly duplicate seiyuu). "
-                "Retrying without characters...[/yellow]"
-            )
-            retry_request = MediaCreateRequest(
-                name_ja=request.name_ja,
-                name_romaji=request.name_romaji,
-                name_en=request.name_en,
-                airing_format=request.airing_format,
-                airing_status=request.airing_status,
-                genres=request.genres,
-                category=request.category,
-                version=request.version,
-                studio=request.studio if request.studio else UNSET,
-                season_name=request.season_name,
-                season_year=request.season_year,
-                hash_salt=request.hash_salt,
-                storage=request.storage,
-                start_date=request.start_date,
-                end_date=request.end_date,
-                external_ids=request.external_ids,
-                storage_base_path=request.storage_base_path,
-            )
-            create_result = create_media.sync(client=self.api_client, body=retry_request)
-            if create_result and not self._is_api_error(create_result):
-                return create_result
-
-        if self._is_api_error(create_result):
-            console.print("\n[red]Failed to create media:[/red]")
-            self._print_api_error(create_result)
-        else:
-            console.print("[red]Failed to create media: Unknown error[/red]")
-            console.print(f"[dim]Result type: {type(create_result)}[/dim]")
-            console.print(f"[dim]Result: {create_result}[/dim]")
-        return None
-
-    def _get_or_create_episode(self, media_id: str, episode_data: EpisodeData) -> bool:
+    def _get_or_create_episode(self, media_public_id: str, episode_data: EpisodeData) -> bool:
         """Get existing episode or create new one."""
         if self.dry_run or not self.api_client:
             console.print(
@@ -1070,59 +849,45 @@ class NadeshikoUploader:
             )
             return True
 
-        # Try to find existing episode
         try:
-            result = get_episode.sync(
-                client=self.api_client, media_id=media_id, episode_number=episode_data.number
+            self.api_client.get_episode(
+                media_public_id=media_public_id, episode_number=episode_data.number
             )
-        except Exception as e:
-            console.print(
-                f"[red]Failed to check episode E{episode_data.number}:"
-                f" {type(e).__name__}: {e}[/red]"
-            )
-            return False
-
-        if result and not self._is_api_error(result):
             console.print(f"[green]Found existing episode: E{episode_data.number}[/green]")
             return True
-
-        if self._is_api_error(result):
-            status = self._get_error_attr(result, "status")
-            if self._is_auth_error(result):
+        except NadeshikoError as e:
+            if e.status == 401:
                 console.print(
                     "[red]Authentication failed while checking episodes. "
                     "Check your API key for the selected target (local/dev/prod).[/red]"
                 )
                 return False
-            if status != 404:
-                console.print(f"\n[red]Failed to check episode E{episode_data.number}:[/red]")
-                self._print_api_error(result)
+            if e.status != 404:
+                console.print(
+                    f"[red]Failed to check episode E{episode_data.number}: {e.detail}[/red]"
+                )
                 return False
 
         # Create new episode
         request = EpisodeCreateRequest(episode_number=episode_data.number)
-        create_result = create_episode.sync(client=self.api_client, media_id=media_id, body=request)
-
-        if create_result and not self._is_api_error(create_result):
+        try:
+            self.api_client.create_episode(
+                media_public_id=media_public_id, body=request
+            )
             console.print(f"[green]Created new episode: E{episode_data.number}[/green]")
             return True
-
-        if self._is_api_error(create_result):
-            console.print("\n[red]Failed to create episode:[/red]")
-            console.print(f"  [red]Episode:[/red] {episode_data.number}")
-            self._print_api_error(create_result)
-        else:
-            console.print("[red]Failed to create episode: Unknown error[/red]")
-            console.print(f"[dim]Result type: {type(create_result)}[/dim]")
-            console.print(f"[dim]Result: {create_result}[/dim]")
-        return False
+        except NadeshikoError as e:
+            console.print(
+                f"[red]Failed to create episode {episode_data.number}: {e.detail}[/red]"
+            )
+            return False
 
     def _build_segment_request(self, segment: SegmentData) -> SegmentCreateRequest:
         """Build a SegmentCreateRequest from a SegmentData."""
         storage = (
-            SegmentCreateRequestStorage.R2
+            "R2"
             if self.storage_target == "r2"
-            else SegmentCreateRequestStorage.LOCAL
+            else "LOCAL"
         )
 
         ja = SegmentCreateRequestTextJa(content=segment.content_ja)
@@ -1151,59 +916,20 @@ class NadeshikoUploader:
             text_es=es,
             text_en=en,
             content_rating=self._segment_content_rating(segment),
-            rating_analysis=segment.content_analysis,
-            pos_analysis=segment.pos_analysis,
+            rating_analysis=segment.content_analysis or UNSET,
+            pos_analysis=segment.pos_analysis or UNSET,
             storage=storage,
             hashed_id=segment.segment_hash,
         )
 
-    @staticmethod
-    def _estimate_batch_size(requests: list[SegmentCreateRequest]) -> int:
-        """Estimate the JSON body size of a batch of segment requests."""
-        # Use a rough per-segment estimate: marshal the first request to get a
-        # representative size, then multiply.  This avoids serialising the
-        # whole list just to check the size.
-        if not requests:
-            return 0
-        sample = requests[0].to_dict()
-        per_segment = len(json.dumps(sample, ensure_ascii=False))
-        # Add ~2 bytes per segment for JSON array commas/brackets + wrapper overhead
-        return per_segment * len(requests) + 100
-
-    def _chunk_requests(
-        self,
-        requests: list[SegmentCreateRequest],
-    ) -> list[list[SegmentCreateRequest]]:
-        """Split requests into chunks respecting both count and body-size limits."""
-        chunks: list[list[SegmentCreateRequest]] = []
-        current: list[SegmentCreateRequest] = []
-        current_size = 100  # baseline for JSON wrapper
-
-        for req in requests:
-            entry_size = len(json.dumps(req.to_dict(), ensure_ascii=False)) + 2
-            would_exceed_size = (current_size + entry_size) > MAX_BODY_BYTES
-            would_exceed_count = len(current) >= BATCH_SIZE
-
-            if current and (would_exceed_size or would_exceed_count):
-                chunks.append(current)
-                current = []
-                current_size = 100
-
-            current.append(req)
-            current_size += entry_size
-
-        if current:
-            chunks.append(current)
-        return chunks
-
     def _create_segments_batch(
         self,
-        media_id: str,
+        media_public_id: str,
         episode_number: int,
         requests: list[SegmentCreateRequest],
-        max_retries: int = 3,
+        chunk_size: int = 500,
     ) -> tuple[int, int, int]:
-        """Create segments via the batch API endpoint.
+        """Create segments in batches via the batch API endpoint.
 
         Returns:
             (created, skipped, failed) counts.
@@ -1211,86 +937,47 @@ class NadeshikoUploader:
         if not requests:
             return 0, 0, 0
 
-        chunks = self._chunk_requests(requests)
         total_created = 0
         total_skipped = 0
         total_failed = 0
 
-        for chunk_idx, chunk in enumerate(chunks, 1):
-            if len(chunks) > 1:
-                console.print(
-                    f"[dim]  Batch {chunk_idx}/{len(chunks)} ({len(chunk)} segments)...[/dim]"
+        for i in range(0, len(requests), chunk_size):
+            chunk = requests[i : i + chunk_size]
+            try:
+                result = self.api_client.create_segments_batch(
+                    media_public_id=media_public_id,
+                    episode_number=episode_number,
+                    body=SegmentBatchCreateRequest(segments=chunk),
                 )
-
-            body = SegmentBatchCreateRequest(segments=chunk)
-
-            for attempt in range(max_retries):
-                try:
-                    result = create_segments_batch.sync(
-                        client=self.api_client,
-                        media_id=media_id,
-                        episode_number=episode_number,
-                        body=body,
-                    )
-                except Exception as e:
-                    status_code = getattr(e, "status_code", None)
-                    if status_code is None and hasattr(e, "response"):
-                        status_code = getattr(e.response, "status_code", None)
-
-                    key = f"HTTP_{status_code}" if status_code else "exception_no_status"
-                    self.stats["errors_by_status"][key] = (
-                        self.stats["errors_by_status"].get(key, 0) + 1
-                    )
-                    console.print(f"[red]Batch exception: {type(e).__name__}: {e}[/red]")
-                    total_failed += len(chunk)
-                    break
-
-                if isinstance(result, CreateSegmentsBatchResponse201):
-                    total_created += result.created
-                    total_skipped += result.skipped
-                    break
-
-                if self._is_rate_limit_error(result):
+                total_created += result.created
+                total_skipped += result.skipped
+            except NadeshikoError as e:
+                if e.status == 429:
                     wait = _RATE_LIMIT_WAIT_SECONDS
-                    console.print(
-                        f"[yellow]Rate limited on batch {chunk_idx}."
-                        f" Waiting {wait}s (attempt {attempt + 1}/{max_retries})...[/yellow]"
-                    )
-                    if attempt < max_retries - 1:
-                        time.sleep(wait)
+                    console.print(f"[yellow]Rate limited. Waiting {wait}s...[/yellow]")
+                    time.sleep(wait)
+                    try:
+                        result = self.api_client.create_segments_batch(
+                            media_public_id=media_public_id,
+                            episode_number=episode_number,
+                            body=SegmentBatchCreateRequest(segments=chunk),
+                        )
+                        total_created += result.created
+                        total_skipped += result.skipped
                         continue
-                    console.print(f"[red]Max retries reached for batch {chunk_idx}[/red]")
+                    except NadeshikoError as e2:
+                        e = e2
 
-                # Non-retryable API error
-                if self._is_api_error(result):
-                    status_code = self._get_error_attr(result, "status")
-                    key = f"HTTP_{status_code}" if status_code else "api_error_no_status"
-                    self.stats["errors_by_status"][key] = (
-                        self.stats["errors_by_status"].get(key, 0) + 1
-                    )
-                    console.print(f"[red]Batch {chunk_idx} failed:[/red]")
-                    self._print_api_error(result)
-
-                    if self._is_auth_error(result):
-                        console.print("[red]Authentication error — aborting.[/red]")
-                        total_failed += len(chunk)
-                        return total_created, total_skipped, total_failed
-                else:
-                    key = (
-                        "unknown_error_none_result"
-                        if result is None
-                        else (f"unknown_{type(result).__name__}")
-                    )
-                    self.stats["errors_by_status"][key] = (
-                        self.stats["errors_by_status"].get(key, 0) + 1
-                    )
-                    console.print(
-                        f"[red]Batch {chunk_idx}: unexpected result"
-                        f" ({type(result).__name__}): {result}[/red]"
-                    )
-
+                key = f"HTTP_{e.status}" if e.status else "api_error_no_status"
+                self.stats["errors_by_status"][key] = (
+                    self.stats["errors_by_status"].get(key, 0) + 1
+                )
+                console.print(f"[red]Batch failed: {e.detail}[/red]")
+                if e.status == 401:
+                    console.print("[red]Authentication error — aborting.[/red]")
+                    total_failed += len(requests) - i
+                    return total_created, total_skipped, total_failed
                 total_failed += len(chunk)
-                break
 
         return total_created, total_skipped, total_failed
 
@@ -1315,7 +1002,7 @@ class NadeshikoUploader:
         if not result:
             return False
 
-        media_id, storage_base_path = result
+        media_public_id, storage_base_path = result
 
         # Skip episodes if update_info_only is True
         if self.update_info_only:
@@ -1351,7 +1038,7 @@ class NadeshikoUploader:
 
             try:
                 ep_ok = self.upload_episode(
-                    media_id,
+                    media_public_id,
                     episode_folder,
                     storage_base_path=storage_base_path,
                     nsfw_lookup=nsfw_lookup,
@@ -1397,7 +1084,7 @@ class NadeshikoUploader:
 
     def upload_episode(
         self,
-        media_id: str,
+        media_public_id: str,
         episode_folder: Path,
         max_r2_workers: int = 30,
         storage_base_path: str = "",
@@ -1406,7 +1093,7 @@ class NadeshikoUploader:
         """Upload a single episode using two-phase processing.
 
         Phase 1: Upload all files to R2 with high concurrency.
-        Phase 2: Create all segments via batch API.
+        Phase 2: Create segments via individual API calls.
         """
         # Reset per-episode stats
         self.stats = {
@@ -1427,7 +1114,7 @@ class NadeshikoUploader:
         if not episode_data:
             return False
 
-        if not self._get_or_create_episode(media_id, episode_data):
+        if not self._get_or_create_episode(media_public_id, episode_data):
             return False
 
         total = len(episode_data.segments)
@@ -1492,8 +1179,8 @@ class NadeshikoUploader:
         elif self.upload_r2 and self.dry_run:
             console.print("[cyan]Phase 1: [DRY RUN] Would upload files to R2[/cyan]")
 
-        # --- Phase 2: Batch API segment creation ---
-        console.print(f"[cyan]Phase 2: Creating {total} segments via batch API...[/cyan]")
+        # --- Phase 2: Segment API calls ---
+        console.print(f"[cyan]Phase 2: Creating {total} segments...[/cyan]")
 
         # Filter and build requests
         api_requests: list[SegmentCreateRequest] = []
@@ -1527,7 +1214,7 @@ class NadeshikoUploader:
             self.stats["uploaded"] = valid_count
         elif api_requests:
             created, duped, failed = self._create_segments_batch(
-                media_id,
+                media_public_id,
                 episode_number,
                 api_requests,
             )

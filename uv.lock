@@ -601,7 +601,7 @@ requires-dist = [
     { name = "huggingface-hub", specifier = ">=0.20.0" },
     { name = "jaconvv2", specifier = ">=0.4" },
     { name = "langdetect", specifier = ">=1.0.9" },
-    { name = "nadeshiko-internal-sdk", specifier = ">=1.5.0.dev1773067636" },
+    { name = "nadeshiko-internal-sdk", path = "../nadeshiko-sdk-python/build/internal/dist/nadeshiko_internal_sdk-2.1.0.dev1776427100-py3-none-any.whl" },
     { name = "numpy", specifier = ">=1.24.0" },
     { name = "nvidia-cublas-cu12" },
     { name = "nvidia-cuda-nvrtc-cu12" },
@@ -630,16 +630,22 @@ dev = [
 
 [[package]]
 name = "nadeshiko-internal-sdk"
-version = "1.5.0.dev1773067636"
-source = { registry = "https://pypi.org/simple" }
+version = "2.1.0.dev1776427100"
+source = { path = "../nadeshiko-sdk-python/build/internal/dist/nadeshiko_internal_sdk-2.1.0.dev1776427100-py3-none-any.whl" }
 dependencies = [
     { name = "attrs" },
     { name = "httpx" },
     { name = "python-dateutil" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/80/e2/d67e891ee89ed44176f2b290de3515b8fe8e2e6719a00b72ee6019fcb2b2/nadeshiko_internal_sdk-1.5.0.dev1773067636.tar.gz", hash = "sha256:619ff3ba53ad99bd1fef58fed111144015a15c05aa7e83b79e8b655ac4bad41d", size = 101332 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/03/03/a32bd459560f3266778f9bdb65c08f2ec8040e4966fa4b52752f33c31d44/nadeshiko_internal_sdk-1.5.0.dev1773067636-py3-none-any.whl", hash = "sha256:ad31951616bcd82abeb3fc7f2e67466e8c65bf640a3dd9a6869f42449005dc13", size = 351266 },
+    { filename = "nadeshiko_internal_sdk-2.1.0.dev1776427100-py3-none-any.whl", hash = "sha256:c8b4ff440e4ae7be6c0ac0a05e04acc88c62e72d7765d0ed7f1cd7f4a860128e" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "attrs", specifier = ">=23.0" },
+    { name = "httpx", specifier = ">=0.27.0" },
+    { name = "python-dateutil", specifier = ">=2.8.0" },
 ]
 
 [[package]]
@@ -697,7 +703,11 @@ source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "nvidia-cuda-nvrtc-cu12" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/04/1b/54f7595727516ba21b59dd8607ade5e6dda973462264be9af74b5ee0dee3/nvidia_cublas_cu12-12.9.2.10.tar.gz", hash = "sha256:7caf6512c921f956e5e609378e8332be502d7e5108deaade5c7ecf6b8042e842", size = 15431 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/f7/a2/c96163a0fff1839c0c9548bbdeae7b853b867009e33b9b9264adc238b1cf/nvidia_cublas_cu12-12.9.2.10-py3-none-manylinux_2_27_aarch64.whl", hash = "sha256:5572131a59c3eebeeb1c4c8144f772d49372c20124916e072a0e3fc30df421d5", size = 575012079 },
+    { url = "https://files.pythonhosted.org/packages/cb/c0/0a517bfe63ccd3b92eb254d264e28fca3c7cab75d07daea315250fb1bf73/nvidia_cublas_cu12-12.9.2.10-py3-none-manylinux_2_27_x86_64.whl", hash = "sha256:e4f53a8ca8c5d6e8c492d0d0a3d565ecb59a751b19cfdaa4f6da0ab2104c1702", size = 581240110 },
+    { url = "https://files.pythonhosted.org/packages/20/e2/fc9a0e985249d873150276d5afb02e39a66817fedbf1a385724393e505ed/nvidia_cublas_cu12-12.9.2.10-py3-none-win_amd64.whl", hash = "sha256:623f43027d40d44ceadf0043f002bd25cf353e8f13ce90b9a87057019f560661", size = 553162896 },
+]
 
 [[package]]
 name = "nvidia-cuda-nvrtc-cu12"

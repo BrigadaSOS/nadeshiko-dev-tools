@@ -18,25 +18,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-from nadeshiko_internal import Nadeshiko  # noqa: E402
-from nadeshiko_internal.api.media import (  # noqa: E402
-    delete_episode,
-    delete_media,
-    get_episode,
-    list_media,
-)
-from nadeshiko_internal.models import (  # noqa: E402
-    Error400,
-    Error401,
-    Error403,
-    Error404,
-    Error409,
-    Error429,
-    Error500,
-)
-
-API_ERROR_TYPES = (Error400, Error401, Error403, Error404, Error409, Error429, Error500)
-
+from nadeshiko_internal import Nadeshiko, NadeshikoError  # noqa: E402
 
 # --- API ---
 
@@ -79,30 +61,27 @@ def get_api_client(target: str) -> Nadeshiko:
         print(f"Error: No API key configured for target '{target}'", file=sys.stderr)
         sys.exit(1)
 
-    return Nadeshiko(token=cfg["api_key"], base_url=cfg["base_url"])
+    return Nadeshiko(
+        api_key=cfg["api_key"],
+        base_url=cfg["base_url"],
+        headers={"User-Agent": "NadeshikoDevTools/1.0"},
+    )
 
 
 def find_media(client: Nadeshiko, media_id: str):
     """Find media by external ID (AniList ID) in the API."""
     from nadeshiko_internal.types import UNSET
 
-    result = list_media.sync(client=client)
-    if isinstance(result, API_ERROR_TYPES):
-        print(f"  Error listing media: {result}", file=sys.stderr)
-        return None
-
-    if not result:
-        return None
-
-    media_items = getattr(result, "media", []) or []
-    for media in media_items:
-        ext_ids = getattr(media, "external_ids", UNSET)
-        if ext_ids is UNSET or ext_ids is None:
-            continue
-        anilist_val = getattr(ext_ids, "anilist", None)
-        if str(anilist_val) == str(media_id):
-            return media
-
+    try:
+        for media in client.iter_list_media():
+            ext_ids = getattr(media, "external_ids", UNSET)
+            if ext_ids is UNSET or ext_ids is None:
+                continue
+            anilist_val = getattr(ext_ids, "anilist", None)
+            if str(anilist_val) == str(media_id):
+                return media
+    except NadeshikoError as e:
+        print(f"  Error listing media: {e.detail}", file=sys.stderr)
     return None
 
 
@@ -115,21 +94,21 @@ def remove_from_api(client: Nadeshiko, media_id: str, dry_run: bool) -> bool:
         print(f"  Media {media_id} not found in API (may already be deleted)")
         return True
 
-    internal_id = getattr(media, "public_id", None) or getattr(media, "id", None)
+    public_id = getattr(media, "public_id", media_id)
     title = getattr(media, "title", media_id)
-    print(f"  Found: {title} (ID: {internal_id})")
+    print(f"  Found: {title} (ID: {public_id})")
 
     episodes_to_delete = []
-    for ep_num in range(1, 100):
-        result = get_episode.sync(media_id=internal_id, episode_number=ep_num, client=client)
-        if isinstance(result, Error404):
-            break
-        if isinstance(result, API_ERROR_TYPES):
-            continue
-        if result:
-            seg_count = getattr(result, "segment_count", "?")
+    try:
+        for ep in client.iter_list_episodes(media_public_id=public_id):
+            ep_num = getattr(ep, "episode_number", None)
+            if ep_num is None:
+                continue
+            seg_count = getattr(ep, "segment_count", "?")
             episodes_to_delete.append(ep_num)
             print(f"  Episode {ep_num}: {seg_count} segments")
+    except NadeshikoError as e:
+        print(f"  Error listing episodes: {e.detail}", file=sys.stderr)
 
     if not episodes_to_delete:
         print("  No episodes found")
@@ -139,19 +118,19 @@ def remove_from_api(client: Nadeshiko, media_id: str, dry_run: bool) -> bool:
         return True
 
     for ep_num in episodes_to_delete:
-        result = delete_episode.sync(media_id=internal_id, episode_number=ep_num, client=client)
-        if isinstance(result, API_ERROR_TYPES):
-            print(f"  Error deleting episode {ep_num}: {result}")
-        else:
+        try:
+            client.delete_episode(media_public_id=public_id, episode_number=ep_num)
             print(f"  Deleted episode {ep_num}")
+        except NadeshikoError as e:
+            print(f"  Error deleting episode {ep_num}: {e.detail}")
 
-    result = delete_media.sync(id=internal_id, client=client)
-    if isinstance(result, API_ERROR_TYPES):
-        print(f"  Error deleting media: {result}")
+    try:
+        client.delete_media(media_public_id=public_id)
+        print(f"  Deleted media record {public_id}")
+        return True
+    except NadeshikoError as e:
+        print(f"  Error deleting media: {e.detail}")
         return False
-
-    print(f"  Deleted media record {internal_id}")
-    return True
 
 
 # --- R2 ---
