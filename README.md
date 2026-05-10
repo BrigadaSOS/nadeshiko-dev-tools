@@ -35,11 +35,33 @@ uv run notify-discord 21804
 
 Each processing command (1-3) runs QC on its output and exits non-zero on failure.
 
+## YouTube Pipeline
+
+```bash
+# 1. Fetch subtitles (single video or whole channel)
+uv run fetch-youtube https://www.youtube.com/@ChannelHandle --out ./output --browser chrome
+
+# 2. Build segment data (writes _data.json per video)
+uv run process-youtube ./output/UCxxxxxxxxxxxxxxx
+
+# 3. Tokenize (same command as the MKV pipeline)
+uv run tokenize-media ./output/UCxxxxxxxxxxxxxxx
+
+# 4. Upload (same uploader as the MKV pipeline)
+uv run assets-uploader ./output/UCxxxxxxxxxxxxxxx --target dev --storage r2 --upload-r2 --apply
+```
+
+`--browser` is optional and exports cookies to bypass YouTube's bot detection.
+Set `TOKEN` in `.env` for DeepL; without it, JA lines lacking an EN/ES cue are
+dropped to `ignored_segments`.
+
 ## CLI Reference
 
 | Command | Purpose |
 |---------|---------|
 | `process-media` | Extract segments from MKV files |
+| `fetch-youtube` | Download YouTube subtitles + DeepL-translate missing langs |
+| `process-youtube` | Convert downloaded YouTube subs into segment data |
 | `tokenize-media` | Batch Sudachi + UniDic tokenization |
 | `tag-media` | Batch NSFW tagger (GPU) |
 | `quality-check` | Standalone QC (ad-hoc) |

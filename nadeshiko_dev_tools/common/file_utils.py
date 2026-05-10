@@ -8,6 +8,14 @@ import requests
 logger = logging.getLogger(__name__)
 
 
+def atomic_write_json(path: str, data) -> None:
+    """Write JSON via a sibling .tmp + os.replace so readers never see a half-written file."""
+    tmp_path = path + ".tmp"
+    with open(tmp_path, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+    os.replace(tmp_path, path)
+
+
 def download_and_save_image(url: str, output_dir: str, prefix: str) -> str:
     image_data = requests.get(url).content
     temp_filename = f"{prefix}_temp{os.path.splitext(url)[1]}"

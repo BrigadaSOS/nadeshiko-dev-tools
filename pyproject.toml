@@ -39,6 +39,8 @@ dependencies = [
     "sudachidict-full>=20240109",
     "fugashi>=1.3.0",
     "unidic>=1.1.0",
+    "yt-dlp>=2024.1.0",
+    "curl-cffi>=0.5.10,<0.15.0",
 ]
 
 [project.scripts]
@@ -50,6 +52,8 @@ assets-uploader = "nadeshiko_dev_tools.assets_uploader.__main__:main"
 delete-media = "nadeshiko_dev_tools.delete_media:main"
 validate-r2 = "nadeshiko_dev_tools.validate_r2:main"
 notify-discord = "nadeshiko_dev_tools.notify_discord:main"
+fetch-youtube = "nadeshiko_dev_tools.youtube_extractor.fetch_cli:main"
+process-youtube = "nadeshiko_dev_tools.youtube_extractor.process_cli:main"
 
 [dependency-groups]
 dev = [
@@ -72,4 +76,4 @@ quote-style = "double"
 indent-style = "space"
 
 [tool.uv.sources]
-nadeshiko-internal-sdk = { path = "../nadeshiko-sdk-python/build/internal/dist/nadeshiko_internal_sdk-2.1.0.dev1776427100-py3-none-any.whl" }
+nadeshiko-internal-sdk = { path = "../nadeshiko-sdk-python/build/internal/dist/nadeshiko_internal_sdk-2.1.0.dev1777700724-py3-none-any.whl" }
