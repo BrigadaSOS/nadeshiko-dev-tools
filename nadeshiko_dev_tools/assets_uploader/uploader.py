@@ -127,6 +127,30 @@ def _find_image_file(folder: Path, prefix: str) -> Path | None:
     return None
 
 
+def _print_api_error_details(e: "NadeshikoError") -> None:
+    """Surface the diagnostic fields an API error carries beyond `detail`.
+
+    For server 5xx responses `detail` is a generic message; the `trace_id`
+    (problem `instance`) is what locates the real stack trace in backend logs.
+    """
+    parts = []
+    if getattr(e, "status", None):
+        parts.append(f"status={e.status}")
+    if getattr(e, "code", None):
+        parts.append(f"code={e.code}")
+    if getattr(e, "trace_id", None):
+        parts.append(f"trace_id={e.trace_id}")
+    if parts:
+        console.print(f"[yellow]  {'  '.join(parts)}[/yellow]")
+    if getattr(e, "errors", None):
+        console.print(f"[yellow]  validation: {e.errors}[/yellow]")
+    response = getattr(e, "response", None)
+    if response is not None and getattr(e, "status", 0) >= 500:
+        body = response.text
+        if body and body.strip() not in ("", e.detail):
+            console.print(f"[dim]  response body: {body[:1000]}[/dim]")
+
+
 def _fresh_stats() -> dict:
     """A zeroed per-episode upload stats dict."""
     return {
@@ -989,6 +1013,7 @@ class NadeshikoUploader:
             return self.api_client.create_media(body=request)
         except NadeshikoError as e:
             console.print(f"\n[red]Failed to create media: {e.detail}[/red]")
+            _print_api_error_details(e)
             return None
 
     def _get_or_create_episode(
