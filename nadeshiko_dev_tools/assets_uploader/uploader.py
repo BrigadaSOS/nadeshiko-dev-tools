@@ -31,18 +31,14 @@ console = Console()
 # Nadeshiko SDK imports — must come after load_dotenv()
 from nadeshiko_internal import Nadeshiko, NadeshikoError  # noqa: E402
 from nadeshiko_internal.models import (  # noqa: E402
-    Category,
     ContentRating,
     EpisodeCreateRequest,
     ExternalId,
     MediaCreateRequest,
-    MediaCreateRequestStorage,
     MediaListResponse,
     MediaUpdateRequest,
-    MediaUpdateRequestStorage,
     SegmentBatchCreateRequest,
     SegmentCreateRequest,
-    SegmentCreateRequestStorage,
     SegmentCreateRequestTextEn,
     SegmentCreateRequestTextEs,
     SegmentCreateRequestTextJa,
@@ -103,6 +99,25 @@ def _parse_iso_date(date_str: str | None):
         return UNSET
 
 
+def _parse_iso_datetime(date_str: str | None):
+    """Parse an ISO date/datetime string to a tz-aware datetime, or return UNSET.
+
+    A bare date (YYYY-MM-DD) is treated as midnight UTC.
+    """
+    if not date_str:
+        return UNSET
+    try:
+        normalized = date_str.strip()
+        if normalized.endswith("Z"):
+            normalized = f"{normalized[:-1]}+00:00"
+        parsed = dt.datetime.fromisoformat(normalized)
+        if parsed.tzinfo is None:
+            parsed = parsed.replace(tzinfo=dt.UTC)
+        return parsed
+    except (ValueError, TypeError):
+        return UNSET
+
+
 def _find_image_file(folder: Path, prefix: str) -> Path | None:
     """Find an image file like cover.jpg, cover.png, etc. in a folder."""
     for ext in IMAGE_EXTENSIONS:
@@ -110,6 +125,21 @@ def _find_image_file(folder: Path, prefix: str) -> Path | None:
         if path.exists():
             return path
     return None
+
+
+def _fresh_stats() -> dict:
+    """A zeroed per-episode upload stats dict."""
+    return {
+        "total": 0,
+        "uploaded": 0,
+        "duplicated": 0,
+        "skipped_no_hash": 0,
+        "skipped_no_translations": 0,
+        "skipped_too_long": 0,
+        "skipped_constraint": 0,
+        "failed": 0,
+        "errors_by_status": {},
+    }
 
 
 @dataclass
@@ -264,6 +294,9 @@ class EpisodeData:
     total_segments: int
     segments: list[SegmentData]
     ignored_segments: list[dict]
+    external_video_id: str | None = None
+    title: str | None = None
+    published_at: str | None = None
 
 
 @dataclass
@@ -287,9 +320,170 @@ class MediaInfo:
     studio: str | None = None
     season_name: str | None = None
     season_year: int | None = None
-    media_source: str = "anilist"  # "anilist" or "tmdb"
-    category: str = "ANIME"  # "ANIME" or "JDRAMA"
+    media_source: str = "anilist"  # "anilist", "tmdb" or "youtube"
+    category: str = "ANIME"  # "ANIME", "JDRAMA" or "YOUTUBE"
     tmdb_season: int | None = None  # TMDB season number (1-based) for multi-season shows
+
+    @property
+    def source(self) -> "MediaSource":
+        return get_media_source(self.media_source)
+
+
+class MediaSource:
+    """Per-source behaviour for the uploader: identity, storage layout, episode
+    numbering, and the source-specific media-create fields.
+
+    One concrete subclass per ``media_source`` keeps the differences between
+    AniList anime, TMDB drama and YouTube channels in a single place instead of
+    scattered ``if is_youtube`` checks across the uploader.
+    """
+
+    key: str  # the ExternalId field this source populates
+    requires_season = True  # whether create must supply a season (anime/drama)
+    episode_is_surrogate = False  # whether episode numbers are surrogates reconciled by the backend
+
+    def external_ids(self, info: "MediaInfo") -> ExternalId:
+        raise NotImplementedError
+
+    def storage_base_path(self, info: "MediaInfo") -> str:
+        raise NotImplementedError
+
+    def episode_number(self, folder: Path, surrogate: int) -> int | None:
+        """Episode number for a folder, or None if it isn't an episode folder.
+
+        Anime/drama folders are named by their episode number; the default
+        parses it. YouTube overrides this to hand out sequential surrogates.
+        """
+        try:
+            return int(folder.name)
+        except ValueError:
+            return None
+
+    def create_descriptors(self, info: "MediaInfo") -> dict:
+        """Source-specific MediaCreateRequest fields (airing/genres/category/season).
+
+        Raises ValueError with a user-facing message when a required field
+        cannot be determined.
+        """
+        raise NotImplementedError
+
+    def summary_identity(self, data: dict) -> tuple[object, str | None]:
+        """(media_id, title) read straight from _info.json for the dry-run summary."""
+        return data.get("anilist_id", data.get("id")), data.get("romaji_name")
+
+
+class _CatalogSource(MediaSource):
+    """Shared behaviour for media from external catalogs (AniList, TMDB) — anime,
+    drama or film. They carry release dates and the season metadata the API
+    requires, and their episode numbers are the episode's identity. Contrast
+    YouTube, whose channel videos use surrogate numbers."""
+
+    def create_descriptors(self, info: "MediaInfo") -> dict:
+        season_name = info.season_name
+        season_year = info.season_year
+        # Derive season from start_date when the metadata omits it.
+        if not season_name and info.start_date:
+            month = int(info.start_date.split("-")[1])
+            season_name = (
+                "WINTER"
+                if month <= 3
+                else "SPRING"
+                if month <= 6
+                else "SUMMER"
+                if month <= 9
+                else "FALL"
+            )
+        if season_year is None and info.start_date:
+            season_year = int(info.start_date.split("-")[0])
+
+        if not season_name:
+            raise ValueError("season_name could not be determined (no season or start_date)")
+        if season_year is None:
+            raise ValueError("season_year could not be determined (no season or start_date)")
+
+        return {
+            "airing_format": info.airing_format,
+            "airing_status": info.airing_status,
+            "genres": info.genres,
+            "category": "JDRAMA" if info.category == "JDRAMA" else "ANIME",
+            "season_name": season_name,
+            "season_year": season_year,
+        }
+
+
+class AnilistSource(_CatalogSource):
+    key = "anilist"
+
+    def external_ids(self, info: "MediaInfo") -> ExternalId:
+        return ExternalId(
+            anilist=str(info.anilist_id), imdb=None, tvdb=None, tmdb=None, youtube=None
+        )
+
+    def storage_base_path(self, info: "MediaInfo") -> str:
+        return f"media/{info.anilist_id}"
+
+
+class TmdbSource(_CatalogSource):
+    key = "tmdb"
+
+    def external_ids(self, info: "MediaInfo") -> ExternalId:
+        # Each TMDB season is a distinct media: id "46198_1", "46198_2", ...
+        id_str = str(info.anilist_id)
+        if info.tmdb_season is not None:
+            id_str = f"{id_str}_{info.tmdb_season}"
+        return ExternalId(anilist=None, imdb=None, tvdb=None, tmdb=id_str, youtube=None)
+
+    def storage_base_path(self, info: "MediaInfo") -> str:
+        base = f"media/mv/{info.anilist_id}"
+        if info.tmdb_season is not None:
+            base = f"{base}_{info.tmdb_season}"
+        return base
+
+
+class YoutubeSource(MediaSource):
+    key = "youtube"
+    requires_season = False
+    episode_is_surrogate = True
+
+    def external_ids(self, info: "MediaInfo") -> ExternalId:
+        return ExternalId(
+            anilist=None, imdb=None, tvdb=None, tmdb=None, youtube=str(info.anilist_id)
+        )
+
+    def storage_base_path(self, info: "MediaInfo") -> str:
+        return f"media/yt/{info.anilist_id}"
+
+    def episode_number(self, folder: Path, surrogate: int) -> int | None:
+        # Folders are video IDs; the backend reconciles the surrogate via external_video_id.
+        return surrogate
+
+    def create_descriptors(self, info: "MediaInfo") -> dict:
+        # The API requires these anime/drama fields, so YouTube supplies dedicated
+        # enum members: airing_format/category YOUTUBE, season_name NONE. season_year
+        # has no channel-level source, so it carries the ingestion year.
+        return {
+            "airing_format": "YOUTUBE",
+            "airing_status": "FINISHED",
+            "genres": ["STREAMING"],
+            "category": "YOUTUBE",
+            "season_name": "NONE",
+            "season_year": dt.date.today().year,
+        }
+
+    def summary_identity(self, data: dict) -> tuple[object, str | None]:
+        return data.get("channel_id"), data.get("name")
+
+
+MEDIA_SOURCES: dict[str, MediaSource] = {
+    "anilist": AnilistSource(),
+    "tmdb": TmdbSource(),
+    "youtube": YoutubeSource(),
+}
+
+
+def get_media_source(media_source: str) -> MediaSource:
+    """Return the strategy for a media_source string (defaults to AniList anime)."""
+    return MEDIA_SOURCES.get(media_source, MEDIA_SOURCES["anilist"])
 
 
 class R2Uploader:
@@ -310,20 +504,25 @@ class R2Uploader:
             config=BotoConfig(max_pool_connections=50),
         )
 
-    def get_r2_key(self, storage_base_path: str, episode_number: int, filename: str) -> str:
-        """Generate R2 object key for a file."""
-        return f"{storage_base_path}/{episode_number}/{filename}"
+    def get_r2_key(self, storage_base_path: str, folder: str | int, filename: str) -> str:
+        """Generate R2 object key for a file.
+
+        `folder` is the per-item storage folder: the episode number for anime/
+        drama, or the YouTube video ID for YouTube channels (matching the
+        backend's segment URL builder).
+        """
+        return f"{storage_base_path}/{folder}/{filename}"
 
     def upload_file(
         self,
         filepath: Path,
         storage_base_path: str,
-        episode_number: int,
+        folder: str | int,
         progress: Progress | None = None,
         task_id: TaskID | None = None,
     ) -> str | None:
         """Upload a file to R2 and return its public URL."""
-        key = self.get_r2_key(storage_base_path, episode_number, filepath.name)
+        key = self.get_r2_key(storage_base_path, folder, filepath.name)
 
         try:
             callback = None
@@ -344,18 +543,18 @@ class R2Uploader:
             console.print(f"[red]Error uploading {filepath.name}: {e}[/red]")
             return None
 
-    def file_exists(self, storage_base_path: str, episode_number: int, filename: str) -> bool:
+    def file_exists(self, storage_base_path: str, folder: str | int, filename: str) -> bool:
         """Check if a file already exists in R2."""
-        key = self.get_r2_key(storage_base_path, episode_number, filename)
+        key = self.get_r2_key(storage_base_path, folder, filename)
         try:
             self.s3_client.head_object(Bucket=self.bucket, Key=key)
             return True
         except ClientError:
             return False
 
-    def list_existing_files(self, storage_base_path: str, episode_number: int) -> set[str]:
-        """List all existing filenames in an episode's R2 prefix in a single call."""
-        prefix = f"{storage_base_path}/{episode_number}/"
+    def list_existing_files(self, storage_base_path: str, folder: str | int) -> set[str]:
+        """List all existing filenames in an item's R2 prefix in a single call."""
+        prefix = f"{storage_base_path}/{folder}/"
         existing: set[str] = set()
         try:
             paginator = self.s3_client.get_paginator("list_objects_v2")
@@ -428,17 +627,7 @@ class NadeshikoUploader:
             headers={"User-Agent": "NadeshikoDevTools/1.0"},
         )
         self._console_lock = threading.Lock()
-        self.stats = {
-            "total": 0,
-            "uploaded": 0,
-            "duplicated": 0,
-            "skipped_no_hash": 0,
-            "skipped_no_translations": 0,
-            "skipped_too_long": 0,
-            "skipped_constraint": 0,
-            "failed": 0,
-            "errors_by_status": {},  # Track errors by HTTP status code
-        }
+        self.stats = _fresh_stats()
 
         if dry_run:
             console.print(
@@ -474,38 +663,10 @@ class NadeshikoUploader:
         valid = {"EXPLICIT", "QUESTIONABLE", "SAFE", "SUGGESTIVE"}
         return rating if rating in valid else "SAFE"
 
-    @staticmethod
-    def _build_external_ids(media_info: MediaInfo) -> ExternalId:
-        """Build ExternalId from media_info, keyed by media_source.
-
-        For TMDB multi-season shows, appends ``_<season>`` so each season
-        is treated as a distinct media (e.g. ``"46198_1"``, ``"46198_2"``).
-        """
-        id_str = str(media_info.anilist_id)
-        if media_info.media_source == "tmdb":
-            if media_info.tmdb_season is not None:
-                id_str = f"{id_str}_{media_info.tmdb_season}"
-            return ExternalId(anilist=None, imdb=None, tvdb=None, tmdb=id_str)
-        return ExternalId(anilist=id_str, imdb=None, tvdb=None, tmdb=None)
-
     def _print(self, *args, **kwargs) -> None:
         """Thread-safe console print."""
         with self._console_lock:
             console.print(*args, **kwargs)
-
-    @staticmethod
-    def _build_storage_base_path(media_info: MediaInfo) -> str:
-        """Build R2 storage base path from media source and ID.
-
-        Anime (anilist): media/{anilist_id}
-        J-drama (tmdb):  media/mv/{tmdb_id}  or  media/mv/{tmdb_id}_{season}
-        """
-        if media_info.media_source == "tmdb":
-            base = f"media/mv/{media_info.anilist_id}"
-            if media_info.tmdb_season is not None:
-                base = f"{base}_{media_info.tmdb_season}"
-            return base
-        return f"media/{media_info.anilist_id}"
 
     def _upload_media_images(self, media_folder: Path, storage_base_path: str) -> None:
         """Upload cover and banner images to R2 if they exist locally."""
@@ -538,11 +699,7 @@ class NadeshikoUploader:
 
         console.print(f"[cyan]Updating media info: {existing_media.public_id}[/cyan]")
 
-        storage = (
-            "R2"
-            if self.storage_target == "r2"
-            else "LOCAL"
-        )
+        storage = "R2" if self.storage_target == "r2" else "LOCAL"
 
         self._upload_media_images(media_folder, storage_base_path)
 
@@ -552,7 +709,7 @@ class NadeshikoUploader:
         # Build update request with only fields that are set
         request = MediaUpdateRequest()
         request.storage = storage
-        request.external_ids = self._build_external_ids(media_info)
+        request.external_ids = media_info.source.external_ids(media_info)
         if start_date is not UNSET:
             request.start_date = start_date
         if end_date is not UNSET:
@@ -571,9 +728,7 @@ class NadeshikoUploader:
             request.storage_base_path = storage_base_path
 
         try:
-            self.api_client.update_media(
-                media_public_id=existing_media.public_id, body=request
-            )
+            self.api_client.update_media(media_public_id=existing_media.public_id, body=request)
             console.print(f"[green]Updated media: {existing_media.public_id}[/green]")
         except NadeshikoError as e:
             console.print(f"\n[red]Failed to update media: {e.detail}[/red]")
@@ -588,6 +743,9 @@ class NadeshikoUploader:
 
         with open(info_path) as f:
             data = json.load(f)
+
+        if data.get("media_source") == "youtube":
+            return self._load_youtube_media_info(data)
 
         return MediaInfo(
             anilist_id=data.get("anilist_id", data.get("id")),
@@ -610,6 +768,33 @@ class NadeshikoUploader:
             media_source=data.get("media_source", "anilist"),
             category=data.get("category", "ANIME"),
             tmdb_season=data.get("tmdb_season"),
+        )
+
+    @staticmethod
+    def _load_youtube_media_info(data: dict) -> MediaInfo:
+        """Map a YouTube channel _info.json to MediaInfo.
+
+        The channel name is the only title. The anime/drama descriptive fields
+        the API requires (airing_format, season, ...) are supplied by
+        ``YoutubeSource.create_descriptors`` at create time, so they're left
+        blank here. Cover/banner are local files uploaded from the channel folder.
+        """
+        name = data.get("name") or data.get("channel_id", "")
+        return MediaInfo(
+            anilist_id=data["channel_id"],
+            japanese_name=name,
+            english_name=name,
+            romaji_name=name,
+            airing_format="",
+            airing_status="",
+            genres=[],
+            version=data.get("version", "6"),
+            hash_salt=data.get("hash_salt", ""),
+            cover_url=None,
+            banner_url=None,
+            start_date=None,
+            end_date=None,
+            media_source="youtube",
         )
 
     @staticmethod
@@ -698,6 +883,9 @@ class NadeshikoUploader:
             total_segments=metadata.get("total_segments", 0),
             segments=segments,
             ignored_segments=data.get("ignored_segments", []),
+            external_video_id=metadata.get("video_id"),
+            title=metadata.get("title"),
+            published_at=metadata.get("published_at"),
         )
 
     def _get_or_create_media(
@@ -709,21 +897,22 @@ class NadeshikoUploader:
 
         Returns (media_public_id, storage_base_path) or None on failure.
         """
+        source = media_info.source
+        storage_base_path = source.storage_base_path(media_info)
+
         if self.dry_run or not self.api_client:
             console.print(
                 f"[cyan][DRY RUN] Would get/create media: {media_info.romaji_name}[/cyan]"
             )
-            storage_base_path = self._build_storage_base_path(media_info)
             return str(media_info.anilist_id), storage_base_path
 
         existing_media = None
-        source_key = media_info.media_source  # "anilist" or "tmdb"
         try:
             for media in self.api_client.iter_list_media():
                 ext_ids = getattr(media, "external_ids", UNSET)
                 if ext_ids is UNSET or ext_ids is None:
                     continue
-                ext_id_val = getattr(ext_ids, source_key, None)
+                ext_id_val = getattr(ext_ids, source.key, None)
                 if str(ext_id_val) == str(media_info.anilist_id):
                     console.print(f"[green]Found existing media: {media.public_id}[/green]")
                     existing_media = media
@@ -738,8 +927,6 @@ class NadeshikoUploader:
                 console.print(f"\n[red]Failed to list media: {e.detail}[/red]")
             return None
 
-        storage_base_path = self._build_storage_base_path(media_info)
-
         # If media exists, always sync media info (including characters).
         # `--update-info` only controls whether episodes/segments are skipped later.
         if existing_media:
@@ -752,11 +939,7 @@ class NadeshikoUploader:
             return media_public_id or existing_media.public_id, storage_base_path
 
         # Determine storage backend
-        storage = (
-            "R2"
-            if self.storage_target == "r2"
-            else "LOCAL"
-        )
+        storage = "R2" if self.storage_target == "r2" else "LOCAL"
 
         if not _find_image_file(media_folder, "cover"):
             console.print(
@@ -770,60 +953,27 @@ class NadeshikoUploader:
             start_date = dt.date(1970, 1, 1)
         end_date = _parse_iso_date(media_info.end_date)
 
-        # Derive season from start_date if missing
-        if not media_info.season_name and media_info.start_date:
-            month = int(media_info.start_date.split("-")[1])
-            media_info.season_name = (
-                "WINTER"
-                if month <= 3
-                else "SPRING"
-                if month <= 6
-                else "SUMMER"
-                if month <= 9
-                else "FALL"
-            )
-        if media_info.season_year is None and media_info.start_date:
-            media_info.season_year = int(media_info.start_date.split("-")[0])
-
-        # Validate required fields
-        if not media_info.season_name:
-            console.print(
-                "[red]Error: season_name could not be determined"
-                " (no season or start_date in _info.json)[/red]"
-            )
-            return None
-        if media_info.season_year is None:
-            console.print(
-                "[red]Error: season_year could not be determined"
-                " (no season or start_date in _info.json)[/red]"
-            )
+        try:
+            descriptors = source.create_descriptors(media_info)
+        except ValueError as e:
+            console.print(f"[red]Error: {e}[/red]")
             return None
 
         self._upload_media_images(media_folder, storage_base_path)
 
-        # Create new media
         request = MediaCreateRequest(
             name_ja=media_info.japanese_name or media_info.romaji_name,
             name_romaji=media_info.romaji_name,
             name_en=media_info.english_name or media_info.romaji_name,
-            airing_format=media_info.airing_format,
-            airing_status=media_info.airing_status,
-            genres=media_info.genres,
-            category=(
-                "JDRAMA"
-                if media_info.category == "JDRAMA"
-                else "ANIME"
-            ),
             version=media_info.version,
             studio=media_info.studio if media_info.studio else UNSET,
-            season_name=media_info.season_name,
-            season_year=media_info.season_year,
             hash_salt=media_info.hash_salt,
             storage=storage,
             start_date=start_date,
             end_date=end_date,
-            external_ids=self._build_external_ids(media_info),
+            external_ids=source.external_ids(media_info),
             storage_base_path=storage_base_path,
+            **descriptors,
         )
 
         create_result = self._do_create_media(request)
@@ -841,54 +991,55 @@ class NadeshikoUploader:
             console.print(f"\n[red]Failed to create media: {e.detail}[/red]")
             return None
 
-    def _get_or_create_episode(self, media_public_id: str, episode_data: EpisodeData) -> bool:
-        """Get existing episode or create new one."""
+    def _get_or_create_episode(
+        self, media_public_id: str, episode_data: EpisodeData, source: MediaSource
+    ) -> int | None:
+        """Get or create the episode; return its canonical episode number (None on failure)."""
         if self.dry_run or not self.api_client:
             console.print(
                 f"[cyan][DRY RUN] Would get/create episode: E{episode_data.number}[/cyan]"
             )
-            return True
+            return episode_data.number
 
-        try:
-            self.api_client.get_episode(
-                media_public_id=media_public_id, episode_number=episode_data.number
-            )
-            console.print(f"[green]Found existing episode: E{episode_data.number}[/green]")
-            return True
-        except NadeshikoError as e:
-            if e.status == 401:
-                console.print(
-                    "[red]Authentication failed while checking episodes. "
-                    "Check your API key for the selected target (local/dev/prod).[/red]"
+        if not source.episode_is_surrogate:
+            try:
+                self.api_client.get_episode(
+                    media_public_id=media_public_id, episode_number=episode_data.number
                 )
-                return False
-            if e.status != 404:
-                console.print(
-                    f"[red]Failed to check episode E{episode_data.number}: {e.detail}[/red]"
-                )
-                return False
+                console.print(f"[green]Found existing episode: E{episode_data.number}[/green]")
+                return episode_data.number
+            except NadeshikoError as e:
+                if e.status == 401:
+                    console.print(
+                        "[red]Authentication failed while checking episodes. "
+                        "Check your API key for the selected target (local/dev/prod).[/red]"
+                    )
+                    return None
+                if e.status != 404:
+                    console.print(
+                        f"[red]Failed to check episode E{episode_data.number}: {e.detail}[/red]"
+                    )
+                    return None
 
-        # Create new episode
-        request = EpisodeCreateRequest(episode_number=episode_data.number)
+        request = EpisodeCreateRequest(
+            episode_number=episode_data.number,
+            external_video_id=episode_data.external_video_id or UNSET,
+            title_ja=episode_data.title or UNSET,
+            aired_at=_parse_iso_datetime(episode_data.published_at),
+        )
         try:
-            self.api_client.create_episode(
-                media_public_id=media_public_id, body=request
-            )
-            console.print(f"[green]Created new episode: E{episode_data.number}[/green]")
-            return True
+            result = self.api_client.create_episode(media_public_id=media_public_id, body=request)
+            canonical = getattr(result, "episode_number", episode_data.number)
+            label = episode_data.external_video_id or f"E{canonical}"
+            console.print(f"[green]Created/linked episode: {label} (E{canonical})[/green]")
+            return canonical
         except NadeshikoError as e:
-            console.print(
-                f"[red]Failed to create episode {episode_data.number}: {e.detail}[/red]"
-            )
-            return False
+            console.print(f"[red]Failed to create episode {episode_data.number}: {e.detail}[/red]")
+            return None
 
     def _build_segment_request(self, segment: SegmentData) -> SegmentCreateRequest:
         """Build a SegmentCreateRequest from a SegmentData."""
-        storage = (
-            "R2"
-            if self.storage_target == "r2"
-            else "LOCAL"
-        )
+        storage = "R2" if self.storage_target == "r2" else "LOCAL"
 
         ja = SegmentCreateRequestTextJa(content=segment.content_ja)
         es = (
@@ -1023,11 +1174,12 @@ class NadeshikoUploader:
             [d for d in media_folder.iterdir() if d.is_dir() and not d.name.startswith("_")]
         )
 
+        source = media_info.source
+
         has_errors = False
-        for episode_folder in episode_folders:
-            try:
-                episode_number = int(episode_folder.name)
-            except ValueError:
+        for surrogate, episode_folder in enumerate(episode_folders, start=1):
+            episode_number = source.episode_number(episode_folder, surrogate)
+            if episode_number is None:
                 console.print(
                     f"[yellow]Skipping non-episode folder: {episode_folder.name}[/yellow]"
                 )
@@ -1040,6 +1192,8 @@ class NadeshikoUploader:
                 ep_ok = self.upload_episode(
                     media_public_id,
                     episode_folder,
+                    source,
+                    episode_number,
                     storage_base_path=storage_base_path,
                     nsfw_lookup=nsfw_lookup,
                 )
@@ -1055,7 +1209,7 @@ class NadeshikoUploader:
     def _upload_segment_files(
         self,
         storage_base_path: str,
-        episode_number: int,
+        storage_folder: str | int,
         segment: SegmentData,
         episode_folder: Path,
         existing_files: set[str],
@@ -1074,7 +1228,7 @@ class NadeshikoUploader:
             if filename in existing_files:
                 skipped.append(filename)
             else:
-                url = self.r2.upload_file(filepath, storage_base_path, episode_number)
+                url = self.r2.upload_file(filepath, storage_base_path, storage_folder)
                 if url:
                     uploaded.append(filename)
                 else:
@@ -1086,6 +1240,8 @@ class NadeshikoUploader:
         self,
         media_public_id: str,
         episode_folder: Path,
+        source: MediaSource,
+        episode_number: int,
         max_r2_workers: int = 30,
         storage_base_path: str = "",
         nsfw_lookup: dict[str, dict] | None = None,
@@ -1095,18 +1251,7 @@ class NadeshikoUploader:
         Phase 1: Upload all files to R2 with high concurrency.
         Phase 2: Create segments via individual API calls.
         """
-        # Reset per-episode stats
-        self.stats = {
-            "total": 0,
-            "uploaded": 0,
-            "duplicated": 0,
-            "skipped_no_hash": 0,
-            "skipped_no_translations": 0,
-            "skipped_too_long": 0,
-            "skipped_constraint": 0,
-            "failed": 0,
-            "errors_by_status": {},
-        }
+        self.stats = _fresh_stats()
 
         console.print(f"\n[cyan]Processing episode: {episode_folder.name}[/cyan]")
 
@@ -1114,11 +1259,15 @@ class NadeshikoUploader:
         if not episode_data:
             return False
 
-        if not self._get_or_create_episode(media_public_id, episode_data):
+        episode_data.number = episode_number
+
+        canonical_number = self._get_or_create_episode(media_public_id, episode_data, source)
+        if canonical_number is None:
             return False
 
         total = len(episode_data.segments)
-        episode_number = episode_data.number
+        episode_number = canonical_number
+        storage_folder: str | int = episode_data.external_video_id or canonical_number
 
         # --- Phase 1: R2 file uploads (high concurrency, no rate limiting) ---
         if self.upload_r2 and self.r2 and not self.dry_run:
@@ -1127,7 +1276,7 @@ class NadeshikoUploader:
             )
 
             # Batch existence check — one list call replaces hundreds of head_object calls
-            existing_files = self.r2.list_existing_files(storage_base_path, episode_number)
+            existing_files = self.r2.list_existing_files(storage_base_path, storage_folder)
             console.print(f"[dim]  Found {len(existing_files)} files already in R2[/dim]")
 
             # Collect segments that need file uploads
@@ -1151,7 +1300,7 @@ class NadeshikoUploader:
                         upload_pool.submit(
                             self._upload_segment_files,
                             storage_base_path,
-                            episode_number,
+                            storage_folder,
                             segment,
                             episode_folder,
                             existing_files,
@@ -1297,8 +1446,9 @@ def _collect_upload_info(
         with open(info_path) as f:
             media_data = json.load(f)
 
-        media_id = media_data.get("anilist_id", media_data.get("id"))
-        media_title = media_data.get("romaji_name", media_folder.name)
+        source = get_media_source(media_data.get("media_source", "anilist"))
+        media_id, title = source.summary_identity(media_data)
+        media_title = title or media_folder.name
 
         # Collect episodes
         episode_folders = sorted(
@@ -1306,10 +1456,9 @@ def _collect_upload_info(
         )
 
         episodes_to_upload = []
-        for episode_folder in episode_folders:
-            try:
-                episode_number = int(episode_folder.name)
-            except ValueError:
+        for surrogate, episode_folder in enumerate(episode_folders, start=1):
+            episode_number = source.episode_number(episode_folder, surrogate)
+            if episode_number is None:
                 continue
 
             if episode_filter and episode_number != episode_filter:

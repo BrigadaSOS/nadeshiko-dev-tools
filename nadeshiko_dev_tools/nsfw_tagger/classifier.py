@@ -5,6 +5,7 @@ outputs ratings (general/sensitive/questionable/explicit) and content tags.
 Maps Danbooru ratings to backend content ratings (SAFE/SUGGESTIVE/QUESTIONABLE/EXPLICIT).
 """
 
+import logging
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -13,6 +14,8 @@ import onnxruntime as rt
 import pandas as pd
 from huggingface_hub import hf_hub_download
 from PIL import Image
+
+logger = logging.getLogger(__name__)
 
 MODEL_REPO = "SmilingWolf/wd-swinv2-tagger-v3"
 
@@ -75,21 +78,24 @@ class WDTagger:
         self.rating_indexes = list(np.where(df["category"] == 9)[0])
         self.general_indexes = list(np.where(df["category"] == 0)[0])
 
-        if "CUDAExecutionProvider" not in rt.get_available_providers():
+        available_providers = rt.get_available_providers()
+        if "CUDAExecutionProvider" in available_providers:
+            # Favor conservative arena growth to reduce VRAM spikes on large batches.
+            providers: list[str | tuple[str, dict[str, str]]] = [
+                (
+                    "CUDAExecutionProvider",
+                    {
+                        "arena_extend_strategy": "kSameAsRequested",
+                    },
+                ),
+            ]
+        elif "CPUExecutionProvider" in available_providers:
+            providers = ["CPUExecutionProvider"]
+        else:
             raise RuntimeError(
-                "CUDAExecutionProvider is not available. "
-                "Install onnxruntime-gpu and CUDA user-space libs."
+                "No supported ONNX Runtime execution provider is available. "
+                f"Available providers: {available_providers}"
             )
-
-        # Favor conservative arena growth to reduce VRAM spikes on large batches.
-        providers: list[str | tuple[str, dict[str, str]]] = [
-            (
-                "CUDAExecutionProvider",
-                {
-                    "arena_extend_strategy": "kSameAsRequested",
-                },
-            ),
-        ]
 
         session_options = rt.SessionOptions()
         session_options.enable_mem_pattern = False
@@ -100,10 +106,12 @@ class WDTagger:
             providers=providers,
         )
 
-        if "CUDAExecutionProvider" not in self.model.get_providers():
-            raise RuntimeError(
-                "ONNX Runtime did not activate CUDAExecutionProvider. "
-                "Check CUDA installation and LD_LIBRARY_PATH."
+        self.active_provider = self.model.get_providers()[0]
+        if self.active_provider != "CUDAExecutionProvider":
+            logger.warning(
+                "Running the NSFW tagger on CPU (%s). This is much slower; use a "
+                "machine with an NVIDIA GPU for large batches.",
+                self.active_provider,
             )
 
         _, self.target_size, _, _ = self.model.get_inputs()[0].shape

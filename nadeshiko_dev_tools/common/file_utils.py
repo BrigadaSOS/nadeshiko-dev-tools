@@ -16,6 +16,28 @@ def atomic_write_json(path: str, data) -> None:
     os.replace(tmp_path, path)
 
 
+def discover_data_dirs(
+    media_folder: str, episodes: set[int] | list[int] | None = None
+) -> list[tuple[str, str]]:
+    """Return (label, path) for each subfolder that holds a _data.json."""
+    digit_dirs: list[tuple[int, str]] = []
+    other_dirs: list[tuple[str, str]] = []
+    for entry in sorted(os.listdir(media_folder)):
+        path = os.path.join(media_folder, entry)
+        if not (os.path.isdir(path) and os.path.exists(os.path.join(path, "_data.json"))):
+            continue
+        if entry.isdigit():
+            digit_dirs.append((int(entry), path))
+        else:
+            other_dirs.append((entry, path))
+
+    if episodes is not None:
+        episodes = set(episodes)
+        digit_dirs = [(n, p) for n, p in digit_dirs if n in episodes]
+
+    return [(f"E{n}", p) for n, p in sorted(digit_dirs)] + other_dirs
+
+
 def download_and_save_image(url: str, output_dir: str, prefix: str) -> str:
     image_data = requests.get(url).content
     temp_filename = f"{prefix}_temp{os.path.splitext(url)[1]}"

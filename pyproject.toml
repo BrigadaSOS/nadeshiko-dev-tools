@@ -25,12 +25,14 @@ dependencies = [
     "requests>=2.32.5",
     "rich>=14.3.1",
     "nadeshiko-internal-sdk>=0.1.0",
-    "onnxruntime-gpu>=1.17.0",
-    "nvidia-cuda-runtime-cu12",
-    "nvidia-cublas-cu12",
-    "nvidia-cufft-cu12",
-    "nvidia-cudnn-cu12",
-    "nvidia-cuda-nvrtc-cu12",
+    "onnxruntime-gpu>=1.17.0; platform_machine == 'x86_64'",
+    "onnxruntime>=1.17.0; platform_machine == 'aarch64'",
+    "nvidia-cuda-runtime-cu12; platform_machine == 'x86_64'",
+    "nvidia-cublas-cu12; platform_machine == 'x86_64'",
+    "nvidia-cufft-cu12; platform_machine == 'x86_64'",
+    "nvidia-curand-cu12>=10.3.10.19; platform_machine == 'x86_64'",
+    "nvidia-cudnn-cu12; platform_machine == 'x86_64'",
+    "nvidia-cuda-nvrtc-cu12; platform_machine == 'x86_64'",
     "numpy>=1.24.0",
     "pandas>=2.0.0",
     "Pillow>=10.0.0",
@@ -41,7 +43,11 @@ dependencies = [
     "unidic>=1.1.0",
     "yt-dlp>=2024.1.0",
     "curl-cffi>=0.5.10,<0.15.0",
+    "openai>=1.0",
 ]
+
+[project.optional-dependencies]
+modal = ["modal>=0.64"]
 
 [project.scripts]
 process-media = "nadeshiko_dev_tools.segment_extractor.cli:main"
@@ -52,8 +58,8 @@ assets-uploader = "nadeshiko_dev_tools.assets_uploader.__main__:main"
 delete-media = "nadeshiko_dev_tools.delete_media:main"
 validate-r2 = "nadeshiko_dev_tools.validate_r2:main"
 notify-discord = "nadeshiko_dev_tools.notify_discord:main"
-fetch-youtube = "nadeshiko_dev_tools.youtube_extractor.fetch_cli:main"
-process-youtube = "nadeshiko_dev_tools.youtube_extractor.process_cli:main"
+fetch-youtube = "nadeshiko_dev_tools.youtube_fetcher.cli:main"
+process-youtube = "nadeshiko_dev_tools.youtube_segment_extractor.cli:main"
 
 [dependency-groups]
 dev = [
@@ -76,4 +82,4 @@ quote-style = "double"
 indent-style = "space"
 
 [tool.uv.sources]
-nadeshiko-internal-sdk = { path = "../nadeshiko-sdk-python/build/internal/dist/nadeshiko_internal_sdk-2.1.0.dev1777700724-py3-none-any.whl" }
+nadeshiko-internal-sdk = { path = "../nadeshiko-sdk-python/build/internal/dist/nadeshiko_internal_sdk-2.1.1.dev1781494413-py3-none-any.whl" }

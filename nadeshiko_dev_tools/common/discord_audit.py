@@ -18,15 +18,15 @@ COLOR_FAILURE = 0xED4245  # red
 # Module-level state — call init() before post()
 _enabled = False
 _title = ""
-_anilist_id = 0
+_media_id = ""
 
 
-def init(enabled: bool, title: str, anilist_id: int):
-    """Initialize audit webhook state."""
-    global _enabled, _title, _anilist_id
+def init(enabled: bool, title: str, media_id):
+    """Initialize audit webhook state. media_id is the AniList/TMDB/channel id."""
+    global _enabled, _title, _media_id
     _enabled = enabled
     _title = title
-    _anilist_id = anilist_id
+    _media_id = media_id
 
 
 def post(message: str, stage: str, color: int = COLOR_PROGRESS, fields: list | None = None):
@@ -44,7 +44,7 @@ def post(message: str, stage: str, color: int = COLOR_PROGRESS, fields: list | N
         "color": color,
         "fields": [
             {"name": "Stage", "value": stage, "inline": True},
-            {"name": "AniList ID", "value": str(_anilist_id), "inline": True},
+            {"name": "Media ID", "value": str(_media_id), "inline": True},
         ],
         "timestamp": datetime.now(UTC).isoformat(),
     }

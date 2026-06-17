@@ -22,7 +22,7 @@ uv run process-media --anilist-id 21804 --input ./mkv-folder --output ./output \
 # 2. Tokenize (Sudachi + UniDic POS analysis)
 uv run tokenize-media ./output/21804
 
-# 3. Tag (NSFW content classification, requires GPU)
+# 3. Tag (NSFW content classification — local GPU, CPU fallback, or Modal GPU)
 uv run tag-media ./output/21804
 
 # 4. Upload to dev
@@ -35,25 +35,41 @@ uv run notify-discord 21804
 
 Each processing command (1-3) runs QC on its output and exits non-zero on failure.
 
+`tag-media` uses a local NVIDIA GPU, falls back to CPU automatically when none is
+available, or offloads to a Modal GPU with `--modal` (needs `uv sync --extra modal`
+and `uv run modal token new`). Add `--fallback-local` to retry locally if Modal fails.
+
 ## YouTube Pipeline
 
+Same steps as the MKV pipeline, with a separate fetch step (the equivalent of
+having the MKVs on disk). Steps 3-5 are the exact same commands.
+
 ```bash
-# 1. Fetch subtitles (single video or whole channel)
+# 1. Fetch subtitles + video (single video or whole channel)
 uv run fetch-youtube https://www.youtube.com/@ChannelHandle --out ./output --browser chrome
 
-# 2. Build segment data (writes _data.json per video)
+# 2. Build segment data + media (validates the first video, then the rest, then QC)
 uv run process-youtube ./output/UCxxxxxxxxxxxxxxx
 
-# 3. Tokenize (same command as the MKV pipeline)
+# 3. Tokenize (Sudachi + UniDic POS analysis)
 uv run tokenize-media ./output/UCxxxxxxxxxxxxxxx
 
-# 4. Upload (same uploader as the MKV pipeline)
+# 4. Tag (NSFW content classification)
+uv run tag-media ./output/UCxxxxxxxxxxxxxxx
+
+# 5. Upload to dev
 uv run assets-uploader ./output/UCxxxxxxxxxxxxxxx --target dev --storage r2 --upload-r2 --apply
 ```
 
-`--browser` is optional and exports cookies to bypass YouTube's bot detection.
-Set `TOKEN` in `.env` for DeepL; without it, JA lines lacking an EN/ES cue are
-dropped to `ignored_segments`.
+Like `process-media`, `process-youtube` extracts the first video first for
+validation (stopping if it produces no segments), then the rest, then runs QC and
+exits non-zero on failure. Add `--discord-audit` to mirror progress to
+`DISCORD_AUDIT_WEBHOOK_URL`.
+
+`fetch-youtube` downloads the video (≤720p) so `process-youtube` can extract a
+screenshot/audio/clip per segment. `--browser` is optional and exports cookies
+to bypass YouTube's bot detection. Set `TOKEN` in `.env` for DeepL; without it, JA
+lines lacking an EN/ES cue are dropped to `ignored_segments`.
 
 ## CLI Reference
 
@@ -63,7 +79,7 @@ dropped to `ignored_segments`.
 | `fetch-youtube` | Download YouTube subtitles + DeepL-translate missing langs |
 | `process-youtube` | Convert downloaded YouTube subs into segment data |
 | `tokenize-media` | Batch Sudachi + UniDic tokenization |
-| `tag-media` | Batch NSFW tagger (GPU) |
+| `tag-media` | Batch NSFW tagger (local GPU/CPU, or Modal GPU via `--modal`) |
 | `quality-check` | Standalone QC (ad-hoc) |
 | `assets-uploader` | Upload to Nadeshiko API + R2 |
 | `delete-media` | Remove media from API + R2 |

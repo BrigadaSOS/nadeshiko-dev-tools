@@ -2,11 +2,14 @@ import glob
 import json
 import logging
 import os
+import random
 import secrets
-from dataclasses import dataclass
+import time
+from dataclasses import asdict, dataclass
 
 import yt_dlp
 
+from nadeshiko_dev_tools.common.deepl import DEEPL_LANG
 from nadeshiko_dev_tools.common.file_utils import atomic_write_json
 from nadeshiko_dev_tools.segment_extractor.utils.subtitle_utils import load_subtitle_file
 
@@ -17,19 +20,17 @@ logger = logging.getLogger(__name__)
 # extractor) emit directly to the "yt_dlp" logger and bypass our filters entirely.
 logging.getLogger("yt_dlp").setLevel(logging.ERROR)
 
-DEEPL_LANG = {"en": "EN-US", "es": "ES"}
-
 # Language prefixes matched against YouTube subtitle track keys
 _LANG_PREFIXES = ["ja", "en", "es"]
 
 # yt-dlp warning substrings that are irrelevant when only fetching subtitles
 _SUPPRESSED_WARNINGS = (
-    "cookie file entry",            # malformed/binary browser cookie entries (any form)
-    "challenge solving failed",     # JS challenge for video formats (we don't download video)
-    "signature solving failed",     # same
-    "only images are available",    # community posts / image-only content
+    "cookie file entry",  # malformed/binary browser cookie entries (any form)
+    "challenge solving failed",  # JS challenge for video formats (we don't download video)
+    "signature solving failed",  # same
+    "only images are available",  # community posts / image-only content
     "requested format is not available",  # format errors (we set ignore_no_formats_error)
-    "javascript runtime",           # JS runtime (not needed for subtitle-only fetching)
+    "javascript runtime",  # JS runtime (not needed for subtitle-only fetching)
 )
 
 
@@ -42,6 +43,59 @@ class VideoMeta:
     duration_ms: int
     published_at: str | None
     available_manual_langs: list[str]
+
+
+class TransientFetchError(Exception):
+    """A fetch failed for a retryable reason (rate limit, network, JS challenge, bot wall).
+
+    Distinct from a permanently unavailable video. Callers retry these with backoff and
+    must NOT cache them as a terminal result, so the video is rechecked on the next run.
+    """
+
+
+# Substrings that mark a *permanent* failure: the video genuinely can't be fetched and
+# retrying won't help. Anything not matching here is treated as transient by default —
+# mis-classifying a temporary 429 as "gone" is exactly the silent-drop bug we're fixing.
+_PERMANENT_ERROR_MARKERS = (
+    "private video",
+    "video unavailable",
+    "removed by the uploader",
+    "this video has been removed",
+    "video is no longer available",
+    "account associated with this video has been terminated",
+    "this video is not available",
+    "members-only",
+    "join this channel",
+    "is not available in your country",
+    "who has blocked it in your country",
+    "video is private",
+    "incomplete youtube id",
+)
+
+
+def classify_download_error(err: Exception) -> str:
+    """Return 'permanent' if the error means the video is genuinely gone, else 'transient'."""
+    msg = str(err).lower()
+    if any(marker in msg for marker in _PERMANENT_ERROR_MARKERS):
+        return "permanent"
+    return "transient"
+
+
+def with_retries(fn, *, attempts: int = 4, base_delay: float = 2.0, label: str = ""):
+    """Call fn(), retrying TransientFetchError with exponential backoff + jitter."""
+    for attempt in range(1, attempts + 1):
+        try:
+            return fn()
+        except TransientFetchError as e:
+            if attempt == attempts:
+                logger.error(f"{label}: giving up after {attempts} attempts: {e}")
+                raise
+            delay = base_delay * (2 ** (attempt - 1)) + random.uniform(0, base_delay)
+            logger.warning(
+                f"{label}: transient error (attempt {attempt}/{attempts}), "
+                f"retrying in {delay:.1f}s"
+            )
+            time.sleep(delay)
 
 
 def _resolve_lang(subtitles: dict, prefix: str) -> str | None:
@@ -161,10 +215,30 @@ def _base_ydl_opts(cookies_file: str | None = None) -> dict:
         "skip_download": True,
         "ignore_no_formats_error": True,
         "logger": _YdlLogger(),
+        # Let yt-dlp absorb the common transient failures itself before we even see them.
+        "retries": 5,
+        "fragment_retries": 5,
+        "extractor_retries": 3,
+        "socket_timeout": 30,
+        # A small pause between API requests keeps a parallel check phase under YouTube's
+        # rate-limit radar without meaningfully slowing a single download.
+        "sleep_interval_requests": 0.25,
     }
     if cookies_file:
         opts["cookiefile"] = cookies_file
     return opts
+
+
+def _check_ydl_opts(cookies_file: str | None = None) -> dict:
+    """Options for the metadata-check phase: we only need the subtitle map.
+
+    Skipping DASH/HLS manifest extraction avoids the format resolution + JS challenge
+    solving that dominate per-video time, turning a full extract into a light one.
+    """
+    return {
+        **_base_ydl_opts(cookies_file),
+        "extractor_args": {"youtube": {"skip": ["dash", "hls"]}},
+    }
 
 
 def _fetch_channel_thumbnails(
@@ -188,17 +262,26 @@ def _fetch_channel_thumbnails(
 
 
 def get_channel_metadata(
-    url: str, cookies_file: str | None = None
+    url: str,
+    cookies_file: str | None = None,
+    limit: int | None = None,
+    playlist_items: str | None = None,
 ) -> tuple[str, str, list[str], str | None, str | None]:
     """Return (channel_id, channel_name, [video_ids], avatar_url, banner_url).
 
     Uses extract_flat to avoid fetching per-video subtitle info at this stage.
+    ``limit`` caps enumeration to the newest N videos; ``playlist_items`` (a yt-dlp
+    spec like "1:50,100:120") overrides it for finer control on large channels — both
+    bound how much of the channel yt-dlp walks, not just the result list.
     For single-video URLs, avatar/banner are resolved against the channel
     page so they always reflect the channel (not the video thumbnail).
     """
     resolved_url = _channel_videos_url(url)
 
     ydl_opts = {**_base_ydl_opts(cookies_file), "extract_flat": True}
+    items = playlist_items or (f"1:{limit}" if limit else None)
+    if items:
+        ydl_opts["playlist_items"] = items
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
         info = ydl.extract_info(resolved_url, download=False)
 
@@ -211,7 +294,8 @@ def get_channel_metadata(
         channel_id = info.get("channel_id") or info.get("id", "")
         channel_name = info.get("channel") or info.get("uploader") or info.get("title", "")
         video_ids = [
-            e["id"] for e in entries
+            e["id"]
+            for e in entries
             if e and "id" in e and not e["id"].startswith("UC") and len(e["id"]) == 11
         ]
     else:
@@ -225,25 +309,36 @@ def get_channel_metadata(
     return channel_id, channel_name, video_ids, avatar_url, banner_url
 
 
-def get_video_info(video_id: str, cookies_file: str | None = None) -> VideoMeta | None:
-    """Fetch full metadata for a single video.
+def get_video_info(
+    video_id: str, cookies_file: str | None = None, since: str | None = None
+) -> VideoMeta | None:
+    """Fetch metadata for a single video.
 
-    Returns None if the video is unavailable or has no manual Japanese subtitles.
+    Returns None for a *terminal skip* — the video is permanently unavailable, older
+    than ``since`` (YYYYMMDD), or has no manual Japanese subtitles — so the caller can
+    cache it and never recheck. Raises TransientFetchError for retryable failures
+    (rate limit, network, bot wall) so they are retried and never cached as terminal.
     """
     url = f"https://www.youtube.com/watch?v={video_id}"
-    ydl_opts = _base_ydl_opts(cookies_file)
+    ydl_opts = _check_ydl_opts(cookies_file)
     try:
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             info = ydl.extract_info(url, download=False)
     except yt_dlp.utils.DownloadError as e:
-        logger.debug(f"Video {video_id} unavailable: {e}")
+        if classify_download_error(e) == "permanent":
+            logger.debug(f"Video {video_id} permanently unavailable: {e}")
+            return None
+        raise TransientFetchError(f"{video_id}: {e}") from e
+
+    upload_date = info.get("upload_date")  # YYYYMMDD
+    if since and upload_date and upload_date < since:
+        logger.debug(f"Video {video_id} ({upload_date}) older than --since {since}, skipping")
         return None
 
     manual_langs = _manual_lang_codes(info)
     if "ja" not in manual_langs:
         return None
 
-    upload_date = info.get("upload_date")  # YYYYMMDD
     published_at = (
         f"{upload_date[:4]}-{upload_date[4:6]}-{upload_date[6:]}" if upload_date else None
     )
@@ -259,22 +354,56 @@ def get_video_info(video_id: str, cookies_file: str | None = None) -> VideoMeta 
     )
 
 
-def download_subtitles(
-    video_id: str, video_folder: str, langs: list[str], cookies_file: str | None = None
-) -> dict[str, str]:
-    """Download manual subtitles for the given video. Returns {lang: filepath}."""
-    url = f"https://www.youtube.com/watch?v={video_id}"
+def download_media(
+    video_id: str,
+    video_folder: str,
+    sub_langs: list[str],
+    cookies_file: str | None = None,
+    max_height: int = 720,
+) -> tuple[str | None, dict[str, str]]:
+    """Download the video stream (≤ max_height, mp4) and manual subtitles in one pass.
 
+    Returns (video_path, {lang: sub_path}). A single yt-dlp invocation extracts the
+    player response once for both, instead of paying for two full extractions per video.
+    Resumable: yt-dlp skips an already-complete ``video.mp4``. Raises TransientFetchError
+    on retryable failures; returns (None, subs) only on a permanent download failure.
+    """
+    url = f"https://www.youtube.com/watch?v={video_id}"
     ydl_opts = {
         **_base_ydl_opts(cookies_file),
+        "skip_download": False,
         "writesubtitles": True,
-        "subtitleslangs": langs,
+        "subtitleslangs": sub_langs,
         "subtitlesformat": "vtt",
-        "outtmpl": os.path.join(video_folder, f"{video_id}.%(ext)s"),
+        "format": (
+            f"bestvideo[height<={max_height}][ext=mp4]+bestaudio[ext=m4a]/"
+            f"best[height<={max_height}][ext=mp4]/best[height<={max_height}]/best"
+        ),
+        "merge_output_format": "mp4",
+        "outtmpl": {
+            "default": os.path.join(video_folder, "video.%(ext)s"),
+            "subtitle": os.path.join(video_folder, f"{video_id}.%(ext)s"),
+        },
     }
-    with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-        ydl.download([url])
+    try:
+        with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+            ydl.download([url])
+    except yt_dlp.utils.DownloadError as e:
+        if classify_download_error(e) == "permanent":
+            logger.error(f"Video download permanently failed for {video_id}: {e}")
+            return None, _collect_subtitles(video_id, video_folder, sub_langs)
+        raise TransientFetchError(f"{video_id}: {e}") from e
 
+    subs = _collect_subtitles(video_id, video_folder, sub_langs)
+    matches = glob.glob(os.path.join(video_folder, "video.*"))
+    if not matches:
+        logger.error(f"Video file not found after download for {video_id}")
+        return None, subs
+    return matches[0], subs
+
+
+def _collect_subtitles(video_id: str, video_folder: str, langs: list[str]) -> dict[str, str]:
+    """Rename downloaded subtitle files to the canonical subs.{lang}.vtt. Returns {lang: path}."""
     result = {}
     for lang in langs:
         # yt-dlp names files like {video_id}.ja.vtt or {video_id}.ja-JP.vtt —
@@ -341,7 +470,7 @@ def save_channel_info(
 
     hash_salt = secrets.token_hex(16)
     info: dict = {
-        "category": "YOUTUBE_CHANNEL",
+        "category": "YOUTUBE",
         "version": "6",
         "media_source": "youtube",
         "channel_id": channel_id,
@@ -364,6 +493,36 @@ def save_channel_info(
     atomic_write_json(info_path, info)
 
     return hash_salt
+
+
+_CHECKED_FILE = "_checked.json"
+
+
+def load_checked(channel_folder: str) -> dict:
+    """Load the per-channel check cache: {video_id: {"status": ..., "meta": {...}|None}}."""
+    path = os.path.join(channel_folder, _CHECKED_FILE)
+    if os.path.exists(path):
+        try:
+            with open(path) as f:
+                return json.load(f)
+        except (json.JSONDecodeError, OSError):
+            logger.warning(f"{_CHECKED_FILE} unreadable — ignoring cache and rechecking")
+    return {}
+
+
+def save_checked(channel_folder: str, checked: dict) -> None:
+    """Persist the per-channel check cache."""
+    atomic_write_json(os.path.join(channel_folder, _CHECKED_FILE), checked)
+
+
+def meta_from_cache(entry: dict) -> VideoMeta:
+    """Rebuild a VideoMeta from a cached _checked.json entry's stored 'meta' dict."""
+    return VideoMeta(**entry["meta"])
+
+
+def meta_to_cache_entry(meta: VideoMeta) -> dict:
+    """Build a 'valid' cache entry storing the full VideoMeta, so it needs no re-extraction."""
+    return {"status": "valid", "meta": asdict(meta)}
 
 
 def save_video_meta(video_folder: str, meta: VideoMeta, translated_langs: list[str]) -> None:
