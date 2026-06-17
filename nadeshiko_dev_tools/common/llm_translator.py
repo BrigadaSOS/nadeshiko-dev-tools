@@ -1,4 +1,4 @@
-"""LLM-backed translator with a DeepL-compatible interface."""
+"""OpenAI LLM-backed translator and Japanese sentence segmenter."""
 
 import json
 import logging
@@ -9,7 +9,7 @@ from dataclasses import dataclass
 
 logger = logging.getLogger(__name__)
 
-_DEFAULT_MODEL = "gpt-4o-mini"
+_DEFAULT_MODEL = "gpt-5.4-mini"
 # Lines per API call: small enough to keep output bounded and alignment reliable,
 # large enough to amortise request overhead.
 _BATCH_SIZE = 40
@@ -19,13 +19,13 @@ _DEFAULT_CONCURRENCY = 5
 
 @dataclass
 class _Translated:
-    """Mimics DeepL's TextResult: callers only ever read ``.text``."""
+    """Result wrapper: callers only ever read ``.text``."""
 
     text: str
 
 
 def _lang_name(code: str | None) -> str:
-    """Map a DeepL-style code (EN-US, ES, JA) to an English language name for the prompt."""
+    """Map a language code (EN-US, ES, JA) to an English language name for the prompt."""
     c = (code or "").upper()
     if c.startswith("EN"):
         return "English"
@@ -36,8 +36,23 @@ def _lang_name(code: str | None) -> str:
     return code or "the target language"
 
 
+def _chunk_schema(n: int) -> dict:
+    """Strict JSON schema forcing exactly the keys '0'..'n-1', each a string."""
+    keys = [str(i) for i in range(n)]
+    return {
+        "name": "subtitle_translations",
+        "strict": True,
+        "schema": {
+            "type": "object",
+            "properties": {k: {"type": "string"} for k in keys},
+            "required": keys,
+            "additionalProperties": False,
+        },
+    }
+
+
 class OpenAITranslator:
-    """DeepL-compatible translator backed by the OpenAI chat API."""
+    """Translator backed by the OpenAI chat API."""
 
     def __init__(
         self,
@@ -51,12 +66,15 @@ class OpenAITranslator:
         self._client = OpenAI(api_key=api_key, base_url=base_url)
         self._model = model
         self._concurrency = max(1, concurrency)
+        # Structured Outputs (json_schema) is the primary alignment guarantee. Some
+        # OpenAI-compatible proxies don't support it; the first rejection flips this
+        # off for the rest of the run and we fall back to json_object + the key-guard.
+        self._supports_schema = True
 
     def translate_text(self, text, source_lang=None, target_lang=None, **_):
         """Translate a string or list of strings. Returns _Translated or list thereof.
 
-        Matches deepl.Translator.translate_text: a str yields one result, a list yields a
-        list of the same length and order.
+        A str yields one result; a list yields a list of the same length and order.
         """
         single = isinstance(text, str)
         items = [text] if single else list(text)
@@ -94,7 +112,9 @@ class OpenAITranslator:
             "independently; do NOT merge, split, drop, or add keys, and do not add notes "
             "or romanization."
         )
-        content = self._complete(system, json.dumps(payload, ensure_ascii=False))
+        content = self._complete(
+            system, json.dumps(payload, ensure_ascii=False), schema=_chunk_schema(len(chunk))
+        )
         try:
             out = json.loads(content)
         except json.JSONDecodeError:
@@ -102,30 +122,40 @@ class OpenAITranslator:
         if not isinstance(out, dict):
             out = {}
 
-        result: list[str | None] = [None] * len(chunk)
-        missing = []
+        expected = {str(i) for i in range(len(chunk))}
+        if set(out.keys()) != expected:
+            logger.warning(
+                f"LLM returned {len(out)} keys for a {len(chunk)}-line chunk "
+                "(key-set mismatch) — retranslating the whole chunk line-by-line"
+            )
+            return [self._translate_one(line, src, tgt) for line in chunk]
+
+        result: list[str] = [""] * len(chunk)
+        blanks = []
         for i in range(len(chunk)):
             val = out.get(str(i))
             if isinstance(val, str) and val.strip():
                 result[i] = val
             else:
-                missing.append(i)
+                blanks.append(i)
 
-        if missing:
+        if blanks:
             logger.warning(
-                f"LLM left {len(missing)}/{len(chunk)} line(s) unmapped — "
-                "retranslating only those individually"
+                f"LLM left {len(blanks)}/{len(chunk)} line(s) blank — "
+                "retranslating those individually"
             )
-            for i in missing:
+            for i in blanks:
                 result[i] = self._translate_one(chunk[i], src, tgt)
-        return result  # type: ignore[return-value]
+        return result
 
     def _translate_one(self, line: str, src: str, tgt: str) -> str:
         system = (
             f"Translate this single {src} subtitle line into natural, colloquial {tgt}. "
             'Return JSON {"0": "..."} mapping the key "0" to the translation.'
         )
-        content = self._complete(system, json.dumps({"0": line}, ensure_ascii=False))
+        content = self._complete(
+            system, json.dumps({"0": line}, ensure_ascii=False), schema=_chunk_schema(1)
+        )
         try:
             val = json.loads(content).get("0")
             if isinstance(val, str) and val.strip():
@@ -135,10 +165,79 @@ class OpenAITranslator:
         logger.error("LLM per-line translation failed — keeping source text unchanged")
         return line
 
+    def sentence_starts(self, ja_texts: list[str]) -> list[int]:
+        """Return the cue indices that begin a new sentence.
+
+        Groups unpunctuated Japanese subtitle cues into sentence-level segments using the
+        Japanese alone — no English is consulted, so precision never depends on a
+        translation. The model only emits cut positions — never text — so a mistake can at
+        worst mis-place a boundary, never corrupt content, timing, or language.
+        """
+        n = len(ja_texts)
+        if n <= 1:
+            return [0] if n else []
+
+        cues = [{"i": i, "ja": ja_texts[i]} for i in range(n)]
+
+        system = (
+            "You group fragments of spoken Japanese into sentences. You receive an array of "
+            "numbered cues, each with Japanese text 'ja'. The cues are consecutive fragments "
+            "of continuous speech with no punctuation. Return the indices of the cues that "
+            "START a new sentence — i.e. the previous cue ended one.\n"
+            "A cue ENDS a sentence when its final form is sentence-final: a predicate in "
+            "plain or polite form (e.g. 〜だ/〜です/〜ます/〜た/〜だった/〜ない), the explanatory "
+            "〜んだ/〜んです, or any of these followed by a sentence-final particle "
+            "(ね/よ/な/わ/か/の/さ/ぞ/もんね/かな/でしょ). The NEXT cue then starts a "
+            "new sentence.\n"
+            "A cue does NOT end a sentence when it trails off on a connective or particle: "
+            "〜て/〜で/〜けど/〜が/〜から/〜ので/〜し/〜たり, or a dangling は/を/に/の/と/へ — "
+            "the next cue continues it. Use meaning for ambiguous cases (〜けど, 〜もんね can "
+            "be either). Index 0 always starts a sentence. Return JSON "
+            '{"sentence_starts": [0, ...]} with strictly increasing indices.'
+        )
+        schema = {
+            "name": "sentence_starts",
+            "strict": True,
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "sentence_starts": {"type": "array", "items": {"type": "integer"}}
+                },
+                "required": ["sentence_starts"],
+                "additionalProperties": False,
+            },
+        }
+        content = self._complete(
+            system, json.dumps({"cues": cues}, ensure_ascii=False), schema=schema
+        )
+        try:
+            raw = json.loads(content).get("sentence_starts", [])
+        except (json.JSONDecodeError, AttributeError):
+            raw = []
+
+        # Sanitise: keep in-range ints, drop bools, dedupe, sort, force index 0 present.
+        starts = sorted(
+            {i for i in raw if isinstance(i, int) and not isinstance(i, bool) and 0 <= i < n}
+        )
+        if not starts or starts[0] != 0:
+            starts = [0, *starts]
+        return starts
+
     def _complete(
-        self, system: str, user: str, *, attempts: int = 4, base_delay: float = 2.0
+        self,
+        system: str,
+        user: str,
+        *,
+        schema: dict | None = None,
+        attempts: int = 4,
+        base_delay: float = 2.0,
     ) -> str:
         import openai
+
+        def _response_format() -> dict:
+            if schema is not None and self._supports_schema:
+                return {"type": "json_schema", "json_schema": schema}
+            return {"type": "json_object"}
 
         for attempt in range(1, attempts + 1):
             try:
@@ -148,10 +247,19 @@ class OpenAITranslator:
                         {"role": "system", "content": system},
                         {"role": "user", "content": user},
                     ],
-                    response_format={"type": "json_object"},
+                    response_format=_response_format(),
                     temperature=0.2,
                 )
                 return resp.choices[0].message.content or "{}"
+            except openai.BadRequestError:
+                if self._supports_schema and schema is not None:
+                    logger.warning(
+                        "Endpoint rejected json_schema response_format — falling back "
+                        "to json_object for the rest of this run"
+                    )
+                    self._supports_schema = False
+                    continue
+                raise
             except (
                 openai.RateLimitError,
                 openai.APITimeoutError,
@@ -173,7 +281,7 @@ def get_openai_translator() -> OpenAITranslator | None:
     """Build an OpenAITranslator from env (OPENAI_API_KEY required), or None if unset."""
     api_key = os.getenv("OPENAI_API_KEY")
     if not api_key:
-        logger.warning("TRANSLATOR=openai but OPENAI_API_KEY is not set — translation disabled")
+        logger.warning("OPENAI_API_KEY is not set — translation disabled")
         return None
     model = os.getenv("OPENAI_TRANSLATE_MODEL", _DEFAULT_MODEL)
     base_url = os.getenv("OPENAI_BASE_URL")  # for proxies / local OpenAI-compatible servers
