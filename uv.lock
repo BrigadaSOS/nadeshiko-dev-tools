@@ -484,18 +484,6 @@ wheels = [
 ]
 
 [[package]]
-name = "deepl"
-version = "1.27.0"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "requests" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/15/19/0a4ac6b1a6fbe964d786b418f8d7ce5d4e920e296cc0721370dc6e9b4785/deepl-1.27.0.tar.gz", hash = "sha256:8d83a53d958ffa96388f5ecd6425a9d9d931144c16c05c7a84eceb9a1454bb92", size = 51263, upload-time = "2025-12-11T13:13:48.633Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/26/98/95d6219e102a8a6be2310c3076599e0678b862dc642c25a117335b9a3998/deepl-1.27.0-py3-none-any.whl", hash = "sha256:97cca5ed3be23353c199889c442ca7bda4c3f03327e92d7797c077d5cfc9b61f", size = 46267, upload-time = "2025-12-11T13:13:47.493Z" },
-]
-
-[[package]]
 name = "distro"
 version = "1.9.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1205,7 +1193,6 @@ dependencies = [
     { name = "babelfish" },
     { name = "boto3" },
     { name = "curl-cffi" },
-    { name = "deepl" },
     { name = "ffmpeg-python" },
     { name = "ffsubsync" },
     { name = "fugashi" },
@@ -1254,7 +1241,6 @@ requires-dist = [
     { name = "babelfish", specifier = ">=0.6.1" },
     { name = "boto3", specifier = ">=1.35.0" },
     { name = "curl-cffi", specifier = ">=0.5.10,<0.15.0" },
-    { name = "deepl", specifier = ">=1.27.0" },
     { name = "ffmpeg-python", specifier = ">=0.2" },
     { name = "ffsubsync", specifier = ">=0.4.19" },
     { name = "fugashi", specifier = ">=1.3.0" },

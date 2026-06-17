@@ -715,14 +715,14 @@ def generate_segment(
             sentence_japanese, source_lang="JA", target_lang="ES"
         ).text
         sentence_spanish_is_mt = True
-        logs.append(f"[DEEPL - SPANISH]: {sentence_spanish}")
+        logs.append(f"[MT - SPANISH]: {sentence_spanish}")
 
     if translator and not sentence_english:
         sentence_english = translator.translate_text(
             sentence_japanese, source_lang="JA", target_lang="EN-US"
         ).text
         sentence_english_is_mt = True
-        logs.append(f"[DEEPL - ENGLISH]: {sentence_english}")
+        logs.append(f"[MT - ENGLISH]: {sentence_english}")
 
     duration_ms = segment_end - segment_start
     start_time_delta = timedelta(milliseconds=segment_start)
