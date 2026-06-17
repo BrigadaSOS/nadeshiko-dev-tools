@@ -9,8 +9,8 @@ from dataclasses import asdict, dataclass
 
 import yt_dlp
 
-from nadeshiko_dev_tools.common.deepl import DEEPL_LANG
 from nadeshiko_dev_tools.common.file_utils import atomic_write_json
+from nadeshiko_dev_tools.common.translator import LANG_CODES
 from nadeshiko_dev_tools.segment_extractor.utils.subtitle_utils import load_subtitle_file
 
 logger = logging.getLogger(__name__)
@@ -361,19 +361,13 @@ def download_media(
     cookies_file: str | None = None,
     max_height: int = 720,
 ) -> tuple[str | None, dict[str, str]]:
-    """Download the video stream (≤ max_height, mp4) and manual subtitles in one pass.
-
-    Returns (video_path, {lang: sub_path}). A single yt-dlp invocation extracts the
-    player response once for both, instead of paying for two full extractions per video.
-    Resumable: yt-dlp skips an already-complete ``video.mp4``. Raises TransientFetchError
-    on retryable failures; returns (None, subs) only on a permanent download failure.
-    """
+    """Download the video stream (≤ max_height, mp4) and manual subtitles in one pass."""
     url = f"https://www.youtube.com/watch?v={video_id}"
     ydl_opts = {
         **_base_ydl_opts(cookies_file),
         "skip_download": False,
         "writesubtitles": True,
-        "subtitleslangs": sub_langs,
+        "subtitleslangs": [f"{lang}.*" for lang in sub_langs],
         "subtitlesformat": "vtt",
         "format": (
             f"bestvideo[height<={max_height}][ext=mp4]+bestaudio[ext=m4a]/"
@@ -423,7 +417,7 @@ def _collect_subtitles(video_id: str, video_folder: str, langs: list[str]) -> di
 
 
 def translate_subtitle(src_path: str, target_lang: str, translator) -> str:
-    """Translate a VTT subtitle file to target_lang using DeepL. Returns output path."""
+    """Translate a VTT subtitle file to target_lang. Returns output path."""
     subs = load_subtitle_file(src_path)
 
     texts = [event.text for event in subs]
@@ -434,10 +428,9 @@ def translate_subtitle(src_path: str, target_lang: str, translator) -> str:
         return src_path
 
     indices, batch = zip(*non_empty, strict=True)
-    deepl_lang = DEEPL_LANG.get(target_lang, target_lang.upper())
+    lang_code = LANG_CODES.get(target_lang, target_lang.upper())
 
-    # DeepL accepts lists; translate in one call (library handles chunking internally)
-    results = translator.translate_text(list(batch), target_lang=deepl_lang)
+    results = translator.translate_text(list(batch), target_lang=lang_code)
 
     translated = list(texts)
     for i, result in zip(indices, results, strict=True):

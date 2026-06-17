@@ -66,17 +66,26 @@ validation (stopping if it produces no segments), then the rest, then runs QC an
 exits non-zero on failure. Add `--discord-audit` to mirror progress to
 `DISCORD_AUDIT_WEBHOOK_URL`.
 
+By default, cues are grouped into sentence segments by an LLM that decides sentence
+boundaries (cut positions only — it never emits text, so it can't corrupt content or
+timing) from the Japanese alone, unioned with a deterministic Japanese sentence-end
+signal, with a length/duration heuristic as a safety net for over-long groups. This
+needs `OPENAI_API_KEY`. Pass `--no-llm-grouping` to use the Japanese punctuation
+heuristic instead (no LLM calls); the LLM path also falls back to it automatically when
+no API key is set.
+
 `fetch-youtube` downloads the video (≤720p) so `process-youtube` can extract a
 screenshot/audio/clip per segment. `--browser` is optional and exports cookies
-to bypass YouTube's bot detection. Set `TOKEN` in `.env` for DeepL; without it, JA
-lines lacking an EN/ES cue are dropped to `ignored_segments`.
+to bypass YouTube's bot detection. Set `OPENAI_API_KEY` in `.env` to translate
+missing EN/ES langs; without it, JA lines lacking an EN/ES cue are dropped to
+`ignored_segments`.
 
 ## CLI Reference
 
 | Command | Purpose |
 |---------|---------|
 | `process-media` | Extract segments from MKV files |
-| `fetch-youtube` | Download YouTube subtitles + DeepL-translate missing langs |
+| `fetch-youtube` | Download YouTube subtitles + translate missing langs |
 | `process-youtube` | Convert downloaded YouTube subs into segment data |
 | `tokenize-media` | Batch Sudachi + UniDic tokenization |
 | `tag-media` | Batch NSFW tagger (local GPU/CPU, or Modal GPU via `--modal`) |

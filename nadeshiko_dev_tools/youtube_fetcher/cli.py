@@ -2,7 +2,7 @@
 
 Only videos with manual (non-auto-generated) Japanese subtitles are processed.
 English and Spanish subtitles are downloaded if available manually; otherwise
-they are translated from Japanese via DeepL (requires TOKEN env var).
+they are translated from Japanese via the LLM translator (requires OPENAI_API_KEY).
 
 The check phase (does a video have manual JA subs?) is cached per channel in
 ``_checked.json`` so re-runs skip already-decided videos. Transient failures
@@ -30,7 +30,7 @@ from dotenv import load_dotenv
 from rich.console import Console
 from rich.logging import RichHandler
 
-from nadeshiko_dev_tools.common.deepl import get_translator
+from nadeshiko_dev_tools.common.translator import get_translator
 from nadeshiko_dev_tools.youtube_fetcher.fetcher import (
     TransientFetchError,
     download_media,
@@ -73,7 +73,6 @@ def _process_video(
     os.makedirs(video_folder, exist_ok=True)
 
     langs_to_download = [lang for lang in ["ja", "en", "es"] if lang in meta.available_manual_langs]
-    missing_langs = [lang for lang in ["en", "es"] if lang not in meta.available_manual_langs]
 
     console.print(f"  Downloading video + subs {langs_to_download}...")
     try:
@@ -93,16 +92,20 @@ def _process_video(
         return False
 
     translated_langs = []
-    for lang in missing_langs:
-        if not translator:
-            logger.warning(f"  [yellow]No DeepL token — skipping {lang} translation[/yellow]")
+    for lang in ("en", "es"):
+        if lang in downloaded:
             continue
-        console.print(f"  Translating {lang} via DeepL...")
+        if not translator:
+            logger.warning(
+                f"  [yellow]No translator configured — skipping {lang} translation[/yellow]"
+            )
+            continue
+        console.print(f"  Translating {lang}...")
         try:
             translate_subtitle(downloaded["ja"], lang, translator)
             translated_langs.append(lang)
         except Exception:
-            logger.error(f"  [red]DeepL translation to {lang} failed[/red]", exc_info=True)
+            logger.error(f"  [red]Translation to {lang} failed[/red]", exc_info=True)
 
     save_video_meta(video_folder, meta, translated_langs)
     return True

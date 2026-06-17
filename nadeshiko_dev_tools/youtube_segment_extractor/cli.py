@@ -1,11 +1,4 @@
 """process-youtube — turn downloaded YouTube subtitles into _data.json segments.
-
-Mirrors the MKV pipeline (process-media): the first video is processed and
-validated before committing to the rest, then a final QC pass runs over the
-whole channel. Each video folder produced by fetch-youtube becomes one
-_data.json with one segment per grouped JA sentence; EN/ES are merged from
-overlapping cues (DeepL fills any per-segment gaps when TOKEN is set).
-
 Usage:
     uv run process-youtube /mnt/storage/yt/UCxxxxxxxxxxxxxxx
 """
@@ -20,8 +13,8 @@ from rich.console import Console
 from rich.logging import RichHandler
 
 from nadeshiko_dev_tools.common import discord_audit
-from nadeshiko_dev_tools.common.deepl import get_translator
 from nadeshiko_dev_tools.common.quality_check import run_qc
+from nadeshiko_dev_tools.common.translator import get_translator
 from nadeshiko_dev_tools.youtube_segment_extractor.extractor import (
     list_video_folders,
     load_channel_info,
@@ -43,6 +36,7 @@ def process_videos(
     hash_salt: str,
     translator,
     group_sentences: bool,
+    llm_grouper=None,
 ) -> dict[str, int | None]:
     """Build _data.json for each video. Returns {video_id: segment_count | None}."""
     stats: dict[str, int | None] = {}
@@ -52,7 +46,11 @@ def process_videos(
         console.print(f"[cyan bold]{'=' * 60}[/cyan bold]")
         try:
             count = process_video_folder(
-                video_folder, hash_salt, translator, group_sentences=group_sentences
+                video_folder,
+                hash_salt,
+                translator,
+                group_sentences=group_sentences,
+                llm_grouper=llm_grouper,
             )
             stats[video_id] = count
             console.print(f"[green bold]{video_id}: {count} segments generated[/green bold]")
@@ -72,6 +70,13 @@ def parse_args():
         "--no-group-sentences",
         action="store_true",
         help="Keep one segment per subtitle cue instead of grouping cues into sentences",
+    )
+    parser.add_argument(
+        "--no-llm-grouping",
+        action="store_true",
+        help="Group cues into sentences with the Japanese punctuation/sentence-end heuristic "
+        "instead of the LLM (the default). Use to avoid LLM calls or when OPENAI_API_KEY is "
+        "unavailable.",
     )
     parser.add_argument(
         "--discord-audit", action="store_true", help="Send progress to DISCORD_AUDIT_WEBHOOK_URL"
@@ -115,9 +120,22 @@ def main():
 
     group_sentences = not args.no_group_sentences
 
+    llm_grouper = None
+    if group_sentences and not args.no_llm_grouping:
+        from nadeshiko_dev_tools.common.llm_translator import get_openai_translator
+
+        llm_grouper = get_openai_translator()
+        if llm_grouper is None:
+            console.print(
+                "[yellow]No OpenAI translator available (set OPENAI_API_KEY) — "
+                "using punctuation heuristic for sentence grouping[/yellow]"
+            )
+        else:
+            console.print("[cyan]Sentence grouping: LLM boundary segmentation[/cyan]")
+
     # ── Process the first video, then validate before committing to the rest ──
     first = video_dirs[0]
-    stats = process_videos([first], hash_salt, translator, group_sentences)
+    stats = process_videos([first], hash_salt, translator, group_sentences, llm_grouper)
 
     if stats.get(first[0]) in (None, 0):
         discord_audit.post(
@@ -129,7 +147,9 @@ def main():
         return 1
 
     # ── Process remaining videos ──
-    stats.update(process_videos(video_dirs[1:], hash_salt, translator, group_sentences))
+    stats.update(
+        process_videos(video_dirs[1:], hash_salt, translator, group_sentences, llm_grouper)
+    )
 
     # ── Summary ──
     console.print(f"\n[green bold]{'=' * 60}[/green bold]")
