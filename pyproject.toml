@@ -81,4 +81,4 @@ quote-style = "double"
 indent-style = "space"
 
 [tool.uv.sources]
-nadeshiko-internal-sdk = { path = "../nadeshiko-sdk-python/build/internal/dist/nadeshiko_internal_sdk-2.1.1.dev1781494413-py3-none-any.whl" }
+nadeshiko-internal-sdk = { path = "../nadeshiko-sdk-python/build/internal/dist/nadeshiko_internal_sdk-2.2.0.dev1781577900-py3-none-any.whl" }

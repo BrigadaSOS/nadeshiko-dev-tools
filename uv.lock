@@ -1249,7 +1249,7 @@ requires-dist = [
     { name = "jaconvv2", specifier = ">=0.4" },
     { name = "langdetect", specifier = ">=1.0.9" },
     { name = "modal", marker = "extra == 'modal'", specifier = ">=0.64" },
-    { name = "nadeshiko-internal-sdk", path = "../nadeshiko-sdk-python/build/internal/dist/nadeshiko_internal_sdk-2.1.1.dev1781494413-py3-none-any.whl" },
+    { name = "nadeshiko-internal-sdk", path = "../nadeshiko-sdk-python/build/internal/dist/nadeshiko_internal_sdk-2.2.0.dev1781577900-py3-none-any.whl" },
     { name = "numpy", specifier = ">=1.24.0" },
     { name = "nvidia-cublas-cu12", marker = "platform_machine == 'x86_64'" },
     { name = "nvidia-cuda-nvrtc-cu12", marker = "platform_machine == 'x86_64'" },
@@ -1283,15 +1283,15 @@ dev = [
 
 [[package]]
 name = "nadeshiko-internal-sdk"
-version = "2.1.1.dev1781494413"
-source = { path = "../nadeshiko-sdk-python/build/internal/dist/nadeshiko_internal_sdk-2.1.1.dev1781494413-py3-none-any.whl" }
+version = "2.2.0.dev1781577900"
+source = { path = "../nadeshiko-sdk-python/build/internal/dist/nadeshiko_internal_sdk-2.2.0.dev1781577900-py3-none-any.whl" }
 dependencies = [
     { name = "attrs" },
     { name = "httpx" },
     { name = "python-dateutil" },
 ]
 wheels = [
-    { filename = "nadeshiko_internal_sdk-2.1.1.dev1781494413-py3-none-any.whl", hash = "sha256:9e790398e86cb1f0d0a5fe700787f4203cf3043cebfeffd79875a16fce1a287b" },
+    { filename = "nadeshiko_internal_sdk-2.2.0.dev1781577900-py3-none-any.whl", hash = "sha256:44b04ad08234c4bc84020896edf5f9e260f4c637ce0831d9c803558ab0367741" },
 ]
 
 [package.metadata]
