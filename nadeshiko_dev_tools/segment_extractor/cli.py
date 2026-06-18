@@ -426,12 +426,11 @@ def main():
     hash_salt = save_info_json(anime_folder, anime_data)
     console.print(f"[green]Saved _info.json (salt: {hash_salt[:8]}...)[/green]")
 
-    import deepl as deepl_lib
+    from nadeshiko_dev_tools.common.translator import get_translator
 
-    deepl_token = os.getenv("TOKEN")
-    translator = deepl_lib.Translator(deepl_token) if deepl_token else None
+    translator = get_translator()
     if not translator:
-        logger.warning("No DeepL token — segments missing EN/ES will be skipped")
+        logger.warning("No translator configured — segments missing EN/ES will be skipped")
 
     discord_audit.post("Starting extraction", stage="started")
 

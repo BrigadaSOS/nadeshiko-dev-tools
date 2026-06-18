@@ -67,9 +67,10 @@ def get_api_client(target: str) -> Nadeshiko:
         headers={"User-Agent": "NadeshikoDevTools/1.0"},
     )
 
+_EXTERNAL_ID_SOURCES = ("anilist", "tmdb", "tvdb", "imdb", "youtube")
 
 def find_media(client: Nadeshiko, media_id: str):
-    """Find media by external ID (AniList ID) in the API."""
+    """Find media by external ID (AniList/TMDB/YouTube channel/etc.)."""
     from nadeshiko_internal.types import UNSET
 
     try:
@@ -77,25 +78,26 @@ def find_media(client: Nadeshiko, media_id: str):
             ext_ids = getattr(media, "external_ids", UNSET)
             if ext_ids is UNSET or ext_ids is None:
                 continue
-            anilist_val = getattr(ext_ids, "anilist", None)
-            if str(anilist_val) == str(media_id):
-                return media
+            for source in _EXTERNAL_ID_SOURCES:
+                if str(getattr(ext_ids, source, None)) == str(media_id):
+                    return media
     except NadeshikoError as e:
         print(f"  Error listing media: {e.detail}", file=sys.stderr)
     return None
 
 
-def remove_from_api(client: Nadeshiko, media_id: str, dry_run: bool) -> bool:
+def remove_from_api(client: Nadeshiko, media_id: str, dry_run: bool) -> tuple[bool, str | None]:
     """Remove media and all episodes from the Nadeshiko API."""
     print("\n--- Nadeshiko API cleanup ---")
 
     media = find_media(client, media_id)
     if not media:
         print(f"  Media {media_id} not found in API (may already be deleted)")
-        return True
+        return True, None
 
     public_id = getattr(media, "public_id", media_id)
     title = getattr(media, "title", media_id)
+    storage_base_path = getattr(media, "storage_base_path", None)
     print(f"  Found: {title} (ID: {public_id})")
 
     episodes_to_delete = []
@@ -115,7 +117,7 @@ def remove_from_api(client: Nadeshiko, media_id: str, dry_run: bool) -> bool:
 
     if dry_run:
         print(f"\n  [dry-run] Would delete {len(episodes_to_delete)} episodes + media record")
-        return True
+        return True, storage_base_path
 
     for ep_num in episodes_to_delete:
         try:
@@ -127,10 +129,10 @@ def remove_from_api(client: Nadeshiko, media_id: str, dry_run: bool) -> bool:
     try:
         client.delete_media(media_public_id=public_id)
         print(f"  Deleted media record {public_id}")
-        return True
+        return True, storage_base_path
     except NadeshikoError as e:
         print(f"  Error deleting media: {e.detail}")
-        return False
+        return False, storage_base_path
 
 
 # --- R2 ---
@@ -211,7 +213,10 @@ def remove_from_r2(storage_path: str, dry_run: bool, skip_confirm: bool = False)
 
 def main():
     parser = argparse.ArgumentParser(description="Remove media from Nadeshiko API and R2 storage")
-    parser.add_argument("media_id", help="Media/AniList ID to remove (e.g., '20812')")
+    parser.add_argument(
+        "media_id",
+        help="Media ID to remove: AniList/TMDB id (e.g. '20812') or YouTube channel id",
+    )
     parser.add_argument(
         "--target", required=True, choices=["local", "dev", "prod"], help="Target environment"
     )
@@ -231,15 +236,18 @@ def main():
     if args.dry_run:
         print("[DRY RUN MODE]")
 
+    storage_path = args.media_id
     if not args.r2_only:
         client = get_api_client(args.target)
-        api_ok = remove_from_api(client, args.media_id, args.dry_run)
+        api_ok, base_path = remove_from_api(client, args.media_id, args.dry_run)
         if not api_ok:
             print("\nAPI cleanup failed. R2 cleanup skipped.")
             return 1
+        if base_path:
+            storage_path = base_path
 
     if not args.api_only:
-        remove_from_r2(args.media_id, args.dry_run, skip_confirm=args.yes or args.dry_run)
+        remove_from_r2(storage_path, args.dry_run, skip_confirm=args.yes or args.dry_run)
 
     print(f"\n{'[DRY RUN] ' if args.dry_run else ''}Done!")
     return 0

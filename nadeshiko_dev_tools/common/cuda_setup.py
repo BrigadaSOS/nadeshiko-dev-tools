@@ -22,6 +22,7 @@ def ensure_nvidia_cuda12_libs():
         "nvidia.cuda_runtime",
         "nvidia.cublas",
         "nvidia.cufft",
+        "nvidia.curand",
         "nvidia.cudnn",
         "nvidia.cuda_nvrtc",
         "nvidia.nvjitlink",

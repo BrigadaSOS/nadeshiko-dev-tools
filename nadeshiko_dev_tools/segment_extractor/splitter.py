@@ -13,6 +13,11 @@ from rich.console import Console
 from nadeshiko_dev_tools.common.file_utils import (
     write_data_json,
 )
+from nadeshiko_dev_tools.segment_extractor.utils.media import (
+    build_clip,
+    extract_audio,
+    extract_screenshot,
+)
 from nadeshiko_dev_tools.segment_extractor.utils.subtitle_utils import (
     load_subtitle_file,
 )
@@ -710,14 +715,14 @@ def generate_segment(
             sentence_japanese, source_lang="JA", target_lang="ES"
         ).text
         sentence_spanish_is_mt = True
-        logs.append(f"[DEEPL - SPANISH]: {sentence_spanish}")
+        logs.append(f"[MT - SPANISH]: {sentence_spanish}")
 
     if translator and not sentence_english:
         sentence_english = translator.translate_text(
             sentence_japanese, source_lang="JA", target_lang="EN-US"
         ).text
         sentence_english_is_mt = True
-        logs.append(f"[DEEPL - ENGLISH]: {sentence_english}")
+        logs.append(f"[MT - ENGLISH]: {sentence_english}")
 
     duration_ms = segment_end - segment_start
     start_time_delta = timedelta(milliseconds=segment_start)
@@ -781,148 +786,38 @@ def generate_segment(
     content_analysis = None
 
     if video_file and not dryrun:
+        audio_path = os.path.join(output_path, audio_filename)
+        screenshot_path = os.path.join(output_path, screenshot_filename)
+        video_path = os.path.join(output_path, video_filename)
+
         try:
-            audio_path = os.path.join(output_path, audio_filename)
-
-            # Build ffmpeg command for audio extraction
-            ffmpeg_cmd = [
-                "ffmpeg",
-                "-y",
-                "-ss",
-                str(start_time_seconds),
-                "-i",
+            extract_audio(
                 video_file,
-                "-t",
-                str(end_time_seconds - start_time_seconds),
-            ]
-
-            # Add -map option if specific audio track is selected
-            if audio_index is not None:
-                ffmpeg_cmd.extend(["-map", f"0:{audio_index}"])
-
-            ffmpeg_cmd.extend(
-                [
-                    "-vn",
-                    "-af",
-                    "loudnorm=I=-16:LRA=11:TP=-2",
-                    "-c:a",
-                    "libmp3lame",
-                    "-q:a",
-                    "5",
-                    audio_path,
-                ]
+                audio_path,
+                start_time_seconds,
+                end_time_seconds,
+                audio_index,
             )
-
-            result = subprocess.run(
-                ffmpeg_cmd,
-                stdout=subprocess.PIPE,
-                stderr=subprocess.STDOUT,
-                text=True,
-            )
-            if result.returncode != 0:
-                logger.error(f"[red]ffmpeg audio failed: {result.stdout}[/red]")
-                raise RuntimeError(f"ffmpeg audio failed with code {result.returncode}")
-
             logs.append(f"> Saved audio in {audio_path}")
-
         except Exception as err:
             logger.error(f"[red]Error creating audio '{audio_filename}': {err}[/red]")
             return logs, None, "audio"
 
         try:
-            screenshot_path = os.path.join(output_path, screenshot_filename)
             screenshot_time = (start_time_seconds + end_time_seconds) / 2
-
-            result = subprocess.run(
-                [
-                    "ffmpeg",
-                    "-y",
-                    "-ss",
-                    str(screenshot_time),
-                    "-i",
-                    video_file,
-                    "-vframes",
-                    "1",
-                    "-vf",
-                    "scale=960:540:force_original_aspect_ratio=decrease,pad=960:540:(ow-iw)/2:(oh-ih)/2:black",
-                    "-c:v",
-                    "libwebp",
-                    "-quality",
-                    "85",
-                    "-method",
-                    "6",
-                    screenshot_path,
-                ],
-                stdout=subprocess.PIPE,
-                stderr=subprocess.STDOUT,
-                text=True,
-            )
-            if result.returncode != 0:
-                logger.error(f"[red]ffmpeg screenshot failed: {result.stdout}[/red]")
-                raise RuntimeError(f"ffmpeg screenshot failed with code {result.returncode}")
-
+            extract_screenshot(video_file, screenshot_path, screenshot_time)
             logs.append(f"> Saved screenshot in {screenshot_path}")
 
             # Content rating is handled by batch_tagger() in pipeline.py after extraction
             content_rating = None
             content_analysis = None
-
         except Exception as err:
             logger.error(f"[red]Error creating screenshot '{screenshot_filename}': {err}[/red]")
             return logs, None, "screenshot"
 
-        video_path = os.path.join(output_path, video_filename)
-
         try:
-            # Web-optimized: baseline profile, level 3.0, fastdecode tune for browser compatibility
-            result = subprocess.run(
-                [
-                    "ffmpeg",
-                    "-y",
-                    "-loop",
-                    "1",
-                    "-framerate",
-                    "24",
-                    "-i",
-                    screenshot_path,
-                    "-i",
-                    audio_path,
-                    "-vf",
-                    "scale=1280:720:force_original_aspect_ratio=decrease,pad=1280:720:(ow-iw)/2:(oh-ih)/2:black,setsar=1",
-                    "-c:v",
-                    "libx264",
-                    "-profile:v",
-                    "baseline",
-                    "-level",
-                    "3.0",
-                    "-preset",
-                    "faster",
-                    "-tune",
-                    "fastdecode",
-                    "-crf",
-                    "35",
-                    "-pix_fmt",
-                    "yuv420p",
-                    "-c:a",
-                    "aac",
-                    "-aac_coder",
-                    "twoloop",
-                    "-b:a",
-                    "96k",
-                    "-movflags",
-                    "+faststart",
-                    "-shortest",
-                    video_path,
-                ],
-                stdout=subprocess.PIPE,
-                stderr=subprocess.STDOUT,
-                text=True,
-            )
-            if result.returncode != 0:
-                logger.error(f"[red]ffmpeg video failed: {result.stdout}[/red]")
-                raise RuntimeError(f"ffmpeg video failed with code {result.returncode}")
+            build_clip(screenshot_path, audio_path, video_path)
             logs.append(f"> Saved video in {video_path}")
-
         except Exception as err:
             logger.error(f"[red]Error creating video '{video_filename}': {err}[/red]")
             return logs, None, "video"
