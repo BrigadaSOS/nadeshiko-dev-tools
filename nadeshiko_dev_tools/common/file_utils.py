@@ -46,10 +46,13 @@ def download_and_save_image(url: str, output_dir: str, prefix: str) -> str:
     with open(temp_filepath, "wb") as handler:
         handler.write(image_data)
 
+    # force_original_aspect_ratio=decrease shrinks to *fit* the box instead of
+    # stretching to fill it. Without it, a square source (e.g. a YouTube channel
+    # avatar) gets forced into the 460x690 poster frame and comes out elongated.
     if prefix == "cover":
-        scale_filter = "scale='min(460,iw)':'min(690,ih)'"
+        scale_filter = "scale='min(460,iw)':'min(690,ih)':force_original_aspect_ratio=decrease"
     elif prefix == "banner":
-        scale_filter = "scale='min(1200,iw)':'min(400,ih)'"
+        scale_filter = "scale='min(1200,iw)':'min(400,ih)':force_original_aspect_ratio=decrease"
     else:
         scale_filter = None
 
