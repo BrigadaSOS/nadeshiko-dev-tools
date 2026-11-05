@@ -40,7 +40,8 @@ dependencies = [
     "sudachidict-full>=20240109",
     "fugashi>=1.3.0",
     "unidic>=1.1.0",
-    "yt-dlp>=2024.1.0",
+    # [default] bundles yt-dlp-ejs, the pinned YouTube JS-challenge solver (runs on deno).
+    "yt-dlp[default]>=2026.8.19",
     "curl-cffi>=0.5.10,<0.15.0",
     "openai>=1.0",
 ]
