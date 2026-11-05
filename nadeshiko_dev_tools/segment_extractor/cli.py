@@ -39,6 +39,7 @@ def extract_episodes(
     hash_salt: str,
     translator,
     dryrun: bool = False,
+    sync_external_subs: bool = True,
 ) -> dict[int, int | None]:
     """Extract segments from MKV files. Returns {episode_num: segment_count}."""
     import re
@@ -250,7 +251,7 @@ def extract_episodes(
                 translator,
                 anime_data,
                 hash_salt,
-                sync_external_subs=True,
+                sync_external_subs=sync_external_subs,
                 dryrun=dryrun,
                 audio_index=ep_audio_index,
                 input_folder=input_folder,
@@ -329,6 +330,13 @@ def parse_args():
         "Other MKVs in the folder are still used for chapter detection.",
     )
     parser.add_argument("--dry-run", action="store_true", help="Parse only, no media generation")
+    parser.add_argument(
+        "--no-sync-external-subs",
+        dest="sync_external_subs",
+        action="store_false",
+        default=True,
+        help="Preserve external subtitle timestamps instead of aligning them with ffsubsync",
+    )
     parser.add_argument(
         "--discord-audit", action="store_true", help="Send progress to DISCORD_AUDIT_WEBHOOK_URL"
     )
@@ -447,6 +455,7 @@ def main():
         hash_salt,
         translator,
         args.dry_run,
+        args.sync_external_subs,
     )
 
     first_ep_count = episode_stats.get(first_ep[0])
@@ -473,6 +482,7 @@ def main():
             hash_salt,
             translator,
             args.dry_run,
+            args.sync_external_subs,
         )
         episode_stats.update(remaining_stats)
 

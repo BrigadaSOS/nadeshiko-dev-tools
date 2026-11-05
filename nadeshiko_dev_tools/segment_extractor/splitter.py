@@ -59,6 +59,12 @@ MATCH_TOLERANCE_MS = 1000
 _OP_ED_KEYWORDS = {"opening", "ending", "op", "ed"}
 
 
+def _drop_nonpositive_duration_lines(lines: list[dict]) -> tuple[list[dict], int]:
+    """Remove malformed subtitle cues that cannot participate in overlap ratios."""
+    kept = [line for line in lines if line["end"] > line["start"]]
+    return kept, len(lines) - len(kept)
+
+
 def _probe_chapters(filepath: str) -> list[tuple[int, int]]:
     """Extract OP/ED time ranges (ms) from a single file's chapter metadata."""
     try:
@@ -442,6 +448,13 @@ def split_video_by_subtitles(
             seen.add(key)
             deduped.append(line)
     all_lines = deduped
+
+    all_lines, invalid_duration_count = _drop_nonpositive_duration_lines(all_lines)
+    if invalid_duration_count:
+        logger.warning(
+            f"[E{episode_number}] Dropped {invalid_duration_count} subtitle lines "
+            "with non-positive duration"
+        )
 
     # Filter out lines that fall within OP/ED time ranges
     if op_ed_ranges:
