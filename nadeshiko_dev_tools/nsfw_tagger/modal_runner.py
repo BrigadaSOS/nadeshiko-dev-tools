@@ -44,6 +44,8 @@ image = modal.Image.from_registry(
     "onnxruntime-gpu>=1.20.0",
     "pandas>=2.0.0",
     "Pillow>=10.0.0",
+    # The remote function imports this module, which uses Rich for progress output.
+    "rich>=13.0.0",
 )
 
 
