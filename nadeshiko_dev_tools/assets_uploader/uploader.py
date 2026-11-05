@@ -804,11 +804,22 @@ class NadeshikoUploader:
         blank here. Cover/banner are local files uploaded from the channel folder.
         """
         name = data.get("name") or data.get("channel_id", "")
+        # The backend builds the slug from nameRomaji when it is ASCII, else nameEn, and
+        # strips non-ASCII: a Japanese-only channel name for both yields an empty slug
+        # that breaks media listing. Send an ASCII romaji (from _info.json, or the
+        # channel ID as a last resort) and keep the display name as the English title.
+        ascii_name = (
+            data.get("romaji_name")
+            or data.get("name_romaji")
+            or data.get("slug_name")
+            or data["channel_id"]
+        )
+        english_name = data.get("english_name") or data.get("name_en") or name
         return MediaInfo(
             anilist_id=data["channel_id"],
             japanese_name=name,
-            english_name=name,
-            romaji_name=name,
+            english_name=english_name,
+            romaji_name=ascii_name,
             airing_format="",
             airing_status="",
             genres=[],
