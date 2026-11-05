@@ -15,6 +15,14 @@ _DEFAULT_MODEL = "gpt-5.4-mini"
 _BATCH_SIZE = 40
 # Concurrent batches: throughput without tripping rate limits (retry handles the rest).
 _DEFAULT_CONCURRENCY = 5
+# sentence_starts windowing (cues per request, and context cues re-read from the last one)
+_SENTENCE_WINDOW = 80
+_SENTENCE_OVERLAP = 10
+
+
+def _batch_size_for_model(model: str) -> int:
+    """Keep Qwen structured responses below Groq's JSON completion limit."""
+    return 20 if model.startswith("qwen/") else _BATCH_SIZE
 
 
 @dataclass
@@ -34,6 +42,20 @@ def _lang_name(code: str | None) -> str:
     if c.startswith("JA"):
         return "Japanese"
     return code or "the target language"
+
+
+def _translation_system_prompt(src: str, tgt: str) -> str:
+    # Spanish defaults to neutral Latin American; other targets keep their plain name.
+    variety = "neutral Latin American Spanish" if tgt == "Spanish" else tgt
+    return (
+        f"You are a professional subtitle translator. Translate each {src} subtitle "
+        f"line into natural, colloquial {variety} that matches spoken register. Preserve "
+        "the speaker, addressee, and level of formality. You receive a JSON object mapping "
+        "an index to a line. Return a JSON object with the SAME keys, each mapped to the "
+        "translation of that line only; neighbouring lines may be read as context to "
+        "resolve an incomplete thought. Do NOT merge, split, drop, or add keys, and do not "
+        "add notes or romanization."
+    )
 
 
 def _chunk_schema(n: int) -> dict:
@@ -87,7 +109,8 @@ class OpenAITranslator:
     def _translate(self, items: list[str], source_lang, target_lang) -> list[str]:
         src = _lang_name(source_lang) if source_lang else "Japanese"
         tgt = _lang_name(target_lang)
-        chunks = [items[i : i + _BATCH_SIZE] for i in range(0, len(items), _BATCH_SIZE)]
+        batch_size = _batch_size_for_model(self._model)
+        chunks = [items[i : i + batch_size] for i in range(0, len(items), batch_size)]
         if len(chunks) == 1:
             return self._translate_chunk(chunks[0], src, tgt)
 
@@ -104,14 +127,7 @@ class OpenAITranslator:
 
     def _translate_chunk(self, chunk: list[str], src: str, tgt: str) -> list[str]:
         payload = {str(i): line for i, line in enumerate(chunk)}
-        system = (
-            f"You are a professional subtitle translator. Translate each {src} subtitle "
-            f"line into natural, colloquial {tgt} that matches spoken register. You receive "
-            "a JSON object mapping an index to a line. Return a JSON object with the SAME "
-            "keys, each mapped to the translation of that line. Translate each line "
-            "independently; do NOT merge, split, drop, or add keys, and do not add notes "
-            "or romanization."
-        )
+        system = _translation_system_prompt(src, tgt)
         content = self._complete(
             system, json.dumps(payload, ensure_ascii=False), schema=_chunk_schema(len(chunk))
         )
@@ -177,8 +193,6 @@ class OpenAITranslator:
         if n <= 1:
             return [0] if n else []
 
-        cues = [{"i": i, "ja": ja_texts[i]} for i in range(n)]
-
         system = (
             "You group fragments of spoken Japanese into sentences. You receive an array of "
             "numbered cues, each with Japanese text 'ja'. The cues are consecutive fragments "
@@ -207,21 +221,37 @@ class OpenAITranslator:
                 "additionalProperties": False,
             },
         }
-        content = self._complete(
-            system, json.dumps({"cues": cues}, ensure_ascii=False), schema=schema
-        )
-        try:
-            raw = json.loads(content).get("sentence_starts", [])
-        except (json.JSONDecodeError, AttributeError):
-            raw = []
+        # Some providers (e.g. Qwen on Groq) can't return a whole episode's analysis in one
+        # structured response, so cues go in bounded windows. Each window after the first
+        # re-reads the previous _SENTENCE_OVERLAP cues as context and only decides cuts in
+        # its own region: the model always marks a window's first cue as a start, and
+        # without the overlap every window boundary would split a sentence.
+        starts: set[int] = set()
+        region_start = 0
+        while region_start < n:
+            win_start = max(0, region_start - _SENTENCE_OVERLAP)
+            win_end = min(n, win_start + _SENTENCE_WINDOW)
+            chunk = [{"i": i - win_start, "ja": ja_texts[i]} for i in range(win_start, win_end)]
+            content = self._complete(
+                system, json.dumps({"cues": chunk}, ensure_ascii=False), schema=schema
+            )
+            try:
+                raw = json.loads(content).get("sentence_starts", [])
+            except (json.JSONDecodeError, AttributeError):
+                raw = []
+            starts.update(
+                win_start + i
+                for i in raw
+                if isinstance(i, int)
+                and not isinstance(i, bool)
+                and region_start <= win_start + i < win_end
+            )
+            region_start = win_end
 
-        # Sanitise: keep in-range ints, drop bools, dedupe, sort, force index 0 present.
-        starts = sorted(
-            {i for i in raw if isinstance(i, int) and not isinstance(i, bool) and 0 <= i < n}
-        )
-        if not starts or starts[0] != 0:
-            starts = [0, *starts]
-        return starts
+        ordered_starts = sorted(starts)
+        if not ordered_starts or ordered_starts[0] != 0:
+            ordered_starts = [0, *ordered_starts]
+        return ordered_starts
 
     def _complete(
         self,
@@ -252,6 +282,8 @@ class OpenAITranslator:
                 )
                 return resp.choices[0].message.content or "{}"
             except openai.BadRequestError:
+                # Any 400 while requesting json_schema (unsupported format, or a
+                # provider's structured-output token limit) falls back to json_object.
                 if self._supports_schema and schema is not None:
                     logger.warning(
                         "Endpoint rejected json_schema response_format — falling back "
