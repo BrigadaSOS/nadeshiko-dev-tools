@@ -80,6 +80,46 @@ to bypass YouTube's bot detection. Set `OPENAI_API_KEY` in `.env` to translate
 missing EN/ES langs; without it, JA lines lacking an EN/ES cue are dropped to
 `ignored_segments`.
 
+## Audiobook Pipeline
+
+Audiobooks come from a [Honomiya](https://github.com/Natsume-197/Honomiya) read-listen
+alignment: one cue per ebook sentence with its exact text and audio interval, so there is no
+subtitle parsing or sentence grouping. Prepare one folder per book:
+
+```
+books/oregairu-1/
+  audio.m4b        # chapters are read from its metadata
+  alignment.json   # Honomiya manifest (honomiya.read-listen.v1, text-quote cues)
+  cover.webp       # or .jpg / .png
+  book.json        # {"asin", "japanese_name", "romaji_name", "english_name", "release_date"}
+```
+
+`book.json` may also set `"content_rating"` (default `SAFE`; `SUGGESTIVE`, `QUESTIONABLE` or
+`EXPLICIT`). Nadeshiko rates the image, and an audiobook's only image is its cover.
+
+```bash
+# 1. Build segment data (validates the first chapter, then the rest, then QC)
+uv run process-audiobook ./books/oregairu-1 --output ./output --chapters 2-10
+
+# 2. Tokenize (Sudachi + UniDic POS analysis); no tag-media, every image is the cover
+uv run tokenize-media ./output/B07PPMBZHX
+
+# 3. Upload to dev, then prod (same commands as the other pipelines)
+uv run assets-uploader ./output/B07PPMBZHX --target dev --storage r2 --upload-r2 --apply
+```
+
+Each m4b chapter becomes a folder named by its m4b number, and that number is the episode
+readers see: `--chapters` only picks which ones to process, it never renumbers. Segment times are
+relative to the chapter; the chapter title goes to the episode's Japanese title. Cues longer than
+12 s or shorter than 0.5 s are alignment artefacts and go to `ignored_segments`
+(`--max-duration-ms` / `--min-duration-ms`). EN/ES are machine translated and need
+`OPENAI_API_KEY`. `audio.m4b` must be the exact file the alignment was made from (sha256 check;
+`--skip-audio-check` to bypass).
+
+The uploader keys audiobooks by ASIN (`media/ab/<asin>` in storage) and needs an API with the
+`AUDIOBOOK` category and an internal SDK built from that spec. Older SDKs reject `AUDIOBOOK` when
+reading media, so once one audiobook exists every machine that uploads needs the new wheel.
+
 ## CLI Reference
 
 | Command | Purpose |
@@ -87,6 +127,7 @@ missing EN/ES langs; without it, JA lines lacking an EN/ES cue are dropped to
 | `process-media` | Extract segments from MKV files |
 | `fetch-youtube` | Download YouTube subtitles + translate missing langs |
 | `process-youtube` | Convert downloaded YouTube subs into segment data |
+| `process-audiobook` | Convert a Honomiya alignment + m4b into segment data |
 | `tokenize-media` | Batch Sudachi + UniDic tokenization |
 | `tag-media` | Batch NSFW tagger (local GPU/CPU, or Modal GPU via `--modal`) |
 | `quality-check` | Standalone QC (ad-hoc) |

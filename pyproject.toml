@@ -60,6 +60,7 @@ validate-r2 = "nadeshiko_dev_tools.validate_r2:main"
 notify-discord = "nadeshiko_dev_tools.notify_discord:main"
 fetch-youtube = "nadeshiko_dev_tools.youtube_fetcher.cli:main"
 process-youtube = "nadeshiko_dev_tools.youtube_segment_extractor.cli:main"
+process-audiobook = "nadeshiko_dev_tools.audiobook_segment_extractor.cli:main"
 
 [dependency-groups]
 dev = [

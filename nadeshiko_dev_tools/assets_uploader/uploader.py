@@ -344,8 +344,8 @@ class MediaInfo:
     studio: str | None = None
     season_name: str | None = None
     season_year: int | None = None
-    media_source: str = "anilist"  # "anilist", "tmdb" or "youtube"
-    category: str = "ANIME"  # "ANIME", "JDRAMA" or "YOUTUBE"
+    media_source: str = "anilist"  # "anilist", "tmdb", "youtube" or "audible"
+    category: str = "ANIME"  # "ANIME", "JDRAMA", "YOUTUBE" or "AUDIOBOOK"
     tmdb_season: int | None = None  # TMDB season number (1-based) for multi-season shows
 
     @property
@@ -498,10 +498,44 @@ class YoutubeSource(MediaSource):
         return data.get("channel_id"), data.get("name")
 
 
+class AudiobookSource(MediaSource):
+    """Audiobooks from process-audiobook, keyed by their Audible ASIN. Chapters are episodes,
+    numbered as in the m4b, and their folders are named by that number, so the default
+    ``episode_number`` applies."""
+
+    key = "asin"
+    requires_season = False
+
+    def external_ids(self, info: "MediaInfo") -> ExternalId:
+        return ExternalId(
+            anilist=None, imdb=None, tvdb=None, tmdb=None, youtube=None, asin=str(info.anilist_id)
+        )
+
+    def storage_base_path(self, info: "MediaInfo") -> str:
+        return f"media/ab/{info.anilist_id}"
+
+    def create_descriptors(self, info: "MediaInfo") -> dict:
+        # The API requires the anime/drama season fields; a book has no season, so NONE and
+        # the release year, like YouTube.
+        year = int(info.start_date[:4]) if info.start_date else dt.date.today().year
+        return {
+            "airing_format": "AUDIOBOOK",
+            "airing_status": "FINISHED",
+            "genres": info.genres or [],
+            "category": "AUDIOBOOK",
+            "season_name": "NONE",
+            "season_year": year,
+        }
+
+    def summary_identity(self, data: dict) -> tuple[object, str | None]:
+        return data.get("asin", data.get("id")), data.get("romaji_name")
+
+
 MEDIA_SOURCES: dict[str, MediaSource] = {
     "anilist": AnilistSource(),
     "tmdb": TmdbSource(),
     "youtube": YoutubeSource(),
+    "audible": AudiobookSource(),
 }
 
 
