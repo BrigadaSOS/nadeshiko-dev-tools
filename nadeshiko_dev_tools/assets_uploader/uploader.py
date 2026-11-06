@@ -1104,7 +1104,8 @@ class NadeshikoUploader:
             text_en=en,
             content_rating=self._segment_content_rating(segment),
             rating_analysis=segment.content_analysis or UNSET,
-            pos_analysis=segment.pos_analysis or UNSET,
+            # posAnalysis left the API in Nadeshiko 438892d4 (2026-08): the backend tokenizes
+            # segments itself, and older SDKs' copy was silently dropped.
             storage=storage,
             hashed_id=segment.segment_hash,
         )
