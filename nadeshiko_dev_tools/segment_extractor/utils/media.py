@@ -20,6 +20,10 @@ def _run_ffmpeg(cmd: list[str], what: str) -> None:
         stdout=subprocess.PIPE,
         stderr=subprocess.STDOUT,
         text=True,
+        # ffmpeg echoes container metadata and may cut a multi-byte character (e.g. a
+        # Japanese m4b title) mid-sequence; strict decoding would turn that into a failure.
+        encoding="utf-8",
+        errors="replace",
     )
     if result.returncode != 0:
         logger.error(f"[red]ffmpeg {what} failed: {result.stdout}[/red]")
@@ -49,6 +53,9 @@ def extract_audio(
     cmd.extend(
         [
             "-vn",
+            # Don't copy the source's chapter list into a few-second clip.
+            "-map_chapters",
+            "-1",
             "-af",
             "loudnorm=I=-16:LRA=11:TP=-2",
             "-c:a",
