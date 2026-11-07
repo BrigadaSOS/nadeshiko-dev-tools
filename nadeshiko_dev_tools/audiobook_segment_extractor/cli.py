@@ -13,6 +13,10 @@ from dotenv import load_dotenv
 from rich.console import Console
 from rich.logging import RichHandler
 
+from nadeshiko_dev_tools.audiobook_segment_extractor.book_translator import (
+    DEFAULT_MODEL,
+    get_book_translator,
+)
 from nadeshiko_dev_tools.audiobook_segment_extractor.extractor import (
     DEFAULT_MAX_DURATION_MS,
     DEFAULT_MIN_DURATION_MS,
@@ -23,9 +27,12 @@ from nadeshiko_dev_tools.audiobook_segment_extractor.extractor import (
     TranslationCache,
     prepare_book,
     process_chapter,
+    repair_chapter_translations,
 )
+from nadeshiko_dev_tools.common.file_utils import atomic_write_json
 from nadeshiko_dev_tools.common.quality_check import run_qc
-from nadeshiko_dev_tools.common.translator import get_translator
+
+REVIEW_FILE = "_translation_review.json"
 
 load_dotenv()
 
@@ -86,6 +93,18 @@ def parse_args(argv=None):
         help="Make no translation calls: use only cached/reused translations; sentences "
         "without one go to ignored_segments",
     )
+    parser.add_argument(
+        "--repair-translations",
+        action="store_true",
+        help="Re-check chapters that are already written and retranslate their flagged lines "
+        "in place (only content_en/content_es change; no media is cut again)",
+    )
+    parser.add_argument(
+        "--workers",
+        type=int,
+        default=max(1, (os.cpu_count() or 2) // 2),
+        help="Clips cut side by side per chapter (default: half the CPU cores)",
+    )
     return parser.parse_args(argv)
 
 
@@ -111,6 +130,7 @@ def _run_chapters(
                 max_ms=args.max_duration_ms,
                 content_rating=prepared.book["content_rating"],
                 cache=cache,
+                workers=args.workers,
             )
             console.print(f"[green]Chapter {n}: {stats[n]} segments[/green]")
         except Exception:
@@ -119,20 +139,35 @@ def _run_chapters(
     return stats
 
 
+def _repair(prepared: PreparedBook, chapters: list[Chapter], translator, cache) -> None:
+    for chapter in chapters:
+        chapter_dir = os.path.join(prepared.out_folder, str(chapter.number))
+        if not os.path.exists(os.path.join(chapter_dir, "_data.json")):
+            continue
+        changed = repair_chapter_translations(chapter_dir, translator, cache)
+        console.print(f"[cyan]Chapter {chapter.number}: {changed} translations repaired[/cyan]")
+    cache.save()
+
+
+def _write_review(prepared: PreparedBook, translator) -> None:
+    review = getattr(translator, "review", None)
+    if not review:
+        return
+    path = os.path.join(prepared.out_folder, REVIEW_FILE)
+    atomic_write_json(path, review)
+    console.print(
+        f"[yellow]{len(review)} translations still look wrong after repair — review {path}[/yellow]"
+    )
+
+
 def main(argv=None):
     args = parse_args(argv)
 
-    if args.no_translate:
-        translator = None
-        console.print("[yellow]--no-translate: only cached translations are used[/yellow]")
-    else:
-        translator = get_translator()
-        if translator is None:
-            console.print(
-                "[red]OPENAI_API_KEY is not set — audiobooks need EN/ES translation "
-                "(or pass --no-translate with --reuse-translations)[/red]"
-            )
-            return 1
+    if args.no_translate and args.repair_translations:
+        console.print(
+            "[red]--repair-translations needs translation calls; drop --no-translate[/red]"
+        )
+        return 1
 
     try:
         console.print("[cyan]Checking input (hashing the m4b can take a few seconds)...[/cyan]")
@@ -144,6 +179,25 @@ def main(argv=None):
     except BookInputError as e:
         console.print(f"[red]{e}[/red]")
         return 1
+
+    if args.no_translate:
+        translator = None
+        console.print("[yellow]--no-translate: only cached translations are used[/yellow]")
+    else:
+        # The book's own translator: EN+ES per call, the book.json glossary, the echo check and
+        # repair of flagged lines (see book_translator.py).
+        translator = get_book_translator(prepared.book)
+        if translator is None:
+            console.print(
+                "[red]OPENAI_API_KEY is not set — audiobooks need EN/ES translation "
+                "(or pass --no-translate with --reuse-translations)[/red]"
+            )
+            return 1
+        glossary = translator.glossary
+        console.print(
+            f"[cyan]Translating with {os.getenv('OPENAI_TRANSLATE_MODEL', DEFAULT_MODEL)}; "
+            f"glossary: {len(glossary.names)} names, {len(glossary.notes)} notes[/cyan]"
+        )
 
     wanted = None
     if args.chapters:
@@ -163,6 +217,9 @@ def main(argv=None):
 
     # Chapter numbers always follow the m4b, whatever is selected.
     chapters = [ch for ch in prepared.chapters if wanted is None or ch.number in wanted]
+
+    if args.repair_translations:
+        _repair(prepared, chapters, translator, cache)
 
     console.print(
         f"[green]{prepared.book['japanese_name']}[/green] — {len(prepared.chapters)} chapters, "
@@ -186,6 +243,8 @@ def main(argv=None):
     console.print("\n[green bold]Summary[/green bold]")
     for n, count in stats.items():
         console.print(f"  {n}: {count if count is not None else '[red]FAILED[/red]'}")
+
+    _write_review(prepared, translator)
 
     usage = getattr(translator, "usage", None)
     if usage:

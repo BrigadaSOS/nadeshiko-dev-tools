@@ -10,7 +10,10 @@ Input folder (one per book):
     audio.m4b        chapters embedded in the file (read with ffprobe)
     alignment.json   Honomiya manifest, schema honomiya.read-listen.v1
     cover.(webp|jpg|jpeg|png)
-    book.json        {asin, japanese_name, romaji_name, english_name, release_date}
+    book.json        {asin, japanese_name, romaji_name, english_name, release_date}, optional
+                     content_rating and glossary {names: {ja: romaji}, notes: [...]}, which the
+                     translator puts in its prompt and checks every line against
+                     (book_translator.py)
 
 Output (same contract as process-media / process-youtube, so tokenize-media,
 quality-check and assets-uploader consume it unchanged):
@@ -29,8 +32,10 @@ import os
 import secrets
 import shutil
 import subprocess
+from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass
 
+from nadeshiko_dev_tools.audiobook_segment_extractor.book_translator import BookTranslator
 from nadeshiko_dev_tools.common.file_utils import atomic_write_json
 from nadeshiko_dev_tools.common.translator import LANG_CODES
 from nadeshiko_dev_tools.segment_extractor.utils.media import build_clip, extract_audio
@@ -266,6 +271,17 @@ def translate_all(
     translator, only cached translations are returned and the rest stay empty.
     """
     cache = cache or TranslationCache()
+    if isinstance(translator, BookTranslator):
+        missing = list(
+            dict.fromkeys(t for t in texts if not all(cache.get(t, lang) for lang in _TARGET_LANGS))
+        )
+        if missing:
+            for ja, pair in zip(missing, translator.translate_book(missing), strict=True):
+                if pair:
+                    cache.put(ja, "en", pair[0])
+                    cache.put(ja, "es", pair[1])
+        return {lang: [cache.get(t, lang) for t in texts] for lang in _TARGET_LANGS}
+
     out: dict[str, list[str]] = {}
     for lang in _TARGET_LANGS:
         missing = list(dict.fromkeys(t for t in texts if not cache.get(t, lang)))
@@ -360,6 +376,7 @@ def process_chapter(
     max_ms: int = DEFAULT_MAX_DURATION_MS,
     content_rating: str = DEFAULT_CONTENT_RATING,
     cache: TranslationCache | None = None,
+    workers: int = 1,
 ) -> int:
     """Build <out>/<chapter>/_data.json and its media. Returns the segment count.
 
@@ -385,26 +402,39 @@ def process_chapter(
     if cache is not None:
         cache.save()
 
-    segments: list[dict] = []
+    todo: list[tuple[int, Cue, str, str, str]] = []
     for pos, (idx, cue) in enumerate(kept):
         en, es = translations["en"][pos], translations["es"][pos]
         missing = [lang for lang, t in (("en", en), ("es", es)) if not t]
         if missing:
             ignored.append(_ignored(idx, cue, chapter, f"missing translation: {','.join(missing)}"))
             continue
+        todo.append((idx, cue, en, es, segment_hash(hash_salt, asin, cue.start_ms, cue.text)))
 
-        h = segment_hash(hash_salt, asin, cue.start_ms, cue.text)
-        audio_name, image_name, video_name = f"{h}.mp3", f"{h}.webp", f"{h}.mp4"
+    def make_media(item: tuple[int, Cue, str, str, str]) -> bool:
+        idx, cue, _en, _es, h = item
         try:
-            audio_out = os.path.join(chapter_dir, audio_name)
+            audio_out = os.path.join(chapter_dir, f"{h}.mp3")
             extract_audio(audio_path, audio_out, cue.start_ms / 1000, cue.end_ms / 1000)
-            image_out = os.path.join(chapter_dir, image_name)
+            image_out = os.path.join(chapter_dir, f"{h}.webp")
             shutil.copyfile(frame_path, image_out)
-            build_clip(image_out, audio_out, os.path.join(chapter_dir, video_name))
+            build_clip(image_out, audio_out, os.path.join(chapter_dir, f"{h}.mp4"))
+            return True
         except Exception:
             logger.error(f"[{chapter.number}] media extraction failed for cue {idx}", exc_info=True)
+            return False
+
+    # Each clip is a chain of ffmpeg processes on its own files, so clips run side by side;
+    # `map` keeps them in cue order.
+    with ThreadPoolExecutor(max_workers=max(1, workers)) as pool:
+        made = list(pool.map(make_media, todo))
+
+    segments: list[dict] = []
+    for (idx, cue, en, es, h), ok in zip(todo, made, strict=True):
+        if not ok:
             ignored.append(_ignored(idx, cue, chapter, "media extraction failed"))
             continue
+        audio_name, image_name, video_name = f"{h}.mp3", f"{h}.webp", f"{h}.mp4"
 
         segments.append(
             {
@@ -446,6 +476,37 @@ def process_chapter(
         },
     )
     return len(segments)
+
+
+def repair_chapter_translations(
+    chapter_dir: str, translator: BookTranslator, cache: TranslationCache | None = None
+) -> int:
+    """Re-check an already written chapter and retranslate its flagged lines in place.
+
+    Only content_en/content_es change in _data.json (and the cache); hashes, timings and media
+    files stay, so a book can be fixed without cutting it again. Returns how many segments changed.
+    """
+    data_path = os.path.join(chapter_dir, "_data.json")
+    with open(data_path, encoding="utf-8") as f:
+        data = json.load(f)
+    segments = data.get("segments", [])
+    if not segments:
+        return 0
+    lines = [s["content_ja"] for s in segments]
+    current = [(s.get("content_en") or "", s.get("content_es") or "") for s in segments]
+    repaired = translator.repair(lines, current)
+
+    changed = 0
+    for seg, old, new in zip(segments, current, repaired, strict=True):
+        if new and new != old:
+            seg["content_en"], seg["content_es"] = new
+            changed += 1
+            if cache is not None:
+                cache.put(seg["content_ja"], "en", new[0])
+                cache.put(seg["content_ja"], "es", new[1])
+    if changed:
+        atomic_write_json(data_path, data)
+    return changed
 
 
 @dataclass

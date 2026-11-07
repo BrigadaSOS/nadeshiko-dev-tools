@@ -153,7 +153,7 @@ def test_segment_hash_is_stable_and_salted():
 # ── process_chapter ───────────────────────────────────────────────────────────
 
 
-def _run_chapter(tmp_path, cues, translator=None):
+def _run_chapter(tmp_path, cues, translator=None, workers=1):
     frame = tmp_path / "frame.webp"
     frame.write_bytes(b"webp")
     chapter = Chapter(2, "(1)とにかく比企谷八幡はくさっている。", 206_000, 3_305_000)
@@ -167,6 +167,7 @@ def _run_chapter(tmp_path, cues, translator=None):
         hash_salt="salt",
         translator=translator or FakeTranslator(),
         cache=ab.TranslationCache(str(tmp_path / "_translations.json")),
+        workers=workers,
     )
     with open(tmp_path / "2" / "_data.json", encoding="utf-8") as f:
         return count, json.load(f)
@@ -384,3 +385,15 @@ def test_without_a_translator_only_cached_sentences_are_kept(tmp_path, fake_medi
     data = json.loads((tmp_path / "2" / "_data.json").read_text(encoding="utf-8"))
     assert count == 1
     assert data["ignored_segments"][0]["reason"] == "missing translation: en,es"
+
+
+def test_clips_cut_side_by_side_keep_cue_order(tmp_path, fake_media):
+    cues = [Cue(214_000 + i * 3_000, 216_000 + i * 3_000, f"{i}番目の文。") for i in range(12)]
+    count, data = _run_chapter(tmp_path, cues, workers=4)
+    assert count == 12
+    assert [s["segment_index"] for s in data["segments"]] == list(range(12))
+    for seg, cue in zip(data["segments"], cues, strict=True):
+        assert seg["content_ja"] == cue.text
+        assert (tmp_path / "2" / seg["files"]["audio"]).read_text() == (
+            f"{cue.start_ms / 1000}-{cue.end_ms / 1000}"
+        )
