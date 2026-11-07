@@ -44,9 +44,18 @@ def _lang_name(code: str | None) -> str:
     return code or "the target language"
 
 
+def _target_variety(tgt: str) -> str:
+    """Spanish defaults to neutral Latin American; other targets keep their plain name."""
+    return "neutral Latin American Spanish" if tgt == "Spanish" else tgt
+
+
+def _is_failed_generation(error: Exception) -> bool:
+    """The provider rejected the model's own output as invalid JSON (Groq json_validate_failed)."""
+    return "json_validate_failed" in str(error)
+
+
 def _translation_system_prompt(src: str, tgt: str) -> str:
-    # Spanish defaults to neutral Latin American; other targets keep their plain name.
-    variety = "neutral Latin American Spanish" if tgt == "Spanish" else tgt
+    variety = _target_variety(tgt)
     return (
         f"You are a professional subtitle translator. Translate each {src} subtitle "
         f"line into natural, colloquial {variety} that matches spoken register. Preserve "
@@ -92,6 +101,18 @@ class OpenAITranslator:
         # OpenAI-compatible proxies don't support it; the first rejection flips this
         # off for the rest of the run and we fall back to json_object + the key-guard.
         self._supports_schema = True
+        # Tokens the provider reported, so a run can say what it actually used.
+        self.usage = {"requests": 0, "prompt_tokens": 0, "completion_tokens": 0}
+
+    def _count_usage(self, resp) -> None:
+        totals = self.__dict__.setdefault(
+            "usage", {"requests": 0, "prompt_tokens": 0, "completion_tokens": 0}
+        )
+        usage = getattr(resp, "usage", None)
+        totals["requests"] += 1
+        if usage is not None:
+            totals["prompt_tokens"] += getattr(usage, "prompt_tokens", 0) or 0
+            totals["completion_tokens"] += getattr(usage, "completion_tokens", 0) or 0
 
     def translate_text(self, text, source_lang=None, target_lang=None, **_):
         """Translate a string or list of strings. Returns _Translated or list thereof.
@@ -126,11 +147,30 @@ class OpenAITranslator:
         return [line for chunk in done for line in chunk]  # type: ignore[union-attr]
 
     def _translate_chunk(self, chunk: list[str], src: str, tgt: str) -> list[str]:
+        import openai
+
         payload = {str(i): line for i, line in enumerate(chunk)}
         system = _translation_system_prompt(src, tgt)
-        content = self._complete(
-            system, json.dumps(payload, ensure_ascii=False), schema=_chunk_schema(len(chunk))
-        )
+        try:
+            content = self._complete(
+                system, json.dumps(payload, ensure_ascii=False), schema=_chunk_schema(len(chunk))
+            )
+        except openai.BadRequestError as e:
+            if not _is_failed_generation(e):
+                raise
+            # The model emitted invalid JSON for this batch (Groq's json_validate_failed, which
+            # is stochastic). Losing one batch must not lose a whole chapter: halve and retry,
+            # down to single lines.
+            if len(chunk) == 1:
+                return [self._translate_one(chunk[0], src, tgt)]
+            mid = len(chunk) // 2
+            logger.warning(
+                f"Provider failed to generate JSON for a {len(chunk)}-line batch — "
+                f"retrying as {mid} + {len(chunk) - mid}"
+            )
+            return self._translate_chunk(chunk[:mid], src, tgt) + self._translate_chunk(
+                chunk[mid:], src, tgt
+            )
         try:
             out = json.loads(content)
         except json.JSONDecodeError:
@@ -164,22 +204,35 @@ class OpenAITranslator:
                 result[i] = self._translate_one(chunk[i], src, tgt)
         return result
 
-    def _translate_one(self, line: str, src: str, tgt: str) -> str:
+    def _translate_one(self, line: str, src: str, tgt: str, attempts: int = 3) -> str:
+        """Translate one line; "" when the provider can't, so callers drop it as untranslated.
+
+        Returning the source text instead would store Japanese as the "translation".
+        """
+        import openai
+
         system = (
-            f"Translate this single {src} subtitle line into natural, colloquial {tgt}. "
+            f"Translate this single {src} subtitle line into natural, colloquial "
+            f"{_target_variety(tgt)}. "
             'Return JSON {"0": "..."} mapping the key "0" to the translation.'
         )
-        content = self._complete(
-            system, json.dumps({"0": line}, ensure_ascii=False), schema=_chunk_schema(1)
-        )
-        try:
-            val = json.loads(content).get("0")
-            if isinstance(val, str) and val.strip():
-                return val
-        except (json.JSONDecodeError, AttributeError):
-            pass
-        logger.error("LLM per-line translation failed — keeping source text unchanged")
-        return line
+        for _ in range(attempts):
+            try:
+                content = self._complete(
+                    system, json.dumps({"0": line}, ensure_ascii=False), schema=_chunk_schema(1)
+                )
+            except openai.BadRequestError as e:
+                if not _is_failed_generation(e):
+                    raise
+                continue
+            try:
+                val = json.loads(content).get("0")
+                if isinstance(val, str) and val.strip():
+                    return val
+            except (json.JSONDecodeError, AttributeError):
+                pass
+        logger.error("LLM per-line translation failed — leaving the line untranslated")
+        return ""
 
     def sentence_starts(self, ja_texts: list[str]) -> list[int]:
         """Return the cue indices that begin a new sentence.
@@ -280,6 +333,7 @@ class OpenAITranslator:
                     response_format=_response_format(),
                     temperature=0.2,
                 )
+                self._count_usage(resp)
                 return resp.choices[0].message.content or "{}"
             except openai.BadRequestError:
                 # Any 400 while requesting json_schema (unsupported format, or a
