@@ -16,9 +16,11 @@ from rich.logging import RichHandler
 from nadeshiko_dev_tools.audiobook_segment_extractor.extractor import (
     DEFAULT_MAX_DURATION_MS,
     DEFAULT_MIN_DURATION_MS,
+    TRANSLATIONS_FILE,
     BookInputError,
     Chapter,
     PreparedBook,
+    TranslationCache,
     prepare_book,
     process_chapter,
 )
@@ -70,11 +72,19 @@ def parse_args(argv=None):
         action="store_true",
         help="Don't verify that audio.m4b's sha256 matches the alignment",
     )
+    parser.add_argument(
+        "--reuse-translations",
+        metavar="DIR",
+        action="append",
+        default=[],
+        help="Earlier process-audiobook output of the same book whose EN/ES are reused for "
+        "identical sentences (repeatable), so re-cutting doesn't pay for translation again",
+    )
     return parser.parse_args(argv)
 
 
 def _run_chapters(
-    prepared: PreparedBook, chapters: list[Chapter], translator, args
+    prepared: PreparedBook, chapters: list[Chapter], translator, args, cache: TranslationCache
 ) -> dict[int, int | None]:
     stats: dict[int, int | None] = {}
     for chapter in chapters:
@@ -94,6 +104,7 @@ def _run_chapters(
                 min_ms=args.min_duration_ms,
                 max_ms=args.max_duration_ms,
                 content_rating=prepared.book["content_rating"],
+                cache=cache,
             )
             console.print(f"[green]Chapter {n}: {stats[n]} segments[/green]")
         except Exception:
@@ -131,6 +142,12 @@ def main(argv=None):
                 f"book has 1-{len(prepared.chapters)}[/red]"
             )
             return 1
+    cache = TranslationCache(os.path.join(prepared.out_folder, TRANSLATIONS_FILE))
+    for folder in args.reuse_translations:
+        added = cache.seed_from_output(os.path.abspath(folder))
+        console.print(f"[cyan]Reusing {added} translations from {folder}[/cyan]")
+    cache.save()
+
     # Chapter numbers always follow the m4b, whatever is selected.
     chapters = [ch for ch in prepared.chapters if wanted is None or ch.number in wanted]
 
@@ -144,18 +161,26 @@ def main(argv=None):
     if first is None:
         console.print("[red]No cues in the selected chapters[/red]")
         return 1
-    stats = _run_chapters(prepared, [first], translator, args)
+    stats = _run_chapters(prepared, [first], translator, args, cache)
     if not stats[first.number]:
         console.print(
             f"[red bold]Chapter {first.number} produced no segments — stopping.[/red bold]"
         )
         return 1
     rest = [ch for ch in chapters if ch.number != first.number]
-    stats.update(_run_chapters(prepared, rest, translator, args))
+    stats.update(_run_chapters(prepared, rest, translator, args, cache))
 
     console.print("\n[green bold]Summary[/green bold]")
     for n, count in stats.items():
         console.print(f"  {n}: {count if count is not None else '[red]FAILED[/red]'}")
+
+    usage = getattr(translator, "usage", None)
+    if usage:
+        console.print(
+            f"[cyan]Translation: {usage['requests']} requests, "
+            f"{usage['prompt_tokens']} prompt + {usage['completion_tokens']} completion tokens"
+            "[/cyan]"
+        )
 
     console.print("\n[magenta bold]QC all segments[/magenta bold]")
     passed = run_qc(prepared.out_folder, checks={"segments"}).summary()

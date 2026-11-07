@@ -89,7 +89,7 @@ subtitle parsing or sentence grouping. Prepare one folder per book:
 ```
 books/oregairu-1/
   audio.m4b        # chapters are read from its metadata
-  alignment.json   # Honomiya manifest (honomiya.read-listen.v1, text-quote cues)
+  alignment.json   # Honomiya manifest (read-listen v1 or v2, text-quote cues)
   cover.webp       # or .jpg / .png
   book.json        # {"asin", "japanese_name", "romaji_name", "english_name", "release_date"}
 ```
@@ -115,6 +115,12 @@ relative to the chapter; the chapter title goes to the episode's Japanese title.
 (`--max-duration-ms` / `--min-duration-ms`). EN/ES are machine translated and need
 `OPENAI_API_KEY`. `audio.m4b` must be the exact file the alignment was made from (sha256 check;
 `--skip-audio-check` to bypass).
+
+Translations are cached in `<output>/_translations.json` by Japanese sentence. To re-cut a book
+(for example with a new alignment) without paying for translation again, point
+`--reuse-translations` at the earlier output. Use Honomiya's CTC engine for the alignment
+(`honomiya align --engine ctc`): its cue ends land in silence far more often than the Whisper
+engine's, which tends to clip the end of each sentence.
 
 The uploader keys audiobooks by ASIN (`media/ab/<asin>` in storage) and needs an API with the
 `AUDIOBOOK` category and an internal SDK built from that spec. Older SDKs reject `AUDIOBOOK` when

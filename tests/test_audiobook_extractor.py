@@ -166,6 +166,7 @@ def _run_chapter(tmp_path, cues, translator=None):
         asin="B07PPMBZHX",
         hash_salt="salt",
         translator=translator or FakeTranslator(),
+        cache=ab.TranslationCache(str(tmp_path / "_translations.json")),
     )
     with open(tmp_path / "2" / "_data.json", encoding="utf-8") as f:
         return count, json.load(f)
@@ -305,3 +306,57 @@ def test_segments_carry_the_rating_and_an_empty_analysis(tmp_path, fake_media):
     # The uploader refuses segments without both; no classifier runs on the cover.
     assert seg["content_rating"] == "SAFE"
     assert seg["content_analysis"] == {"scores": {}, "tags": {}}
+
+
+# ── v2 manifests and translation reuse ────────────────────────────────────────
+
+
+def test_load_cues_accepts_v2_and_ignores_words():
+    manifest = _manifest([(1000, 2000, "一。")])
+    manifest["schema"] = "honomiya.read-listen.v2"
+    manifest["cues"][0]["words"] = [
+        {"start": 0, "end": 1, "text": "一", "startMs": 1000, "endMs": 1500}
+    ]
+    assert ab.load_cues(manifest) == [Cue(1000, 2000, "一。")]
+
+
+def test_translate_all_only_sends_what_the_cache_lacks():
+    cache = ab.TranslationCache()
+    cache.put("一。", "en", "One.")
+    cache.put("一。", "es", "Uno.")
+    translator = FakeTranslator()
+
+    out = ab.translate_all(translator, ["一。", "二。", "二。"], cache)
+
+    assert translator.calls == [("JA", "EN-US", ["二。"]), ("JA", "ES", ["二。"])]
+    assert out["en"] == ["One.", "EN-US:二。", "EN-US:二。"]
+    assert cache.get("二。", "es") == "ES:二。"
+
+
+def test_reuse_from_an_earlier_output_saves_the_translation_calls(tmp_path, fake_media):
+    _run_chapter(tmp_path, [Cue(214_000, 216_000, "一。")])
+    assert json.loads((tmp_path / "_translations.json").read_text(encoding="utf-8")) == {
+        "一。": {"en": "EN-US:一。", "es": "ES:一。"}
+    }
+
+    # A new cut of the same book (other timings) reuses the earlier output's translations.
+    new_out = tmp_path / "recut"
+    new_out.mkdir()
+    cache = ab.TranslationCache(str(new_out / "_translations.json"))
+    assert cache.seed_from_output(str(tmp_path)) == 2
+    frame = tmp_path / "frame.webp"
+    translator = FakeTranslator()
+    ab.process_chapter(
+        Chapter(2, "c", 206_000, 3_305_000),
+        [Cue(214_100, 216_300, "一。")],
+        audio_path="audio.m4b",
+        frame_path=str(frame),
+        out_folder=str(new_out),
+        asin="B07PPMBZHX",
+        hash_salt="salt",
+        translator=translator,
+        cache=cache,
+    )
+    assert translator.calls == []
+    seg = json.loads((new_out / "2" / "_data.json").read_text(encoding="utf-8"))["segments"][0]
+    assert (seg["content_en"], seg["content_es"]) == ("EN-US:一。", "ES:一。")

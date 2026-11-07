@@ -37,7 +37,9 @@ from nadeshiko_dev_tools.segment_extractor.utils.media import build_clip, extrac
 
 logger = logging.getLogger(__name__)
 
-MANIFEST_SCHEMA = "honomiya.read-listen.v1"
+# v2 adds per-word timings (Honomiya --words); cue fields are the same, words are ignored.
+MANIFEST_SCHEMAS = ("honomiya.read-listen.v1", "honomiya.read-listen.v2")
+TRANSLATIONS_FILE = "_translations.json"
 AUDIO_FILE = "audio.m4b"
 ALIGNMENT_FILE = "alignment.json"
 BOOK_FILE = "book.json"
@@ -114,7 +116,7 @@ def load_cues(manifest: dict) -> list[Cue]:
     Only single-audio-file manifests with text-quote anchors are supported: those
     carry the sentence text inline, so the ebook itself is never needed.
     """
-    if manifest.get("schema") != MANIFEST_SCHEMA:
+    if manifest.get("schema") not in MANIFEST_SCHEMAS:
         raise BookInputError(f"Unsupported alignment schema: {manifest.get('schema')!r}")
     audio_files = manifest.get("sources", {}).get("audioFiles", [])
     if len(audio_files) != 1:
@@ -206,15 +208,73 @@ def segment_hash(salt: str, asin: str, start_ms: int, text: str) -> str:
     return hashlib.sha256(payload.encode("utf-8")).hexdigest()[:10]
 
 
-def translate_all(translator, texts: list[str]) -> dict[str, list[str]]:
-    """Translate JA texts to every target language, one batch call per language."""
+class TranslationCache:
+    """EN/ES translations keyed by the exact Japanese sentence, kept in the output folder.
+
+    Re-cutting a book (a new alignment, other duration limits) produces the same ebook sentences
+    with new timings, so their translations can be reused instead of paid for again.
+    """
+
+    def __init__(self, path: str | None = None):
+        self.path = path
+        self.entries: dict[str, dict[str, str]] = {}
+        if path and os.path.exists(path):
+            with open(path, encoding="utf-8") as f:
+                self.entries = json.load(f)
+
+    def get(self, ja: str, lang: str) -> str:
+        return self.entries.get(ja, {}).get(lang, "")
+
+    def put(self, ja: str, lang: str, text: str) -> None:
+        if ja and text:
+            self.entries.setdefault(ja, {})[lang] = text
+
+    def save(self) -> None:
+        if self.path:
+            atomic_write_json(self.path, self.entries)
+
+    def seed_from_output(self, folder: str) -> int:
+        """Take translations from an earlier process-audiobook output; returns how many."""
+        before = sum(len(v) for v in self.entries.values())
+        other = os.path.join(folder, TRANSLATIONS_FILE)
+        if os.path.exists(other):
+            with open(other, encoding="utf-8") as f:
+                for ja, langs in json.load(f).items():
+                    for lang, text in langs.items():
+                        if not self.get(ja, lang):
+                            self.put(ja, lang, text)
+        for entry in sorted(os.listdir(folder)):
+            data_path = os.path.join(folder, entry, "_data.json")
+            if not os.path.exists(data_path):
+                continue
+            with open(data_path, encoding="utf-8") as f:
+                for seg in json.load(f).get("segments", []):
+                    for lang in _TARGET_LANGS:
+                        if not self.get(seg.get("content_ja", ""), lang):
+                            self.put(
+                                seg.get("content_ja", ""), lang, seg.get(f"content_{lang}") or ""
+                            )
+        return sum(len(v) for v in self.entries.values()) - before
+
+
+def translate_all(
+    translator, texts: list[str], cache: TranslationCache | None = None
+) -> dict[str, list[str]]:
+    """Translate JA texts to every target language, one batch call per language.
+
+    Texts already in the cache are not sent; new translations are added to it.
+    """
+    cache = cache or TranslationCache()
     out: dict[str, list[str]] = {}
     for lang in _TARGET_LANGS:
-        if not texts:
-            out[lang] = []
-            continue
-        results = translator.translate_text(texts, source_lang="JA", target_lang=LANG_CODES[lang])
-        out[lang] = [(r.text or "").strip() for r in results]
+        missing = list(dict.fromkeys(t for t in texts if not cache.get(t, lang)))
+        if missing:
+            results = translator.translate_text(
+                missing, source_lang="JA", target_lang=LANG_CODES[lang]
+            )
+            for ja, r in zip(missing, results, strict=True):
+                cache.put(ja, lang, (r.text or "").strip())
+        out[lang] = [cache.get(t, lang) for t in texts]
     return out
 
 
@@ -298,6 +358,7 @@ def process_chapter(
     min_ms: int = DEFAULT_MIN_DURATION_MS,
     max_ms: int = DEFAULT_MAX_DURATION_MS,
     content_rating: str = DEFAULT_CONTENT_RATING,
+    cache: TranslationCache | None = None,
 ) -> int:
     """Build <out>/<chapter>/_data.json and its media. Returns the segment count.
 
@@ -319,7 +380,9 @@ def process_chapter(
         else:
             kept.append((idx, cue))
 
-    translations = translate_all(translator, [cue.text for _, cue in kept])
+    translations = translate_all(translator, [cue.text for _, cue in kept], cache)
+    if cache is not None:
+        cache.save()
 
     segments: list[dict] = []
     for pos, (idx, cue) in enumerate(kept):
