@@ -97,6 +97,17 @@ books/oregairu-1/
 `book.json` may also set `"content_rating"` (default `SAFE`; `SUGGESTIVE`, `QUESTIONABLE` or
 `EXPLICIT`). Nadeshiko rates the image, and an audiobook's only image is its cover.
 
+Give every book a `"glossary"`: `names` maps each recurring character's family name as the book
+writes it to its romaji, `notes` gives genders, roles and fixed terms. Without it the model
+invents names and changes genders.
+
+```json
+"glossary": {
+  "names": { "比企谷": "Hikigaya", "雪ノ下": "Yukinoshita", "由比ヶ浜": "Yuigahama" },
+  "notes": ["平塚静 Hiratsuka Shizuka: female teacher", "あとがき = Afterword / Epílogo"]
+}
+```
+
 ```bash
 # 1. Build segment data (validates the first chapter, then the rest, then QC)
 uv run process-audiobook ./books/oregairu-1 --output ./output --chapters 2-10
@@ -115,6 +126,18 @@ relative to the chapter; the chapter title goes to the episode's Japanese title.
 (`--max-duration-ms` / `--min-duration-ms`). EN/ES are machine translated and need
 `OPENAI_API_KEY`. `audio.m4b` must be the exact file the alignment was made from (sha256 check;
 `--skip-audio-check` to bypass).
+
+Translation (`audiobook_segment_extractor/book_translator.py`) asks for EN and ES of each line in
+one call, with the glossary in the prompt (`OPENAI_TRANSLATE_MODEL`, `openai/gpt-oss-120b` on
+Groq). The model copies the first characters of each line it translated, and an answer that
+belongs to another line is rejected; that is how a batch shifted by one line used to slip through.
+A detector then flags JSON debris, Japanese left in the text, repetition, odd length, merged lines,
+neighbours sharing a translation and glossary names missing; flagged lines are retranslated with
+two lines of context on each side (two passes, an answer is kept only if it is better). Whatever is
+still flagged goes to `<output>/<asin>/_translation_review.json` for a person to read.
+`--repair-translations` runs the same check over chapters already written and rewrites only
+`content_en`/`content_es`, so a book can be fixed without cutting it again. Clips are cut side by
+side within each chapter (`--workers`, default half the CPU cores).
 
 Translations are cached in `<output>/_translations.json` by Japanese sentence. To re-cut a book
 (for example with a new alignment) without paying for translation again, point
