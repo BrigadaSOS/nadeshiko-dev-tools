@@ -262,13 +262,14 @@ def translate_all(
 ) -> dict[str, list[str]]:
     """Translate JA texts to every target language, one batch call per language.
 
-    Texts already in the cache are not sent; new translations are added to it.
+    Texts already in the cache are not sent; new translations are added to it. With no
+    translator, only cached translations are returned and the rest stay empty.
     """
     cache = cache or TranslationCache()
     out: dict[str, list[str]] = {}
     for lang in _TARGET_LANGS:
         missing = list(dict.fromkeys(t for t in texts if not cache.get(t, lang)))
-        if missing:
+        if missing and translator is not None:
             results = translator.translate_text(
                 missing, source_lang="JA", target_lang=LANG_CODES[lang]
             )

@@ -360,3 +360,27 @@ def test_reuse_from_an_earlier_output_saves_the_translation_calls(tmp_path, fake
     assert translator.calls == []
     seg = json.loads((new_out / "2" / "_data.json").read_text(encoding="utf-8"))["segments"][0]
     assert (seg["content_en"], seg["content_es"]) == ("EN-US:一。", "ES:一。")
+
+
+def test_without_a_translator_only_cached_sentences_are_kept(tmp_path, fake_media):
+    cache = ab.TranslationCache()
+    cache.put("一。", "en", "One.")
+    cache.put("一。", "es", "Uno.")
+    frame = tmp_path / "frame.webp"
+    frame.write_bytes(b"webp")
+
+    count = ab.process_chapter(
+        Chapter(2, "c", 206_000, 3_305_000),
+        [Cue(214_000, 216_000, "一。"), Cue(217_000, 219_000, "二。")],
+        audio_path="audio.m4b",
+        frame_path=str(frame),
+        out_folder=str(tmp_path),
+        asin="B07PPMBZHX",
+        hash_salt="salt",
+        translator=None,
+        cache=cache,
+    )
+
+    data = json.loads((tmp_path / "2" / "_data.json").read_text(encoding="utf-8"))
+    assert count == 1
+    assert data["ignored_segments"][0]["reason"] == "missing translation: en,es"

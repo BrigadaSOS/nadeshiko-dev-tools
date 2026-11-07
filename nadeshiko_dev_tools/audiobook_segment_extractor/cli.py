@@ -80,6 +80,12 @@ def parse_args(argv=None):
         help="Earlier process-audiobook output of the same book whose EN/ES are reused for "
         "identical sentences (repeatable), so re-cutting doesn't pay for translation again",
     )
+    parser.add_argument(
+        "--no-translate",
+        action="store_true",
+        help="Make no translation calls: use only cached/reused translations; sentences "
+        "without one go to ignored_segments",
+    )
     return parser.parse_args(argv)
 
 
@@ -116,10 +122,17 @@ def _run_chapters(
 def main(argv=None):
     args = parse_args(argv)
 
-    translator = get_translator()
-    if translator is None:
-        console.print("[red]OPENAI_API_KEY is not set — audiobooks need EN/ES translation[/red]")
-        return 1
+    if args.no_translate:
+        translator = None
+        console.print("[yellow]--no-translate: only cached translations are used[/yellow]")
+    else:
+        translator = get_translator()
+        if translator is None:
+            console.print(
+                "[red]OPENAI_API_KEY is not set — audiobooks need EN/ES translation "
+                "(or pass --no-translate with --reuse-translations)[/red]"
+            )
+            return 1
 
     try:
         console.print("[cyan]Checking input (hashing the m4b can take a few seconds)...[/cyan]")
