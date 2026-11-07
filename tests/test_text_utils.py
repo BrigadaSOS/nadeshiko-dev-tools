@@ -110,6 +110,12 @@ def test_regular_actor_name_passes():
     assert result != ""
 
 
+@pytest.mark.parametrize("name", ["Ted", "Fred", "Hope", "Edward", "Kaede", "Ophelia", "Cooper"])
+def test_names_containing_op_or_ed_pass(name):
+    # Only a bare OP/ED marker is filtered; the old substring match dropped these characters' lines.
+    assert process_subtitle_line(FakeLine(name=name)) != ""
+
+
 # --- Type filter ---
 
 

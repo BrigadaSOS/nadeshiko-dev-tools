@@ -55,6 +55,10 @@ MIN_OVERLAP_TO_MERGE_MS = 500
 # Increased from 500ms to 1000ms to handle multi-line subtitle grouping mismatches
 # where EN combines lines that are split in JA with small gaps.
 MATCH_TOLERANCE_MS = 1000
+# A translation line counts as belonging to a JA group only if at least this share of it
+# overlaps the group's JA lines; below that it is treated like a tolerance-only match and
+# may only fill a group that has no line of its language yet (see step 2).
+MIN_OWN_OVERLAP_RATIO = 0.3
 
 _OP_ED_KEYWORDS = {"opening", "ending", "op", "ed"}
 
@@ -130,6 +134,11 @@ def _get_op_ed_ranges(
                     return ranges
 
     return []
+
+
+def _ja_span(group: dict) -> tuple[int, int]:
+    """Start and end of a group's JA lines (its range without the translations' widening)."""
+    return min(line["start"] for line in group["ja"]), max(line["end"] for line in group["ja"])
 
 
 def _filter_dialogue_only(subs):
@@ -514,16 +523,31 @@ def split_video_by_subtitles(
     # After each language pass, group time ranges expand to include matched
     # lines, so ES (matched second) benefits from EN widening the window.
     for lang in ["en", "es"]:
+        # Lines that barely touch any JA group (they reach one only through MATCH_TOLERANCE_MS,
+        # or overlap it for under MIN_OWN_OVERLAP_RATIO of their length) are placed after every
+        # well-overlapping line: the tolerance exists for a translation whose timing is a few
+        # hundred ms off, so such a line may only fill a group with no line of this language.
+        # Otherwise an interjection the JA track never had ("What?!", "Huh?", "Shukoh...") was
+        # glued onto the neighbouring line's translation.
+        gap_only: list[dict] = []
         for line in lines_by_lang[lang]:
             line_dur = line["end"] - line["start"]
             matches = []
             for i, g in enumerate(groups):
-                # Overlap with tolerance: negative = gap within tolerance
-                ov = min(line["end"], g["end"]) - max(line["start"], g["start"])
+                # Overlap with the group's JA lines, not its range widened by translations
+                # already matched: an interjection right after the JA line ("Huh?", "Yeah.")
+                # touches that widened range and was appended to the line's translation.
+                # Negative = gap within tolerance.
+                ja_start, ja_end = _ja_span(g)
+                ov = min(line["end"], ja_end) - max(line["start"], ja_start)
                 if ov > -MATCH_TOLERANCE_MS:
                     matches.append((i, max(ov, 0)))
 
             if not matches:
+                continue
+
+            if max(ov for _, ov in matches) < MIN_OWN_OVERLAP_RATIO * max(line_dur, 1):
+                gap_only.append(line)
                 continue
 
             if len(matches) == 1:
@@ -551,6 +575,19 @@ def split_video_by_subtitles(
                 groups[target][lang].append(line)
             else:
                 groups[matches[0][0]][lang].append(line)
+
+        # Group positions shift when groups merge above, so the nearest group is found now.
+        for line in gap_only:
+            nearby = []
+            for g in groups:
+                ja_start, ja_end = _ja_span(g)
+                if min(line["end"], ja_end) - max(line["start"], ja_start) > -MATCH_TOLERANCE_MS:
+                    nearby.append((max(ja_start - line["end"], line["start"] - ja_end), g))
+            if not nearby:
+                continue
+            _, nearest = min(nearby, key=lambda item: item[0])
+            if not nearest[lang]:
+                nearest[lang].append(line)
 
         # Expand group time ranges to include matched lines
         for g in groups:

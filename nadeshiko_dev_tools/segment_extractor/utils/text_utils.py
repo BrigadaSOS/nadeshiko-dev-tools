@@ -7,6 +7,10 @@ _EMOJI_RE = re.compile(
     re.UNICODE,
 )
 _SIGN_NAME_RE = re.compile(r"\bsign\b")
+# An actor field that IS an OP/ED marker ("OP", "ed", "_ed", "op_", "ED2"). The old pattern
+# matched "ed"/"op" anywhere, which dropped the lines of characters named Ted, Fred or Hope;
+# this one only takes the bare marker.
+_OPED_NAME_RE = re.compile(r"^[_\-\s]*(op|ed)[_\-\s\d]*$")
 _NON_DIALOGUE_STYLE_RE = re.compile(
     r"sign|top|tipo tv|block|cart|postal|carta|pizarra"  # on-screen text
     r"|tabla|contrato|abanico|electr|taxi"  # on-screen props
@@ -34,7 +38,9 @@ def process_subtitle_line(line):
     if line.type != "Dialogue":
         return ""
 
-    if line.name and _SIGN_NAME_RE.search(line.name.lower()):
+    if line.name and (
+        _SIGN_NAME_RE.search(line.name.lower()) or _OPED_NAME_RE.match(line.name.lower())
+    ):
         return ""
 
     if line.style and _NON_DIALOGUE_STYLE_RE.search(line.style.lower()):

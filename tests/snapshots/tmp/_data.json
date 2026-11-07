@@ -12,9 +12,9 @@
   "ignored_segments": [
     {
       "segment_index": 0,
-      "start_ms": 2313,
+      "start_ms": 2314,
       "end_ms": 5390,
-      "duration_ms": 3077,
+      "duration_ms": 3076,
       "content_ja": "はっ... エリィー!",
       "content_es": null,
       "content_en": "Eri!",
@@ -257,11 +257,11 @@
     {
       "segment_index": 14,
       "start_ms": 25971,
-      "end_ms": 29930,
-      "duration_ms": 3959,
-      "content_ja": "はぁはぁ... どうしよう... どうしよう。",
+      "end_ms": 31643,
+      "duration_ms": 5672,
+      "content_ja": "はぁはぁ... どうしよう... どうしよう。スレッタ! はっ!",
       "content_es": null,
-      "content_en": "What do I do? What do I do?!",
+      "content_en": "What do I do? What do I do?! Suletta!",
       "actor_ja": null,
       "actor_es": null,
       "actor_en": null,
@@ -274,6 +274,13 @@
             "text": "はぁはぁ... どうしよう... どうしよう。",
             "start_ms": 25971,
             "end_ms": 29641,
+            "actor": null
+          },
+          {
+            "id": 17,
+            "text": "スレッタ! はっ!",
+            "start_ms": 29641,
+            "end_ms": 31643,
             "actor": null
           }
         ],
@@ -292,35 +299,7 @@
             "start_ms": 29010,
             "end_ms": 29930,
             "actor": null
-          }
-        ]
-      }
-    },
-    {
-      "segment_index": 17,
-      "start_ms": 29641,
-      "end_ms": 31643,
-      "duration_ms": 2002,
-      "content_ja": "スレッタ! はっ!",
-      "content_es": null,
-      "content_en": "Suletta!",
-      "actor_ja": null,
-      "actor_es": null,
-      "actor_en": null,
-      "reason": "missing required languages: es",
-      "files": null,
-      "subtitles": {
-        "ja": [
-          {
-            "id": 17,
-            "text": "スレッタ! はっ!",
-            "start_ms": 29641,
-            "end_ms": 31643,
-            "actor": null
-          }
-        ],
-        "es": [],
-        "en": [
+          },
           {
             "id": 18,
             "text": "Suletta!",
@@ -1493,11 +1472,11 @@
     {
       "segment_index": 78,
       "start_ms": 179860,
-      "end_ms": 187566,
-      "duration_ms": 7706,
-      "content_ja": "惑星間レーザー送電システムの 最大出力照射。だから　再起動には 時間がかかるはず... です。",
+      "end_ms": 190335,
+      "duration_ms": 10475,
+      "content_ja": "惑星間レーザー送電システムの 最大出力照射。だから　再起動には 時間がかかるはず... です。だったら",
       "content_es": null,
-      "content_en": "It was probably an interplanetary laser transmission system at high output. Which means, it will take time to recharge for the next blast.",
+      "content_en": "It was probably an interplanetary laser transmission system at high output. Which means, it will take time to recharge for the next blast. In that case...",
       "actor_ja": null,
       "actor_es": null,
       "actor_en": null,
@@ -1518,6 +1497,13 @@
             "start_ms": 184563,
             "end_ms": 187566,
             "actor": null
+          },
+          {
+            "id": 82,
+            "text": "だったら",
+            "start_ms": 187566,
+            "end_ms": 190335,
+            "actor": null
           }
         ],
         "es": [],
@@ -1535,35 +1521,7 @@
             "start_ms": 183460,
             "end_ms": 187380,
             "actor": null
-          }
-        ]
-      }
-    },
-    {
-      "segment_index": 82,
-      "start_ms": 187380,
-      "end_ms": 190335,
-      "duration_ms": 2955,
-      "content_ja": "だったら",
-      "content_es": null,
-      "content_en": "In that case...",
-      "actor_ja": null,
-      "actor_es": null,
-      "actor_en": null,
-      "reason": "missing required languages: es",
-      "files": null,
-      "subtitles": {
-        "ja": [
-          {
-            "id": 82,
-            "text": "だったら",
-            "start_ms": 187566,
-            "end_ms": 190335,
-            "actor": null
-          }
-        ],
-        "es": [],
-        "en": [
+          },
           {
             "id": 81,
             "text": "In that case...",
@@ -1990,11 +1948,11 @@
     {
       "segment_index": 109,
       "start_ms": 222935,
-      "end_ms": 226505,
-      "duration_ms": 3570,
-      "content_ja": "「ベネリット」グループに 弁明の余地はない。",
+      "end_ms": 231410,
+      "duration_ms": 8475,
+      "content_ja": "「ベネリット」グループに 弁明の余地はない。これは 守護者となる議会連合の　大義だよ。",
       "content_es": null,
-      "content_en": "the Benerit Group has no leg to stand on.",
+      "content_en": "the Benerit Group has no leg to stand on. As defenders of the fronts, the Space Assembly League is acting with cause.",
       "actor_ja": null,
       "actor_es": null,
       "actor_en": null,
@@ -2008,35 +1966,7 @@
             "start_ms": 222935,
             "end_ms": 226505,
             "actor": null
-          }
-        ],
-        "es": [],
-        "en": [
-          {
-            "id": 110,
-            "text": "the Benerit Group has no leg to stand on.",
-            "start_ms": 222950,
-            "end_ms": 226080,
-            "actor": null
-          }
-        ]
-      }
-    },
-    {
-      "segment_index": 112,
-      "start_ms": 226080,
-      "end_ms": 231410,
-      "duration_ms": 5330,
-      "content_ja": "これは 守護者となる議会連合の　大義だよ。",
-      "content_es": null,
-      "content_en": "As defenders of the fronts, the Space Assembly League is acting with cause.",
-      "actor_ja": null,
-      "actor_es": null,
-      "actor_en": null,
-      "reason": "missing required languages: es",
-      "files": null,
-      "subtitles": {
-        "ja": [
+          },
           {
             "id": 112,
             "text": "これは 守護者となる議会連合の",
@@ -2054,6 +1984,13 @@
         ],
         "es": [],
         "en": [
+          {
+            "id": 110,
+            "text": "the Benerit Group has no leg to stand on.",
+            "start_ms": 222950,
+            "end_ms": 226080,
+            "actor": null
+          },
           {
             "id": 111,
             "text": "As defenders of the fronts,",
@@ -2186,11 +2123,11 @@
     {
       "segment_index": 122,
       "start_ms": 239985,
-      "end_ms": 245757,
-      "duration_ms": 5772,
-      "content_ja": "10分! あっ。エアリアルの推進制御を キャリバーンに肩代わりさせる。",
+      "end_ms": 242020,
+      "duration_ms": 2035,
+      "content_ja": "10分! あっ。",
       "content_es": null,
-      "content_en": "Give us ten minutes! We'll shift Aerial's propulsion controls to the Calibarn!",
+      "content_en": "Give us ten minutes!",
       "actor_ja": null,
       "actor_es": null,
       "actor_en": null,
@@ -2204,13 +2141,6 @@
             "start_ms": 239985,
             "end_ms": 242020,
             "actor": null
-          },
-          {
-            "id": 125,
-            "text": "エアリアルの推進制御を キャリバーンに肩代わりさせる。",
-            "start_ms": 242020,
-            "end_ms": 245757,
-            "actor": null
           }
         ],
         "es": [],
@@ -2221,7 +2151,35 @@
             "start_ms": 240180,
             "end_ms": 241510,
             "actor": null
-          },
+          }
+        ]
+      }
+    },
+    {
+      "segment_index": 125,
+      "start_ms": 241510,
+      "end_ms": 245757,
+      "duration_ms": 4247,
+      "content_ja": "エアリアルの推進制御を キャリバーンに肩代わりさせる。",
+      "content_es": null,
+      "content_en": "We'll shift Aerial's propulsion controls to the Calibarn!",
+      "actor_ja": null,
+      "actor_es": null,
+      "actor_en": null,
+      "reason": "missing required languages: es",
+      "files": null,
+      "subtitles": {
+        "ja": [
+          {
+            "id": 125,
+            "text": "エアリアルの推進制御を キャリバーンに肩代わりさせる。",
+            "start_ms": 242020,
+            "end_ms": 245757,
+            "actor": null
+          }
+        ],
+        "es": [],
+        "en": [
           {
             "id": 124,
             "text": "We'll shift Aerial's propulsion controls to the Calibarn!",
@@ -2332,11 +2290,11 @@
     {
       "segment_index": 132,
       "start_ms": 257840,
-      "end_ms": 261606,
-      "duration_ms": 3766,
-      "content_ja": "僕は お前たちを許したわけじゃない。",
+      "end_ms": 263675,
+      "duration_ms": 5835,
+      "content_ja": "僕は お前たちを許したわけじゃない。ラウダ先輩...",
       "content_es": null,
-      "content_en": "I... haven't forgiven you people.",
+      "content_en": "I... haven't forgiven you people. Mr. Lauda?",
       "actor_ja": null,
       "actor_es": null,
       "actor_en": null,
@@ -2349,6 +2307,13 @@
             "text": "僕は お前たちを許したわけじゃない。",
             "start_ms": 258036,
             "end_ms": 261606,
+            "actor": null
+          },
+          {
+            "id": 135,
+            "text": "ラウダ先輩...。",
+            "start_ms": 261606,
+            "end_ms": 263675,
             "actor": null
           }
         ],
@@ -2367,35 +2332,7 @@
             "start_ms": 259150,
             "end_ms": 261360,
             "actor": null
-          }
-        ]
-      }
-    },
-    {
-      "segment_index": 135,
-      "start_ms": 261360,
-      "end_ms": 263675,
-      "duration_ms": 2315,
-      "content_ja": "ラウダ先輩...",
-      "content_es": null,
-      "content_en": "Mr. Lauda?",
-      "actor_ja": null,
-      "actor_es": null,
-      "actor_en": null,
-      "reason": "missing required languages: es",
-      "files": null,
-      "subtitles": {
-        "ja": [
-          {
-            "id": 135,
-            "text": "ラウダ先輩...。",
-            "start_ms": 261606,
-            "end_ms": 263675,
-            "actor": null
-          }
-        ],
-        "es": [],
-        "en": [
+          },
           {
             "id": 134,
             "text": "Mr. Lauda?",
@@ -3390,11 +3327,11 @@
     {
       "segment_index": 191,
       "start_ms": 349680,
-      "end_ms": 352197,
-      "duration_ms": 2517,
-      "content_ja": "スレッタ...",
+      "end_ms": 354633,
+      "duration_ms": 4953,
+      "content_ja": "スレッタ...来たよ",
       "content_es": null,
-      "content_en": "Suletta...",
+      "content_en": "Suletta... We're here.",
       "actor_ja": null,
       "actor_es": null,
       "actor_en": null,
@@ -3408,35 +3345,7 @@
             "start_ms": 349861,
             "end_ms": 352197,
             "actor": null
-          }
-        ],
-        "es": [],
-        "en": [
-          {
-            "id": 190,
-            "text": "Suletta...",
-            "start_ms": 349680,
-            "end_ms": 351290,
-            "actor": null
-          }
-        ]
-      }
-    },
-    {
-      "segment_index": 193,
-      "start_ms": 351950,
-      "end_ms": 354633,
-      "duration_ms": 2683,
-      "content_ja": "来たよ",
-      "content_es": null,
-      "content_en": "We're here.",
-      "actor_ja": null,
-      "actor_es": null,
-      "actor_en": null,
-      "reason": "missing required languages: es",
-      "files": null,
-      "subtitles": {
-        "ja": [
+          },
           {
             "id": 193,
             "text": "来たよ",
@@ -3447,6 +3356,13 @@
         ],
         "es": [],
         "en": [
+          {
+            "id": 190,
+            "text": "Suletta...",
+            "start_ms": 349680,
+            "end_ms": 351290,
+            "actor": null
+          },
           {
             "id": 192,
             "text": "We're here.",
@@ -3942,11 +3858,11 @@
     {
       "segment_index": 224,
       "start_ms": 411723,
-      "end_ms": 414170,
-      "duration_ms": 2447,
-      "content_ja": "足なんかは とっくにね。",
+      "end_ms": 416094,
+      "duration_ms": 4371,
+      "content_ja": "足なんかは とっくにね。はっ! データストーム汚染。",
       "content_es": null,
-      "content_en": "but my legs have been useless for a while.",
+      "content_en": "but my legs have been useless for a while. Data storm infection?",
       "actor_ja": null,
       "actor_es": null,
       "actor_en": null,
@@ -3960,35 +3876,7 @@
             "start_ms": 411723,
             "end_ms": 413725,
             "actor": null
-          }
-        ],
-        "es": [],
-        "en": [
-          {
-            "id": 225,
-            "text": "but my legs have been useless for a while.",
-            "start_ms": 411840,
-            "end_ms": 414170,
-            "actor": null
-          }
-        ]
-      }
-    },
-    {
-      "segment_index": 226,
-      "start_ms": 413725,
-      "end_ms": 416094,
-      "duration_ms": 2369,
-      "content_ja": "はっ! データストーム汚染。",
-      "content_es": null,
-      "content_en": "Data storm infection?",
-      "actor_ja": null,
-      "actor_es": null,
-      "actor_en": null,
-      "reason": "missing required languages: es",
-      "files": null,
-      "subtitles": {
-        "ja": [
+          },
           {
             "id": 226,
             "text": "はっ! データストーム汚染。",
@@ -3999,6 +3887,13 @@
         ],
         "es": [],
         "en": [
+          {
+            "id": 225,
+            "text": "but my legs have been useless for a while.",
+            "start_ms": 411840,
+            "end_ms": 414170,
+            "actor": null
+          },
           {
             "id": 227,
             "text": "Data storm infection?",
@@ -4054,11 +3949,11 @@
     {
       "segment_index": 232,
       "start_ms": 421260,
-      "end_ms": 431843,
-      "duration_ms": 10583,
-      "content_ja": "エリィは GUNDで紡ぐ世界と 自由を手に入れる。そして お互いが それぞれの場所で幸せになるの。",
+      "end_ms": 427239,
+      "duration_ms": 5979,
+      "content_ja": "エリィは GUNDで紡ぐ世界と 自由を手に入れる。",
       "content_es": null,
-      "content_en": "Eri will gain a world woven by GUND, and her freedom as well. All of us can find happiness in their respective places of being.",
+      "content_en": "Eri will gain a world woven by GUND, and her freedom as well.",
       "actor_ja": null,
       "actor_es": null,
       "actor_en": null,
@@ -4072,13 +3967,6 @@
             "start_ms": 421566,
             "end_ms": 427239,
             "actor": null
-          },
-          {
-            "id": 234,
-            "text": "そして お互いが それぞれの場所で幸せになるの。",
-            "start_ms": 427239,
-            "end_ms": 431843,
-            "actor": null
           }
         ],
         "es": [],
@@ -4089,7 +3977,35 @@
             "start_ms": 421260,
             "end_ms": 426730,
             "actor": null
-          },
+          }
+        ]
+      }
+    },
+    {
+      "segment_index": 234,
+      "start_ms": 426730,
+      "end_ms": 431843,
+      "duration_ms": 5113,
+      "content_ja": "そして お互いが それぞれの場所で幸せになるの。",
+      "content_es": null,
+      "content_en": "All of us can find happiness in their respective places of being.",
+      "actor_ja": null,
+      "actor_es": null,
+      "actor_en": null,
+      "reason": "missing required languages: es",
+      "files": null,
+      "subtitles": {
+        "ja": [
+          {
+            "id": 234,
+            "text": "そして お互いが それぞれの場所で幸せになるの。",
+            "start_ms": 427239,
+            "end_ms": 431843,
+            "actor": null
+          }
+        ],
+        "es": [],
+        "en": [
           {
             "id": 233,
             "text": "All of us can find happiness in their respective places of being.",
@@ -4285,11 +4201,11 @@
     {
       "segment_index": 246,
       "start_ms": 457002,
-      "end_ms": 460906,
-      "duration_ms": 3904,
-      "content_ja": "はぁはぁ... だから はぁはぁ...",
+      "end_ms": 463875,
+      "duration_ms": 6873,
+      "content_ja": "はぁはぁ... だから はぁはぁ...　クワイエット・ゼロなんか はぁはぁ...",
       "content_es": null,
-      "content_en": "So...",
+      "content_en": "So... who needs...",
       "actor_ja": null,
       "actor_es": null,
       "actor_en": null,
@@ -4303,35 +4219,7 @@
             "start_ms": 457002,
             "end_ms": 460906,
             "actor": null
-          }
-        ],
-        "es": [],
-        "en": [
-          {
-            "id": 247,
-            "text": "So...",
-            "start_ms": 458630,
-            "end_ms": 459520,
-            "actor": null
-          }
-        ]
-      }
-    },
-    {
-      "segment_index": 249,
-      "start_ms": 460550,
-      "end_ms": 463875,
-      "duration_ms": 3325,
-      "content_ja": "クワイエット・ゼロなんか はぁはぁ...",
-      "content_es": null,
-      "content_en": "who needs...",
-      "actor_ja": null,
-      "actor_es": null,
-      "actor_en": null,
-      "reason": "missing required languages: es",
-      "files": null,
-      "subtitles": {
-        "ja": [
+          },
           {
             "id": 249,
             "text": "クワイエット・ゼロなんか はぁはぁ...",
@@ -4342,6 +4230,13 @@
         ],
         "es": [],
         "en": [
+          {
+            "id": 247,
+            "text": "So...",
+            "start_ms": 458630,
+            "end_ms": 459520,
+            "actor": null
+          },
           {
             "id": 248,
             "text": "who needs...",
@@ -5037,36 +4932,9 @@
     {
       "segment_index": 288,
       "start_ms": 542854,
-      "end_ms": 547859,
-      "duration_ms": 5005,
-      "content_ja": "♬ー",
-      "content_es": null,
-      "content_en": null,
-      "actor_ja": null,
-      "actor_es": null,
-      "actor_en": null,
-      "reason": "no en/es subtitle match",
-      "files": null,
-      "subtitles": {
-        "ja": [
-          {
-            "id": 288,
-            "text": "♬ー",
-            "start_ms": 542854,
-            "end_ms": 547859,
-            "actor": null
-          }
-        ],
-        "es": [],
-        "en": []
-      }
-    },
-    {
-      "segment_index": 290,
-      "start_ms": 547560,
       "end_ms": 549828,
-      "duration_ms": 2268,
-      "content_ja": "データストーム!",
+      "duration_ms": 6974,
+      "content_ja": "♬ー　データストーム!",
       "content_es": null,
       "content_en": "The data storm?",
       "actor_ja": null,
@@ -5076,6 +4944,13 @@
       "files": null,
       "subtitles": {
         "ja": [
+          {
+            "id": 288,
+            "text": "♬ー",
+            "start_ms": 542854,
+            "end_ms": 547859,
+            "actor": null
+          },
           {
             "id": 290,
             "text": "データストーム!",
@@ -5126,11 +5001,11 @@
     {
       "segment_index": 293,
       "start_ms": 557520,
-      "end_ms": 560038,
-      "duration_ms": 2518,
-      "content_ja": "お願い エリクト はぁはぁ...",
+      "end_ms": 562007,
+      "duration_ms": 4487,
+      "content_ja": "お願い エリクト はぁはぁ...　応えて!",
       "content_es": null,
-      "content_en": "Please, Ericht!",
+      "content_en": "Please, Ericht! Answer me!",
       "actor_ja": null,
       "actor_es": null,
       "actor_en": null,
@@ -5144,35 +5019,7 @@
             "start_ms": 557669,
             "end_ms": 560038,
             "actor": null
-          }
-        ],
-        "es": [],
-        "en": [
-          {
-            "id": 292,
-            "text": "Please, Ericht!",
-            "start_ms": 557520,
-            "end_ms": 558820,
-            "actor": null
-          }
-        ]
-      }
-    },
-    {
-      "segment_index": 295,
-      "start_ms": 559780,
-      "end_ms": 562007,
-      "duration_ms": 2227,
-      "content_ja": "応えて!",
-      "content_es": null,
-      "content_en": "Answer me!",
-      "actor_ja": null,
-      "actor_es": null,
-      "actor_en": null,
-      "reason": "missing required languages: es",
-      "files": null,
-      "subtitles": {
-        "ja": [
+          },
           {
             "id": 295,
             "text": "応えて!",
@@ -5183,6 +5030,13 @@
         ],
         "es": [],
         "en": [
+          {
+            "id": 292,
+            "text": "Please, Ericht!",
+            "start_ms": 557520,
+            "end_ms": 558820,
+            "actor": null
+          },
           {
             "id": 294,
             "text": "Answer me!",
@@ -5647,36 +5501,9 @@
     {
       "segment_index": 322,
       "start_ms": 642787,
-      "end_ms": 645790,
-      "duration_ms": 3003,
-      "content_ja": "♬ー",
-      "content_es": null,
-      "content_en": null,
-      "actor_ja": null,
-      "actor_es": null,
-      "actor_en": null,
-      "reason": "no en/es subtitle match",
-      "files": null,
-      "subtitles": {
-        "ja": [
-          {
-            "id": 322,
-            "text": "♬ー",
-            "start_ms": 642787,
-            "end_ms": 645790,
-            "actor": null
-          }
-        ],
-        "es": [],
-        "en": []
-      }
-    },
-    {
-      "segment_index": 324,
-      "start_ms": 645450,
       "end_ms": 648010,
-      "duration_ms": 2560,
-      "content_ja": "ミオリネさん! スレッタ?",
+      "duration_ms": 5223,
+      "content_ja": "♬ー　ミオリネさん! スレッタ?",
       "content_es": null,
       "content_en": "Ms. Miorine! Suletta?",
       "actor_ja": null,
@@ -5686,6 +5513,13 @@
       "files": null,
       "subtitles": {
         "ja": [
+          {
+            "id": 322,
+            "text": "♬ー",
+            "start_ms": 642787,
+            "end_ms": 645790,
+            "actor": null
+          },
           {
             "id": 324,
             "text": "ミオリネさん! スレッタ?",
@@ -5786,11 +5620,11 @@
     {
       "segment_index": 331,
       "start_ms": 652580,
-      "end_ms": 654632,
-      "duration_ms": 2052,
-      "content_ja": "お母さんも!",
+      "end_ms": 657510,
+      "duration_ms": 4930,
+      "content_ja": "お母さんも!　動くな。これ以上は...",
       "content_es": null,
-      "content_en": "You too, Mom!",
+      "content_en": "You too, Mom! Don't move. Not another inch-",
       "actor_ja": null,
       "actor_es": null,
       "actor_en": null,
@@ -5804,35 +5638,7 @@
             "start_ms": 652630,
             "end_ms": 654632,
             "actor": null
-          }
-        ],
-        "es": [],
-        "en": [
-          {
-            "id": 330,
-            "text": "You too, Mom!",
-            "start_ms": 652580,
-            "end_ms": 654350,
-            "actor": null
-          }
-        ]
-      }
-    },
-    {
-      "segment_index": 333,
-      "start_ms": 654350,
-      "end_ms": 657510,
-      "duration_ms": 3160,
-      "content_ja": "動くな。これ以上は...",
-      "content_es": null,
-      "content_en": "Don't move. Not another inch-",
-      "actor_ja": null,
-      "actor_es": null,
-      "actor_en": null,
-      "reason": "missing required languages: es",
-      "files": null,
-      "subtitles": {
-        "ja": [
+          },
           {
             "id": 333,
             "text": "動くな。 これ以上は...。",
@@ -5843,6 +5649,13 @@
         ],
         "es": [],
         "en": [
+          {
+            "id": 330,
+            "text": "You too, Mom!",
+            "start_ms": 652580,
+            "end_ms": 654350,
+            "actor": null
+          },
           {
             "id": 332,
             "text": "Don't move.",
@@ -5925,36 +5738,9 @@
     {
       "segment_index": 338,
       "start_ms": 662107,
-      "end_ms": 666111,
-      "duration_ms": 4004,
-      "content_ja": "♬ー",
-      "content_es": null,
-      "content_en": null,
-      "actor_ja": null,
-      "actor_es": null,
-      "actor_en": null,
-      "reason": "no en/es subtitle match",
-      "files": null,
-      "subtitles": {
-        "ja": [
-          {
-            "id": 338,
-            "text": "♬ー",
-            "start_ms": 662107,
-            "end_ms": 666111,
-            "actor": null
-          }
-        ],
-        "es": [],
-        "en": []
-      }
-    },
-    {
-      "segment_index": 340,
-      "start_ms": 665880,
       "end_ms": 672050,
-      "duration_ms": 6170,
-      "content_ja": "ラグランジュ4 および　周辺宙域内の全ての人 聞こえますか?",
+      "duration_ms": 9943,
+      "content_ja": "♬ー　ラグランジュ4 および　周辺宙域内の全ての人 聞こえますか?",
       "content_es": null,
       "content_en": "Lagrange 4! And all citizens in the region! Can you hear me?",
       "actor_ja": null,
@@ -5964,6 +5750,13 @@
       "files": null,
       "subtitles": {
         "ja": [
+          {
+            "id": 338,
+            "text": "♬ー",
+            "start_ms": 662107,
+            "end_ms": 666111,
+            "actor": null
+          },
           {
             "id": 340,
             "text": "ラグランジュ4 および",
@@ -6034,7 +5827,7 @@
       }
     },
     {
-      "segment_index": 347,
+      "segment_index": 346,
       "start_ms": 674020,
       "end_ms": 679250,
       "duration_ms": 5230,
@@ -6049,14 +5842,14 @@
       "subtitles": {
         "ja": [
           {
-            "id": 347,
+            "id": 346,
             "text": "私は...。 この声は なんだ?",
             "start_ms": 674052,
             "end_ms": 676588,
             "actor": null
           },
           {
-            "id": 348,
+            "id": 347,
             "text": "通信を切れ。 切断できません。",
             "start_ms": 676588,
             "end_ms": 679023,
@@ -6066,14 +5859,14 @@
         "es": [],
         "en": [
           {
-            "id": 346,
+            "id": 345,
             "text": "Whose voice is that? Cut it off!",
             "start_ms": 674020,
             "end_ms": 677730,
             "actor": null
           },
           {
-            "id": 350,
+            "id": 348,
             "text": "I can't.",
             "start_ms": 677730,
             "end_ms": 679250,
@@ -6083,7 +5876,7 @@
       }
     },
     {
-      "segment_index": 351,
+      "segment_index": 349,
       "start_ms": 679023,
       "end_ms": 681025,
       "duration_ms": 2002,
@@ -6098,7 +5891,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 351,
+            "id": 349,
             "text": "ここは月だぞ。",
             "start_ms": 679023,
             "end_ms": 681025,
@@ -6108,7 +5901,7 @@
         "es": [],
         "en": [
           {
-            "id": 352,
+            "id": 350,
             "text": "But this is the moon!",
             "start_ms": 679250,
             "end_ms": 680950,
@@ -6118,7 +5911,7 @@
       }
     },
     {
-      "segment_index": 354,
+      "segment_index": 352,
       "start_ms": 680950,
       "end_ms": 688066,
       "duration_ms": 7116,
@@ -6133,14 +5926,14 @@
       "subtitles": {
         "ja": [
           {
-            "id": 354,
+            "id": 352,
             "text": "「ベネリット」グループは 先ほど グループ解散と",
             "start_ms": 681025,
             "end_ms": 684095,
             "actor": null
           },
           {
-            "id": 355,
+            "id": 353,
             "text": "清算手続きの申請を行いました。 何?",
             "start_ms": 684095,
             "end_ms": 688066,
@@ -6150,14 +5943,14 @@
         "es": [],
         "en": [
           {
-            "id": 353,
+            "id": 351,
             "text": "The Benerit Group has just submitted its papers of dissolution and liquidation.",
             "start_ms": 680950,
             "end_ms": 686850,
             "actor": null
           },
           {
-            "id": 356,
+            "id": 354,
             "text": "What?",
             "start_ms": 686850,
             "end_ms": 687910,
@@ -6167,7 +5960,7 @@
       }
     },
     {
-      "segment_index": 358,
+      "segment_index": 356,
       "start_ms": 687910,
       "end_ms": 692170,
       "duration_ms": 4260,
@@ -6182,7 +5975,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 358,
+            "id": 356,
             "text": "弊社の資産は 先の「グラスレー社」と同様",
             "start_ms": 688066,
             "end_ms": 692036,
@@ -6192,7 +5985,7 @@
         "es": [],
         "en": [
           {
-            "id": 357,
+            "id": 355,
             "text": "As was the case with Grassley, all of the group's assets",
             "start_ms": 687910,
             "end_ms": 692170,
@@ -6202,7 +5995,7 @@
       }
     },
     {
-      "segment_index": 359,
+      "segment_index": 357,
       "start_ms": 692036,
       "end_ms": 696775,
       "duration_ms": 4739,
@@ -6217,7 +6010,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 359,
+            "id": 357,
             "text": "地球側の企業へ売却 もしくは 合併を行う形で",
             "start_ms": 692036,
             "end_ms": 696775,
@@ -6227,7 +6020,7 @@
         "es": [],
         "en": [
           {
-            "id": 360,
+            "id": 358,
             "text": "will be sold to or merged with Earthian corporations,",
             "start_ms": 692170,
             "end_ms": 696690,
@@ -6237,7 +6030,7 @@
       }
     },
     {
-      "segment_index": 362,
+      "segment_index": 360,
       "start_ms": 696690,
       "end_ms": 698877,
       "duration_ms": 2187,
@@ -6252,7 +6045,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 362,
+            "id": 360,
             "text": "合意に至りました。",
             "start_ms": 696775,
             "end_ms": 698877,
@@ -6262,7 +6055,7 @@
         "es": [],
         "en": [
           {
-            "id": 361,
+            "id": 359,
             "text": "per mutual agreement.",
             "start_ms": 696690,
             "end_ms": 698690,
@@ -6272,7 +6065,7 @@
       }
     },
     {
-      "segment_index": 365,
+      "segment_index": 362,
       "start_ms": 698690,
       "end_ms": 702180,
       "duration_ms": 3490,
@@ -6287,7 +6080,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 365,
+            "id": 362,
             "text": "解散? マジかよ。",
             "start_ms": 698877,
             "end_ms": 702180,
@@ -6297,14 +6090,14 @@
         "es": [],
         "en": [
           {
-            "id": 364,
+            "id": 361,
             "text": "Dissolution?",
             "start_ms": 698690,
             "end_ms": 700030,
             "actor": null
           },
           {
-            "id": 367,
+            "id": 363,
             "text": "For real?",
             "start_ms": 700920,
             "end_ms": 702030,
@@ -6314,7 +6107,7 @@
       }
     },
     {
-      "segment_index": 370,
+      "segment_index": 365,
       "start_ms": 702030,
       "end_ms": 705183,
       "duration_ms": 3153,
@@ -6329,7 +6122,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 370,
+            "id": 365,
             "text": "いつの間に... どうやって?",
             "start_ms": 702180,
             "end_ms": 705183,
@@ -6339,7 +6132,7 @@
         "es": [],
         "en": [
           {
-            "id": 369,
+            "id": 364,
             "text": "How? When did that happen?",
             "start_ms": 702030,
             "end_ms": 705100,
@@ -6349,7 +6142,7 @@
       }
     },
     {
-      "segment_index": 372,
+      "segment_index": 367,
       "start_ms": 705100,
       "end_ms": 708920,
       "duration_ms": 3820,
@@ -6364,7 +6157,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 372,
+            "id": 367,
             "text": "一連の事件に 関与していたという証拠資料を",
             "start_ms": 705183,
             "end_ms": 708920,
@@ -6374,7 +6167,7 @@
         "es": [],
         "en": [
           {
-            "id": 371,
+            "id": 366,
             "text": "...and was complicit in the recent attacks.",
             "start_ms": 705100,
             "end_ms": 708590,
@@ -6384,7 +6177,7 @@
       }
     },
     {
-      "segment_index": 374,
+      "segment_index": 369,
       "start_ms": 708590,
       "end_ms": 712023,
       "duration_ms": 3433,
@@ -6399,7 +6192,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 374,
+            "id": 369,
             "text": "シャディク・ゼネリの 宣誓供述書とともに",
             "start_ms": 708920,
             "end_ms": 712023,
@@ -6409,7 +6202,7 @@
         "es": [],
         "en": [
           {
-            "id": 373,
+            "id": 368,
             "text": "The evidence was received, along with Shaddiq Zenelli's written confession,",
             "start_ms": 708590,
             "end_ms": 711600,
@@ -6419,7 +6212,7 @@
       }
     },
     {
-      "segment_index": 375,
+      "segment_index": 370,
       "start_ms": 712023,
       "end_ms": 715593,
       "duration_ms": 3570,
@@ -6434,7 +6227,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 375,
+            "id": 370,
             "text": "公表することをお約束します。",
             "start_ms": 712023,
             "end_ms": 715593,
@@ -6444,7 +6237,7 @@
         "es": [],
         "en": [
           {
-            "id": 376,
+            "id": 371,
             "text": "and we promise to make it public!",
             "start_ms": 712100,
             "end_ms": 714790,
@@ -6454,7 +6247,7 @@
       }
     },
     {
-      "segment_index": 377,
+      "segment_index": 372,
       "start_ms": 715593,
       "end_ms": 719230,
       "duration_ms": 3637,
@@ -6469,7 +6262,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 377,
+            "id": 372,
             "text": "やっぱり 君には かなわないな。",
             "start_ms": 715593,
             "end_ms": 718963,
@@ -6479,7 +6272,7 @@
         "es": [],
         "en": [
           {
-            "id": 378,
+            "id": 373,
             "text": "As always... I could never compete with you.",
             "start_ms": 715600,
             "end_ms": 719230,
@@ -6489,7 +6282,7 @@
       }
     },
     {
-      "segment_index": 380,
+      "segment_index": 375,
       "start_ms": 720350,
       "end_ms": 722740,
       "duration_ms": 2390,
@@ -6504,7 +6297,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 380,
+            "id": 375,
             "text": "Alea jacta est.",
             "start_ms": 720465,
             "end_ms": 722734,
@@ -6514,7 +6307,7 @@
         "es": [],
         "en": [
           {
-            "id": 379,
+            "id": 374,
             "text": "Alea iacta est.",
             "start_ms": 720350,
             "end_ms": 722740,
@@ -6524,7 +6317,7 @@
       }
     },
     {
-      "segment_index": 382,
+      "segment_index": 377,
       "start_ms": 725230,
       "end_ms": 727906,
       "duration_ms": 2676,
@@ -6539,7 +6332,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 382,
+            "id": 377,
             "text": "ヤツから頼まれていたのか?",
             "start_ms": 725303,
             "end_ms": 727906,
@@ -6549,7 +6342,7 @@
         "es": [],
         "en": [
           {
-            "id": 381,
+            "id": 376,
             "text": "Was this at his request?",
             "start_ms": 725230,
             "end_ms": 727670,
@@ -6559,7 +6352,7 @@
       }
     },
     {
-      "segment_index": 384,
+      "segment_index": 379,
       "start_ms": 727670,
       "end_ms": 730375,
       "duration_ms": 2705,
@@ -6574,7 +6367,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 384,
+            "id": 379,
             "text": "さあね。",
             "start_ms": 727906,
             "end_ms": 730375,
@@ -6584,7 +6377,7 @@
         "es": [],
         "en": [
           {
-            "id": 383,
+            "id": 378,
             "text": "Who knows...",
             "start_ms": 727670,
             "end_ms": 729290,
@@ -6594,7 +6387,7 @@
       }
     },
     {
-      "segment_index": 385,
+      "segment_index": 380,
       "start_ms": 730375,
       "end_ms": 732377,
       "duration_ms": 2002,
@@ -6609,7 +6402,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 385,
+            "id": 380,
             "text": "行こうか。",
             "start_ms": 730375,
             "end_ms": 732377,
@@ -6619,7 +6412,7 @@
         "es": [],
         "en": [
           {
-            "id": 386,
+            "id": 381,
             "text": "Shall we go?",
             "start_ms": 730780,
             "end_ms": 732100,
@@ -6629,7 +6422,7 @@
       }
     },
     {
-      "segment_index": 387,
+      "segment_index": 382,
       "start_ms": 732377,
       "end_ms": 734379,
       "duration_ms": 2002,
@@ -6644,7 +6437,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 387,
+            "id": 382,
             "text": "ダン!",
             "start_ms": 732377,
             "end_ms": 734379,
@@ -6656,7 +6449,7 @@
       }
     },
     {
-      "segment_index": 389,
+      "segment_index": 384,
       "start_ms": 734030,
       "end_ms": 737390,
       "duration_ms": 3360,
@@ -6671,7 +6464,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 389,
+            "id": 384,
             "text": "ミオリネ・レンブラン!",
             "start_ms": 734379,
             "end_ms": 737382,
@@ -6681,7 +6474,7 @@
         "es": [],
         "en": [
           {
-            "id": 388,
+            "id": 383,
             "text": "Miorine... Rembran!",
             "start_ms": 734030,
             "end_ms": 737390,
@@ -6691,7 +6484,7 @@
       }
     },
     {
-      "segment_index": 390,
+      "segment_index": 385,
       "start_ms": 737382,
       "end_ms": 740785,
       "duration_ms": 3403,
@@ -6706,7 +6499,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 390,
+            "id": 385,
             "text": "そんな! 私たちの資産は?",
             "start_ms": 737382,
             "end_ms": 740785,
@@ -6716,14 +6509,14 @@
         "es": [],
         "en": [
           {
-            "id": 391,
+            "id": 386,
             "text": "But that's...",
             "start_ms": 737390,
             "end_ms": 738480,
             "actor": null
           },
           {
-            "id": 392,
+            "id": 387,
             "text": "What about our assets?",
             "start_ms": 738480,
             "end_ms": 740570,
@@ -6733,7 +6526,7 @@
       }
     },
     {
-      "segment_index": 394,
+      "segment_index": 389,
       "start_ms": 740570,
       "end_ms": 743888,
       "duration_ms": 3318,
@@ -6748,7 +6541,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 394,
+            "id": 389,
             "text": "きれいさっぱり 売り払われちゃってるね。",
             "start_ms": 740785,
             "end_ms": 743888,
@@ -6758,7 +6551,7 @@
         "es": [],
         "en": [
           {
-            "id": 393,
+            "id": 388,
             "text": "Looks like she sold every last bit.",
             "start_ms": 740570,
             "end_ms": 743550,
@@ -6768,7 +6561,7 @@
       }
     },
     {
-      "segment_index": 395,
+      "segment_index": 390,
       "start_ms": 743888,
       "end_ms": 746691,
       "duration_ms": 2803,
@@ -6783,7 +6576,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 395,
+            "id": 390,
             "text": "あっ 辞表?",
             "start_ms": 743888,
             "end_ms": 746691,
@@ -6793,7 +6586,7 @@
         "es": [],
         "en": [
           {
-            "id": 396,
+            "id": 391,
             "text": "You're resigning?!",
             "start_ms": 745170,
             "end_ms": 746400,
@@ -6803,7 +6596,7 @@
       }
     },
     {
-      "segment_index": 398,
+      "segment_index": 393,
       "start_ms": 746400,
       "end_ms": 749093,
       "duration_ms": 2693,
@@ -6818,7 +6611,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 398,
+            "id": 393,
             "text": "ヘッドハンティングってやつ?",
             "start_ms": 746691,
             "end_ms": 749093,
@@ -6828,7 +6621,7 @@
         "es": [],
         "en": [
           {
-            "id": 397,
+            "id": 392,
             "text": "I guess you could say I've been headhunted...",
             "start_ms": 746400,
             "end_ms": 748350,
@@ -6838,7 +6631,7 @@
       }
     },
     {
-      "segment_index": 400,
+      "segment_index": 395,
       "start_ms": 748840,
       "end_ms": 752664,
       "duration_ms": 3824,
@@ -6853,7 +6646,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 400,
+            "id": 395,
             "text": "ペイルグレードの下じゃ 飼い殺しだからさ。",
             "start_ms": 749093,
             "end_ms": 752664,
@@ -6863,7 +6656,7 @@
         "es": [],
         "en": [
           {
-            "id": 399,
+            "id": 394,
             "text": "I've grown tired of being on the Peil Grade's leash, anyway.",
             "start_ms": 748840,
             "end_ms": 751730,
@@ -6873,7 +6666,7 @@
       }
     },
     {
-      "segment_index": 402,
+      "segment_index": 397,
       "start_ms": 752590,
       "end_ms": 755266,
       "duration_ms": 2676,
@@ -6888,7 +6681,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 402,
+            "id": 397,
             "text": "じゃ。 シューン... バタン",
             "start_ms": 752664,
             "end_ms": 755266,
@@ -6898,7 +6691,7 @@
         "es": [],
         "en": [
           {
-            "id": 401,
+            "id": 396,
             "text": "Buh-bye!",
             "start_ms": 752590,
             "end_ms": 753830,
@@ -6908,7 +6701,7 @@
       }
     },
     {
-      "segment_index": 403,
+      "segment_index": 398,
       "start_ms": 755266,
       "end_ms": 757268,
       "duration_ms": 2002,
@@ -6923,7 +6716,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 403,
+            "id": 398,
             "text": "まだだ。",
             "start_ms": 755266,
             "end_ms": 757268,
@@ -6933,7 +6726,7 @@
         "es": [],
         "en": [
           {
-            "id": 404,
+            "id": 399,
             "text": "It's not over yet.",
             "start_ms": 755470,
             "end_ms": 757070,
@@ -6943,7 +6736,7 @@
       }
     },
     {
-      "segment_index": 406,
+      "segment_index": 401,
       "start_ms": 757070,
       "end_ms": 760840,
       "duration_ms": 3770,
@@ -6958,7 +6751,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 406,
+            "id": 401,
             "text": "あの大量破壊兵器は まだ生きている。",
             "start_ms": 757268,
             "end_ms": 760638,
@@ -6968,7 +6761,7 @@
         "es": [],
         "en": [
           {
-            "id": 405,
+            "id": 400,
             "text": "That weapon of mass destruction still stands.",
             "start_ms": 757070,
             "end_ms": 760840,
@@ -6978,13 +6771,13 @@
       }
     },
     {
-      "segment_index": 408,
+      "segment_index": 403,
       "start_ms": 761940,
-      "end_ms": 765076,
-      "duration_ms": 3136,
-      "content_ja": "エネルギー再充填作業 継続中です。",
+      "end_ms": 768012,
+      "duration_ms": 6072,
+      "content_ja": "エネルギー再充填作業 継続中です。スレッタ 逃げろ! いえ",
       "content_es": null,
-      "content_en": "The energy recharge is still underway.",
+      "content_en": "The energy recharge is still underway. Suletta! Run! No.",
       "actor_ja": null,
       "actor_es": null,
       "actor_en": null,
@@ -6993,42 +6786,14 @@
       "subtitles": {
         "ja": [
           {
-            "id": 408,
+            "id": 403,
             "text": "エネルギー再充填作業 継続中です。",
             "start_ms": 762173,
             "end_ms": 765076,
             "actor": null
-          }
-        ],
-        "es": [],
-        "en": [
+          },
           {
-            "id": 407,
-            "text": "The energy recharge is still underway.",
-            "start_ms": 761940,
-            "end_ms": 764780,
-            "actor": null
-          }
-        ]
-      }
-    },
-    {
-      "segment_index": 410,
-      "start_ms": 764780,
-      "end_ms": 768012,
-      "duration_ms": 3232,
-      "content_ja": "スレッタ 逃げろ! いえ",
-      "content_es": null,
-      "content_en": "Suletta! Run! No.",
-      "actor_ja": null,
-      "actor_es": null,
-      "actor_en": null,
-      "reason": "missing required languages: es",
-      "files": null,
-      "subtitles": {
-        "ja": [
-          {
-            "id": 410,
+            "id": 405,
             "text": "スレッタ 逃げろ! いえ",
             "start_ms": 765076,
             "end_ms": 768012,
@@ -7038,14 +6803,21 @@
         "es": [],
         "en": [
           {
-            "id": 409,
+            "id": 402,
+            "text": "The energy recharge is still underway.",
+            "start_ms": 761940,
+            "end_ms": 764780,
+            "actor": null
+          },
+          {
+            "id": 404,
             "text": "Suletta! Run!",
             "start_ms": 764780,
             "end_ms": 766630,
             "actor": null
           },
           {
-            "id": 411,
+            "id": 406,
             "text": "No.",
             "start_ms": 766630,
             "end_ms": 767450,
@@ -7055,7 +6827,7 @@
       }
     },
     {
-      "segment_index": 413,
+      "segment_index": 408,
       "start_ms": 767940,
       "end_ms": 770014,
       "duration_ms": 2074,
@@ -7070,7 +6842,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 413,
+            "id": 408,
             "text": "止めてみせます!",
             "start_ms": 768012,
             "end_ms": 770014,
@@ -7080,7 +6852,7 @@
         "es": [],
         "en": [
           {
-            "id": 412,
+            "id": 407,
             "text": "I'll stop them!",
             "start_ms": 767940,
             "end_ms": 769800,
@@ -7090,7 +6862,7 @@
       }
     },
     {
-      "segment_index": 414,
+      "segment_index": 409,
       "start_ms": 770014,
       "end_ms": 774452,
       "duration_ms": 4438,
@@ -7105,7 +6877,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 414,
+            "id": 409,
             "text": "♬ー",
             "start_ms": 770014,
             "end_ms": 774452,
@@ -7117,7 +6889,7 @@
       }
     },
     {
-      "segment_index": 415,
+      "segment_index": 410,
       "start_ms": 774452,
       "end_ms": 776454,
       "duration_ms": 2002,
@@ -7132,7 +6904,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 415,
+            "id": 410,
             "text": "あっ! ええー!",
             "start_ms": 774452,
             "end_ms": 776454,
@@ -7144,7 +6916,7 @@
       }
     },
     {
-      "segment_index": 416,
+      "segment_index": 411,
       "start_ms": 776454,
       "end_ms": 786454,
       "duration_ms": 10000,
@@ -7159,7 +6931,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 416,
+            "id": 411,
             "text": "♬ー",
             "start_ms": 776454,
             "end_ms": 786454,
@@ -7171,7 +6943,7 @@
       }
     },
     {
-      "segment_index": 417,
+      "segment_index": 412,
       "start_ms": 795473,
       "end_ms": 805473,
       "duration_ms": 10000,
@@ -7186,7 +6958,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 417,
+            "id": 412,
             "text": "♬ー",
             "start_ms": 795473,
             "end_ms": 805473,
@@ -7198,7 +6970,7 @@
       }
     },
     {
-      "segment_index": 419,
+      "segment_index": 414,
       "start_ms": 815200,
       "end_ms": 820290,
       "duration_ms": 5090,
@@ -7213,14 +6985,14 @@
       "subtitles": {
         "ja": [
           {
-            "id": 419,
+            "id": 414,
             "text": "レーザー送電システム オーバーライド。",
             "start_ms": 815426,
             "end_ms": 817996,
             "actor": null
           },
           {
-            "id": 421,
+            "id": 416,
             "text": "照射フェーズ 強制停止。",
             "start_ms": 817996,
             "end_ms": 820064,
@@ -7230,14 +7002,14 @@
         "es": [],
         "en": [
           {
-            "id": 418,
+            "id": 413,
             "text": "The laser transmission system has been overridden.",
             "start_ms": 815200,
             "end_ms": 817420,
             "actor": null
           },
           {
-            "id": 420,
+            "id": 415,
             "text": "The firing phase has been shut down.",
             "start_ms": 817420,
             "end_ms": 820290,
@@ -7247,7 +7019,7 @@
       }
     },
     {
-      "segment_index": 423,
+      "segment_index": 418,
       "start_ms": 823760,
       "end_ms": 826004,
       "duration_ms": 2244,
@@ -7262,7 +7034,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 423,
+            "id": 418,
             "text": "すごい...。",
             "start_ms": 824002,
             "end_ms": 826004,
@@ -7272,7 +7044,7 @@
         "es": [],
         "en": [
           {
-            "id": 422,
+            "id": 417,
             "text": "Incredible.",
             "start_ms": 823760,
             "end_ms": 825800,
@@ -7282,7 +7054,7 @@
       }
     },
     {
-      "segment_index": 425,
+      "segment_index": 420,
       "start_ms": 825800,
       "end_ms": 829150,
       "duration_ms": 3350,
@@ -7297,7 +7069,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 425,
+            "id": 420,
             "text": "スコア8を超えるなんて...。",
             "start_ms": 826004,
             "end_ms": 828973,
@@ -7307,7 +7079,7 @@
         "es": [],
         "en": [
           {
-            "id": 424,
+            "id": 419,
             "text": "She actually exceeded... score eight...",
             "start_ms": 825800,
             "end_ms": 829150,
@@ -7317,7 +7089,7 @@
       }
     },
     {
-      "segment_index": 427,
+      "segment_index": 422,
       "start_ms": 833930,
       "end_ms": 838016,
       "duration_ms": 4086,
@@ -7332,7 +7104,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 427,
+            "id": 422,
             "text": "スレッタだけが エリィのスコアを上げられる。",
             "start_ms": 833945,
             "end_ms": 838016,
@@ -7342,7 +7114,7 @@
         "es": [],
         "en": [
           {
-            "id": 426,
+            "id": 421,
             "text": "Suletta is the only one capable of raising Eri's score.",
             "start_ms": 833930,
             "end_ms": 837390,
@@ -7352,7 +7124,7 @@
       }
     },
     {
-      "segment_index": 428,
+      "segment_index": 423,
       "start_ms": 838016,
       "end_ms": 840952,
       "duration_ms": 2936,
@@ -7367,7 +7139,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 428,
+            "id": 423,
             "text": "そうなのね?",
             "start_ms": 838016,
             "end_ms": 840952,
@@ -7377,7 +7149,7 @@
         "es": [],
         "en": [
           {
-            "id": 429,
+            "id": 424,
             "text": "That must be it.",
             "start_ms": 838180,
             "end_ms": 839980,
@@ -7387,7 +7159,7 @@
       }
     },
     {
-      "segment_index": 431,
+      "segment_index": 426,
       "start_ms": 840930,
       "end_ms": 842921,
       "duration_ms": 1991,
@@ -7402,7 +7174,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 431,
+            "id": 426,
             "text": "エルノラ。",
             "start_ms": 840952,
             "end_ms": 842921,
@@ -7412,7 +7184,7 @@
         "es": [],
         "en": [
           {
-            "id": 430,
+            "id": 425,
             "text": "Elnora...",
             "start_ms": 840930,
             "end_ms": 842330,
@@ -7422,7 +7194,7 @@
       }
     },
     {
-      "segment_index": 433,
+      "segment_index": 428,
       "start_ms": 846150,
       "end_ms": 849360,
       "duration_ms": 3210,
@@ -7437,7 +7209,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 433,
+            "id": 428,
             "text": "あの子たちのもとへ戻るんだ。",
             "start_ms": 846324,
             "end_ms": 849360,
@@ -7447,7 +7219,7 @@
         "es": [],
         "en": [
           {
-            "id": 432,
+            "id": 427,
             "text": "Come home to the children.",
             "start_ms": 846150,
             "end_ms": 848860,
@@ -7457,7 +7229,7 @@
       }
     },
     {
-      "segment_index": 434,
+      "segment_index": 429,
       "start_ms": 849360,
       "end_ms": 852664,
       "duration_ms": 3304,
@@ -7472,7 +7244,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 434,
+            "id": 429,
             "text": "ナディム? どうして...。",
             "start_ms": 849360,
             "end_ms": 852664,
@@ -7482,7 +7254,7 @@
         "es": [],
         "en": [
           {
-            "id": 435,
+            "id": 430,
             "text": "Nadeem? How?",
             "start_ms": 849400,
             "end_ms": 852030,
@@ -7492,13 +7264,13 @@
       }
     },
     {
-      "segment_index": 437,
+      "segment_index": 432,
       "start_ms": 852570,
-      "end_ms": 854799,
-      "duration_ms": 2229,
-      "content_ja": "ここまでだよ。はっ!",
+      "end_ms": 857502,
+      "duration_ms": 4932,
+      "content_ja": "ここまでだよ。はっ!　あんたは よくやった。",
       "content_es": null,
-      "content_en": "It's over.",
+      "content_en": "It's over. You made us all proud.",
       "actor_ja": null,
       "actor_es": null,
       "actor_en": null,
@@ -7507,42 +7279,14 @@
       "subtitles": {
         "ja": [
           {
-            "id": 437,
+            "id": 432,
             "text": "ここまでだよ。 はっ!",
             "start_ms": 852664,
             "end_ms": 854799,
             "actor": null
-          }
-        ],
-        "es": [],
-        "en": [
+          },
           {
-            "id": 436,
-            "text": "It's over.",
-            "start_ms": 852570,
-            "end_ms": 854360,
-            "actor": null
-          }
-        ]
-      }
-    },
-    {
-      "segment_index": 439,
-      "start_ms": 854360,
-      "end_ms": 857502,
-      "duration_ms": 3142,
-      "content_ja": "あんたは よくやった。",
-      "content_es": null,
-      "content_en": "You made us all proud.",
-      "actor_ja": null,
-      "actor_es": null,
-      "actor_en": null,
-      "reason": "missing required languages: es",
-      "files": null,
-      "subtitles": {
-        "ja": [
-          {
-            "id": 439,
+            "id": 434,
             "text": "あんたは よくやった。",
             "start_ms": 854799,
             "end_ms": 857502,
@@ -7552,7 +7296,14 @@
         "es": [],
         "en": [
           {
-            "id": 438,
+            "id": 431,
+            "text": "It's over.",
+            "start_ms": 852570,
+            "end_ms": 854360,
+            "actor": null
+          },
+          {
+            "id": 433,
             "text": "You made us all proud.",
             "start_ms": 854360,
             "end_ms": 856620,
@@ -7562,7 +7313,7 @@
       }
     },
     {
-      "segment_index": 441,
+      "segment_index": 436,
       "start_ms": 857370,
       "end_ms": 860505,
       "duration_ms": 3135,
@@ -7577,7 +7328,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 441,
+            "id": 436,
             "text": "でも こっちに来るのは まだなんじゃない?",
             "start_ms": 857502,
             "end_ms": 860505,
@@ -7587,7 +7338,7 @@
         "es": [],
         "en": [
           {
-            "id": 440,
+            "id": 435,
             "text": "But isn't it still too early for her to come here?",
             "start_ms": 857370,
             "end_ms": 860390,
@@ -7597,7 +7348,7 @@
       }
     },
     {
-      "segment_index": 443,
+      "segment_index": 438,
       "start_ms": 860390,
       "end_ms": 864150,
       "duration_ms": 3760,
@@ -7612,7 +7363,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 443,
+            "id": 438,
             "text": "帰んな。 もう終わりにしていいだろ。",
             "start_ms": 860505,
             "end_ms": 864075,
@@ -7622,14 +7373,14 @@
         "es": [],
         "en": [
           {
-            "id": 442,
+            "id": 437,
             "text": "Just come home.",
             "start_ms": 860390,
             "end_ms": 861380,
             "actor": null
           },
           {
-            "id": 444,
+            "id": 439,
             "text": "You've done enough, haven't you?",
             "start_ms": 861870,
             "end_ms": 864150,
@@ -7639,7 +7390,7 @@
       }
     },
     {
-      "segment_index": 446,
+      "segment_index": 441,
       "start_ms": 866080,
       "end_ms": 868212,
       "duration_ms": 2132,
@@ -7654,7 +7405,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 446,
+            "id": 441,
             "text": "できない。",
             "start_ms": 866210,
             "end_ms": 868212,
@@ -7664,7 +7415,7 @@
         "es": [],
         "en": [
           {
-            "id": 445,
+            "id": 440,
             "text": "I can't.",
             "start_ms": 866080,
             "end_ms": 867130,
@@ -7674,7 +7425,7 @@
       }
     },
     {
-      "segment_index": 448,
+      "segment_index": 443,
       "start_ms": 868000,
       "end_ms": 871215,
       "duration_ms": 3215,
@@ -7689,7 +7440,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 448,
+            "id": 443,
             "text": "私が私を許せない。",
             "start_ms": 868212,
             "end_ms": 871215,
@@ -7699,7 +7450,7 @@
         "es": [],
         "en": [
           {
-            "id": 447,
+            "id": 442,
             "text": "I could never forgive myself.",
             "start_ms": 868000,
             "end_ms": 870570,
@@ -7709,7 +7460,7 @@
       }
     },
     {
-      "segment_index": 450,
+      "segment_index": 445,
       "start_ms": 871130,
       "end_ms": 875219,
       "duration_ms": 4089,
@@ -7724,7 +7475,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 450,
+            "id": 445,
             "text": "ナディムを 先生を",
             "start_ms": 871215,
             "end_ms": 875219,
@@ -7734,14 +7485,14 @@
         "es": [],
         "en": [
           {
-            "id": 449,
+            "id": 444,
             "text": "I lost Nadeem,",
             "start_ms": 871130,
             "end_ms": 872700,
             "actor": null
           },
           {
-            "id": 451,
+            "id": 446,
             "text": "Dr. Cardo...",
             "start_ms": 873090,
             "end_ms": 874570,
@@ -7751,7 +7502,7 @@
       }
     },
     {
-      "segment_index": 452,
+      "segment_index": 447,
       "start_ms": 875219,
       "end_ms": 877889,
       "duration_ms": 2670,
@@ -7766,7 +7517,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 452,
+            "id": 447,
             "text": "みんなを失って",
             "start_ms": 875219,
             "end_ms": 877889,
@@ -7776,7 +7527,7 @@
         "es": [],
         "en": [
           {
-            "id": 453,
+            "id": 448,
             "text": "all of you!",
             "start_ms": 875220,
             "end_ms": 876930,
@@ -7786,7 +7537,7 @@
       }
     },
     {
-      "segment_index": 455,
+      "segment_index": 450,
       "start_ms": 877840,
       "end_ms": 879958,
       "duration_ms": 2118,
@@ -7801,7 +7552,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 455,
+            "id": 450,
             "text": "エリィまで失ったら...。",
             "start_ms": 877889,
             "end_ms": 879958,
@@ -7811,7 +7562,7 @@
         "es": [],
         "en": [
           {
-            "id": 454,
+            "id": 449,
             "text": "If I lose Eri too...",
             "start_ms": 877840,
             "end_ms": 879950,
@@ -7821,7 +7572,7 @@
       }
     },
     {
-      "segment_index": 456,
+      "segment_index": 451,
       "start_ms": 881993,
       "end_ms": 883962,
       "duration_ms": 1969,
@@ -7836,7 +7587,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 456,
+            "id": 451,
             "text": "お母さんは偉いね。",
             "start_ms": 881993,
             "end_ms": 883962,
@@ -7846,7 +7597,7 @@
         "es": [],
         "en": [
           {
-            "id": 457,
+            "id": 452,
             "text": "I'm proud of you, Mom.",
             "start_ms": 882020,
             "end_ms": 883900,
@@ -7856,13 +7607,13 @@
       }
     },
     {
-      "segment_index": 458,
+      "segment_index": 453,
       "start_ms": 886030,
-      "end_ms": 888433,
-      "duration_ms": 2403,
-      "content_ja": "スレッタが",
+      "end_ms": 891202,
+      "duration_ms": 5172,
+      "content_ja": "スレッタが　エアリアルから みんなを呼んだのね。",
       "content_es": null,
-      "content_en": "Suletta...",
+      "content_en": "Suletta... You called everyone here from Aerial, didn't you?",
       "actor_ja": null,
       "actor_es": null,
       "actor_en": null,
@@ -7871,42 +7622,14 @@
       "subtitles": {
         "ja": [
           {
-            "id": 458,
+            "id": 453,
             "text": "スレッタが",
             "start_ms": 886030,
             "end_ms": 888433,
             "actor": null
-          }
-        ],
-        "es": [],
-        "en": [
+          },
           {
-            "id": 459,
-            "text": "Suletta...",
-            "start_ms": 886270,
-            "end_ms": 887980,
-            "actor": null
-          }
-        ]
-      }
-    },
-    {
-      "segment_index": 461,
-      "start_ms": 887980,
-      "end_ms": 891202,
-      "duration_ms": 3222,
-      "content_ja": "エアリアルから みんなを呼んだのね。",
-      "content_es": null,
-      "content_en": "You called everyone here from Aerial, didn't you?",
-      "actor_ja": null,
-      "actor_es": null,
-      "actor_en": null,
-      "reason": "missing required languages: es",
-      "files": null,
-      "subtitles": {
-        "ja": [
-          {
-            "id": 461,
+            "id": 456,
             "text": "エアリアルから みんなを呼んだのね。",
             "start_ms": 888433,
             "end_ms": 891202,
@@ -7916,7 +7639,14 @@
         "es": [],
         "en": [
           {
-            "id": 460,
+            "id": 454,
+            "text": "Suletta...",
+            "start_ms": 886270,
+            "end_ms": 887980,
+            "actor": null
+          },
+          {
+            "id": 455,
             "text": "You called everyone here from Aerial, didn't you?",
             "start_ms": 887980,
             "end_ms": 890980,
@@ -7926,7 +7656,7 @@
       }
     },
     {
-      "segment_index": 463,
+      "segment_index": 458,
       "start_ms": 890980,
       "end_ms": 895850,
       "duration_ms": 4870,
@@ -7941,7 +7671,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 463,
+            "id": 458,
             "text": "エリクトのために 復讐じゃなくて 未来を選んだんでしょ。",
             "start_ms": 891202,
             "end_ms": 895773,
@@ -7951,7 +7681,7 @@
         "es": [],
         "en": [
           {
-            "id": 462,
+            "id": 457,
             "text": "For Ericht's sake, you chose the future over revenge.",
             "start_ms": 890980,
             "end_ms": 895850,
@@ -7961,7 +7691,7 @@
       }
     },
     {
-      "segment_index": 465,
+      "segment_index": 460,
       "start_ms": 897530,
       "end_ms": 900178,
       "duration_ms": 2648,
@@ -7976,7 +7706,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 465,
+            "id": 460,
             "text": "みんなが否定しても",
             "start_ms": 897742,
             "end_ms": 900178,
@@ -7986,7 +7716,7 @@
         "es": [],
         "en": [
           {
-            "id": 464,
+            "id": 459,
             "text": "Even if everyone objects,",
             "start_ms": 897530,
             "end_ms": 899600,
@@ -7996,7 +7726,7 @@
       }
     },
     {
-      "segment_index": 467,
+      "segment_index": 462,
       "start_ms": 899950,
       "end_ms": 902914,
       "duration_ms": 2964,
@@ -8011,7 +7741,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 467,
+            "id": 462,
             "text": "間違ってるって言っても",
             "start_ms": 900178,
             "end_ms": 902914,
@@ -8021,7 +7751,7 @@
         "es": [],
         "en": [
           {
-            "id": 466,
+            "id": 461,
             "text": "if they say that it's wrong,",
             "start_ms": 899950,
             "end_ms": 902020,
@@ -8031,7 +7761,7 @@
       }
     },
     {
-      "segment_index": 469,
+      "segment_index": 464,
       "start_ms": 902700,
       "end_ms": 905917,
       "duration_ms": 3217,
@@ -8046,7 +7776,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 469,
+            "id": 464,
             "text": "お母さんの選択を",
             "start_ms": 902914,
             "end_ms": 905917,
@@ -8056,7 +7786,7 @@
         "es": [],
         "en": [
           {
-            "id": 468,
+            "id": 463,
             "text": "your choice...",
             "start_ms": 902700,
             "end_ms": 904590,
@@ -8066,7 +7796,7 @@
       }
     },
     {
-      "segment_index": 471,
+      "segment_index": 466,
       "start_ms": 905790,
       "end_ms": 908020,
       "duration_ms": 2230,
@@ -8081,7 +7811,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 471,
+            "id": 466,
             "text": "私は肯定します。",
             "start_ms": 905917,
             "end_ms": 907919,
@@ -8091,7 +7821,7 @@
         "es": [],
         "en": [
           {
-            "id": 470,
+            "id": 465,
             "text": "has my support.",
             "start_ms": 905790,
             "end_ms": 908020,
@@ -8101,7 +7831,7 @@
       }
     },
     {
-      "segment_index": 472,
+      "segment_index": 467,
       "start_ms": 907919,
       "end_ms": 912423,
       "duration_ms": 4504,
@@ -8116,7 +7846,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 472,
+            "id": 467,
             "text": "♬ー",
             "start_ms": 907919,
             "end_ms": 912423,
@@ -8128,13 +7858,13 @@
       }
     },
     {
-      "segment_index": 474,
+      "segment_index": 469,
       "start_ms": 912170,
-      "end_ms": 915927,
-      "duration_ms": 3757,
-      "content_ja": "あなたに何が...",
+      "end_ms": 918262,
+      "duration_ms": 6092,
+      "content_ja": "あなたに何が...お母さん。あっ。",
       "content_es": null,
-      "content_en": "What you... you know...",
+      "content_en": "What you... you know... Mom!",
       "actor_ja": null,
       "actor_es": null,
       "actor_en": null,
@@ -8143,42 +7873,14 @@
       "subtitles": {
         "ja": [
           {
-            "id": 474,
+            "id": 469,
             "text": "あなたに何が...。",
             "start_ms": 912423,
             "end_ms": 915927,
             "actor": null
-          }
-        ],
-        "es": [],
-        "en": [
+          },
           {
-            "id": 473,
-            "text": "What you... you know...",
-            "start_ms": 912170,
-            "end_ms": 914990,
-            "actor": null
-          }
-        ]
-      }
-    },
-    {
-      "segment_index": 476,
-      "start_ms": 915720,
-      "end_ms": 918262,
-      "duration_ms": 2542,
-      "content_ja": "お母さん。あっ。",
-      "content_es": null,
-      "content_en": "Mom!",
-      "actor_ja": null,
-      "actor_es": null,
-      "actor_en": null,
-      "reason": "missing required languages: es",
-      "files": null,
-      "subtitles": {
-        "ja": [
-          {
-            "id": 476,
+            "id": 471,
             "text": "お母さん。 あっ。",
             "start_ms": 915927,
             "end_ms": 918262,
@@ -8188,7 +7890,14 @@
         "es": [],
         "en": [
           {
-            "id": 475,
+            "id": 468,
+            "text": "What you... you know...",
+            "start_ms": 912170,
+            "end_ms": 914990,
+            "actor": null
+          },
+          {
+            "id": 470,
             "text": "Mom!",
             "start_ms": 915720,
             "end_ms": 916930,
@@ -8198,7 +7907,7 @@
       }
     },
     {
-      "segment_index": 477,
+      "segment_index": 472,
       "start_ms": 918262,
       "end_ms": 922400,
       "duration_ms": 4138,
@@ -8213,7 +7922,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 477,
+            "id": 472,
             "text": "♬ー",
             "start_ms": 918262,
             "end_ms": 922400,
@@ -8225,7 +7934,7 @@
       }
     },
     {
-      "segment_index": 478,
+      "segment_index": 473,
       "start_ms": 922400,
       "end_ms": 924435,
       "duration_ms": 2035,
@@ -8240,7 +7949,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 478,
+            "id": 473,
             "text": "あっ!",
             "start_ms": 922400,
             "end_ms": 924435,
@@ -8252,7 +7961,7 @@
       }
     },
     {
-      "segment_index": 479,
+      "segment_index": 474,
       "start_ms": 924435,
       "end_ms": 930141,
       "duration_ms": 5706,
@@ -8267,7 +7976,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 479,
+            "id": 474,
             "text": "♬ー",
             "start_ms": 924435,
             "end_ms": 930141,
@@ -8279,7 +7988,7 @@
       }
     },
     {
-      "segment_index": 480,
+      "segment_index": 475,
       "start_ms": 930141,
       "end_ms": 932143,
       "duration_ms": 2002,
@@ -8294,7 +8003,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 480,
+            "id": 475,
             "text": "ああっ...。",
             "start_ms": 930141,
             "end_ms": 932143,
@@ -8306,7 +8015,7 @@
       }
     },
     {
-      "segment_index": 481,
+      "segment_index": 476,
       "start_ms": 932143,
       "end_ms": 935213,
       "duration_ms": 3070,
@@ -8321,7 +8030,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 481,
+            "id": 476,
             "text": "♬ー",
             "start_ms": 932143,
             "end_ms": 935213,
@@ -8333,7 +8042,7 @@
       }
     },
     {
-      "segment_index": 483,
+      "segment_index": 478,
       "start_ms": 935190,
       "end_ms": 939283,
       "duration_ms": 4093,
@@ -8348,7 +8057,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 483,
+            "id": 478,
             "text": "僕は スレッタと これからも一緒にいたい。",
             "start_ms": 935213,
             "end_ms": 939283,
@@ -8358,7 +8067,7 @@
         "es": [],
         "en": [
           {
-            "id": 482,
+            "id": 477,
             "text": "I want to stay with Suletta from now on.",
             "start_ms": 935190,
             "end_ms": 938930,
@@ -8368,7 +8077,7 @@
       }
     },
     {
-      "segment_index": 484,
+      "segment_index": 479,
       "start_ms": 939283,
       "end_ms": 942186,
       "duration_ms": 2903,
@@ -8383,7 +8092,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 484,
+            "id": 479,
             "text": "ああっ...。 お母さんとも。",
             "start_ms": 939283,
             "end_ms": 942186,
@@ -8393,7 +8102,7 @@
         "es": [],
         "en": [
           {
-            "id": 485,
+            "id": 480,
             "text": "With you too, Mom.",
             "start_ms": 940200,
             "end_ms": 941680,
@@ -8403,7 +8112,7 @@
       }
     },
     {
-      "segment_index": 486,
+      "segment_index": 481,
       "start_ms": 942186,
       "end_ms": 945156,
       "duration_ms": 2970,
@@ -8418,7 +8127,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 486,
+            "id": 481,
             "text": "ああっ...。",
             "start_ms": 942186,
             "end_ms": 945156,
@@ -8430,7 +8139,7 @@
       }
     },
     {
-      "segment_index": 487,
+      "segment_index": 482,
       "start_ms": 945156,
       "end_ms": 947759,
       "duration_ms": 2603,
@@ -8445,7 +8154,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 487,
+            "id": 482,
             "text": "うぅ...。",
             "start_ms": 945156,
             "end_ms": 947759,
@@ -8457,13 +8166,13 @@
       }
     },
     {
-      "segment_index": 489,
+      "segment_index": 484,
       "start_ms": 947550,
-      "end_ms": 950862,
-      "duration_ms": 3312,
-      "content_ja": "ごめんね",
+      "end_ms": 953820,
+      "duration_ms": 6270,
+      "content_ja": "ごめんね　エリィ スレッタ。",
       "content_es": null,
-      "content_en": "I'm so sorry...",
+      "content_en": "I'm so sorry... Eri... Suletta...",
       "actor_ja": null,
       "actor_es": null,
       "actor_en": null,
@@ -8472,42 +8181,14 @@
       "subtitles": {
         "ja": [
           {
-            "id": 489,
+            "id": 484,
             "text": "ごめんね",
             "start_ms": 947759,
             "end_ms": 950862,
             "actor": null
-          }
-        ],
-        "es": [],
-        "en": [
+          },
           {
-            "id": 488,
-            "text": "I'm so sorry...",
-            "start_ms": 947550,
-            "end_ms": 949400,
-            "actor": null
-          }
-        ]
-      }
-    },
-    {
-      "segment_index": 491,
-      "start_ms": 950500,
-      "end_ms": 953820,
-      "duration_ms": 3320,
-      "content_ja": "エリィ スレッタ。",
-      "content_es": null,
-      "content_en": "Eri... Suletta...",
-      "actor_ja": null,
-      "actor_es": null,
-      "actor_en": null,
-      "reason": "missing required languages: es",
-      "files": null,
-      "subtitles": {
-        "ja": [
-          {
-            "id": 491,
+            "id": 486,
             "text": "エリィ スレッタ。",
             "start_ms": 950862,
             "end_ms": 953765,
@@ -8517,14 +8198,21 @@
         "es": [],
         "en": [
           {
-            "id": 490,
+            "id": 483,
+            "text": "I'm so sorry...",
+            "start_ms": 947550,
+            "end_ms": 949400,
+            "actor": null
+          },
+          {
+            "id": 485,
             "text": "Eri...",
             "start_ms": 950500,
             "end_ms": 951550,
             "actor": null
           },
           {
-            "id": 492,
+            "id": 487,
             "text": "Suletta...",
             "start_ms": 952420,
             "end_ms": 953820,
@@ -8534,7 +8222,7 @@
       }
     },
     {
-      "segment_index": 493,
+      "segment_index": 488,
       "start_ms": 953765,
       "end_ms": 961773,
       "duration_ms": 8008,
@@ -8549,7 +8237,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 493,
+            "id": 488,
             "text": "♬ー",
             "start_ms": 953765,
             "end_ms": 961773,
@@ -8561,7 +8249,7 @@
       }
     },
     {
-      "segment_index": 495,
+      "segment_index": 490,
       "start_ms": 961600,
       "end_ms": 967640,
       "duration_ms": 6040,
@@ -8576,14 +8264,14 @@
       "subtitles": {
         "ja": [
           {
-            "id": 495,
+            "id": 490,
             "text": "なんだ? これ。 パーメットが 粒子レベルにまで",
             "start_ms": 961773,
             "end_ms": 964575,
             "actor": null
           },
           {
-            "id": 497,
+            "id": 492,
             "text": "分解されています。 ここから離脱してください。",
             "start_ms": 964575,
             "end_ms": 967578,
@@ -8593,21 +8281,21 @@
         "es": [],
         "en": [
           {
-            "id": 494,
+            "id": 489,
             "text": "What's happening?",
             "start_ms": 961600,
             "end_ms": 963040,
             "actor": null
           },
           {
-            "id": 496,
+            "id": 491,
             "text": "The Permet is breaking apart at the particle level.",
             "start_ms": 963040,
             "end_ms": 965500,
             "actor": null
           },
           {
-            "id": 498,
+            "id": 493,
             "text": "Please evacuate.",
             "start_ms": 965500,
             "end_ms": 967640,
@@ -8617,7 +8305,7 @@
       }
     },
     {
-      "segment_index": 499,
+      "segment_index": 494,
       "start_ms": 967578,
       "end_ms": 977578,
       "duration_ms": 10000,
@@ -8632,7 +8320,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 499,
+            "id": 494,
             "text": "♬ー",
             "start_ms": 967578,
             "end_ms": 977578,
@@ -8644,7 +8332,7 @@
       }
     },
     {
-      "segment_index": 500,
+      "segment_index": 495,
       "start_ms": 987532,
       "end_ms": 991302,
       "duration_ms": 3770,
@@ -8659,7 +8347,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 500,
+            "id": 495,
             "text": "♬ー",
             "start_ms": 987532,
             "end_ms": 991302,
@@ -8671,7 +8359,7 @@
       }
     },
     {
-      "segment_index": 502,
+      "segment_index": 497,
       "start_ms": 991210,
       "end_ms": 994305,
       "duration_ms": 3095,
@@ -8686,7 +8374,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 502,
+            "id": 497,
             "text": "クワイエット・ゼロが...。",
             "start_ms": 991302,
             "end_ms": 994305,
@@ -8696,7 +8384,7 @@
         "es": [],
         "en": [
           {
-            "id": 501,
+            "id": 496,
             "text": "Quiet Zero...",
             "start_ms": 991210,
             "end_ms": 993260,
@@ -8706,7 +8394,7 @@
       }
     },
     {
-      "segment_index": 503,
+      "segment_index": 498,
       "start_ms": 994305,
       "end_ms": 996941,
       "duration_ms": 2636,
@@ -8721,7 +8409,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 503,
+            "id": 498,
             "text": "消えた。",
             "start_ms": 994305,
             "end_ms": 996941,
@@ -8731,7 +8419,7 @@
         "es": [],
         "en": [
           {
-            "id": 504,
+            "id": 499,
             "text": "...disappeared?",
             "start_ms": 994360,
             "end_ms": 995840,
@@ -8741,7 +8429,7 @@
       }
     },
     {
-      "segment_index": 505,
+      "segment_index": 500,
       "start_ms": 996941,
       "end_ms": 998943,
       "duration_ms": 2002,
@@ -8756,7 +8444,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 505,
+            "id": 500,
             "text": "んん...。",
             "start_ms": 996941,
             "end_ms": 998943,
@@ -8768,7 +8456,7 @@
       }
     },
     {
-      "segment_index": 506,
+      "segment_index": 501,
       "start_ms": 998943,
       "end_ms": 1008619,
       "duration_ms": 9676,
@@ -8783,7 +8471,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 506,
+            "id": 501,
             "text": "♬ー",
             "start_ms": 998943,
             "end_ms": 1008619,
@@ -8795,7 +8483,7 @@
       }
     },
     {
-      "segment_index": 507,
+      "segment_index": 502,
       "start_ms": 1074118,
       "end_ms": 1076087,
       "duration_ms": 1969,
@@ -8810,7 +8498,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 507,
+            "id": 502,
             "text": "あだっ...。",
             "start_ms": 1074118,
             "end_ms": 1076087,
@@ -8822,7 +8510,7 @@
       }
     },
     {
-      "segment_index": 508,
+      "segment_index": 503,
       "start_ms": 1079157,
       "end_ms": 1081893,
       "duration_ms": 2736,
@@ -8837,7 +8525,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 508,
+            "id": 503,
             "text": "あっ...。",
             "start_ms": 1079157,
             "end_ms": 1081893,
@@ -8849,7 +8537,7 @@
       }
     },
     {
-      "segment_index": 510,
+      "segment_index": 505,
       "start_ms": 1081840,
       "end_ms": 1084795,
       "duration_ms": 2955,
@@ -8864,7 +8552,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 510,
+            "id": 505,
             "text": "ミオリネ... さん。",
             "start_ms": 1081893,
             "end_ms": 1084795,
@@ -8874,7 +8562,7 @@
         "es": [],
         "en": [
           {
-            "id": 509,
+            "id": 504,
             "text": "Ms... Miorine?",
             "start_ms": 1081840,
             "end_ms": 1084740,
@@ -8884,7 +8572,7 @@
       }
     },
     {
-      "segment_index": 511,
+      "segment_index": 506,
       "start_ms": 1084795,
       "end_ms": 1089367,
       "duration_ms": 4572,
@@ -8899,7 +8587,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 511,
+            "id": 506,
             "text": "うぅ... さっさと返事しなさいよ。",
             "start_ms": 1084795,
             "end_ms": 1089367,
@@ -8909,7 +8597,7 @@
         "es": [],
         "en": [
           {
-            "id": 512,
+            "id": 507,
             "text": "Answer me sooner,",
             "start_ms": 1085970,
             "end_ms": 1088690,
@@ -8919,7 +8607,7 @@
       }
     },
     {
-      "segment_index": 514,
+      "segment_index": 509,
       "start_ms": 1089180,
       "end_ms": 1091369,
       "duration_ms": 2189,
@@ -8934,7 +8622,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 514,
+            "id": 509,
             "text": "バカ。",
             "start_ms": 1089367,
             "end_ms": 1091369,
@@ -8944,7 +8632,7 @@
         "es": [],
         "en": [
           {
-            "id": 513,
+            "id": 508,
             "text": "you idiot!",
             "start_ms": 1089180,
             "end_ms": 1090710,
@@ -8954,7 +8642,7 @@
       }
     },
     {
-      "segment_index": 515,
+      "segment_index": 510,
       "start_ms": 1091369,
       "end_ms": 1099977,
       "duration_ms": 8608,
@@ -8969,7 +8657,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 515,
+            "id": 510,
             "text": "♬ー",
             "start_ms": 1091369,
             "end_ms": 1099977,
@@ -8979,7 +8667,7 @@
         "es": [],
         "en": [
           {
-            "id": 516,
+            "id": 511,
             "text": "3 years later",
             "start_ms": 1095820,
             "end_ms": 1098700,
@@ -8989,7 +8677,7 @@
       }
     },
     {
-      "segment_index": 517,
+      "segment_index": 512,
       "start_ms": 1099977,
       "end_ms": 1101946,
       "duration_ms": 1969,
@@ -9004,7 +8692,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 517,
+            "id": 512,
             "text": "ニカ! あっ。",
             "start_ms": 1099977,
             "end_ms": 1101946,
@@ -9014,7 +8702,7 @@
         "es": [],
         "en": [
           {
-            "id": 518,
+            "id": 513,
             "text": "Nika!",
             "start_ms": 1100030,
             "end_ms": 1100960,
@@ -9024,7 +8712,7 @@
       }
     },
     {
-      "segment_index": 519,
+      "segment_index": 514,
       "start_ms": 1103681,
       "end_ms": 1105683,
       "duration_ms": 2002,
@@ -9039,7 +8727,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 519,
+            "id": 514,
             "text": "おかえり。",
             "start_ms": 1103681,
             "end_ms": 1105683,
@@ -9049,7 +8737,7 @@
         "es": [],
         "en": [
           {
-            "id": 520,
+            "id": 515,
             "text": "Welcome back!",
             "start_ms": 1103860,
             "end_ms": 1105470,
@@ -9059,7 +8747,7 @@
       }
     },
     {
-      "segment_index": 522,
+      "segment_index": 517,
       "start_ms": 1105470,
       "end_ms": 1107685,
       "duration_ms": 2215,
@@ -9074,7 +8762,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 522,
+            "id": 517,
             "text": "資格試験 どうだった?",
             "start_ms": 1105683,
             "end_ms": 1107685,
@@ -9084,7 +8772,7 @@
         "es": [],
         "en": [
           {
-            "id": 521,
+            "id": 516,
             "text": "How was the certification test?",
             "start_ms": 1105470,
             "end_ms": 1107210,
@@ -9094,7 +8782,7 @@
       }
     },
     {
-      "segment_index": 523,
+      "segment_index": 518,
       "start_ms": 1107685,
       "end_ms": 1110890,
       "duration_ms": 3205,
@@ -9109,7 +8797,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 523,
+            "id": 518,
             "text": "ふふっ。 おめでとうございます!",
             "start_ms": 1107685,
             "end_ms": 1110688,
@@ -9119,7 +8807,7 @@
         "es": [],
         "en": [
           {
-            "id": 524,
+            "id": 519,
             "text": "Congratulations!",
             "start_ms": 1108710,
             "end_ms": 1110890,
@@ -9129,7 +8817,7 @@
       }
     },
     {
-      "segment_index": 525,
+      "segment_index": 520,
       "start_ms": 1110688,
       "end_ms": 1113724,
       "duration_ms": 3036,
@@ -9144,7 +8832,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 525,
+            "id": 520,
             "text": "さすがは うちのエースメカニック。",
             "start_ms": 1110688,
             "end_ms": 1113724,
@@ -9154,7 +8842,7 @@
         "es": [],
         "en": [
           {
-            "id": 526,
+            "id": 521,
             "text": "I expect nothing less from our ace mechanic.",
             "start_ms": 1110890,
             "end_ms": 1113460,
@@ -9164,13 +8852,13 @@
       }
     },
     {
-      "segment_index": 528,
+      "segment_index": 523,
       "start_ms": 1113460,
-      "end_ms": 1118062,
-      "duration_ms": 4602,
-      "content_ja": "学校と掛け持ちだな。頑張る。チュチュは?",
+      "end_ms": 1124535,
+      "duration_ms": 11075,
+      "content_ja": "学校と掛け持ちだな。頑張る。チュチュは?　ロウジ! てめぇ 勝手に 仕様 変えたな!　クソスペギーク! その言い方 ハラスメントだけど。",
       "content_es": null,
-      "content_en": "You'll have to balance work and school now. I'll do my best! Where's Chuchu?",
+      "content_en": "You'll have to balance work and school now. I'll do my best! Where's Chuchu? Rouji! You changed the specs without asking! You turdish Spacian geek- That qualifies as verbal harassment...",
       "actor_ja": null,
       "actor_es": null,
       "actor_en": null,
@@ -9179,63 +8867,21 @@
       "subtitles": {
         "ja": [
           {
-            "id": 528,
+            "id": 523,
             "text": "学校と掛け持ちだな。 頑張る。 チュチュは?",
             "start_ms": 1113724,
             "end_ms": 1118062,
             "actor": null
-          }
-        ],
-        "es": [],
-        "en": [
+          },
           {
             "id": 527,
-            "text": "You'll have to balance work and school now.",
-            "start_ms": 1113460,
-            "end_ms": 1115480,
-            "actor": null
-          },
-          {
-            "id": 529,
-            "text": "I'll do my best!",
-            "start_ms": 1115480,
-            "end_ms": 1116460,
-            "actor": null
-          },
-          {
-            "id": 530,
-            "text": "Where's Chuchu?",
-            "start_ms": 1116460,
-            "end_ms": 1117720,
-            "actor": null
-          }
-        ]
-      }
-    },
-    {
-      "segment_index": 532,
-      "start_ms": 1117720,
-      "end_ms": 1124535,
-      "duration_ms": 6815,
-      "content_ja": "ロウジ! てめぇ 勝手に 仕様 変えたな!　クソスペギーク! その言い方 ハラスメントだけど。",
-      "content_es": null,
-      "content_en": "Rouji! You changed the specs without asking! You turdish Spacian geek- That qualifies as verbal harassment...",
-      "actor_ja": null,
-      "actor_es": null,
-      "actor_en": null,
-      "reason": "missing required languages: es",
-      "files": null,
-      "subtitles": {
-        "ja": [
-          {
-            "id": 532,
             "text": "ロウジ! てめぇ 勝手に 仕様 変えたな!",
             "start_ms": 1118062,
             "end_ms": 1121065,
             "actor": null
           },
           {
-            "id": 534,
+            "id": 529,
             "text": "クソスペギーク! その言い方 ハラスメントだけど。",
             "start_ms": 1121065,
             "end_ms": 1124535,
@@ -9245,21 +8891,42 @@
         "es": [],
         "en": [
           {
-            "id": 531,
+            "id": 522,
+            "text": "You'll have to balance work and school now.",
+            "start_ms": 1113460,
+            "end_ms": 1115480,
+            "actor": null
+          },
+          {
+            "id": 524,
+            "text": "I'll do my best!",
+            "start_ms": 1115480,
+            "end_ms": 1116460,
+            "actor": null
+          },
+          {
+            "id": 525,
+            "text": "Where's Chuchu?",
+            "start_ms": 1116460,
+            "end_ms": 1117720,
+            "actor": null
+          },
+          {
+            "id": 526,
             "text": "Rouji!",
             "start_ms": 1117720,
             "end_ms": 1118720,
             "actor": null
           },
           {
-            "id": 533,
+            "id": 528,
             "text": "You changed the specs without asking! You turdish Spacian geek--",
             "start_ms": 1119200,
             "end_ms": 1122240,
             "actor": null
           },
           {
-            "id": 535,
+            "id": 530,
             "text": "That qualifies as verbal harassment...",
             "start_ms": 1122240,
             "end_ms": 1124450,
@@ -9269,7 +8936,7 @@
       }
     },
     {
-      "segment_index": 537,
+      "segment_index": 532,
       "start_ms": 1124450,
       "end_ms": 1126537,
       "duration_ms": 2087,
@@ -9284,7 +8951,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 537,
+            "id": 532,
             "text": "んだと!?",
             "start_ms": 1124535,
             "end_ms": 1126537,
@@ -9294,7 +8961,7 @@
         "es": [],
         "en": [
           {
-            "id": 536,
+            "id": 531,
             "text": "What did you say?!",
             "start_ms": 1124450,
             "end_ms": 1125720,
@@ -9304,7 +8971,7 @@
       }
     },
     {
-      "segment_index": 538,
+      "segment_index": 533,
       "start_ms": 1126537,
       "end_ms": 1130241,
       "duration_ms": 3704,
@@ -9319,7 +8986,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 538,
+            "id": 533,
             "text": "♬ー",
             "start_ms": 1126537,
             "end_ms": 1130241,
@@ -9331,7 +8998,7 @@
       }
     },
     {
-      "segment_index": 540,
+      "segment_index": 535,
       "start_ms": 1130060,
       "end_ms": 1132510,
       "duration_ms": 2450,
@@ -9346,7 +9013,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 540,
+            "id": 535,
             "text": "場所くらい書いとけよな。",
             "start_ms": 1130241,
             "end_ms": 1132510,
@@ -9356,7 +9023,7 @@
         "es": [],
         "en": [
           {
-            "id": 539,
+            "id": 534,
             "text": "She could have at least written the location...",
             "start_ms": 1130060,
             "end_ms": 1132270,
@@ -9366,7 +9033,7 @@
       }
     },
     {
-      "segment_index": 542,
+      "segment_index": 537,
       "start_ms": 1133980,
       "end_ms": 1136180,
       "duration_ms": 2200,
@@ -9381,7 +9048,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 542,
+            "id": 537,
             "text": "どうして うそついたの?",
             "start_ms": 1134178,
             "end_ms": 1136180,
@@ -9391,7 +9058,7 @@
         "es": [],
         "en": [
           {
-            "id": 541,
+            "id": 536,
             "text": "Why did you lie?",
             "start_ms": 1133980,
             "end_ms": 1135980,
@@ -9401,7 +9068,7 @@
       }
     },
     {
-      "segment_index": 543,
+      "segment_index": 538,
       "start_ms": 1136180,
       "end_ms": 1141786,
       "duration_ms": 5606,
@@ -9416,14 +9083,14 @@
       "subtitles": {
         "ja": [
           {
-            "id": 543,
+            "id": 538,
             "text": "ん? プラント・クエタはともかく",
             "start_ms": 1136180,
             "end_ms": 1138816,
             "actor": null
           },
           {
-            "id": 545,
+            "id": 540,
             "text": "クワイエット・ゼロは あんたの罪じゃないでしょ。",
             "start_ms": 1138816,
             "end_ms": 1141786,
@@ -9433,7 +9100,7 @@
         "es": [],
         "en": [
           {
-            "id": 544,
+            "id": 539,
             "text": "Plant Quetta was one thing, but Quiet Zero was not your crime.",
             "start_ms": 1136690,
             "end_ms": 1141760,
@@ -9443,7 +9110,7 @@
       }
     },
     {
-      "segment_index": 547,
+      "segment_index": 542,
       "start_ms": 1143490,
       "end_ms": 1146057,
       "duration_ms": 2567,
@@ -9458,7 +9125,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 547,
+            "id": 542,
             "text": "もとより 自分で決めてたからね。",
             "start_ms": 1143588,
             "end_ms": 1146057,
@@ -9468,7 +9135,7 @@
         "es": [],
         "en": [
           {
-            "id": 546,
+            "id": 541,
             "text": "I'd decided on my own, long ago.",
             "start_ms": 1143490,
             "end_ms": 1145920,
@@ -9478,7 +9145,7 @@
       }
     },
     {
-      "segment_index": 548,
+      "segment_index": 543,
       "start_ms": 1147525,
       "end_ms": 1150194,
       "duration_ms": 2669,
@@ -9493,7 +9160,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 548,
+            "id": 543,
             "text": "これから クイン・ハーバーに? ええ。",
             "start_ms": 1147525,
             "end_ms": 1150194,
@@ -9503,14 +9170,14 @@
         "es": [],
         "en": [
           {
-            "id": 549,
+            "id": 544,
             "text": "Are you leaving for Quinharbor?",
             "start_ms": 1147530,
             "end_ms": 1149100,
             "actor": null
           },
           {
-            "id": 550,
+            "id": 545,
             "text": "Yes.",
             "start_ms": 1149100,
             "end_ms": 1150020,
@@ -9520,13 +9187,13 @@
       }
     },
     {
-      "segment_index": 552,
+      "segment_index": 547,
       "start_ms": 1150020,
-      "end_ms": 1153364,
-      "duration_ms": 3344,
-      "content_ja": "お互い 償う身は大変だな。",
+      "end_ms": 1156200,
+      "duration_ms": 6180,
+      "content_ja": "お互い 償う身は大変だな。公判の時間です。",
       "content_es": null,
-      "content_en": "Making up for things will be hard for both of us.",
+      "content_en": "Making up for things will be hard for both of us. The trial is about to commence.",
       "actor_ja": null,
       "actor_es": null,
       "actor_en": null,
@@ -9535,42 +9202,14 @@
       "subtitles": {
         "ja": [
           {
-            "id": 552,
+            "id": 547,
             "text": "お互い 償う身は大変だな。",
             "start_ms": 1150194,
             "end_ms": 1153364,
             "actor": null
-          }
-        ],
-        "es": [],
-        "en": [
+          },
           {
-            "id": 551,
-            "text": "Making up for things will be hard for both of us.",
-            "start_ms": 1150020,
-            "end_ms": 1153000,
-            "actor": null
-          }
-        ]
-      }
-    },
-    {
-      "segment_index": 554,
-      "start_ms": 1153000,
-      "end_ms": 1156200,
-      "duration_ms": 3200,
-      "content_ja": "公判の時間です。",
-      "content_es": null,
-      "content_en": "The trial is about to commence.",
-      "actor_ja": null,
-      "actor_es": null,
-      "actor_en": null,
-      "reason": "missing required languages: es",
-      "files": null,
-      "subtitles": {
-        "ja": [
-          {
-            "id": 554,
+            "id": 549,
             "text": "公判の時間です。",
             "start_ms": 1153364,
             "end_ms": 1156200,
@@ -9580,7 +9219,14 @@
         "es": [],
         "en": [
           {
-            "id": 553,
+            "id": 546,
+            "text": "Making up for things will be hard for both of us.",
+            "start_ms": 1150020,
+            "end_ms": 1153000,
+            "actor": null
+          },
+          {
+            "id": 548,
             "text": "The trial is about to commence.",
             "start_ms": 1153000,
             "end_ms": 1155360,
@@ -9590,7 +9236,7 @@
       }
     },
     {
-      "segment_index": 556,
+      "segment_index": 551,
       "start_ms": 1156080,
       "end_ms": 1159971,
       "duration_ms": 3891,
@@ -9605,7 +9251,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 556,
+            "id": 551,
             "text": "じゃあ 行ってくる。 ありがとう ミオリネ。",
             "start_ms": 1156200,
             "end_ms": 1159971,
@@ -9615,14 +9261,14 @@
         "es": [],
         "en": [
           {
-            "id": 555,
+            "id": 550,
             "text": "I'm off, then.",
             "start_ms": 1156080,
             "end_ms": 1157770,
             "actor": null
           },
           {
-            "id": 557,
+            "id": 552,
             "text": "Thank you, Miorine.",
             "start_ms": 1157770,
             "end_ms": 1159760,
@@ -9632,7 +9278,7 @@
       }
     },
     {
-      "segment_index": 558,
+      "segment_index": 553,
       "start_ms": 1161372,
       "end_ms": 1164208,
       "duration_ms": 2836,
@@ -9647,7 +9293,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 558,
+            "id": 553,
             "text": "さようなら。",
             "start_ms": 1161372,
             "end_ms": 1164208,
@@ -9657,7 +9303,7 @@
         "es": [],
         "en": [
           {
-            "id": 559,
+            "id": 554,
             "text": "Goodbye.",
             "start_ms": 1161380,
             "end_ms": 1162780,
@@ -9667,7 +9313,7 @@
       }
     },
     {
-      "segment_index": 560,
+      "segment_index": 555,
       "start_ms": 1164208,
       "end_ms": 1166240,
       "duration_ms": 2032,
@@ -9682,7 +9328,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 560,
+            "id": 555,
             "text": "いいの? 何が?",
             "start_ms": 1164208,
             "end_ms": 1166210,
@@ -9692,14 +9338,14 @@
         "es": [],
         "en": [
           {
-            "id": 561,
+            "id": 556,
             "text": "Are you sure?",
             "start_ms": 1164260,
             "end_ms": 1165140,
             "actor": null
           },
           {
-            "id": 562,
+            "id": 557,
             "text": "About what?",
             "start_ms": 1165140,
             "end_ms": 1166240,
@@ -9709,7 +9355,7 @@
       }
     },
     {
-      "segment_index": 563,
+      "segment_index": 558,
       "start_ms": 1166210,
       "end_ms": 1168980,
       "duration_ms": 2770,
@@ -9724,7 +9370,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 563,
+            "id": 558,
             "text": "素直じゃないね。 うるさい。",
             "start_ms": 1166210,
             "end_ms": 1168980,
@@ -9734,14 +9380,14 @@
         "es": [],
         "en": [
           {
-            "id": 564,
+            "id": 559,
             "text": "You're not honest with yourself.",
             "start_ms": 1166240,
             "end_ms": 1167660,
             "actor": null
           },
           {
-            "id": 565,
+            "id": 560,
             "text": "Shut up!",
             "start_ms": 1167660,
             "end_ms": 1168560,
@@ -9751,7 +9397,7 @@
       }
     },
     {
-      "segment_index": 567,
+      "segment_index": 562,
       "start_ms": 1168560,
       "end_ms": 1172984,
       "duration_ms": 4424,
@@ -9766,7 +9412,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 567,
+            "id": 562,
             "text": "小姑のアドバイスは 尊重してほしいな。",
             "start_ms": 1168980,
             "end_ms": 1172984,
@@ -9776,7 +9422,7 @@
         "es": [],
         "en": [
           {
-            "id": 566,
+            "id": 561,
             "text": "I wish you'd listen to your sister-in-law's advice.",
             "start_ms": 1168560,
             "end_ms": 1172330,
@@ -9786,7 +9432,7 @@
       }
     },
     {
-      "segment_index": 569,
+      "segment_index": 564,
       "start_ms": 1172810,
       "end_ms": 1176110,
       "duration_ms": 3300,
@@ -9801,7 +9447,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 569,
+            "id": 564,
             "text": "母親そっくりだわ あんた。",
             "start_ms": 1172984,
             "end_ms": 1175553,
@@ -9811,7 +9457,7 @@
         "es": [],
         "en": [
           {
-            "id": 568,
+            "id": 563,
             "text": "You sure remind me of your mother.",
             "start_ms": 1172810,
             "end_ms": 1176110,
@@ -9821,13 +9467,13 @@
       }
     },
     {
-      "segment_index": 571,
+      "segment_index": 566,
       "start_ms": 1176890,
-      "end_ms": 1180958,
-      "duration_ms": 4068,
-      "content_ja": "来週から 「株式会社ガンダム」の テスターなんです。",
+      "end_ms": 1183861,
+      "duration_ms": 6971,
+      "content_ja": "来週から 「株式会社ガンダム」の テスターなんです。ペトラのそばにいたいんだ。",
       "content_es": null,
-      "content_en": "I'll be a tester for GUND-ARM Inc. starting next week.",
+      "content_en": "I'll be a tester for GUND-ARM Inc. starting next week. I want to be at Petra's side.",
       "actor_ja": null,
       "actor_es": null,
       "actor_en": null,
@@ -9836,42 +9482,14 @@
       "subtitles": {
         "ja": [
           {
-            "id": 571,
+            "id": 566,
             "text": "来週から 「株式会社ガンダム」の テスターなんです。",
             "start_ms": 1176988,
             "end_ms": 1180958,
             "actor": null
-          }
-        ],
-        "es": [],
-        "en": [
+          },
           {
-            "id": 570,
-            "text": "I'll be a tester for GUND-ARM Inc. starting next week.",
-            "start_ms": 1176890,
-            "end_ms": 1180610,
-            "actor": null
-          }
-        ]
-      }
-    },
-    {
-      "segment_index": 573,
-      "start_ms": 1180610,
-      "end_ms": 1183861,
-      "duration_ms": 3251,
-      "content_ja": "ペトラのそばにいたいんだ。",
-      "content_es": null,
-      "content_en": "I want to be at Petra's side.",
-      "actor_ja": null,
-      "actor_es": null,
-      "actor_en": null,
-      "reason": "missing required languages: es",
-      "files": null,
-      "subtitles": {
-        "ja": [
-          {
-            "id": 573,
+            "id": 568,
             "text": "ペトラのそばにいたいんだ。",
             "start_ms": 1180958,
             "end_ms": 1183861,
@@ -9881,7 +9499,14 @@
         "es": [],
         "en": [
           {
-            "id": 572,
+            "id": 565,
+            "text": "I'll be a tester for GUND-ARM Inc. starting next week.",
+            "start_ms": 1176890,
+            "end_ms": 1180610,
+            "actor": null
+          },
+          {
+            "id": 567,
             "text": "I want to be at Petra's side.",
             "start_ms": 1180610,
             "end_ms": 1182780,
@@ -9891,7 +9516,7 @@
       }
     },
     {
-      "segment_index": 575,
+      "segment_index": 570,
       "start_ms": 1183780,
       "end_ms": 1186797,
       "duration_ms": 3017,
@@ -9906,7 +9531,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 575,
+            "id": 570,
             "text": "いつまでも 兄さんに頼ってられないよ。",
             "start_ms": 1183861,
             "end_ms": 1186797,
@@ -9916,7 +9541,7 @@
         "es": [],
         "en": [
           {
-            "id": 574,
+            "id": 569,
             "text": "I can't rely on my big brother forever.",
             "start_ms": 1183780,
             "end_ms": 1186660,
@@ -9926,7 +9551,7 @@
       }
     },
     {
-      "segment_index": 577,
+      "segment_index": 572,
       "start_ms": 1186660,
       "end_ms": 1189967,
       "duration_ms": 3307,
@@ -9941,7 +9566,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 577,
+            "id": 572,
             "text": "そうか。 じゃあ またな。 タッ",
             "start_ms": 1186797,
             "end_ms": 1189967,
@@ -9951,7 +9576,7 @@
         "es": [],
         "en": [
           {
-            "id": 576,
+            "id": 571,
             "text": "I see. Well, see you soon.",
             "start_ms": 1186660,
             "end_ms": 1189100,
@@ -9961,7 +9586,7 @@
       }
     },
     {
-      "segment_index": 579,
+      "segment_index": 574,
       "start_ms": 1189950,
       "end_ms": 1194060,
       "duration_ms": 4110,
@@ -9976,7 +9601,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 579,
+            "id": 574,
             "text": "ケレスさん 新規事業の話は ありがたいが...。",
             "start_ms": 1189967,
             "end_ms": 1193971,
@@ -9986,14 +9611,14 @@
         "es": [],
         "en": [
           {
-            "id": 578,
+            "id": 573,
             "text": "Mr. Ceres...",
             "start_ms": 1189950,
             "end_ms": 1191210,
             "actor": null
           },
           {
-            "id": 580,
+            "id": 575,
             "text": "I'm grateful that you'd bring me new business, but...",
             "start_ms": 1191210,
             "end_ms": 1194060,
@@ -10003,7 +9628,7 @@
       }
     },
     {
-      "segment_index": 581,
+      "segment_index": 576,
       "start_ms": 1193971,
       "end_ms": 1197508,
       "duration_ms": 3537,
@@ -10018,7 +9643,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 581,
+            "id": 576,
             "text": "アスティカシアの存続も 助けてやったろ。",
             "start_ms": 1193971,
             "end_ms": 1197508,
@@ -10028,7 +9653,7 @@
         "es": [],
         "en": [
           {
-            "id": 582,
+            "id": 577,
             "text": "I helped keep Asticassia open, didn't I?",
             "start_ms": 1194060,
             "end_ms": 1197170,
@@ -10038,7 +9663,7 @@
       }
     },
     {
-      "segment_index": 584,
+      "segment_index": 579,
       "start_ms": 1197170,
       "end_ms": 1201360,
       "duration_ms": 4190,
@@ -10053,7 +9678,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 584,
+            "id": 579,
             "text": "従業員の再就職だって 面倒 見てやったんだ。",
             "start_ms": 1197508,
             "end_ms": 1201212,
@@ -10063,7 +9688,7 @@
         "es": [],
         "en": [
           {
-            "id": 583,
+            "id": 578,
             "text": "And I helped you find new jobs for your employees.",
             "start_ms": 1197170,
             "end_ms": 1201360,
@@ -10073,7 +9698,7 @@
       }
     },
     {
-      "segment_index": 585,
+      "segment_index": 580,
       "start_ms": 1201212,
       "end_ms": 1203214,
       "duration_ms": 2002,
@@ -10088,7 +9713,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 585,
+            "id": 580,
             "text": "素直に聞いとけよ。",
             "start_ms": 1201212,
             "end_ms": 1203214,
@@ -10098,7 +9723,7 @@
         "es": [],
         "en": [
           {
-            "id": 586,
+            "id": 581,
             "text": "Now it's your turn to listen.",
             "start_ms": 1201360,
             "end_ms": 1202930,
@@ -10108,7 +9733,7 @@
       }
     },
     {
-      "segment_index": 588,
+      "segment_index": 583,
       "start_ms": 1202930,
       "end_ms": 1205783,
       "duration_ms": 2853,
@@ -10123,7 +9748,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 588,
+            "id": 583,
             "text": "なーにが「聞いとけよ」ですか。",
             "start_ms": 1203214,
             "end_ms": 1205783,
@@ -10133,7 +9758,7 @@
         "es": [],
         "en": [
           {
-            "id": 587,
+            "id": 582,
             "text": "Listen to what, exactly?",
             "start_ms": 1202930,
             "end_ms": 1205700,
@@ -10143,7 +9768,7 @@
       }
     },
     {
-      "segment_index": 590,
+      "segment_index": 585,
       "start_ms": 1205700,
       "end_ms": 1208252,
       "duration_ms": 2552,
@@ -10158,7 +9783,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 590,
+            "id": 585,
             "text": "書類 私が作ったんですけど。",
             "start_ms": 1205783,
             "end_ms": 1208252,
@@ -10168,7 +9793,7 @@
         "es": [],
         "en": [
           {
-            "id": 589,
+            "id": 584,
             "text": "I'm the one who drew up the documents.",
             "start_ms": 1205700,
             "end_ms": 1208160,
@@ -10178,7 +9803,7 @@
       }
     },
     {
-      "segment_index": 592,
+      "segment_index": 587,
       "start_ms": 1208160,
       "end_ms": 1211255,
       "duration_ms": 3095,
@@ -10193,7 +9818,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 592,
+            "id": 587,
             "text": "この利益分配 うちに厳しくないか?",
             "start_ms": 1208252,
             "end_ms": 1211255,
@@ -10203,7 +9828,7 @@
         "es": [],
         "en": [
           {
-            "id": 591,
+            "id": 586,
             "text": "The division of profits seems awfully stingy.",
             "start_ms": 1208160,
             "end_ms": 1211140,
@@ -10213,7 +9838,7 @@
       }
     },
     {
-      "segment_index": 594,
+      "segment_index": 589,
       "start_ms": 1211140,
       "end_ms": 1214400,
       "duration_ms": 3260,
@@ -10228,7 +9853,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 594,
+            "id": 589,
             "text": "会社 立て直したいんですよねぇ?",
             "start_ms": 1211255,
             "end_ms": 1214325,
@@ -10238,7 +9863,7 @@
         "es": [],
         "en": [
           {
-            "id": 593,
+            "id": 588,
             "text": "Well, you want to rebuild your company, right?",
             "start_ms": 1211140,
             "end_ms": 1214400,
@@ -10248,7 +9873,7 @@
       }
     },
     {
-      "segment_index": 595,
+      "segment_index": 590,
       "start_ms": 1214325,
       "end_ms": 1217320,
       "duration_ms": 2995,
@@ -10263,7 +9888,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 595,
+            "id": 590,
             "text": "くっ...。 ジェタークCEO。",
             "start_ms": 1214325,
             "end_ms": 1217261,
@@ -10273,7 +9898,7 @@
         "es": [],
         "en": [
           {
-            "id": 596,
+            "id": 591,
             "text": "President Jeturk...",
             "start_ms": 1214400,
             "end_ms": 1217320,
@@ -10283,7 +9908,7 @@
       }
     },
     {
-      "segment_index": 597,
+      "segment_index": 592,
       "start_ms": 1217261,
       "end_ms": 1227261,
       "duration_ms": 10000,
@@ -10298,7 +9923,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 597,
+            "id": 592,
             "text": "♬ー",
             "start_ms": 1217261,
             "end_ms": 1227261,
@@ -10310,7 +9935,7 @@
       }
     },
     {
-      "segment_index": 598,
+      "segment_index": 593,
       "start_ms": 1236447,
       "end_ms": 1242687,
       "duration_ms": 6240,
@@ -10325,7 +9950,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 598,
+            "id": 593,
             "text": "♬ー",
             "start_ms": 1236447,
             "end_ms": 1242687,
@@ -10337,7 +9962,7 @@
       }
     },
     {
-      "segment_index": 600,
+      "segment_index": 595,
       "start_ms": 1242460,
       "end_ms": 1245723,
       "duration_ms": 3263,
@@ -10352,7 +9977,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 600,
+            "id": 595,
             "text": "あのとき ばらまいた 「ベネリット」の資産も",
             "start_ms": 1242687,
             "end_ms": 1245723,
@@ -10362,7 +9987,7 @@
         "es": [],
         "en": [
           {
-            "id": 599,
+            "id": 594,
             "text": "The Benerit Group assets we distributed...",
             "start_ms": 1242460,
             "end_ms": 1245530,
@@ -10372,7 +9997,7 @@
       }
     },
     {
-      "segment_index": 602,
+      "segment_index": 597,
       "start_ms": 1245530,
       "end_ms": 1249260,
       "duration_ms": 3730,
@@ -10387,7 +10012,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 602,
+            "id": 597,
             "text": "結局 また 宇宙に吸い上げられていく。",
             "start_ms": 1245723,
             "end_ms": 1249260,
@@ -10397,7 +10022,7 @@
         "es": [],
         "en": [
           {
-            "id": 601,
+            "id": 596,
             "text": "They'll just be scooped up by space again.",
             "start_ms": 1245530,
             "end_ms": 1249000,
@@ -10407,7 +10032,7 @@
       }
     },
     {
-      "segment_index": 604,
+      "segment_index": 599,
       "start_ms": 1249000,
       "end_ms": 1252263,
       "duration_ms": 3263,
@@ -10422,7 +10047,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 604,
+            "id": 599,
             "text": "一体 何が正しかったんだろうな。",
             "start_ms": 1249260,
             "end_ms": 1252263,
@@ -10432,7 +10057,7 @@
         "es": [],
         "en": [
           {
-            "id": 603,
+            "id": 598,
             "text": "I wonder if it was the right move.",
             "start_ms": 1249000,
             "end_ms": 1251450,
@@ -10442,7 +10067,7 @@
       }
     },
     {
-      "segment_index": 606,
+      "segment_index": 601,
       "start_ms": 1251980,
       "end_ms": 1255333,
       "duration_ms": 3353,
@@ -10457,7 +10082,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 606,
+            "id": 601,
             "text": "人の数だけ 「正しい」があるもの。",
             "start_ms": 1252263,
             "end_ms": 1255333,
@@ -10467,7 +10092,7 @@
         "es": [],
         "en": [
           {
-            "id": 605,
+            "id": 600,
             "text": "There are as many \"right moves\" as there are individuals.",
             "start_ms": 1251980,
             "end_ms": 1255160,
@@ -10477,7 +10102,7 @@
       }
     },
     {
-      "segment_index": 608,
+      "segment_index": 603,
       "start_ms": 1255160,
       "end_ms": 1259136,
       "duration_ms": 3976,
@@ -10492,7 +10117,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 608,
+            "id": 603,
             "text": "いつか 必ず どこかで間違うのよ。",
             "start_ms": 1255333,
             "end_ms": 1259136,
@@ -10502,7 +10127,7 @@
         "es": [],
         "en": [
           {
-            "id": 607,
+            "id": 602,
             "text": "We all make mistakes at some point.",
             "start_ms": 1255160,
             "end_ms": 1257980,
@@ -10512,11 +10137,11 @@
       }
     },
     {
-      "segment_index": 610,
+      "segment_index": 605,
       "start_ms": 1259020,
-      "end_ms": 1262920,
-      "duration_ms": 3900,
-      "content_ja": "それでも できることをするの この先も。",
+      "end_ms": 1272540,
+      "duration_ms": 13520,
+      "content_ja": "それでも できることをするの この先も。♬ー",
       "content_es": null,
       "content_en": "But we have to keep doing what we can. In the future, as well.",
       "actor_ja": null,
@@ -10527,24 +10152,31 @@
       "subtitles": {
         "ja": [
           {
-            "id": 610,
+            "id": 605,
             "text": "それでも できることをするの この先も。",
             "start_ms": 1259136,
             "end_ms": 1262540,
+            "actor": null
+          },
+          {
+            "id": 607,
+            "text": "♬ー",
+            "start_ms": 1262540,
+            "end_ms": 1272540,
             "actor": null
           }
         ],
         "es": [],
         "en": [
           {
-            "id": 609,
+            "id": 604,
             "text": "But we have to keep doing what we can.",
             "start_ms": 1259020,
             "end_ms": 1260980,
             "actor": null
           },
           {
-            "id": 611,
+            "id": 606,
             "text": "In the future, as well.",
             "start_ms": 1261480,
             "end_ms": 1262920,
@@ -10554,34 +10186,7 @@
       }
     },
     {
-      "segment_index": 612,
-      "start_ms": 1262540,
-      "end_ms": 1272540,
-      "duration_ms": 10000,
-      "content_ja": "♬ー",
-      "content_es": null,
-      "content_en": null,
-      "actor_ja": null,
-      "actor_es": null,
-      "actor_en": null,
-      "reason": "no en/es subtitle match",
-      "files": null,
-      "subtitles": {
-        "ja": [
-          {
-            "id": 612,
-            "text": "♬ー",
-            "start_ms": 1262540,
-            "end_ms": 1272540,
-            "actor": null
-          }
-        ],
-        "es": [],
-        "en": []
-      }
-    },
-    {
-      "segment_index": 613,
+      "segment_index": 608,
       "start_ms": 1275252,
       "end_ms": 1280758,
       "duration_ms": 5506,
@@ -10596,7 +10201,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 613,
+            "id": 608,
             "text": "♬ー",
             "start_ms": 1275252,
             "end_ms": 1280758,
@@ -10608,7 +10213,7 @@
       }
     },
     {
-      "segment_index": 615,
+      "segment_index": 610,
       "start_ms": 1280660,
       "end_ms": 1283928,
       "duration_ms": 3268,
@@ -10623,7 +10228,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 615,
+            "id": 610,
             "text": "こっちにも 学校 つくるの? はい。",
             "start_ms": 1280758,
             "end_ms": 1283928,
@@ -10633,14 +10238,14 @@
         "es": [],
         "en": [
           {
-            "id": 614,
+            "id": 609,
             "text": "You're going to make a school here too?",
             "start_ms": 1280660,
             "end_ms": 1282570,
             "actor": null
           },
           {
-            "id": 616,
+            "id": 611,
             "text": "Yes.",
             "start_ms": 1282570,
             "end_ms": 1283380,
@@ -10650,7 +10255,7 @@
       }
     },
     {
-      "segment_index": 618,
+      "segment_index": 613,
       "start_ms": 1283880,
       "end_ms": 1286880,
       "duration_ms": 3000,
@@ -10665,7 +10270,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 618,
+            "id": 613,
             "text": "体も 少しずつ 動くようになってきましたし",
             "start_ms": 1283928,
             "end_ms": 1286764,
@@ -10675,7 +10280,7 @@
         "es": [],
         "en": [
           {
-            "id": 617,
+            "id": 612,
             "text": "I've gradually regained control of my body,",
             "start_ms": 1283880,
             "end_ms": 1286880,
@@ -10685,7 +10290,7 @@
       }
     },
     {
-      "segment_index": 619,
+      "segment_index": 614,
       "start_ms": 1286764,
       "end_ms": 1290540,
       "duration_ms": 3776,
@@ -10700,7 +10305,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 619,
+            "id": 614,
             "text": "お母さんも ここが 気に入ったみたいだから。",
             "start_ms": 1286764,
             "end_ms": 1290534,
@@ -10710,7 +10315,7 @@
         "es": [],
         "en": [
           {
-            "id": 620,
+            "id": 615,
             "text": "and my mom likes it here too.",
             "start_ms": 1287380,
             "end_ms": 1290540,
@@ -10720,7 +10325,7 @@
       }
     },
     {
-      "segment_index": 621,
+      "segment_index": 616,
       "start_ms": 1291836,
       "end_ms": 1295539,
       "duration_ms": 3703,
@@ -10735,7 +10340,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 621,
+            "id": 616,
             "text": "こんな田舎の どこが いいのか よく分かんないな。",
             "start_ms": 1291836,
             "end_ms": 1295539,
@@ -10745,7 +10350,7 @@
         "es": [],
         "en": [
           {
-            "id": 622,
+            "id": 617,
             "text": "I don't get what's so great about living in the countryside.",
             "start_ms": 1291870,
             "end_ms": 1295020,
@@ -10755,7 +10360,7 @@
       }
     },
     {
-      "segment_index": 624,
+      "segment_index": 619,
       "start_ms": 1295400,
       "end_ms": 1299076,
       "duration_ms": 3676,
@@ -10770,7 +10375,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 624,
+            "id": 619,
             "text": "あんたの存在の方が もっと分かんないんだけど。",
             "start_ms": 1295539,
             "end_ms": 1299076,
@@ -10780,7 +10385,7 @@
         "es": [],
         "en": [
           {
-            "id": 623,
+            "id": 618,
             "text": "Well, I don't get how you even exist.",
             "start_ms": 1295400,
             "end_ms": 1298890,
@@ -10790,7 +10395,7 @@
       }
     },
     {
-      "segment_index": 626,
+      "segment_index": 621,
       "start_ms": 1298890,
       "end_ms": 1302480,
       "duration_ms": 3590,
@@ -10805,7 +10410,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 626,
+            "id": 621,
             "text": "僕だって分かんないよ。 でも",
             "start_ms": 1299076,
             "end_ms": 1302480,
@@ -10815,14 +10420,14 @@
         "es": [],
         "en": [
           {
-            "id": 625,
+            "id": 620,
             "text": "It's not like I do, either.",
             "start_ms": 1298890,
             "end_ms": 1300770,
             "actor": null
           },
           {
-            "id": 627,
+            "id": 622,
             "text": "But...",
             "start_ms": 1301040,
             "end_ms": 1302400,
@@ -10832,7 +10437,7 @@
       }
     },
     {
-      "segment_index": 629,
+      "segment_index": 624,
       "start_ms": 1302400,
       "end_ms": 1308986,
       "duration_ms": 6586,
@@ -10847,14 +10452,14 @@
       "subtitles": {
         "ja": [
           {
-            "id": 629,
+            "id": 624,
             "text": "あのとき 僕たちを エアリアルから移し替えたのは",
             "start_ms": 1302480,
             "end_ms": 1305249,
             "actor": null
           },
           {
-            "id": 630,
+            "id": 625,
             "text": "スレッタ 間違いなく 君だよ。",
             "start_ms": 1305249,
             "end_ms": 1308986,
@@ -10864,14 +10469,14 @@
         "es": [],
         "en": [
           {
-            "id": 628,
+            "id": 623,
             "text": "the one who transferred us from Aerial that day...",
             "start_ms": 1302400,
             "end_ms": 1306380,
             "actor": null
           },
           {
-            "id": 631,
+            "id": 626,
             "text": "was definitely you, Suletta.",
             "start_ms": 1306380,
             "end_ms": 1308330,
@@ -10881,7 +10486,7 @@
       }
     },
     {
-      "segment_index": 632,
+      "segment_index": 627,
       "start_ms": 1308986,
       "end_ms": 1312456,
       "duration_ms": 3470,
@@ -10896,7 +10501,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 632,
+            "id": 627,
             "text": "あれは スレッタにしか できないことだったんだ。",
             "start_ms": 1308986,
             "end_ms": 1312456,
@@ -10906,7 +10511,7 @@
         "es": [],
         "en": [
           {
-            "id": 633,
+            "id": 628,
             "text": "It was something that only you could do.",
             "start_ms": 1309030,
             "end_ms": 1312390,
@@ -10916,13 +10521,13 @@
       }
     },
     {
-      "segment_index": 635,
+      "segment_index": 630,
       "start_ms": 1314320,
-      "end_ms": 1316927,
-      "duration_ms": 2607,
-      "content_ja": "スレッター! あっ。",
+      "end_ms": 1318963,
+      "duration_ms": 4643,
+      "content_ja": "スレッター! あっ。ミオリネー!",
       "content_es": null,
-      "content_en": "Suletta!",
+      "content_en": "Suletta! Miorine!",
       "actor_ja": null,
       "actor_es": null,
       "actor_en": null,
@@ -10931,42 +10536,14 @@
       "subtitles": {
         "ja": [
           {
-            "id": 635,
+            "id": 630,
             "text": "スレッター! あっ。",
             "start_ms": 1314525,
             "end_ms": 1316927,
             "actor": null
-          }
-        ],
-        "es": [],
-        "en": [
+          },
           {
-            "id": 634,
-            "text": "Suletta!",
-            "start_ms": 1314320,
-            "end_ms": 1316060,
-            "actor": null
-          }
-        ]
-      }
-    },
-    {
-      "segment_index": 637,
-      "start_ms": 1316540,
-      "end_ms": 1318963,
-      "duration_ms": 2423,
-      "content_ja": "ミオリネー!",
-      "content_es": null,
-      "content_en": "Miorine!",
-      "actor_ja": null,
-      "actor_es": null,
-      "actor_en": null,
-      "reason": "missing required languages: es",
-      "files": null,
-      "subtitles": {
-        "ja": [
-          {
-            "id": 637,
+            "id": 632,
             "text": "ミオリネー!",
             "start_ms": 1316927,
             "end_ms": 1318963,
@@ -10976,7 +10553,14 @@
         "es": [],
         "en": [
           {
-            "id": 636,
+            "id": 629,
+            "text": "Suletta!",
+            "start_ms": 1314320,
+            "end_ms": 1316060,
+            "actor": null
+          },
+          {
+            "id": 631,
             "text": "Miorine!",
             "start_ms": 1316540,
             "end_ms": 1318390,
@@ -10986,7 +10570,7 @@
       }
     },
     {
-      "segment_index": 639,
+      "segment_index": 634,
       "start_ms": 1318790,
       "end_ms": 1321699,
       "duration_ms": 2909,
@@ -11001,7 +10585,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 639,
+            "id": 634,
             "text": "皆さん。",
             "start_ms": 1318963,
             "end_ms": 1321699,
@@ -11011,7 +10595,7 @@
         "es": [],
         "en": [
           {
-            "id": 638,
+            "id": 633,
             "text": "Everyone!",
             "start_ms": 1318790,
             "end_ms": 1320480,
@@ -11021,7 +10605,7 @@
       }
     },
     {
-      "segment_index": 641,
+      "segment_index": 636,
       "start_ms": 1321620,
       "end_ms": 1324668,
       "duration_ms": 3048,
@@ -11036,7 +10620,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 641,
+            "id": 636,
             "text": "帰りましょう。 はい。",
             "start_ms": 1321699,
             "end_ms": 1324668,
@@ -11046,14 +10630,14 @@
         "es": [],
         "en": [
           {
-            "id": 640,
+            "id": 635,
             "text": "Let's go home.",
             "start_ms": 1321620,
             "end_ms": 1323210,
             "actor": null
           },
           {
-            "id": 642,
+            "id": 637,
             "text": "Right!",
             "start_ms": 1323210,
             "end_ms": 1324300,
@@ -11063,7 +10647,7 @@
       }
     },
     {
-      "segment_index": 644,
+      "segment_index": 639,
       "start_ms": 1324300,
       "end_ms": 1326900,
       "duration_ms": 2600,
@@ -11078,7 +10662,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 644,
+            "id": 639,
             "text": "私 おなかすいちゃいました。",
             "start_ms": 1324668,
             "end_ms": 1326837,
@@ -11088,7 +10672,7 @@
         "es": [],
         "en": [
           {
-            "id": 643,
+            "id": 638,
             "text": "I'm feeling hungry.",
             "start_ms": 1324300,
             "end_ms": 1326900,
@@ -11098,7 +10682,7 @@
       }
     },
     {
-      "segment_index": 646,
+      "segment_index": 641,
       "start_ms": 1329050,
       "end_ms": 1331041,
       "duration_ms": 1991,
@@ -11113,7 +10697,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 646,
+            "id": 641,
             "text": "私も。",
             "start_ms": 1329073,
             "end_ms": 1331041,
@@ -11123,7 +10707,7 @@
         "es": [],
         "en": [
           {
-            "id": 645,
+            "id": 640,
             "text": "Me too.",
             "start_ms": 1329050,
             "end_ms": 1330570,
@@ -11133,7 +10717,7 @@
       }
     },
     {
-      "segment_index": 647,
+      "segment_index": 642,
       "start_ms": 1336080,
       "end_ms": 1339016,
       "duration_ms": 2936,
@@ -11148,7 +10732,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 647,
+            "id": 642,
             "text": "♬ 遥か遠くに浮かぶ星を",
             "start_ms": 1336080,
             "end_ms": 1339016,
@@ -11160,7 +10744,7 @@
       }
     },
     {
-      "segment_index": 648,
+      "segment_index": 643,
       "start_ms": 1339016,
       "end_ms": 1341819,
       "duration_ms": 2803,
@@ -11175,7 +10759,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 648,
+            "id": 643,
             "text": "♬ 想い眠りにつく君の",
             "start_ms": 1339016,
             "end_ms": 1341819,
@@ -11187,7 +10771,7 @@
       }
     },
     {
-      "segment_index": 649,
+      "segment_index": 644,
       "start_ms": 1341819,
       "end_ms": 1344622,
       "duration_ms": 2803,
@@ -11202,7 +10786,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 649,
+            "id": 644,
             "text": "♬ 選ぶ未来が望む道が",
             "start_ms": 1341819,
             "end_ms": 1344622,
@@ -11214,7 +10798,7 @@
       }
     },
     {
-      "segment_index": 650,
+      "segment_index": 645,
       "start_ms": 1344622,
       "end_ms": 1346624,
       "duration_ms": 2002,
@@ -11229,7 +10813,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 650,
+            "id": 645,
             "text": "♬ 何処へ続いていても",
             "start_ms": 1344622,
             "end_ms": 1346624,
@@ -11241,7 +10825,7 @@
       }
     },
     {
-      "segment_index": 651,
+      "segment_index": 646,
       "start_ms": 1346624,
       "end_ms": 1348626,
       "duration_ms": 2002,
@@ -11256,7 +10840,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 651,
+            "id": 646,
             "text": "♬ 共に生きるから",
             "start_ms": 1346624,
             "end_ms": 1348626,
@@ -11268,7 +10852,7 @@
       }
     },
     {
-      "segment_index": 653,
+      "segment_index": 648,
       "start_ms": 1348130,
       "end_ms": 1354398,
       "duration_ms": 6268,
@@ -11283,7 +10867,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 653,
+            "id": 648,
             "text": "♬ー",
             "start_ms": 1348626,
             "end_ms": 1354398,
@@ -11293,7 +10877,7 @@
         "es": [],
         "en": [
           {
-            "id": 652,
+            "id": 647,
             "text": "Episode 24",
             "start_ms": 1348130,
             "end_ms": 1353850,
@@ -11303,7 +10887,7 @@
       }
     },
     {
-      "segment_index": 654,
+      "segment_index": 649,
       "start_ms": 1354398,
       "end_ms": 1358302,
       "duration_ms": 3904,
@@ -11318,7 +10902,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 654,
+            "id": 649,
             "text": "♬ ずっと昔の記憶",
             "start_ms": 1354398,
             "end_ms": 1358302,
@@ -11330,7 +10914,7 @@
       }
     },
     {
-      "segment_index": 655,
+      "segment_index": 650,
       "start_ms": 1358302,
       "end_ms": 1362106,
       "duration_ms": 3804,
@@ -11345,7 +10929,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 655,
+            "id": 650,
             "text": "♬ 連れられて来たこの星で",
             "start_ms": 1358302,
             "end_ms": 1362106,
@@ -11357,7 +10941,7 @@
       }
     },
     {
-      "segment_index": 656,
+      "segment_index": 651,
       "start_ms": 1362106,
       "end_ms": 1365009,
       "duration_ms": 2903,
@@ -11372,7 +10956,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 656,
+            "id": 651,
             "text": "♬ 君は 願い続けてた",
             "start_ms": 1362106,
             "end_ms": 1365009,
@@ -11384,7 +10968,7 @@
       }
     },
     {
-      "segment_index": 657,
+      "segment_index": 652,
       "start_ms": 1365009,
       "end_ms": 1369947,
       "duration_ms": 4938,
@@ -11399,7 +10983,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 657,
+            "id": 652,
             "text": "♬ 遠くで煌めく景色に",
             "start_ms": 1365009,
             "end_ms": 1369947,
@@ -11411,7 +10995,7 @@
       }
     },
     {
-      "segment_index": 658,
+      "segment_index": 653,
       "start_ms": 1369947,
       "end_ms": 1374952,
       "duration_ms": 5005,
@@ -11426,7 +11010,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 658,
+            "id": 653,
             "text": "♬ 飛び込むことが出来たのなら",
             "start_ms": 1369947,
             "end_ms": 1374952,
@@ -11438,7 +11022,7 @@
       }
     },
     {
-      "segment_index": 659,
+      "segment_index": 654,
       "start_ms": 1374952,
       "end_ms": 1378489,
       "duration_ms": 3537,
@@ -11453,7 +11037,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 659,
+            "id": 654,
             "text": "♬ 一人孤独な世界で 祈り願う",
             "start_ms": 1374952,
             "end_ms": 1378489,
@@ -11465,7 +11049,7 @@
       }
     },
     {
-      "segment_index": 660,
+      "segment_index": 655,
       "start_ms": 1378489,
       "end_ms": 1381325,
       "duration_ms": 2836,
@@ -11480,7 +11064,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 660,
+            "id": 655,
             "text": "♬ 夢を描き 未来を見る",
             "start_ms": 1378489,
             "end_ms": 1381325,
@@ -11492,7 +11076,7 @@
       }
     },
     {
-      "segment_index": 661,
+      "segment_index": 656,
       "start_ms": 1381325,
       "end_ms": 1384161,
       "duration_ms": 2836,
@@ -11507,7 +11091,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 661,
+            "id": 656,
             "text": "♬ 逃げ出すよりも進むことを",
             "start_ms": 1381325,
             "end_ms": 1384161,
@@ -11519,7 +11103,7 @@
       }
     },
     {
-      "segment_index": 662,
+      "segment_index": 657,
       "start_ms": 1384161,
       "end_ms": 1386664,
       "duration_ms": 2503,
@@ -11534,7 +11118,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 662,
+            "id": 657,
             "text": "♬ 君が選んだのなら",
             "start_ms": 1384161,
             "end_ms": 1386664,
@@ -11546,7 +11130,7 @@
       }
     },
     {
-      "segment_index": 663,
+      "segment_index": 658,
       "start_ms": 1386664,
       "end_ms": 1389400,
       "duration_ms": 2736,
@@ -11561,7 +11145,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 663,
+            "id": 658,
             "text": "♬ 誰かが描いた イメージじゃなくて",
             "start_ms": 1386664,
             "end_ms": 1389400,
@@ -11573,7 +11157,7 @@
       }
     },
     {
-      "segment_index": 664,
+      "segment_index": 659,
       "start_ms": 1389400,
       "end_ms": 1392403,
       "duration_ms": 3003,
@@ -11588,7 +11172,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 664,
+            "id": 659,
             "text": "♬ 誰かが選んだ ステージじゃなくて",
             "start_ms": 1389400,
             "end_ms": 1392403,
@@ -11600,7 +11184,7 @@
       }
     },
     {
-      "segment_index": 665,
+      "segment_index": 660,
       "start_ms": 1392403,
       "end_ms": 1395106,
       "duration_ms": 2703,
@@ -11615,7 +11199,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 665,
+            "id": 660,
             "text": "♬ 僕たちが作っていくストーリー",
             "start_ms": 1392403,
             "end_ms": 1395106,
@@ -11627,7 +11211,7 @@
       }
     },
     {
-      "segment_index": 666,
+      "segment_index": 661,
       "start_ms": 1395106,
       "end_ms": 1397908,
       "duration_ms": 2802,
@@ -11642,7 +11226,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 666,
+            "id": 661,
             "text": "♬ 決して一人にはさせないから",
             "start_ms": 1395106,
             "end_ms": 1397908,
@@ -11654,7 +11238,7 @@
       }
     },
     {
-      "segment_index": 667,
+      "segment_index": 662,
       "start_ms": 1397908,
       "end_ms": 1400444,
       "duration_ms": 2536,
@@ -11669,7 +11253,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 667,
+            "id": 662,
             "text": "♬ この星に生まれたこと",
             "start_ms": 1397908,
             "end_ms": 1400444,
@@ -11681,7 +11265,7 @@
       }
     },
     {
-      "segment_index": 668,
+      "segment_index": 663,
       "start_ms": 1400444,
       "end_ms": 1404014,
       "duration_ms": 3570,
@@ -11696,7 +11280,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 668,
+            "id": 663,
             "text": "♬ この世界で生き続けること",
             "start_ms": 1400444,
             "end_ms": 1404014,
@@ -11708,7 +11292,7 @@
       }
     },
     {
-      "segment_index": 669,
+      "segment_index": 664,
       "start_ms": 1404014,
       "end_ms": 1409186,
       "duration_ms": 5172,
@@ -11723,7 +11307,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 669,
+            "id": 664,
             "text": "♬ その全てを愛せる様に",
             "start_ms": 1404014,
             "end_ms": 1409186,
@@ -11735,7 +11319,7 @@
       }
     },
     {
-      "segment_index": 670,
+      "segment_index": 665,
       "start_ms": 1409186,
       "end_ms": 1413157,
       "duration_ms": 3971,
@@ -11750,7 +11334,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 670,
+            "id": 665,
             "text": "♬ 目一杯の祝福を君に",
             "start_ms": 1409186,
             "end_ms": 1413157,
@@ -11762,7 +11346,7 @@
       }
     },
     {
-      "segment_index": 671,
+      "segment_index": 666,
       "start_ms": 1413157,
       "end_ms": 1423157,
       "duration_ms": 10000,
@@ -11777,7 +11361,7 @@
       "subtitles": {
         "ja": [
           {
-            "id": 671,
+            "id": 666,
             "text": "♬ー",
             "start_ms": 1413157,
             "end_ms": 1423157,

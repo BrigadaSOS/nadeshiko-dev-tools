@@ -1,5 +1,5 @@
 ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREENSHOT	CONTENT	CONTENT_TRANSLATION_SPANISH	CONTENT_TRANSLATION_ENGLISH	CONTENT_SPANISH_MT	CONTENT_ENGLISH_MT	ACTOR_JA	ACTOR_ES	ACTOR_EN
-	0,3	2,5	1,4	0:00:00.407000	0:00:07.660000	924a94f7a3.mp3	924a94f7a3.webp	現在は 市内東部での戦闘が...ああー...	La batalla de la zona este se intensifica. Los Mobile Suits de Benerit Group...	Fighting is currently escalating in the eastern part of the city, as Benerit Group mobile suits open fire on housing complexes...	False	False		noticias	News
+	0,3	2,5	1,4	0:00:00.408000	0:00:07.660000	924a94f7a3.mp3	924a94f7a3.webp	現在は 市内東部での戦闘が...ああー...	La batalla de la zona este se intensifica. Los Mobile Suits de Benerit Group...	Fighting is currently escalating in the eastern part of the city, as Benerit Group mobile suits open fire on housing complexes...	False	False		noticias	News
 	6,9	7	8,10	0:00:07.315000	0:00:11.990000	1b5360193c.mp3	1b5360193c.webp	スペーシアンが　また 私から...	Los Spacians nos lo quitan todo de nuevo.	Spacian bastards... You take from me again...!	False	False		norea	Norea
 	12	13	11	0:00:12.970000	0:00:14.956000	dbd4d0d42a.mp3	dbd4d0d42a.webp	私のせいだ。	Es mi culpa.	It's all my fault.	False	False		miorine	Miorine
 	14	16	15,17	0:00:16.391000	0:00:20.395000	dd2db7641d.mp3	dd2db7641d.webp	私が これを...	Yo hice esto.	I... did this.	False	False		miorine	Miorine
@@ -20,216 +20,219 @@ ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREE
 	93	92	94	0:02:53.440000	0:02:57.018000	e75fed293a.mp3	e75fed293a.webp	なーんで エアリアルが地球にいるわけー?	¿Qué hace el Aerial en la Tierra?	What's the Aerial doing on Earth?	False	False		secelia	Secelia
 	95,100	97,99	96,98	0:02:57.018000	0:03:02.960000	0207665ed1.mp3	0207665ed1.webp	誰が操縦しているんですか? 画像情報だと　ガンビットが 周辺の機体を 制御しているように見えるけど	¿Quién lo pilotea? Parece que los GUND-Bit controlan las máquinas a su alrededor,	Who's piloting it? From this image data, it looks like GUND-Bits are controlling nearby machines,	False	False		rouji	Rouji
 	101	103	102	0:03:02.857000	0:03:05.760000	5e30db3648.mp3	5e30db3648.webp	エアリアルのガンビットは それ自体に...し... 知らないよ!	pero los del Aerial... -¡No lo sé!	but the Aerial's GUND-Bits themselves-	False	False		rouji/martin	Rouji
-	105,110,113	107,108,112	106,109,111	0:03:05.760000	0:03:14.903000	93f6557c27.mp3	93f6557c27.webp	僕らも驚いてるんだ。使えないヤツ。じゃあ 何しに来たの? ほ... 報告。ちゃんと みんなと和解できたって。	Estamos igual de sorprendidos. Inútil. ¿A qué viniste entonces? A informar de que me reconcilié con los demás.	We're as surprised as you! You're useless. Why are you here then? I-I'd like to report... I patched things up with everyone.	False	False		martin,secelia	Martin,Secelia
-	115	116	114	0:03:14.750000	0:03:17.238000	7dc6d867f3.mp3	7dc6d867f3.webp	質問に答えてください。ひっ!	Responde a las preguntas.	Please answer my questions.	False	False		rouji	Rouji
-	120	122	121	0:03:20.742000	0:03:23.278000	a02c442bbf.mp3	a02c442bbf.webp	クレーム 何件目だよ。	¿Cuántas quejas hay?	How many complaints do we have now?	False	False		ojelo	Ojelo
-	124	125	123	0:03:23.260000	0:03:25.280000	0d0c9e6027.mp3	0d0c9e6027.webp	もう覚えてない。	Ni lo recuerdo.	I've lost count.	False	False		nuno	Nuno
-	128	127	126	0:03:25.100000	0:03:29.017000	fa53dc695c.mp3	fa53dc695c.webp	医療をうたった会社の モビルスーツが大暴れしたんだ。	Hay Mobile Suits de una empresa médica causando estragos.	Our mobile suit wreaked havoc while we claim to be a medical company...	False	False		aliya	Aliya
-	131	130	129	0:03:28.810000	0:03:31.386000	c6ef5e19a6.mp3	c6ef5e19a6.webp	無理もないさ。ピッ	Es normal.	It's no wonder.	False	False		aliya	Aliya
-	133	134	132	0:03:31.250000	0:03:34.055000	468a56ab52.mp3	468a56ab52.webp	見なければ 対応できませんから。	Si no los miramos, no podemos hacer nada.	Well, if we can't see, we can't reply to them.	False	False		lilique	Lilique
-	137	136,138	135	0:03:33.990000	0:03:38.059000	242a97c183.mp3	242a97c183.webp	社長に任せましょ。もう知りません!	Que se encargue la jefa. Yo no quiero saber nada.	Leave it to the President! I don't care anymore!	False	False		lilique	Lilique
-	139	140	141	0:03:38.059000	0:03:40.200000	80c99a2ac1.mp3	80c99a2ac1.webp	リリッケがキレてる。	Lilique está enojada.	Even Lilique is mad...	False	False		aliya	Aliya
-	142	144	143	0:03:40.128000	0:03:42.764000	584031b65b.mp3	584031b65b.webp	会社 どうすんだよ?	¿Qué ocurrirá con la empresa?	What happens to the company now?	False	False		ojelo	Ojelo
-	145	147	146,148	0:03:42.764000	0:03:46.420000	6c7a6751d0.mp3	6c7a6751d0.webp	真面目に 授業 出るか あいつみたいに。	Habremos de comenzar a ir a clase, como ella.	Should we be good and go to class? Like her...	False	False		nuno	Nuno
-	149,152,154	151,153	150,155	0:03:46.201000	0:03:55.110000	d17569212f.mp3	d17569212f.webp	パイロットの生命維持に関して　宇宙開発時代の初期は...その意識は 非常に低かったことは否めない。	En los inicios del desarrollo espacial no se daba tanta importancia a la supervivencia del piloto.	It cannot be denied that concern for pilot life support was extremely low in the early years of space development.	False	False		profesor	Teacher
-	158,162,165	160,164	159,163,166	0:03:55.110000	0:04:04.486000	2b02e5cf7f.mp3	2b02e5cf7f.webp	人類の宇宙進出は　かなり 性急 かつ 強引であったというのが　歴史家たちの見解で...♬ー	Nuestro viaje por el espacio fue acelerado y forzado. Esa es la opinión de los historiadores...	In the view of historians, humanity's advancement into space was fairly hasty and aggressive. And the loss of so many lives...	False	False		profesor	Teacher
-	168	170	169	0:04:09.457000	0:04:12.427000	4046068579.mp3	4046068579.webp	今日の講義 そこじゃない。あっ。	La clase de hoy no es ahí.	None of that was in today's lecture.	False	False		petra	Petra
-	171	173	172	0:04:12.427000	0:04:15.430000	92037a7d67.mp3	92037a7d67.webp	出席しといて 話 聞いてないとか	Vienes, pero no escuchas.	If you attend class but don't bother to listen...	False	False		petra	Petra
-	175	176	174	0:04:15.350000	0:04:17.398000	d2711c1a2b.mp3	d2711c1a2b.webp	何しに来たの? あんた。	¿A qué viniste?	what's the point?	False	False		petra	Petra
-	177	179	178	0:04:19.167000	0:04:22.540000	38170f3915.mp3	38170f3915.webp	できること これしかないから。	Es que es lo único que puedo hacer.	It's the only thing... I can think of doing.	False	False		suletta	Suletta
-	180,183	181,185	182,184	0:04:24.305000	0:04:29.077000	6e174e79ed.mp3	6e174e79ed.webp	ん? 今日 やったとこ。えっ? ランブルリング。	Es lo de hoy. En el Rumble Ring	This is today's portion. The Rumble Ring...	False	False		petra	Petra
-	187	188	186	0:04:28.960000	0:04:33.047000	10190a590a.mp3	10190a590a.webp	あんたがいなかったら ラウダ先輩 死んでたかもしれないから。	Lauda podría haber muerto de no ser por ti.	If you hadn't been there, Mr. Lauda might have died.	False	False		petra	Petra
-	191,192	190	189	0:04:32.790000	0:04:39.053000	e429222a88.mp3	e429222a88.webp	そしたら 私 どうなってたか分かんないから。ピピィー	Y no sé qué habría sido de mí entonces.	If that happened... I don't know what would become of me.	False	False		petra	Petra
-	193	195	194	0:04:39.053000	0:04:42.100000	f54340ee2d.mp3	f54340ee2d.webp	ラウダさんのこと 好きなんですか?	¿Te gusta Lauda?	Are you in love with Mr. Lauda?	False	False		suletta	Suletta
-	196	197	198	0:04:41.723000	0:04:46.090000	34c946dee2.mp3	34c946dee2.webp	うっ! そういうとこだよ あんたのムカつくとこ!	¡Por estas cosas no te soporto!	There! You always get on everyone's nerves like that!	False	False		petra	Petra
-	199	201	200	0:04:46.728000	0:04:48.763000	c1ba360de6.mp3	c1ba360de6.webp	シューン 兄さん。	Guel.	Brother!	False	False		lauda	Lauda
-	203	204	202,205	0:04:48.720000	0:04:51.766000	d2083cf7c5.mp3	d2083cf7c5.webp	ラウダ ダリルバルデは? 持ってきた。	¿Y el Darilbalde? -Lo traje.	Lauda! Where's the Darilbalde? It's here with me.	False	False		guel/lauda	Guel,Lauda
-	206	208	207	0:04:51.766000	0:04:55.270000	31c8e7089a.mp3	31c8e7089a.webp	けど なんで モビルスーツを学園の外に?	Pero ¿por qué lo sacarás?	But why bring a mobile suit off-campus?	False	False		lauda	Lauda
-	211,212	210	209	0:04:54.980000	0:04:59.374000	8fcd93f74c.mp3	8fcd93f74c.webp	それに 会社にあった あれは なん...ビィービィービィー! あっ。	¿Y qué era lo que...?	And what's that other one I saw at the company-	False	False		lauda	Lauda
-	219,222	221	220	0:05:05.346000	0:05:09.740000	bc6b6a70f8.mp3	bc6b6a70f8.webp	カテドラルの部隊が　学園に どのようなご用件で?	¿Qué hace un escuadrón de Cathedral en la escuela?	What business do Cathedra forces have at our school?	False	False		shaddiq	Shaddiq
-	223	225	224	0:05:09.684000	0:05:13.188000	b9c02ff477.mp3	b9c02ff477.webp	いや なに 情報提供がありましてね。	Recibimos cierta información	Well, you see... we received certain information...	False	False		kenanji	Kenanji
-	226	228	227	0:05:13.188000	0:05:16.840000	5e7f605b17.mp3	5e7f605b17.webp	ちょっと 学園に 立ち入らせてもらいたいんですよ。	y hemos de entrar a la escuela.	and we'd like you to allow us to enter the campus.	False	False		kenanji	Kenanji
-	229	231	230	0:05:16.758000	0:05:19.127000	741de8e5b2.mp3	741de8e5b2.webp	でしたら こちらで引き受けます。	Pueden tratar conmigo.	In that case, we'll handle it for you.	False	False		shaddiq	Shaddiq
-	233	234	232	0:05:19	0:05:21.129000	41624113cc.mp3	41624113cc.webp	用件をどうぞ。	¿Qué desean?	Please explain the details.	False	False		shaddiq	Shaddiq
-	237	236	235	0:05:20.930000	0:05:24.165000	1168aee180.mp3	1168aee180.webp	どうして シャディクが? あっ。	¿Qué hace Shaddiq aquí?	Why is Shaddiq...?	False	False		lauda	Lauda
-	239,243	240,242	238,241,244	0:05:24.110000	0:05:29.980000	bbe734d3e2.mp3	bbe734d3e2.webp	兄さん!? シャディク!　サリウス代表を どこに隠した!?	¿Guel? ¿Dónde tienes al representante Sarius, Shaddiq?	Brother! Shaddiq! Where are you hiding President Sarius?!	False	False		guel,lauda	Guel,Lauda
-	245,248,251	247,250	246,249,252	0:05:29.971000	0:05:37.846000	da21e4a2a9.mp3	da21e4a2a9.webp	気取られる前に 確保しろと言われなかったのか?　あっ。お前が そんなだから　ミオリネは!	¿No tenías que capturarme antes de revelar nada? Al ser tú así, Miorine...	Weren't you told to secure your target before you're suspected? It's because you're so rash... that Miorine has...!	False	False		shaddiq	Shaddiq
-	253,256	254	255	0:05:39.848000	0:05:44.752000	f00553c7a9.mp3	f00553c7a9.webp	これ以上 近づけば撃つ!　バシュー バシュー!	Si te acercas más, dispararé.	Come any closer, and I'll open fire!	False	False		guel	Guel
-	257,260	259	258	0:05:44.752000	0:05:49.557000	25758936ba.mp3	25758936ba.webp	なっ!? 仕掛けたのは　お前だ。ビシュー!	Comenzaste tú.	You're the one who started this!	False	False		shaddiq	Shaddiq
-	261,264	262	263	0:05:50.992000	0:05:57.365000	521a85d6f0.mp3	521a85d6f0.webp	うっ! レギュレーションを外したのか!　♬ー	¿No está regulado?	Did you remove the regulation program?!	False	False		guel	Guel
-	267,270	265,269	266,268,271	0:05:57.340000	0:06:03.071000	13273ca015.mp3	13273ca015.webp	ああー もうー 乗せられちゃって。出るぞ。コピー。	Está haciendo lo que él quiere. -Adelante. -Recibido.	Damn it... he played right into his hands. Let's move out! Copy that!	False	False		kenanji,kenanji/pilotos dominicus A;B;C;D	Dominicus Pilots A; B; C & D,Kenanji
-	274	276	275	0:06:08.142000	0:06:10.320000	48bc8a0ba6.mp3	48bc8a0ba6.webp	シャディクの邪魔はさせない。	No molestarán a Shaddiq.	We won't let you get in Shaddiq's way.	False	False		sabina	Sabina
-	280,281	279	278	0:06:13.430000	0:06:21.256000	10cd049f4e.mp3	10cd049f4e.webp	学校の男たちと どれくらい違うか 見せてよね!　♬ー	Veamos si realmente no son como los chicos de la escuela.	Time to show us how much better you are than the school boys!	False	False		renee	Renee
-	283,288,292,295	282,287,290,294	284,285,286,289,291,293	0:06:21.070000	0:06:31.099000	ef5675e652.mp3	ef5675e652.webp	シャディク。かまわない。エナオ。確保した。あの三人は?　解放してやってくれ。もう 隠す必要はなくなった。バシュン バシュン バシュン!	Shaddiq. -Adelante. -Henao. -Lo tengo. -¿Y los otros tres? -Puedes liberarlos. Ya no es necesario ocultarlos.	Shaddiq? It's fine. Henao... I've secured him. What about the other three? Let them go. We have no more reason to hide them.	False	False		henao/shaddiq,sabina/shaddiq,shaddiq,shaddiq/henao	Henao,Sabina,Shaddiq
-	296	298	297	0:06:31.099000	0:06:34.636000	61fac2145f.mp3	61fac2145f.webp	だが 魔女は最後まで利用させてもらう。	Pero a la bruja la utilizaremos hasta el final.	But we'll use the witch for as long as we can.	False	False		shaddiq	Shaddiq
-	301,304	303	302	0:06:41.409000	0:06:46.414000	f97874f5e4.mp3	f97874f5e4.webp	カテドラル所属　ドミニコス隊 司令 ケナンジ・アベリーだ。	Soy el comandante de Dominicus Kenanji Avery, de Cathedral.	This is Kenanji Avery, a commander in Cathedra's Dominicus force.	False	False		kenanji	Kenanji
-	306	307	305	0:06:46.260000	0:06:49.810000	2f7da07474.mp3	2f7da07474.webp	学生諸君らは その場から動かないように。	Estudiantes, no se muevan del sitio, por favor.	All students, stay where you are.	False	False		kenanji	Kenanji
-	308,311	309	310	0:06:49.484000	0:06:55.423000	c12d12f962.mp3	c12d12f962.webp	ゴゴゴゴッ... この振動 モビルスーツか?　ピピッ ガチャン	Este temblor... ¿Son Mobile Suits?	These tremors... is it a mobile suit?	False	False		elan 5	Elan (Clone 5)
-	314	313	312	0:06:55.160000	0:06:57.458000	a5c9c5f149.mp3	a5c9c5f149.webp	開いた。んっ!	¿Se abrió?	The door opened?	False	False		nika	Nika
-	316	317	318	0:07:05.099000	0:07:07.101000	089234c0a0.mp3	089234c0a0.webp	あのバカ!	Esa tonta...	That fool!	False	False		elan 5	Elan (Clone 5)
-	323	321	322	0:07:16.080000	0:07:18.279000	2fe47eee78.mp3	2fe47eee78.webp	ソーン!	¡Thorn!	Thorn!	False	False		norea	Norea
-	324	325	326,327	0:07:19.714000	0:07:23.217000	46dd3b1c4d.mp3	46dd3b1c4d.webp	ノレア! やめろ ノレア。	¡Norea! No lo hagas.	Norea! Don't do it, Norea!	False	False		elan 5	Elan (Clone 5)
-	328	330	329	0:07:23.217000	0:07:25.420000	bc7def7597.mp3	bc7def7597.webp	なんで また ガンダムに乗るんだ?	¿Por qué subes a un Gundam de nuevo?	Why pilot a Gundam again?	False	False		elan 5	Elan (Clone 5)
-	331	333	332	0:07:25.253000	0:07:27.430000	c6cba108df.mp3	c6cba108df.webp	あなたには関係ない。	Eso no te importa.	It's none of your business!	False	False		norea	Norea
-	334	336	335	0:07:27.288000	0:07:30.270000	e3659d2820.mp3	e3659d2820.webp	死ぬのが怖いなら 逃げろよ!	Si temes morir, ¡huye!	If you're afraid to die, then run!	False	False		elan 5	Elan (Clone 5)
-	337	339	338	0:07:30.224000	0:07:33.895000	75b462a36a.mp3	75b462a36a.webp	逃げて その次は どうするの? あっ。	¿Huyo y luego qué?	Run... and then what?	False	False		norea	Norea
-	342,343	341	340	0:07:33.630000	0:07:38.399000	eca4c572a0.mp3	eca4c572a0.webp	あなたたち スペーシアンの暴力で　みんな死んだ!	La violencia de los Spacians los mató a todos.	Because of you Spacians' brutality, everyone I knew is dead!	False	False		norea	Norea
-	346	345	344	0:07:40.250000	0:07:43.972000	5567aefed1.mp3	5567aefed1.webp	きっと ナジも オルコットも...	Naji... Olcott...	Not even Naji... or Olcott...	False	False		norea	Norea
-	347	349	348	0:07:43.972000	0:07:46.541000	59260d1419.mp3	59260d1419.webp	あなたにも きっと分からない。	Tú tampoco lo entenderás.	and especially not you... could ever understand...	False	False		norea	Norea
-	352	351	350	0:07:46.060000	0:07:50.912000	df662f2107.mp3	df662f2107.webp	スペーシアンより命の軽い 私たちの怒りが!	¡No sabes lo que es la ira de unas vidas que valen menos!	our anger that our lives are cheaper than Spacians'!	False	False		norea	Norea
-	357	356	355	0:08:02.270000	0:08:05.460000	9c9658e868.mp3	9c9658e868.webp	ソフィ 壊してやろう	Sophie, lo destruiré todo.	Sophie... let's demolish it.	False	False		norea	Norea
-	358	360	359	0:08:05.460000	0:08:08.840000	3b8b7c2c4c.mp3	3b8b7c2c4c.webp	学園ごと 何もかも!	La escuela... ¡Absolutamente todo!	The entire school... and everything else!	False	False		norea	Norea
-	364	366	365	0:08:19.540000	0:08:22.710000	2f34d6bdf6.mp3	2f34d6bdf6.webp	ピィーピィーピィー... 救援? 「グラスレー」か?	¿Refuerzos? ¿Son de Grassley?	Reinforcements? From Grassley?	False	False		kenanji	Kenanji
-	369	370	368	0:08:29.980000	0:08:34.122000	54a0b13ce6.mp3	54a0b13ce6.webp	消えろ 消えろ 消えろ... 消えろ 消えろ。	Desaparezcan. Desaparezcan. Desaparezcan.	Begone... begone... begone...	False	False		norea	Norea
-	372	373	371	0:08:34.110000	0:08:36.450000	253fdd0f40.mp3	253fdd0f40.webp	全部 消えろ!	¡Que desaparezca todo!	All of this... disappear!	False	False		norea	Norea
-	375	377	376	0:08:41.496000	0:08:43.498000	11bb005b1d.mp3	11bb005b1d.webp	ガンダムだと!?	¿Un Gundam?	It's a Gundam?!	False	False		kenanji	Kenanji
-	379	380	378	0:08:43.330000	0:08:46.534000	ba00ed7226.mp3	ba00ed7226.webp	ガンヴォルヴァ! ダダダダッ!	¡Gundvölva!	Gundvolvas!	False	False		norea	Norea
-	387	385,389	386,388	0:08:56.180000	0:08:59.881000	be2ee1eab7.mp3	be2ee1eab7.webp	なあ あれって...オープンキャンパスの...	¿Ese no es...? El de las puertas abiertas.	Hey... aren't those... The ones from the Open Campus...	False	False		lilique,ojelo	Lilique,Ojelo
-	392	390	391	0:08:59.810000	0:09:02.050000	8ed5a5774e.mp3	8ed5a5774e.webp	まさか ノレア?	¿Es Norea?	You don't think... it's Norea?!	False	False		aliya	Aliya
-	396	397	398	0:09:10.024000	0:09:13.200000	00f4769847.mp3	00f4769847.webp	うわー! あーしのデミトレ!	¡Mi Demi Trainer!	My Demi Tray!	False	False		chuchu	Chuchu
-	399	401	400	0:09:13.061000	0:09:15.500000	34e668cd9b.mp3	34e668cd9b.webp	地上は危ない。地下だ!	Esto es peligroso. Vayamos bajo tierra.	The surface is dangerous... Get underground!	False	False		aliya	Aliya
-	403	404	402	0:09:18.220000	0:09:20.735000	efbee59b89.mp3	efbee59b89.webp	バカ! 走れ!	¡Corre, idiota!	Idiot! Get moving!	False	False		petra	Petra
-	405,408	406,409	407,410	0:09:20.735000	0:09:26.607000	017892dd49.mp3	017892dd49.webp	ドォーン! 何してんの あんた!　死にたいの!? ご... ごめんなさい。	¿Qué haces? ¿Es que quieres morir? Lo siento.	What are you doing? Do you want to die? I-I'm sorry!	False	False		petra,suletta	Petra,Suletta
-	412	414	413	0:09:31.612000	0:09:34.082000	48508d5cfd.mp3	48508d5cfd.webp	ほんっと最悪。	Esto es lo peor.	This is the worst...	False	False		petra	Petra
-	416	417	415	0:09:34.020000	0:09:37.085000	82397b3ce0.mp3	82397b3ce0.webp	ラウダ先輩が デート すっぽかすから こんな目に...	Y todo porque Lauda no acudió a la cita.	It's all because Mr. Lauda stood me up on our date.	False	False		petra	Petra
-	419	420,422	418,421	0:09:37.010000	0:09:41.055000	14fe8c9c7c.mp3	14fe8c9c7c.webp	そうだよね? えっ? あっ... はい。	¿Verdad? Sí.	Am I right? R-Right!	False	False		petra,suletta	Petra,Suletta
-	424,427	425,426	423	0:09:40.970000	0:09:45.760000	4af546d877.mp3	4af546d877.webp	謝るだけじゃ許さないし。好きなとこ連れてってもらう。	No lo perdonaré aunque se disculpe. Me llevará adonde yo quiera.	An apology won't be enough. He's gonna take me wherever I ask!	False	False		petra	Petra
-	429	430	428	0:09:45.430000	0:09:48.629000	3547d3ea85.mp3	3547d3ea85.webp	ご飯も ランチとディナー 両方ありで。	Y podremos comer y cenar.	He owes me a lunch and a dinner!	False	False		petra	Petra
-	432,434,438	433,435	431,436,437	0:09:48.610000	0:09:55.770000	99230b8ade.mp3	99230b8ade.webp	じゃないと 死んでも死にきれないし。はぁ はぁ...あんたは? えっ?　生きてたら 何したい?	Si no, no moriría en paz. ¿Y tú? ¿Qué quieres hacer cuando sobrevivas?	I won't be able to rest in peace, otherwise. What about you? What will you do if you survive?	False	False		petra	Petra
-	441	440	439	0:09:55.640000	0:10:00.174000	7c28e6cbc4.mp3	7c28e6cbc4.webp	私は 絶対 もう一度 あの人に...	Yo pienso verlo de nuevo.	I definitely... want to be at his side again!	False	False		petra	Petra
-	443	445	444	0:10:04.145000	0:10:07.615000	13682c5afd.mp3	13682c5afd.webp	ドカーン! フロント全域に通告。	Mensaje a todo el frente.	This is a message to the entire front.	False	False		kenanji	Kenanji
-	447	448	446	0:10:07.460000	0:10:10.680000	1f94d339d3.mp3	1f94d339d3.webp	学園エリアに テロリストのモビルスーツ出現。	Hay un Mobile Suit terrorista en la escuela.	Terrorist mobile suits have appeared in the campus area!	False	False		kenanji	Kenanji
-	449	450	451	0:10:10.251000	0:10:12.253000	1431d4e7f6.mp3	1431d4e7f6.webp	応援 頼む! ピィーピィーピィー	Solicito refuerzos.	Send backup!	False	False		kenanji	Kenanji
-	456	455	454	0:10:19.830000	0:10:22.480000	e6be5accba.mp3	e6be5accba.webp	魔女狩り部隊が 今更!	¡Llegan tarde, cazadores de brujas!	You Witch Hunters are has-beens!	False	False		norea	Norea
-	459,462	461	460	0:10:26.501000	0:10:31.480000	0c1445f966.mp3	0c1445f966.webp	ガンダムは　もう勘弁なんだけどなぁ!	Estoy harto de los Gundams.	I've had enough of you Gundams!	False	False		kenanji	Kenanji
-	463,466	465,467	464,468	0:10:31.372000	0:10:37.345000	8eefa7dca9.mp3	8eefa7dca9.webp	バシュン! 「フォルドの夜明け」を　手引きしたのは お前か? ああ。	¿Tú guiabas a Alba de Fold? Sí.	Were you the one who guided the Dawn of Fold? Yes.	False	False		guel,shaddiq	Guel,Shaddiq
-	471	470	469,472	0:10:37.110000	0:10:40.348000	446653b756.mp3	446653b756.webp	父さんを謀ったのも。ああ。	Engañaste a mi papá. -Sí.	And the one who set my dad up? Yes.	False	False		guel/shaddiq	Guel,Shaddiq
-	474	475	473	0:10:40.200000	0:10:43	33d3dacd63.mp3	33d3dacd63.webp	罪を 「ジェターク社」に 押しつけたのも!	¡Y culpaste a Jeturk!	And the one who blamed it all on the Jeturk Company?!	False	False		guel	Guel
-	477	479	478	0:10:45.286000	0:10:47.288000	42ff94d38d.mp3	42ff94d38d.webp	そうだ。	Así es.	That's right.	False	False		shaddiq	Shaddiq
-	482	481	480	0:10:47.220000	0:10:50.424000	7e91d80541.mp3	7e91d80541.webp	お前の父が 俺たちに デリング暗殺を持ちかけ	Tu padre nos encargó asesinar a Delling	Your father approached us with a plan to assassinate Delling...	False	False		shaddiq	Shaddiq
-	484	485	483	0:10:50.290000	0:10:53.227000	cca6716517.mp3	cca6716517.webp	それを利用した。ビシュー!	y lo aproveché.	and I used it to my advantage!	False	False		shaddiq	Shaddiq
-	487	489	488	0:10:57.765000	0:11:01.335000	0a2c75832c.mp3	0a2c75832c.webp	内輪での派閥争い 謀略	Conspiraciones y luchas de facciones en el espacio.	Factional in-fighting and intrigues...	False	False		shaddiq	Shaddiq
-	491,494	492	490,493	0:11:01.230000	0:11:07.175000	528a1ecb92.mp3	528a1ecb92.webp	それしか 頭にない つくづく浅い男だったよ　あの男は。	Aquel hombre era tan superficial que solo pensaba en eso.	He was a shallow man with nothing else on his mind. A man like that...	False	False		shaddiq	Shaddiq
-	495	497	496	0:11:07.175000	0:11:10.320000	3684dede58.mp3	3684dede58.webp	父さんを愚弄するな!	¡No insultes a mi padre!	Don't you dare insult my father!	False	False		guel	Guel
-	500	499	498	0:11:12.250000	0:11:15.449000	48cf7bea92.mp3	48cf7bea92.webp	その父親を殺したのは	Pero quién lo mató...	But weren't you the one who killed...	False	False		shaddiq	Shaddiq
-	502	503	501	0:11:15.380000	0:11:17.418000	866df4c281.mp3	866df4c281.webp	お前だろ。	fuiste tú.	that father?	False	False		shaddiq	Shaddiq
-	504	505	506	0:11:19.020000	0:11:21.022000	f1936f05e9.mp3	f1936f05e9.webp	兄さんが	¿Guel...	My brother...	False	False		lauda	Lauda
-	507	508	509	0:11:21.022000	0:11:23.080000	1c2d7f67a5.mp3	1c2d7f67a5.webp	父さんを...	mató a papá?	killed Dad?	False	False		lauda	Lauda
-	512,514	510	511,513	0:11:25.500000	0:11:31.732000	d246df36be.mp3	d246df36be.webp	現在 学園フロント全域に　脅威レベル5が 発令されております。	Hay una amenaza de nivel 5 por todo el frente de la escuela.	A Level 5 alert has been issued for all sectors of the school front.	False	False		anuncio	Announcement
-	516,518	517	515,519	0:11:31.600000	0:11:36.940000	9511246333.mp3	9511246333.webp	生徒 および 職員の生命が　直接的な脅威にさらされており	Estudiantes y empleados están bajo amenaza.	The lives of students and staff are under direct threat, and the situation is extremely dangerous.	False	False		anuncio	Announcement
-	520	522	521	0:11:36.737000	0:11:39.140000	b74397ddbc.mp3	b74397ddbc.webp	非常に危険な状態です。	Es una situación peligrosa.	Except for security control personnel,	False	False		anuncio	Announcement
-	525	524,527	523,526	0:11:39.020000	0:11:43.878000	0bd1b8afc4.mp3	0bd1b8afc4.webp	保安管理要員以外は すぐに 緊急避難マニュアルにのっとり	Excepto el personal de seguridad, sigan el manual de emergencias	act immediately as per the emergency evacuation manual and please prioritize your own physical safety.	False	False		anuncio	Announcement
-	536,540,544,546	537,542,545,548	538,539,541,543,547,549	0:11:51.485000	0:12:03.664000	8ffffadb0d.mp3	8ffffadb0d.webp	ラウダ先輩 ペトラ　どこ行ったんだよ? フェルシー。こっちは学園仕様なんだ。出過ぎるなよ。はい! 私がやんなくちゃなんだ。	Lauda, Petra, ¿dónde están? Este es de la academia, Felsi. -Ten cuidado. -Bien. He de hacerlo yo.	Mr. Lauda... Petra... where have they gone? Felsi! That thing's configured for campus use. Don't go out too far! Right! It's up to me.	False	False		felsi,kamil,kamil/felsi	Felsi,Kamil
-	550	552	551	0:12:03.664000	0:12:06.467000	914cc2a79e.mp3	914cc2a79e.webp	フェルシー・ロロ 出ます!	Felsi Rollo, en marcha.	Felsi Rollo... moving out!	False	False		felsi	Felsi
-	558	557	556	0:12:08.740000	0:12:11.680000	610302b82c.mp3	610302b82c.webp	ノレア どうして こんな...	¿Por qué haces esto, Norea?	Norea... why would you do this?	False	False		aliya	Aliya
-	559	561	560	0:12:11.505000	0:12:13.507000	e49992b307.mp3	e49992b307.webp	アリヤ リリッケ!	¡Aliya! ¡Lilique!	Aliya! Lilique!	False	False		martin	Martin
-	565	563,567	564,566	0:12:15.840000	0:12:18.980000	d9a592f8d9.mp3	d9a592f8d9.webp	マルタン。みんなは? 無事?	¡Martin! ¿Están todos bien?	Martin... Is everyone okay?!	False	False		aliya,martin	Aliya,Martin
-	568	570	569	0:12:18.946000	0:12:21.050000	25c6e40faf.mp3	25c6e40faf.webp	スレッタが まだ見つからねぇんだ。	No encontramos a Suletta.	We haven't found Suletta yet.	False	False		ojelo	Ojelo
-	571	573	572	0:12:20.948000	0:12:23.900000	1156b529b2.mp3	1156b529b2.webp	くそっ! デミトレがありゃ...	Maldición, si tuviera el Demi Trainer...	Damn it! If I had my Demi Tray...	False	False		chuchu	Chuchu
-	574	575	576	0:12:23.784000	0:12:25.786000	51189ca56f.mp3	51189ca56f.webp	ダメだよ 今 出たら!	¡No puedes usarlo!	It's no good! You couldn't sortie now!	False	False		lilique	Lilique
-	578	579	577	0:12:25.700000	0:12:28.122000	4b884e9e7b.mp3	4b884e9e7b.webp	ずっと ここで隠れてろってのかよ!	¿Quieres que me oculte?	We can't hide in here forever either!	False	False		chuchu	Chuchu
-	582	581	580	0:12:27.890000	0:12:30.960000	e801734770.mp3	e801734770.webp	チュチュに 死んでほしくないんだよ!	¡No quiero que mueras!	I don't want you to die, Chuchu!	False	False		lilique	Lilique
-	583	585	584	0:12:30.892000	0:12:35.029000	dc582314cb.mp3	dc582314cb.webp	まっ このままじゃ 全員 バッドエンド確定っしょ。	A este paso todos tendremos un final malo.	Well, at this rate, it's a bad ending for all of us.	False	False		secelia	Secelia
-	587	588,590	586,589	0:12:34.900000	0:12:38.699000	ac6f020b38.mp3	ac6f020b38.webp	そんな...だから	No... Por tanto...	No way... So I guess...	False	False		lilique,secelia	Lilique,Secelia
-	591	593	592	0:12:38.699000	0:12:40.920000	25191750b0.mp3	25191750b0.webp	うちらの貸したげる。	te presto uno.	we should loan you our machine.	False	False		secelia	Secelia
-	595	596	594	0:12:42.490000	0:12:46.307000	9247c7e0fc.mp3	9247c7e0fc.webp	MSJーR122 デミバーディング。	MSJ R122, Demi Barding.	MSJ-R122... Demi Barding.	False	False		haro	Rouji's Haro
-	598	599	597	0:12:46.260000	0:12:48.930000	cd75fc9165.mp3	cd75fc9165.webp	「ブリオン社」の新型試作機です。	El nuevo modelo de prueba de Burion.	It's Burion's new prototype.	False	False		rouji	Rouji
-	601	600	602	0:12:48.830000	0:12:51.420000	0611933a56.mp3	0611933a56.webp	テスト用に持ち込んだところ だったんですけど...	Lo trajimos para probarlo.	We brought it here for testing, but...	False	False		rouji	Rouji
-	603	605	604	0:12:51.212000	0:12:53.350000	bbe39e3dd5.mp3	bbe39e3dd5.webp	うちらは乗れないし	Como no podemos pilotearlo,	None of us is a pilot,	False	False		secelia	Secelia
-	606	608	607	0:12:53.214000	0:12:57.585000	96668bf37e.mp3	96668bf37e.webp	そっちのポンポン頭に貸した方が 生存率 上がりそうでしょ?	prestárselo a la de los pompones nos da más posibilidades de vivir.	so letting that Pom-Pom Head use it gives us some chance of survival, right?	False	False		secelia	Secelia
-	610,614	611,613	609,612,615	0:12:57.500000	0:13:04.280000	81b3c4165a.mp3	81b3c4165a.webp	ほら さっさと調整して。あっ 調整っつっても...チュチュのは 全部 あいつが...	Vamos, ajústenlo. -Ajustarlo... -Ella siempre trabajaba con Chuchu.	Come on. Hurry up and fine-tune it. Fine-tune? But... Chuchu's machine is always tuned by...	False	False		ojelo/nuno,secelia	Nuno,Ojelo,Secelia
-	617	619	618	0:13:06.327000	0:13:08.296000	973b7aa4eb.mp3	973b7aa4eb.webp	ニカ!?	¿Nika?	Nika?	False	False		aliya	Aliya
-	622,624	621,626	620,623,625	0:13:09.710000	0:13:17.305000	b3b4c654db.mp3	b3b4c654db.webp	いるじゃーん うってつけのヤツ。はぁ はぁ...みんな。	Tenemos a la candidata perfecta. Chicos...	And there she is! Just the person we need. Everyone...	False	False		nika,secelia	Nika,Secelia
-	627,630	628	629,631	0:13:17.305000	0:13:22.750000	3bbee6cfcd.mp3	3bbee6cfcd.webp	くっ! あっ...ニカ　急いで こいつを見てほしい。えっ?	Nika, revísalo, deprisa.	Nika, you have to calibrate this right away. What?	False	False		martin	Martin,Nika
-	632	634	633	0:13:22.677000	0:13:26.847000	c487df83e1.mp3	c487df83e1.webp	僕は もう一度 君と話がしたいんだ。	Quiero hablar de nuevo contigo.	Can we talk to each other one more time?	False	False		martin	Martin
-	635	637	636	0:13:26.847000	0:13:29.050000	909ac6755f.mp3	909ac6755f.webp	うん。	Bien.	Right.	False	False		nika	Nika
-	638	640	639,641	0:13:29.016000	0:13:33.487000	e6917d8fce.mp3	e6917d8fce.webp	オーライ! オーライ! オーライ!	Vía libre.	Come on, come on! Come on!	False	False		ojelo	Ojelo
-	642	643	644	0:13:33.487000	0:13:35.489000	611c671f28.mp3	611c671f28.webp	出力は違うけど	La potencia es distinta,	The power output is different,	False	False		nika	Nika
-	647	645	646	0:13:35.420000	0:13:38.090000	a9eb714bd7.mp3	a9eb714bd7.webp	いつもと同じフィーリングで 動かせるはずだよ。	pero deberías poder moverlo como siempre.	but the controls should feel the same as always.	False	False		nika	Nika
-	648	649,651	650	0:13:39.327000	0:13:42.964000	9b9430d776.mp3	9b9430d776.webp	ごめん チュチュ。全部 私のせい。	Lo siento, Chuchu. Es todo culpa mía.	I'm sorry, Chuchu... this is all my fault.	False	False		nika	Nika
-	654	653	652	0:13:42.670000	0:13:46.500000	1911c0d523.mp3	1911c0d523.webp	チュチュが 戦わなきゃいけないのも...	Te obligué a luchar.	That you have to go and fight too...	False	False		nika	Nika
-	657	656	655	0:13:46.330000	0:13:48.469000	7e1727e532.mp3	7e1727e532.webp	許すわけねぇだろ。	No te perdono.	How can I forgive you?	False	False		chuchu	Chuchu
-	659	660	658	0:13:50.050000	0:13:52.239000	da21e050da.mp3	da21e050da.webp	全部 ちゃんと聞かせろよ。	Has de contármelo todo.	Tell me everything from A to Z.	False	False		chuchu	Chuchu
-	661	663	662	0:13:52.239000	0:13:56.410000	c89bccab06.mp3	c89bccab06.webp	じゃなきゃ 許すも何も ねぇだろうが。	Si no, ¿cómo podría perdonarte?	Otherwise, there's nothing to forgive.	False	False		chuchu	Chuchu
-	665	666	664	0:13:56.340000	0:13:58.379000	04671e1e7d.mp3	04671e1e7d.webp	うん。	Sí.	Yeah...	False	False		nika	Nika
-	667	669	668,670	0:14:01.349000	0:14:04.190000	26dbc38d71.mp3	26dbc38d71.webp	や... やばい このままじゃ...	Oh, no, a este paso...	Th-This is bad... At this rate...	False	False		felsi	Felsi
-	675	674,677	673,676	0:14:12.490000	0:14:16.470000	1ed8a71868.mp3	1ed8a71868.webp	おい スペーシアン。お... お前 ポンポン頭!?	Eh, Spacian. ¿La de los pompones?	Hey, Spacian! Y-You! Is that Pom-Pom Head?	False	False		chuchu,felsi	Chuchu,Felsi
-	678	680	679	0:14:16.364000	0:14:18.800000	e12bce1bd7.mp3	e12bce1bd7.webp	手伝え。こいつら ぶっ潰すぞ。	Ayúdame. Los aplastaremos.	Help me out. We're gonna smash them all!	False	False		chuchu	Chuchu
-	681	682	683	0:14:18.699000	0:14:22.310000	f839766744.mp3	f839766744.webp	あっ...アーシアンが仕切んじゃねぇ!	¡No me des órdenes, Earthian!	I ain't taking orders from an Earthian!	False	False		felsi	Felsi
-	686	685	687	0:14:26.010000	0:14:29.110000	192015ed9b.mp3	192015ed9b.webp	学生風情が! うわっ!	Son meros estudiantes.	You pathetic students!	False	False		piloto dominicus C	Dominicus Pilot C
-	688	690	689	0:14:29.110000	0:14:31.645000	99eb23e8c8.mp3	99eb23e8c8.webp	サビーナ 行って!	¡Ve, Sabina!	Sabina! Go!	False	False		maisie	Maisie
-	691	693	692	0:14:31.645000	0:14:33.814000	c9fd08de29.mp3	c9fd08de29.webp	シャディクを助けて!	¡Ayuda a Shaddiq!	Help Shaddiq!	False	False		ireesha	Ireesha
-	694	695	696	0:14:33.814000	0:14:36.450000	f12569839e.mp3	f12569839e.webp	おいしいところは譲ったげる。	Te cedo la mejor parte.	We've saved the best part for you!	False	False		renee	Renee
-	699	698	697	0:14:36.180000	0:14:38.452000	6ed11f1f46.mp3	6ed11f1f46.webp	すまない。	Gracias.	Thanks.	False	False		sabina	Sabina
-	701,704	703	702	0:14:51.298000	0:14:55.770000	97533bf2a9.mp3	97533bf2a9.webp	お前が うまく立ち回れば　父親は死ななかった。くっ!	Si hubieras actuado mejor, tu padre seguiría vivo.	If you'd acted more wisely, your father wouldn't have died.	False	False		shaddiq	Shaddiq
-	706	707	705	0:14:55.700000	0:14:57.938000	53498d2cb4.mp3	53498d2cb4.webp	お前が戻らなければ	Si no hubieras regresado,	If you'd never come back...	False	False		shaddiq	Shaddiq
-	710	709	708	0:14:57.660000	0:15:00.640000	05fcd4e68f.mp3	05fcd4e68f.webp	グループを穏やかに解体できた。	habría deshecho el grupo pacíficamente.	I could have dissolved the Group peacefully!	False	False		shaddiq	Shaddiq
-	712,715	711	713,714	0:15:03.380000	0:15:08.783000	c36655ced0.mp3	c36655ced0.webp	お前が付いていながら　ミオリネは 手を汚すことになった!	Miorine tuvo que ensuciarse las manos pese a tenerte a ti.	Despite your being with her... you let Miorine's hands get dirty!	False	False		shaddiq	Shaddiq
-	716	718	717	0:15:08.783000	0:15:11.819000	3ec3474619.mp3	3ec3474619.webp	テロに加担した逆賊が何を!	¡Tú ayudaste a unos terroristas!	To hell with a traitor who collaborated with terrorists!	False	False		guel	Guel
-	720	721	719	0:15:11.680000	0:15:14.588000	24d5bab08d.mp3	24d5bab08d.webp	その俺を生んだのは誰だ?	¿Y quién me hizo así?	And who turned me into that?	False	False		shaddiq	Shaddiq
-	723	724	722	0:15:14.420000	0:15:17.391000	08d0abc124.mp3	08d0abc124.webp	戦争シェアリングで 全てを奪い	Ustedes nos lo quitaron todo	The ones who stole everything through war partitioning...	False	False		shaddiq	Shaddiq
-	726,728	727	725,729	0:15:17.350000	0:15:22.396000	28eac60e68.mp3	28eac60e68.webp	他者を蹴落とす生き方を 強いてきたのは　お前たちだ!	y nos forzaron a vivir pisoteando a otros con las guerras colaborativas.	Who forced us to survive at the expense of others... It was all of you!	False	False		shaddiq	Shaddiq
-	731	730	732	0:15:22.360000	0:15:26.801000	030fb702ac.mp3	030fb702ac.webp	力がなければ 理不尽な平和は崩せない。	Sin poder no se puede desarmar esta paz inadmisible	Without power, there's no way to break this unjust peace.	False	False		shaddiq	Shaddiq
-	734	735	733	0:15:26.730000	0:15:28.836000	0d62a3af3e.mp3	0d62a3af3e.webp	あらがうことすらも。	ni resistirse.	No way to even resist it....	False	False		shaddiq	Shaddiq
-	736,739	738	737	0:15:28.836000	0:15:33.410000	474b333669.mp3	474b333669.webp	だから 今度は お前たち　スペーシアンから力を奪う!	Por eso ahora les robaré el poder a los Spacians.	That's why this time, I'll take the power from you Spacians myself!	False	False		shaddiq	Shaddiq
-	743	742	741	0:15:34.990000	0:15:38.279000	baae0f29cb.mp3	baae0f29cb.webp	俺は 俺の罪を肯定する!	Yo afirmo mis crímenes.	I... am ready to accept my own sins!	False	False		shaddiq	Shaddiq
-	747	746	745	0:15:44.410000	0:15:47.087000	9fcf3bbb94.mp3	9fcf3bbb94.webp	サリウス代表を船に乗せた。	Sarius está en la nave.	I've got President Sarius aboard the ship.	False	False		henao	Henao
-	750	749	748	0:15:46.960000	0:15:49.670000	1a7c5ff40f.mp3	1a7c5ff40f.webp	あと5分 時間を稼いでくれれば	Si ganan cinco minutos más,	If you can buy 5 more minutes...	False	False		henao	Henao
-	752	751	753	0:15:49.390000	0:15:52.650000	46c612019d.mp3	46c612019d.webp	議会連合との合流ポイントに 向かえる。	iremos al punto de reunión con la Unión.	we can leave for our rendezvous point with the Assembly League.	False	False		henao	Henao
-	754	755	756	0:15:52.560000	0:15:54.562000	c68984b2a2.mp3	c68984b2a2.webp	そうか。	Bien.	I see.	False	False		shaddiq	Shaddiq
-	758	759	760	0:15:57.965000	0:15:59.967000	e9a72c6939.mp3	e9a72c6939.webp	知っているさ。	Lo sé.	I know what you mean...	False	False		guel	Guel
-	763	762	761	0:15:59.760000	0:16:03.960000	0fac97788e.mp3	0fac97788e.webp	俺も お前も 自分の罪は 自分のものだ。	Tus crímenes son tuyos y los míos, míos.	You and I... each have to bear our own sins by ourselves.	False	False		guel	Guel
-	765	764	766,767	0:16:03.860000	0:16:07.875000	97126716ce.mp3	97126716ce.webp	それでも けじめはつけさせる。シャディク!	Pero ¡pagarás por ellos, Shaddiq!	But even so... you'll pay for yours here! Shaddiq!	False	False		guel	Guel
-	769,773	770,771	768,772	0:16:07.770000	0:16:14.300000	c3065a37c0.mp3	c3065a37c0.webp	真っ向勝負か。そういうところ　昔から嫌いだった!	¿Un combate directo? Siempre odié que seas así.	Charging straight in... That's the very thing I've always hated about you!	False	False		shaddiq	Shaddiq
-	775	777	776	0:16:19.253000	0:16:21.288000	452c75b88d.mp3	452c75b88d.webp	サビーナ!	¡Sabina!	Sabina!	False	False		shaddiq	Shaddiq
-	779	781	780	0:16:24.825000	0:16:28.262000	030e59a008.mp3	030e59a008.webp	グエル・ジェターク お前には分からない。	Guel Jeturk, tú no lo entiendes.	Guel Jeturk, you'll never understand.	False	False		sabina	Sabina
-	783	784	782	0:16:28.250000	0:16:31.732000	a89b110bc9.mp3	a89b110bc9.webp	望まずとも与えられる お前には!	¡A ti te lo dan todo aunque no lo quieras!	You grew up with a silver spoon in your mouth!	False	False		sabina	Sabina
-	787	786	788	0:16:36.060000	0:16:38.639000	5bfaee94ed.mp3	5bfaee94ed.webp	何も分かっていないんだな。	No entienden nada.	You're the one who doesn't understand.	False	False		guel	Guel
-	790	791	789	0:16:38.470000	0:16:42.042000	61f42ddd41.mp3	61f42ddd41.webp	グエル! バシュー!	¡Guel!	Guel!	False	False		shaddiq	Shaddiq
-	792	794	793,795	0:16:42.042000	0:16:45.900000	cb743aa7ba.mp3	cb743aa7ba.webp	奪うだけじゃ 手に入らない!	Si solo robas, no consigues nada.	If all you do is take... you'll never gain a thing!	False	False		guel	Guel
-	798	800	799	0:16:51.185000	0:16:53.754000	9b0a8f24e9.mp3	9b0a8f24e9.webp	シャディク!	¡Shaddiq!	Shaddiq!	False	False		sabina	Sabina
-	802	804	803	0:17:08.335000	0:17:10.590000	6d09439053.mp3	6d09439053.webp	俺は お前を許さない。	No te perdonaré jamás.	I'll never forgive you.	False	False		guel	Guel
-	805	807	806	0:17:10.404000	0:17:13.920000	1c4b229191.mp3	1c4b229191.webp	だが 死ぬことも認めん。	Pero tampoco permitiré que mueras.	But I'm not about to let you die, either.	False	False		guel	Guel
-	809,811	810,812	808	0:17:15.670000	0:17:22.416000	941e73f181.mp3	941e73f181.webp	「ベネリット」グループは 秩序維持のため　学園の同胞を犠牲にした。ん?	Benerit Group sacrificó a compañeros de la escuela solo para mantener el orden.	To maintain order, the Benerit Group sacrificed fellow Spacians at the school.	False	False		shaddiq	Shaddiq
-	815	814	813	0:17:22.220000	0:17:26.160000	d1ec9f3adb.mp3	d1ec9f3adb.webp	アーシアンの犠牲だけでは 動かなかった議会連合も	Las víctimas terrestres no movilizaron a la Unión del Congreso,	The Assembly League wouldn't act just because of Earthian losses...	False	False		shaddiq	Shaddiq
-	816	818	817	0:17:26.020000	0:17:28.722000	d534603cc3.mp3	d534603cc3.webp	これで 重い腰を上げるだろう。	pero ahora moverán el trasero.	but they'll finally get off their butts now.	False	False		shaddiq	Shaddiq
-	820	821	822	0:17:33.794000	0:17:36.330000	f365afab44.mp3	f365afab44.webp	愚かな息子よ。	Eres un necio, hijo.	Oh, my foolish son...	False	False		sarius	Sarius
-	823,826	825	824,827	0:17:45.272000	0:17:52.310000	4d541e5f4f.mp3	4d541e5f4f.webp	ぐっ! ううっ...全部 壊してやる。お前たちの持っているもの 全部!	Destruiré todo lo que tienen. ¡Todo!	I'll destroy it all! Every last thing you call yours!	False	False		norea	Norea
-	831	832	833	0:17:59.486000	0:18:02.122000	3913cb737f.mp3	3913cb737f.webp	ノレア!	¡Norea!	Norea!	False	False		elan 5	Elan (Clone 5)
-	834	835	836	0:18:02.122000	0:18:05.740000	d92bcf7891.mp3	d92bcf7891.webp	もういいだろ。これ以上 死に急ぐな。	Surficiente. No corras hacia tu muerte.	That's enough. Don't be in a rush to die!	False	False		elan 5	Elan (Clone 5)
-	838	840	839	0:18:08.696000	0:18:12.499000	8277b76e56.mp3	8277b76e56.webp	じゃあ 逃げるだけのあなたは?	¿Y tú, que solo huyes, qué?	And what do you get with all your running?	False	False		norea	Norea
-	843	842	841	0:18:12.480000	0:18:15.800000	5586d7f5dd.mp3	5586d7f5dd.webp	ただ 息を潜めて 目をそらして	Te esconderás y mirarás a otro lado.	You only hold your breath and avert your eyes!	False	False		norea	Norea
-	844	845	846	0:18:15.603000	0:18:17.871000	f0af32dd6b.mp3	f0af32dd6b.webp	そんなの 死んでるのと同じ!	¡Eso es como estar muerto!	That's no different from being dead!	False	False		norea	Norea
-	848	849	847	0:18:17.820000	0:18:21.041000	8ff15f69f7.mp3	8ff15f69f7.webp	ソフィは生きてた! あなたとは違う!	¡Sophie estaba viva! ¡No era como tú!	Sophie was alive! You're nothing like her!	False	False		norea	Norea
-	851	850,853	852	0:18:22.500000	0:18:25.512000	f9b8d3f1d8.mp3	f9b8d3f1d8.webp	当たり前だ。君も ソフィじゃない!	Obviamente. Tú tampoco eres Sophie.	Obviously. But you're not Sophie either!	False	False		elan 5	Elan (Clone 5)
-	854	855	856,857	0:18:26.981000	0:18:30.818000	1d58c2db36.mp3	1d58c2db36.webp	スケッチにあった風景画 あれが君だろ。	Tú eres los paisajes de tus bocetos.	Those drawings in your sketchbook... That's the real you!	False	False		elan 5	Elan (Clone 5)
-	859,863,866	860,861,865	858,862,864,867	0:18:30.790000	0:18:38.592000	026efbce40.mp3	026efbce40.webp	不安で 死ぬことにおびえて 殴り描くことでしか　逃げられなくて! お前に何が...僕と来い! んっ...	Te asusta y te preocupa morir. Solo puedes evadirte dibujando. -¿Qué sabrás...? -¡Ven conmigo!	Anxious... terrified of death... Scribbling was your only escape! How would you know- Come with me!	False	False		elan 5,norea/elan 5	Elan (Clone 5),Norea
-	868,871	870,873	869,872	0:18:40.060000	0:18:46.080000	a038be83ae.mp3	a038be83ae.webp	生き方が分からないなら　一緒に探してやる。怖いなら 隣にいてやる。	Si no sabes cómo vivir, lo buscaremos juntos. Si tienes miedo, estaré a tu lado.	If you don't know how to live, I'll search for that with you. If you're scared, I'll be at your side!	False	False		elan 5	Elan (Clone 5)
-	874	876	875	0:18:46.066000	0:18:50.070000	c7d50790f6.mp3	c7d50790f6.webp	逃げるのが嫌なら 僕を あの絵の場所に連れていけ。	Si no quieres huir, llévame al lugar de los dibujos.	If you don't want to run, take me to the places in your drawings!	False	False		elan 5	Elan (Clone 5)
-	877	878	879	0:18:50.070000	0:18:52.640000	2f7ffe0175.mp3	2f7ffe0175.webp	その先のことなんて あとでいい!	No importa qué suceda luego.	The rest can come later!	False	False		elan 5	Elan (Clone 5)
-	880	881	882	0:18:54.208000	0:18:56.243000	3fbfac96ae.mp3	3fbfac96ae.webp	生きていいんだって...	Mereces vivir.	We're allowed to live...	False	False		elan 5	Elan (Clone 5)
-	884	885	886	0:19:03.150000	0:19:05.470000	e5e2cdeb2d.mp3	e5e2cdeb2d.webp	証明させろよ!	¡Deja que te lo muestre!	Let me prove it!	False	False		elan 5	Elan (Clone 5)
-	890	888,892	889,891	0:19:11.460000	0:19:14.650000	f74a38f78a.mp3	f74a38f78a.webp	止まった。仲間割れか?	¿Se detuvo? ¿Están discutiendo?	They stopped? Have they turned on each other?	False	False		chuchu,kenanji	Chuchu,Kenanji
-	896	894	895	0:19:17.890000	0:19:22.870000	2443392864.mp3	2443392864.webp	一緒に... はぁ はぁ はぁ...	Que si...	With you...	False	False		norea	Norea
-	897	898	899	0:19:22.870000	0:19:25.773000	e1b3e03e79.mp3	e1b3e03e79.webp	来いだの 連れてけだの	"ven conmigo", que si "llévame"...	You say, "come with me..." then "take me there..."	False	False		norea	Norea
-	900	901	902,903	0:19:25.773000	0:19:28.108000	11371092bc.mp3	11371092bc.webp	バカなの? あなた。ノレア!	¿Eres estúpido? -¡Norea!	Are you stupid or something? Norea!	False	False		norea/elan 5	Elan (Clone 5),Norea
-	904	906	905	0:19:28.108000	0:19:30.978000	011c7e7a3d.mp3	011c7e7a3d.webp	はぁ... あとで教えて。あっ。	Luego me dices	Tell me later...	False	False		norea	Norea
-	907	909	908,910	0:19:33.147000	0:19:36.280000	4391907378.mp3	4391907378.webp	あなたの本当の名前...	cuál es tu verdadero nom...	your... real name-	False	False		norea	Norea
-	916	918	917,919	0:20:02.176000	0:20:05.780000	d3da0ca5ac.mp3	d3da0ca5ac.webp	このー! 邪魔だ!	¡Hazte a un lado!	Damn it... Get out of my way!	False	False		kenanji	Kenanji
-	920	922	921	0:20:11.085000	0:20:13.454000	02b7585ac7.mp3	02b7585ac7.webp	ててっ...ん?	Ay...	Ow, that hurt...	False	False		suletta	Suletta
-	923,926	924	925	0:20:13.454000	0:20:18.125000	db7621523f.mp3	db7621523f.webp	ペトラさん? ペトラさん!　ペ...	¿Petra? Pe...	Ms. Petra? Ms. Petra!	False	False		suletta	Suletta
-	932	933	934	0:21:19.086000	0:21:21.855000	5fe59e7782.mp3	5fe59e7782.webp	夢じゃねぇんだよな?	No es un sueño, ¿verdad?	This isn't a dream, is it?	False	False		ojelo	Ojelo
-	937	936	935	0:21:21.770000	0:21:24.558000	8de5fb8c12.mp3	8de5fb8c12.webp	現実だよ 全部。	Es todo real.	It's real. All of it.	False	False		till	Till
-	938	939	940	0:21:24.558000	0:21:27.060000	b6c89923e1.mp3	b6c89923e1.webp	メェー ティコ?	¿Tico?	Tiko?	False	False		aliya	Aliya
-	942	943	944	0:21:30.063000	0:21:32.232000	ef3decaf4e.mp3	ef3decaf4e.webp	スレッタ先輩!	¡Suletta!	Ms. Suletta!	False	False		lilique	Lilique
-	946	945	947	0:21:32.100000	0:21:34.860000	56344271f8.mp3	56344271f8.webp	よかった。無事だったんだな。	Qué bien que estés bien.	Thank goodness. You're alright!	False	False		aliya	Aliya
-	948	949	950,951	0:21:36.370000	0:21:39.273000	3496be6118.mp3	3496be6118.webp	スレッタ あの...すみません	Suletta... -Perdón...	Suletta, I- I'm sorry...	False	False		nika/suletta	Nika,Suletta
-	952	953	954	0:21:39.273000	0:21:41.708000	264d7cbbf7.mp3	264d7cbbf7.webp	手伝ってもらっていいですか?	¿Pueden ayudarme?	Can you help?	False	False		suletta	Suletta
-	955	956	957	0:21:41.708000	0:21:46.046000	e1f4863f1d.mp3	e1f4863f1d.webp	えっ? 中に取り残された人がいます。	Aún hay gente atrapada.	There are people stuck inside.	False	False		suletta	Suletta
-	959	960	958	0:21:45.920000	0:21:49.049000	640a3e1c6e.mp3	640a3e1c6e.webp	きっと まだ たくさん。	De seguro quedan muchos.	Still... so many...	False	False		suletta	Suletta
-	963	962	964	0:21:52.040000	0:21:56.020000	e363ac25e5.mp3	e363ac25e5.webp	でも まだ 助かる人いるかもしれませんから。	Pero puede que algunos se salven.	But there may be some who can still be saved.	False	False		suletta	Suletta
-	965	966	967	0:21:58.525000	0:22:00.527000	bdcc575d04.mp3	bdcc575d04.webp	やろう みんな!	Vamos, chicos.	Let's do it, everyone!	False	False		martin	Martin
-	970	969	968	0:22:00.210000	0:22:03.320000	c1056d5b7f.mp3	c1056d5b7f.webp	動けるモビルクラフト 見つけてくる。	Iré por un Mobile Craft que funcione.	I'll go find a working mobile craft.	False	False		till	Till
-	971	973	972	0:22:03.297000	0:22:05.699000	44f14ff1a6.mp3	44f14ff1a6.webp	医療品も必要ですよね。	Necesitaremos equipo médico.	We'll need first aid too, right?	False	False		lilique	Lilique
-	975	976	974	0:22:05.650000	0:22:07.768000	ca1c2f0cd2.mp3	ca1c2f0cd2.webp	手分けして助けようぜ。	Dividámonos para ayudarlos.	We'll split up and save them!	False	False		ojelo	Ojelo
-	979	980	977	0:22:07.720000	0:22:09.736000	4f1c3cb6ac.mp3	4f1c3cb6ac.webp	うん。はい。	Sí.	Right!	False	False		todos	Everyone
+	104,109,112	106,107,111	105,108,110	0:03:05.760000	0:03:14.903000	5081cf4082.mp3	5081cf4082.webp	僕らも驚いてるんだ。使えないヤツ。じゃあ 何しに来たの? ほ... 報告。ちゃんと みんなと和解できたって。	Estamos igual de sorprendidos. Inútil. ¿A qué viniste entonces? A informar de que me reconcilié con los demás.	We're as surprised as you! You're useless. Why are you here then? I-I'd like to report... I patched things up with everyone.	False	False		martin,secelia	Martin,Secelia
+	114	115	113	0:03:14.750000	0:03:17.238000	178efab30c.mp3	178efab30c.webp	質問に答えてください。ひっ!	Responde a las preguntas.	Please answer my questions.	False	False		rouji	Rouji
+	117	119	118	0:03:20.742000	0:03:23.278000	01651a3c0e.mp3	01651a3c0e.webp	クレーム 何件目だよ。	¿Cuántas quejas hay?	How many complaints do we have now?	False	False		ojelo	Ojelo
+	121	122	120	0:03:23.260000	0:03:25.280000	2978fdc56e.mp3	2978fdc56e.webp	もう覚えてない。	Ni lo recuerdo.	I've lost count.	False	False		nuno	Nuno
+	125	124	123	0:03:25.100000	0:03:29.017000	2e245a5e4f.mp3	2e245a5e4f.webp	医療をうたった会社の モビルスーツが大暴れしたんだ。	Hay Mobile Suits de una empresa médica causando estragos.	Our mobile suit wreaked havoc while we claim to be a medical company...	False	False		aliya	Aliya
+	128	127	126	0:03:28.810000	0:03:31.386000	fa53dc695c.mp3	fa53dc695c.webp	無理もないさ。ピッ	Es normal.	It's no wonder.	False	False		aliya	Aliya
+	130	131	129	0:03:31.250000	0:03:34.055000	2915d07a9d.mp3	2915d07a9d.webp	見なければ 対応できませんから。	Si no los miramos, no podemos hacer nada.	Well, if we can't see, we can't reply to them.	False	False		lilique	Lilique
+	134	133,135	132	0:03:33.990000	0:03:38.059000	b2156a3ca4.mp3	b2156a3ca4.webp	社長に任せましょ。もう知りません!	Que se encargue la jefa. Yo no quiero saber nada.	Leave it to the President! I don't care anymore!	False	False		lilique	Lilique
+	136	137	138	0:03:38.059000	0:03:40.200000	29f22b5ce5.mp3	29f22b5ce5.webp	リリッケがキレてる。	Lilique está enojada.	Even Lilique is mad...	False	False		aliya	Aliya
+	139	141	140	0:03:40.128000	0:03:42.764000	80c99a2ac1.mp3	80c99a2ac1.webp	会社 どうすんだよ?	¿Qué ocurrirá con la empresa?	What happens to the company now?	False	False		ojelo	Ojelo
+	142	144	143,145	0:03:42.764000	0:03:46.420000	584031b65b.mp3	584031b65b.webp	真面目に 授業 出るか あいつみたいに。	Habremos de comenzar a ir a clase, como ella.	Should we be good and go to class? Like her...	False	False		nuno	Nuno
+	146,149,151	148,150	147,152	0:03:46.201000	0:03:55.110000	d69ff91466.mp3	d69ff91466.webp	パイロットの生命維持に関して　宇宙開発時代の初期は...その意識は 非常に低かったことは否めない。	En los inicios del desarrollo espacial no se daba tanta importancia a la supervivencia del piloto.	It cannot be denied that concern for pilot life support was extremely low in the early years of space development.	False	False		profesor	Teacher
+	153,156,159	155,158	154,157,160	0:03:55.110000	0:04:04.486000	53ff091a0a.mp3	53ff091a0a.webp	人類の宇宙進出は　かなり 性急 かつ 強引であったというのが　歴史家たちの見解で...♬ー	Nuestro viaje por el espacio fue acelerado y forzado. Esa es la opinión de los historiadores...	In the view of historians, humanity's advancement into space was fairly hasty and aggressive. And the loss of so many lives...	False	False		profesor	Teacher
+	162	164	163	0:04:09.457000	0:04:12.427000	3cff69468a.mp3	3cff69468a.webp	今日の講義 そこじゃない。あっ。	La clase de hoy no es ahí.	None of that was in today's lecture.	False	False		petra	Petra
+	165	167	166	0:04:12.427000	0:04:15.430000	60088e66b8.mp3	60088e66b8.webp	出席しといて 話 聞いてないとか	Vienes, pero no escuchas.	If you attend class but don't bother to listen...	False	False		petra	Petra
+	169	170	168	0:04:15.350000	0:04:17.398000	fb8ffb2c6c.mp3	fb8ffb2c6c.webp	何しに来たの? あんた。	¿A qué viniste?	what's the point?	False	False		petra	Petra
+	171	173	172	0:04:19.167000	0:04:22.540000	92037a7d67.mp3	92037a7d67.webp	できること これしかないから。	Es que es lo único que puedo hacer.	It's the only thing... I can think of doing.	False	False		suletta	Suletta
+	174,177	175,179	176,178	0:04:24.305000	0:04:29.077000	464b5f95a3.mp3	464b5f95a3.webp	ん? 今日 やったとこ。えっ? ランブルリング。	Es lo de hoy. En el Rumble Ring	This is today's portion. The Rumble Ring...	False	False		petra	Petra
+	181	182	180	0:04:28.960000	0:04:33.047000	e943ac1307.mp3	e943ac1307.webp	あんたがいなかったら ラウダ先輩 死んでたかもしれないから。	Lauda podría haber muerto de no ser por ti.	If you hadn't been there, Mr. Lauda might have died.	False	False		petra	Petra
+	185	184	183	0:04:32.790000	0:04:36.720000	b31dedd05f.mp3	b31dedd05f.webp	そしたら 私 どうなってたか分かんないから。	Y no sé qué habría sido de mí entonces.	If that happened... I don't know what would become of me.	False	False		petra	Petra
+	187	189	188	0:04:39.053000	0:04:42.100000	10190a590a.mp3	10190a590a.webp	ラウダさんのこと 好きなんですか?	¿Te gusta Lauda?	Are you in love with Mr. Lauda?	False	False		suletta	Suletta
+	190	191	192	0:04:41.723000	0:04:46.090000	891ba86fbc.mp3	891ba86fbc.webp	うっ! そういうとこだよ あんたのムカつくとこ!	¡Por estas cosas no te soporto!	There! You always get on everyone's nerves like that!	False	False		petra	Petra
+	193	195	194	0:04:46.728000	0:04:48.763000	f54340ee2d.mp3	f54340ee2d.webp	シューン 兄さん。	Guel.	Brother!	False	False		lauda	Lauda
+	197	198	196,199	0:04:48.720000	0:04:51.766000	f4b0b9db3c.mp3	f4b0b9db3c.webp	ラウダ ダリルバルデは? 持ってきた。	¿Y el Darilbalde? -Lo traje.	Lauda! Where's the Darilbalde? It's here with me.	False	False		guel/lauda	Guel,Lauda
+	200	202	201	0:04:51.766000	0:04:55.270000	6f5a589586.mp3	6f5a589586.webp	けど なんで モビルスーツを学園の外に?	Pero ¿por qué lo sacarás?	But why bring a mobile suit off-campus?	False	False		lauda	Lauda
+	205,206	204	203	0:04:54.980000	0:04:59.374000	1da0776426.mp3	1da0776426.webp	それに 会社にあった あれは なん...ビィービィービィー! あっ。	¿Y qué era lo que...?	And what's that other one I saw at the company-	False	False		lauda	Lauda
+	208	209	207	0:04:59.340000	0:05:01.676000	ae78a9fb96.mp3	ae78a9fb96.webp	パーメット識別コード検出。	Código de identificación Permet.	Permet ID codes detected.	False	False		operador transporte B	Transport Ship B Operator
+	212	211	210	0:05:01.320000	0:05:05.346000	9d2d6bbefb.mp3	9d2d6bbefb.webp	数は5。「グラスレー」所属のモビルスーツ。	Son cinco Mobile Suits de Grassley.	Five of them. Mobile suits belonging to Grassley.	False	False		operador transporte B	Transport Ship B Operator
+	213,216	215	214	0:05:05.346000	0:05:09.740000	87b528702e.mp3	87b528702e.webp	カテドラルの部隊が　学園に どのようなご用件で?	¿Qué hace un escuadrón de Cathedral en la escuela?	What business do Cathedra forces have at our school?	False	False		shaddiq	Shaddiq
+	217	219	218	0:05:09.684000	0:05:13.188000	93a96c422b.mp3	93a96c422b.webp	いや なに 情報提供がありましてね。	Recibimos cierta información	Well, you see... we received certain information...	False	False		kenanji	Kenanji
+	220	222	221	0:05:13.188000	0:05:16.840000	367c08784e.mp3	367c08784e.webp	ちょっと 学園に 立ち入らせてもらいたいんですよ。	y hemos de entrar a la escuela.	and we'd like you to allow us to enter the campus.	False	False		kenanji	Kenanji
+	223	225	224	0:05:16.758000	0:05:19.127000	b9c02ff477.mp3	b9c02ff477.webp	でしたら こちらで引き受けます。	Pueden tratar conmigo.	In that case, we'll handle it for you.	False	False		shaddiq	Shaddiq
+	227	228	226	0:05:19	0:05:21.129000	43f90055b9.mp3	43f90055b9.webp	用件をどうぞ。	¿Qué desean?	Please explain the details.	False	False		shaddiq	Shaddiq
+	231	230	229	0:05:20.930000	0:05:24.165000	24881e20a3.mp3	24881e20a3.webp	どうして シャディクが? あっ。	¿Qué hace Shaddiq aquí?	Why is Shaddiq...?	False	False		lauda	Lauda
+	233,237	234,236	232,235,238	0:05:24.110000	0:05:29.980000	82b365becd.mp3	82b365becd.webp	兄さん!? シャディク!　サリウス代表を どこに隠した!?	¿Guel? ¿Dónde tienes al representante Sarius, Shaddiq?	Brother! Shaddiq! Where are you hiding President Sarius?!	False	False		guel,lauda	Guel,Lauda
+	239,242,245	241,244	240,243,246	0:05:29.971000	0:05:37.846000	a5bd0defee.mp3	a5bd0defee.webp	気取られる前に 確保しろと言われなかったのか?　あっ。お前が そんなだから　ミオリネは!	¿No tenías que capturarme antes de revelar nada? Al ser tú así, Miorine...	Weren't you told to secure your target before you're suspected? It's because you're so rash... that Miorine has...!	False	False		shaddiq	Shaddiq
+	247,250	248	249	0:05:39.848000	0:05:44.752000	7410f7319a.mp3	7410f7319a.webp	これ以上 近づけば撃つ!　バシュー バシュー!	Si te acercas más, dispararé.	Come any closer, and I'll open fire!	False	False		guel	Guel
+	251,254	253	252	0:05:44.752000	0:05:49.557000	5c08e6ee72.mp3	5c08e6ee72.webp	なっ!? 仕掛けたのは　お前だ。ビシュー!	Comenzaste tú.	You're the one who started this!	False	False		shaddiq	Shaddiq
+	255,258	256	257	0:05:50.992000	0:05:57.365000	42ad39e6cc.mp3	42ad39e6cc.webp	うっ! レギュレーションを外したのか!　♬ー	¿No está regulado?	Did you remove the regulation program?!	False	False		guel	Guel
+	261,264	259,263	260,262,265	0:05:57.340000	0:06:03.071000	521a85d6f0.mp3	521a85d6f0.webp	ああー もうー 乗せられちゃって。出るぞ。コピー。	Está haciendo lo que él quiere. -Adelante. -Recibido.	Damn it... he played right into his hands. Let's move out! Copy that!	False	False		kenanji,kenanji/pilotos dominicus A;B;C;D	Dominicus Pilots A; B; C & D,Kenanji
+	267	269	268	0:06:08.142000	0:06:10.320000	7a40fbb7ca.mp3	7a40fbb7ca.webp	シャディクの邪魔はさせない。	No molestarán a Shaddiq.	We won't let you get in Shaddiq's way.	False	False		sabina	Sabina
+	273	272	271	0:06:13.430000	0:06:18.100000	df3ab20225.mp3	df3ab20225.webp	学校の男たちと どれくらい違うか 見せてよね!	Veamos si realmente no son como los chicos de la escuela.	Time to show us how much better you are than the school boys!	False	False		renee	Renee
+	276,281,285,288	275,280,283,287	277,278,279,282,284,286	0:06:21.070000	0:06:31.099000	f7116b13d8.mp3	f7116b13d8.webp	シャディク。かまわない。エナオ。確保した。あの三人は?　解放してやってくれ。もう 隠す必要はなくなった。バシュン バシュン バシュン!	Shaddiq. -Adelante. -Henao. -Lo tengo. -¿Y los otros tres? -Puedes liberarlos. Ya no es necesario ocultarlos.	Shaddiq? It's fine. Henao... I've secured him. What about the other three? Let them go. We have no more reason to hide them.	False	False		henao/shaddiq,sabina/shaddiq,shaddiq,shaddiq/henao	Henao,Sabina,Shaddiq
+	289	291	290	0:06:31.099000	0:06:34.636000	76fdc65e90.mp3	76fdc65e90.webp	だが 魔女は最後まで利用させてもらう。	Pero a la bruja la utilizaremos hasta el final.	But we'll use the witch for as long as we can.	False	False		shaddiq	Shaddiq
+	294,297	296	295	0:06:41.409000	0:06:46.414000	d7b056b5cb.mp3	d7b056b5cb.webp	カテドラル所属　ドミニコス隊 司令 ケナンジ・アベリーだ。	Soy el comandante de Dominicus Kenanji Avery, de Cathedral.	This is Kenanji Avery, a commander in Cathedra's Dominicus force.	False	False		kenanji	Kenanji
+	299	300	298	0:06:46.260000	0:06:49.810000	2cd32a6eb9.mp3	2cd32a6eb9.webp	学生諸君らは その場から動かないように。	Estudiantes, no se muevan del sitio, por favor.	All students, stay where you are.	False	False		kenanji	Kenanji
+	301,304,307	302,306	303,305	0:06:49.484000	0:06:57.458000	aceeb09cc3.mp3	aceeb09cc3.webp	ゴゴゴゴッ... この振動 モビルスーツか?　ピピッ ガチャン　開いた。んっ!	Este temblor... ¿Son Mobile Suits? ¿Se abrió?	These tremors... is it a mobile suit? The door opened?	False	False		elan 5,nika	Elan (Clone 5),Nika
+	309	310	311	0:07:05.099000	0:07:07.101000	a079ff9f7e.mp3	a079ff9f7e.webp	あのバカ!	Esa tonta...	That fool!	False	False		elan 5	Elan (Clone 5)
+	316	314	315	0:07:16.080000	0:07:18.279000	089234c0a0.mp3	089234c0a0.webp	ソーン!	¡Thorn!	Thorn!	False	False		norea	Norea
+	317	318	319,320	0:07:19.714000	0:07:23.217000	763c94d180.mp3	763c94d180.webp	ノレア! やめろ ノレア。	¡Norea! No lo hagas.	Norea! Don't do it, Norea!	False	False		elan 5	Elan (Clone 5)
+	321	323	322	0:07:23.217000	0:07:25.420000	a6ab9040cb.mp3	a6ab9040cb.webp	なんで また ガンダムに乗るんだ?	¿Por qué subes a un Gundam de nuevo?	Why pilot a Gundam again?	False	False		elan 5	Elan (Clone 5)
+	324	326	325	0:07:25.253000	0:07:27.430000	46dd3b1c4d.mp3	46dd3b1c4d.webp	あなたには関係ない。	Eso no te importa.	It's none of your business!	False	False		norea	Norea
+	327	329	328	0:07:27.288000	0:07:30.270000	8d2fc4bb75.mp3	8d2fc4bb75.webp	死ぬのが怖いなら 逃げろよ!	Si temes morir, ¡huye!	If you're afraid to die, then run!	False	False		elan 5	Elan (Clone 5)
+	330	332	331	0:07:30.224000	0:07:33.895000	958775b6d9.mp3	958775b6d9.webp	逃げて その次は どうするの? あっ。	¿Huyo y luego qué?	Run... and then what?	False	False		norea	Norea
+	335,336	334	333	0:07:33.630000	0:07:38.399000	4b8ca07ccf.mp3	4b8ca07ccf.webp	あなたたち スペーシアンの暴力で　みんな死んだ!	La violencia de los Spacians los mató a todos.	Because of you Spacians' brutality, everyone I knew is dead!	False	False		norea	Norea
+	339	338	337	0:07:40.250000	0:07:43.972000	f247d626be.mp3	f247d626be.webp	きっと ナジも オルコットも...	Naji... Olcott...	Not even Naji... or Olcott...	False	False		norea	Norea
+	340	342	341	0:07:43.972000	0:07:46.541000	8972b53c9a.mp3	8972b53c9a.webp	あなたにも きっと分からない。	Tú tampoco lo entenderás.	and especially not you... could ever understand...	False	False		norea	Norea
+	345	344	343	0:07:46.060000	0:07:50.912000	f37f5f01da.mp3	f37f5f01da.webp	スペーシアンより命の軽い 私たちの怒りが!	¡No sabes lo que es la ira de unas vidas que valen menos!	our anger that our lives are cheaper than Spacians'!	False	False		norea	Norea
+	350	349	348	0:08:02.270000	0:08:05.460000	f1c75f88c7.mp3	f1c75f88c7.webp	ソフィ 壊してやろう	Sophie, lo destruiré todo.	Sophie... let's demolish it.	False	False		norea	Norea
+	351	353	352	0:08:05.460000	0:08:08.840000	ebf35ed5e1.mp3	ebf35ed5e1.webp	学園ごと 何もかも!	La escuela... ¡Absolutamente todo!	The entire school... and everything else!	False	False		norea	Norea
+	357	359	358	0:08:19.540000	0:08:22.710000	9c9658e868.mp3	9c9658e868.webp	ピィーピィーピィー... 救援? 「グラスレー」か?	¿Refuerzos? ¿Son de Grassley?	Reinforcements? From Grassley?	False	False		kenanji	Kenanji
+	362	363	361	0:08:29.980000	0:08:34.122000	37db263cba.mp3	37db263cba.webp	消えろ 消えろ 消えろ... 消えろ 消えろ。	Desaparezcan. Desaparezcan. Desaparezcan.	Begone... begone... begone...	False	False		norea	Norea
+	365	366	364	0:08:34.110000	0:08:36.450000	68201abd3a.mp3	68201abd3a.webp	全部 消えろ!	¡Que desaparezca todo!	All of this... disappear!	False	False		norea	Norea
+	368	370	369	0:08:41.496000	0:08:43.498000	a46f715984.mp3	a46f715984.webp	ガンダムだと!?	¿Un Gundam?	It's a Gundam?!	False	False		kenanji	Kenanji
+	372	373	371	0:08:43.330000	0:08:46.534000	253fdd0f40.mp3	253fdd0f40.webp	ガンヴォルヴァ! ダダダダッ!	¡Gundvölva!	Gundvolvas!	False	False		norea	Norea
+	380	378,382	379,381	0:08:56.180000	0:08:59.881000	090814aab7.mp3	090814aab7.webp	なあ あれって...オープンキャンパスの...	¿Ese no es...? El de las puertas abiertas.	Hey... aren't those... The ones from the Open Campus...	False	False		lilique,ojelo	Lilique,Ojelo
+	385	383	384	0:08:59.810000	0:09:02.050000	e1da0b4a3a.mp3	e1da0b4a3a.webp	まさか ノレア?	¿Es Norea?	You don't think... it's Norea?!	False	False		aliya	Aliya
+	389	390	391	0:09:10.024000	0:09:13.200000	a6d947b7dd.mp3	a6d947b7dd.webp	うわー! あーしのデミトレ!	¡Mi Demi Trainer!	My Demi Tray!	False	False		chuchu	Chuchu
+	392	394	393	0:09:13.061000	0:09:15.500000	8ed5a5774e.mp3	8ed5a5774e.webp	地上は危ない。地下だ!	Esto es peligroso. Vayamos bajo tierra.	The surface is dangerous... Get underground!	False	False		aliya	Aliya
+	396	397	395	0:09:18.220000	0:09:20.735000	00f4769847.mp3	00f4769847.webp	バカ! 走れ!	¡Corre, idiota!	Idiot! Get moving!	False	False		petra	Petra
+	398,401	399,402	400,403	0:09:20.735000	0:09:26.607000	f376d0ce4e.mp3	f376d0ce4e.webp	ドォーン! 何してんの あんた!　死にたいの!? ご... ごめんなさい。	¿Qué haces? ¿Es que quieres morir? Lo siento.	What are you doing? Do you want to die? I-I'm sorry!	False	False		petra,suletta	Petra,Suletta
+	405	407	406	0:09:31.612000	0:09:34.082000	428dc66095.mp3	428dc66095.webp	ほんっと最悪。	Esto es lo peor.	This is the worst...	False	False		petra	Petra
+	409	410	408	0:09:34.020000	0:09:37.085000	e322443eb8.mp3	e322443eb8.webp	ラウダ先輩が デート すっぽかすから こんな目に...	Y todo porque Lauda no acudió a la cita.	It's all because Mr. Lauda stood me up on our date.	False	False		petra	Petra
+	412	413,415	411,414	0:09:37.010000	0:09:41.055000	48508d5cfd.mp3	48508d5cfd.webp	そうだよね? えっ? あっ... はい。	¿Verdad? Sí.	Am I right? R-Right!	False	False		petra,suletta	Petra,Suletta
+	417,420	418,419	416	0:09:40.970000	0:09:45.760000	9f95d272b3.mp3	9f95d272b3.webp	謝るだけじゃ許さないし。好きなとこ連れてってもらう。	No lo perdonaré aunque se disculpe. Me llevará adonde yo quiera.	An apology won't be enough. He's gonna take me wherever I ask!	False	False		petra	Petra
+	422	423	421	0:09:45.430000	0:09:48.629000	afb797bf46.mp3	afb797bf46.webp	ご飯も ランチとディナー 両方ありで。	Y podremos comer y cenar.	He owes me a lunch and a dinner!	False	False		petra	Petra
+	425,427,431	426,428	424,429,430	0:09:48.610000	0:09:55.770000	ca1403a040.mp3	ca1403a040.webp	じゃないと 死んでも死にきれないし。はぁ はぁ...あんたは? えっ?　生きてたら 何したい?	Si no, no moriría en paz. ¿Y tú? ¿Qué quieres hacer cuando sobrevivas?	I won't be able to rest in peace, otherwise. What about you? What will you do if you survive?	False	False		petra	Petra
+	434	433	432	0:09:55.640000	0:10:00.174000	6712ec1cb1.mp3	6712ec1cb1.webp	私は 絶対 もう一度 あの人に...	Yo pienso verlo de nuevo.	I definitely... want to be at his side again!	False	False		petra	Petra
+	436	438	437	0:10:04.145000	0:10:07.615000	47ef479fc7.mp3	47ef479fc7.webp	ドカーン! フロント全域に通告。	Mensaje a todo el frente.	This is a message to the entire front.	False	False		kenanji	Kenanji
+	440	441	439	0:10:07.460000	0:10:10.680000	5551958318.mp3	5551958318.webp	学園エリアに テロリストのモビルスーツ出現。	Hay un Mobile Suit terrorista en la escuela.	Terrorist mobile suits have appeared in the campus area!	False	False		kenanji	Kenanji
+	442	443	444	0:10:10.251000	0:10:12.253000	969ad58fe5.mp3	969ad58fe5.webp	応援 頼む! ピィーピィーピィー	Solicito refuerzos.	Send backup!	False	False		kenanji	Kenanji
+	449	448	447	0:10:19.830000	0:10:22.480000	1431d4e7f6.mp3	1431d4e7f6.webp	魔女狩り部隊が 今更!	¡Llegan tarde, cazadores de brujas!	You Witch Hunters are has-beens!	False	False		norea	Norea
+	452,455	454	453	0:10:26.501000	0:10:31.480000	f3e9d8ee21.mp3	f3e9d8ee21.webp	ガンダムは　もう勘弁なんだけどなぁ!	Estoy harto de los Gundams.	I've had enough of you Gundams!	False	False		kenanji	Kenanji
+	456,459	458,460	457,461	0:10:31.372000	0:10:37.345000	8800f3005b.mp3	8800f3005b.webp	バシュン! 「フォルドの夜明け」を　手引きしたのは お前か? ああ。	¿Tú guiabas a Alba de Fold? Sí.	Were you the one who guided the Dawn of Fold? Yes.	False	False		guel,shaddiq	Guel,Shaddiq
+	464	463	462,465	0:10:37.110000	0:10:40.348000	6036e339b3.mp3	6036e339b3.webp	父さんを謀ったのも。ああ。	Engañaste a mi papá. -Sí.	And the one who set my dad up? Yes.	False	False		guel/shaddiq	Guel,Shaddiq
+	467	468	466	0:10:40.200000	0:10:43	66f161efd9.mp3	66f161efd9.webp	罪を 「ジェターク社」に 押しつけたのも!	¡Y culpaste a Jeturk!	And the one who blamed it all on the Jeturk Company?!	False	False		guel	Guel
+	470	472	471	0:10:45.286000	0:10:47.288000	cebbf54dcb.mp3	cebbf54dcb.webp	そうだ。	Así es.	That's right.	False	False		shaddiq	Shaddiq
+	475	474	473	0:10:47.220000	0:10:50.424000	fbdaa71f98.mp3	fbdaa71f98.webp	お前の父が 俺たちに デリング暗殺を持ちかけ	Tu padre nos encargó asesinar a Delling	Your father approached us with a plan to assassinate Delling...	False	False		shaddiq	Shaddiq
+	477	478	476	0:10:50.290000	0:10:53.227000	42ff94d38d.mp3	42ff94d38d.webp	それを利用した。ビシュー!	y lo aproveché.	and I used it to my advantage!	False	False		shaddiq	Shaddiq
+	480	482	481	0:10:57.765000	0:11:01.335000	e0aa16fabf.mp3	e0aa16fabf.webp	内輪での派閥争い 謀略	Conspiraciones y luchas de facciones en el espacio.	Factional in-fighting and intrigues...	False	False		shaddiq	Shaddiq
+	484,487	485	483,486	0:11:01.230000	0:11:07.175000	5a8c5e7088.mp3	5a8c5e7088.webp	それしか 頭にない つくづく浅い男だったよ　あの男は。	Aquel hombre era tan superficial que solo pensaba en eso.	He was a shallow man with nothing else on his mind. A man like that...	False	False		shaddiq	Shaddiq
+	488	490	489	0:11:07.175000	0:11:10.320000	e776d34fd1.mp3	e776d34fd1.webp	父さんを愚弄するな!	¡No insultes a mi padre!	Don't you dare insult my father!	False	False		guel	Guel
+	493	492	491	0:11:12.250000	0:11:15.449000	2c1629d546.mp3	2c1629d546.webp	その父親を殺したのは	Pero quién lo mató...	But weren't you the one who killed...	False	False		shaddiq	Shaddiq
+	495	496	494	0:11:15.380000	0:11:17.418000	3684dede58.mp3	3684dede58.webp	お前だろ。	fuiste tú.	that father?	False	False		shaddiq	Shaddiq
+	497	498	499	0:11:19.020000	0:11:21.022000	de24f01b1d.mp3	de24f01b1d.webp	兄さんが	¿Guel...	My brother...	False	False		lauda	Lauda
+	500	501	502	0:11:21.022000	0:11:23.080000	48cf7bea92.mp3	48cf7bea92.webp	父さんを...	mató a papá?	killed Dad?	False	False		lauda	Lauda
+	505,507	503	504,506	0:11:25.500000	0:11:31.732000	6d07c66970.mp3	6d07c66970.webp	現在 学園フロント全域に　脅威レベル5が 発令されております。	Hay una amenaza de nivel 5 por todo el frente de la escuela.	A Level 5 alert has been issued for all sectors of the school front.	False	False		anuncio	Announcement
+	509,511	510	508,512	0:11:31.600000	0:11:36.940000	8a48dcd8f8.mp3	8a48dcd8f8.webp	生徒 および 職員の生命が　直接的な脅威にさらされており	Estudiantes y empleados están bajo amenaza.	The lives of students and staff are under direct threat, and the situation is extremely dangerous.	False	False		anuncio	Announcement
+	513	515	514	0:11:36.737000	0:11:39.140000	80d9b6fdbf.mp3	80d9b6fdbf.webp	非常に危険な状態です。	Es una situación peligrosa.	Except for security control personnel,	False	False		anuncio	Announcement
+	518	517,520	516,519	0:11:39.020000	0:11:43.878000	e1f25630d0.mp3	e1f25630d0.webp	保安管理要員以外は すぐに 緊急避難マニュアルにのっとり	Excepto el personal de seguridad, sigan el manual de emergencias	act immediately as per the emergency evacuation manual and please prioritize your own physical safety.	False	False		anuncio	Announcement
+	524	525	523	0:11:46.970000	0:11:49.483000	f51dd06dbb.mp3	f51dd06dbb.webp	カタパルト 7番ゲート 使います。	Catapulta en la puerta siete.	We're using the catapult at Gate 7!	False	False		operador dorm jeturk	Jeturk House Operator
+	527	528	526	0:11:49.450000	0:11:51.560000	25500f952e.mp3	25500f952e.webp	近くにいる生徒は離れて!	Aléjense de la zona.	Any nearby students, stay clear!	False	False		operador dorm jeturk	Jeturk House Operator
+	529,533,537,539	530,535,538,541	531,532,534,536,540,542	0:11:51.485000	0:12:03.664000	ae83a97137.mp3	ae83a97137.webp	ラウダ先輩 ペトラ　どこ行ったんだよ? フェルシー。こっちは学園仕様なんだ。出過ぎるなよ。はい! 私がやんなくちゃなんだ。	Lauda, Petra, ¿dónde están? Este es de la academia, Felsi. -Ten cuidado. -Bien. He de hacerlo yo.	Mr. Lauda... Petra... where have they gone? Felsi! That thing's configured for campus use. Don't go out too far! Right! It's up to me.	False	False		felsi,kamil,kamil/felsi	Felsi,Kamil
+	543	545	544	0:12:03.664000	0:12:06.467000	fe37d0c127.mp3	fe37d0c127.webp	フェルシー・ロロ 出ます!	Felsi Rollo, en marcha.	Felsi Rollo... moving out!	False	False		felsi	Felsi
+	550	549	548	0:12:08.740000	0:12:11.680000	914cc2a79e.mp3	914cc2a79e.webp	ノレア どうして こんな...	¿Por qué haces esto, Norea?	Norea... why would you do this?	False	False		aliya	Aliya
+	551	553	552	0:12:11.505000	0:12:13.507000	9dbf2b341d.mp3	9dbf2b341d.webp	アリヤ リリッケ!	¡Aliya! ¡Lilique!	Aliya! Lilique!	False	False		martin	Martin
+	554,557	555,559	556,558	0:12:13.507000	0:12:18.980000	23082c729f.mp3	23082c729f.webp	はぁ はぁ はぁ...マルタン。みんなは? 無事?	¡Martin! ¿Están todos bien?	Martin... Is everyone okay?!	False	False		aliya,martin	Aliya,Martin
+	560	562	561	0:12:18.946000	0:12:21.050000	e77d7f3c7c.mp3	e77d7f3c7c.webp	スレッタが まだ見つからねぇんだ。	No encontramos a Suletta.	We haven't found Suletta yet.	False	False		ojelo	Ojelo
+	563	565	564	0:12:20.948000	0:12:23.900000	12dcd821a4.mp3	12dcd821a4.webp	くそっ! デミトレがありゃ...	Maldición, si tuviera el Demi Trainer...	Damn it! If I had my Demi Tray...	False	False		chuchu	Chuchu
+	566	567	568	0:12:23.784000	0:12:25.786000	ac27666ada.mp3	ac27666ada.webp	ダメだよ 今 出たら!	¡No puedes usarlo!	It's no good! You couldn't sortie now!	False	False		lilique	Lilique
+	570	571	569	0:12:25.700000	0:12:28.122000	0d7c2dadb8.mp3	0d7c2dadb8.webp	ずっと ここで隠れてろってのかよ!	¿Quieres que me oculte?	We can't hide in here forever either!	False	False		chuchu	Chuchu
+	574	573	572	0:12:27.890000	0:12:30.960000	51189ca56f.mp3	51189ca56f.webp	チュチュに 死んでほしくないんだよ!	¡No quiero que mueras!	I don't want you to die, Chuchu!	False	False		lilique	Lilique
+	575	577	576	0:12:30.892000	0:12:35.029000	8588382d4f.mp3	8588382d4f.webp	まっ このままじゃ 全員 バッドエンド確定っしょ。	A este paso todos tendremos un final malo.	Well, at this rate, it's a bad ending for all of us.	False	False		secelia	Secelia
+	579	580,582	578,581	0:12:34.900000	0:12:38.699000	d66ce3c28f.mp3	d66ce3c28f.webp	そんな...だから	No... Por tanto...	No way... So I guess...	False	False		lilique,secelia	Lilique,Secelia
+	583	585	584	0:12:38.699000	0:12:40.920000	dc582314cb.mp3	dc582314cb.webp	うちらの貸したげる。	te presto uno.	we should loan you our machine.	False	False		secelia	Secelia
+	587	588	586	0:12:42.490000	0:12:46.307000	ac6f020b38.mp3	ac6f020b38.webp	MSJーR122 デミバーディング。	MSJ R122, Demi Barding.	MSJ-R122... Demi Barding.	False	False		haro	Rouji's Haro
+	590	591	589	0:12:46.260000	0:12:48.930000	34f9a76821.mp3	34f9a76821.webp	「ブリオン社」の新型試作機です。	El nuevo modelo de prueba de Burion.	It's Burion's new prototype.	False	False		rouji	Rouji
+	593	592	594	0:12:48.830000	0:12:51.420000	2d6b913bda.mp3	2d6b913bda.webp	テスト用に持ち込んだところ だったんですけど...	Lo trajimos para probarlo.	We brought it here for testing, but...	False	False		rouji	Rouji
+	595	597	596	0:12:51.212000	0:12:53.350000	9247c7e0fc.mp3	9247c7e0fc.webp	うちらは乗れないし	Como no podemos pilotearlo,	None of us is a pilot,	False	False		secelia	Secelia
+	598	600	599	0:12:53.214000	0:12:57.585000	cd75fc9165.mp3	cd75fc9165.webp	そっちのポンポン頭に貸した方が 生存率 上がりそうでしょ?	prestárselo a la de los pompones nos da más posibilidades de vivir.	so letting that Pom-Pom Head use it gives us some chance of survival, right?	False	False		secelia	Secelia
+	602,606,608	603,605	601,604,607	0:12:57.500000	0:13:06.327000	7da10be3f2.mp3	7da10be3f2.webp	ほら さっさと調整して。あっ 調整っつっても...チュチュのは 全部 あいつが...ピコン	Vamos, ajústenlo. -Ajustarlo... -Ella siempre trabajaba con Chuchu.	Come on. Hurry up and fine-tune it. Fine-tune? But... Chuchu's machine is always tuned by...	False	False		ojelo/nuno,secelia	Nuno,Ojelo,Secelia
+	609	611	610	0:13:06.327000	0:13:08.296000	00c49a8445.mp3	00c49a8445.webp	ニカ!?	¿Nika?	Nika?	False	False		aliya	Aliya
+	614,616	613,618	612,615,617	0:13:09.710000	0:13:17.305000	98acc52d3c.mp3	98acc52d3c.webp	いるじゃーん うってつけのヤツ。はぁ はぁ...みんな。	Tenemos a la candidata perfecta. Chicos...	And there she is! Just the person we need. Everyone...	False	False		nika,secelia	Nika,Secelia
+	619,622	620	621,623	0:13:17.305000	0:13:22.750000	f1ca5f2921.mp3	f1ca5f2921.webp	くっ! あっ...ニカ　急いで こいつを見てほしい。えっ?	Nika, revísalo, deprisa.	Nika, you have to calibrate this right away. What?	False	False		martin	Martin,Nika
+	624	626	625	0:13:22.677000	0:13:26.847000	224555c6ee.mp3	224555c6ee.webp	僕は もう一度 君と話がしたいんだ。	Quiero hablar de nuevo contigo.	Can we talk to each other one more time?	False	False		martin	Martin
+	627	629	628	0:13:26.847000	0:13:29.050000	81333850ab.mp3	81333850ab.webp	うん。	Bien.	Right.	False	False		nika	Nika
+	630	632	631,633	0:13:29.016000	0:13:33.487000	94f8b8cc78.mp3	94f8b8cc78.webp	オーライ! オーライ! オーライ!	Vía libre.	Come on, come on! Come on!	False	False		ojelo	Ojelo
+	634	635	636	0:13:33.487000	0:13:35.489000	d77239dc56.mp3	d77239dc56.webp	出力は違うけど	La potencia es distinta,	The power output is different,	False	False		nika	Nika
+	639	637	638	0:13:35.420000	0:13:38.090000	b0d2526b09.mp3	b0d2526b09.webp	いつもと同じフィーリングで 動かせるはずだよ。	pero deberías poder moverlo como siempre.	but the controls should feel the same as always.	False	False		nika	Nika
+	640	641,643	642	0:13:39.327000	0:13:42.964000	2e16ad4e33.mp3	2e16ad4e33.webp	ごめん チュチュ。全部 私のせい。	Lo siento, Chuchu. Es todo culpa mía.	I'm sorry, Chuchu... this is all my fault.	False	False		nika	Nika
+	646	645	644	0:13:42.670000	0:13:46.500000	013c28ece2.mp3	013c28ece2.webp	チュチュが 戦わなきゃいけないのも...	Te obligué a luchar.	That you have to go and fight too...	False	False		nika	Nika
+	649	648	647	0:13:46.330000	0:13:48.469000	f46d1762d5.mp3	f46d1762d5.webp	許すわけねぇだろ。	No te perdono.	How can I forgive you?	False	False		chuchu	Chuchu
+	651	652	650	0:13:50.050000	0:13:52.239000	c22453783c.mp3	c22453783c.webp	全部 ちゃんと聞かせろよ。	Has de contármelo todo.	Tell me everything from A to Z.	False	False		chuchu	Chuchu
+	653	655	654	0:13:52.239000	0:13:56.410000	36c2e53e6b.mp3	36c2e53e6b.webp	じゃなきゃ 許すも何も ねぇだろうが。	Si no, ¿cómo podría perdonarte?	Otherwise, there's nothing to forgive.	False	False		chuchu	Chuchu
+	657	658	656	0:13:56.340000	0:13:58.379000	7e1727e532.mp3	7e1727e532.webp	うん。	Sí.	Yeah...	False	False		nika	Nika
+	659,663	661	660,662	0:14:01.349000	0:14:05.820000	3d721fc067.mp3	3d721fc067.webp	や... やばい このままじゃ...バシュー!	Oh, no, a este paso...	Th-This is bad... At this rate...	False	False		felsi	Felsi
+	667	666,669	665,668	0:14:12.490000	0:14:16.470000	26dbc38d71.mp3	26dbc38d71.webp	おい スペーシアン。お... お前 ポンポン頭!?	Eh, Spacian. ¿La de los pompones?	Hey, Spacian! Y-You! Is that Pom-Pom Head?	False	False		chuchu,felsi	Chuchu,Felsi
+	670	672	671	0:14:16.364000	0:14:18.800000	ba9316d4b9.mp3	ba9316d4b9.webp	手伝え。こいつら ぶっ潰すぞ。	Ayúdame. Los aplastaremos.	Help me out. We're gonna smash them all!	False	False		chuchu	Chuchu
+	673	674	675	0:14:18.699000	0:14:22.310000	067e19407e.mp3	067e19407e.webp	あっ...アーシアンが仕切んじゃねぇ!	¡No me des órdenes, Earthian!	I ain't taking orders from an Earthian!	False	False		felsi	Felsi
+	678	677	679	0:14:26.010000	0:14:29.110000	e12bce1bd7.mp3	e12bce1bd7.webp	学生風情が! うわっ!	Son meros estudiantes.	You pathetic students!	False	False		piloto dominicus C	Dominicus Pilot C
+	680	682	681	0:14:29.110000	0:14:31.645000	c44d10d24f.mp3	c44d10d24f.webp	サビーナ 行って!	¡Ve, Sabina!	Sabina! Go!	False	False		maisie	Maisie
+	683	685	684	0:14:31.645000	0:14:33.814000	62948bf265.mp3	62948bf265.webp	シャディクを助けて!	¡Ayuda a Shaddiq!	Help Shaddiq!	False	False		ireesha	Ireesha
+	686,691	687,690	688,689	0:14:33.814000	0:14:38.452000	61a7dd688a.mp3	61a7dd688a.webp	おいしいところは譲ったげる。すまない。	Te cedo la mejor parte. Gracias.	We've saved the best part for you! Thanks.	False	False		renee,sabina	Renee,Sabina
+	693,696	695	694	0:14:51.298000	0:14:55.770000	0e1f9300c8.mp3	0e1f9300c8.webp	お前が うまく立ち回れば　父親は死ななかった。くっ!	Si hubieras actuado mejor, tu padre seguiría vivo.	If you'd acted more wisely, your father wouldn't have died.	False	False		shaddiq	Shaddiq
+	698	699	697	0:14:55.700000	0:14:57.938000	c2c9866e70.mp3	c2c9866e70.webp	お前が戻らなければ	Si no hubieras regresado,	If you'd never come back...	False	False		shaddiq	Shaddiq
+	702	701	700	0:14:57.660000	0:15:00.640000	8e9615f8f8.mp3	8e9615f8f8.webp	グループを穏やかに解体できた。	habría deshecho el grupo pacíficamente.	I could have dissolved the Group peacefully!	False	False		shaddiq	Shaddiq
+	704,707	703	705,706	0:15:03.380000	0:15:08.783000	4a93610b99.mp3	4a93610b99.webp	お前が付いていながら　ミオリネは 手を汚すことになった!	Miorine tuvo que ensuciarse las manos pese a tenerte a ti.	Despite your being with her... you let Miorine's hands get dirty!	False	False		shaddiq	Shaddiq
+	708	710	709	0:15:08.783000	0:15:11.819000	d385453279.mp3	d385453279.webp	テロに加担した逆賊が何を!	¡Tú ayudaste a unos terroristas!	To hell with a traitor who collaborated with terrorists!	False	False		guel	Guel
+	712	713	711	0:15:11.680000	0:15:14.588000	9996be73a7.mp3	9996be73a7.webp	その俺を生んだのは誰だ?	¿Y quién me hizo así?	And who turned me into that?	False	False		shaddiq	Shaddiq
+	715	716	714	0:15:14.420000	0:15:17.391000	63cb1c7413.mp3	63cb1c7413.webp	戦争シェアリングで 全てを奪い	Ustedes nos lo quitaron todo	The ones who stole everything through war partitioning...	False	False		shaddiq	Shaddiq
+	718,720	719	717,721	0:15:17.350000	0:15:22.396000	bec65e6fd2.mp3	bec65e6fd2.webp	他者を蹴落とす生き方を 強いてきたのは　お前たちだ!	y nos forzaron a vivir pisoteando a otros con las guerras colaborativas.	Who forced us to survive at the expense of others... It was all of you!	False	False		shaddiq	Shaddiq
+	723	722	724	0:15:22.360000	0:15:26.801000	08d0abc124.mp3	08d0abc124.webp	力がなければ 理不尽な平和は崩せない。	Sin poder no se puede desarmar esta paz inadmisible	Without power, there's no way to break this unjust peace.	False	False		shaddiq	Shaddiq
+	726	727	725	0:15:26.730000	0:15:28.836000	cb426588bc.mp3	cb426588bc.webp	あらがうことすらも。	ni resistirse.	No way to even resist it....	False	False		shaddiq	Shaddiq
+	728,731	730	729	0:15:28.836000	0:15:33.410000	7e75d56500.mp3	7e75d56500.webp	だから 今度は お前たち　スペーシアンから力を奪う!	Por eso ahora les robaré el poder a los Spacians.	That's why this time, I'll take the power from you Spacians myself!	False	False		shaddiq	Shaddiq
+	735	734	733	0:15:34.990000	0:15:38.279000	3921fb38ef.mp3	3921fb38ef.webp	俺は 俺の罪を肯定する!	Yo afirmo mis crímenes.	I... am ready to accept my own sins!	False	False		shaddiq	Shaddiq
+	739	738	737	0:15:44.410000	0:15:47.087000	c7153e4c47.mp3	c7153e4c47.webp	サリウス代表を船に乗せた。	Sarius está en la nave.	I've got President Sarius aboard the ship.	False	False		henao	Henao
+	742	741	740	0:15:46.960000	0:15:49.670000	7e31e72406.mp3	7e31e72406.webp	あと5分 時間を稼いでくれれば	Si ganan cinco minutos más,	If you can buy 5 more minutes...	False	False		henao	Henao
+	744	743	745	0:15:49.390000	0:15:52.650000	020887a308.mp3	020887a308.webp	議会連合との合流ポイントに 向かえる。	iremos al punto de reunión con la Unión.	we can leave for our rendezvous point with the Assembly League.	False	False		henao	Henao
+	746	747	748	0:15:52.560000	0:15:54.562000	402cb6ed29.mp3	402cb6ed29.webp	そうか。	Bien.	I see.	False	False		shaddiq	Shaddiq
+	750	751	752	0:15:57.965000	0:15:59.967000	1a7c5ff40f.mp3	1a7c5ff40f.webp	知っているさ。	Lo sé.	I know what you mean...	False	False		guel	Guel
+	755	754	753	0:15:59.760000	0:16:03.960000	d6b6916494.mp3	d6b6916494.webp	俺も お前も 自分の罪は 自分のものだ。	Tus crímenes son tuyos y los míos, míos.	You and I... each have to bear our own sins by ourselves.	False	False		guel	Guel
+	757	756	758,759	0:16:03.860000	0:16:07.875000	8b88325ebd.mp3	8b88325ebd.webp	それでも けじめはつけさせる。シャディク!	Pero ¡pagarás por ellos, Shaddiq!	But even so... you'll pay for yours here! Shaddiq!	False	False		guel	Guel
+	761,765	762,763	760,764	0:16:07.770000	0:16:14.300000	b9831f450e.mp3	b9831f450e.webp	真っ向勝負か。そういうところ　昔から嫌いだった!	¿Un combate directo? Siempre odié que seas así.	Charging straight in... That's the very thing I've always hated about you!	False	False		shaddiq	Shaddiq
+	767	769	768	0:16:19.253000	0:16:21.288000	81ce4bfc13.mp3	81ce4bfc13.webp	サビーナ!	¡Sabina!	Sabina!	False	False		shaddiq	Shaddiq
+	771	773	772	0:16:24.825000	0:16:28.262000	1f5f95989f.mp3	1f5f95989f.webp	グエル・ジェターク お前には分からない。	Guel Jeturk, tú no lo entiendes.	Guel Jeturk, you'll never understand.	False	False		sabina	Sabina
+	775	776	774	0:16:28.250000	0:16:31.732000	452c75b88d.mp3	452c75b88d.webp	望まずとも与えられる お前には!	¡A ti te lo dan todo aunque no lo quieras!	You grew up with a silver spoon in your mouth!	False	False		sabina	Sabina
+	779	778	780	0:16:36.060000	0:16:38.639000	030e59a008.mp3	030e59a008.webp	何も分かっていないんだな。	No entienden nada.	You're the one who doesn't understand.	False	False		guel	Guel
+	782	783	781	0:16:38.470000	0:16:42.042000	285dfb128b.mp3	285dfb128b.webp	グエル! バシュー!	¡Guel!	Guel!	False	False		shaddiq	Shaddiq
+	784	786	785,787	0:16:42.042000	0:16:45.900000	d09210c9f2.mp3	d09210c9f2.webp	奪うだけじゃ 手に入らない!	Si solo robas, no consigues nada.	If all you do is take... you'll never gain a thing!	False	False		guel	Guel
+	790	792	791	0:16:51.185000	0:16:53.754000	61f42ddd41.mp3	61f42ddd41.webp	シャディク!	¡Shaddiq!	Shaddiq!	False	False		sabina	Sabina
+	794	796	795	0:17:08.335000	0:17:10.590000	676f71717f.mp3	676f71717f.webp	俺は お前を許さない。	No te perdonaré jamás.	I'll never forgive you.	False	False		guel	Guel
+	797	799	798	0:17:10.404000	0:17:13.920000	d22ab00cd7.mp3	d22ab00cd7.webp	だが 死ぬことも認めん。	Pero tampoco permitiré que mueras.	But I'm not about to let you die, either.	False	False		guel	Guel
+	801,803	802,804	800	0:17:15.670000	0:17:22.416000	355890657f.mp3	355890657f.webp	「ベネリット」グループは 秩序維持のため　学園の同胞を犠牲にした。ん?	Benerit Group sacrificó a compañeros de la escuela solo para mantener el orden.	To maintain order, the Benerit Group sacrificed fellow Spacians at the school.	False	False		shaddiq	Shaddiq
+	807	806	805	0:17:22.220000	0:17:26.160000	a87be1999c.mp3	a87be1999c.webp	アーシアンの犠牲だけでは 動かなかった議会連合も	Las víctimas terrestres no movilizaron a la Unión del Congreso,	The Assembly League wouldn't act just because of Earthian losses...	False	False		shaddiq	Shaddiq
+	808	810	809	0:17:26.020000	0:17:28.722000	fbceab4378.mp3	fbceab4378.webp	これで 重い腰を上げるだろう。	pero ahora moverán el trasero.	but they'll finally get off their butts now.	False	False		shaddiq	Shaddiq
+	812	813	814	0:17:33.794000	0:17:36.330000	20c12c7c72.mp3	20c12c7c72.webp	愚かな息子よ。	Eres un necio, hijo.	Oh, my foolish son...	False	False		sarius	Sarius
+	815,818	817	816,819	0:17:45.272000	0:17:52.310000	fde2bb1435.mp3	fde2bb1435.webp	ぐっ! ううっ...全部 壊してやる。お前たちの持っているもの 全部!	Destruiré todo lo que tienen. ¡Todo!	I'll destroy it all! Every last thing you call yours!	False	False		norea	Norea
+	823	824	825	0:17:59.486000	0:18:02.122000	5cf79eac4e.mp3	5cf79eac4e.webp	ノレア!	¡Norea!	Norea!	False	False		elan 5	Elan (Clone 5)
+	826	827	828	0:18:02.122000	0:18:05.740000	77d74fa058.mp3	77d74fa058.webp	もういいだろ。これ以上 死に急ぐな。	Surficiente. No corras hacia tu muerte.	That's enough. Don't be in a rush to die!	False	False		elan 5	Elan (Clone 5)
+	830	832	831	0:18:08.696000	0:18:12.499000	fd008636ee.mp3	fd008636ee.webp	じゃあ 逃げるだけのあなたは?	¿Y tú, que solo huyes, qué?	And what do you get with all your running?	False	False		norea	Norea
+	835	834	833	0:18:12.480000	0:18:15.800000	99b221cf2b.mp3	99b221cf2b.webp	ただ 息を潜めて 目をそらして	Te esconderás y mirarás a otro lado.	You only hold your breath and avert your eyes!	False	False		norea	Norea
+	836	837	838	0:18:15.603000	0:18:17.871000	ac1775f953.mp3	ac1775f953.webp	そんなの 死んでるのと同じ!	¡Eso es como estar muerto!	That's no different from being dead!	False	False		norea	Norea
+	840	841	839	0:18:17.820000	0:18:21.041000	1f6427e182.mp3	1f6427e182.webp	ソフィは生きてた! あなたとは違う!	¡Sophie estaba viva! ¡No era como tú!	Sophie was alive! You're nothing like her!	False	False		norea	Norea
+	843	842,845	844	0:18:22.500000	0:18:25.512000	5586d7f5dd.mp3	5586d7f5dd.webp	当たり前だ。君も ソフィじゃない!	Obviamente. Tú tampoco eres Sophie.	Obviously. But you're not Sophie either!	False	False		elan 5	Elan (Clone 5)
+	846	847	848,849	0:18:26.981000	0:18:30.818000	70e6c4773d.mp3	70e6c4773d.webp	スケッチにあった風景画 あれが君だろ。	Tú eres los paisajes de tus bocetos.	Those drawings in your sketchbook... That's the real you!	False	False		elan 5	Elan (Clone 5)
+	851,855,858	852,853,857	850,854,856,859	0:18:30.790000	0:18:38.592000	b87bf1567f.mp3	b87bf1567f.webp	不安で 死ぬことにおびえて 殴り描くことでしか　逃げられなくて! お前に何が...僕と来い! んっ...	Te asusta y te preocupa morir. Solo puedes evadirte dibujando. -¿Qué sabrás...? -¡Ven conmigo!	Anxious... terrified of death... Scribbling was your only escape! How would you know- Come with me!	False	False		elan 5,norea/elan 5	Elan (Clone 5),Norea
+	860,863	862,865	861,864	0:18:40.060000	0:18:46.080000	661370584d.mp3	661370584d.webp	生き方が分からないなら　一緒に探してやる。怖いなら 隣にいてやる。	Si no sabes cómo vivir, lo buscaremos juntos. Si tienes miedo, estaré a tu lado.	If you don't know how to live, I'll search for that with you. If you're scared, I'll be at your side!	False	False		elan 5	Elan (Clone 5)
+	866	868	867	0:18:46.066000	0:18:50.070000	b6921977ad.mp3	b6921977ad.webp	逃げるのが嫌なら 僕を あの絵の場所に連れていけ。	Si no quieres huir, llévame al lugar de los dibujos.	If you don't want to run, take me to the places in your drawings!	False	False		elan 5	Elan (Clone 5)
+	869	870	871	0:18:50.070000	0:18:52.640000	7434583756.mp3	7434583756.webp	その先のことなんて あとでいい!	No importa qué suceda luego.	The rest can come later!	False	False		elan 5	Elan (Clone 5)
+	872	873	874	0:18:54.208000	0:18:56.243000	6606f66e90.mp3	6606f66e90.webp	生きていいんだって...	Mereces vivir.	We're allowed to live...	False	False		elan 5	Elan (Clone 5)
+	876	877	878	0:19:03.150000	0:19:05.470000	c5cd1cba90.mp3	c5cd1cba90.webp	証明させろよ!	¡Deja que te lo muestre!	Let me prove it!	False	False		elan 5	Elan (Clone 5)
+	882	880,884	881,883	0:19:11.460000	0:19:14.650000	44fadb0b92.mp3	44fadb0b92.webp	止まった。仲間割れか?	¿Se detuvo? ¿Están discutiendo?	They stopped? Have they turned on each other?	False	False		chuchu,kenanji	Chuchu,Kenanji
+	888	886	887	0:19:17.890000	0:19:22.870000	d1761c6b7d.mp3	d1761c6b7d.webp	一緒に... はぁ はぁ はぁ...	Que si...	With you...	False	False		norea	Norea
+	889	890	891	0:19:22.870000	0:19:25.773000	8ebb24690b.mp3	8ebb24690b.webp	来いだの 連れてけだの	"ven conmigo", que si "llévame"...	You say, "come with me..." then "take me there..."	False	False		norea	Norea
+	892	893	894,895	0:19:25.773000	0:19:28.108000	5d790195d0.mp3	5d790195d0.webp	バカなの? あなた。ノレア!	¿Eres estúpido? -¡Norea!	Are you stupid or something? Norea!	False	False		norea/elan 5	Elan (Clone 5),Norea
+	896	898	897	0:19:28.108000	0:19:30.978000	2443392864.mp3	2443392864.webp	はぁ... あとで教えて。あっ。	Luego me dices	Tell me later...	False	False		norea	Norea
+	899	901	900,902	0:19:33.147000	0:19:36.280000	bbb55c6e12.mp3	bbb55c6e12.webp	あなたの本当の名前...	cuál es tu verdadero nom...	your... real name-	False	False		norea	Norea
+	908	910	909,911	0:20:02.176000	0:20:05.780000	e5ae05a49f.mp3	e5ae05a49f.webp	このー! 邪魔だ!	¡Hazte a un lado!	Damn it... Get out of my way!	False	False		kenanji	Kenanji
+	912	914	913	0:20:11.085000	0:20:13.454000	c466480f9f.mp3	c466480f9f.webp	ててっ...ん?	Ay...	Ow, that hurt...	False	False		suletta	Suletta
+	915,918	916	917	0:20:13.454000	0:20:18.125000	0e7f1d7f9b.mp3	0e7f1d7f9b.webp	ペトラさん? ペトラさん!　ペ...	¿Petra? Pe...	Ms. Petra? Ms. Petra!	False	False		suletta	Suletta
+	922	923	924	0:21:19.086000	0:21:21.855000	960d349f11.mp3	960d349f11.webp	夢じゃねぇんだよな?	No es un sueño, ¿verdad?	This isn't a dream, is it?	False	False		ojelo	Ojelo
+	927	926	925	0:21:21.770000	0:21:24.558000	169ea27dd0.mp3	169ea27dd0.webp	現実だよ 全部。	Es todo real.	It's real. All of it.	False	False		till	Till
+	928,931	929	930	0:21:24.558000	0:21:30.063000	6fa39d7f39.mp3	6fa39d7f39.webp	メェー ティコ?　♬ー	¿Tico?	Tiko?	False	False		aliya	Aliya
+	932	933	934	0:21:30.063000	0:21:32.232000	5fe59e7782.mp3	5fe59e7782.webp	スレッタ先輩!	¡Suletta!	Ms. Suletta!	False	False		lilique	Lilique
+	936	935	937	0:21:32.100000	0:21:34.860000	e59ebd1cc0.mp3	e59ebd1cc0.webp	よかった。無事だったんだな。	Qué bien que estés bien.	Thank goodness. You're alright!	False	False		aliya	Aliya
+	938	939	940,941	0:21:36.370000	0:21:39.273000	b6c89923e1.mp3	b6c89923e1.webp	スレッタ あの...すみません	Suletta... -Perdón...	Suletta, I- I'm sorry...	False	False		nika/suletta	Nika,Suletta
+	942	943	944	0:21:39.273000	0:21:41.708000	ef3decaf4e.mp3	ef3decaf4e.webp	手伝ってもらっていいですか?	¿Pueden ayudarme?	Can you help?	False	False		suletta	Suletta
+	945	946	947	0:21:41.708000	0:21:46.046000	400a971452.mp3	400a971452.webp	えっ? 中に取り残された人がいます。	Aún hay gente atrapada.	There are people stuck inside.	False	False		suletta	Suletta
+	949	950	948	0:21:45.920000	0:21:49.049000	4595c9138b.mp3	4595c9138b.webp	きっと まだ たくさん。	De seguro quedan muchos.	Still... so many...	False	False		suletta	Suletta
+	953	952	954	0:21:52.040000	0:21:56.020000	f41371d5bc.mp3	f41371d5bc.webp	でも まだ 助かる人いるかもしれませんから。	Pero puede que algunos se salven.	But there may be some who can still be saved.	False	False		suletta	Suletta
+	955	956	957	0:21:58.525000	0:22:00.527000	e1f4863f1d.mp3	e1f4863f1d.webp	やろう みんな!	Vamos, chicos.	Let's do it, everyone!	False	False		martin	Martin
+	960	959	958	0:22:00.210000	0:22:03.320000	de4aaff0d3.mp3	de4aaff0d3.webp	動けるモビルクラフト 見つけてくる。	Iré por un Mobile Craft que funcione.	I'll go find a working mobile craft.	False	False		till	Till
+	961	963	962	0:22:03.297000	0:22:05.699000	42f1a2cdad.mp3	42f1a2cdad.webp	医療品も必要ですよね。	Necesitaremos equipo médico.	We'll need first aid too, right?	False	False		lilique	Lilique
+	965	966	964	0:22:05.650000	0:22:07.768000	bdcc575d04.mp3	bdcc575d04.webp	手分けして助けようぜ。	Dividámonos para ayudarlos.	We'll split up and save them!	False	False		ojelo	Ojelo
+	968	969	967	0:22:07.720000	0:22:09.736000	98b54a1409.mp3	98b54a1409.webp	うん。はい。	Sí.	Right!	False	False		todos	Everyone
+	992	994	993,995	0:23:44.398000	0:23:46.670000	a5e7e9769d.mp3	a5e7e9769d.webp	次回...	Próximamente: "Lo que podemos hacer".	Next time, "What We Can Do Now."	False	False			Chuchu

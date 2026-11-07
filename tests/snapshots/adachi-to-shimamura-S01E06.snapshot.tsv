@@ -1,280 +1,282 @@
 ID	SUBS_JP_IDS	SUBS_ES_IDS	SUBS_EN_IDS	START_TIME	END_TIME	NAME_AUDIO	NAME_SCREENSHOT	CONTENT	CONTENT_TRANSLATION_SPANISH	CONTENT_TRANSLATION_ENGLISH	CONTENT_SPANISH_MT	CONTENT_ENGLISH_MT	ACTOR_JA	ACTOR_ES	ACTOR_EN
-	2	0	1	0:00:03.639000	0:00:07.840000	d8ba37fd6c.mp3	d8ba37fd6c.webp	クリスマスだからと劇的なことは起こらない	Que sea Navidad no garantiza que vaya a ocurrir nada dramático.	Nothing dramatic is guaranteed to happen just because it's Christmas.	False	False			
+	2	0	1	0:00:03.640000	0:00:07.840000	d8ba37fd6c.mp3	d8ba37fd6c.webp	クリスマスだからと劇的なことは起こらない	Que sea Navidad no garantiza que vaya a ocurrir nada dramático.	Nothing dramatic is guaranteed to happen just because it's Christmas.	False	False			
 	5	4	3	0:00:07.840000	0:00:11.800000	98844ec85a.mp3	98844ec85a.webp	きっと 今日という日はいい思い出にならない	El de hoy no va a ser un gran recuerdo.	Today's not going to be a great memory or anything.	False	False			
 	8	7	6	0:00:14.970000	0:00:17.680000	e3817cfdce.mp3	e3817cfdce.webp	クリスマスとは何か	¿Qué es exactamente la Navidad?	What exactly is Christmas?	False	False			
 	11	10	9	0:00:19.760000	0:00:23.020000	3dec28cb0f.mp3	3dec28cb0f.webp	クリスマスとはいかなるものか	¿Cómo de grande es el fenómeno de la Navidad?	Just how grand is this phenomenon known as Christmas?	False	False			
 	14	13	12	0:00:25.100000	0:00:28.310000	dd2db7641d.mp3	dd2db7641d.webp	クリスマスに 正解はあるのか	¿Hay alguna manera correcta de celebrarla?	Is there a right way to celebrate Christmas?	False	False			
 	17	16	15	0:00:30.320000	0:00:35.200000	a35148fc43.mp3	a35148fc43.webp	クリスマスに基づく幸運とはどんな形か	¿Cuál es la suerte que supuestamente trae la Navidad?	What is this luck that supposedly comes with Christmas?	False	False			
 	20	19	18	0:00:35.200000	0:00:39.740000	8bac2bb0af.mp3	8bac2bb0af.webp	クリスマスに生まれるものは輝きを持つのか	¿Lo que nace en Navidad brilla más o qué?	Does something that's born on Christmas shine bright?	False	False			
-	25,26	22	24	0:00:39.720000	0:00:44.600000	a4a13cad68.mp3	a4a13cad68.webp	クリスマスとは 一体　何をすればいいのだろうか	¿Qué se supone que se debe hacer en Navidad?	What exactly are you supposed to do on Christmas?	False	False			
-	29	28	27	0:00:45.620000	0:00:47	af09749f4e.mp3	af09749f4e.webp	ほら!	¡Oye!	Hey, now!	False	False			
-	32,33,36	31,35	30,34	0:00:47	0:00:53.510000	e2783f5e8b.mp3	e2783f5e8b.webp	ボッとすんな!　あ... すいません　あの 店長	Deja de distraerte. Lo siento. Oiga, jefe.	Quit spacing out! Oh, sorry. U-Um, Manager?	False	False			
-	39	38	37	0:00:53.470000	0:00:54.720000	b6f8256d6e.mp3	b6f8256d6e.webp	何だ?	¿Qué pasa?	What is it?	False	False			
-	42	41	40	0:00:54.720000	0:01:00.970000	75d838ea8e.mp3	75d838ea8e.webp	クリスマス... 25日は休ませてもらっていいですか?	En Navidad, ¿puedo...? ¿Puedo cogerme libre el día 25?	May I take Christmas... May I take the 25th off?	False	False			
-	45	44	43	0:01:00.970000	0:01:02.350000	5c163b27c4.mp3	5c163b27c4.webp	デート?	¿Tienes una cita?	You got a date?	False	False			
-	48	47,50	46,49	0:01:02.350000	0:01:08.610000	9ade6907d5.mp3	9ade6907d5.webp	そ... そういう言い方じゃ ないですけど...	Yo no... lo llamaría así...	I-I wouldn't exactly... ...call it that...	False	False			
-	63	61	62	0:02:41.010000	0:02:43.560000	1d369340d2.mp3	1d369340d2.webp	そもそもデートというのは	Para empezar, ¿en una cita	First off, is a date where you do	False	False			
-	66	65	64	0:02:43.370000	0:02:49.960000	d5d5a93bae.mp3	d5d5a93bae.webp	気になる相手と仲良くなるため楽しい時間を一緒に過ごすことなのかな?	vas a divertirte con alguien que te interesa para acercarte a ella?	something fun with someone you're interested in to get closer to them?	False	False			
-	69	68	67	0:02:49.960000	0:02:55.050000	f7db96af3b.mp3	f7db96af3b.webp	だとするとデートというのもあながち間違いではないような気がする	En ese caso, podría decirse que es una cita.	And in that case, I guess you could sort of call this a date.	False	False			
-	72,73	71	70	0:02:55.050000	0:02:59.170000	820475a7d7.mp3	820475a7d7.webp	しまむらとデート　クリスマスに 何をすれば...	Mi cita con Shimamura... ¿Qué vamos a hacer en Navidad?	My date with Shimamura... What should we do on Christmas?	False	False			
-	76	74	75	0:03:01.030000	0:03:04.350000	dc013cc57d.mp3	dc013cc57d.webp	チキン ケーキ ツリー	Pollo, tarta, un árbol,	Chicken, a cake, a tree,	False	False			
-	79	78	77	0:03:04.350000	0:03:06.850000	4d0c09f5ca.mp3	4d0c09f5ca.webp	プレゼント	un regalo...	a present...	False	False			
-	83	81	82	0:03:09.830000	0:03:12.730000	c44688cf84.mp3	c44688cf84.webp	しまむらへのプレゼント	Tengo que regalarle algo.	A present for Shimamura.	False	False			
-	86	85	84	0:03:14.110000	0:03:17.030000	82853b5f91.mp3	82853b5f91.webp	プレゼント プレゼント	Un regalo, un regalo...	A present, a present...	False	False			
-	89	87	88	0:03:17	0:03:19.350000	552be07e4e.mp3	552be07e4e.webp	しまむらに クリスマスの...	Un regalo de Navidad para Shimamura...	A Christmas present for Shimamura-	False	False			
-	92,93	91	90	0:03:19.150000	0:03:24.570000	d6337337c0.mp3	d6337337c0.webp	おっす! あだちっち何ボーッとしてんの?　立ちくらみ?	¡Hola, Adachicchi! ¿Qué haces en Babia? ¿Te encuentras mal?	Heya, Adachicchi! What're you spaced out for? You feeling faint?	False	False			
-	96	95	94	0:03:24.570000	0:03:26.740000	42d4990fd6.mp3	42d4990fd6.webp	そういうのじゃないけど	No es eso.	It's not that.	False	False			
-	99	98	97	0:03:26.740000	0:03:29.050000	cb421716c1.mp3	cb421716c1.webp	あー しまむら待ちか	Debes de estar esperando a Shimamura.	Oh, you must be waiting for Shimamura.	False	False			
-	102	101	100	0:03:28.910000	0:03:31.040000	6a3b3be3d9.mp3	6a3b3be3d9.webp	いや 別に	En realidad no...	No, not really...	False	False			
-	105	104	103	0:03:31.040000	0:03:33.850000	4b88ee3b71.mp3	4b88ee3b71.webp	そっちこそ1人なの珍しいね	Es muy raro verte sola.	Hey, it's rare to see you alone.	False	False			
-	109,110	108	107	0:03:35.040000	0:03:40.920000	c1efcccc53.mp3	c1efcccc53.webp	ホントだ いない　あいつが 私を見失うなんて	Vaya, no está aquí. ¿Cómo me habrá perdido de vista?	Oh, yeah. She's not here. How did she lose me?	False	False			
-	113	112	111	0:03:40.920000	0:03:43.510000	4a76a5689a.mp3	4a76a5689a.webp	永藤 待たなくてよかったの?	¿No vas a esperar a Nagafuji?	Don't you need to wait for Nagafuji?	False	False			
-	116,117	115	114	0:03:43.510000	0:03:48.640000	7f070c2bfc.mp3	7f070c2bfc.webp	あだっちーをメーシーに誘うチャンスなんて　なかなか ないからさ	Rara vez puedo almorzar contigo a solas.	I don't usually get the chance to ask you out to lunch.	False	False			
-	120	119	118	0:03:48.640000	0:03:50.930000	a02c442bbf.mp3	a02c442bbf.webp	いただきます	Que aproveche.	Thanks for the grub!	False	False			
-	123	122	121	0:03:50.930000	0:03:52.730000	5f444d3c48.mp3	5f444d3c48.webp	いただきます	Que aproveche.	Let's eat.	False	False			
-	126	125	124	0:03:58.780000	0:03:59.920000	029b40dccd.mp3	029b40dccd.webp	あのさ	Oye.	Say.	False	False			
-	130	129	128	0:04:01.150000	0:04:04.660000	2915d07a9d.mp3	2915d07a9d.webp	しまむらって何が好きか知ってる?	¿Por casualidad no sabrás qué le gusta a Shimamura?	Do you know what Shimamura likes?	False	False			
-	133	132	131	0:04:04.660000	0:04:08.200000	468a56ab52.mp3	468a56ab52.webp	あいつの好きなもの...って あんの?	¿Hay algo que le guste?	Does she have anything she actually likes?	False	False			
-	134	136	135	0:04:09.120000	0:04:12.460000	b2156a3ca4.mp3	b2156a3ca4.webp	そういうの話す性格じゃないんだよね	No suele hablar de esas cosas.	She's not the type of person that actually talks about stuff like that.	False	False			
-	137	139,141	138,140	0:04:12.440000	0:04:17.460000	242a97c183.mp3	242a97c183.webp	知ってる しまむらと買い物とか行ったことない?	Ya... ¿Has ido alguna vez de compras con Shimamura?	I know... Have you been shopping with Shimamura before?	False	False			
-	144	143	142	0:04:17.460000	0:04:20.630000	e66f3271d5.mp3	e66f3271d5.webp	何回か行ったけど 本屋とか	Sí, pero solo hemos ido a la librería.	I have, but it's usually like a bookstore.	False	False			
-	147	146	145	0:04:20.630000	0:04:24.070000	3ba649756e.mp3	3ba649756e.webp	あとは お茶屋をのぞいたことあったかな	Ah, también nos pasamos por una tienda de té.	Oh, and we've peeked in a tea shop before.	False	False			
-	150	148	149	0:04:23.760000	0:04:24.890000	6c7627644a.mp3	6c7627644a.webp	お茶?	¿De té?	Tea shop?	False	False			
-	153,154	152	151	0:04:24.880000	0:04:29.890000	cc2705364e.mp3	cc2705364e.webp	まあ 私の関係でね　しまむらはついでに のぞいただけ	Fuimos por mí, pero Shimamura también echó un vistazo en la tienda.	Well, we went because of me, but Shimamura did have a look, too.	False	False			
-	157	156	155	0:04:29.890000	0:04:35.440000	e3c86a3f14.mp3	e3c86a3f14.webp	あっ そのときにお茶の葉で いい香りって気に入っていたやつがあったかも	Ah, sí, creo que le atrajo el olor de uno de los tés,	Oh, yeah. I think there was a certain tea that she said smelled good.	False	False			
-	160	159	158	0:04:35.440000	0:04:38.190000	bb70efcc0e.mp3	bb70efcc0e.webp	紅茶だったか お茶だったか...	pero no recuerdo si era negro o verde.	But I don't remember if it was black tea or green...	False	False			
-	163	162	161	0:04:38.190000	0:04:41.150000	055d0e355e.mp3	055d0e355e.webp	へえ お茶かあ	Ya veo. Té...	I see. So tea...	False	False			
-	166	165	164	0:04:41.150000	0:04:44.400000	4a8ea6f408.mp3	4a8ea6f408.webp	そのお茶の名前とか思い出せる?	Por casualidad, ¿te acuerdas del nombre del té?	You wouldn't happen to remember the name of that tea, would you?	False	False			
-	169	168	167	0:04:44.200000	0:04:47.870000	fb8ffb2c6c.mp3	fb8ffb2c6c.webp	えーっと ちょっと待ってよ	A ver... Un momento.	Um... One sec.	False	False			
-	172,173	171	170	0:04:47.870000	0:04:52.330000	724163b8ad.mp3	724163b8ad.webp	あー 何だったかなあ　麦茶ではなかったし	¿Cuál era? No era té de cebada...	Man, what was it? It wasn't barley tea...	False	False			
-	176	175	174	0:04:52.330000	0:04:55	353edec3e4.mp3	353edec3e4.webp	どっちの棚だったかなあ	¿En qué estante estaba...?	Which shelf was it on...?	False	False			
-	179	178	177	0:04:56.670000	0:04:58.880000	3bd284a1a0.mp3	3bd284a1a0.webp	ダメだ 忘れた	No, no me acuerdo.	Nope, I don't remember.	False	False			
-	182	181	180	0:05:00.550000	0:05:03.510000	1cc88b34b7.mp3	1cc88b34b7.webp	名前も出かかってるんだけどね	Pero tengo el nombre en la punta de la lengua.	The name is on the tip of my tongue, though.	False	False			
-	183	185	184	0:05:03.420000	0:05:07.180000	a47b1e4903.mp3	a47b1e4903.webp	見れば思い出せるかなあ 多分	Si lo viera otra vez, creo que lo recordaría.	I think I can remember it if I see it again.	False	False			
-	186,189	188,191	187,190	0:05:07.510000	0:05:15.980000	76af6c7fda.mp3	76af6c7fda.webp	あっ 見れば!　あーっと 見に... 行ってくれる?	Si lo vieras... ¿Podrías ir a buscarlo conmigo?	If you see it... Um... Will you look for it with me?	False	False			
-	194	193	192	0:05:15.980000	0:05:20.110000	9788016ded.mp3	9788016ded.webp	ふむ しまむら連れて行って聞けばいいんじゃねえの?	Bueno, también podrías ir con Shimamura y ya está.	Hm. I mean, you could just take Shimamura with you.	False	False			
-	197,200	196,199	195,198	0:05:25.150000	0:05:32.410000	39ed6d0cc4.mp3	39ed6d0cc4.webp	なるほど そういうことなら　私が一緒に行って選んであげよう	Ya veo... En ese caso, iré contigo a elegirlo.	Ah, I see. In that case, I'll go with you and choose.	False	False			
-	203	202	201	0:05:32.410000	0:05:33.620000	d2083cf7c5.mp3	d2083cf7c5.webp	ホントに!?	¿En serio?	Really?	False	False			
-	206,207,210,211	205,209	204,208	0:05:33.620000	0:05:41.920000	5b85893414.mp3	5b85893414.webp	日野がいた!　おうおう 遅いよ　どこ迷子になってたんだい?　永藤ちゃんよお	¡Ahí estás, Hino! Por fin llegas. ¿Dónde te habías metido, Nagafuji?	There's Hino! There you are. Where'd you get lost at, Nagafuji?	False	False			
-	214	213,216,218	212,215,217	0:05:41.920000	0:05:48.590000	1ffd0976ee.mp3	1ffd0976ee.webp	あれー?さっきより小さくなってない?	¿Eh? Oye... ¿Has encogido?	Oh? H-Hey... Did you shrink?	False	False			
-	224	223	222	0:05:49.510000	0:05:54.850000	50b0451c4e.mp3	50b0451c4e.webp	いやあ 日野がいつもより小さいから見失ったのかと思って	Te perdí porque parecías más pequeña que de costumbre.	It's just you seem smaller than usual, so I lost track of you.	False	False			
-	230	229	228	0:06:02.610000	0:06:04.280000	10967171ac.mp3	10967171ac.webp	あっ ラーメン食べていい?	¿Te importa si como un poco?	Do you mind if I have some ramen?	False	False			
-	233	232	231	0:06:04.280000	0:06:06.030000	41624113cc.mp3	41624113cc.webp	んじゃあ パンよこしな	Pues trae algo de pan.	Hand over some bread, then.	False	False			
-	238	237	236	0:06:06.720000	0:06:08.680000	cfabb4c876.mp3	cfabb4c876.webp	仲いいなあ	Son muy amigas.	They're so close...	False	False			
-	243	242	241	0:06:10.660000	0:06:15.790000	a695f5ec7f.mp3	a695f5ec7f.webp	私にはしまむらの頭なんてとても 叩けそうにない	No me veo capaz de pegar a Shimamura en la cabeza de esa forma.	I don't think I'd ever... be able to smack Shimamura on the head like that.	False	False			
-	246	245	244	0:06:19.420000	0:06:20.920000	d3029cab63.mp3	d3029cab63.webp	ごめーん	Perdón.	Sorry!	False	False			
-	249	247	248	0:06:20.900000	0:06:23.520000	dc4838186f.mp3	dc4838186f.webp	あだっつぃー 待ったー?	Adatty, ¿llevas mucho esperando?	Adatty, have you been waiting long?	False	False			
-	252	251	250	0:06:23.420000	0:06:25.170000	e192e7f801.mp3	e192e7f801.webp	永藤は いないの?	¿Nagafuji no está contigo?	Nagafuji's not with you?	False	False			
-	255	254	253	0:06:25.170000	0:06:27.340000	33f58b7c1f.mp3	33f58b7c1f.webp	あいつは用があるんだってさ	Al parecer, tenía cosas que hacer.	She apparently had something to do.	False	False			
-	258,259	257	256	0:06:27.340000	0:06:31.280000	aca9b8cd65.mp3	aca9b8cd65.webp	まあ 一年に一度くらいそういう日もある　行こうぜうん	Una vez al año tiene un día así. De todas formas, vamos.	She has a day like that like once a year. Anyway, let's go!	False	False			
-	264	262	263	0:06:33.200000	0:06:35.310000	4c469993f7.mp3	4c469993f7.webp	あっ 後ろ乗る?	¿Quieres montarte en la parte de atrás?	Oh... Do you want to get on the back?	False	False			
-	267	266	265	0:06:35.310000	0:06:38.980000	7a40fbb7ca.mp3	7a40fbb7ca.webp	乗るけど 学校から ちょっと離れないと	Vale, pero primero tenemos que alejarnos del insti.	I will, but we should get away from school first.	False	False			
-	270	269	268	0:06:38.980000	0:06:41.730000	d7e4bb3bef.mp3	d7e4bb3bef.webp	先生に見られたらうるさいじゃん	Como nos vea algún profe nos caerá una buena.	If a teacher sees us, we'll never hear the end of it.	False	False			
-	274	273	272	0:06:43.060000	0:06:44.690000	48bc8a0ba6.mp3	48bc8a0ba6.webp	何?	¿Qué?	What?	False	False			
-	277	276	275	0:06:44.690000	0:06:47.990000	f8f349e79c.mp3	f8f349e79c.webp	日野は 優等生だと思って	No te veía como una buena estudiante.	I never thought of you as an honor student.	False	False			
-	280	279	278	0:06:50.410000	0:06:53.830000	e336bca1bc.mp3	e336bca1bc.webp	もっと 褒めてもいいのよ	Venga, halágame más.	Praise me more.	False	False			
-	283	282	281	0:06:53.830000	0:06:56.370000	9f66d7c632.mp3	9f66d7c632.webp	本当はおかしいんだろうなあ	Es muy extraño...	I bet it is pretty weird...	False	False			
-	286	284	285	0:06:56.350000	0:06:59.690000	a137f9a9f2.mp3	a137f9a9f2.webp	女同士でクリスマスに出歩くのを想像して	Es imaginarme pasando la Navidad con otra chica	That I'm imagining walking around town on Christmas with another girl	False	False			
-	289	288	287	0:06:59.660000	0:07:01.960000	76fdc65e90.mp3	76fdc65e90.webp	心が弾むなんて	y se me acelera el corazón.	and my heart is about to burst.	False	False			
-	292	291	290	0:07:01.960000	0:07:07.760000	c376cee7e8.mp3	c376cee7e8.webp	しまむらは きっとこんなふうにはクリスマスを待ち望んではいない	Apuesto a que Shimamura no está tan nerviosa.	I'm sure that Shimamura isn't this anxious about Christmas.	False	False			
-	295	294	293	0:07:07.760000	0:07:11.470000	ff8a9f7cf3.mp3	ff8a9f7cf3.webp	私としまむらの間には大きな温度差があって	Hay una gran diferencia entre lo que sentimos las dos.	There's definitely a difference in how I feel about Shimamura and vice versa.	False	False			
-	298	296	297	0:07:11.450000	0:07:16.680000	42d3b15ba1.mp3	42d3b15ba1.webp	私は それを知ってほしいのか知られたくないのか	No estoy segura de si quiero que sepa lo mío.	And I'm not sure if I want her to realize that... or not.	False	False			
-	303	302	301	0:07:18.660000	0:07:21.160000	3c4ae539a0.mp3	3c4ae539a0.webp	いつも ありがとうございます	Gracias por volver.	Thank you for coming by again.	False	False			
-	306	305	304	0:07:21.120000	0:07:22.330000	2f7da07474.mp3	2f7da07474.webp	どうもー	Hola.	Heya.	False	False			
-	311	310	309	0:07:23.880000	0:07:25.210000	fe75fc2e31.mp3	fe75fc2e31.webp	よく来るの?	¿Vienes mucho?	Do you come here often?	False	False			
-	314,315	313	312	0:07:25.230000	0:07:29.690000	acce955dbd.mp3	acce955dbd.webp	うん まあ　家の人が飲んだり 飲まなかったり	Sí... Puede que alguien en mi familia beba mucho té...	Yeah... I may or may not have someone in my family who drinks a lot of tea...	False	False			
-	318	317	316	0:07:29.690000	0:07:32.990000	6b8670c4e8.mp3	6b8670c4e8.webp	生姜かあ 体あったまりそう	Jengibre... Seguro que te espabila.	Ginger... That'd probably warm you right up.	False	False			
-	321	320	319	0:07:32.990000	0:07:35.450000	a6ab9040cb.mp3	a6ab9040cb.webp	冷え症に効果的らしいよ	Es perfecto para quien se resfría fácilmente.	Apparently, it works great for people who get cold easily...	False	False			
-	324	323	322	0:07:35.450000	0:07:37.410000	46dd3b1c4d.mp3	46dd3b1c4d.webp	家の人に言わせると	O eso dicen en mi familia.	According to my family member.	False	False			
-	327	326	325	0:07:37.410000	0:07:38.870000	8d2fc4bb75.mp3	8d2fc4bb75.webp	日野は飲まないの?	¿Tú no bebes?	You don't drink it?	False	False			
-	330,331	329	328	0:07:38.870000	0:07:44.410000	cc7d938787.mp3	cc7d938787.webp	別に冷え症じゃないからねえ　どこだったかな?	Yo no me resfrío así como así. A ver, ¿dónde estaba?	Well, I don't exactly get cold easily. Let's see, where was it...?	False	False			
-	334	333	332	0:07:44.250000	0:07:47.880000	e3659d2820.mp3	e3659d2820.webp	えっと 確かこの棚だったような...	Estoy segura de que estaba en esta parte...	I'm pretty sure it was on this shelf...	False	False			
-	338,339	337	336	0:08:03.940000	0:08:07.400000	f94525122c.mp3	f94525122c.webp	あだっつぃー君　1つ聞きたい	Oye, Adatty, ¿puedo preguntarte algo?	Hey, Adatty. Can I ask you something?	False	False			
-	342	341	340	0:08:08.530000	0:08:11.950000	d61e18b0cb.mp3	d61e18b0cb.webp	もし 自信満々に「はい これ」と渡しておいて	¿Eres de las que se enfadaría si te dijera	Are you the type that would get mad if I confidently told you,	False	False			
-	345	344	343	0:08:11.860000	0:08:14.990000	f37f5f01da.mp3	f37f5f01da.webp	間違っていたら怒っちゃう人ですか?	que es el correcto pero me equivocara?	"Yeah, this is the one!" and was totally wrong?	False	False			
-	348	347	346	0:08:14.990000	0:08:18.330000	8946d24755.mp3	8946d24755.webp	そこまでひどい性格ではないと思うけど	Creo que no soy tan mala persona.	I don't think my personality sucks that badly...	False	False			
-	351	350	349	0:08:18.330000	0:08:21.200000	ebf35ed5e1.mp3	ebf35ed5e1.webp	ならいいや 多分これ	Perfecto. Entonces, creo que era este.	Oh, good. Then I think it's this one.	False	False			
-	354,355,356	353	352	0:08:24.080000	0:08:30.670000	faaab8c983.mp3	faaab8c983.webp	いやー 悪いね　おごってもらっちゃって　って 私がねだったんだけど	Gracias por invitarme, aunque la propuesta haya sido mía.	Man... Thanks for treating me. Though I sorta talked you into it.	False	False			
-	361	360	359	0:08:31.800000	0:08:33.840000	0b0d23a3df.mp3	0b0d23a3df.webp	ここ ちょっと寒いねえ	Hace un poco de frío aquí.	It's a bit chilly in here.	False	False			
-	364	363	362	0:08:33.840000	0:08:35.550000	2f34d6bdf6.mp3	2f34d6bdf6.webp	足スースー	Tengo las piernas congeladas.	My legs are freezing.	False	False			
-	367	366	365	0:08:35.550000	0:08:36.850000	ce19e84aca.mp3	ce19e84aca.webp	うん	Sí.	Yeah.	False	False			
-	370	369	368	0:08:38.050000	0:08:42.640000	51742a8eb7.mp3	51742a8eb7.webp	話すことないから困るって思ってるだろ?	Estás nerviosa porque no sabes qué decir, ¿verdad?	You're totally anxious because you don't know what to say right now, huh?	False	False			
-	373	372	371	0:08:42.640000	0:08:44.850000	3f9d1e1116.mp3	3f9d1e1116.webp	うっ ま... まあ	Sí...	Y-Yeah...	False	False			
-	376	375	374	0:08:44.850000	0:08:49.110000	b901a4a47a.mp3	b901a4a47a.webp	って 永藤と来ても似たようなものだけどね	Estoy segura de que sería igual si Nagafuji estuviera aquí.	I'm sure it would've been the same with Nagafuji here, too.	False	False			
-	379	378	377,380	0:08:49.110000	0:08:52.940000	ba00ed7226.mp3	ba00ed7226.webp	あいつの場合 うん?	Aunque en su caso...	Though, in her case... Huh?	False	False			
-	383,384	382	381	0:09:12.840000	0:09:17.640000	caf761f493.mp3	caf761f493.webp	用事って へえー ほう...　聞いてた?	Así que eso era lo que tenía que hacer... ¿Tú lo sabías?	So that's what she had to do... Did you know about this?	False	False			
-	387,388	386	385	0:09:21.260000	0:09:25.020000	461fc2cf74.mp3	461fc2cf74.webp	はあ やれやれ　困るなあ 君	Vaya tela. ¿Qué voy a hacer contigo?	Good grief. What am I going to do with you?	False	False			
-	391	390	389	0:09:25.020000	0:09:27.230000	665cd64f5e.mp3	665cd64f5e.webp	えっ 何が?	¿Eh? ¿Qué?	Huh? What?	False	False			
-	394	393	392	0:09:28.360000	0:09:30.440000	d841e6e302.mp3	d841e6e302.webp	後でも つけてみる?	¿Quieres seguirlas?	Wanna follow them?	False	False			
-	397	396	395	0:09:31.440000	0:09:34.990000	ba6e2f49dc.mp3	ba6e2f49dc.webp	やめとこう 用事があるみたいだし	Mejor que no. Parecía que estaban ocupadas.	Let's not. They seem busy.	False	False			
-	400	399	398	0:09:34.990000	0:09:38.660000	69a97d3b52.mp3	69a97d3b52.webp	あだっつぃーはホント 優等生よのう	Adatty, eres toda una estudiante modelo.	Ah, Adatty, always the honor student.	False	False			
-	403	402	401	0:09:40.990000	0:09:43.790000	efbee59b89.mp3	efbee59b89.webp	自分だけだと思い上がっていた	Creía que yo era la única	I thought I was the only one...	False	False			
-	406	405	404	0:09:43.790000	0:09:49.400000	4b0e3d3aa8.mp3	4b0e3d3aa8.webp	しまむらと2人で出かけるその隣にいるのは自分だけなんだって	que salía sola con Shimamura.	...that got to hang out with Shimamura alone.	False	False			
-	411,412	409	410	0:09:49.610000	0:09:55.470000	be19590156.mp3	be19590156.webp	それが大きな思い違いだったことに　痛みを覚えることこそ間違っている	El hecho de que estuviera equivocada no debería doler tanto.	And the fact that I was totally wrong about that shouldn't hurt this much.	False	False			
-	415	414	413	0:09:57.260000	0:09:59.890000	5bc23605da.mp3	5bc23605da.webp	反省	Soy una estúpida.	I'm so dumb.	False	False			
-	418	417	416	0:09:59.890000	0:10:02.100000	847b1a2c7b.mp3	847b1a2c7b.webp	しまむら	Shimamura...	Shimamura...	False	False			
-	421	420	419	0:10:02.100000	0:10:04.350000	3bfc70b70b.mp3	3bfc70b70b.webp	その名前を呼ぶだけで	Con solo decir su nombre...	Just saying her name...	False	False			
-	424,425	423	422	0:10:04.350000	0:10:09.850000	fd11dd939c.mp3	fd11dd939c.webp	しまむらという言葉の響きだけで　今年の冬は乗り切れそうだった	Solo el sonido de su nombre era suficiente para soportar este invierno.	Just the sound of her name was enough to get me through this winter.	False	False			
-	428	427	426	0:10:10.810000	0:10:12.400000	5b5094bf61.mp3	5b5094bf61.webp	ねえねえねえ!	Oye, oye, oye.	Hey, hey, hey.	False	False			
-	431	430	429	0:10:12.400000	0:10:14.530000	ed4d05f33b.mp3	ed4d05f33b.webp	ヤチーって ホントに宇宙人?	Yachi, ¿de verdad eres un alien?	Are you really an alien, Yachi?	False	False			
-	436	435	434	0:10:16.320000	0:10:19.740000	47ef479fc7.mp3	47ef479fc7.webp	ホントも何もウソついたことありません	Por supuesto que sí, yo nunca miento.	But of course. I have never told a lie.	False	False			
-	439	438	437	0:10:19.740000	0:10:22.640000	529b1052fe.mp3	529b1052fe.webp	証拠見せて 宇宙人の証拠!	Entonces demuéstramelo.	Then show me proof! Proof that you're an alien.	False	False			
-	441	443	440,442	0:10:22.580000	0:10:27	7c28e6cbc4.mp3	7c28e6cbc4.webp	チッチッチッ 見せるのは協定違反なので できません	Si te lo demostrara, estaría violando mi contrato.	Tsk, tsk, tsk. I would be violating my agreement if I showed you, so I cannot.	False	False			
-	446	445	444	0:10:27	0:10:31.080000	79125b1ca0.mp3	79125b1ca0.webp	宇宙も色々厳しい... おやっ?	Las reglas del universo son estrictas.	The rules of the universe can be rather strict. Oh?	False	False			
-	449	448	447	0:10:31.080000	0:10:34.800000	1431d4e7f6.mp3	1431d4e7f6.webp	しまむらしょうさんそれは何ですか?	Pequeña Shimamura, ¿eso qué es?	What is that, Little Shimamura?	False	False			
-	452	451	450	0:10:45.930000	0:10:49.390000	5f5856c9ba.mp3	5f5856c9ba.webp	過激な音ですな	Vaya, qué sonido tan dramático...	My, my, my, what a dramatic sound...	False	False			
-	455	454	453	0:10:49.390000	0:10:51.820000	c756d2995e.mp3	c756d2995e.webp	過激なのは ヤチーだけだよ	Tú sí que eres dramática.	You're the one that's dramatic, Yachi.	False	False			
-	458	457	456	0:10:51.770000	0:10:55.240000	b565c80bd9.mp3	b565c80bd9.webp	もう少し優しい感じに息を吐いて	Tienes que soplar con más suavidad.	Just breathe into it more gently...	False	False			
-	459	461	460	0:10:55.360000	0:10:59.780000	6ea85dd3d8.mp3	6ea85dd3d8.webp	あっ そろそろ特売の時間なので 行かねば	Ya casi es la hora. Debo irme.	Ah, it's almost discount time, so I must go.	False	False			
-	466	465	464	0:11:12.130000	0:11:13.840000	2dccf8a83c.mp3	2dccf8a83c.webp	宇宙語?	¿Será cosas de aliens?	Alienspeak?	False	False			
-	469	467	468	0:11:16.530000	0:11:20.010000	a94d3d86eb.mp3	a94d3d86eb.webp	私としまむらは普通の友達だ	Shimamura y yo solo somos amigas.	Shimamura and I are just normal friends.	False	False			
-	472	470	471	0:11:19.990000	0:11:22.760000	9221246065.mp3	9221246065.webp	少なくともしまむらにとっては	O así es como ella nos ve.	At least, that's how Shimamura sees us.	False	False			
-	475,483,487	474,482	473,480,481	0:11:22.760000	0:11:34.880000	d8e9d5d9cb.mp3	d8e9d5d9cb.webp	その上で しまむらとの距離を一歩ずつでも詰めていきたい　だけど距離が近くなるというのは　伝わるものも大きくなるということで	Aun así, quiero irme acercando a ella poco a poco. Pero cuanto más me acerco más cosas sé.	Even then, I still want to get closer to Shimamura one step at a time. "Where do you want to meet?" "Does 1 PM at the usual mall work?" "Roger" "I'm looking forward to tomorrow." But the closer you get, the more things get across.	False	False			
-	490	489	488	0:11:34.900000	0:11:39.280000	5657a66d73.mp3	5657a66d73.webp	私は しまむらにクリスマスという お題目を得て	Aunque no dejo de mencionar lo de la Navidad con ella...	I keep mentioning Christmas with Shimamura, but...	False	False			
-	493	492	491	0:11:39.280000	0:11:42.950000	2c1629d546.mp3	2c1629d546.webp	愛? いやいやいや	¿Será amor? No...	Is it love? No, no, no...	False	False			
-	496	495	494	0:11:42.950000	0:11:46.870000	f57285ca6e.mp3	f57285ca6e.webp	恋? いやいや いやいやいや!	¿Romance? No...	Romance? No, no, no...	False	False			
-	499	498	497	0:11:46.870000	0:11:48.120000	377280b907.mp3	377280b907.webp	好き?	¿Me gusta?	Like...?	False	False			
-	502	501	500	0:11:53.580000	0:11:56.710000	866df4c281.mp3	866df4c281.webp	とにかく あたたかいものだ	Lo que sea es algo cálido.	Whatever it is, it's warm and fuzzy.	False	False			
-	505	504	503	0:11:56.710000	0:12:00.760000	9c3f8268be.mp3	9c3f8268be.webp	私の胸に流れるあたたかい液体だ	Es un líquido cálido que recorre mi pecho.	It's a warm liquid that flows through my chest.	False	False			
-	512	510	511	0:12:16.920000	0:12:19.820000	f278d82554.mp3	f278d82554.webp	どういう 「おー」?	¿A qué viene ese palabro?	What's this "Cool" supposed to mean?	False	False			
-	515	514	513	0:12:19.820000	0:12:23.060000	a7b68dae8c.mp3	a7b68dae8c.webp	えいえいおー? おーっと?	¿Se refiere a "qué guay" o quiere que me tranquilice?	Like, "Coolio"? Maybe she meant, "Chill out"?	False	False			
-	518	517	516	0:12:23.030000	0:12:25.450000	e1f25630d0.mp3	e1f25630d0.webp	ふーん そーおー?	¿O será algo del frío?	Or, "Cool beans"?	False	False			
-	523	522	521	0:12:27.830000	0:12:31.870000	be9a9de43a.mp3	be9a9de43a.webp	私はしまむらの声が聞きたい	Quiero oír su voz.	I want to hear Shimamura's voice...	False	False			
-	526	525	524	0:12:31.870000	0:12:34.420000	5aaf155d03.mp3	5aaf155d03.webp	もっと知りたいから	Quiero conocerla mejor.	I want to know more about her.	False	False			
-	529	528	527	0:12:34.420000	0:12:37.500000	1759ef1d6e.mp3	1759ef1d6e.webp	明日 たくさん聞けるから	Quiero preguntarle un montón de cosas mañana.	And I'll be able to hear and ask her lots tomorrow.	False	False			
-	532	531	530	0:13:06.320000	0:13:07.910000	2ec0e07b41.mp3	2ec0e07b41.webp	待った?	¿Llevas mucho esperando?	Were you waiting long?	False	False			
-	535	533	534	0:13:08.800000	0:13:10.530000	386dfcebcd.mp3	386dfcebcd.webp	今 来たとこ	Acabo de llegar.	I just got here.	False	False			
-	538	537	536	0:13:10.370000	0:13:11.820000	4d13489d99.mp3	4d13489d99.webp	ウソつけー	Mentira.	You liar.	False	False			
-	541	540	539	0:13:11.790000	0:13:16.330000	d6df897f52.mp3	d6df897f52.webp	5分前から遠くで見てたぞ座ってる安達のこと	Llevo observándote desde allí desde hace cinco minutos.	I've been watching you sitting here for the last five minutes from afar.	False	False			
-	545,546	544	543	0:13:19.090000	0:13:24.010000	756e824548.mp3	756e824548.webp	いや 冗談だったんだけど　とにかくごめん 待たせたううん	Era broma. De todas formas, siento haber tardado.	Er, I was just joking. Anyway, sorry for making you wait.	False	False			
-	551	550	549	0:13:25.630000	0:13:30.930000	9dbf2b341d.mp3	9dbf2b341d.webp	で 安達 一目見たときから気になっていたことがあるんだけど	Desde que te he visto, me he estado preguntando...	So, I've been wondering ever since I saw you today...	False	False			
-	554	553	552	0:13:30.930000	0:13:33.140000	58d39c6832.mp3	58d39c6832.webp	えっ 何?	¿Eh? ¿Qué?	Huh? What?	False	False			
-	557	556	555	0:13:33.140000	0:13:37.650000	4827477fbd.mp3	4827477fbd.webp	何で コートの下バイト先のチャイナドレスなの?	¿Por qué llevas el vestido chino del curro debajo del abrigo?	Why are you wearing your Chinese dress from work under your coat?	False	False			
-	560	558	559	0:13:39.040000	0:13:42.820000	e77d7f3c7c.mp3	e77d7f3c7c.webp	ああ まあやっぱり気になるよね	Sí, no te culpo por pensar en eso.	Oh, uh... Yeah, I guess I can't blame you for wondering.	False	False			
-	563	561,565	562,564	0:13:42.800000	0:13:47.490000	12dcd821a4.mp3	12dcd821a4.webp	というか 変なお店の客引きと思われないかなあ	La verdad, ¿no crees que los demás van a pensar algo raro?	Actually, won't people think you're trying to lure them into a sketchy shop?	False	False			
-	568	567	566	0:13:48.490000	0:13:51.620000	25c6e40faf.mp3	25c6e40faf.webp	私だって おかしいと思う	Sí, hasta yo me lo digo.	Look, even I know this is weird.	False	False			
-	571	570	569	0:13:51.620000	0:13:56.670000	1156b529b2.mp3	1156b529b2.webp	でも しまむらがかわいいって褒めてくれたから	Pero dijo que me quedaba bien, así que...	But... She said I looked cute in it, so...	False	False			
-	574,575	573,577	572,576	0:13:56.670000	0:14:05.880000	1205066df9.mp3	1205066df9.webp	あっ 私はいいと思うよかわいいじゃん　美人は得だよねー よく似合ってるもの	Bueno, por mí no pasa nada. Estás muy guapa. Lo de ser guapa tiene que ser una pasada porque te puedes poner ese traje.	Oh, I think it's fine. You look super cute. It must be nice being so pretty. You can actually pull that outfit off.	False	False			
-	580	579	578	0:14:05.880000	0:14:10.550000	c64a14e3ae.mp3	c64a14e3ae.webp	し... しまむらの方がかわいいし	Tú eres más guapa...	B-But you're even cuter Shimamura...	False	False			
-	581	583	582	0:14:12.300000	0:14:15.310000	60f75d1105.mp3	60f75d1105.webp	ハハハ 嫌みはやめなさい	Ahórrate el sarcasmo.	You can skip the sarcasm.	False	False			
-	586	585	584	0:14:15.290000	0:14:17.730000	b391cf3cd3.mp3	b391cf3cd3.webp	今日は 2人でクリスマス	Las dos solas en Navidad...	Christmas all alone with Shimamura...	False	False			
-	590,592	589	588	0:14:17.730000	0:14:23.500000	dfa342d3d7.mp3	dfa342d3d7.webp	しまむらは友達づきあいだから　仕方なく来てくれただけかもしれないけど	Aunque probablemente ha venido porque se siente obligada como amiga.	Though Shimamura's probably only here because she felt obligated as a friend.	False	False			
-	595	593,597	594,596	0:14:23.840000	0:14:31.070000	9247c7e0fc.mp3	9247c7e0fc.webp	ダメだ 気を抜くと悪い方ばかりに考えが落ちこんでしま...	Tengo que parar. Cuando bajo la guardia me pongo en lo peor y me deprimo.	I need to stop. Whenever I let my guard down, my thoughts just go down a dark path and I'll get depressed...	False	False			
-	600	599	598	0:14:40.790000	0:14:43.210000	91d1952ff4.mp3	91d1952ff4.webp	ご... ごめんなさい	Lo siento.	S-Sorry.	False	False			
-	603	602	601	0:14:44.170000	0:14:47.630000	bbe39e3dd5.mp3	bbe39e3dd5.webp	うん 本当にごめんなさい	No, de verdad. Lo siento.	No, really. I'm sorry.	False	False			
-	606	605,608	604,607	0:14:49.220000	0:14:54.680000	96668bf37e.mp3	96668bf37e.webp	はあ... あー そのひったくりみたいに手を取るのはやめようね	Oye... No me cojas de la mano como si fueras una carterista.	So, hey. Don't suddenly grab my hand like a purse-snatcher.	False	False			
-	611	609	610	0:14:54.450000	0:14:55.890000	e564c96d6c.mp3	e564c96d6c.webp	ごめん	Perdona.	Sorry.	False	False			
-	614	613	612	0:14:55.890000	0:14:57.640000	fc20084546.mp3	fc20084546.webp	手 つなぐの?	¿Nos cogemos de la mano?	Did you want to hold hands?	False	False			
-	617	616	615	0:14:57.640000	0:14:59.560000	973b7aa4eb.mp3	973b7aa4eb.webp	できれば	Si es posible...	If we could.	False	False			
-	620	619	618	0:14:59.560000	0:15:03.150000	937afdae59.mp3	937afdae59.webp	前にもこんなやりとり しなかったかな?	¿No lo hemos hecho ya antes?	Didn't we do this all before?	False	False			
-	623	622	621	0:15:03.150000	0:15:04.520000	e8792cadc8.mp3	e8792cadc8.webp	したかも	Puede ser.	Possibly.	False	False			
-	626	625	624	0:15:14.490000	0:15:19.620000	266be97113.mp3	266be97113.webp	次回からはつないでいい?とか ちゃんと聞くように	La próxima vez, pregunta si está bien.	Next time, make sure you just ask if it's okay.	False	False			
-	631,632	630	629	0:15:23.540000	0:15:27.300000	e40bf9889e.mp3	e40bf9889e.webp	何? その反応　どうやって発音したの?	¿Qué respuesta es esa? ¿Cómo se pronuncia?	What kind of response is that? How did you even pronounce that?	False	False			
-	635	634	633	0:15:27.300000	0:15:29.420000	909ac6755f.mp3	909ac6755f.webp	エビに ちょっと似てたかも	Parecías una gamba.	You might've sounded like a shrimp just now.	False	False			
-	638,639	637,641	636,640	0:15:29.420000	0:15:35.890000	0027c31b8f.mp3	0027c31b8f.webp	今のは気にしないで　あの 分かった 次からは 聞く	Olvídalo. Esto... Vale. Te preguntaré la próxima vez.	Just ignore that. Um... I got it, though. I'll ask next time.	False	False			
-	644	643,646	642,645	0:15:35.890000	0:15:39.430000	7fd2c4dfb1.mp3	7fd2c4dfb1.webp	そうして はい	Bien. Venga.	Good. Come on.	False	False			
-	649	647	648	0:15:41.790000	0:15:43.940000	f46d1762d5.mp3	f46d1762d5.webp	そんなに慌てなくても	No tengas tanto miedo.	You don't need to panic so much.	False	False			
-	652	651	650	0:15:43.940000	0:15:48.190000	c30e5cdc82.mp3	c30e5cdc82.webp	他の誰も 私の手を取ろうとしないんだからさ	Nadie me va a robar la mano.	No one else is going to steal my hand from you.	False	False			
-	655	654	653	0:15:53.030000	0:15:59.500000	56c1a87432.mp3	56c1a87432.webp	でもしまむらの横を歩く人は私だけじゃないから	Pero yo no soy la única con la que vas a solas...	But I'm not the only one that gets to walk next to you...	False	False			
-	658	657	656	0:15:59.500000	0:16:01.410000	04fccad6fb.mp3	04fccad6fb.webp	ここで 遊ぼうと思います	Podemos jugar aquí.	I was thinking we could play here.	False	False			
-	661	660	659	0:16:01.410000	0:16:03.880000	c89bccab06.mp3	c89bccab06.webp	へえー ゲームセンターかあ	¿En unas recreativas?	Huh... An arcade.	False	False			
-	664	663	662	0:16:03.880000	0:16:05.710000	6d4ecd7ce5.mp3	6d4ecd7ce5.webp	あっ 卓球台がある	Mira, una mesa de ping-pong.	Oh, hey. A ping-pong table.	False	False			
-	667,668	666	665	0:16:05.710000	0:16:09.050000	31dfb1cb19.mp3	31dfb1cb19.webp	うん　でも 今日は...	Sí, pero estaba pensando...	Yeah, but I was thinking...	False	False			
-	671	670	669	0:16:09.050000	0:16:13.010000	7dc4d01791.mp3	7dc4d01791.webp	これ エアホッケー どうかな?	Podríamos jugar al hockey aéreo, ¿qué opinas?	We could play... this. Air hockey. What do you think?	False	False			
-	674	673	672	0:16:13.010000	0:16:15.430000	a72ac7b08e.mp3	a72ac7b08e.webp	いいね やろうか	Claro, ¿por qué no?	Sure, why not?	False	False			
-	677	676	675	0:16:15.430000	0:16:16.550000	e4614322cc.mp3	e4614322cc.webp	うん	Vale.	Okay.	False	False			
-	680	679	678	0:16:17.930000	0:16:22.440000	c44d10d24f.mp3	c44d10d24f.webp	エアホッケーは卓球に通じるものがある	El hockey aéreo es algo parecido al ping-pong.	Air hockey is sort of similar to ping-pong in some ways.	False	False			
-	683	682	681,684	0:16:22.410000	0:16:25.290000	62948bf265.mp3	62948bf265.webp	私達のお戯れといえばこれだった	Era nuestro pasatiempo.	This was our pastime. You can go first, Adachi.	False	False			
-	688,691,694	687,690,693	686,689,692	0:16:25.880000	0:16:36.410000	45a2ae75c2.mp3	45a2ae75c2.webp	体育館の2階で出会った私としまむら　どんな形でも出会ってしまえばそこに至る流れ　運命がある	Shimamura y yo nos conocimos en el segundo piso del gimnasio. No importa cómo fue, pero cuando nos conocimos hubo un camino y un destino que nos llevaron hasta ahí.	Shimamura and I met on the second floor of the gym. No matter how it happened, once we've met, there was a path that led us there as well as fate.	False	False			
-	697	696	695	0:16:38.310000	0:16:43.060000	109c2d197c.mp3	109c2d197c.webp	どんな出会い方にも壮大な過去が用意されているのだ	Da igual cómo sea el encuentro, siempre hay un pasado que lo acompaña.	No matter the encounter, there's always a grand past that goes along with it.	False	False			
-	703	702	701	0:16:43.080000	0:16:49.780000	c21cb2ed83.mp3	c21cb2ed83.webp	200 500 何百億という全体の行動の積み重ねがあった上でしか	Doscientas o 500 mil millones de acciones hechas por todo el mundo	Two hundred, 500, billions of actions done by everyone and everything	False	False			
-	707	705	706	0:16:49.770000	0:16:52.470000	62d69927bc.mp3	62d69927bc.webp	人と 人は出会うことができない	son necesarias para conocerse.	piled up together in order for two people to meet.	False	False			
-	710,711,714	709,712	708,713	0:16:52.470000	0:17:01.640000	0f67a63532.mp3	0f67a63532.webp	何という道のりだったのだろう　1つでも違うものを選べば　私は しまむらに出会えなかったのだから	¿Cómo será el camino que nos ha traído hasta aquí? Solo una decisión diferente habría supuesto que no nos conociéramos.	I wonder what kind of paths led us to meet. Even one different decision would've meant that I wouldn't have met Shimamura.	False	False			
-	717	716	715	0:17:01.640000	0:17:04.390000	b4ae28cb6c.mp3	b4ae28cb6c.webp	その事実だけで 私は	Y eso...	And that fact alone...	False	False			
-	720	718	719	0:17:05.540000	0:17:09.520000	24d5bab08d.mp3	24d5bab08d.webp	今までの自分をどこまでも好きになれそうだった	me hizo querer mucho a mi yo del pasado.	Made me endlessly like my past self.	False	False			
-	723,724	722	721	0:17:09.520000	0:17:13.240000	6ecf43b993.mp3	6ecf43b993.webp	あ... 安達　案外 うまいね	Eres muy buena en esto.	Y-You're pretty good at this, Adachi...	False	False			
-	727	726	725	0:17:13.240000	0:17:16.110000	fe9747ab65.mp3	fe9747ab65.webp	ど... どうだ!	¿Qué tal?	H-How you like them apples?	False	False			
-	730	729	728	0:17:18.950000	0:17:21.660000	2c44947094.mp3	2c44947094.webp	安達 超強いじゃん	Eres muy buena.	Jeez, Adachi. You're super good.	False	False			
-	733	732	731	0:17:21.660000	0:17:24.609000	a43d635f75.mp3	a43d635f75.webp	初心者いじめとはなかなか やるなあ	No me esperaba que fueras a por los novatos.	I never expected you to be the type to pick on noobs.	False	False			
-	736	735	734	0:17:24.540000	0:17:26.710000	220bab7396.mp3	220bab7396.webp	そういうのじゃないから	No es eso.	It's not like that.	False	False			
-	739	737	738	0:17:26.580000	0:17:29.380000	c7153e4c47.mp3	c7153e4c47.webp	卓球も 安達が勝ち越していたよね	Creo que también tienes más victorias al ping-pong.	I think you also had more wins in ping-pong, too.	False	False			
-	742	740	741	0:17:29.340000	0:17:30.800000	7e31e72406.mp3	7e31e72406.webp	そうだった?	¿Ah, sí?	Did I?	False	False			
-	745,746	744	743	0:17:30.800000	0:17:33.760000	96b7ff6179.mp3	96b7ff6179.webp	いや　やっぱり 私だったかなー	O tal vea sea yo.	Wait, maybe it's me.	False	False			
-	749	748	747	0:17:33.760000	0:17:38.050000	d71b8b3d3b.mp3	d71b8b3d3b.webp	こっちが覚えていないからって改ざんするのは ずるい	No es justo inventarte cosas solo porque no te acuerdes.	It's not fair to make stuff up just because I don't remember.	False	False			
-	752	751	750	0:17:38.050000	0:17:43.430000	46c612019d.mp3	46c612019d.webp	もう遠い... というほど昔には感じないんだよね	Pero no parece que haya pasado tanto tiempo.	But it doesn't seem that long ago somehow.	False	False			
-	755	754	753	0:17:43.430000	0:17:48.100000	d6b6916494.mp3	d6b6916494.webp	2年生になって 春が来て日差しが強くなったら	Cuando llegue la primavera, el sol y estemos en segundo,	When spring comes and we become second-years and the sun is out more again,	False	False			
-	758	757	756	0:17:48.100000	0:17:50.980000	e9a72c6939.mp3	e9a72c6939.webp	また 体育館に行くのかなあ?	¿volveremos a ir al gimnasio?	I wonder if we're gonna go to the gym again.	False	False			
-	761,762	760	759	0:17:56.150000	0:18:02.790000	4007e44894.mp3	4007e44894.webp	授業を受けて 放課後 ここに来て　ピンポンすればいいんじゃないかな	Podemos ir a clase, venir aquí después y jugar al ping-pong.	I think we can just go to class, come here after school, and play ping-pong.	False	False			
-	765,766	764	763	0:18:02.790000	0:18:07.420000	f518a9d327.mp3	f518a9d327.webp	100点　安達もすっかり優等生になったね	Sería perfecto. Ahora sí que eres toda una estudiante modelo.	A perfect score. You're a total honor student now, Adachi.	False	False			
-	769,770	768	767	0:18:09.420000	0:18:13.670000	f6a9c9d706.mp3	f6a9c9d706.webp	でも 2年生かあ　クラスも替わるよねえ	Pero en segundo seguramente caeremos en clases distintas.	But man, we're gonna be second-years... We'll probably be in different classes.	False	False			
-	773	772	771	0:18:17.720000	0:18:19.930000	0d728e27cb.mp3	0d728e27cb.webp	しまむら これ	Toma, Shimamura.	Shimamura... here.	False	False			
-	775	777	776	0:18:20.980000	0:18:25.180000	452c75b88d.mp3	452c75b88d.webp	クリスマスプレゼントの... つもり	Te he comprado un regalo de Navidad.	I bought you a Christmas gift... or something...	False	False			
-	780,781	779	778	0:18:25.180000	0:18:29.980000	db2edefe29.mp3	db2edefe29.webp	いや 何か嬉しいじゃないの　開けていい?	¿Eh? Qué sorpresa. ¿Puedo abrirlo?	Wow... Well, this was a nice surprise. Can I open it?	False	False			
-	784	783	782	0:18:29.980000	0:18:31.610000	d09210c9f2.mp3	d09210c9f2.webp	うん	Sí.	Yeah.	False	False			
-	787,788	786	785	0:18:31.610000	0:18:36.410000	a88eb07295.mp3	a88eb07295.webp	あっ 香りのいいやつ　これ 飲んでみたかったんだ	Vaya, es el que olía bien. Tenía ganas de probarlo.	Oh, hey. This is the nice smelling one. I wanted to try it out.	False	False			
-	791	790	789	0:18:36.400000	0:18:38.070000	511e8ed192.mp3	511e8ed192.webp	嬉しいー	¡Qué guay!	This is great!	False	False			
-	794	793	792	0:18:39.070000	0:18:42.330000	676f71717f.mp3	676f71717f.webp	でも 何で私の好みを知ってるの?	Pero ¿cómo sabías que lo quería?	But how did you know I liked this?	False	False			
-	797	796	795	0:18:43.740000	0:18:44.910000	d22ab00cd7.mp3	d22ab00cd7.webp	あっ...偶然?	¿Por casualidad?	Just a coincidence?	False	False			
-	800	799	798	0:18:44.910000	0:18:46.200000	b66ff2c5f3.mp3	b66ff2c5f3.webp	ではない	No...	No...	False	False			
-	803,804	802	801	0:18:46.200000	0:18:51.750000	8a5f0fb0f9.mp3	8a5f0fb0f9.webp	うーん　あっ 日野から聞いたのか	Seguro que se lo has preguntado a Hino.	Hm... Oh, you must've asked Hino.	False	False			
-	807	806	805	0:18:51.750000	0:18:53.630000	a87be1999c.mp3	a87be1999c.webp	う... うん	Sí.	Y-Yeah.	False	False			
-	810,811	808	809	0:18:53.610000	0:18:58.440000	5cb63b7f7e.mp3	5cb63b7f7e.webp	気を使わせちゃったねえ 安達　ありがとう	No tenías por qué, pero gracias.	You really didn't have to, Adachi. But thank you.	False	False			
-	814	813	812	0:18:59.840000	0:19:03.300000	fe86052015.mp3	fe86052015.webp	同じこと考えてるとは思わなかったなあ	Nunca pensé que pensaríamos lo mismo.	I never thought you'd be thinking the same thing.	False	False			
-	818	817,820	816,819	0:19:05.560000	0:19:10.690000	8c2fb1a650.mp3	8c2fb1a650.webp	いい子の安達ちゃんにはお姉ちゃんからプレゼントをあげよう	Como has sido buena, tu hermana también te ha comprado un regalo.	Since you're such a good little girl, Adachi, Big Sis got you a present, too.	False	False			
-	823	822	821	0:19:23.410000	0:19:24.970000	5cf79eac4e.mp3	5cf79eac4e.webp	何 それ?	¿Qué es eso?	What is that?	False	False			
-	826,827	825	824	0:19:24.910000	0:19:29.160000	dc03145e93.mp3	dc03145e93.webp	ブーメラン　あっ こっちはゴーグル	Un bumerán... y unas gafas.	A boomerang... Oh, and some goggles.	False	False			
-	830	828	829	0:19:29.140000	0:19:31.200000	fd008636ee.mp3	fd008636ee.webp	遊ぶときに つけるの?	¿Me las pongo cuando lo lance?	Am I supposed to wear it when I throw this thing?	False	False			
-	833,834	832	831	0:19:31	0:19:34.920000	e87992b757.mp3	e87992b757.webp	うん　買う前に投げて試したから	Sí. Lo he probado varias veces antes de comprarlo.	Yeah. Oh, I threw it a few times before buying it.	False	False			
-	837	836	835	0:19:34.880000	0:19:37.300000	09782b660f.mp3	09782b660f.webp	楽しかったよ 結構	Es más divertido de lo que crees.	It's way more fun than you'd expect.	False	False			
-	840,841	839	838	0:19:37.300000	0:19:42.200000	98cbd0b679.mp3	98cbd0b679.webp	こういうの選ぶセンスないから　永藤と相談して選んでみたんだけど	Como soy muy mala para decidirme, le pedí ayuda a Nagafuji.	I suck at choosing stuff like this, so I asked Nagafuji to help me pick.	False	False			
-	845	844	843	0:19:43.640000	0:19:46.100000	2065287534.mp3	2065287534.webp	《ブーメランとか欲しいかも》	A lo mejor quiere un bumerán.	Maybe she'd want a boomerang.	False	False			
-	849	848	847	0:19:48.310000	0:19:52.060000	398911c78d.mp3	398911c78d.webp	《子供は喜ぶと思う楽しいよ これ》	Creo que a los niños les encanta porque es superdivertido.	I think kids would love them. They're super fun.	False	False			
-	852	851	850	0:19:52.060000	0:19:55.440000	afa978635f.mp3	afa978635f.webp	《冬場に投げると折れやすいけど》	Aunque en invierno se rompen cuando los lanzas.	Though they tend to snap when you throw them around in winter.	False	False			
-	855	854	853	0:19:55.440000	0:20:00.250000	9e09281b17.mp3	9e09281b17.webp	あっ 永藤には妹へのプレゼントって名目だけどね	Solo le dije que estaba eligiendo un regalo para mi hermana.	Oh, I just told Nagafuji I was getting a present for my little sister.	False	False			
-	858,859	857	856	0:20:00.150000	0:20:05.590000	6be2aeeb79.mp3	6be2aeeb79.webp	永藤...　そうかそういうことだったんだ	Nagafuji... Ahora entiendo por qué estaba con ella...	Nagafuji... I see. So that's why she was with her...	False	False			
-	862	861	860	0:20:06.450000	0:20:08.370000	86a1bd1ae3.mp3	86a1bd1ae3.webp	安達?	¿Adachi?	Adachi?	False	False			
-	865	864	863	0:20:08.370000	0:20:13	2065cf4b2e.mp3	2065cf4b2e.webp	ありがとう これ大事にするから	Gracias, voy a cuidarlo muy bien.	Thanks... I'll take really good care of this.	False	False			
-	868,869,872	867,871	866,870	0:20:13	0:20:23.090000	98d3bf3325.mp3	98d3bf3325.webp	正直ブーメランは歓迎していない　けれど しまむらがくれた　という事実だけがプレゼントだ	El bumerán es lo de menos, pero... el hecho de dármelo es el mejor regalo que podía pedir.	Honestly, I didn't care about the boomerang, but... The fact that Shimamura gave this to me... was the best gift I could ask for.	False	False			
-	875	874	873	0:20:26.680000	0:20:30.350000	2ba096b364.mp3	2ba096b364.webp	そう ブーメランを後ろに倒して構えるの	Sí. Pones el bumerán detrás de ti	So, yeah. You hold the boomerang behind you,	False	False			
-	878	877	876	0:20:30.350000	0:20:34.770000	3d9bcac456.mp3	3d9bcac456.webp	で 縦に切るように 前へ投げる	y lo lanzas como si fueras a cortar algo verticalmente.	and then throw it in front of you like you're going to chop something vertically.	False	False			
-	879	881	880	0:20:34.650000	0:20:39.070000	3ceb48d1f9.mp3	3ceb48d1f9.webp	そうそう あっ上に向けて投げないようにね	Sí, así. Por cierto, no lo tires hacia arriba.	Yeah, like that. Make sure you don't throw it up, though.	False	False			
-	885	884	883	0:20:53.330000	0:20:55.880000	2869262752.mp3	2869262752.webp	最初はこんなものかな	Bueno, es tu primera vez.	Well, it's your first try.	False	False			
-	888	887	886	0:20:55.580000	0:20:58.170000	d1761c6b7d.mp3	d1761c6b7d.webp	しまむらはちゃんと取れたの?	¿Tú has podido cogerlo, Shimamura?	Were you able to catch it, Shimamura?	False	False			
-	891	890	889	0:20:58.170000	0:21:03.470000	b2fe419614.mp3	b2fe419614.webp	まあね でも 最初にしては上手な方だと思うよ	Sí, pero no está mal para ser una principiante.	Yeah. But that's not bad for a beginner.	False	False			
-	894	893,896	892,895	0:21:04.760000	0:21:10.470000	2a156c2542.mp3	2a156c2542.webp	チャイナドレスの人が投げると映画の一場面みたいで絵になるねえ	Pareces que has salido de una peli lanzando el bumerán con ese vestido. Queda muy de cine.	But you sorta look like you're in some movie, throwing that thing in your Chinese dress. It's very cinematic.	False	False			
-	902	901	900	0:21:29.030000	0:21:31.240000	b4fbae8cca.mp3	b4fbae8cca.webp	いまいち?	¿No te gusta?	Not feeling it?	False	False			
-	907	906	905	0:21:32.200000	0:21:37.540000	4391907378.mp3	4391907378.webp	そっか あっ今から戻って何か別のを買おうか?	Ya veo. ¿Quieres que compre otra cosa?	I see. Hey, should I go back and buy you something else?	False	False			
-	910	909	908	0:21:37.540000	0:21:40.210000	280a6dc723.mp3	280a6dc723.webp	いい いい気に入ってるし	No, no. Me gusta.	No, no. I really like it.	False	False			
-	913	912,915	911,914	0:21:40.210000	0:21:46.210000	8e6900ae72.mp3	8e6900ae72.webp	そう でも戻ることは戻ろうか中の方があったかいし	Vale. Deberíamos volver ya. Dentro estaremos más calentitas.	I see. But we probably should head back. It's warmer inside.	False	False			
-	918	917	916	0:21:51.770000	0:21:54.810000	28128fcefd.mp3	28128fcefd.webp	今しかない と思った	Pensé que esa era mi única oportunidad.	This was my only chance, I thought...	False	False			
-	921	920,923	919,922	0:21:54.810000	0:22:00.770000	2f8e5243c9.mp3	2f8e5243c9.webp	人の目がない ここでしかしまむらに 踏み入った話はできそうにないぞと	Estábamos solas. Ese era el único sitio donde podía decírselo a Shimamura.	Here, where no one else was around... This was the only place I'd be able to say something like this to Shimamura...	False	False			
-	926	925	924	0:22:00.770000	0:22:02.820000	e6aa9840b9.mp3	e6aa9840b9.webp	だから 踏み込む	Por eso, allá voy.	So I'm going to take it.	False	False			
-	927,930	929	928	0:22:02.780000	0:22:06.780000	c064aeb2bc.mp3	c064aeb2bc.webp	準備ができなくとも　転びそうになっても	Aunque no esté lista... Aunque me explote en la cara...	Even if I'm not ready... Even if I fall on my face...	False	False			
-	933	932	931	0:22:06.780000	0:22:08.070000	4a845eeff5.mp3	4a845eeff5.webp	しまむら	Shimamura.	Shimamura.	False	False			
-	938	937	936	0:22:16.580000	0:22:18.250000	b6c89923e1.mp3	b6c89923e1.webp	安達?	¿Adachi?	Adachi?	False	False			
-	941	940	939	0:22:19.920000	0:22:22.340000	7c10a8884c.mp3	7c10a8884c.webp	私は...	Me...	I...	False	False			
-	944	943	942	0:22:22.340000	0:22:25.720000	6d0a2162a8.mp3	6d0a2162a8.webp	しまむらのことが好きで	Me gustas mucho, Shimamura.	I really like you, Shimamura...	False	False			
-	947	946	945	0:22:25.720000	0:22:30.010000	50766e0179.mp3	50766e0179.webp	こう 好きで 好きで	Me gustas mucho, mucho...	Like, really like you... love you...	False	False			
-	950	949	948	0:22:35.930000	0:22:40.440000	3d8908022d.mp3	3d8908022d.webp	しまむらの えっと	Shimamura, yo...	Shimamura, I...	False	False			
-	953	952	951	0:22:46.400000	0:22:49.610000	f41371d5bc.mp3	f41371d5bc.webp	友達に なりたくて	quiero ser tu amiga...	...want to be your friend...	False	False			
-	956	955	954	0:22:49.610000	0:22:52.030000	36335c918f.mp3	36335c918f.webp	もう 友達のつもりだけど?	¿Pero no lo somos ya?	I'm pretty sure we already are?	False	False			
-	959	958	957	0:22:52.030000	0:22:55.660000	640a3e1c6e.mp3	640a3e1c6e.webp	それぐらいの友達じゃなくて	No, no quiero ser solo tu amiga.	No, not just friends...	False	False			
-	962	961	960	0:22:55.660000	0:22:58.710000	89c5954182.mp3	89c5954182.webp	一番の友達になりたい	Quiero ser tu mejor amiga.	But I want to be like, your best friend.	False	False			
-	965	964	963	0:22:58.710000	0:23:00.290000	bdcc575d04.mp3	bdcc575d04.webp	一番?	¿Mi mejor amiga?	My best friend?	False	False			
-	968	967	966	0:23:00.290000	0:23:03.500000	98b54a1409.mp3	98b54a1409.webp	なりたいっていうかなる... から	Más o menos, así que...	I sorta really want to be that, so...	False	False			
-	971	970	969	0:23:03.500000	0:23:06.300000	44f14ff1a6.mp3	44f14ff1a6.webp	頑張ろうと思います	pienso esforzarme.	I'll do my best.	False	False			
-	974	973	972	0:23:06.300000	0:23:08.550000	e3de57b69b.mp3	e3de57b69b.webp	そ... そうですか	Ya veo.	I-I see...	False	False			
-	975	977	976	0:23:11.840000	0:23:14.350000	ca1c2f0cd2.mp3	ca1c2f0cd2.webp	あ... よく分からないけど	Creo que no lo entiendo,	I don't really get it,	False	False			
-	980	979	978	0:23:14.350000	0:23:18.440000	75aebb28e3.mp3	75aebb28e3.webp	向上心があるのはいいことだと思うよ	pero está bien que seas tan ambiciosa.	but it's great that you're so ambitious.	False	False			
-	983	982	981	0:23:18.440000	0:23:20.310000	e696bcacb7.mp3	e696bcacb7.webp	う... うん	¡Sí!	Y-Yeah!	False	False			
-	986	985	984	0:23:20.310000	0:23:23.980000	c96c1b65c3.mp3	c96c1b65c3.webp	クリスマスだからと劇的なことは起こらない	Que sea Navidad no garantiza que vaya a ocurrir nada dramático.	Nothing dramatic is guaranteed to happen just because it's Christmas.	False	False			
-	989	988	987	0:23:23.980000	0:23:28.070000	8ee41ad757.mp3	8ee41ad757.webp	きっと 今日という日はいい思い出にならない	El de hoy no va a ser un gran recuerdo.	Today's not going to be a great memory or anything.	False	False			
-	992	991	990	0:23:28.070000	0:23:31.070000	a5e7e9769d.mp3	a5e7e9769d.webp	何しろ頭が真っ白になってばかりで	Mi mente estuvo todo el día en blanco,	I mean, my mind just kept going blank,	False	False			
-	995	994	993	0:23:31.070000	0:23:33.830000	35260b097a.mp3	35260b097a.webp	記憶どころじゃなかったからだ	así que no podía recordar nada.	so I didn't really have a chance to remember anything.	False	False			
-	998	997	996	0:23:36.750000	0:23:40.370000	040aef8492.mp3	040aef8492.webp	景色を雪が覆い隠すように	Como si fuera un paisaje lleno de nieve...	Just like scenery being covered in snow...	False	False			
-	1001,1004	1000	999	0:23:43.900000	0:23:49.400000	dbc8988442.mp3	dbc8988442.webp	ホワイトアルバムがあったことだけを　鮮明に刻み込む	Grabaré el recuerdo de un álbum blanco en mi memoria.	I'm just going to carve the memory of a white album into the back of my brain.	False	False			
-	1007	1009	1008	0:23:52.650000	0:23:55.280000	fc89588e34.mp3	fc89588e34.webp	あだしまペディア クリスマス	Adashimapedia: Navidad.	Adashimapedia: Christmas.	False	False			
-	1012	1011	1010	0:23:55.310000	0:23:57.990000	3e6cdbb5c8.mp3	3e6cdbb5c8.webp	日野さーん 何を怒ってるのかな?	¿Estás enfadada, Hino?	What are you mad about, Hino?	False	False			
-	1018	1017	1016	0:23:58.410000	0:24:00.790000	7bd60dc009.mp3	7bd60dc009.webp	クリスマス ウチでチキンカレー食べる?	¿Quieres comer conmigo pollo al curry?	Want some chicken curry at my place on Christmas?	False	False			
-	1021	1020	1019	0:24:00.620000	0:24:02.600000	1be0c245a0.mp3	1be0c245a0.webp	クリスマスだから	¿Pollo al curry en Navidad?	It's Christmas, so chicken curry?	False	False			
-	1024	1023	1022	0:24:02.330000	0:24:04.500000	bbedd8c7e8.mp3	bbedd8c7e8.webp	チキンなのか永藤家の決まりなのです	Sí, es una tradición familiar.	Yup. It's a Nagafuji family tradition.	False	False			
+	23,24	21	22	0:00:39.720000	0:00:44.600000	f0b152c1c6.mp3	f0b152c1c6.webp	クリスマスとは 一体　何をすればいいのだろうか	¿Qué se supone que se debe hacer en Navidad?	What exactly are you supposed to do on Christmas?	False	False			
+	27	26	25	0:00:45.620000	0:00:47	9c8fb9c279.mp3	9c8fb9c279.webp	ほら!	¡Oye!	Hey, now!	False	False			
+	30,31,34	29,33	28,32	0:00:47	0:00:53.510000	001597f2ee.mp3	001597f2ee.webp	ボッとすんな!　あ... すいません　あの 店長	Deja de distraerte. Lo siento. Oiga, jefe.	Quit spacing out! Oh, sorry. U-Um, Manager?	False	False			
+	37	36	35	0:00:53.470000	0:00:54.720000	f5e7bae588.mp3	f5e7bae588.webp	何だ?	¿Qué pasa?	What is it?	False	False			
+	40	39	38	0:00:54.720000	0:01:00.970000	b3326f7ced.mp3	b3326f7ced.webp	クリスマス... 25日は休ませてもらっていいですか?	En Navidad, ¿puedo...? ¿Puedo cogerme libre el día 25?	May I take Christmas... May I take the 25th off?	False	False			
+	43	42	41	0:01:00.970000	0:01:02.350000	2d521a0ae2.mp3	2d521a0ae2.webp	デート?	¿Tienes una cita?	You got a date?	False	False			
+	46	45,48	44,47	0:01:02.350000	0:01:08.610000	5942ebf37e.mp3	5942ebf37e.webp	そ... そういう言い方じゃ ないですけど...	Yo no... lo llamaría así...	I-I wouldn't exactly... ...call it that...	False	False			
+	61	59	60	0:02:41.010000	0:02:43.560000	7643eb8682.mp3	7643eb8682.webp	そもそもデートというのは	Para empezar, ¿en una cita	First off, is a date where you do	False	False			
+	64	63	62	0:02:43.370000	0:02:49.960000	827e07d262.mp3	827e07d262.webp	気になる相手と仲良くなるため楽しい時間を一緒に過ごすことなのかな?	vas a divertirte con alguien que te interesa para acercarte a ella?	something fun with someone you're interested in to get closer to them?	False	False			
+	67	66	65	0:02:49.960000	0:02:55.050000	be2f9fe3b9.mp3	be2f9fe3b9.webp	だとするとデートというのもあながち間違いではないような気がする	En ese caso, podría decirse que es una cita.	And in that case, I guess you could sort of call this a date.	False	False			
+	70,71	69	68	0:02:55.050000	0:02:59.170000	5617e07641.mp3	5617e07641.webp	しまむらとデート　クリスマスに 何をすれば...	Mi cita con Shimamura... ¿Qué vamos a hacer en Navidad?	My date with Shimamura... What should we do on Christmas?	False	False			
+	74	72	73	0:03:01.030000	0:03:04.350000	5719b133db.mp3	5719b133db.webp	チキン ケーキ ツリー	Pollo, tarta, un árbol,	Chicken, a cake, a tree,	False	False			
+	77	76	75	0:03:04.350000	0:03:06.850000	1beb63ae57.mp3	1beb63ae57.webp	プレゼント	un regalo...	a present...	False	False			
+	81	79	80	0:03:09.830000	0:03:12.730000	33176bfc63.mp3	33176bfc63.webp	しまむらへのプレゼント	Tengo que regalarle algo.	A present for Shimamura.	False	False			
+	84	83	82	0:03:14.110000	0:03:17.030000	e7009e1522.mp3	e7009e1522.webp	プレゼント プレゼント	Un regalo, un regalo...	A present, a present...	False	False			
+	87	85	86	0:03:17	0:03:19.350000	0c10f513bc.mp3	0c10f513bc.webp	しまむらに クリスマスの...	Un regalo de Navidad para Shimamura...	A Christmas present for Shimamura-	False	False			
+	90	89	88	0:03:19.150000	0:03:24.570000	0f7e5cc2e1.mp3	0f7e5cc2e1.webp	おっす! あだちっち何ボーッとしてんの?	¡Hola, Adachicchi! ¿Qué haces en Babia? ¿Te encuentras mal?	Heya, Adachicchi! What're you spaced out for? You feeling faint?	False	False			
+	94	93	92	0:03:24.570000	0:03:26.740000	8790dfebdb.mp3	8790dfebdb.webp	そういうのじゃないけど	No es eso.	It's not that.	False	False			
+	97	96	95	0:03:26.740000	0:03:29.050000	cdc69e9b9e.mp3	cdc69e9b9e.webp	あー しまむら待ちか	Debes de estar esperando a Shimamura.	Oh, you must be waiting for Shimamura.	False	False			
+	100	99	98	0:03:28.910000	0:03:31.040000	765cfdf621.mp3	765cfdf621.webp	いや 別に	En realidad no...	No, not really...	False	False			
+	103	102	101	0:03:31.040000	0:03:33.850000	b750aad9a3.mp3	b750aad9a3.webp	そっちこそ1人なの珍しいね	Es muy raro verte sola.	Hey, it's rare to see you alone.	False	False			
+	107,108	106	105	0:03:35.040000	0:03:40.920000	56dbe3f3c2.mp3	56dbe3f3c2.webp	ホントだ いない　あいつが 私を見失うなんて	Vaya, no está aquí. ¿Cómo me habrá perdido de vista?	Oh, yeah. She's not here. How did she lose me?	False	False			
+	111	110	109	0:03:40.920000	0:03:43.510000	a9b6ef0584.mp3	a9b6ef0584.webp	永藤 待たなくてよかったの?	¿No vas a esperar a Nagafuji?	Don't you need to wait for Nagafuji?	False	False			
+	114,115	113	112	0:03:43.510000	0:03:48.640000	0b179f907d.mp3	0b179f907d.webp	あだっちーをメーシーに誘うチャンスなんて　なかなか ないからさ	Rara vez puedo almorzar contigo a solas.	I don't usually get the chance to ask you out to lunch.	False	False			
+	118	117	116	0:03:48.640000	0:03:50.930000	e9288acef8.mp3	e9288acef8.webp	いただきます	Que aproveche.	Thanks for the grub!	False	False			
+	121	120	119	0:03:50.930000	0:03:52.730000	2978fdc56e.mp3	2978fdc56e.webp	いただきます	Que aproveche.	Let's eat.	False	False			
+	124	123	122	0:03:58.780000	0:03:59.920000	0d0c9e6027.mp3	0d0c9e6027.webp	あのさ	Oye.	Say.	False	False			
+	128	127	126	0:04:01.150000	0:04:04.660000	fa53dc695c.mp3	fa53dc695c.webp	しまむらって何が好きか知ってる?	¿Por casualidad no sabrás qué le gusta a Shimamura?	Do you know what Shimamura likes?	False	False			
+	131	130	129	0:04:04.660000	0:04:08.200000	c6ef5e19a6.mp3	c6ef5e19a6.webp	あいつの好きなもの...って あんの?	¿Hay algo que le guste?	Does she have anything she actually likes?	False	False			
+	132	134	133	0:04:09.120000	0:04:12.460000	82d2445653.mp3	82d2445653.webp	そういうの話す性格じゃないんだよね	No suele hablar de esas cosas.	She's not the type of person that actually talks about stuff like that.	False	False			
+	135	137,139	136,138	0:04:12.440000	0:04:17.460000	2c1749b68e.mp3	2c1749b68e.webp	知ってる しまむらと買い物とか行ったことない?	Ya... ¿Has ido alguna vez de compras con Shimamura?	I know... Have you been shopping with Shimamura before?	False	False			
+	142	141	140	0:04:17.460000	0:04:20.630000	584031b65b.mp3	584031b65b.webp	何回か行ったけど 本屋とか	Sí, pero solo hemos ido a la librería.	I have, but it's usually like a bookstore.	False	False			
+	145,148	144,146	143,147	0:04:20.630000	0:04:24.890000	d389a2b74b.mp3	d389a2b74b.webp	あとは お茶屋をのぞいたことあったかな　お茶?	Ah, también nos pasamos por una tienda de té. ¿De té?	Oh, and we've peeked in a tea shop before. Tea shop?	False	False			
+	151,152	150	149	0:04:24.880000	0:04:29.890000	cdac2f330a.mp3	cdac2f330a.webp	まあ 私の関係でね　しまむらはついでに のぞいただけ	Fuimos por mí, pero Shimamura también echó un vistazo en la tienda.	Well, we went because of me, but Shimamura did have a look, too.	False	False			
+	155	154	153	0:04:29.890000	0:04:35.440000	8165f42b6d.mp3	8165f42b6d.webp	あっ そのときにお茶の葉で いい香りって気に入っていたやつがあったかも	Ah, sí, creo que le atrajo el olor de uno de los tés,	Oh, yeah. I think there was a certain tea that she said smelled good.	False	False			
+	158	157	156	0:04:35.440000	0:04:38.190000	1a032c9989.mp3	1a032c9989.webp	紅茶だったか お茶だったか...	pero no recuerdo si era negro o verde.	But I don't remember if it was black tea or green...	False	False			
+	161	160	159	0:04:38.190000	0:04:41.150000	81bcbc8c93.mp3	81bcbc8c93.webp	へえ お茶かあ	Ya veo. Té...	I see. So tea...	False	False			
+	164	163	162	0:04:41.150000	0:04:44.400000	70708e6b7d.mp3	70708e6b7d.webp	そのお茶の名前とか思い出せる?	Por casualidad, ¿te acuerdas del nombre del té?	You wouldn't happen to remember the name of that tea, would you?	False	False			
+	167	166	165	0:04:44.200000	0:04:47.870000	95a5d0e73d.mp3	95a5d0e73d.webp	えーっと ちょっと待ってよ	A ver... Un momento.	Um... One sec.	False	False			
+	170,171	169	168	0:04:47.870000	0:04:52.330000	13f4f4ad3b.mp3	13f4f4ad3b.webp	あー 何だったかなあ　麦茶ではなかったし	¿Cuál era? No era té de cebada...	Man, what was it? It wasn't barley tea...	False	False			
+	174	173	172	0:04:52.330000	0:04:55	c38e1fd42d.mp3	c38e1fd42d.webp	どっちの棚だったかなあ	¿En qué estante estaba...?	Which shelf was it on...?	False	False			
+	177	176	175	0:04:56.670000	0:04:58.880000	38170f3915.mp3	38170f3915.webp	ダメだ 忘れた	No, no me acuerdo.	Nope, I don't remember.	False	False			
+	180	179	178	0:05:00.550000	0:05:03.510000	7af8645d0a.mp3	7af8645d0a.webp	名前も出かかってるんだけどね	Pero tengo el nombre en la punta de la lengua.	The name is on the tip of my tongue, though.	False	False			
+	181	183	182	0:05:03.420000	0:05:07.180000	e943ac1307.mp3	e943ac1307.webp	見れば思い出せるかなあ 多分	Si lo viera otra vez, creo que lo recordaría.	I think I can remember it if I see it again.	False	False			
+	184,187	186,189	185,188	0:05:07.510000	0:05:15.980000	95f27b7687.mp3	95f27b7687.webp	あっ 見れば!　あーっと 見に... 行ってくれる?	Si lo vieras... ¿Podrías ir a buscarlo conmigo?	If you see it... Um... Will you look for it with me?	False	False			
+	192	191	190	0:05:15.980000	0:05:20.110000	686212d425.mp3	686212d425.webp	ふむ しまむら連れて行って聞けばいいんじゃねえの?	Bueno, también podrías ir con Shimamura y ya está.	Hm. I mean, you could just take Shimamura with you.	False	False			
+	195,198	194,197	193,196	0:05:25.150000	0:05:32.410000	a31afbfc9f.mp3	a31afbfc9f.webp	なるほど そういうことなら　私が一緒に行って選んであげよう	Ya veo... En ese caso, iré contigo a elegirlo.	Ah, I see. In that case, I'll go with you and choose.	False	False			
+	201	200	199	0:05:32.410000	0:05:33.620000	dd7ee03fc1.mp3	dd7ee03fc1.webp	ホントに!?	¿En serio?	Really?	False	False			
+	204,205,209,208	203,207	202,206	0:05:33.620000	0:05:41.920000	fd294d2980.mp3	fd294d2980.webp	日野がいた!　おうおう 遅いよ　永藤ちゃんよお　どこ迷子になってたんだい?	¡Ahí estás, Hino! Por fin llegas. ¿Dónde te habías metido, Nagafuji?	There's Hino! There you are. Where'd you get lost at, Nagafuji?	False	False			
+	212	211,214,216	210,213,215	0:05:41.920000	0:05:48.590000	9d2d6bbefb.mp3	9d2d6bbefb.webp	あれー?さっきより小さくなってない?	¿Eh? Oye... ¿Has encogido?	Oh? H-Hey... Did you shrink?	False	False			
+	219	217	218	0:05:48.450000	0:05:49.570000	90662189a6.mp3	90662189a6.webp	あん?	¿Qué?	Wha...?	False	False			
+	222	221	220	0:05:49.510000	0:05:54.850000	ce32b64fb2.mp3	ce32b64fb2.webp	いやあ 日野がいつもより小さいから見失ったのかと思って	Te perdí porque parecías más pequeña que de costumbre.	It's just you seem smaller than usual, so I lost track of you.	False	False			
+	228	227	226	0:06:02.610000	0:06:04.280000	ed450325af.mp3	ed450325af.webp	あっ ラーメン食べていい?	¿Te importa si como un poco?	Do you mind if I have some ramen?	False	False			
+	231	230	229	0:06:04.280000	0:06:06.030000	24881e20a3.mp3	24881e20a3.webp	んじゃあ パンよこしな	Pues trae algo de pan.	Hand over some bread, then.	False	False			
+	232,235	234	233	0:06:06.170000	0:06:08.680000	c0a5a1b972.mp3	c0a5a1b972.webp	甘いのあるよ　仲いいなあ	Son muy amigas.	They're so close...	False	False			
+	239	238	237	0:06:10.660000	0:06:15.790000	49f4957536.mp3	49f4957536.webp	私にはしまむらの頭なんてとても 叩けそうにない	No me veo capaz de pegar a Shimamura en la cabeza de esa forma.	I don't think I'd ever... be able to smack Shimamura on the head like that.	False	False			
+	242	241	240	0:06:19.420000	0:06:20.920000	44b8f9f037.mp3	44b8f9f037.webp	ごめーん	Perdón.	Sorry!	False	False			
+	245	243	244	0:06:20.900000	0:06:23.520000	7c8b9e3633.mp3	7c8b9e3633.webp	あだっつぃー 待ったー?	Adatty, ¿llevas mucho esperando?	Adatty, have you been waiting long?	False	False			
+	248	247	246	0:06:23.420000	0:06:25.170000	09bf511a09.mp3	09bf511a09.webp	永藤は いないの?	¿Nagafuji no está contigo?	Nagafuji's not with you?	False	False			
+	251	250	249	0:06:25.170000	0:06:27.340000	2a59f41190.mp3	2a59f41190.webp	あいつは用があるんだってさ	Al parecer, tenía cosas que hacer.	She apparently had something to do.	False	False			
+	254,255	253	252	0:06:27.340000	0:06:31.280000	fedca153b3.mp3	fedca153b3.webp	まあ 一年に一度くらいそういう日もある　行こうぜうん	Una vez al año tiene un día así. De todas formas, vamos.	She has a day like that like once a year. Anyway, let's go!	False	False			
+	260	258	259	0:06:33.200000	0:06:35.310000	3cc705fe60.mp3	3cc705fe60.webp	あっ 後ろ乗る?	¿Quieres montarte en la parte de atrás?	Oh... Do you want to get on the back?	False	False			
+	263	262	261	0:06:35.310000	0:06:38.980000	01863277d6.mp3	01863277d6.webp	乗るけど 学校から ちょっと離れないと	Vale, pero primero tenemos que alejarnos del insti.	I will, but we should get away from school first.	False	False			
+	266	265	264	0:06:38.980000	0:06:41.730000	2e10cc36c2.mp3	2e10cc36c2.webp	先生に見られたらうるさいじゃん	Como nos vea algún profe nos caerá una buena.	If a teacher sees us, we'll never hear the end of it.	False	False			
+	270	269	268	0:06:43.060000	0:06:44.690000	d7e4bb3bef.mp3	d7e4bb3bef.webp	何?	¿Qué?	What?	False	False			
+	273	272	271	0:06:44.690000	0:06:47.990000	df3ab20225.mp3	df3ab20225.webp	日野は 優等生だと思って	No te veía como una buena estudiante.	I never thought of you as an honor student.	False	False			
+	276	275	274	0:06:50.410000	0:06:53.830000	fcea2f6e77.mp3	fcea2f6e77.webp	もっと 褒めてもいいのよ	Venga, halágame más.	Praise me more.	False	False			
+	279	278	277	0:06:53.830000	0:06:56.370000	3048803690.mp3	3048803690.webp	本当はおかしいんだろうなあ	Es muy extraño...	I bet it is pretty weird...	False	False			
+	282	280	281	0:06:56.350000	0:06:59.690000	f5c8cd36b8.mp3	f5c8cd36b8.webp	女同士でクリスマスに出歩くのを想像して	Es imaginarme pasando la Navidad con otra chica	That I'm imagining walking around town on Christmas with another girl	False	False			
+	285	284	283	0:06:59.660000	0:07:01.960000	b2babd0448.mp3	b2babd0448.webp	心が弾むなんて	y se me acelera el corazón.	and my heart is about to burst.	False	False			
+	288	287	286	0:07:01.960000	0:07:07.760000	8c0f924b55.mp3	8c0f924b55.webp	しまむらは きっとこんなふうにはクリスマスを待ち望んではいない	Apuesto a que Shimamura no está tan nerviosa.	I'm sure that Shimamura isn't this anxious about Christmas.	False	False			
+	291	290	289	0:07:07.760000	0:07:11.470000	927f9a67bc.mp3	927f9a67bc.webp	私としまむらの間には大きな温度差があって	Hay una gran diferencia entre lo que sentimos las dos.	There's definitely a difference in how I feel about Shimamura and vice versa.	False	False			
+	294	292	293	0:07:11.450000	0:07:16.680000	2814372f73.mp3	2814372f73.webp	私は それを知ってほしいのか知られたくないのか	No estoy segura de si quiero que sepa lo mío.	And I'm not sure if I want her to realize that... or not.	False	False			
+	297	296	295	0:07:18.660000	0:07:21.160000	92e985e22e.mp3	92e985e22e.webp	いつも ありがとうございます	Gracias por volver.	Thank you for coming by again.	False	False			
+	300	299	298	0:07:21.120000	0:07:22.330000	7e4198d194.mp3	7e4198d194.webp	どうもー	Hola.	Heya.	False	False			
+	303	302	301	0:07:23.880000	0:07:25.210000	3c4ae539a0.mp3	3c4ae539a0.webp	よく来るの?	¿Vienes mucho?	Do you come here often?	False	False			
+	306,307	305	304	0:07:25.230000	0:07:29.690000	961838ea45.mp3	961838ea45.webp	うん まあ　家の人が飲んだり 飲まなかったり	Sí... Puede que alguien en mi familia beba mucho té...	Yeah... I may or may not have someone in my family who drinks a lot of tea...	False	False			
+	310	309	308	0:07:29.690000	0:07:32.990000	6c40243d6f.mp3	6c40243d6f.webp	生姜かあ 体あったまりそう	Jengibre... Seguro que te espabila.	Ginger... That'd probably warm you right up.	False	False			
+	313	312	311	0:07:32.990000	0:07:35.450000	cec26daf98.mp3	cec26daf98.webp	冷え症に効果的らしいよ	Es perfecto para quien se resfría fácilmente.	Apparently, it works great for people who get cold easily...	False	False			
+	316	315	314	0:07:35.450000	0:07:37.410000	089234c0a0.mp3	089234c0a0.webp	家の人に言わせると	O eso dicen en mi familia.	According to my family member.	False	False			
+	319	318	317	0:07:37.410000	0:07:38.870000	12ac90c68f.mp3	12ac90c68f.webp	日野は飲まないの?	¿Tú no bebes?	You don't drink it?	False	False			
+	322,323	321	320	0:07:38.870000	0:07:44.410000	4d8250607c.mp3	4d8250607c.webp	別に冷え症じゃないからねえ　どこだったかな?	Yo no me resfrío así como así. A ver, ¿dónde estaba?	Well, I don't exactly get cold easily. Let's see, where was it...?	False	False			
+	326	325	324	0:07:44.250000	0:07:47.880000	c8d7162ab0.mp3	c8d7162ab0.webp	えっと 確かこの棚だったような...	Estoy segura de que estaba en esta parte...	I'm pretty sure it was on this shelf...	False	False			
+	330,331	329	328	0:08:03.940000	0:08:07.400000	cc7d938787.mp3	cc7d938787.webp	あだっつぃー君　1つ聞きたい	Oye, Adatty, ¿puedo preguntarte algo?	Hey, Adatty. Can I ask you something?	False	False			
+	334	333	332	0:08:08.530000	0:08:11.950000	e3659d2820.mp3	e3659d2820.webp	もし 自信満々に「はい これ」と渡しておいて	¿Eres de las que se enfadaría si te dijera	Are you the type that would get mad if I confidently told you,	False	False			
+	337	336	335	0:08:11.860000	0:08:14.990000	75b462a36a.mp3	75b462a36a.webp	間違っていたら怒っちゃう人ですか?	que es el correcto pero me equivocara?	"Yeah, this is the one!" and was totally wrong?	False	False			
+	340	339	338	0:08:14.990000	0:08:18.330000	8972b53c9a.mp3	8972b53c9a.webp	そこまでひどい性格ではないと思うけど	Creo que no soy tan mala persona.	I don't think my personality sucks that badly...	False	False			
+	343	342	341	0:08:18.330000	0:08:21.200000	2757973d1e.mp3	2757973d1e.webp	ならいいや 多分これ	Perfecto. Entonces, creo que era este.	Oh, good. Then I think it's this one.	False	False			
+	346,348,347	345	344	0:08:24.080000	0:08:30.670000	5bcc88dc30.mp3	5bcc88dc30.webp	いやー 悪いね　って 私がねだったんだけど　おごってもらっちゃって	Gracias por invitarme, aunque la propuesta haya sido mía.	Man... Thanks for treating me. Though I sorta talked you into it.	False	False			
+	353	352	351	0:08:31.800000	0:08:33.840000	ce6178cace.mp3	ce6178cace.webp	ここ ちょっと寒いねえ	Hace un poco de frío aquí.	It's a bit chilly in here.	False	False			
+	356	355	354	0:08:33.840000	0:08:35.550000	f669cce3de.mp3	f669cce3de.webp	足スースー	Tengo las piernas congeladas.	My legs are freezing.	False	False			
+	359	358	357	0:08:35.550000	0:08:36.850000	194b0f8bc3.mp3	194b0f8bc3.webp	うん	Sí.	Yeah.	False	False			
+	362	361	360	0:08:38.050000	0:08:42.640000	37db263cba.mp3	37db263cba.webp	話すことないから困るって思ってるだろ?	Estás nerviosa porque no sabes qué decir, ¿verdad?	You're totally anxious because you don't know what to say right now, huh?	False	False			
+	365	364	363	0:08:42.640000	0:08:44.850000	68201abd3a.mp3	68201abd3a.webp	うっ ま... まあ	Sí...	Y-Yeah...	False	False			
+	368	367	366	0:08:44.850000	0:08:49.110000	a46f715984.mp3	a46f715984.webp	って 永藤と来ても似たようなものだけどね	Estoy segura de que sería igual si Nagafuji estuviera aquí.	I'm sure it would've been the same with Nagafuji here, too.	False	False			
+	371	370	369,372	0:08:49.110000	0:08:52.940000	5997826b4b.mp3	5997826b4b.webp	あいつの場合 うん?	Aunque en su caso...	Though, in her case... Huh?	False	False			
+	375,376	374	373	0:09:12.840000	0:09:17.640000	d8d345c64c.mp3	d8d345c64c.webp	用事って へえー ほう...　聞いてた?	Así que eso era lo que tenía que hacer... ¿Tú lo sabías?	So that's what she had to do... Did you know about this?	False	False			
+	379,380	378	377	0:09:21.260000	0:09:25.020000	119ed230fc.mp3	119ed230fc.webp	はあ やれやれ　困るなあ 君	Vaya tela. ¿Qué voy a hacer contigo?	Good grief. What am I going to do with you?	False	False			
+	383	382	381	0:09:25.020000	0:09:27.230000	9b5797cbf9.mp3	9b5797cbf9.webp	えっ 何が?	¿Eh? ¿Qué?	Huh? What?	False	False			
+	386	385	384	0:09:28.360000	0:09:30.440000	f411d9b849.mp3	f411d9b849.webp	後でも つけてみる?	¿Quieres seguirlas?	Wanna follow them?	False	False			
+	389	388	387	0:09:31.440000	0:09:34.990000	a6d947b7dd.mp3	a6d947b7dd.webp	やめとこう 用事があるみたいだし	Mejor que no. Parecía que estaban ocupadas.	Let's not. They seem busy.	False	False			
+	392	391	390	0:09:34.990000	0:09:38.660000	8ed5a5774e.mp3	8ed5a5774e.webp	あだっつぃーはホント 優等生よのう	Adatty, eres toda una estudiante modelo.	Ah, Adatty, always the honor student.	False	False			
+	395	394	393	0:09:40.990000	0:09:43.790000	980bfdaef8.mp3	980bfdaef8.webp	自分だけだと思い上がっていた	Creía que yo era la única	I thought I was the only one...	False	False			
+	398	397	396	0:09:43.790000	0:09:49.400000	78dfdd1931.mp3	78dfdd1931.webp	しまむらと2人で出かけるその隣にいるのは自分だけなんだって	que salía sola con Shimamura.	...that got to hang out with Shimamura alone.	False	False			
+	401,402	399	400	0:09:49.610000	0:09:55.470000	bb1dc1fe4f.mp3	bb1dc1fe4f.webp	それが大きな思い違いだったことに　痛みを覚えることこそ間違っている	El hecho de que estuviera equivocada no debería doler tanto.	And the fact that I was totally wrong about that shouldn't hurt this much.	False	False			
+	405	404	403	0:09:57.260000	0:09:59.890000	428dc66095.mp3	428dc66095.webp	反省	Soy una estúpida.	I'm so dumb.	False	False			
+	408	407	406	0:09:59.890000	0:10:02.100000	13b9430b9d.mp3	13b9430b9d.webp	しまむら	Shimamura...	Shimamura...	False	False			
+	411	410	409	0:10:02.100000	0:10:04.350000	5ced0c009b.mp3	5ced0c009b.webp	その名前を呼ぶだけで	Con solo decir su nombre...	Just saying her name...	False	False			
+	414,415	413	412	0:10:04.350000	0:10:09.850000	f84628ba0e.mp3	f84628ba0e.webp	しまむらという言葉の響きだけで　今年の冬は乗り切れそうだった	Solo el sonido de su nombre era suficiente para soportar este invierno.	Just the sound of her name was enough to get me through this winter.	False	False			
+	418	417	416	0:10:10.810000	0:10:12.400000	847b1a2c7b.mp3	847b1a2c7b.webp	ねえねえねえ!	Oye, oye, oye.	Hey, hey, hey.	False	False			
+	421	420	419	0:10:12.400000	0:10:14.530000	3bfc70b70b.mp3	3bfc70b70b.webp	ヤチーって ホントに宇宙人?	Yachi, ¿de verdad eres un alien?	Are you really an alien, Yachi?	False	False			
+	426	425	424	0:10:16.320000	0:10:19.740000	2c727924e9.mp3	2c727924e9.webp	ホントも何もウソついたことありません	Por supuesto que sí, yo nunca miento.	But of course. I have never told a lie.	False	False			
+	429	428	427	0:10:19.740000	0:10:22.640000	3547d3ea85.mp3	3547d3ea85.webp	証拠見せて 宇宙人の証拠!	Entonces demuéstramelo.	Then show me proof! Proof that you're an alien.	False	False			
+	431	433	430,432	0:10:22.580000	0:10:27	ed4d05f33b.mp3	ed4d05f33b.webp	チッチッチッ 見せるのは協定違反なので できません	Si te lo demostrara, estaría violando mi contrato.	Tsk, tsk, tsk. I would be violating my agreement if I showed you, so I cannot.	False	False			
+	436	435	434	0:10:27	0:10:31.080000	47ef479fc7.mp3	47ef479fc7.webp	宇宙も色々厳しい... おやっ?	Las reglas del universo son estrictas.	The rules of the universe can be rather strict. Oh?	False	False			
+	439	438	437	0:10:31.080000	0:10:34.800000	529b1052fe.mp3	529b1052fe.webp	しまむらしょうさんそれは何ですか?	Pequeña Shimamura, ¿eso qué es?	What is that, Little Shimamura?	False	False			
+	442	441	440	0:10:45.930000	0:10:49.390000	969ad58fe5.mp3	969ad58fe5.webp	過激な音ですな	Vaya, qué sonido tan dramático...	My, my, my, what a dramatic sound...	False	False			
+	445	444	443	0:10:49.390000	0:10:51.820000	56c8402d3a.mp3	56c8402d3a.webp	過激なのは ヤチーだけだよ	Tú sí que eres dramática.	You're the one that's dramatic, Yachi.	False	False			
+	448	447	446	0:10:51.770000	0:10:55.240000	b70fd4849a.mp3	b70fd4849a.webp	もう少し優しい感じに息を吐いて	Tienes que soplar con más suavidad.	Just breathe into it more gently...	False	False			
+	449	451	450	0:10:55.360000	0:10:59.780000	1431d4e7f6.mp3	1431d4e7f6.webp	あっ そろそろ特売の時間なので 行かねば	Ya casi es la hora. Debo irme.	Ah, it's almost discount time, so I must go.	False	False			
+	456	455	454	0:11:12.130000	0:11:13.840000	e6be5accba.mp3	e6be5accba.webp	宇宙語?	¿Será cosas de aliens?	Alienspeak?	False	False			
+	459	457	458	0:11:16.530000	0:11:20.010000	6ea85dd3d8.mp3	6ea85dd3d8.webp	私としまむらは普通の友達だ	Shimamura y yo solo somos amigas.	Shimamura and I are just normal friends.	False	False			
+	462	460	461	0:11:19.990000	0:11:22.760000	1f624ebc84.mp3	1f624ebc84.webp	少なくともしまむらにとっては	O así es como ella nos ve.	At least, that's how Shimamura sees us.	False	False			
+	465,469,470	464,468	463,466,467	0:11:22.760000	0:11:34.880000	fcac2ac57e.mp3	fcac2ac57e.webp	その上で しまむらとの距離を一歩ずつでも詰めていきたい　だけど距離が近くなるというのは　伝わるものも大きくなるということで	Aun así, quiero irme acercando a ella poco a poco. Pero cuanto más me acerco más cosas sé.	Even then, I still want to get closer to Shimamura one step at a time. "Where do you want to meet?" "Does 1 PM at the usual mall work?" "Roger" "I'm looking forward to tomorrow." But the closer you get, the more things get across.	False	False			
+	473	472	471	0:11:34.900000	0:11:39.280000	59331835b3.mp3	59331835b3.webp	私は しまむらにクリスマスという お題目を得て	Aunque no dejo de mencionar lo de la Navidad con ella...	I keep mentioning Christmas with Shimamura, but...	False	False			
+	476	475	474	0:11:39.280000	0:11:42.950000	9e0a0e6045.mp3	9e0a0e6045.webp	愛? いやいやいや	¿Será amor? No...	Is it love? No, no, no...	False	False			
+	479	478	477	0:11:42.950000	0:11:46.870000	d9fdde84c7.mp3	d9fdde84c7.webp	恋? いやいや いやいやいや!	¿Romance? No...	Romance? No, no, no...	False	False			
+	482	481	480	0:11:46.870000	0:11:48.120000	7e91d80541.mp3	7e91d80541.webp	好き?	¿Me gusta?	Like...?	False	False			
+	485	484	483	0:11:53.580000	0:11:56.710000	4ae3143265.mp3	4ae3143265.webp	とにかく あたたかいものだ	Lo que sea es algo cálido.	Whatever it is, it's warm and fuzzy.	False	False			
+	488	487	486	0:11:56.710000	0:12:00.760000	e776d34fd1.mp3	e776d34fd1.webp	私の胸に流れるあたたかい液体だ	Es un líquido cálido que recorre mi pecho.	It's a warm liquid that flows through my chest.	False	False			
+	493	491	492	0:12:16.920000	0:12:19.820000	2c1629d546.mp3	2c1629d546.webp	どういう 「おー」?	¿A qué viene ese palabro?	What's this "Cool" supposed to mean?	False	False			
+	496	495	494	0:12:19.820000	0:12:23.060000	f57285ca6e.mp3	f57285ca6e.webp	えいえいおー? おーっと?	¿Se refiere a "qué guay" o quiere que me tranquilice?	Like, "Coolio"? Maybe she meant, "Chill out"?	False	False			
+	499	498	497	0:12:23.030000	0:12:25.450000	377280b907.mp3	377280b907.webp	ふーん そーおー?	¿O será algo del frío?	Or, "Cool beans"?	False	False			
+	502	501	500	0:12:27.830000	0:12:31.870000	866df4c281.mp3	866df4c281.webp	私はしまむらの声が聞きたい	Quiero oír su voz.	I want to hear Shimamura's voice...	False	False			
+	505	504	503	0:12:31.870000	0:12:34.420000	9c3f8268be.mp3	9c3f8268be.webp	もっと知りたいから	Quiero conocerla mejor.	I want to know more about her.	False	False			
+	508	507	506	0:12:34.420000	0:12:37.500000	6b08f5e92b.mp3	6b08f5e92b.webp	明日 たくさん聞けるから	Quiero preguntarle un montón de cosas mañana.	And I'll be able to hear and ask her lots tomorrow.	False	False			
+	511	510	509	0:13:06.320000	0:13:07.910000	4d19db23fd.mp3	4d19db23fd.webp	待った?	¿Llevas mucho esperando?	Were you waiting long?	False	False			
+	514	512	513	0:13:08.800000	0:13:10.530000	1ae3cd3ec5.mp3	1ae3cd3ec5.webp	今 来たとこ	Acabo de llegar.	I just got here.	False	False			
+	517	516	515	0:13:10.370000	0:13:11.820000	ac25ecca86.mp3	ac25ecca86.webp	ウソつけー	Mentira.	You liar.	False	False			
+	520	519	518	0:13:11.790000	0:13:16.330000	b74397ddbc.mp3	b74397ddbc.webp	5分前から遠くで見てたぞ座ってる安達のこと	Llevo observándote desde allí desde hace cinco minutos.	I've been watching you sitting here for the last five minutes from afar.	False	False			
+	524,525	523	522	0:13:19.090000	0:13:24.010000	3234f8401a.mp3	3234f8401a.webp	いや 冗談だったんだけど　とにかくごめん 待たせたううん	Era broma. De todas formas, siento haber tardado.	Er, I was just joking. Anyway, sorry for making you wait.	False	False			
+	530	529	528	0:13:25.630000	0:13:30.930000	9af21e809e.mp3	9af21e809e.webp	で 安達 一目見たときから気になっていたことがあるんだけど	Desde que te he visto, me he estado preguntando...	So, I've been wondering ever since I saw you today...	False	False			
+	533	532	531	0:13:30.930000	0:13:33.140000	a783b32112.mp3	a783b32112.webp	えっ 何?	¿Eh? ¿Qué?	Huh? What?	False	False			
+	536	535	534	0:13:33.140000	0:13:37.650000	f816a5e307.mp3	f816a5e307.webp	何で コートの下バイト先のチャイナドレスなの?	¿Por qué llevas el vestido chino del curro debajo del abrigo?	Why are you wearing your Chinese dress from work under your coat?	False	False			
+	539	537	538	0:13:39.040000	0:13:42.820000	e0d3efe71b.mp3	e0d3efe71b.webp	ああ まあやっぱり気になるよね	Sí, no te culpo por pensar en eso.	Oh, uh... Yeah, I guess I can't blame you for wondering.	False	False			
+	542	540,544	541,543	0:13:42.800000	0:13:47.490000	d2d32be57f.mp3	d2d32be57f.webp	というか 変なお店の客引きと思われないかなあ	La verdad, ¿no crees que los demás van a pensar algo raro?	Actually, won't people think you're trying to lure them into a sketchy shop?	False	False			
+	547	546	545	0:13:48.490000	0:13:51.620000	669cfdcf83.mp3	669cfdcf83.webp	私だって おかしいと思う	Sí, hasta yo me lo digo.	Look, even I know this is weird.	False	False			
+	550	549	548	0:13:51.620000	0:13:56.670000	914cc2a79e.mp3	914cc2a79e.webp	でも しまむらがかわいいって褒めてくれたから	Pero dijo que me quedaba bien, así que...	But... She said I looked cute in it, so...	False	False			
+	553	552	551	0:13:56.670000	0:14:01.710000	5fb47b992d.mp3	5fb47b992d.webp	あっ 私はいいと思うよかわいいじゃん	Bueno, por mí no pasa nada. Estás muy guapa.	Oh, I think it's fine. You look super cute.	False	False			
+	554	556	555	0:14:01.140000	0:14:05.880000	58d39c6832.mp3	58d39c6832.webp	美人は得だよねー よく似合ってるもの	Lo de ser guapa tiene que ser una pasada porque te puedes poner ese traje.	It must be nice being so pretty. You can actually pull that outfit off.	False	False			
+	559	558	557	0:14:05.880000	0:14:10.550000	e49992b307.mp3	e49992b307.webp	し... しまむらの方がかわいいし	Tú eres más guapa...	B-But you're even cuter Shimamura...	False	False			
+	560	562	561	0:14:12.300000	0:14:15.310000	e77d7f3c7c.mp3	e77d7f3c7c.webp	ハハハ 嫌みはやめなさい	Ahórrate el sarcasmo.	You can skip the sarcasm.	False	False			
+	565	564	563	0:14:15.290000	0:14:17.730000	d9a592f8d9.mp3	d9a592f8d9.webp	今日は 2人でクリスマス	Las dos solas en Navidad...	Christmas all alone with Shimamura...	False	False			
+	568,569	567	566	0:14:17.730000	0:14:23.500000	622d1499c4.mp3	622d1499c4.webp	しまむらは友達づきあいだから　仕方なく来てくれただけかもしれないけど	Aunque probablemente ha venido porque se siente obligada como amiga.	Though Shimamura's probably only here because she felt obligated as a friend.	False	False			
+	572	570,574	571,573	0:14:23.840000	0:14:31.070000	775b599b43.mp3	775b599b43.webp	ダメだ 気を抜くと悪い方ばかりに考えが落ちこんでしま...	Tengo que parar. Cuando bajo la guardia me pongo en lo peor y me deprimo.	I need to stop. Whenever I let my guard down, my thoughts just go down a dark path and I'll get depressed...	False	False			
+	577	576	575	0:14:40.790000	0:14:43.210000	ceb3d86666.mp3	ceb3d86666.webp	ご... ごめんなさい	Lo siento.	S-Sorry.	False	False			
+	580	579	578	0:14:44.170000	0:14:47.630000	c64a14e3ae.mp3	c64a14e3ae.webp	うん 本当にごめんなさい	No, de verdad. Lo siento.	No, really. I'm sorry.	False	False			
+	583	582,585	581,584	0:14:49.220000	0:14:54.680000	dc582314cb.mp3	dc582314cb.webp	はあ... あー そのひったくりみたいに手を取るのはやめようね	Oye... No me cojas de la mano como si fueras una carterista.	So, hey. Don't suddenly grab my hand like a purse-snatcher.	False	False			
+	588	586	587	0:14:54.450000	0:14:55.890000	3d36515e1f.mp3	3d36515e1f.webp	ごめん	Perdona.	Sorry.	False	False			
+	591	590	589	0:14:55.890000	0:14:57.640000	25191750b0.mp3	25191750b0.webp	手 つなぐの?	¿Nos cogemos de la mano?	Did you want to hold hands?	False	False			
+	594	593	592	0:14:57.640000	0:14:59.560000	77ea537aac.mp3	77ea537aac.webp	できれば	Si es posible...	If we could.	False	False			
+	597	596	595	0:14:59.560000	0:15:03.150000	ddbd8ca4b5.mp3	ddbd8ca4b5.webp	前にもこんなやりとり しなかったかな?	¿No lo hemos hecho ya antes?	Didn't we do this all before?	False	False			
+	600	599	598	0:15:03.150000	0:15:04.520000	91d1952ff4.mp3	91d1952ff4.webp	したかも	Puede ser.	Possibly.	False	False			
+	603	602	601	0:15:14.490000	0:15:19.620000	bbe39e3dd5.mp3	bbe39e3dd5.webp	次回からはつないでいい?とか ちゃんと聞くように	La próxima vez, pregunta si está bien.	Next time, make sure you just ask if it's okay.	False	False			
+	608,609	607	606	0:15:23.540000	0:15:27.300000	f67448c420.mp3	f67448c420.webp	何? その反応　どうやって発音したの?	¿Qué respuesta es esa? ¿Cómo se pronuncia?	What kind of response is that? How did you even pronounce that?	False	False			
+	612	611	610	0:15:27.300000	0:15:29.420000	7384375961.mp3	7384375961.webp	エビに ちょっと似てたかも	Parecías una gamba.	You might've sounded like a shrimp just now.	False	False			
+	615,616	614,618	613,617	0:15:29.420000	0:15:35.890000	2e5cf66e18.mp3	2e5cf66e18.webp	今のは気にしないで　あの 分かった 次からは 聞く	Olvídalo. Esto... Vale. Te preguntaré la próxima vez.	Just ignore that. Um... I got it, though. I'll ask next time.	False	False			
+	621	620,623	619,622	0:15:35.890000	0:15:39.430000	6ad764569e.mp3	6ad764569e.webp	そうして はい	Bien. Venga.	Good. Come on.	False	False			
+	626	624	625	0:15:41.790000	0:15:43.940000	266be97113.mp3	266be97113.webp	そんなに慌てなくても	No tengas tanto miedo.	You don't need to panic so much.	False	False			
+	629	628	627	0:15:43.940000	0:15:48.190000	be1836504c.mp3	be1836504c.webp	他の誰も 私の手を取ろうとしないんだからさ	Nadie me va a robar la mano.	No one else is going to steal my hand from you.	False	False			
+	632	631	630	0:15:53.030000	0:15:59.500000	c487df83e1.mp3	c487df83e1.webp	でもしまむらの横を歩く人は私だけじゃないから	Pero yo no soy la única con la que vas a solas...	But I'm not the only one that gets to walk next to you...	False	False			
+	635	634	633	0:15:59.500000	0:16:01.410000	909ac6755f.mp3	909ac6755f.webp	ここで 遊ぼうと思います	Podemos jugar aquí.	I was thinking we could play here.	False	False			
+	638	637	636	0:16:01.410000	0:16:03.880000	e6917d8fce.mp3	e6917d8fce.webp	へえー ゲームセンターかあ	¿En unas recreativas?	Huh... An arcade.	False	False			
+	641	640	639	0:16:03.880000	0:16:05.710000	08b50326dd.mp3	08b50326dd.webp	あっ 卓球台がある	Mira, una mesa de ping-pong.	Oh, hey. A ping-pong table.	False	False			
+	644,645	643	642	0:16:05.710000	0:16:09.050000	0df5bfc60d.mp3	0df5bfc60d.webp	うん　でも 今日は...	Sí, pero estaba pensando...	Yeah, but I was thinking...	False	False			
+	648	647	646	0:16:09.050000	0:16:13.010000	9b9430d776.mp3	9b9430d776.webp	これ エアホッケー どうかな?	Podríamos jugar al hockey aéreo, ¿qué opinas?	We could play... this. Air hockey. What do you think?	False	False			
+	651	650	649	0:16:13.010000	0:16:15.430000	c22453783c.mp3	c22453783c.webp	いいね やろうか	Claro, ¿por qué no?	Sure, why not?	False	False			
+	654	653	652	0:16:15.430000	0:16:16.550000	1911c0d523.mp3	1911c0d523.webp	うん	Vale.	Okay.	False	False			
+	657	656	655	0:16:17.930000	0:16:22.440000	7e1727e532.mp3	7e1727e532.webp	エアホッケーは卓球に通じるものがある	El hockey aéreo es algo parecido al ping-pong.	Air hockey is sort of similar to ping-pong in some ways.	False	False			
+	660	659	658,661	0:16:22.410000	0:16:25.290000	8efe754819.mp3	8efe754819.webp	私達のお戯れといえばこれだった	Era nuestro pasatiempo.	This was our pastime. You can go first, Adachi.	False	False			
+	664,667,670	663,666,669	662,665,668	0:16:25.880000	0:16:36.410000	328950478f.mp3	328950478f.webp	体育館の2階で出会った私としまむら　どんな形でも出会ってしまえばそこに至る流れ　運命がある	Shimamura y yo nos conocimos en el segundo piso del gimnasio. No importa cómo fue, pero cuando nos conocimos hubo un camino y un destino que nos llevaron hasta ahí.	Shimamura and I met on the second floor of the gym. No matter how it happened, once we've met, there was a path that led us there as well as fate.	False	False			
+	673	672	671	0:16:38.310000	0:16:43.060000	067e19407e.mp3	067e19407e.webp	どんな出会い方にも壮大な過去が用意されているのだ	Da igual cómo sea el encuentro, siempre hay un pasado que lo acompaña.	No matter the encounter, there's always a grand past that goes along with it.	False	False			
+	676	675	674	0:16:43.080000	0:16:49.780000	75a66f8fcc.mp3	75a66f8fcc.webp	200 500 何百億という全体の行動の積み重ねがあった上でしか	Doscientas o 500 mil millones de acciones hechas por todo el mundo	Two hundred, 500, billions of actions done by everyone and everything	False	False			
+	679	677	678	0:16:49.770000	0:16:52.470000	7fc921a641.mp3	7fc921a641.webp	人と 人は出会うことができない	son necesarias para conocerse.	piled up together in order for two people to meet.	False	False			
+	682,683,686	681,684	680,685	0:16:52.470000	0:17:01.640000	c75a821543.mp3	c75a821543.webp	何という道のりだったのだろう　1つでも違うものを選べば　私は しまむらに出会えなかったのだから	¿Cómo será el camino que nos ha traído hasta aquí? Solo una decisión diferente habría supuesto que no nos conociéramos.	I wonder what kind of paths led us to meet. Even one different decision would've meant that I wouldn't have met Shimamura.	False	False			
+	689	688	687	0:17:01.640000	0:17:04.390000	f470f04b0a.mp3	f470f04b0a.webp	その事実だけで 私は	Y eso...	And that fact alone...	False	False			
+	692	690	691	0:17:05.540000	0:17:09.520000	2281465588.mp3	2281465588.webp	今までの自分をどこまでも好きになれそうだった	me hizo querer mucho a mi yo del pasado.	Made me endlessly like my past self.	False	False			
+	695,696	694	693	0:17:09.520000	0:17:13.240000	4d5de27093.mp3	4d5de27093.webp	あ... 安達　案外 うまいね	Eres muy buena en esto.	Y-You're pretty good at this, Adachi...	False	False			
+	699	698	697	0:17:13.240000	0:17:16.110000	6ed11f1f46.mp3	6ed11f1f46.webp	ど... どうだ!	¿Qué tal?	H-How you like them apples?	False	False			
+	702	701	700	0:17:18.950000	0:17:21.660000	8e9615f8f8.mp3	8e9615f8f8.webp	安達 超強いじゃん	Eres muy buena.	Jeez, Adachi. You're super good.	False	False			
+	705	704	703	0:17:21.660000	0:17:24.609000	584fab38e2.mp3	584fab38e2.webp	初心者いじめとはなかなか やるなあ	No me esperaba que fueras a por los novatos.	I never expected you to be the type to pick on noobs.	False	False			
+	708	707	706	0:17:24.540000	0:17:26.710000	d385453279.mp3	d385453279.webp	そういうのじゃないから	No es eso.	It's not like that.	False	False			
+	711	709	710	0:17:26.580000	0:17:29.380000	7079a60e15.mp3	7079a60e15.webp	卓球も 安達が勝ち越していたよね	Creo que también tienes más victorias al ping-pong.	I think you also had more wins in ping-pong, too.	False	False			
+	714	712	713	0:17:29.340000	0:17:30.800000	9feae78db9.mp3	9feae78db9.webp	そうだった?	¿Ah, sí?	Did I?	False	False			
+	717,718	716	715	0:17:30.800000	0:17:33.760000	b5a4bf4f73.mp3	b5a4bf4f73.webp	いや　やっぱり 私だったかなー	O tal vea sea yo.	Wait, maybe it's me.	False	False			
+	721	720	719	0:17:33.760000	0:17:38.050000	0725e70fe9.mp3	0725e70fe9.webp	こっちが覚えていないからって改ざんするのは ずるい	No es justo inventarte cosas solo porque no te acuerdes.	It's not fair to make stuff up just because I don't remember.	False	False			
+	724	723	722	0:17:38.050000	0:17:43.430000	4f79d92db0.mp3	4f79d92db0.webp	もう遠い... というほど昔には感じないんだよね	Pero no parece que haya pasado tanto tiempo.	But it doesn't seem that long ago somehow.	False	False			
+	727	726	725	0:17:43.430000	0:17:48.100000	fe9747ab65.mp3	fe9747ab65.webp	2年生になって 春が来て日差しが強くなったら	Cuando llegue la primavera, el sol y estemos en segundo,	When spring comes and we become second-years and the sun is out more again,	False	False			
+	730	729	728	0:17:48.100000	0:17:50.980000	2c44947094.mp3	2c44947094.webp	また 体育館に行くのかなあ?	¿volveremos a ir al gimnasio?	I wonder if we're gonna go to the gym again.	False	False			
+	733,734	732	731	0:17:56.150000	0:18:02.790000	79a5d1e343.mp3	79a5d1e343.webp	授業を受けて 放課後 ここに来て　ピンポンすればいいんじゃないかな	Podemos ir a clase, venir aquí después y jugar al ping-pong.	I think we can just go to class, come here after school, and play ping-pong.	False	False			
+	737,738	736	735	0:18:02.790000	0:18:07.420000	aeb6b3ab07.mp3	aeb6b3ab07.webp	100点　安達もすっかり優等生になったね	Sería perfecto. Ahora sí que eres toda una estudiante modelo.	A perfect score. You're a total honor student now, Adachi.	False	False			
+	741,742	740	739	0:18:09.420000	0:18:13.670000	a866c332a2.mp3	a866c332a2.webp	でも 2年生かあ　クラスも替わるよねえ	Pero en segundo seguramente caeremos en clases distintas.	But man, we're gonna be second-years... We'll probably be in different classes.	False	False			
+	745	744	743	0:18:17.720000	0:18:19.930000	e38ec7a22d.mp3	e38ec7a22d.webp	しまむら これ	Toma, Shimamura.	Shimamura... here.	False	False			
+	747	749	748	0:18:20.980000	0:18:25.180000	9fcf3bbb94.mp3	9fcf3bbb94.webp	クリスマスプレゼントの... つもり	Te he comprado un regalo de Navidad.	I bought you a Christmas gift... or something...	False	False			
+	752	751	750	0:18:25.180000	0:18:29.980000	46c612019d.mp3	46c612019d.webp	いや 何か嬉しいじゃないの	¿Eh? Qué sorpresa. ¿Puedo abrirlo?	Wow... Well, this was a nice surprise. Can I open it?	False	False			
+	756	755	754	0:18:29.980000	0:18:31.610000	e46257c81e.mp3	e46257c81e.webp	うん	Sí.	Yeah.	False	False			
+	759,760	758	757	0:18:31.610000	0:18:36.410000	7ca3cd9368.mp3	7ca3cd9368.webp	あっ 香りのいいやつ　これ 飲んでみたかったんだ	Vaya, es el que olía bien. Tenía ganas de probarlo.	Oh, hey. This is the nice smelling one. I wanted to try it out.	False	False			
+	763	762	761	0:18:36.400000	0:18:38.070000	0fac97788e.mp3	0fac97788e.webp	嬉しいー	¡Qué guay!	This is great!	False	False			
+	766	765	764	0:18:39.070000	0:18:42.330000	94f5bc089e.mp3	94f5bc089e.webp	でも 何で私の好みを知ってるの?	Pero ¿cómo sabías que lo quería?	But how did you know I liked this?	False	False			
+	769	768	767	0:18:43.740000	0:18:44.910000	e55b0c901e.mp3	e55b0c901e.webp	あっ...偶然?	¿Por casualidad?	Just a coincidence?	False	False			
+	772	771	770	0:18:44.910000	0:18:46.200000	d6836a649a.mp3	d6836a649a.webp	ではない	No...	No...	False	False			
+	775,776	774	773	0:18:46.200000	0:18:51.750000	7cce9bf161.mp3	7cce9bf161.webp	うーん　あっ 日野から聞いたのか	Seguro que se lo has preguntado a Hino.	Hm... Oh, you must've asked Hino.	False	False			
+	779	778	777	0:18:51.750000	0:18:53.630000	030e59a008.mp3	030e59a008.webp	う... うん	Sí.	Y-Yeah.	False	False			
+	782,783	780	781	0:18:53.610000	0:18:58.440000	688eea790b.mp3	688eea790b.webp	気を使わせちゃったねえ 安達　ありがとう	No tenías por qué, pero gracias.	You really didn't have to, Adachi. But thank you.	False	False			
+	786	785	784	0:18:59.840000	0:19:03.300000	93b5e01393.mp3	93b5e01393.webp	同じこと考えてるとは思わなかったなあ	Nunca pensé que pensaríamos lo mismo.	I never thought you'd be thinking the same thing.	False	False			
+	790	789,792	788,791	0:19:05.560000	0:19:10.690000	61f42ddd41.mp3	61f42ddd41.webp	いい子の安達ちゃんにはお姉ちゃんからプレゼントをあげよう	Como has sido buena, tu hermana también te ha comprado un regalo.	Since you're such a good little girl, Adachi, Big Sis got you a present, too.	False	False			
+	795	794	793	0:19:23.410000	0:19:24.970000	16f6251eaa.mp3	16f6251eaa.webp	何 それ?	¿Qué es eso?	What is that?	False	False			
+	798,799	797	796	0:19:24.910000	0:19:29.160000	34c37fe46f.mp3	34c37fe46f.webp	ブーメラン　あっ こっちはゴーグル	Un bumerán... y unas gafas.	A boomerang... Oh, and some goggles.	False	False			
+	802	800	801	0:19:29.140000	0:19:31.200000	6d09439053.mp3	6d09439053.webp	遊ぶときに つけるの?	¿Me las pongo cuando lo lance?	Am I supposed to wear it when I throw this thing?	False	False			
+	806	804	803	0:19:31	0:19:34.920000	2a2600f05c.mp3	2a2600f05c.webp	買う前に投げて試したから	Sí. Lo he probado varias veces antes de comprarlo.	Yeah. Oh, I threw it a few times before buying it.	False	False			
+	809	808	807	0:19:34.880000	0:19:37.300000	759cfc07d9.mp3	759cfc07d9.webp	楽しかったよ 結構	Es más divertido de lo que crees.	It's way more fun than you'd expect.	False	False			
+	812,813	811	810	0:19:37.300000	0:19:42.200000	d33bccaf10.mp3	d33bccaf10.webp	こういうの選ぶセンスないから　永藤と相談して選んでみたんだけど	Como soy muy mala para decidirme, le pedí ayuda a Nagafuji.	I suck at choosing stuff like this, so I asked Nagafuji to help me pick.	False	False			
+	817	816	815	0:19:43.640000	0:19:46.100000	cad077a728.mp3	cad077a728.webp	《ブーメランとか欲しいかも》	A lo mejor quiere un bumerán.	Maybe she'd want a boomerang.	False	False			
+	821	820	819	0:19:48.310000	0:19:52.060000	52704e3fc2.mp3	52704e3fc2.webp	《子供は喜ぶと思う楽しいよ これ》	Creo que a los niños les encanta porque es superdivertido.	I think kids would love them. They're super fun.	False	False			
+	824	823	822	0:19:52.060000	0:19:55.440000	b176ce6c68.mp3	b176ce6c68.webp	《冬場に投げると折れやすいけど》	Aunque en invierno se rompen cuando los lanzas.	Though they tend to snap when you throw them around in winter.	False	False			
+	827	826	825	0:19:55.440000	0:20:00.250000	d4866f1949.mp3	d4866f1949.webp	あっ 永藤には妹へのプレゼントって名目だけどね	Solo le dije que estaba eligiendo un regalo para mi hermana.	Oh, I just told Nagafuji I was getting a present for my little sister.	False	False			
+	830,831	829	828	0:20:00.150000	0:20:05.590000	91b8a98c75.mp3	91b8a98c75.webp	永藤...　そうかそういうことだったんだ	Nagafuji... Ahora entiendo por qué estaba con ella...	Nagafuji... I see. So that's why she was with her...	False	False			
+	834	833	832	0:20:06.450000	0:20:08.370000	d92bcf7891.mp3	d92bcf7891.webp	安達?	¿Adachi?	Adachi?	False	False			
+	837	836	835	0:20:08.370000	0:20:13	09782b660f.mp3	09782b660f.webp	ありがとう これ大事にするから	Gracias, voy a cuidarlo muy bien.	Thanks... I'll take really good care of this.	False	False			
+	840,841,844	839,843	838,842	0:20:13	0:20:23.090000	c2d37c3f52.mp3	c2d37c3f52.webp	正直ブーメランは歓迎していない　けれど しまむらがくれた　という事実だけがプレゼントだ	El bumerán es lo de menos, pero... el hecho de dármelo es el mejor regalo que podía pedir.	Honestly, I didn't care about the boomerang, but... The fact that Shimamura gave this to me... was the best gift I could ask for.	False	False			
+	847	846	845	0:20:26.680000	0:20:30.350000	f7bb62b651.mp3	f7bb62b651.webp	そう ブーメランを後ろに倒して構えるの	Sí. Pones el bumerán detrás de ti	So, yeah. You hold the boomerang behind you,	False	False			
+	850	849	848	0:20:30.350000	0:20:34.770000	89ea7de611.mp3	89ea7de611.webp	で 縦に切るように 前へ投げる	y lo lanzas como si fueras a cortar algo verticalmente.	and then throw it in front of you like you're going to chop something vertically.	False	False			
+	851	853	852	0:20:34.650000	0:20:39.070000	f9b8d3f1d8.mp3	f9b8d3f1d8.webp	そうそう あっ上に向けて投げないようにね	Sí, así. Por cierto, no lo tires hacia arriba.	Yeah, like that. Make sure you don't throw it up, though.	False	False			
+	857	856	855	0:20:53.330000	0:20:55.880000	3f37290d5c.mp3	3f37290d5c.webp	最初はこんなものかな	Bueno, es tu primera vez.	Well, it's your first try.	False	False			
+	860	859	858	0:20:55.580000	0:20:58.170000	f142c33ae3.mp3	f142c33ae3.webp	しまむらはちゃんと取れたの?	¿Tú has podido cogerlo, Shimamura?	Were you able to catch it, Shimamura?	False	False			
+	863	862	861	0:20:58.170000	0:21:03.470000	146a13b31b.mp3	146a13b31b.webp	まあね でも 最初にしては上手な方だと思うよ	Sí, pero no está mal para ser una principiante.	Yeah. But that's not bad for a beginner.	False	False			
+	866	865,868	864,867	0:21:04.760000	0:21:10.470000	b6921977ad.mp3	b6921977ad.webp	チャイナドレスの人が投げると映画の一場面みたいで絵になるねえ	Pareces que has salido de una peli lanzando el bumerán con ese vestido. Queda muy de cine.	But you sorta look like you're in some movie, throwing that thing in your Chinese dress. It's very cinematic.	False	False			
+	874	873	872	0:21:29.030000	0:21:31.240000	c7d50790f6.mp3	c7d50790f6.webp	いまいち?	¿No te gusta?	Not feeling it?	False	False			
+	879	878	877	0:21:32.200000	0:21:37.540000	3ceb48d1f9.mp3	3ceb48d1f9.webp	そっか あっ今から戻って何か別のを買おうか?	Ya veo. ¿Quieres que compre otra cosa?	I see. Hey, should I go back and buy you something else?	False	False			
+	882	881	880	0:21:37.540000	0:21:40.210000	44fadb0b92.mp3	44fadb0b92.webp	いい いい気に入ってるし	No, no. Me gusta.	No, no. I really like it.	False	False			
+	885	884,887	883,886	0:21:40.210000	0:21:46.210000	2869262752.mp3	2869262752.webp	そう でも戻ることは戻ろうか中の方があったかいし	Vale. Deberíamos volver ya. Dentro estaremos más calentitas.	I see. But we probably should head back. It's warmer inside.	False	False			
+	890	889	888	0:21:51.770000	0:21:54.810000	f74a38f78a.mp3	f74a38f78a.webp	今しかない と思った	Pensé que esa era mi única oportunidad.	This was my only chance, I thought...	False	False			
+	893	892,895	891,894	0:21:54.810000	0:22:00.770000	fbd03725db.mp3	fbd03725db.webp	人の目がない ここでしかしまむらに 踏み入った話はできそうにないぞと	Estábamos solas. Ese era el único sitio donde podía decírselo a Shimamura.	Here, where no one else was around... This was the only place I'd be able to say something like this to Shimamura...	False	False			
+	898	897	896	0:22:00.770000	0:22:02.820000	10c87ddbd2.mp3	10c87ddbd2.webp	だから 踏み込む	Por eso, allá voy.	So I'm going to take it.	False	False			
+	899,902	901	900	0:22:02.780000	0:22:06.780000	6cb6577ae3.mp3	6cb6577ae3.webp	準備ができなくとも　転びそうになっても	Aunque no esté lista... Aunque me explote en la cara...	Even if I'm not ready... Even if I fall on my face...	False	False			
+	905	904	903	0:22:06.780000	0:22:08.070000	82e2c2f135.mp3	82e2c2f135.webp	しまむら	Shimamura.	Shimamura.	False	False			
+	910	909	908	0:22:16.580000	0:22:18.250000	280a6dc723.mp3	280a6dc723.webp	安達?	¿Adachi?	Adachi?	False	False			
+	913	912	911	0:22:19.920000	0:22:22.340000	8e6900ae72.mp3	8e6900ae72.webp	私は...	Me...	I...	False	False			
+	916	915	914	0:22:22.340000	0:22:25.720000	d3da0ca5ac.mp3	d3da0ca5ac.webp	しまむらのことが好きで	Me gustas mucho, Shimamura.	I really like you, Shimamura...	False	False			
+	919	918	917	0:22:25.720000	0:22:30.010000	367e4ec804.mp3	367e4ec804.webp	こう 好きで 好きで	Me gustas mucho, mucho...	Like, really like you... love you...	False	False			
+	922	921	920	0:22:35.930000	0:22:40.440000	960d349f11.mp3	960d349f11.webp	しまむらの えっと	Shimamura, yo...	Shimamura, I...	False	False			
+	925	924	923	0:22:46.400000	0:22:49.610000	f119424de4.mp3	f119424de4.webp	友達に なりたくて	quiero ser tu amiga...	...want to be your friend...	False	False			
+	928	927	926	0:22:49.610000	0:22:52.030000	076182c236.mp3	076182c236.webp	もう 友達のつもりだけど?	¿Pero no lo somos ya?	I'm pretty sure we already are?	False	False			
+	931	930	929	0:22:52.030000	0:22:55.660000	c3718e2ee2.mp3	c3718e2ee2.webp	それぐらいの友達じゃなくて	No, no quiero ser solo tu amiga.	No, not just friends...	False	False			
+	934	933	932	0:22:55.660000	0:22:58.710000	c742d0dde8.mp3	c742d0dde8.webp	一番の友達になりたい	Quiero ser tu mejor amiga.	But I want to be like, your best friend.	False	False			
+	937	936	935	0:22:58.710000	0:23:00.290000	8de5fb8c12.mp3	8de5fb8c12.webp	一番?	¿Mi mejor amiga?	My best friend?	False	False			
+	940	939	938	0:23:00.290000	0:23:03.500000	b3c762c2c2.mp3	b3c762c2c2.webp	なりたいっていうかなる... から	Más o menos, así que...	I sorta really want to be that, so...	False	False			
+	943	942	941	0:23:03.500000	0:23:06.300000	5cb9abd4b0.mp3	5cb9abd4b0.webp	頑張ろうと思います	pienso esforzarme.	I'll do my best.	False	False			
+	946	945	944	0:23:06.300000	0:23:08.550000	56344271f8.mp3	56344271f8.webp	そ... そうですか	Ya veo.	I-I see...	False	False			
+	947	949	948	0:23:11.840000	0:23:14.350000	50766e0179.mp3	50766e0179.webp	あ... よく分からないけど	Creo que no lo entiendo,	I don't really get it,	False	False			
+	952	951	950	0:23:14.350000	0:23:18.440000	264d7cbbf7.mp3	264d7cbbf7.webp	向上心があるのはいいことだと思うよ	pero está bien que seas tan ambiciosa.	but it's great that you're so ambitious.	False	False			
+	955	954	953	0:23:18.440000	0:23:20.310000	e1f4863f1d.mp3	e1f4863f1d.webp	う... うん	¡Sí!	Y-Yeah!	False	False			
+	958	957	956	0:23:20.310000	0:23:23.980000	631b906835.mp3	631b906835.webp	クリスマスだからと劇的なことは起こらない	Que sea Navidad no garantiza que vaya a ocurrir nada dramático.	Nothing dramatic is guaranteed to happen just because it's Christmas.	False	False			
+	961	960	959	0:23:23.980000	0:23:28.070000	42f1a2cdad.mp3	42f1a2cdad.webp	きっと 今日という日はいい思い出にならない	El de hoy no va a ser un gran recuerdo.	Today's not going to be a great memory or anything.	False	False			
+	964	963	962	0:23:28.070000	0:23:31.070000	329fdc67ba.mp3	329fdc67ba.webp	何しろ頭が真っ白になってばかりで	Mi mente estuvo todo el día en blanco,	I mean, my mind just kept going blank,	False	False			
+	967	966	965	0:23:31.070000	0:23:33.830000	a3b8d573ff.mp3	a3b8d573ff.webp	記憶どころじゃなかったからだ	así que no podía recordar nada.	so I didn't really have a chance to remember anything.	False	False			
+	970	969	968	0:23:36.750000	0:23:40.370000	c1056d5b7f.mp3	c1056d5b7f.webp	景色を雪が覆い隠すように	Como si fuera un paisaje lleno de nieve...	Just like scenery being covered in snow...	False	False			
+	973,974	972	971	0:23:43.900000	0:23:49.400000	8bed77b79f.mp3	8bed77b79f.webp	ホワイトアルバムがあったことだけを　鮮明に刻み込む	Grabaré el recuerdo de un álbum blanco en mi memoria.	I'm just going to carve the memory of a white album into the back of my brain.	False	False			
+	975	977	976	0:23:52.650000	0:23:55.280000	ca1c2f0cd2.mp3	ca1c2f0cd2.webp	あだしまペディア クリスマス	Adashimapedia: Navidad.	Adashimapedia: Christmas.	False	False			
+	980,983	979,981	978,982	0:23:55.310000	0:23:58.620000	c2e142cf8b.mp3	c2e142cf8b.webp	日野さーん 何を怒ってるのかな?　別に	¿Estás enfadada, Hino? No.	What are you mad about, Hino? I'm not.	False	False			
+	986	985	984	0:23:58.410000	0:24:00.790000	c96c1b65c3.mp3	c96c1b65c3.webp	クリスマス ウチでチキンカレー食べる?	¿Quieres comer conmigo pollo al curry?	Want some chicken curry at my place on Christmas?	False	False			
+	989	988	987	0:24:00.620000	0:24:02.600000	8ee41ad757.mp3	8ee41ad757.webp	クリスマスだから	¿Pollo al curry en Navidad?	It's Christmas, so chicken curry?	False	False			
+	992	991	990	0:24:02.330000	0:24:04.500000	a5e7e9769d.mp3	a5e7e9769d.webp	チキンなのか永藤家の決まりなのです	Sí, es una tradición familiar.	Yup. It's a Nagafuji family tradition.	False	False			
+	995	994	993	0:24:04.250000	0:24:07.110000	35260b097a.mp3	35260b097a.webp	仕方ない 食べに行ってやる	Pues qué remedio. ¡Tendré que ir!	I see. Guess I'll just have to come over then!	False	False			

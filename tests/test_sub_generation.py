@@ -2,11 +2,9 @@ import json
 import os
 from dataclasses import dataclass
 from datetime import timedelta
-from pathlib import Path
 
 import pytest
 
-from nadeshiko_dev_tools.common.config import ProcessingConfig
 from nadeshiko_dev_tools.segment_extractor.splitter import split_video_by_subtitles
 
 from .conftest import read_subtitles_from_folders
@@ -81,28 +79,20 @@ def test_subtitles_snapshots(snapshot, matching_subtitles):
     tmp_output_folder = "tests/snapshots/tmp"
     filename = os.path.basename(sample_subtitles_filepath).split(".")[0]
 
-    config = ProcessingConfig(
-        input_folder=Path("."),
-        output_folder=Path("."),
-    )
-    if "adachi-to-shimamura" in filename:
-        config = ProcessingConfig(
-            input_folder=Path("."),
-            output_folder=Path("."),
-            extra_punctuation=True,
-        )
-
     anime_data = MockAnimeData()
 
+    # No video: dryrun skips the media, and external subs can't be resynced
+    # (ffsubsync needs the audio).
     split_video_by_subtitles(
         translator=None,
         video_file=None,
         subtitles=matching_subtitles,
         episode_folder_output_path=tmp_output_folder,
-        config=config,
         anime_data=anime_data,
         episode_number=1,
         duration_ms=1440000,
+        sync_external_subs=False,
+        dryrun=True,
     )
 
     json_path = os.path.join(tmp_output_folder, "_data.json")
