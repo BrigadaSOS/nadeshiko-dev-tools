@@ -145,3 +145,15 @@ def test_usage_adds_up_what_the_provider_reports():
     translator._count_usage(SimpleNamespace(usage=None))
 
     assert translator.usage == {"requests": 2, "prompt_tokens": 700, "completion_tokens": 560}
+
+
+def test_gpt_oss_gets_reasoning_budget_and_small_batches():
+    from nadeshiko_dev_tools.common.llm_translator import _batch_size_for_model, _model_kwargs
+
+    assert _model_kwargs("openai/gpt-oss-120b") == {
+        "reasoning_effort": "low",
+        "max_completion_tokens": 16000,
+    }
+    assert _model_kwargs("qwen/qwen3.8-27b") == {}
+    assert _batch_size_for_model("openai/gpt-oss-120b") == 20
+    assert _batch_size_for_model("gpt-5.4-mini") == 40

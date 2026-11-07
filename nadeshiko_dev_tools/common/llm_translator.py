@@ -21,8 +21,19 @@ _SENTENCE_OVERLAP = 10
 
 
 def _batch_size_for_model(model: str) -> int:
-    """Keep Qwen structured responses below Groq's JSON completion limit."""
-    return 20 if model.startswith("qwen/") else _BATCH_SIZE
+    """Keep Groq-hosted structured responses below its JSON completion limit."""
+    return 20 if model.startswith(("qwen/", "openai/gpt-oss")) else _BATCH_SIZE
+
+
+def _model_kwargs(model: str) -> dict:
+    """Extra request options per model family.
+
+    gpt-oss is a reasoning model: its reasoning counts against the completion budget, so with
+    the default budget a 20-line JSON answer gets truncated. Low effort and a larger budget fix it.
+    """
+    if model.startswith("openai/gpt-oss"):
+        return {"reasoning_effort": "low", "max_completion_tokens": 16000}
+    return {}
 
 
 @dataclass
@@ -267,9 +278,7 @@ class OpenAITranslator:
             "strict": True,
             "schema": {
                 "type": "object",
-                "properties": {
-                    "sentence_starts": {"type": "array", "items": {"type": "integer"}}
-                },
+                "properties": {"sentence_starts": {"type": "array", "items": {"type": "integer"}}},
                 "required": ["sentence_starts"],
                 "additionalProperties": False,
             },
@@ -332,6 +341,7 @@ class OpenAITranslator:
                     ],
                     response_format=_response_format(),
                     temperature=0.2,
+                    **_model_kwargs(self._model),
                 )
                 self._count_usage(resp)
                 return resp.choices[0].message.content or "{}"
