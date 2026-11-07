@@ -1,15 +1,23 @@
 #!/usr/bin/env python3
 """Remove a media and all its assets from Nadeshiko API and R2 storage.
 
+Staging (`dev`) and production share one R2 bucket and the same files: the dev upload puts them
+there and the prod upload reuses them. So R2 is only ever cleaned as part of a **prod** delete;
+`--target dev`/`local` remove the API record and leave the files alone. The API doesn't expose a
+media's storage path, so the R2 prefix is derived from the external id that actually matched a
+media in the API, with the uploader's rules (anilist -> media/<id>, tmdb -> media/mv/<id>,
+youtube -> media/yt/<id>, asin -> media/ab/<id>). Nothing is deleted from R2 when no media matched.
+
 Usage:
-    uv run delete-media 21804 --target dev
-    uv run delete-media 21804 --target dev --dry-run
+    uv run delete-media 21804 --target dev              # API only (files are shared with prod)
+    uv run delete-media 21804 --target prod --dry-run   # preview API + R2
     uv run delete-media 21804 --target prod -y
-    uv run delete-media 21804 --target dev --r2-only
+    uv run delete-media --target prod --r2-only --r2-path media/21804   # orphaned files only
 """
 
 import argparse
 import os
+import re
 import sys
 
 import boto3
@@ -21,6 +29,10 @@ load_dotenv()
 from nadeshiko_internal import Nadeshiko, NadeshikoError  # noqa: E402
 
 # --- API ---
+
+
+class MediaLookupError(RuntimeError):
+    """The API could not be asked; "not found" can't be concluded from it."""
 
 
 def _first_set(*env_vars, default=""):
@@ -42,8 +54,9 @@ def get_api_client(target: str) -> Nadeshiko:
         },
         "dev": {
             "api_key": _first_set("NADESHIKO_DEV_API_KEY", "NADESHIKO_API_KEY"),
+            # "dev" is staging; api-dev.nadeshiko.co no longer exists.
             "base_url": _first_set(
-                "NADESHIKO_DEV_BASE_URL", default="https://api-dev.nadeshiko.co"
+                "NADESHIKO_DEV_BASE_URL", default="https://api-stg.nadeshiko.co"
             ),
         },
         "prod": {
@@ -67,10 +80,32 @@ def get_api_client(target: str) -> Nadeshiko:
         headers={"User-Agent": "NadeshikoDevTools/1.0"},
     )
 
-_EXTERNAL_ID_SOURCES = ("anilist", "tmdb", "tvdb", "imdb", "youtube")
+
+_EXTERNAL_ID_SOURCES = ("anilist", "tmdb", "tvdb", "imdb", "youtube", "asin")
+
+# R2 folder per external-id source, mirroring the uploader's MediaSource.storage_base_path.
+# tvdb/imdb have no upload source, so their folder is unknown and R2 is left alone.
+_STORAGE_PREFIX_BY_SOURCE = {
+    "anilist": "media/{id}",
+    "tmdb": "media/mv/{id}",
+    "youtube": "media/yt/{id}",
+    "asin": "media/ab/{id}",
+}
+
+
+def storage_path_for(source: str, external_id: str) -> str | None:
+    """R2 folder the uploader used for a media matched by this source, or None if unknown."""
+    template = _STORAGE_PREFIX_BY_SOURCE.get(source)
+    return template.format(id=external_id) if template else None
+
 
 def find_media(client: Nadeshiko, media_id: str):
-    """Find media by external ID (AniList/TMDB/YouTube channel/etc.)."""
+    """Find media by external ID (AniList/TMDB/YouTube channel/ASIN/etc.).
+
+    Returns (media, source) for the first match, or (None, None) only when the full listing
+    succeeded and nothing matched; an API error raises MediaLookupError instead, so a failed
+    lookup is never mistaken for "already deleted".
+    """
     from nadeshiko_internal.types import UNSET
 
     try:
@@ -80,25 +115,33 @@ def find_media(client: Nadeshiko, media_id: str):
                 continue
             for source in _EXTERNAL_ID_SOURCES:
                 if str(getattr(ext_ids, source, None)) == str(media_id):
-                    return media
+                    return media, source
     except NadeshikoError as e:
-        print(f"  Error listing media: {e.detail}", file=sys.stderr)
-    return None
+        raise MediaLookupError(f"Error listing media: {e.detail}") from e
+    return None, None
 
 
 def remove_from_api(client: Nadeshiko, media_id: str, dry_run: bool) -> tuple[bool, str | None]:
-    """Remove media and all episodes from the Nadeshiko API."""
+    """Remove media and all episodes from the Nadeshiko API.
+
+    Returns (ok, storage_path); the path is None when the media isn't in the API or its R2
+    folder can't be derived from the matched source.
+    """
     print("\n--- Nadeshiko API cleanup ---")
 
-    media = find_media(client, media_id)
+    try:
+        media, source = find_media(client, media_id)
+    except MediaLookupError as e:
+        print(f"  {e}", file=sys.stderr)
+        return False, None
     if not media:
         print(f"  Media {media_id} not found in API (may already be deleted)")
         return True, None
 
     public_id = getattr(media, "public_id", media_id)
-    title = getattr(media, "title", media_id)
-    storage_base_path = getattr(media, "storage_base_path", None)
-    print(f"  Found: {title} (ID: {public_id})")
+    title = getattr(media, "name_romaji", None) or getattr(media, "name_en", None) or media_id
+    storage_base_path = storage_path_for(source, str(media_id))
+    print(f"  Found: {title} (ID: {public_id}, matched {source}, storage: {storage_base_path})")
 
     episodes_to_delete = []
     try:
@@ -111,6 +154,7 @@ def remove_from_api(client: Nadeshiko, media_id: str, dry_run: bool) -> tuple[bo
             print(f"  Episode {ep_num}: {seg_count} segments")
     except NadeshikoError as e:
         print(f"  Error listing episodes: {e.detail}", file=sys.stderr)
+        return False, storage_base_path
 
     if not episodes_to_delete:
         print("  No episodes found")
@@ -137,9 +181,38 @@ def remove_from_api(client: Nadeshiko, media_id: str, dry_run: bool) -> tuple[bo
 
 # --- R2 ---
 
+# One media's own folder, nothing broader: media/<anilist numeric id> or media/<mv|yt|ab>/<id>.
+# The AniList form is digits only, so a source folder itself ("media/mv") never passes as an id.
+_MEDIA_PREFIX_RE = re.compile(r"^media/(?:[0-9]+|(?:mv|yt|ab)/[A-Za-z0-9_.-]+)$")
+
+
+def validate_storage_path(storage_path: str | None) -> str:
+    """Return the R2 prefix of exactly one media folder, or raise ValueError.
+
+    Guards against deleting more than one media: an empty path, `media/`, a path with `..`,
+    or anything that isn't a single media folder is refused.
+    """
+    path = (storage_path or "").strip().strip("/")
+    if not _MEDIA_PREFIX_RE.match(path) or ".." in path:
+        raise ValueError(
+            f"Refusing R2 path {storage_path!r}: expected one media folder such as "
+            "media/21804, media/mv/46198 or media/ab/B07PPMBZHX"
+        )
+    return path
+
+
+def r2_cleanup_refusal(target: str) -> str | None:
+    """Why R2 must not be touched for this target, or None when it may."""
+    if target != "prod":
+        return (
+            f"R2 is not touched for --target {target}: staging and production share the same "
+            "files. Remove them with --target prod, which deletes the prod media first."
+        )
+    return None
+
 
 def remove_from_r2(storage_path: str, dry_run: bool, skip_confirm: bool = False) -> int:
-    """Remove all files under a storage path from R2."""
+    """Remove all files under one media's storage path from R2."""
     print("\n--- R2 storage cleanup ---")
 
     account_id = os.environ.get("R2_ACCOUNT_ID")
@@ -166,9 +239,7 @@ def remove_from_r2(storage_path: str, dry_run: bool, skip_confirm: bool = False)
         config=BotoConfig(max_pool_connections=50),
     )
 
-    if not storage_path.startswith("media/"):
-        storage_path = f"media/{storage_path}"
-    prefix = f"{storage_path}/"
+    prefix = f"{validate_storage_path(storage_path)}/"
 
     print(f"Listing objects in {bucket}/{prefix}...")
     paginator = s3.get_paginator("list_objects_v2")
@@ -190,7 +261,7 @@ def remove_from_r2(storage_path: str, dry_run: bool, skip_confirm: bool = False)
         return len(all_objects)
 
     if not skip_confirm:
-        response = input(f"\nDelete {len(all_objects)} objects? [y/N] ")
+        response = input(f"\nDelete {len(all_objects)} objects from {bucket}/{prefix}? [y/N] ")
         if response.lower() != "y":
             print("Aborted")
             return 0
@@ -211,11 +282,12 @@ def remove_from_r2(storage_path: str, dry_run: bool, skip_confirm: bool = False)
 # --- CLI ---
 
 
-def main():
+def parse_args(argv=None):
     parser = argparse.ArgumentParser(description="Remove media from Nadeshiko API and R2 storage")
     parser.add_argument(
         "media_id",
-        help="Media ID to remove: AniList/TMDB id (e.g. '20812') or YouTube channel id",
+        nargs="?",
+        help="Media ID to remove: AniList/TMDB id (e.g. '20812'), YouTube channel id or ASIN",
     )
     parser.add_argument(
         "--target", required=True, choices=["local", "dev", "prod"], help="Target environment"
@@ -223,8 +295,27 @@ def main():
     parser.add_argument("--dry-run", action="store_true", help="Preview without deleting")
     parser.add_argument("-y", "--yes", action="store_true", help="Skip confirmation prompts")
     parser.add_argument("--api-only", action="store_true", help="Only delete from API, skip R2")
-    parser.add_argument("--r2-only", action="store_true", help="Only delete from R2, skip API")
-    args = parser.parse_args()
+    parser.add_argument(
+        "--r2-only",
+        action="store_true",
+        help="Only delete orphaned files from R2 (prod only; needs --r2-path)",
+    )
+    parser.add_argument(
+        "--r2-path",
+        help="R2 folder for --r2-only, e.g. media/21804 or media/mv/46198 (never guessed)",
+    )
+    args = parser.parse_args(argv)
+    if args.r2_only and args.api_only:
+        parser.error("--r2-only and --api-only exclude each other")
+    if args.r2_only and not args.r2_path:
+        parser.error("--r2-only needs --r2-path: the R2 folder is never guessed from an id")
+    if not args.r2_only and not args.media_id:
+        parser.error("media_id is required unless --r2-only is given")
+    return args
+
+
+def main(argv=None):
+    args = parse_args(argv)
 
     if args.target == "prod" and not args.dry_run and not args.yes:
         response = input("You are about to delete from PRODUCTION. Are you sure? [y/N] ")
@@ -232,22 +323,35 @@ def main():
             print("Aborted")
             return 1
 
-    print(f"Removing media {args.media_id} from {args.target}")
+    print(f"Removing media {args.media_id or args.r2_path} from {args.target}")
     if args.dry_run:
         print("[DRY RUN MODE]")
 
-    storage_path = args.media_id
+    storage_path = args.r2_path
     if not args.r2_only:
         client = get_api_client(args.target)
         api_ok, base_path = remove_from_api(client, args.media_id, args.dry_run)
         if not api_ok:
             print("\nAPI cleanup failed. R2 cleanup skipped.")
             return 1
-        if base_path:
-            storage_path = base_path
+        storage_path = base_path
 
     if not args.api_only:
-        remove_from_r2(storage_path, args.dry_run, skip_confirm=args.yes or args.dry_run)
+        refusal = r2_cleanup_refusal(args.target)
+        if refusal:
+            print(f"\n{refusal}")
+        elif not storage_path:
+            print(
+                "\nNo R2 folder (media not found, or matched by tvdb/imdb): R2 left untouched. "
+                "Use --r2-only --r2-path for orphaned files."
+            )
+        else:
+            try:
+                validate_storage_path(storage_path)
+            except ValueError as e:
+                print(f"\n{e}", file=sys.stderr)
+                return 1
+            remove_from_r2(storage_path, args.dry_run, skip_confirm=args.yes or args.dry_run)
 
     print(f"\n{'[DRY RUN] ' if args.dry_run else ''}Done!")
     return 0
