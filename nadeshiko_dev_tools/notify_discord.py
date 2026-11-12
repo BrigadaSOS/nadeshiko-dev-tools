@@ -19,6 +19,7 @@ import json
 import os
 import sys
 from dataclasses import dataclass, field
+from pathlib import Path
 from typing import Any
 
 import requests
@@ -93,7 +94,7 @@ def _external_id(media: Any, source: str) -> str | None:
     ext_ids = getattr(media, "external_ids", UNSET)
     if ext_ids is UNSET or ext_ids is None:
         return None
-    value = getattr(ext_ids, source, None)
+    value = getattr(ext_ids, "asin" if source == "audiobook" else source, None)
     return None if value is None else str(value)
 
 
@@ -193,13 +194,18 @@ def get_api_notification_info(
                 or getattr(media, "english_name", None)
                 or getattr(media, "romaji_name", None)
                 or getattr(media, "japanese_name", None)
+                or getattr(media, "name_en", None)
+                or getattr(media, "name_romaji", None)
+                or getattr(media, "name_ja", None)
                 or str(media_id)
             )
             return NotificationInfo(
                 public_id=getattr(media, "public_id", public_id),
                 english_title=_title_part(title, "english") or name,
-                native_title=_title_part(title, "native"),
-                romaji_title=_title_part(title, "romaji") or name,
+                native_title=_title_part(title, "native") or getattr(media, "name_ja", None),
+                romaji_title=_title_part(title, "romaji")
+                or getattr(media, "name_romaji", None)
+                or name,
                 cover_url=_media_cover_url(media),
             )
     except NadeshikoError as e:
@@ -223,8 +229,12 @@ def compute_stats_local(output_folder: str) -> MediaStats:
         segments = data.get("segments", [])
         total_episodes += 1
         total_segments += len(segments)
+        is_audiobook = bool(data.get("media", {}).get("asin"))
+        if is_audiobook:
+            total_duration_ms += data.get("metadata", {}).get("duration_ms", 0)
         for segment in segments:
-            total_duration_ms += segment.get("duration_ms", 0)
+            if not is_audiobook:
+                total_duration_ms += segment.get("duration_ms", 0)
             if segment.get("is_mt_es"):
                 generated_langs.add("es")
             if segment.get("is_mt_en"):
@@ -286,10 +296,13 @@ def build_webhook_payload(
     alt_names = [n for n in [native_title, romaji_title] if n and n != display_title]
     alt_line = f"**Alternative names:** {', '.join(alt_names)}\n" if alt_names else ""
     is_youtube = source == "youtube"
-    count_label = "Videos" if is_youtube else "Episodes"
+    is_audiobook = source == "audiobook"
+    count_label = "Chapters" if is_audiobook else ("Videos" if is_youtube else "Episodes")
 
     embed = {
-        "title": "New YouTube content on Nadeshiko!"
+        "title": "New audiobook on Nadeshiko!"
+        if is_audiobook
+        else "New YouTube content on Nadeshiko!"
         if is_youtube
         else "New anime content on Nadeshiko!",
         "url": url,
@@ -306,15 +319,84 @@ def build_webhook_payload(
     }
     if cover_url:
         embed["image"] = {"url": cover_url}
-    return {"embeds": [embed]}
+    return {"embeds": [embed], "allowed_mentions": {"parse": []}}
 
 
-def send_webhook_payload(webhook_url: str, payload: dict) -> bool:
+def send_webhook_payload(webhook_url: str, payload: dict, receipt_path: str | None = None) -> bool:
     """Send Discord embed webhook. Returns True on success."""
-    resp = requests.post(webhook_url, json=payload, timeout=30)
+    if receipt_path and Path(receipt_path).exists():
+        print("Receipt already exists; refusing to send a duplicate notification.", file=sys.stderr)
+        return False
+    try:
+        resp = requests.post(
+            webhook_url, json=payload, timeout=30, params={"wait": "true"} if receipt_path else None
+        )
+    except requests.RequestException:
+        print(
+            "Webhook request failed; delivery unknown. Do not retry without checking Discord.",
+            file=sys.stderr,
+        )
+        return False
+    if receipt_path and resp.status_code == 200:
+        message = resp.json()
+        receipt = {
+            "message_id": message["id"],
+            "channel_id": message["channel_id"],
+            "read_back_verified": False,
+            "embeds": message.get("embeds", []),
+        }
+        path = Path(receipt_path)
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(json.dumps(receipt, ensure_ascii=False, indent=2))
+        try:
+            check = requests.get(
+                webhook_url.split("?")[0].rstrip("/") + "/messages/" + message["id"], timeout=30
+            )
+        except requests.RequestException:
+            print("Message sent; read-back failed. Receipt saved; do not resend.", file=sys.stderr)
+            return False
+        if check.status_code != 200:
+            print(
+                f"Message sent; read-back returned {check.status_code}. Do not resend.",
+                file=sys.stderr,
+            )
+            return False
+        actual = check.json()
+        expected_embeds = payload.get("embeds", [])
+        actual_embeds = actual.get("embeds", [])
+        verified = actual.get("id") == message["id"] and len(actual_embeds) == len(expected_embeds)
+        # Lengths are already compared above; strict=False just keeps a mismatch from raising.
+        for expected, observed in zip(expected_embeds, actual_embeds, strict=False):
+            verified = verified and all(
+                observed.get(k) == expected[k]
+                for k in ("title", "url", "description", "color")
+                if k in expected
+            )
+            if "image" in expected:
+                verified = (
+                    verified and observed.get("image", {}).get("url") == expected["image"]["url"]
+                )
+        guild_id = actual.get("guild_id")
+        if not guild_id:
+            try:
+                metadata = requests.get(webhook_url.split("?")[0], timeout=30)
+                if metadata.status_code == 200:
+                    guild_id = metadata.json().get("guild_id")
+            except requests.RequestException:
+                pass
+        channel_path = f"{guild_id or '@me'}/{actual['channel_id']}/{actual['id']}"
+        receipt.update(
+            {
+                "read_back_verified": bool(verified),
+                "embeds": actual_embeds,
+                "message_url": f"https://discord.com/channels/{channel_path}",
+            }
+        )
+        path.write_text(json.dumps(receipt, ensure_ascii=False, indent=2))
+        return bool(verified)
     if resp.status_code in (200, 204):
         return True
-    print(f"Webhook failed: {resp.status_code} {resp.text}", file=sys.stderr)
+    print(f"Webhook failed: HTTP {resp.status_code}", file=sys.stderr)
     return False
 
 
@@ -367,7 +449,7 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser.add_argument(
         "--source",
         default="anilist",
-        choices=["anilist", "youtube"],
+        choices=["anilist", "youtube", "audiobook"],
         help="External source used to look up Nadeshiko media (default: anilist)",
     )
     parser.add_argument(
@@ -387,6 +469,10 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         help="API/frontend target (default: prod)",
     )
     parser.add_argument("--dry-run", action="store_true", help="Print embed without sending")
+    parser.add_argument(
+        "--receipt",
+        help="Save message receipt and verify exact Discord read-back; prevents duplicate sends",
+    )
     args = parser.parse_args(argv)
     args.output_folder = args.output_folder or args.legacy_output_folder
     if not args.media_id and not args.public_id:
@@ -408,9 +494,7 @@ def _notification_info(args: argparse.Namespace, public_id: str) -> Notification
             cover_url=anilist["coverImage"]["large"],
         )
     local_info = (
-        get_local_notification_info(args.output_folder, public_id)
-        if args.output_folder
-        else None
+        get_local_notification_info(args.output_folder, public_id) if args.output_folder else None
     )
     if local_info and args.source == "youtube":
         return local_info
@@ -448,8 +532,9 @@ def main(argv: list[str] | None = None) -> int:
     print(f"\n  Source: {args.source}")
     print(f"  Title: {info.english_title or info.romaji_title or info.native_title}")
     print(f"  PublicId: {public_id}")
+    count_label = {"audiobook": "Chapters", "youtube": "Videos"}.get(args.source, "Episodes")
     print(
-        f"  {'Videos' if args.source == 'youtube' else 'Episodes'}: {stats.episodes}, "
+        f"  {count_label}: {stats.episodes}, "
         f"Segments: {stats.segments:,}, Duration: {stats.hours:.1f}h"
     )
     if info.cover_url:
@@ -474,7 +559,8 @@ def main(argv: list[str] | None = None) -> int:
         return 0
 
     print("\nSending Discord webhook...")
-    ok = send_webhook_payload(webhook_url, payload)
+    assert webhook_url
+    ok = send_webhook_payload(webhook_url, payload, receipt_path=args.receipt)
     print("Sent!" if ok else "Failed!")
     return 0 if ok else 1
 
