@@ -340,7 +340,108 @@ def parse_args():
     parser.add_argument(
         "--discord-audit", action="store_true", help="Send progress to DISCORD_AUDIT_WEBHOOK_URL"
     )
+    parser.add_argument(
+        "--jobs",
+        type=int,
+        default=1,
+        help="Episodes processed in parallel after the first one, as separate worker processes "
+        "(each uses ~3 CPU threads and 1-2 GB RAM). Default 1 (sequential).",
+    )
+    # Internal: a worker spawned by --jobs. No first-episode gate and no QC (the parent does both).
+    parser.add_argument("--worker", action="store_true", help=argparse.SUPPRESS)
     return parser.parse_args()
+
+
+def split_round_robin(items: list, n: int) -> list[list]:
+    """Split items into at most n non-empty groups, round robin (mixes long and short episodes)."""
+    groups = [items[i::n] for i in range(max(1, n))]
+    return [g for g in groups if g]
+
+
+def worker_argv(args, episodes: list[int], input_folder: str, output_folder: str) -> list[str]:
+    """Command line for one --jobs worker: same sources and options, its own episode set."""
+    argv = [
+        sys.executable,
+        "-m",
+        "nadeshiko_dev_tools.segment_extractor.cli",
+        "--anilist-id",
+        str(args.anilist_id),
+        "--input",
+        input_folder,
+        "--output",
+        output_folder,
+        "--subtitle-indices",
+        args.subtitle_indices,
+        "--episodes",
+        ",".join(str(e) for e in episodes),
+        "--worker",
+    ]
+    if args.audio_index is not None:
+        argv += ["--audio-index", str(args.audio_index)]
+    if args.source_pattern:
+        argv += ["--source-pattern", args.source_pattern]
+    if not args.sync_external_subs:
+        argv.append("--no-sync-external-subs")
+    return argv
+
+
+def episode_count_on_disk(anime_folder: str, episode_number: int) -> int | None:
+    """Segment count of a finished episode folder, or None if _data.json or any mp4 is missing."""
+    folder = os.path.join(anime_folder, str(episode_number))
+    data_path = os.path.join(folder, "_data.json")
+    if not os.path.exists(data_path):
+        return None
+    with open(data_path) as f:
+        expected = {s["segment_hash"] for s in json.load(f).get("segments", [])}
+    actual = {f[:-4] for f in os.listdir(folder) if f.endswith(".mp4")}
+    if not expected or expected - actual:
+        return None
+    return len(expected)
+
+
+def run_parallel_workers(
+    episode_files: list[tuple[int, str]],
+    args,
+    input_folder: str,
+    output_folder: str,
+    anime_folder: str,
+) -> dict[int, int | None]:
+    """Process episodes in --jobs worker processes with disjoint episode sets.
+
+    Safe on one output root because every episode writes only its own folder and tmp_ep<N>,
+    the shared tmp/ sync files are named after per-episode subtitle files, and _info.json
+    (the hash salt) already exists from the first episode.
+    """
+    import subprocess
+    import threading
+
+    episodes = [ep for ep, _ in episode_files]
+    groups = split_round_robin(episodes, args.jobs)
+    console.print(f"[cyan]Parallel extraction: {len(groups)} workers {groups}[/cyan]")
+    env = dict(os.environ, PYTHONUNBUFFERED="1")
+    procs = []
+    for i, group in enumerate(groups):
+        proc = subprocess.Popen(
+            worker_argv(args, group, input_folder, output_folder),
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
+            text=True,
+            env=env,
+        )
+
+        def pump(p=proc, tag=f"[w{i}]"):
+            for line in p.stdout:
+                print(f"{tag} {line.rstrip()}", flush=True)
+
+        thread = threading.Thread(target=pump, daemon=True)
+        thread.start()
+        procs.append((proc, thread, group))
+    for proc, thread, group in procs:
+        rc = proc.wait()
+        thread.join()
+        if rc != 0:
+            logger.warning(f"[yellow]Worker for episodes {group} exited with {rc}[/yellow]")
+    return {ep: episode_count_on_disk(anime_folder, ep) for ep in episodes}
 
 
 def main():
@@ -440,6 +541,21 @@ def main():
     if not translator:
         logger.warning("No translator configured — segments missing EN/ES will be skipped")
 
+    if args.worker:
+        worker_stats = extract_episodes(
+            episode_files,
+            anime_data,
+            anime_folder,
+            subtitle_indices,
+            args.audio_index,
+            input_folder,
+            hash_salt,
+            translator,
+            args.dry_run,
+            args.sync_external_subs,
+        )
+        return 0 if all(worker_stats.get(ep) for ep, _ in episode_files) else 1
+
     discord_audit.post("Starting extraction", stage="started")
 
     # ── Extract episode 1 first (validate release/subs before committing to full run) ──
@@ -471,7 +587,11 @@ def main():
     # ── Extract remaining episodes ──
     remaining = [ef for ef in episode_files if ef[0] != first_ep[0]]
 
-    if remaining:
+    if remaining and args.jobs > 1 and len(remaining) > 1 and not args.dry_run:
+        episode_stats.update(
+            run_parallel_workers(remaining, args, input_folder, output_folder, anime_folder)
+        )
+    elif remaining:
         remaining_stats = extract_episodes(
             remaining,
             anime_data,
