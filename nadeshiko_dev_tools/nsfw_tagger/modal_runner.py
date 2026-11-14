@@ -33,6 +33,26 @@ from nadeshiko_dev_tools.nsfw_tagger.classifier import (
 console = Console()
 
 APP_NAME = "nadeshiko-nsfw-tagger"
+ONNXRUNTIME_GPU_VERSION = "1.24.4"
+GPU_PROVIDER = "CUDAExecutionProvider"
+
+
+def require_gpu_provider(providers: list[str]) -> str:
+    """Return the session's active provider, or raise if ONNX Runtime fell back off the GPU.
+
+    ONNX Runtime silently appends CPUExecutionProvider when the CUDA provider can't load (for
+    example a CUDA major mismatch), so a Modal GPU run would tag correctly but slowly while
+    paying for an idle GPU. Failing makes `tag-media --modal` stop (or fall back locally only
+    with --fallback-local) instead.
+    """
+    active = providers[0] if providers else "none"
+    if active != GPU_PROVIDER:
+        raise RuntimeError(
+            f"Modal tagger is not on the GPU: ONNX Runtime picked {active} "
+            f"(providers: {providers}). Check that onnxruntime-gpu matches the image's CUDA."
+        )
+    return active
+
 
 app = modal.App(APP_NAME)
 image = modal.Image.from_registry(
@@ -41,7 +61,10 @@ image = modal.Image.from_registry(
 ).pip_install(
     "huggingface-hub>=0.20.0",
     "numpy>=1.24.0",
-    "onnxruntime-gpu>=1.20.0",
+    # Pinned to a CUDA 12 build to match the CUDA 12.4 base image. onnxruntime-gpu 1.32 needs
+    # CUDA 13 (libcublasLt.so.13) and silently fell back to CPU on the T4 (2026-11, ~8x slower).
+    # Bump together with the base image, and check the run reports CUDAExecutionProvider.
+    f"onnxruntime-gpu=={ONNXRUNTIME_GPU_VERSION}",
     "pandas>=2.0.0",
     "Pillow>=10.0.0",
     # The remote function imports this module, which uses Rich for progress output.
@@ -131,7 +154,7 @@ def tag_episode(payload: bytes, batch_size: int = 32) -> dict[str, Any]:
                     ("CUDAExecutionProvider", {"arena_extend_strategy": "kSameAsRequested"})
                 ],
             )
-            self.active_provider = self.model.get_providers()[0]
+            self.active_provider = require_gpu_provider(self.model.get_providers())
             _, self.target_size, _, _ = self.model.get_inputs()[0].shape
             self.input_name = self.model.get_inputs()[0].name
             self.output_name = self.model.get_outputs()[0].name
